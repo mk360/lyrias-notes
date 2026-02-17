@@ -1,0 +1,20 @@
+{
+  "$schema": "https://wails.io/schemas/config.v2.json",
+  "name": "GBVSR Matchup Notes",
+  "outputfilename": "gbvsr-matchup-notes",
+  "frontend:install": "npm install",
+  "frontend:build": "npm run build",
+  "frontend:dev:watcher": "npm run dev",
+  "frontend:dev:serverUrl": "auto",
+  "author": {
+    "name": "Developer Name",
+    "email": "developer@example.com"
+  },
+  "info": {
+    "companyName": "Developer Name",
+    "productName": "GBVSR Matchup Notes",
+    "productVersion": "1.0.0",
+    "copyright": "Copyright © 2026",
+    "comments": "A matchup notes app for Granblue Fantasy Versus Rising"
+  }
+}

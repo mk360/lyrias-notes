@@ -1,0 +1,129 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        platform: [ubuntu-latest, windows-latest]
+        
+    runs-on: ${{ matrix.platform }}
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Go
+        uses: actions/setup-go@v4
+        with:
+          go-version: '1.21'
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install Wails (Linux)
+        if: matrix.platform == 'ubuntu-latest'
+        run: |
+          go install github.com/wailsapp/wails/v2/cmd/wails@latest
+          sudo apt-get update
+          sudo apt-get install -y libgtk-3-dev libwebkit2gtk-4.0-dev
+
+      - name: Install Wails (Windows)
+        if: matrix.platform == 'windows-latest'
+        run: go install github.com/wailsapp/wails/v2/cmd/wails@latest
+
+      - name: Install frontend dependencies
+        working-directory: ./frontend
+        run: npm install
+
+      - name: Build application (Linux)
+        if: matrix.platform == 'ubuntu-latest'
+        run: wails build -platform linux/amd64
+
+      - name: Build application (Windows)
+        if: matrix.platform == 'windows-latest'
+        run: wails build -platform windows/amd64
+
+      - name: Package Linux AppImage
+        if: matrix.platform == 'ubuntu-latest'
+        run: |
+          # Install appimagetool
+          wget https://github.com/AppImage/AppImageKit/releases/download/continuous/appimagetool-x86_64.AppImage
+          chmod +x appimagetool-x86_64.AppImage
+          
+          # Create AppImage structure
+          mkdir -p AppDir/usr/bin
+          mkdir -p AppDir/usr/share/applications
+          mkdir -p AppDir/usr/share/icons/hicolor/256x256/apps
+          
+          # Copy binary
+          cp build/bin/gbvsr-matchup-notes AppDir/usr/bin/
+          
+          # Create desktop file
+          cat > AppDir/usr/share/applications/gbvsr-matchup-notes.desktop <<EOF
+          [Desktop Entry]
+          Name=GBVSR Matchup Notes
+          Exec=gbvsr-matchup-notes
+          Icon=gbvsr-matchup-notes
+          Type=Application
+          Categories=Utility;
+          EOF
+          
+          # Create AppRun
+          cat > AppDir/AppRun <<EOF
+          #!/bin/bash
+          SELF=\$(readlink -f "\$0")
+          HERE=\${SELF%/*}
+          export PATH="\${HERE}/usr/bin:\${PATH}"
+          exec "\${HERE}/usr/bin/gbvsr-matchup-notes" "\$@"
+          EOF
+          chmod +x AppDir/AppRun
+          
+          # Build AppImage
+          ./appimagetool-x86_64.AppImage AppDir gbvsr-matchup-notes-linux-amd64.AppImage
+
+      - name: Upload artifacts (Linux)
+        if: matrix.platform == 'ubuntu-latest'
+        uses: actions/upload-artifact@v3
+        with:
+          name: linux-build
+          path: gbvsr-matchup-notes-linux-amd64.AppImage
+
+      - name: Upload artifacts (Windows)
+        if: matrix.platform == 'windows-latest'
+        uses: actions/upload-artifact@v3
+        with:
+          name: windows-build
+          path: build/bin/gbvsr-matchup-notes.exe
+
+  release:
+    needs: build
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Download Linux artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: linux-build
+
+      - name: Download Windows artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: windows-build
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            gbvsr-matchup-notes-linux-amd64.AppImage
+            gbvsr-matchup-notes.exe
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

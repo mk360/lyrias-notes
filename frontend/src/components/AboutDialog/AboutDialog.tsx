@@ -1,0 +1,114 @@
+import React, { useState, useEffect } from 'react';
+import { useAppContext } from '../../context/AppContext';
+import { useUpdateCheck } from '../../hooks/useUpdateCheck';
+
+interface AboutDialogProps {
+  isOpen: boolean;
+  onClose: () => void;
+}
+
+export const AboutDialog: React.FC<AboutDialogProps> = ({ isOpen, onClose }) => {
+  const { config } = useAppContext();
+  const { updateInfo, checking, checkForUpdates } = useUpdateCheck();
+  const [hasCheckedOnOpen, setHasCheckedOnOpen] = useState(false);
+
+  useEffect(() => {
+    if (isOpen && !hasCheckedOnOpen) {
+      // Silent check when dialog opens
+      checkForUpdates();
+      setHasCheckedOnOpen(true);
+    }
+  }, [isOpen, hasCheckedOnOpen, checkForUpdates]);
+
+  if (!isOpen || !config) return null;
+
+  const handleBackdropClick = (e: React.MouseEvent) => {
+    if (e.target === e.currentTarget) {
+      onClose();
+    }
+  };
+
+  const openRepository = () => {
+    if (config.app.repository) {
+      window.open(config.app.repository, '_blank');
+    }
+  };
+
+  const openUpdateURL = () => {
+    if (updateInfo?.update_url) {
+      window.open(updateInfo.update_url, '_blank');
+    }
+  };
+
+  return (
+    <div
+      className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
+      onClick={handleBackdropClick}
+    >
+      <div className="bg-gray-800 rounded-lg p-8 max-w-md w-full shadow-xl">
+        {/* App Info */}
+        <div className="text-center mb-6">
+          <h2 className="text-2xl font-bold text-white mb-2">{config.app.name}</h2>
+          <p className="text-gray-400">Version {config.app.version}</p>
+        </div>
+
+        {/* Description */}
+        <p className="text-gray-300 mb-4 text-center">
+          A desktop app for managing matchup notes for Granblue Fantasy Versus Rising with frame data integration.
+        </p>
+
+        {/* Author */}
+        <p className="text-gray-400 mb-4 text-center">
+          Built by: <span className="text-white">{config.app.author}</span>
+        </p>
+
+        {/* Repository Link */}
+        <div className="mb-6 text-center">
+          <button
+            onClick={openRepository}
+            className="text-blue-400 hover:text-blue-300 underline"
+          >
+            {config.app.repository}
+          </button>
+        </div>
+
+        {/* Update Check Section */}
+        <div className="bg-gray-700 rounded-lg p-4 mb-6">
+          <button
+            onClick={checkForUpdates}
+            disabled={checking}
+            className="w-full bg-blue-600 hover:bg-blue-700 disabled:bg-gray-600 text-white py-2 px-4 rounded transition-colors mb-3"
+          >
+            {checking ? 'Checking for updates...' : 'Check for Updates'}
+          </button>
+
+          {updateInfo && (
+            <div className="text-sm">
+              {updateInfo.is_update_available ? (
+                <div className="text-green-400">
+                  <p className="mb-2">{updateInfo.message}</p>
+                  <button
+                    onClick={openUpdateURL}
+                    className="w-full bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded transition-colors"
+                  >
+                    Download Update
+                  </button>
+                </div>
+              ) : (
+                <p className="text-gray-300">{updateInfo.message}</p>
+              )}
+            </div>
+          )}
+        </div>
+
+        {/* Close Button */}
+        <button
+          onClick={onClose}
+          className="w-full bg-gray-600 hover:bg-gray-500 text-white py-2 px-4 rounded transition-colors"
+        >
+          Close
+        </button>
+      </div>
+    </div>
+  );
+};
