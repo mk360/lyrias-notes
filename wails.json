@@ -16,5 +16,10 @@
     "productVersion": "1.0.0",
     "copyright": "Copyright © 2026",
     "comments": "A matchup notes app for Granblue Fantasy Versus Rising"
+  },
+  "build": {
+    "env": {
+      "CGO_ENABLED": "1"
+    }
   }
 }
