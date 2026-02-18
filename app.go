@@ -12,6 +12,7 @@ import (
 	"log"
 	"os"
 	"path/filepath"
+	"strings"
 )
 
 // App struct
@@ -154,21 +155,27 @@ func (a *App) CheckForUpdates() (*models.UpdateInfo, error) {
 func (a *App) GetCharacterList() []string {
 	return []string{
 		// Row 1
-		"zeta", "vaseraga", "beatrix", "eustace", "anre", "seox", "lancelot", "vane", "percival", "siegfried",
+		"Zeta", "Vaseraga", "Beatrix", "Eustace", "Anre", "Seox", "Lancelot", "Vane", "Percival", "Siegfried",
 		// Row 2
-		"versusia", "zooey", "ladiva", "narmaya", "gran", "djeeta", "charlotta", "ferry", "anila", "vikala",
+		"Versusia", "Zooey", "Ladiva", "Narmaya", "Gran", "Djeeta", "Charlotta", "Ferry", "Anila", "Vikala",
 		// Row 3
-		"galleon", "grimnir", "metera", "lowain", "katalina", "vira", "yuel", "soriz", "cagliostro", "wilnas",
+		"Galleon", "Grimnir", "Metera", "Lowain", "Katalina", "Vira", "Yuel", "Soriz", "Cagliostro", "Wilnas",
 		// Row 4
-		"ilsa", "sandalphon", "nier", "belial", "beelzebub", "lucilius", "avatar belial", "2B", "meg",
+		"Ilsa", "Sandalphon", "Nier", "Belial", "Beelzebub", "Lucilius", "Avatar Belial", "2B", "Meg",
 		// EX variants
-		"narmaya_ex", "gran_ex", "djeeta_ex",
+		"Narmaya (EX)", "Gran (EX)", "Djeeta (EX)",
 	}
 }
 
 // GetExCharacters returns the list of characters with EX variants
 func (a *App) GetExCharacters() []string {
-	return []string{"narmaya", "gran", "djeeta"}
+	var filtered = []string{}
+	for _, char := range a.GetCharacterList() {
+		if strings.Contains(char, "(EX)") {
+			filtered = append(filtered, char)
+		}
+	}
+	return filtered
 }
 
 // Greet returns a greeting for the given name

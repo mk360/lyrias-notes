@@ -28,10 +28,7 @@ export const CharacterGrid: React.FC = () => {
   };
 
   const getCharacterImage = (character: string) => {
-    const charName = exModeEnabled && EX_CHARACTERS.includes(character)
-      ? `${character}_ex`
-      : character;
-    return `/src/assets/characters/${charName}.png`;
+    return `/src/assets/character_select/${character}.png`;
   };
 
   const getExToggleImage = () => {
