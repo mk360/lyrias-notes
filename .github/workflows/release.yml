@@ -71,7 +71,6 @@ jobs:
           [Desktop Entry]
           Name=GBVSR Matchup Notes
           Exec=gbvsr-matchup-notes
-          Icon=gbvsr-matchup-notes
           Type=Application
           Categories=Utility;
           EOF
