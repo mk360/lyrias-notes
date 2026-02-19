@@ -45,7 +45,7 @@ jobs:
 
       - name: Build application (Linux)
         if: matrix.platform == 'ubuntu-latest'
-        run: wails build -platform linux/amd64
+        run: wails build -platform linux/amd64 -tags webkit2_41
 
       - name: Build application (Windows)
         if: matrix.platform == 'windows-latest'
