@@ -1,1 +1,5 @@
-- Add stuff
+- Adjust theme for character details panel
+- Add a starting heading for the app's entry view
+- Adjust the character grid
+- Dump moves
+- Allow search for moves
