@@ -65,6 +65,14 @@ jobs:
           
           # Copy binary
           cp build/bin/gbvsr-matchup-notes AppDir/usr/bin/
+          if [ -f build/appicon.png ]; then
+            cp build/appicon.png AppDir/gbvsr-matchup-notes.png
+            cp build/appicon.png AppDir/usr/share/icons/hicolor/256x256/apps/gbvsr-matchup-notes.png
+            ICON_LINE="Icon=gbvsr-matchup-notes"
+          else
+            echo "Warning: build/appicon.png not found, building without icon"
+            ICON_LINE=""
+          fi
           
           # Create desktop file in AppDir root (required by appimagetool)
           cat > AppDir/gbvsr-matchup-notes.desktop <<EOF
