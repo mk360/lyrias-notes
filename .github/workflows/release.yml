@@ -66,8 +66,8 @@ jobs:
           # Copy binary
           cp build/bin/gbvsr-matchup-notes AppDir/usr/bin/
           
-          # Create desktop file
-          cat > AppDir/usr/share/applications/gbvsr-matchup-notes.desktop <<EOF
+          # Create desktop file in AppDir root (required by appimagetool)
+          cat > AppDir/gbvsr-matchup-notes.desktop <<EOF
           [Desktop Entry]
           Name=GBVSR Matchup Notes
           Exec=gbvsr-matchup-notes
@@ -75,6 +75,9 @@ jobs:
           Type=Application
           Categories=Utility;
           EOF
+
+          # Also copy to standard location
+          cp AppDir/gbvsr-matchup-notes.desktop AppDir/usr/share/applications/
           
           # Create AppRun
           cat > AppDir/AppRun <<EOF
