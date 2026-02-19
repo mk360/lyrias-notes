@@ -215,7 +215,7 @@ git push origin v1.0.0
 - [ ] Image upload/paste in notes
 - [ ] Search functionality UI
 - [ ] Better error handling and loading states
-- [ ] Implement search by Official name of a move, classic input, or simplyfied input
+- [ ] Implement search by Official name of a move, classic input, or simplified input
 - [ ] autocomplete for the search functionality
 
 ## Contributing
