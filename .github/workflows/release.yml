@@ -111,9 +111,6 @@ jobs:
         with:
           name: windows-build
           path: ./
-          
-      - name: List files (debug)
-        run: ls -la
 
   release:
     needs: build
