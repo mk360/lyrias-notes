@@ -4,13 +4,13 @@ import { useAppContext } from '../../context/AppContext';
 import { CharacterCard } from './CharacterCard';
 
 const CHARACTERS = {
-  row1: ['Zeta', 'vaseraga', 'beatrix', 'eustace', 'anre', 'seox', 'lancelot', 'vane', 'percival', 'siegfried'],
-  row2: ['versusia', 'zooey', 'ladiva', 'narmaya', 'gran', 'djeeta', 'charlotta', 'ferry', 'anila', 'vikala'],
-  row3: ['galleon', 'grimnir', 'metera', 'lowain', 'katalina', 'vira', 'yuel', 'soriz', 'cagliostro', 'wilnas'],
-  row4: ['ilsa', 'sandalphon', 'nier', 'belial', 'beelzebub', 'lucilius', 'avatar belial', '2B', 'meg'],
+  row1: ['Zeta', 'Vaseraga', 'Beatrix', 'Eustace', 'Anre', 'Seox', 'Lancelot', 'Vane', 'Percival', 'Siegfried'],
+  row2: ['Versusia', 'Zooey', 'Ladiva', 'Narmaya', 'Gran', 'Djeeta', 'Charlotta', 'Ferry', 'Anila', 'Vikala'],
+  row3: ['Galleon', 'Grimnir', 'Metera', 'Lowain', 'Katalina', 'Vira', 'Yuel', 'Soriz', 'Cagliostro', 'Wilnas'],
+  row4: ['Ilsa', 'Sandalphon', 'Nier', 'Belial', 'Beelzebub', 'Lucilius', 'Avatar Belial', '2B', 'Meg'],
 };
 
-const EX_CHARACTERS = ['narmaya', 'gran', 'djeeta'];
+const EX_CHARACTERS = ['Narmaya', 'Gran', 'Djeeta'];
 
 export const CharacterGrid: React.FC = () => {
   const { exModeEnabled, toggleExMode } = useAppContext();
@@ -31,7 +31,7 @@ export const CharacterGrid: React.FC = () => {
     const charName = exModeEnabled && EX_CHARACTERS.includes(character)
       ? `${character}_ex`
       : character;
-    return `/assets/img/characters/${charName}.png`;
+    return `/img/character_select/${character}.png`;
   };
 
   const getExToggleImage = () => {
