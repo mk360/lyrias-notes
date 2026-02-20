@@ -54,6 +54,8 @@ jobs:
       - name: Package Linux AppImage
         if: matrix.platform == 'ubuntu-latest'
         run: |
+         pwd
+         ls -R .
           # Install appimagetool
           wget https://github.com/AppImage/AppImageKit/releases/download/continuous/appimagetool-x86_64.AppImage
           chmod +x appimagetool-x86_64.AppImage
@@ -65,10 +67,10 @@ jobs:
           
           # Copy binary
           cp build/bin/gbvsr-matchup-notes AppDir/usr/bin/
-          if [ -f build/appicon.png ]; then
-            cp build/appicon.png AppDir/gbvsr-matchup-notes.png
+          if [ -f assets/appicon.png ]; then
+            cp assets/appicon.png AppDir/gbvsr-matchup-notes.png
           else
-            echo "Error: build/appicon.png not found"
+            echo "Error: assets/appicon.png not found"
             exit 1
           fi
           
