@@ -4,7 +4,7 @@ import { useAppContext } from '../../context/AppContext';
 import { CharacterCard } from './CharacterCard';
 
 const CHARACTERS = {
-  row1: ['zeta', 'vaseraga', 'beatrix', 'eustace', 'anre', 'seox', 'lancelot', 'vane', 'percival', 'siegfried'],
+  row1: ['Zeta', 'vaseraga', 'beatrix', 'eustace', 'anre', 'seox', 'lancelot', 'vane', 'percival', 'siegfried'],
   row2: ['versusia', 'zooey', 'ladiva', 'narmaya', 'gran', 'djeeta', 'charlotta', 'ferry', 'anila', 'vikala'],
   row3: ['galleon', 'grimnir', 'metera', 'lowain', 'katalina', 'vira', 'yuel', 'soriz', 'cagliostro', 'wilnas'],
   row4: ['ilsa', 'sandalphon', 'nier', 'belial', 'beelzebub', 'lucilius', 'avatar belial', '2B', 'meg'],
@@ -28,7 +28,10 @@ export const CharacterGrid: React.FC = () => {
   };
 
   const getCharacterImage = (character: string) => {
-    return `/src/assets/character_select/${character}.png`;
+    const charName = exModeEnabled && EX_CHARACTERS.includes(character)
+      ? `${character}_ex`
+      : character;
+    return `/assets/img/characters/${charName}.png`;
   };
 
   const getExToggleImage = () => {

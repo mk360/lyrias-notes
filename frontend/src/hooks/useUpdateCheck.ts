@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { models } from '../../wailsjs/go/models';
-import { CheckForUpdates } from '../../wailsjs/go/main/App';
 
 export const useUpdateCheck = () => {
   const [updateInfo, setUpdateInfo] = useState<models.UpdateInfo | null>(null);
@@ -11,8 +10,8 @@ export const useUpdateCheck = () => {
     setChecking(true);
     setError(null);
     try {
-      const info = await CheckForUpdates();
-      setUpdateInfo(info);
+      // const info = await CheckForUpdates();
+      // setUpdateInfo(info);
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Failed to check for updates');
       console.error('Failed to check for updates:', err);

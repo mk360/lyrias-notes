@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
 import { Config } from '../types';
-import { GetConfig, GetExModeEnabled, SetExModeEnabled } from '../../wailsjs/go/main/App';
+import { GetConfig, GetExModeEnabled, SetExModeEnabled } from '../services/storage';
 
 interface AppContextType {
   config: Config | null;

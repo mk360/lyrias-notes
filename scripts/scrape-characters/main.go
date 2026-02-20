@@ -10,9 +10,11 @@ import (
 	"sync"
 )
 
-var targetDir = "../../frontend/src/assets"
+var targetDir = "../../frontend/dist/assets/img"
 
 func main() {
+	os.MkdirAll("../../frontend/dist/assets/img/characters", 0644)
+	os.MkdirAll("../../frontend/dist/assets/img/character_select", 0644)
 	var portraitWaitingGroup sync.WaitGroup
 	for _, char := range common.Roster {
 		if !strings.Contains(char, "(EX)") {

@@ -1,9 +1,8 @@
 import { useState, useEffect, useCallback } from 'react';
-import { models } from '../../wailsjs/go/models';
-import { GetNotesByCharacter, CreateNote, UpdateNote, DeleteNote, SearchNotes } from '../../wailsjs/go/main/App';
+import { Note, GetNotesByCharacter, CreateNote, UpdateNote, DeleteNote, SearchNotes } from '../services/storage';
 
 export const useNotes = (characterName: string) => {
-  const [notes, setNotes] = useState<models.Note[]>([]);
+  const [notes, setNotes] = useState<Note[]>([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -27,17 +26,13 @@ export const useNotes = (characterName: string) => {
     fetchNotes();
   }, [fetchNotes]);
 
-  const createNote = async (note: Omit<models.Note, 'id' | 'created_at' | 'updated_at'>) => {
+  const createNote = async (note: Omit<Note, 'id' | 'created_at' | 'updated_at'>) => {
     try {
-      const newNote = new models.Note({
-        id: 0,
-        character_name: note.character_name,
-        title: note.title,
-        content: note.content,
+      await CreateNote({
+        ...note,
         created_at: new Date().toISOString(),
         updated_at: new Date().toISOString(),
       });
-      await CreateNote(newNote);
       await fetchNotes();
     } catch (err) {
       console.error('Failed to create note:', err);
@@ -45,7 +40,7 @@ export const useNotes = (characterName: string) => {
     }
   };
 
-  const updateNote = async (note: models.Note) => {
+  const updateNote = async (note: Note) => {
     try {
       await UpdateNote(note);
       await fetchNotes();
