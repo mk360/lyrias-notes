@@ -57,46 +57,6 @@ jobs:
           # Install appimagetool
           wget https://github.com/AppImage/AppImageKit/releases/download/continuous/appimagetool-x86_64.AppImage
           chmod +x appimagetool-x86_64.AppImage
-          
-          # Create AppImage structure
-          mkdir -p AppDir/usr/bin
-          mkdir -p AppDir/usr/share/applications
-          mkdir -p AppDir/usr/share/icons/hicolor/256x256/apps
-          
-          # Copy binary
-          cp build/bin/gbvsr-matchup-notes AppDir/usr/bin/
-          if [ -f build/linux/appicon.png ]; then
-            cp build/linux/appicon.png AppDir/gbvsr-matchup-notes.png
-            cp build/linux/appicon.png AppDir/usr/share/icons/hicolor/256x256/apps/gbvsr-matchup-notes.png
-            ICON_LINE="Icon=gbvsr-matchup-notes"
-          else
-            echo "Warning: build/linux/appicon.png not found, building without icon"
-            ICON_LINE=""
-          fi
-          
-          # Create desktop file in AppDir root (required by appimagetool)
-          cat > AppDir/gbvsr-matchup-notes.desktop <<EOF
-          [Desktop Entry]
-          Name=GBVSR Matchup Notes
-          Exec=gbvsr-matchup-notes
-          Type=Application
-          Categories=Utility;
-          EOF
-
-          # Also copy to standard location
-          cp AppDir/gbvsr-matchup-notes.desktop AppDir/usr/share/applications/
-          
-          # Create AppRun
-          cat > AppDir/AppRun <<EOF
-          #!/bin/bash
-          SELF=\$(readlink -f "\$0")
-          HERE=\${SELF%/*}
-          export PATH="\${HERE}/usr/bin:\${PATH}"
-          exec "\${HERE}/usr/bin/gbvsr-matchup-notes" "\$@"
-          EOF
-          chmod +x AppDir/AppRun
-          
-          # Build AppImage
           ARCH=x86_64 ./appimagetool-x86_64.AppImage AppDir gbvsr-matchup-notes-linux-amd64.AppImage
 
       - name: Upload artifacts (Linux)
