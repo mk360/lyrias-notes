@@ -103,14 +103,17 @@ jobs:
         uses: actions/upload-artifact@v6
         with:
           name: linux-build
-          path: build/bin/gbvsr-matchup-notes-linux-amd64.AppImage
+          path: ./
 
       - name: Upload artifacts (Windows)
         if: matrix.platform == 'windows-latest'
         uses: actions/upload-artifact@v6
         with:
           name: windows-build
-          path: build/bin/gbvsr-matchup-notes.exe
+          path: ./
+          
+      - name: List files (debug)
+        run: ls -la
 
   release:
     needs: build
@@ -129,4 +132,4 @@ jobs:
           draft: false
           prerelease: false
         env:
-          GITHUB_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
