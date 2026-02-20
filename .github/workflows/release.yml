@@ -64,7 +64,6 @@ jobs:
           mkdir -p AppDir/usr/share/icons/hicolor/256x256/apps
           
           # Copy binary
-          ls build -al
           cp build/bin/gbvsr-matchup-notes AppDir/usr/bin/
           if [ -f build/linux/appicon.png ]; then
             cp build/linux/appicon.png AppDir/gbvsr-matchup-notes.png
