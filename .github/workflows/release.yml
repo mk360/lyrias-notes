@@ -118,22 +118,15 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - name: Download Linux artifact
+      - name: Download all artifacts
         uses: actions/download-artifact@v7
-        with:
-          name: linux-build
-
-      - name: Download Windows artifact
-        uses: actions/download-artifact@v7
-        with:
-          name: windows-build
 
       - name: Create Release
         uses: softprops/action-gh-release@v1
         with:
           files: |
-            gbvsr-matchup-notes-linux-amd64.AppImage
-            gbvsr-matchup-notes.exe
+            linux-build/gbvsr-matchup-notes-linux-amd64.AppImage
+            windows-build/gbvsr-matchup-notes.exe
           draft: false
           prerelease: false
         env:
