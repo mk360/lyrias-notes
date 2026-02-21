@@ -42,10 +42,10 @@ export interface Config {
 // Hardcoded config (previously from Go backend)
 const config: Config = {
   app: {
-    name: 'GBVSR Matchup Notes',
+    name: 'Lyria\'s Notepad',
     version: '1.0.0',
-    author: 'Developer Name',
-    repository: 'https://github.com/yourusername/gbvsr-matchup-notes',
+    author: 'TonionTheOnion & Gram',
+    repository: 'https://github.com/mk360/gbvsr-notes-app',
   },
   colors: {
     light: '#DE7CD1',

@@ -36,8 +36,8 @@ export const CharacterGrid: React.FC = () => {
 
   const getExToggleImage = () => {
     return exModeEnabled 
-      ? '/src/assets/ex_toggle_on.png' 
-      : '/src/assets/ex_toggle_off.png';
+      ? '/ex-on.png' 
+      : '/ex-off.png';
   };
 
   return (
@@ -45,10 +45,13 @@ export const CharacterGrid: React.FC = () => {
       {/* EX Toggle Button */}
       <button
         onClick={toggleExMode}
-        className="mb-8 transition-opacity hover:opacity-80"
+        className="mb-4 transition-opacity hover:opacity-80 flex justify-center"
         style={{ width: '216px' }}
       >
-        <img src={getExToggleImage()} alt="EX Mode Toggle" className="w-full h-auto" />
+        <img src={getExToggleImage()} alt="EX Mode Toggle" style={{
+          height: 27,
+          width: 44
+        }} />
       </button>
 
       {/* Character Grid */}
@@ -69,7 +72,7 @@ export const CharacterGrid: React.FC = () => {
         ))}
 
         {/* Row 4 (9 characters, centered) */}
-        <div className="flex gap-2 justify-center" style={{ marginLeft: '54px', marginRight: '54px' }}>
+        <div className="flex gap-1 justify-center" style={{ marginLeft: '54px', marginRight: '54px' }}>
           {CHARACTERS.row4.map((character) => (
             <CharacterCard
               key={character}

@@ -20,7 +20,7 @@ export const CharacterCard: React.FC<CharacterCardProps> = ({
       }`}
       onClick={onClick}
       disabled={isDisabled}
-      style={{ width: '54px', height: '120px' }}
+      style={{ width: '54px', height: '146px' }}
     >
       <img
         src={imagePath}

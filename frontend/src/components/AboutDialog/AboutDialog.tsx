@@ -54,7 +54,7 @@ export const AboutDialog: React.FC<AboutDialogProps> = ({ isOpen, onClose }) => 
 
         {/* Description */}
         <p className="text-gray-300 mb-4 text-center">
-          A desktop app for managing matchup notes for Granblue Fantasy Versus Rising with frame data integration.
+          A web app that helps you sort through combo notations, matchup knowledge, and other things about GBVSR characters!
         </p>
 
         {/* Author */}
@@ -81,24 +81,6 @@ export const AboutDialog: React.FC<AboutDialogProps> = ({ isOpen, onClose }) => 
           >
             {checking ? 'Checking for updates...' : 'Check for Updates'}
           </button>
-
-          {updateInfo && (
-            <div className="text-sm">
-              {updateInfo.is_update_available ? (
-                <div className="text-green-400">
-                  <p className="mb-2">{updateInfo.message}</p>
-                  <button
-                    onClick={openUpdateURL}
-                    className="w-full bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded transition-colors"
-                  >
-                    Download Update
-                  </button>
-                </div>
-              ) : (
-                <p className="text-gray-300">{updateInfo.message}</p>
-              )}
-            </div>
-          )}
         </div>
 
         {/* Close Button */}
