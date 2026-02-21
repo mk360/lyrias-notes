@@ -142,21 +142,12 @@ const FrameDataPanel: React.FC<FrameDataPanelProps> = ({ characterName }) => {
 
   return (
     <div className="h-full bg-white overflow-y-auto">
-      {/* Header with character name and refresh button */}
       <div className="sticky top-0 bg-white border-b border-gray-200 p-4 z-10">
         <div className="flex items-center justify-between">
           <h2 className="text-xl font-bold capitalize">{characterName} Frame Data</h2>
-          {/* <button
-            onClick={handleRefresh}
-            className="px-3 py-1 text-sm bg-gray-100 hover:bg-gray-200 rounded flex items-center gap-1"
-            title="Refresh frame data from Dustloop"
-          >
-            🔄 Refresh
-          </button> */}
         </div>
       </div>
 
-      {/* Character Portrait */}
       {characterPortrait && (
         <div className="p-4 border-b border-gray-200">
           <img
@@ -164,7 +155,6 @@ const FrameDataPanel: React.FC<FrameDataPanelProps> = ({ characterName }) => {
             alt={characterName}
             className="w-full max-w-xs mx-auto rounded shadow-md"
             onError={(e) => {
-              // Hide image if it fails to load
               (e.target as HTMLImageElement).style.display = 'none';
             }}
           />
