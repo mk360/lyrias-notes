@@ -10,6 +10,8 @@ import (
 	"net/url"
 	"os"
 	"regexp"
+	"strings"
+	"sync"
 )
 
 var frameDataRegex, regexErr = regexp.Compile(`(\n|)<[\/]*.+?>(\n|)`)
@@ -36,8 +38,9 @@ func main() {
 		log.Fatalln(regexErr)
 	}
 	var targetDir = "../../frontend/public/img/moves"
+	var errors = []string{}
 	os.MkdirAll(targetDir, 0644)
-	// var movesWaitingGroup sync.WaitGroup
+	var moveImagesWaitingGroup sync.WaitGroup
 	for _, char := range common.Roster {
 		var storedMoveData = []MoveData{}
 		var query = url.Values{}
@@ -57,12 +60,35 @@ func main() {
 		json.Unmarshal(cleanedData, &storedMoveData)
 
 		for _, move := range storedMoveData {
-			move.Images
+			for _, img := range move.Images {
+				moveImagesWaitingGroup.Add(1)
+				go downloadMoveImg(targetDir, img, char, &moveImagesWaitingGroup, errors)
+			}
 		}
+		moveImagesWaitingGroup.Wait()
+		fmt.Println(errors)
+		errors = []string{}
 		os.WriteFile(char+".json", cleanedData, 0644)
 	}
 }
 
-func downloadMoveImg(url string, filename string, character string) {
-
+func downloadMoveImg(targetDir string, filename string, character string, wg *sync.WaitGroup, errors []string) {
+	var moveDir = targetDir + "/" + character
+	os.MkdirAll(moveDir, 0644)
+	var strippedFilename = strings.ReplaceAll(filename, "\n", "")
+	var fullFilename = strippedFilename
+	var _, er = os.Stat(moveDir + "/" + fullFilename)
+	if er != nil {
+		var filepath = fmt.Sprintf("https://dustloop.com/w/Special:Filepath/%s", strippedFilename)
+		var req, err = http.Get(filepath)
+		if err != nil {
+			log.Fatalln(err)
+		}
+		var data, _ = io.ReadAll(req.Body)
+		err = os.WriteFile(moveDir+"/"+fullFilename, data, 0644)
+		if err != nil {
+			errors = append(errors, fullFilename)
+		}
+	}
+	wg.Done()
 }

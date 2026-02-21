@@ -1,0 +1,799 @@
+[
+    {
+        "name": "",
+        "input": "2H\n",
+        "damage": "1300\n",
+        "guard": "Mid\n",
+        "startup": "11\n",
+        "active": "6\n",
+        "recovery": "24\n",
+        "onBlock": "-13\n",
+        "onHit": "-9\n",
+        "onCH": "-1\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Gran_2H.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "2L\n",
+        "damage": "400\n",
+        "guard": "Low\n",
+        "startup": "6\n",
+        "active": "3\n",
+        "recovery": "10\n",
+        "onBlock": "-2\n",
+        "onHit": "+2\n",
+        "onCH": "+4\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Gran_2L.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "2M\n",
+        "damage": "900\n",
+        "guard": "Mid\n",
+        "startup": "7\n",
+        "active": "5\n",
+        "recovery": "9\n",
+        "onBlock": "+1\n",
+        "onHit": "+5\n",
+        "onCH": "+9\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Gran_2M.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "2U\n",
+        "damage": "1000\n",
+        "guard": "Low\n",
+        "startup": "7\n",
+        "active": "6\n",
+        "recovery": "21\n",
+        "onBlock": "-12\n",
+        "onHit": "HKD +43\n",
+        "onCH": "HKD +47\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Gran_2U.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "66H\n",
+        "damage": "1200\n",
+        "guard": "Mid\n",
+        "startup": "15\n",
+        "active": "4\n",
+        "recovery": "23\n",
+        "onBlock": "-8\n",
+        "onHit": "+11Force Crouch\n",
+        "onCH": "+15Force Crouch\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Gran_66H.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "66L\n",
+        "damage": "600\n",
+        "guard": "Mid\n",
+        "startup": "8\n",
+        "active": "3\n",
+        "recovery": "10 [15]\n",
+        "onBlock": "+2\n",
+        "onHit": "+6\n",
+        "onCH": "+8\n",
+        "meter": "+480\n",
+        "images": [
+            "GBVSR_Gran_66L.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "66M\n",
+        "damage": "1100\n",
+        "guard": "Low\n",
+        "startup": "12\n",
+        "active": "4\n",
+        "recovery": "21\n",
+        "onBlock": "-8\n",
+        "onHit": "KD +24\n",
+        "onCH": "HKD +49\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Gran_cXX6M.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "c.H\n",
+        "damage": "1600\n",
+        "guard": "Mid\n",
+        "startup": "8\n",
+        "active": "4\n",
+        "recovery": "18\n",
+        "onBlock": "-3\n",
+        "onHit": "+1\n",
+        "onCH": "+13\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Gran_cH.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "c.L\n",
+        "damage": "600\n",
+        "guard": "Mid\n",
+        "startup": "5\n",
+        "active": "3\n",
+        "recovery": "6\n",
+        "onBlock": "+4\n",
+        "onHit": "+8\n",
+        "onCH": "+10\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Gran_cL.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "c.M\n",
+        "damage": "1100\n",
+        "guard": "Mid\n",
+        "startup": "6\n",
+        "active": "3\n",
+        "recovery": "12\n",
+        "onBlock": "\u00b10\n",
+        "onHit": "+4\n",
+        "onCH": "+8\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Gran_cM.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "c.XX\n",
+        "damage": "700\n",
+        "guard": "Mid\n",
+        "startup": "9\n",
+        "active": "3\n",
+        "recovery": "15\n",
+        "onBlock": "-3\n",
+        "onHit": "+1\n",
+        "onCH": "+5\n",
+        "meter": "+480\n",
+        "images": [
+            "GBVSR_Gran_cXX.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "c.XX6H\n",
+        "damage": "1000\n",
+        "guard": "High\n",
+        "startup": "18\n",
+        "active": "3\n",
+        "recovery": "22\n",
+        "onBlock": "-4\n",
+        "onHit": "+1Force Crouch\n",
+        "onCH": "HKD +32\n",
+        "meter": "+480\n",
+        "images": [
+            "GBVSR_Gran_cXX6H.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "c.XX6M\n",
+        "damage": "1000\n",
+        "guard": "Low\n",
+        "startup": "12\n",
+        "active": "3\n",
+        "recovery": "16\n",
+        "onBlock": "-4\n",
+        "onHit": "KD +30\n",
+        "onCH": "HKD +55\n",
+        "meter": "+480\n",
+        "images": [
+            "GBVSR_Gran_cXX6M.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "c.XXX\n",
+        "damage": "1000\n",
+        "guard": "Mid\n",
+        "startup": "12\n",
+        "active": "3\n",
+        "recovery": "18\n",
+        "onBlock": "-4\n",
+        "onHit": "\u00b10\n",
+        "onCH": "+8\n",
+        "meter": "+600\n",
+        "images": [
+            "GBVSR_Gran_cXXX.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "f.H\n",
+        "damage": "1300\n",
+        "guard": "Mid\n",
+        "startup": "9\n",
+        "active": "5\n",
+        "recovery": "21\n",
+        "onBlock": "-9\n",
+        "onHit": "-5\n",
+        "onCH": "+3\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Gran_fH.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "f.L\n",
+        "damage": "600\n",
+        "guard": "Mid\n",
+        "startup": "6\n",
+        "active": "3\n",
+        "recovery": "9\n",
+        "onBlock": "+1\n",
+        "onHit": "+5\n",
+        "onCH": "+7\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Gran_fL.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "f.M\n",
+        "damage": "900\n",
+        "guard": "Mid\n",
+        "startup": "7\n",
+        "active": "3\n",
+        "recovery": "18\n",
+        "onBlock": "-6\n",
+        "onHit": "-2\n",
+        "onCH": "+2\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Gran_fM.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "j.H\n",
+        "damage": "1000\n",
+        "guard": "High\/Air\n",
+        "startup": "7\n",
+        "active": "6\n",
+        "recovery": "Until L+1\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Gran_jH.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "j.L\n",
+        "damage": "600\n",
+        "guard": "High\/Air\n",
+        "startup": "5\n",
+        "active": "Until L\n",
+        "recovery": "L+1\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Gran_jL.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "j.M\n",
+        "damage": "700\n",
+        "guard": "High\/Air\n",
+        "startup": "6\n",
+        "active": "7\n",
+        "recovery": "Until L+1\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Gran_jM.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "j.U\n",
+        "damage": "900\n",
+        "guard": "High\/Air\n",
+        "startup": "10\n",
+        "active": "8\n",
+        "recovery": "Until L+1\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Gran_jU.png\n"
+        ]
+    },
+    {
+        "name": "Air Throw\n",
+        "input": "j.LU\n",
+        "damage": "2500\n",
+        "guard": "Airthrow\n",
+        "startup": "5\n",
+        "active": "5\n",
+        "recovery": "Until L+6\n",
+        "onBlock": "",
+        "onHit": "HKD \u2248+48\n",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Gran_AirThrow.png\n"
+        ]
+    },
+    {
+        "name": "Brave Counter\n",
+        "input": "BC\n",
+        "damage": "500\n",
+        "guard": "Mid\n",
+        "startup": "10 [18]\n",
+        "active": "3 [2]\n",
+        "recovery": "19 [35]\n",
+        "onBlock": "-2\n",
+        "onHit": "Air Tech +21 [+5]\n",
+        "onCH": "HKD +54 [HKD +43]\n",
+        "meter": "\u00b10\n",
+        "images": [
+            "GBVSR_Gran_BC.png\n"
+        ]
+    },
+    {
+        "name": "Cancel\n",
+        "input": "5[U]~X\n",
+        "damage": "",
+        "guard": "",
+        "startup": "",
+        "active": "",
+        "recovery": "Total 16\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            ""
+        ]
+    },
+    {
+        "name": "Catastrophe\n",
+        "input": "236236U\n",
+        "damage": "960\u00d72, 360\u00d73, 3000 [800\u00d75]\n",
+        "guard": "All\n",
+        "startup": "8+5\n",
+        "active": "50\n",
+        "recovery": "Total 99\n",
+        "onBlock": "-18\n",
+        "onHit": "HKD +45 [HKD +36]\n",
+        "onCH": "HKD +45 [HKD +36]\n",
+        "meter": "-10000\n",
+        "images": [
+            "GBVSR_Gran_236236U_Start.png",
+            "GBVSR_Gran_236236U.png",
+            "GBVSR_Gran_236236U_Finish.png\n"
+        ]
+    },
+    {
+        "name": "Eternal Edge\n",
+        "input": "236236H~236U\n",
+        "damage": "100\u00d730, 700\n",
+        "guard": "",
+        "startup": "2+7\n",
+        "active": "2,3\u00d730\n",
+        "recovery": "48\n",
+        "onBlock": "",
+        "onHit": "HKD +40~+47\n",
+        "onCH": "",
+        "meter": "-10000\n",
+        "images": [
+            "GBVSR_Gran_236236H236U_Start.png",
+            "GBVSR_Gran_236236H236U.png\n"
+        ]
+    },
+    {
+        "name": "Ground Throw\n",
+        "input": "LU\n",
+        "damage": "2500\n",
+        "guard": "Throw\n",
+        "startup": "4\n",
+        "active": "3\n",
+        "recovery": "26\n",
+        "onBlock": "",
+        "onHit": "HKD +44\n",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Gran_Throw.png",
+            "GBVSR_Gran_BackThrow.png\n"
+        ]
+    },
+    {
+        "name": "H Overdrive Surge\n",
+        "input": "214H\n",
+        "damage": "1800\n",
+        "guard": "Mid\n",
+        "startup": "13\n",
+        "active": "13\n",
+        "recovery": "15\n",
+        "onBlock": "-11\n",
+        "onHit": "KD +25\n",
+        "onCH": "KD +29\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Gran_214M.png\n"
+        ]
+    },
+    {
+        "name": "H Reginleiv\n",
+        "input": "236H\n",
+        "damage": "400\u00d73\n",
+        "guard": "All\n",
+        "startup": "14\n",
+        "active": "",
+        "recovery": "Total 45\n",
+        "onBlock": "+3\n",
+        "onHit": "+7\n",
+        "onCH": "+7\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Gran_236L.png",
+            "GBVSR_Gran_236M.png\n"
+        ]
+    },
+    {
+        "name": "H Rising Sword\n",
+        "input": "623H\n",
+        "damage": "800, 700\n",
+        "guard": "Mid\u00d73, All\n",
+        "startup": "11\n",
+        "active": "11(23)2(3)19\n",
+        "recovery": "32\n",
+        "onBlock": "-30\n",
+        "onHit": "KD +27\n",
+        "onCH": "KD +27\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Gran_623X.png\n"
+        ]
+    },
+    {
+        "name": "L Overdrive Surge\n",
+        "input": "214L\n",
+        "damage": "700\n",
+        "guard": "Mid\n",
+        "startup": "13\n",
+        "active": "3\n",
+        "recovery": "17\n",
+        "onBlock": "-5\n",
+        "onHit": "-1\n",
+        "onCH": "+3\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Gran_214L.png\n"
+        ]
+    },
+    {
+        "name": "L Overdrive Surge H Followup\n",
+        "input": "214L~214H\n",
+        "damage": "900\n",
+        "guard": "Mid\n",
+        "startup": "9\n",
+        "active": "13\n",
+        "recovery": "12\n",
+        "onBlock": "-10\n",
+        "onHit": "KD +28\n",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Gran_214M.png\n"
+        ]
+    },
+    {
+        "name": "L Overdrive Surge M Followup\n",
+        "input": "214L~214M\n",
+        "damage": "500\n",
+        "guard": "Mid\n",
+        "startup": "9\n",
+        "active": "13\n",
+        "recovery": "12\n",
+        "onBlock": "-10\n",
+        "onHit": "Air Tech +16\n",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Gran_214M.png\n"
+        ]
+    },
+    {
+        "name": "L Reginleiv\n",
+        "input": "236L\n",
+        "damage": "800\n",
+        "guard": "All\n",
+        "startup": "14\n",
+        "active": "",
+        "recovery": "Total 45\n",
+        "onBlock": "-7\n",
+        "onHit": "-3\n",
+        "onCH": "-1\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Gran_236L.png",
+            "GBVSR_Gran_236M.png\n"
+        ]
+    },
+    {
+        "name": "L Rising Sword\n",
+        "input": "623L\n",
+        "damage": "500\u00d72\n",
+        "guard": "Mid, All\n",
+        "startup": "6\n",
+        "active": "2,8\n",
+        "recovery": "27\n",
+        "onBlock": "-16\n",
+        "onHit": "KD +27\n",
+        "onCH": "KD +27\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Gran_623X.png\n"
+        ]
+    },
+    {
+        "name": "M Overdrive Surge\n",
+        "input": "214M\n",
+        "damage": "1500 [1200]\n",
+        "guard": "Mid\n",
+        "startup": "16\n",
+        "active": "13\n",
+        "recovery": "14\n",
+        "onBlock": "-10\n",
+        "onHit": "KD +30 [-2]\n",
+        "onCH": "KD +36 [+4]\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Gran_214M.png\n"
+        ]
+    },
+    {
+        "name": "M Reginleiv\n",
+        "input": "236M\n",
+        "damage": "400, 800\n",
+        "guard": "Mid, All\n",
+        "startup": "13\n",
+        "active": "10(4)\n",
+        "recovery": "Total 55\n",
+        "onBlock": "-4\n",
+        "onHit": "Air Tech +24\n",
+        "onCH": "Air Tech +25\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Gran_236L.png",
+            "GBVSR_Gran_236M.png\n"
+        ]
+    },
+    {
+        "name": "M Rising Sword\n",
+        "input": "623M\n",
+        "damage": "400\u00d72, 300\n",
+        "guard": "Mid\u00d72, All\n",
+        "startup": "9\n",
+        "active": "2(3)2,17\n",
+        "recovery": "32\n",
+        "onBlock": "-30\n",
+        "onHit": "Air Tech +15\n",
+        "onCH": "Air Tech +15\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Gran_623X.png\n"
+        ]
+    },
+    {
+        "name": "Power Raise\n",
+        "input": "5[U]\n",
+        "damage": "",
+        "guard": "",
+        "startup": "10~127\n",
+        "active": "",
+        "recovery": "17\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Gran_5U.png\n"
+        ]
+    },
+    {
+        "name": "Power Raise (Level 0)\n",
+        "input": "5U Lvl 0\n",
+        "damage": "1300\n",
+        "guard": "Mid\n",
+        "startup": "9\n",
+        "active": "9\n",
+        "recovery": "13\n",
+        "onBlock": "-5\n",
+        "onHit": "KD +30\n",
+        "onCH": "KD +38\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Gran_5U_2.png",
+            "GBVSR_Gran_5U_3.png\n"
+        ]
+    },
+    {
+        "name": "Power Raise (Level 1)\n",
+        "input": "5U Lvl 1\n",
+        "damage": "1600\n",
+        "guard": "Mid\n",
+        "startup": "9\n",
+        "active": "9\n",
+        "recovery": "13\n",
+        "onBlock": "-5\n",
+        "onHit": "KD +39\n",
+        "onCH": "KD +41\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Gran_5U_2.png",
+            "GBVSR_Gran_5U_3.png\n"
+        ]
+    },
+    {
+        "name": "Power Raise (Level 2)\n",
+        "input": "5U Lvl 2\n",
+        "damage": "1900\n",
+        "guard": "Mid\n",
+        "startup": "9\n",
+        "active": "9\n",
+        "recovery": "13\n",
+        "onBlock": "-5\n",
+        "onHit": "KD +41\n",
+        "onCH": "KD +43\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Gran_5U_2.png",
+            "GBVSR_Gran_5U_3.png\n"
+        ]
+    },
+    {
+        "name": "Power Raise (Level 3)\n",
+        "input": "5U Lvl 3\n",
+        "damage": "2500\n",
+        "guard": "Mid\n",
+        "startup": "9\n",
+        "active": "9\n",
+        "recovery": "13\n",
+        "onBlock": "-5\n",
+        "onHit": "KD +45\n",
+        "onCH": "KD +47\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Gran_5U_2.png",
+            "GBVSR_Gran_5U_3.png\n"
+        ]
+    },
+    {
+        "name": "Raging Chain\n",
+        "input": "MH~MH\n",
+        "damage": "1000\n",
+        "guard": "Mid\n",
+        "startup": "13\n",
+        "active": "5\n",
+        "recovery": "17\n",
+        "onBlock": "",
+        "onHit": "+15Force Crouch (HKD +63)\n",
+        "onCH": "",
+        "meter": "-2500\n",
+        "images": [
+            "GBVSR_Gran_MH-MH.png\n"
+        ]
+    },
+    {
+        "name": "Raging Strike\n",
+        "input": "MH\n",
+        "damage": "1500\n",
+        "guard": "Guard Crush 45 [52]\n",
+        "startup": "28 (1)\n",
+        "active": "1\n",
+        "recovery": "37\n",
+        "onBlock": "+8Force Stand [+15Force Stand]\n",
+        "onHit": "+15Force Crouch (KD +40)\n",
+        "onCH": "+15Force Crouch\n",
+        "meter": "\u00b10\n",
+        "images": [
+            "GBVSR_Gran_MH.png\n"
+        ]
+    },
+    {
+        "name": "Tempest Blade\n",
+        "input": "236236H\n",
+        "damage": "1500, 3000 [500, 3000]\n",
+        "guard": "Mid\n",
+        "startup": "6+5\n",
+        "active": "3(2)9\n",
+        "recovery": "26\n",
+        "onBlock": "-13\n",
+        "onHit": "HKD +42\n",
+        "onCH": "HKD +42\n",
+        "meter": "-10000\n",
+        "images": [
+            "GBVSR_Gran_236236H_Start.png",
+            "GBVSR_Gran_236236H.png\n"
+        ]
+    },
+    {
+        "name": "Ultimate Overdrive Surge\n",
+        "input": "214U\n",
+        "damage": "1200\u00d72\n",
+        "guard": "Mid\n",
+        "startup": "11\n",
+        "active": "7((9)3)\n",
+        "recovery": "20 [11]\n",
+        "onBlock": "-6\n",
+        "onHit": "HKD +62\n",
+        "onCH": "HKD +62\n",
+        "meter": "-5000\n",
+        "images": [
+            "GBVSR_Gran_214U.png",
+            "GBVSR_Gran_214U_2.png\n"
+        ]
+    },
+    {
+        "name": "Ultimate Reginleiv\n",
+        "input": "236U\n",
+        "damage": "1600\n",
+        "guard": "All\n",
+        "startup": "11\n",
+        "active": "",
+        "recovery": "Total 37\n",
+        "onBlock": "-2\n",
+        "onHit": "HKD +54\n",
+        "onCH": "HKD +54\n",
+        "meter": "-5000\n",
+        "images": [
+            "GBVSR_Gran_236U.png\n"
+        ]
+    },
+    {
+        "name": "Ultimate Rising Sword\n",
+        "input": "623U\n",
+        "damage": "700, 300\u00d72, 700 [300\u00d75]\n",
+        "guard": "Mid\n",
+        "startup": "8\n",
+        "active": "3(3)17 [2(1)10]\n",
+        "recovery": "32\n",
+        "onBlock": "-22\n",
+        "onHit": "HKD +43 [HKD +49]\n",
+        "onCH": "HKD +43 [HKD +49]\n",
+        "meter": "-5000\n",
+        "images": [
+            "GBVSR_Gran_623U.png\n"
+        ]
+    }
+]

@@ -1,0 +1,1126 @@
+[
+    {
+        "name": "",
+        "input": "2H[g]\n",
+        "damage": "1300\n",
+        "guard": "Mid\n",
+        "startup": "11\n",
+        "active": "5\n",
+        "recovery": "23\n",
+        "onBlock": "-11\n",
+        "onHit": "-7\n",
+        "onCH": "+1\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_2H.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "2H[k]\n",
+        "damage": "1300\n",
+        "guard": "Mid\n",
+        "startup": "11\n",
+        "active": "8\n",
+        "recovery": "22\n",
+        "onBlock": "-13\n",
+        "onHit": "-9\n",
+        "onCH": "-1\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_2H_Kagura.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "2L[g]\n",
+        "damage": "400\n",
+        "guard": "Low\n",
+        "startup": "6\n",
+        "active": "3\n",
+        "recovery": "10\n",
+        "onBlock": "-2\n",
+        "onHit": "+2\n",
+        "onCH": "+4\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_2L.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "2L[k]\n",
+        "damage": "400\n",
+        "guard": "Low\n",
+        "startup": "6\n",
+        "active": "3\n",
+        "recovery": "10\n",
+        "onBlock": "-2\n",
+        "onHit": "+2\n",
+        "onCH": "+4\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_2L_Kagura.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "2M[g]\n",
+        "damage": "900\n",
+        "guard": "Mid\n",
+        "startup": "8\n",
+        "active": "4\n",
+        "recovery": "14\n",
+        "onBlock": "-3\n",
+        "onHit": "+1\n",
+        "onCH": "+5\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_2M.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "2M[k]\n",
+        "damage": "900\n",
+        "guard": "Mid\n",
+        "startup": "7\n",
+        "active": "3\n",
+        "recovery": "11\n",
+        "onBlock": "+1\n",
+        "onHit": "+5\n",
+        "onCH": "+9\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_2M_Kagura.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "2U[g]\n",
+        "damage": "1000\n",
+        "guard": "Low\n",
+        "startup": "9\n",
+        "active": "6\n",
+        "recovery": "20\n",
+        "onBlock": "-11\n",
+        "onHit": "HKD +44\n",
+        "onCH": "HKD +48\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_2U.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "2U[k]\n",
+        "damage": "1000\n",
+        "guard": "Low\n",
+        "startup": "7\n",
+        "active": "6\n",
+        "recovery": "21\n",
+        "onBlock": "-12\n",
+        "onHit": "HKD +43\n",
+        "onCH": "HKD +47\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_2U_Kagura.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "5L[g]\n",
+        "damage": "600\n",
+        "guard": "Mid\n",
+        "startup": "6\n",
+        "active": "3\n",
+        "recovery": "7\n",
+        "onBlock": "+3\n",
+        "onHit": "+7\n",
+        "onCH": "+9\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_5L.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "5L[k]\n",
+        "damage": "600\n",
+        "guard": "Mid\n",
+        "startup": "5\n",
+        "active": "3\n",
+        "recovery": "6\n",
+        "onBlock": "+4\n",
+        "onHit": "+8\n",
+        "onCH": "+10\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_5L_Kagura.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "66H[g]\n",
+        "damage": "1200\n",
+        "guard": "Mid\n",
+        "startup": "20\n",
+        "active": "3\n",
+        "recovery": "20\n",
+        "onBlock": "-4\n",
+        "onHit": "KD +41\n",
+        "onCH": "KD +45\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_66Hg.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "66H[k]\n",
+        "damage": "1200\n",
+        "guard": "Mid\n",
+        "startup": "15\n",
+        "active": "4\n",
+        "recovery": "23\n",
+        "onBlock": "-8\n",
+        "onHit": "+11Force Crouch\n",
+        "onCH": "+15Force Crouch\n",
+        "meter": "2\n",
+        "images": [
+            "GBVSR_Narmaya_66Hk.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "66L\n",
+        "damage": "600\n",
+        "guard": "Mid\n",
+        "startup": "8\n",
+        "active": "3\n",
+        "recovery": "10 [15]\n",
+        "onBlock": "+2\n",
+        "onHit": "+6\n",
+        "onCH": "+8\n",
+        "meter": "+480\n",
+        "images": [
+            "GBVSR_Narmaya_66L.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "66M\n",
+        "damage": "1100\n",
+        "guard": "Low\n",
+        "startup": "12\n",
+        "active": "4\n",
+        "recovery": "21\n",
+        "onBlock": "-8\n",
+        "onHit": "KD +24\n",
+        "onCH": "HKD +49\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_cXX6M.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "c.H[g]\n",
+        "damage": "1000, 400\n",
+        "guard": "Mid\n",
+        "startup": "8\n",
+        "active": "2,3\n",
+        "recovery": "23\n",
+        "onBlock": "-7\n",
+        "onHit": "-3\n",
+        "onCH": "-3\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_cH.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "c.H[k]\n",
+        "damage": "1600\n",
+        "guard": "Mid\n",
+        "startup": "9\n",
+        "active": "6\n",
+        "recovery": "15\n",
+        "onBlock": "-2\n",
+        "onHit": "+2\n",
+        "onCH": "+14\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_cH_Kagura.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "c.M[g]\n",
+        "damage": "1100\n",
+        "guard": "Mid\n",
+        "startup": "6\n",
+        "active": "3\n",
+        "recovery": "14\n",
+        "onBlock": "-2\n",
+        "onHit": "+2\n",
+        "onCH": "+6\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_cM.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "c.M[k]\n",
+        "damage": "1100\n",
+        "guard": "Mid\n",
+        "startup": "6\n",
+        "active": "3\n",
+        "recovery": "12\n",
+        "onBlock": "\u00b10\n",
+        "onHit": "+4\n",
+        "onCH": "+8\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_cM_Kagura.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "c.XX\n",
+        "damage": "700\n",
+        "guard": "Mid\n",
+        "startup": "9\n",
+        "active": "3\n",
+        "recovery": "15\n",
+        "onBlock": "-3\n",
+        "onHit": "+1\n",
+        "onCH": "+5\n",
+        "meter": "+480\n",
+        "images": [
+            "GBVSR_Narmaya_cXX.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "c.XX6H\n",
+        "damage": "1000\n",
+        "guard": "High\n",
+        "startup": "18\n",
+        "active": "3\n",
+        "recovery": "22\n",
+        "onBlock": "-4\n",
+        "onHit": "+1Force Crouch\n",
+        "onCH": "HKD +32\n",
+        "meter": "+480\n",
+        "images": [
+            "GBVSR_Narmaya_cXX6H.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "c.XX6M\n",
+        "damage": "1000\n",
+        "guard": "Low\n",
+        "startup": "12\n",
+        "active": "3\n",
+        "recovery": "16\n",
+        "onBlock": "-4\n",
+        "onHit": "KD +30\n",
+        "onCH": "HKD +55\n",
+        "meter": "+480\n",
+        "images": [
+            "GBVSR_Narmaya_cXX6M.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "c.XXX\n",
+        "damage": "1000\n",
+        "guard": "Mid\n",
+        "startup": "12\n",
+        "active": "3\n",
+        "recovery": "18\n",
+        "onBlock": "-4\n",
+        "onHit": "\u00b10\n",
+        "onCH": "+8\n",
+        "meter": "+600\n",
+        "images": [
+            "GBVSR_Narmaya_cXXX.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "f.H[g]\n",
+        "damage": "1300\n",
+        "guard": "Mid\n",
+        "startup": "10\n",
+        "active": "6\n",
+        "recovery": "22\n",
+        "onBlock": "-11\n",
+        "onHit": "-7\n",
+        "onCH": "+1\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_fH.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "f.H[k]\n",
+        "damage": "1300\n",
+        "guard": "Mid\n",
+        "startup": "9\n",
+        "active": "6\n",
+        "recovery": "20\n",
+        "onBlock": "-9\n",
+        "onHit": "-5\n",
+        "onCH": "+3\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_fH_Kagura.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "f.M[g]\n",
+        "damage": "900\n",
+        "guard": "Mid\n",
+        "startup": "9\n",
+        "active": "4\n",
+        "recovery": "17\n",
+        "onBlock": "-6\n",
+        "onHit": "-2\n",
+        "onCH": "+2\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_fM.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "f.M[k]\n",
+        "damage": "900\n",
+        "guard": "Mid\n",
+        "startup": "7\n",
+        "active": "5\n",
+        "recovery": "15\n",
+        "onBlock": "-5\n",
+        "onHit": "-1\n",
+        "onCH": "+3\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_fM_Kagura.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "j.H[g]\n",
+        "damage": "1000\n",
+        "guard": "High\/Air\n",
+        "startup": "9\n",
+        "active": "6\n",
+        "recovery": "Until L+1\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_jH.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "j.H[k]\n",
+        "damage": "1000\n",
+        "guard": "High\/Air\n",
+        "startup": "9\n",
+        "active": "9\n",
+        "recovery": "Until L+1\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_jH_Kagura.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "j.L[g]\n",
+        "damage": "600\n",
+        "guard": "High\/Air\n",
+        "startup": "5\n",
+        "active": "Until L\n",
+        "recovery": "1\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_jL.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "j.L[k]\n",
+        "damage": "600\n",
+        "guard": "High\/Air\n",
+        "startup": "5\n",
+        "active": "Until L\n",
+        "recovery": "1\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_jL_Kagura.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "j.M[g]\n",
+        "damage": "700\n",
+        "guard": "High\/Air\n",
+        "startup": "6\n",
+        "active": "6\n",
+        "recovery": "Until L+1\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_jM.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "j.M[k]\n",
+        "damage": "700\n",
+        "guard": "High\/Air\n",
+        "startup": "7\n",
+        "active": "8\n",
+        "recovery": "Until L+1\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_jM_Kagura.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "j.U[g]\n",
+        "damage": "1000\n",
+        "guard": "High\/Air\n",
+        "startup": "10\n",
+        "active": "6\n",
+        "recovery": "Until L+1\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_jU.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "j.U[k]\n",
+        "damage": "1000\n",
+        "guard": "High\/Air\n",
+        "startup": "7\n",
+        "active": "6\n",
+        "recovery": "Until L+1\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_jU_Kagura.png\n"
+        ]
+    },
+    {
+        "name": "Air Throw\n",
+        "input": "j.LU\n",
+        "damage": "2500\n",
+        "guard": "Airthrow\n",
+        "startup": "5\n",
+        "active": "5\n",
+        "recovery": "Until L+5\n",
+        "onBlock": "",
+        "onHit": "HKD \u2248+46\n",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_AirThrow.png\n"
+        ]
+    },
+    {
+        "name": "Brave Counter\n",
+        "input": "BC\n",
+        "damage": "500\n",
+        "guard": "Mid\n",
+        "startup": "10 [18]\n",
+        "active": "3 [2]\n",
+        "recovery": "19 [35]\n",
+        "onBlock": "-2\n",
+        "onHit": "Air Tech +21 [+5]\n",
+        "onCH": "HKD +54 [HKD +43]\n",
+        "meter": "\u00b10\n",
+        "images": [
+            "GBVSR_Narmaya_BC.png\n"
+        ]
+    },
+    {
+        "name": "Butterfly Effect\n",
+        "input": "5U\n",
+        "damage": "",
+        "guard": "",
+        "startup": "2\n",
+        "active": "",
+        "recovery": "8\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_Genji_Stance.png",
+            "GBVSR_Narmaya_Kagura_Stance.png\n"
+        ]
+    },
+    {
+        "name": "Butterfly Effect: Ame-no-Uzume\n",
+        "input": "236236U\n",
+        "damage": "360\u00d710, 240\u00d75, 1200 [200\u00d715, 1000]\n",
+        "guard": "Mid, All\n",
+        "startup": "7+7\n",
+        "active": "3[(3)3]\u00d715\n",
+        "recovery": "48\n",
+        "onBlock": "-32\n",
+        "onHit": "HKD +42 [HKD +30]\n",
+        "onCH": "HKD +42 [HKD +30]\n",
+        "meter": "-10000\n",
+        "images": [
+            "GBVSR_Narmaya_236236U_Start.png",
+            "GBVSR_Narmaya_236236U.png",
+            "GBVSR_Narmaya_236236U_Finish.png\n"
+        ]
+    },
+    {
+        "name": "Ground Throw\n",
+        "input": "LU\n",
+        "damage": "2500\n",
+        "guard": "Throw\n",
+        "startup": "4\n",
+        "active": "3\n",
+        "recovery": "29\n",
+        "onBlock": "",
+        "onHit": "HKD +44\n",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_Throw.png",
+            "GBVSR_Narmaya_BackThrow.png\n"
+        ]
+    },
+    {
+        "name": "H Absolute Horizon\n",
+        "input": "623H[g]\n",
+        "damage": "600, 300\u00d73\n",
+        "guard": "Mid\n",
+        "startup": "11\n",
+        "active": "2(2)2\u00d73\n",
+        "recovery": "44\n",
+        "onBlock": "-27\n",
+        "onHit": "KD +31\n",
+        "onCH": "KD +31\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_623X.png\n"
+        ]
+    },
+    {
+        "name": "H Crescent Moon\n",
+        "input": "214H[k]\n",
+        "damage": "1600\n",
+        "guard": "All\n",
+        "startup": "32 [28]\n",
+        "active": "8\n",
+        "recovery": "7\n",
+        "onBlock": "+2\n",
+        "onHit": "+6\n",
+        "onCH": "+8\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_214X_Kagura.png\n"
+        ]
+    },
+    {
+        "name": "H Crescent Moon (Midair)\n",
+        "input": "j.214H[k]\n",
+        "damage": "1500\n",
+        "guard": "All\n",
+        "startup": "5\n",
+        "active": "3\n",
+        "recovery": "Until L+1 [L+7]\n",
+        "onBlock": "+2\n",
+        "onHit": "KD +40\n",
+        "onCH": "KD +44\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_214X_Kagura.png\n"
+        ]
+    },
+    {
+        "name": "H Kyokasuigetsu\n",
+        "input": "236H[k]\n",
+        "damage": "400\u00d73\n",
+        "guard": "Mid\n",
+        "startup": "15 [7]\n",
+        "active": "[2(9)]\u00d72,6\n",
+        "recovery": "21\n",
+        "onBlock": "-8\n",
+        "onHit": "KD +39\n",
+        "onCH": "KD +40\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_236X_Kagura.png\n"
+        ]
+    },
+    {
+        "name": "H Mugenkagura\n",
+        "input": "623H[k]\n",
+        "damage": "600, 300\u00d73\n",
+        "guard": "Mid\n",
+        "startup": "20 [6]\n",
+        "active": "4,3,2,1\n",
+        "recovery": "40\n",
+        "onBlock": "-22\n",
+        "onHit": "KD +29\n",
+        "onCH": "KD +29\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_623X_Kagura.png\n"
+        ]
+    },
+    {
+        "name": "H Setsuna\n",
+        "input": "236H[g]\n",
+        "damage": "1300\n",
+        "guard": "All\n",
+        "startup": "15\n",
+        "active": "7\n",
+        "recovery": "18 [29]\n",
+        "onBlock": "-2\n",
+        "onHit": "KD +37\n",
+        "onCH": "KD +41\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_236X.png\n"
+        ]
+    },
+    {
+        "name": "H Transient\n",
+        "input": "214H[g]\n",
+        "damage": "",
+        "guard": "",
+        "startup": "23~31\n",
+        "active": "",
+        "recovery": "5\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_214X.png\n"
+        ]
+    },
+    {
+        "name": "L Absolute Horizon\n",
+        "input": "623L[g]\n",
+        "damage": "600, 400\n",
+        "guard": "All\n",
+        "startup": "6\n",
+        "active": "2(2)6\n",
+        "recovery": "27\n",
+        "onBlock": "-16\n",
+        "onHit": "KD +31\n",
+        "onCH": "KD +31\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_623X.png\n"
+        ]
+    },
+    {
+        "name": "L Crescent Moon\n",
+        "input": "214L[k]\n",
+        "damage": "1100\n",
+        "guard": "All\n",
+        "startup": "27 [23]\n",
+        "active": "8\n",
+        "recovery": "9\n",
+        "onBlock": "-2\n",
+        "onHit": "KD +17\n",
+        "onCH": "KD +21\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_214X_Kagura.png\n"
+        ]
+    },
+    {
+        "name": "L Crescent Moon (Midair)\n",
+        "input": "j.214L[k]\n",
+        "damage": "1000\n",
+        "guard": "All\n",
+        "startup": "5\n",
+        "active": "7\n",
+        "recovery": "Until L+4 [L+7]\n",
+        "onBlock": "-3\n",
+        "onHit": "KD +27\n",
+        "onCH": "KD +31\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_214X_Kagura.png\n"
+        ]
+    },
+    {
+        "name": "L Kyokasuigetsu\n",
+        "input": "236L[k]\n",
+        "damage": "900\n",
+        "guard": "Mid\n",
+        "startup": "13 [6]\n",
+        "active": "2\n",
+        "recovery": "19\n",
+        "onBlock": "-5\n",
+        "onHit": "Air Tech +17\n",
+        "onCH": "KD +33\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_236X_Kagura.png\n"
+        ]
+    },
+    {
+        "name": "L Mugenkagura\n",
+        "input": "623L[k]\n",
+        "damage": "600, 400\n",
+        "guard": "All\n",
+        "startup": "6\n",
+        "active": "4,6\n",
+        "recovery": "27\n",
+        "onBlock": "-14\n",
+        "onHit": "KD +30\n",
+        "onCH": "KD +30\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_623X_Kagura.png\n"
+        ]
+    },
+    {
+        "name": "L Setsuna\n",
+        "input": "236L[g]\n",
+        "damage": "900\n",
+        "guard": "All\n",
+        "startup": "14\n",
+        "active": "7\n",
+        "recovery": "28 [35]\n",
+        "onBlock": "-8\n",
+        "onHit": "Air Tech +18\n",
+        "onCH": "KD +34\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_236X.png\n"
+        ]
+    },
+    {
+        "name": "L Transient\n",
+        "input": "214L[g]\n",
+        "damage": "",
+        "guard": "",
+        "startup": "34\n",
+        "active": "",
+        "recovery": "5\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_214X.png\n"
+        ]
+    },
+    {
+        "name": "M Absolute Horizon\n",
+        "input": "623M[g]\n",
+        "damage": "700, 400\n",
+        "guard": "Mid, All\n",
+        "startup": "9\n",
+        "active": "2(2)6\n",
+        "recovery": "40\n",
+        "onBlock": "-27\n",
+        "onHit": "Air Tech +15\n",
+        "onCH": "Air Tech +15\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_623X.png\n"
+        ]
+    },
+    {
+        "name": "M Crescent Moon\n",
+        "input": "214M[k]\n",
+        "damage": "1200\n",
+        "guard": "All\n",
+        "startup": "38 [34]\n",
+        "active": "7\n",
+        "recovery": "9\n",
+        "onBlock": "-1\n",
+        "onHit": "+3\n",
+        "onCH": "+7\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_214X_Kagura.png\n"
+        ]
+    },
+    {
+        "name": "M Crescent Moon (Midair)\n",
+        "input": "j.214M[k]\n",
+        "damage": "1000\n",
+        "guard": "All\n",
+        "startup": "5\n",
+        "active": "7\n",
+        "recovery": "Until L+13\n",
+        "onBlock": "-15\n",
+        "onHit": "KD +36\n",
+        "onCH": "KD +40\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_214X_Kagura.png\n"
+        ]
+    },
+    {
+        "name": "M Kyokasuigetsu\n",
+        "input": "236M[k]\n",
+        "damage": "600\u00d72\n",
+        "guard": "Mid\n",
+        "startup": "16 [8]\n",
+        "active": "2(9)2\n",
+        "recovery": "21\n",
+        "onBlock": "-8\n",
+        "onHit": "KD +29\n",
+        "onCH": "KD +31\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_236X_Kagura.png\n"
+        ]
+    },
+    {
+        "name": "M Mugenkagura\n",
+        "input": "623M[k]\n",
+        "damage": "700, 400\n",
+        "guard": "Mid, All\n",
+        "startup": "20 [6]\n",
+        "active": "4,6\n",
+        "recovery": "35\n",
+        "onBlock": "-22\n",
+        "onHit": "Air Tech +15\n",
+        "onCH": "Air Tech +15\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_623X_Kagura.png\n"
+        ]
+    },
+    {
+        "name": "M Setsuna\n",
+        "input": "236M[g]\n",
+        "damage": "1500\n",
+        "guard": "All\n",
+        "startup": "32~58\n",
+        "active": "7\n",
+        "recovery": "10 [21]\n",
+        "onBlock": "+10\n",
+        "onHit": "+20Force Crouch\n",
+        "onCH": "HKD +95\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_236X.png\n"
+        ]
+    },
+    {
+        "name": "M Transient\n",
+        "input": "214M[g]\n",
+        "damage": "",
+        "guard": "",
+        "startup": "40 [21]\n",
+        "active": "",
+        "recovery": "5 [10]\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_214X.png\n"
+        ]
+    },
+    {
+        "name": "One Hundred Cloudscapes\n",
+        "input": "236236H\n",
+        "damage": "2500, 750\u00d72 (2500)\n",
+        "guard": "Mid\n",
+        "startup": "7+4 [3+4]\n",
+        "active": "6\n",
+        "recovery": "56\n",
+        "onBlock": "-43\n",
+        "onHit": "HKD +52 (HKD +73)\n",
+        "onCH": "HKD +52 (HKD +73)\n",
+        "meter": "-10000\n",
+        "images": [
+            "GBVSR_Narmaya_236236H.png\n"
+        ]
+    },
+    {
+        "name": "Raging Chain\n",
+        "input": "MH~MH\n",
+        "damage": "1000\n",
+        "guard": "Mid\n",
+        "startup": "13\n",
+        "active": "5\n",
+        "recovery": "17\n",
+        "onBlock": "",
+        "onHit": "+15Force Crouch (HKD +63)\n",
+        "onCH": "",
+        "meter": "-2500\n",
+        "images": [
+            "GBVSR_Narmaya_MH-MH.png\n"
+        ]
+    },
+    {
+        "name": "Raging Strike\n",
+        "input": "MH\n",
+        "damage": "1500\n",
+        "guard": "Guard Crush 45 [52]\n",
+        "startup": "28 (1)\n",
+        "active": "1\n",
+        "recovery": "37\n",
+        "onBlock": "+8Force Stand [+15Force Stand]\n",
+        "onHit": "+15Force Crouch (KD +40)\n",
+        "onCH": "+15Force Crouch\n",
+        "meter": "\u00b10\n",
+        "images": [
+            "GBVSR_Narmaya_MH.png\n"
+        ]
+    },
+    {
+        "name": "Ultimate Absolute Horizon\n",
+        "input": "623U[g]\n",
+        "damage": "600, 100\u00d76, 800\n",
+        "guard": "Mid\n",
+        "startup": "8\n",
+        "active": "2(2)1\u00d76(6)3 [1(1)1\u00d73(3)2]\n",
+        "recovery": "28 [27]\n",
+        "onBlock": "-21\n",
+        "onHit": "HKD +44\n",
+        "onCH": "HKD +44\n",
+        "meter": "-5000\n",
+        "images": [
+            "GBVSR_Narmaya_623U.png\n"
+        ]
+    },
+    {
+        "name": "Ultimate Aerial Crescent Moon\n",
+        "input": "j.214U[k]\n",
+        "damage": "2000\n",
+        "guard": "All\n",
+        "startup": "27\n",
+        "active": "4\n",
+        "recovery": "9\n",
+        "onBlock": "+4\n",
+        "onHit": "+8\n",
+        "onCH": "+8\n",
+        "meter": "-5000\n",
+        "images": [
+            "GBVSR_Narmaya_214U_Kagura.png\n"
+        ]
+    },
+    {
+        "name": "Ultimate Crescent Moon\n",
+        "input": "214U[k]\n",
+        "damage": "2000\n",
+        "guard": "All\n",
+        "startup": "27\n",
+        "active": "4\n",
+        "recovery": "9\n",
+        "onBlock": "+4\n",
+        "onHit": "+8\n",
+        "onCH": "+8\n",
+        "meter": "-5000\n",
+        "images": [
+            "GBVSR_Narmaya_214U_Kagura.png\n"
+        ]
+    },
+    {
+        "name": "Ultimate Kyokasuigetsu\n",
+        "input": "236U[k]\n",
+        "damage": "700\u00d72, 600\u00d72\n",
+        "guard": "Mid\n",
+        "startup": "13\n",
+        "active": "3(9)1(9)3\u00d72 [2(5)2]\n",
+        "recovery": "22 [24]\n",
+        "onBlock": "-6\n",
+        "onHit": "HKD +61\n",
+        "onCH": "HKD +61\n",
+        "meter": "-5000\n",
+        "images": [
+            "GBVSR_Narmaya_236U_Kagura.png\n"
+        ]
+    },
+    {
+        "name": "Ultimate Mugenkagura\n",
+        "input": "623U[k]\n",
+        "damage": "600, 900 [600, 900, (200\u00d75)]\n",
+        "guard": "Mid\n",
+        "startup": "12 [7]\n",
+        "active": "4,6 [4,6]\n",
+        "recovery": "34 [35]\n",
+        "onBlock": "-22\n",
+        "onHit": "HKD +44\n",
+        "onCH": "HKD +44\n",
+        "meter": "-5000\n",
+        "images": [
+            "GBVSR_Narmaya_623U_Kagura.png\n"
+        ]
+    },
+    {
+        "name": "Ultimate Setsuna\n",
+        "input": "236U[g]\n",
+        "damage": "900, 80\u00d75, 700 (900, 80\u00d75, 500)\n",
+        "guard": "All\n",
+        "startup": "14\n",
+        "active": "4\n",
+        "recovery": "16 [18]\n",
+        "onBlock": "+4\n",
+        "onHit": "HKD +60\n",
+        "onCH": "HKD +60\n",
+        "meter": "-5000\n",
+        "images": [
+            "GBVSR_Narmaya_236U.png\n"
+        ]
+    },
+    {
+        "name": "Ultimate Transient\n",
+        "input": "214U[g]\n",
+        "damage": "2000, 200\u00d76\n",
+        "guard": "Mid\n",
+        "startup": "17\n",
+        "active": "1\n",
+        "recovery": "37\n",
+        "onBlock": "-4\n",
+        "onHit": "HKD +44\n",
+        "onCH": "HKD +44\n",
+        "meter": "-5000\n",
+        "images": [
+            "GBVSR_Narmaya_214U.png\n"
+        ]
+    }
+]
