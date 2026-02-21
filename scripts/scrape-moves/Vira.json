@@ -1,0 +1,1068 @@
+[
+    {
+        "name": "",
+        "input": "2H\n",
+        "damage": "1300\n",
+        "guard": "Mid\n",
+        "startup": "11\n",
+        "active": "6\n",
+        "recovery": "23\n",
+        "onBlock": "-12\n",
+        "onHit": "-8\n",
+        "onCH": "\u00b10\n",
+        "meter": "600 [744]\n",
+        "images": [
+            "GBVSR_Vira_2H.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "2L\n",
+        "damage": "400\n",
+        "guard": "Low\n",
+        "startup": "6\n",
+        "active": "3\n",
+        "recovery": "10\n",
+        "onBlock": "-2\n",
+        "onHit": "+2\n",
+        "onCH": "+4\n",
+        "meter": "240 [300]\n",
+        "images": [
+            "GBVSR_Vira_2L.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "2M\n",
+        "damage": "900\n",
+        "guard": "Mid\n",
+        "startup": "7\n",
+        "active": "5\n",
+        "recovery": "13\n",
+        "onBlock": "-3\n",
+        "onHit": "+1\n",
+        "onCH": "+5\n",
+        "meter": "480 [600]\n",
+        "images": [
+            "GBVSR_Vira_2M.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "2U\n",
+        "damage": "1000\n",
+        "guard": "Low\n",
+        "startup": "7\n",
+        "active": "5\n",
+        "recovery": "21\n",
+        "onBlock": "-11\n",
+        "onHit": "HKD +44\n",
+        "onCH": "HKD +48\n",
+        "meter": "480 [600]\n",
+        "images": [
+            "GBVSR_Vira_2U.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "66H\n",
+        "damage": "1200\n",
+        "guard": "Mid\n",
+        "startup": "15\n",
+        "active": "4\n",
+        "recovery": "23\n",
+        "onBlock": "-8\n",
+        "onHit": "+10Force Crouch\n",
+        "onCH": "+14Force Crouch\n",
+        "meter": "720 [900]\n",
+        "images": [
+            "GBVSR_Vira_66H.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "66L\n",
+        "damage": "600\n",
+        "guard": "Mid\n",
+        "startup": "8\n",
+        "active": "3\n",
+        "recovery": "10 (15)\n",
+        "onBlock": "+2\n",
+        "onHit": "+6\n",
+        "onCH": "+8\n",
+        "meter": "480 [600]\n",
+        "images": [
+            "GBVSR_Vira_66L.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "66M\n",
+        "damage": "1100\n",
+        "guard": "Low\n",
+        "startup": "12\n",
+        "active": "4\n",
+        "recovery": "21\n",
+        "onBlock": "-8\n",
+        "onHit": "KD +24\n",
+        "onCH": "HKD +49\n",
+        "meter": "600 [744]\n",
+        "images": [
+            "GBVSR_Vira_66M.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "c.H\n",
+        "damage": "1600\n",
+        "guard": "Mid\n",
+        "startup": "8\n",
+        "active": "6\n",
+        "recovery": "16\n",
+        "onBlock": "-3\n",
+        "onHit": "+1\n",
+        "onCH": "+13\n",
+        "meter": "720 [900]\n",
+        "images": [
+            "GBVSR_Vira_cH.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "c.L\n",
+        "damage": "600\n",
+        "guard": "Mid\n",
+        "startup": "5\n",
+        "active": "3\n",
+        "recovery": "6\n",
+        "onBlock": "+4\n",
+        "onHit": "+8\n",
+        "onCH": "+10\n",
+        "meter": "360 [444]\n",
+        "images": [
+            "GBVSR_Vira_cL.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "c.M\n",
+        "damage": "1100\n",
+        "guard": "Mid\n",
+        "startup": "6\n",
+        "active": "3\n",
+        "recovery": "12\n",
+        "onBlock": "\u00b10\n",
+        "onHit": "+4\n",
+        "onCH": "+8\n",
+        "meter": "480 [600]\n",
+        "images": [
+            "GBVSR_Vira_cM.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "c.XX\n",
+        "damage": "700\n",
+        "guard": "Mid\n",
+        "startup": "9\n",
+        "active": "3\n",
+        "recovery": "15\n",
+        "onBlock": "-3\n",
+        "onHit": "+1\n",
+        "onCH": "+5\n",
+        "meter": "480 [600]\n",
+        "images": [
+            "GBVSR_Vira_cXX.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "c.XX6H\n",
+        "damage": "1000\n",
+        "guard": "High\n",
+        "startup": "18\n",
+        "active": "3\n",
+        "recovery": "22\n",
+        "onBlock": "-4\n",
+        "onHit": "+1Force Crouch\n",
+        "onCH": "HKD +32\n",
+        "meter": "480 [600]\n",
+        "images": [
+            "GBVSR_Vira_cXX6H.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "c.XX6M\n",
+        "damage": "1000\n",
+        "guard": "Low\n",
+        "startup": "12\n",
+        "active": "3\n",
+        "recovery": "16\n",
+        "onBlock": "-4\n",
+        "onHit": "KD +30\n",
+        "onCH": "HKD +55\n",
+        "meter": "480 [600]\n",
+        "images": [
+            "GBVSR_Vira_66M.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "c.XXX\n",
+        "damage": "1000\n",
+        "guard": "Mid\n",
+        "startup": "12\n",
+        "active": "3\n",
+        "recovery": "18\n",
+        "onBlock": "-4\n",
+        "onHit": "\u00b10\n",
+        "onCH": "+8\n",
+        "meter": "600 [744]\n",
+        "images": [
+            "GBVSR_Vira_cXXX.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "f.H\n",
+        "damage": "1300\n",
+        "guard": "Mid\n",
+        "startup": "8\n",
+        "active": "4\n",
+        "recovery": "22\n",
+        "onBlock": "-9\n",
+        "onHit": "-5\n",
+        "onCH": "+3\n",
+        "meter": "600 [744]\n",
+        "images": [
+            "GBVSR_Vira_fH.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "f.L\n",
+        "damage": "600\n",
+        "guard": "Mid\n",
+        "startup": "6\n",
+        "active": "6\n",
+        "recovery": "6\n",
+        "onBlock": "+1\n",
+        "onHit": "+5\n",
+        "onCH": "+7\n",
+        "meter": "360 [444]\n",
+        "images": [
+            "GBVSR_Vira_fL.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "f.M\n",
+        "damage": "900\n",
+        "guard": "Mid\n",
+        "startup": "8\n",
+        "active": "4\n",
+        "recovery": "17\n",
+        "onBlock": "-6\n",
+        "onHit": "-2\n",
+        "onCH": "+2\n",
+        "meter": "480 [600]\n",
+        "images": [
+            "GBVSR_Vira_fM.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "j.H\n",
+        "damage": "1000\n",
+        "guard": "High\/Air\n",
+        "startup": "9\n",
+        "active": "6\n",
+        "recovery": "Until L+1\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "480 [600]\n",
+        "images": [
+            "GBVSR_Vira_jH.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "j.L\n",
+        "damage": "600\n",
+        "guard": "High\/Air\n",
+        "startup": "5\n",
+        "active": "Until L\n",
+        "recovery": "1\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "360 [444]\n",
+        "images": [
+            "GBVSR_Vira_jL.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "j.M\n",
+        "damage": "800\n",
+        "guard": "High\/Air\n",
+        "startup": "7\n",
+        "active": "7\n",
+        "recovery": "Until L+1\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "480 [600]\n",
+        "images": [
+            "GBVSR_Vira_jM.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "j.U\n",
+        "damage": "900\n",
+        "guard": "High\/Air\n",
+        "startup": "8\n",
+        "active": "8\n",
+        "recovery": "Until L+1\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "480 [600]\n",
+        "images": [
+            "GBVSR_Vira_jU.png\n"
+        ]
+    },
+    {
+        "name": "Advance\n",
+        "input": "lu.5U~6\n",
+        "damage": "",
+        "guard": "",
+        "startup": "",
+        "active": "",
+        "recovery": "15\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "0\n",
+        "images": [
+            "GBVSR_Vira_Grand_5U-N.png\n"
+        ]
+    },
+    {
+        "name": "Affection Abyss\n",
+        "input": "236236U\n",
+        "damage": "1200, 1800, 3000 [1000, 1500\u00d72]\n",
+        "guard": "Mid\n",
+        "startup": "8+5\n",
+        "active": "[3(9)]\u00d72,6\n",
+        "recovery": "35\n",
+        "onBlock": "-22\n",
+        "onHit": "HKD +44 [HKD +30]\n",
+        "onCH": "HKD +44 [HKD +30]\n",
+        "meter": "-10000\n",
+        "images": [
+            "GBVSR_Vira_236236U_Start.png",
+            "GBVSR_Vira_236236U.png",
+            "GBVSR_Vira_236236U_Finish.png\n"
+        ]
+    },
+    {
+        "name": "Air Dash\n",
+        "input": "lu.j.66\n",
+        "damage": "",
+        "guard": "",
+        "startup": "22\n",
+        "active": "",
+        "recovery": "Until L+4\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "0\n",
+        "images": [
+            "GBVSR_Vira_Grand_j66.png\n"
+        ]
+    },
+    {
+        "name": "Air Throw\n",
+        "input": "j.LU\n",
+        "damage": "2500\n",
+        "guard": "Throw\n",
+        "startup": "5\n",
+        "active": "5\n",
+        "recovery": "Until L+6\n",
+        "onBlock": "",
+        "onHit": "HKD \u2248+45\n",
+        "onCH": "",
+        "meter": "480, 1800 [600, 2244]\n",
+        "images": [
+            "GBVSR_Vira_AirThrow.png\n"
+        ]
+    },
+    {
+        "name": "Blade of Light\n",
+        "input": "5U\n",
+        "damage": "0, 500, 200\u00d75\n",
+        "guard": "Throw\n",
+        "startup": "30~39\n",
+        "active": "3\n",
+        "recovery": "30\n",
+        "onBlock": "",
+        "onHit": "HKD +52\n",
+        "onCH": "",
+        "meter": "0, 1800\n",
+        "images": [
+            "GBVSR_Vira_5U.png",
+            "GBVSR_Vira_5U_Hit.png\n"
+        ]
+    },
+    {
+        "name": "Brave Counter\n",
+        "input": "BC\n",
+        "damage": "500\n",
+        "guard": "Mid\n",
+        "startup": "10 [18]\n",
+        "active": "3 [2]\n",
+        "recovery": "19 [35]\n",
+        "onBlock": "-2\n",
+        "onHit": "Air Tech +21 [+5]\n",
+        "onCH": "HKD +54 [HKD +43]\n",
+        "meter": "\u00b10\n",
+        "images": [
+            "GBVSR_Vira_BC.png\n"
+        ]
+    },
+    {
+        "name": "Falling Strike\n",
+        "input": "lu.5U~X\n",
+        "damage": "1200\n",
+        "guard": "High\/Air\n",
+        "startup": "16\n",
+        "active": "9\n",
+        "recovery": "8\n",
+        "onBlock": "+2\n",
+        "onHit": "+5Force Crouch\n",
+        "onCH": "+7Force Crouch\n",
+        "meter": "744\n",
+        "images": [
+            "GBVSR_Vira_Grand_5U-X.png\n"
+        ]
+    },
+    {
+        "name": "Graceview\n",
+        "input": "lu.5U\n",
+        "damage": "1200\n",
+        "guard": "Mid\n",
+        "startup": "10\n",
+        "active": "7\n",
+        "recovery": "18\n",
+        "onBlock": "-6\n",
+        "onHit": "Air Tech +35\n",
+        "onCH": "KD +59\n",
+        "meter": "900\n",
+        "images": [
+            "GBVSR_Vira_Grand_5U_1.png",
+            "GBVSR_Vira_Grand_5U_2.png\n"
+        ]
+    },
+    {
+        "name": "Ground Throw\n",
+        "input": "LU\n",
+        "damage": "2500\n",
+        "guard": "Throw\n",
+        "startup": "4\n",
+        "active": "3\n",
+        "recovery": "26\n",
+        "onBlock": "",
+        "onHit": "HKD +44\n",
+        "onCH": "",
+        "meter": "480, 1800 [600, 2244]\n",
+        "images": [
+            "GBVSR_Vira_Throw.png",
+            "GBVSR_Vira_BackThrow.png\n"
+        ]
+    },
+    {
+        "name": "H Darkane\n",
+        "input": "236H\n",
+        "damage": "200\u00d74, 700 [200\u00d74, 990]\n",
+        "guard": "Mid\n",
+        "startup": "16\n",
+        "active": "9(12)5\n",
+        "recovery": "19\n",
+        "onBlock": "-9\n",
+        "onHit": "KD +34 (KD +31)\n",
+        "onCH": "KD +34 (KD +38)\n",
+        "meter": "400+720,120\u00d74 [400+900, 144\u00d74]\n",
+        "images": [
+            "GBVSR_Vira_236X_1.png",
+            "GBVSR_Vira_236X_2.png",
+            "GBVSR_Vira_Grand_236X_2.png\n"
+        ]
+    },
+    {
+        "name": "H Darkane (Charged, Luminiera Form)\n",
+        "input": "lu.236[H]\n",
+        "damage": "200\u00d74\n",
+        "guard": "Mid\n",
+        "startup": "16\n",
+        "active": "1(1)1[(2)1]\u00d72\n",
+        "recovery": "16\n",
+        "onBlock": "+2\n",
+        "onHit": "KD +35\n",
+        "onCH": "KD +35\n",
+        "meter": "400+900, 144\u00d73\n",
+        "images": [
+            "GBVSR_Vira_Grand_236M-Charged.png\n"
+        ]
+    },
+    {
+        "name": "H Red Beryl Sword\n",
+        "input": "623H\n",
+        "damage": "700, 400\u00d72\n",
+        "guard": "Mid\n",
+        "startup": "11\n",
+        "active": "2(1)6,6\n",
+        "recovery": "35\n",
+        "onBlock": "-22\n",
+        "onHit": "KD +26\n",
+        "onCH": "",
+        "meter": "400+720, 120\u00d72\n",
+        "images": [
+            "GBVSR_Vira_623X.png\n"
+        ]
+    },
+    {
+        "name": "H Red Beryl Sword (Luminiera Form)\n",
+        "input": "lu.623H\n",
+        "damage": "700, 400x2, 100\n",
+        "guard": "Mid\n",
+        "startup": "11\n",
+        "active": "2(1)6,6\n",
+        "recovery": "35\n",
+        "onBlock": "-22\n",
+        "onHit": "KD +33\n",
+        "onCH": "KD +33\n",
+        "meter": "400+900, 144x3\n",
+        "images": [
+            "GBVSR_Vira_623X.png",
+            "GBVSR_Vira_Grand_623H.png\n"
+        ]
+    },
+    {
+        "name": "H Scarlet Oath\n",
+        "input": "214H\n",
+        "damage": "700, 800\n",
+        "guard": "Mid\n",
+        "startup": "14\n",
+        "active": "3(13)5\n",
+        "recovery": "15\n",
+        "onBlock": "-1\n",
+        "onHit": "KD +35 (KD +32)\n",
+        "onCH": "KD +36\n",
+        "meter": "400+720, 120\n",
+        "images": [
+            "GBVSR_Vira_214L.png",
+            "GBVSR_Vira_214M.png\n"
+        ]
+    },
+    {
+        "name": "H Scarlet Oath\n",
+        "input": "lu.214H\n",
+        "damage": "700, 1000\n",
+        "guard": "Mid\n",
+        "startup": "14\n",
+        "active": "3(13)5\n",
+        "recovery": "15\n",
+        "onBlock": "-1\n",
+        "onHit": "KD +37 (KD +34)\n",
+        "onCH": "KD +39 (KD +41)\n",
+        "meter": "400+900, 144\n",
+        "images": [
+            "GBVSR_Vira_214L.png",
+            "GBVSR_Vira_214M.png\n"
+        ]
+    },
+    {
+        "name": "H Summon Luminiera\n",
+        "input": "22H\n",
+        "damage": "400\u00d73\n",
+        "guard": "All\n",
+        "startup": "78\n",
+        "active": "18\n",
+        "recovery": "Total 40\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "200+480, 120\u00d72\n",
+        "images": [
+            "GBVSR_Vira_22X.png",
+            "GBVSR_Vira_22X_Diagram.png\n"
+        ]
+    },
+    {
+        "name": "H Summon Luminiera (Luminiera Form)\n",
+        "input": "lu.22H\n",
+        "damage": "100, 400, 100, 400\u00d72\n",
+        "guard": "All\n",
+        "startup": "78\n",
+        "active": "5(3)18\n",
+        "recovery": "Total 40\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "200+144\u00d72, 600, 144\u00d72\n",
+        "images": [
+            "GBVSR_Vira_22X.png",
+            "GBVSR_Vira_22X_Diagram.png\n"
+        ]
+    },
+    {
+        "name": "Iliad Vision\n",
+        "input": "lu.236236U\n",
+        "damage": "3000, 2040, 1200 [500, 2500, 1000]\n",
+        "guard": "Mid\n",
+        "startup": "8+5\n",
+        "active": "42(34)9\n",
+        "recovery": "36\n",
+        "onBlock": "-26\n",
+        "onHit": "HKD +44 [HKD +28]\n",
+        "onCH": "HKD +44 [HKD +28]\n",
+        "meter": "-10000\n",
+        "images": [
+            "GBVSR_Vira_Grand_236236U.png",
+            "GBVSR_Vira_Grand_236236U_Finish.png\n"
+        ]
+    },
+    {
+        "name": "Jump\n",
+        "input": "lu.5U~8\n",
+        "damage": "",
+        "guard": "",
+        "startup": "19\n",
+        "active": "",
+        "recovery": "Until L+4\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "0\n",
+        "images": [
+            "GBVSR_Vira_Grand_5U-N.png\n"
+        ]
+    },
+    {
+        "name": "L Darkane\n",
+        "input": "236L\n",
+        "damage": "200\u00d73, 400\n",
+        "guard": "Mid\n",
+        "startup": "18\n",
+        "active": "1[(2)1]\u00d73\n",
+        "recovery": "18\n",
+        "onBlock": "-4\n",
+        "onHit": "Air Tech +22\n",
+        "onCH": "KD +33\n",
+        "meter": "200+720,120\u00d73 [200+900, 144\u00d73]\n",
+        "images": [
+            "GBVSR_Vira_236X_1.png\n"
+        ]
+    },
+    {
+        "name": "L Red Beryl Sword\n",
+        "input": "623L\n",
+        "damage": "1000 (500)\n",
+        "guard": "Mid\n",
+        "startup": "6\n",
+        "active": "2(2)6\n",
+        "recovery": "27\n",
+        "onBlock": "-20\n",
+        "onHit": "KD +26\n",
+        "onCH": "KD +26\n",
+        "meter": "200+720 [200+900]\n",
+        "images": [
+            "GBVSR_Vira_623X.png\n"
+        ]
+    },
+    {
+        "name": "L Scarlet Oath\n",
+        "input": "214L\n",
+        "damage": "1000\n",
+        "guard": "Mid\n",
+        "startup": "16\n",
+        "active": "3\n",
+        "recovery": "19\n",
+        "onBlock": "-5\n",
+        "onHit": "KD +29\n",
+        "onCH": "KD +33\n",
+        "meter": "200+720 [200+900]\n",
+        "images": [
+            "GBVSR_Vira_214L.png\n"
+        ]
+    },
+    {
+        "name": "L Summon Luminiera\n",
+        "input": "22L\n",
+        "damage": "200x5\n",
+        "guard": "All\n",
+        "startup": "73\n",
+        "active": "18\n",
+        "recovery": "Total 35\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "100+480, 120\u00d72 [100+600, 144\u00d72]\n",
+        "images": [
+            "GBVSR_Vira_22X.png",
+            "GBVSR_Vira_22X_Diagram.png\n"
+        ]
+    },
+    {
+        "name": "Land\n",
+        "input": "lu.5U~2\n",
+        "damage": "",
+        "guard": "",
+        "startup": "9\n",
+        "active": "",
+        "recovery": "Until L+5\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "0\n",
+        "images": [
+            "GBVSR_Vira_Grand_5U-N.png\n"
+        ]
+    },
+    {
+        "name": "Luminiera Merge\n",
+        "input": "236236H\n",
+        "damage": "1600\n",
+        "guard": "Mid\n",
+        "startup": "8+5\n",
+        "active": "3\n",
+        "recovery": "23\n",
+        "onBlock": "-15\n",
+        "onHit": "HKD +60\n",
+        "onCH": "HKD +60\n",
+        "meter": "-10000\n",
+        "images": [
+            "GBVSR_Vira_236236H.png\n"
+        ]
+    },
+    {
+        "name": "M Darkane\n",
+        "input": "236M\n",
+        "damage": "200\u00d74, 600 [200\u00d74, 700]\n",
+        "guard": "Mid\n",
+        "startup": "15\n",
+        "active": "1[(2)1]\u00d73(14)5\n",
+        "recovery": "19\n",
+        "onBlock": "-9\n",
+        "onHit": "KD +33 (KD +31)\n",
+        "onCH": "KD +33 (KD +38)\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Vira_236X_1.png",
+            "GBVSR_Vira_236X_2.png",
+            "GBVSR_Vira_Grand_236X_2.png\n"
+        ]
+    },
+    {
+        "name": "M Darkane (Charged, Luminiera Form)\n",
+        "input": "lu.236[M]\n",
+        "damage": "200\u00d74\n",
+        "guard": "Mid\n",
+        "startup": "15\n",
+        "active": "1[(2)1]\u00d73\n",
+        "recovery": "21\n",
+        "onBlock": "-7\n",
+        "onHit": "KD +38\n",
+        "onCH": "KD +38\n",
+        "meter": "200+900, 144\u00d73\n",
+        "images": [
+            "GBVSR_Vira_Grand_236M-Charged.png\n"
+        ]
+    },
+    {
+        "name": "M Red Beryl Sword\n",
+        "input": "623M\n",
+        "damage": "700, 400\n",
+        "guard": "Mid, All\n",
+        "startup": "9\n",
+        "active": "2(2)12\n",
+        "recovery": "34\n",
+        "onBlock": "-27\n",
+        "onHit": "Air Tech +15\n",
+        "onCH": "Air Tech +15\n",
+        "meter": "200+720, 120\n",
+        "images": [
+            "GBVSR_Vira_623X.png\n"
+        ]
+    },
+    {
+        "name": "M Red Beryl Sword (Luminiera Form)\n",
+        "input": "lu.623M\n",
+        "damage": "700, 1000\n",
+        "guard": "Mid, All\n",
+        "startup": "9\n",
+        "active": "2(19)3\n",
+        "recovery": "31\n",
+        "onBlock": "-15\n",
+        "onHit": "KD +25\n",
+        "onCH": "KD +25\n",
+        "meter": "200+900, 144\n",
+        "images": [
+            "GBVSR_Vira_Grand_623M.png\n"
+        ]
+    },
+    {
+        "name": "M Scarlet Oath\n",
+        "input": "214M\n",
+        "damage": "1100\n",
+        "guard": "Mid\n",
+        "startup": "27\n",
+        "active": "5\n",
+        "recovery": "12\n",
+        "onBlock": "+2\n",
+        "onHit": "KD +33\n",
+        "onCH": "KD +35\n",
+        "meter": "200+720\n",
+        "images": [
+            "GBVSR_Vira_214M.png\n"
+        ]
+    },
+    {
+        "name": "M Scarlet Oath (Luminiera Form)\n",
+        "input": "lu.214M\n",
+        "damage": "1200\n",
+        "guard": "Mid\n",
+        "startup": "27\n",
+        "active": "5\n",
+        "recovery": "12\n",
+        "onBlock": "+2\n",
+        "onHit": "KD +39\n",
+        "onCH": "KD +43\n",
+        "meter": "200+900\n",
+        "images": [
+            "GBVSR_Vira_214M.png\n"
+        ]
+    },
+    {
+        "name": "M Summon Luminiera\n",
+        "input": "22M\n",
+        "damage": "200x5\n",
+        "guard": "All\n",
+        "startup": "73\n",
+        "active": "18\n",
+        "recovery": "Total 35\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "100+480, 120\u00d72 [100+600, 144\u00d72]\n",
+        "images": [
+            "GBVSR_Vira_22X.png",
+            "GBVSR_Vira_22X_Diagram.png\n"
+        ]
+    },
+    {
+        "name": "Punishment Ray\n",
+        "input": "lu.236236H\n",
+        "damage": "1200, 200\u00d714 [200\u00d715]\n",
+        "guard": "All\n",
+        "startup": "8+6\n",
+        "active": "19(8)21\n",
+        "recovery": "Total 131\n",
+        "onBlock": "-30\n",
+        "onHit": "HKD +28 [HKD +26]\n",
+        "onCH": "HKD +24 [HKD +26]\n",
+        "meter": "-10000\n",
+        "images": [
+            "GBVSR_Vira_Grand_236236H_Start.png",
+            "GBVSR_Vira_Grand_236236H.png\n"
+        ]
+    },
+    {
+        "name": "Raging Chain\n",
+        "input": "MH~MH\n",
+        "damage": "1000\n",
+        "guard": "Mid\n",
+        "startup": "13\n",
+        "active": "5\n",
+        "recovery": "17\n",
+        "onBlock": "+4\n",
+        "onHit": "+15Force Crouch (HKD +63)\n",
+        "onCH": "+15Force Crouch\n",
+        "meter": "-2500\n",
+        "images": [
+            "GBVSR_Vira_MH-MH.png\n"
+        ]
+    },
+    {
+        "name": "Raging Strike\n",
+        "input": "MH\n",
+        "damage": "1500\n",
+        "guard": "Guard Crush 45 [52]\n",
+        "startup": "28 (1)\n",
+        "active": "1\n",
+        "recovery": "37\n",
+        "onBlock": "+8Force Stand [+15Force Stand]\n",
+        "onHit": "+15Force Crouch (KD +40)\n",
+        "onCH": "+15Force Crouch\n",
+        "meter": "\u00b10\n",
+        "images": [
+            "GBVSR_Vira_MH.png\n"
+        ]
+    },
+    {
+        "name": "Retreat\n",
+        "input": "lu.5U~4\n",
+        "damage": "",
+        "guard": "",
+        "startup": "16\n",
+        "active": "",
+        "recovery": "Until L+6\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "0\n",
+        "images": [
+            "GBVSR_Vira_Grand_5U-N.png\n"
+        ]
+    },
+    {
+        "name": "Ultimate Darkane\n",
+        "input": "236U\n",
+        "damage": "200\u00d74, 300\u00d73, 900\n",
+        "guard": "Mid\n",
+        "startup": "11\n",
+        "active": "1(1)1[(2)1]\u00d72 [1\u00d72(2)1]\n",
+        "recovery": "16 [13]\n",
+        "onBlock": "+2\n",
+        "onHit": "HKD +45\n",
+        "onCH": "HKD +45\n",
+        "meter": "-5000\n",
+        "images": [
+            "GBVSR_Vira_236U.png",
+            "GBVSR_Vira_236U_2.png",
+            "GBVSR_Vira_236U_3.png\n"
+        ]
+    },
+    {
+        "name": "Ultimate Darkane (Luminiera Form)\n",
+        "input": "lu.236U\n",
+        "damage": "200\u00d74, 300\u00d73, 1100\n",
+        "guard": "Mid\n",
+        "startup": "11\n",
+        "active": "1(1)1[(2)1]\u00d72 [1\u00d72(2)1]\n",
+        "recovery": "16 [13]\n",
+        "onBlock": "+2\n",
+        "onHit": "HKD +62\n",
+        "onCH": "HKD +62\n",
+        "meter": "-5000\n",
+        "images": [
+            "GBVSR_Vira_236U.png",
+            "GBVSR_Vira_236U_2.png",
+            "GBVSR_Vira_236U_3.png\n"
+        ]
+    },
+    {
+        "name": "Ultimate Red Beryl Sword\n",
+        "input": "623U\n",
+        "damage": "700, 200\u00d73, 700 [700, 400]\n",
+        "guard": "Mid\n",
+        "startup": "8\n",
+        "active": "2(1)6\u00d72 [1(1)6]\n",
+        "recovery": "35 [32]\n",
+        "onBlock": "-22\n",
+        "onHit": "HKD +40 [HKD +45]\n",
+        "onCH": "HKD +40 [HKD +45]\n",
+        "meter": "-5000\n",
+        "images": [
+            "GBVSR_Vira_623U.png",
+            "GBVSR_Vira_214U_2.png\n"
+        ]
+    },
+    {
+        "name": "Ultimate Red Beryl Sword (Luminiera Form)\n",
+        "input": "lu.623U\n",
+        "damage": "700, 200\u00d73, 700, 200 [700, 400]\n",
+        "guard": "Mid\n",
+        "startup": "8\n",
+        "active": "2(1)6\u00d72 [1(1)6]\n",
+        "recovery": "35 [32]\n",
+        "onBlock": "-22\n",
+        "onHit": "HKD +40 [HKD +45]\n",
+        "onCH": "HKD +40 [HKD +45]\n",
+        "meter": "-5000\n",
+        "images": [
+            "GBVSR_Vira_623U.png",
+            "GBVSR_Vira_623U_2.png\n"
+        ]
+    },
+    {
+        "name": "Ultimate Scarlet Oath\n",
+        "input": "214U\n",
+        "damage": "1300\u00d72\n",
+        "guard": "Low, High\n",
+        "startup": "15\n",
+        "active": "3(14)5 [2]\n",
+        "recovery": "18 [14]\n",
+        "onBlock": "-6\n",
+        "onHit": "HKD +33\n",
+        "onCH": "HKD +63\n",
+        "meter": "-5000\n",
+        "images": [
+            "GBVSR_Vira_214U.png",
+            "GBVSR_Vira_214U_2.png\n"
+        ]
+    },
+    {
+        "name": "Ultimate Scarlet Oath (Luminiera Form)\n",
+        "input": "lu.214U\n",
+        "damage": "1400\u00d72\n",
+        "guard": "Low, High\n",
+        "startup": "15\n",
+        "active": "3(14)5 [2]\n",
+        "recovery": "18 [14]\n",
+        "onBlock": "-6\n",
+        "onHit": "HKD +59\n",
+        "onCH": "HKD +63\n",
+        "meter": "-5000\n",
+        "images": [
+            "GBVSR_Vira_214U.png",
+            "GBVSR_Vira_214U_2.png\n"
+        ]
+    },
+    {
+        "name": "Ultimate Summon Luminiera\n",
+        "input": "22U\n",
+        "damage": "500\u00d72, 600\n",
+        "guard": "Mid\n",
+        "startup": "20\n",
+        "active": "18\n",
+        "recovery": "Total 52\n",
+        "onBlock": "+7\n",
+        "onHit": "+34Force Crouch\n",
+        "onCH": "+34Force Crouch\n",
+        "meter": "-5000\n",
+        "images": [
+            "GBVSR_Vira_22U.png\n"
+        ]
+    },
+    {
+        "name": "Ultimate Summon Luminiera (Luminiera Form)\n",
+        "input": "lu.22U\n",
+        "damage": "500\u00d72, 600, 200\n",
+        "guard": "Mid\n",
+        "startup": "20\n",
+        "active": "18\n",
+        "recovery": "Total 52\n",
+        "onBlock": "+10\n",
+        "onHit": "HKD +99\n",
+        "onCH": "HKD +99\n",
+        "meter": "-5000\n",
+        "images": [
+            "GBVSR_Vira_22U.png\n"
+        ]
+    }
+]

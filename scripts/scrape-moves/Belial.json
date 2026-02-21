@@ -1,0 +1,833 @@
+[
+    {
+        "name": "",
+        "input": "2H\n",
+        "damage": "1300\n",
+        "guard": "Mid\n",
+        "startup": "11\n",
+        "active": "6\n",
+        "recovery": "23\n",
+        "onBlock": "-12\n",
+        "onHit": "-8\n",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_2H.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "2L\n",
+        "damage": "400\n",
+        "guard": "Mid\n",
+        "startup": "5\n",
+        "active": "3\n",
+        "recovery": "12\n",
+        "onBlock": "-4 \n",
+        "onHit": "0\n",
+        "onCH": "+2\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_2L.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "2M\n",
+        "damage": "900\n",
+        "guard": "Low\n",
+        "startup": "7\n",
+        "active": "3\n",
+        "recovery": "11\n",
+        "onBlock": "+1 \n",
+        "onHit": "+5\n",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_2M.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "2U\n",
+        "damage": "1000\n",
+        "guard": "Low\n",
+        "startup": "10\n",
+        "active": "6\n",
+        "recovery": "20\n",
+        "onBlock": "-11\n",
+        "onHit": "HKD\n",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_2U.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "66H\n",
+        "damage": "1300\n",
+        "guard": "Mid\n",
+        "startup": "20\n",
+        "active": "8\n",
+        "recovery": "14\n",
+        "onBlock": "-3 \n",
+        "onHit": "KD\n",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_66H.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "66L\n",
+        "damage": "600\n",
+        "guard": "Mid\n",
+        "startup": "8\n",
+        "active": "3\n",
+        "recovery": "10 [15]\n",
+        "onBlock": "+2\n",
+        "onHit": "+6\n",
+        "onCH": "+8\n",
+        "meter": "+480\n",
+        "images": [
+            "GBVSR_Belial_66L.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "66M\n",
+        "damage": "1100\n",
+        "guard": "Low\n",
+        "startup": "18\n",
+        "active": "3\n",
+        "recovery": "13\n",
+        "onBlock": "+1 \n",
+        "onHit": "+5\n",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_cXX6M.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "c.H\n",
+        "damage": "1600\n",
+        "guard": "Mid\n",
+        "startup": "9\n",
+        "active": "5\n",
+        "recovery": "19\n",
+        "onBlock": "-5\n",
+        "onHit": "-1\n",
+        "onCH": "+11\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_cH.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "c.L\n",
+        "damage": "600\n",
+        "guard": "Mid\n",
+        "startup": "5\n",
+        "active": "3\n",
+        "recovery": "6\n",
+        "onBlock": "+4 \n",
+        "onHit": "+8\n",
+        "onCH": "+10\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_cL.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "c.M\n",
+        "damage": "1100\n",
+        "guard": "Mid\n",
+        "startup": "6\n",
+        "active": "3\n",
+        "recovery": "12\n",
+        "onBlock": "0\n",
+        "onHit": "+4\n",
+        "onCH": "+8\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_cM.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "c.XX\n",
+        "damage": "700\n",
+        "guard": "Mid\n",
+        "startup": "9\n",
+        "active": "3\n",
+        "recovery": "15\n",
+        "onBlock": "-3\n",
+        "onHit": "+1\n",
+        "onCH": "+5\n",
+        "meter": "+480\n",
+        "images": [
+            "GBVSR_Belial_cXX.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "c.XX6H\n",
+        "damage": "1000\n",
+        "guard": "High\n",
+        "startup": "18\n",
+        "active": "3\n",
+        "recovery": "22\n",
+        "onBlock": "-4\n",
+        "onHit": "+1Force Crouch\n",
+        "onCH": "HKD +32\n",
+        "meter": "+480\n",
+        "images": [
+            "GBVSR_Belial_cXX6H.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "c.XX6M\n",
+        "damage": "1000\n",
+        "guard": "Low\n",
+        "startup": "12\n",
+        "active": "3\n",
+        "recovery": "16\n",
+        "onBlock": "-4\n",
+        "onHit": "KD +30\n",
+        "onCH": "HKD +55\n",
+        "meter": "+480\n",
+        "images": [
+            "GBVSR_Belial_cXX6M.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "c.XXX\n",
+        "damage": "1000\n",
+        "guard": "Mid\n",
+        "startup": "12\n",
+        "active": "3\n",
+        "recovery": "18\n",
+        "onBlock": "-4\n",
+        "onHit": "\u00b10\n",
+        "onCH": "+8\n",
+        "meter": "+600\n",
+        "images": [
+            "GBVSR_Belial_cXXX.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "f.H\n",
+        "damage": "800, 500\n",
+        "guard": "Mid\n",
+        "startup": "9\n",
+        "active": "2(13)2\n",
+        "recovery": "18\n",
+        "onBlock": "-3 \n",
+        "onHit": "+2 (forces crouch)\n",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_fH.png",
+            "GBVSR_Belial_fH_2.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "f.L\n",
+        "damage": "600\n",
+        "guard": "Mid\n",
+        "startup": "6\n",
+        "active": "5\n",
+        "recovery": "7\n",
+        "onBlock": "+1\n",
+        "onHit": "+5\n",
+        "onCH": "+7\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_fL.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "f.M\n",
+        "damage": "300, 600\n",
+        "guard": "Mid\n",
+        "startup": "6\n",
+        "active": "2,3\n",
+        "recovery": "14\n",
+        "onBlock": "-2 \n",
+        "onHit": "+2\n",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_fM.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "j.H\n",
+        "damage": "1000\n",
+        "guard": "High\/Air\n",
+        "startup": "10\n",
+        "active": "6\n",
+        "recovery": "L+1\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_jH.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "j.L\n",
+        "damage": "600\n",
+        "guard": "High\/Air\n",
+        "startup": "5\n",
+        "active": "Until L\n",
+        "recovery": "1\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_jL.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "j.M\n",
+        "damage": "700\n",
+        "guard": "High\/Air\n",
+        "startup": "7\n",
+        "active": "6\n",
+        "recovery": "L+1\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_jM.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "j.U\n",
+        "damage": "1000\n",
+        "guard": "All\n",
+        "startup": "26\/23\n",
+        "active": "Until L+1\n",
+        "recovery": "18\/19\/L+1\n",
+        "onBlock": "-5\n",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_jU.png\n"
+        ]
+    },
+    {
+        "name": "Air Throw\n",
+        "input": "j.LM\n",
+        "damage": "2500\n",
+        "guard": "Airthrow\n",
+        "startup": "5\n",
+        "active": "5\n",
+        "recovery": "Until L+6\n",
+        "onBlock": "",
+        "onHit": "HKD (+48 to +51)\n",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_AirThrow.png\n"
+        ]
+    },
+    {
+        "name": "Anagenesis\n",
+        "input": "236236U\n",
+        "damage": "3000, 600, 120\u00d710, 120 [2500, 1500]\n",
+        "guard": "Mid\n",
+        "startup": "8+5\n",
+        "active": "3(12)3\n",
+        "recovery": "45\n",
+        "onBlock": "-29\n",
+        "onHit": "HKD (+41)\n",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_236236U_Start.png",
+            "GBVSR_Belial_236236U.png",
+            "GBVSR_Belial_236236U_Finish.png\n"
+        ]
+    },
+    {
+        "name": "Brave Counter\n",
+        "input": "BC\n",
+        "damage": "500\n",
+        "guard": "Mid\n",
+        "startup": "10 [18]\n",
+        "active": "3 [2]\n",
+        "recovery": "19 [35]\n",
+        "onBlock": "-2\n",
+        "onHit": "Air Tech +21 [+5]\n",
+        "onCH": "HKD +54 [HKD +43]\n",
+        "meter": "\u00b10\n",
+        "images": [
+            "GBVSR_Belial_BC.png\n"
+        ]
+    },
+    {
+        "name": "Give Daddy Some Sugar\n",
+        "input": "5U\n",
+        "damage": "",
+        "guard": "",
+        "startup": "3\n",
+        "active": "85\n",
+        "recovery": "48\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_5U.png\n"
+        ]
+    },
+    {
+        "name": "Give Daddy Some Sugar (Attack)\n",
+        "input": "5U Catch\n",
+        "damage": "300, 900\n",
+        "guard": "All\n",
+        "startup": "Jump+11\n",
+        "active": "Until L+2\n",
+        "recovery": "11\n",
+        "onBlock": "-4 \n",
+        "onHit": "HKD (+47)\n",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_5U_Hit.png\n"
+        ]
+    },
+    {
+        "name": "Ground Throw\n",
+        "input": "LM\n",
+        "damage": "2500\n",
+        "guard": "Throw\n",
+        "startup": "4\n",
+        "active": "3\n",
+        "recovery": "31\n",
+        "onBlock": "",
+        "onHit": "HKD (+44)\n",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_Throw.png",
+            "GBVSR_Belial_BackThrow.png\n"
+        ]
+    },
+    {
+        "name": "H Asmodeus\n",
+        "input": "214H\n",
+        "damage": "700, 800\n",
+        "guard": "Mid\n",
+        "startup": "14\n",
+        "active": "4\n",
+        "recovery": "19\n",
+        "onBlock": "-8\n",
+        "onHit": "KD\n",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_214X.png",
+            "GBVSR_Belial_214X_2.png\n"
+        ]
+    },
+    {
+        "name": "H Everyone's A Little Crooked\n",
+        "input": "236X~4H\n",
+        "damage": "100\u00d75\n",
+        "guard": "All\n",
+        "startup": "27\n",
+        "active": "3\u00d715\n",
+        "recovery": "Total 40\n",
+        "onBlock": "+12 \n",
+        "onHit": "+16\n",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_236L-4X.png",
+            "GBVSR_Belial_236M-4X.png\n"
+        ]
+    },
+    {
+        "name": "H Goetia\n",
+        "input": "236H\n",
+        "damage": "400\u00d73\n",
+        "guard": "All\n",
+        "startup": "15\n",
+        "active": "Until hit\n",
+        "recovery": "Total 49\n",
+        "onBlock": "-2\n",
+        "onHit": "+6\n",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_236X.png\n"
+        ]
+    },
+    {
+        "name": "H Notoria\n",
+        "input": "623H\n",
+        "damage": "600, 400, 500\n",
+        "guard": "Mid\u00d72, All\n",
+        "startup": "11\n",
+        "active": "2(3)9(18)5\n",
+        "recovery": "24\n",
+        "onBlock": "-15 to -13\n",
+        "onHit": "KD\n",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_623H.png\n"
+        ]
+    },
+    {
+        "name": "H Vassago\n",
+        "input": "632146H\n",
+        "damage": "500, 2000\n",
+        "guard": "Throw\n",
+        "startup": "27~82\n",
+        "active": "3\n",
+        "recovery": "34\n",
+        "onBlock": "",
+        "onHit": "HKD (+19)\n",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_632146X_Whiff.png",
+            "GBVSR_Belial_632146X.png\n"
+        ]
+    },
+    {
+        "name": "L Asmodeus\n",
+        "input": "214L\n",
+        "damage": "700, 500\n",
+        "guard": "Mid\n",
+        "startup": "15\n",
+        "active": "4\n",
+        "recovery": "21\n",
+        "onBlock": "-5\n",
+        "onHit": "KD\n",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_214X.png",
+            "GBVSR_Belial_214X_2.png\n"
+        ]
+    },
+    {
+        "name": "L Everyone's A Little Crooked\n",
+        "input": "236X~4L\n",
+        "damage": "150\u00d73\n",
+        "guard": "All\n",
+        "startup": "13\n",
+        "active": "9\u00d73\n",
+        "recovery": "Total 38\n",
+        "onBlock": "-4 to +2 \n",
+        "onHit": "+6 (forces standing)\n",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_236L-4X.png",
+            "GBVSR_Belial_236M-4X.png\n"
+        ]
+    },
+    {
+        "name": "L Goetia\n",
+        "input": "236L\n",
+        "damage": "800\n",
+        "guard": "All\n",
+        "startup": "15\n",
+        "active": "Until hit\n",
+        "recovery": "Total 47\n",
+        "onBlock": "-10\n",
+        "onHit": "-6\n",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_236X.png\n"
+        ]
+    },
+    {
+        "name": "L Notoria\n",
+        "input": "623L\n",
+        "damage": "700, 300\n",
+        "guard": "All\n",
+        "startup": "6\n",
+        "active": "2(3)5\n",
+        "recovery": "27\n",
+        "onBlock": "-15\n",
+        "onHit": "KD\n",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_623L.png\n"
+        ]
+    },
+    {
+        "name": "L Vassago\n",
+        "input": "632146L\n",
+        "damage": "500, 1500\n",
+        "guard": "Throw\n",
+        "startup": "34\n",
+        "active": "3\n",
+        "recovery": "36\n",
+        "onBlock": "",
+        "onHit": "HKD (+19)\n",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_632146X_Whiff.png",
+            "GBVSR_Belial_632146X.png\n"
+        ]
+    },
+    {
+        "name": "Legemeton\n",
+        "input": "236236H\n",
+        "damage": "1000\u00d72, 500, 2000 [1000, 2500]\n",
+        "guard": "Mid\n",
+        "startup": "8+5\n",
+        "active": "4(18)9\n",
+        "recovery": "30\n",
+        "onBlock": "-20\n",
+        "onHit": "HKD (+40)\n",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_236236H.png",
+            "GBVSR_Belial_236236H_2.png\n"
+        ]
+    },
+    {
+        "name": "M Asmodeus\n",
+        "input": "214M\n",
+        "damage": "700, 700\n",
+        "guard": "Mid\n",
+        "startup": "21\n",
+        "active": "4\n",
+        "recovery": "19\n",
+        "onBlock": "-4 \n",
+        "onHit": "KD\n",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_214X.png",
+            "GBVSR_Belial_214X_2.png\n"
+        ]
+    },
+    {
+        "name": "M Everyone's A Little Crooked\n",
+        "input": "236X~4M\n",
+        "damage": "150\u00d73\n",
+        "guard": "All\n",
+        "startup": "13\n",
+        "active": "9\u00d73\n",
+        "recovery": "Total 38\n",
+        "onBlock": "-4 to+2 \n",
+        "onHit": "+6 (forces standing)\n",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_236L-4X.png",
+            "GBVSR_Belial_236M-4X.png\n"
+        ]
+    },
+    {
+        "name": "M Goetia\n",
+        "input": "236M\n",
+        "damage": "1200\n",
+        "guard": "All\n",
+        "startup": "17\n",
+        "active": "Until hit\n",
+        "recovery": "Total 43\n",
+        "onBlock": "-4\n",
+        "onHit": "Air recovery +34\n",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_236X.png\n"
+        ]
+    },
+    {
+        "name": "M Notoria\n",
+        "input": "623M\n",
+        "damage": "1000, 500\n",
+        "guard": "All\n",
+        "startup": "38\n",
+        "active": "5\n",
+        "recovery": "10\n",
+        "onBlock": "+2\n",
+        "onHit": "KD\n",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_623M.png\n"
+        ]
+    },
+    {
+        "name": "M Vassago\n",
+        "input": "632146M\n",
+        "damage": "500, 2000\n",
+        "guard": "Throw\n",
+        "startup": "46\n",
+        "active": "3\n",
+        "recovery": "12\n",
+        "onBlock": "",
+        "onHit": "HKD (+19)\n",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_632146X_Whiff.png",
+            "GBVSR_Belial_632146X.png\n"
+        ]
+    },
+    {
+        "name": "Raging Chain\n",
+        "input": "MH~MH\n",
+        "damage": "1000\n",
+        "guard": "Mid\n",
+        "startup": "13\n",
+        "active": "5\n",
+        "recovery": "17\n",
+        "onBlock": "",
+        "onHit": "+15Force Crouch (HKD +63)\n",
+        "onCH": "",
+        "meter": "-2500\n",
+        "images": [
+            "GBVSR_Belial_MH-MH.png\n"
+        ]
+    },
+    {
+        "name": "Raging Strike\n",
+        "input": "MH\n",
+        "damage": "1500\n",
+        "guard": "Guard Crush 45 [52]\n",
+        "startup": "28 (1)\n",
+        "active": "1\n",
+        "recovery": "37\n",
+        "onBlock": "+8Force Stand [+15Force Stand]\n",
+        "onHit": "+15Force Crouch (KD +40)\n",
+        "onCH": "+15Force Crouch\n",
+        "meter": "\u00b10\n",
+        "images": [
+            "GBVSR_Belial_MH.png\n"
+        ]
+    },
+    {
+        "name": "Ultimate Asmodeus\n",
+        "input": "214U\n",
+        "damage": "1500\u00d72\n",
+        "guard": "Mid\n",
+        "startup": "13\n",
+        "active": "2\n",
+        "recovery": "13\n",
+        "onBlock": "+4 to +8\n",
+        "onHit": "HKD (+41)\n",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_214U.png",
+            "GBVSR_Belial_214U_2.png\n"
+        ]
+    },
+    {
+        "name": "Ultimate Goetia\n",
+        "input": "236U\n",
+        "damage": "550, 70\u00d715\n",
+        "guard": "All\n",
+        "startup": "13\n",
+        "active": "",
+        "recovery": "Total 47\n",
+        "onBlock": "+38\n",
+        "onHit": "HKD\n",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_236U.png\n"
+        ]
+    },
+    {
+        "name": "Ultimate Notoria\n",
+        "input": "623U\n",
+        "damage": "700, 300, 0, 500, 400, 100\n",
+        "guard": "Mid\n",
+        "startup": "8\n",
+        "active": "1(2)4(12)5\n",
+        "recovery": "24\n",
+        "onBlock": "-15 to -13\n",
+        "onHit": "HKD\n",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_623U.png\n"
+        ]
+    },
+    {
+        "name": "Ultimate Vassago\n",
+        "input": "632146U\n",
+        "damage": "0\n",
+        "guard": "",
+        "startup": "3\n",
+        "active": "85\n",
+        "recovery": "48\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_5U.png\n"
+        ]
+    },
+    {
+        "name": "Ultimate Vassago Catch\n",
+        "input": "632146U Catch\n",
+        "damage": "900\u00d72\n",
+        "guard": "Mid\n",
+        "startup": "Jump+11\n",
+        "active": "Until L+2\n",
+        "recovery": "11\n",
+        "onBlock": "-4\n",
+        "onHit": "HKD +47\n",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_5U_Hit.png\n"
+        ]
+    },
+    {
+        "name": "Ultimate Vassago Throw\n",
+        "input": "632146U Throw\n",
+        "damage": "500, 1000, 1500\n",
+        "guard": "Throw\n",
+        "startup": "8\n",
+        "active": "4\n",
+        "recovery": "16\n",
+        "onBlock": "",
+        "onHit": "HKD +48\n",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_632146U.png\n"
+        ]
+    }
+]

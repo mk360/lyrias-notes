@@ -1,0 +1,890 @@
+[
+    {
+        "name": "",
+        "input": "2H\n",
+        "damage": "1300\n",
+        "guard": "Mid\n",
+        "startup": "11\n",
+        "active": "4\n",
+        "recovery": "24\n",
+        "onBlock": "-11\n",
+        "onHit": "-7\n",
+        "onCH": "+1\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Lowain_2H.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "2L\n",
+        "damage": "400\n",
+        "guard": "Low\n",
+        "startup": "6\n",
+        "active": "3\n",
+        "recovery": "10\n",
+        "onBlock": "-2\n",
+        "onHit": "+2\n",
+        "onCH": "+4\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Lowain_2L.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "2M\n",
+        "damage": "900\n",
+        "guard": "Low\n",
+        "startup": "7\n",
+        "active": "5\n",
+        "recovery": "15\n",
+        "onBlock": "-5\n",
+        "onHit": "-1\n",
+        "onCH": "+3\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Lowain_2M.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "2U\n",
+        "damage": "1000\n",
+        "guard": "Low\n",
+        "startup": "9\n",
+        "active": "9\n",
+        "recovery": "17\n",
+        "onBlock": "-11\n",
+        "onHit": "HKD +44\n",
+        "onCH": "HKD +48\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Lowain_2U.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "66H\n",
+        "damage": "1200\n",
+        "guard": "Mid\n",
+        "startup": "29\n",
+        "active": "5\n",
+        "recovery": "16\n",
+        "onBlock": "-2\n",
+        "onHit": "KD +30\n",
+        "onCH": "KD +42\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Lowain_66H.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "66L\n",
+        "damage": "600\n",
+        "guard": "Mid\n",
+        "startup": "8\n",
+        "active": "3\n",
+        "recovery": "10 [15]\n",
+        "onBlock": "+2\n",
+        "onHit": "+6\n",
+        "onCH": "+8\n",
+        "meter": "+480\n",
+        "images": [
+            "GBVSR_Lowain_66L.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "66M\n",
+        "damage": "1100\n",
+        "guard": "Low\n",
+        "startup": "12\n",
+        "active": "4\n",
+        "recovery": "21\n",
+        "onBlock": "-8\n",
+        "onHit": "KD +24\n",
+        "onCH": "HKD +49\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Lowain_66M.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "c.H\n",
+        "damage": "1000, 500\n",
+        "guard": "Mid\n",
+        "startup": "9\n",
+        "active": "4(3)2\n",
+        "recovery": "21\n",
+        "onBlock": "-4\n",
+        "onHit": "\u00b10\n",
+        "onCH": "KD +32\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Lowain_cH.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "c.L\n",
+        "damage": "600\n",
+        "guard": "Mid\n",
+        "startup": "5\n",
+        "active": "3\n",
+        "recovery": "6\n",
+        "onBlock": "+4\n",
+        "onHit": "+8\n",
+        "onCH": "+10\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Lowain_cL.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "c.M\n",
+        "damage": "600, 300, 200\n",
+        "guard": "Mid\n",
+        "startup": "6\n",
+        "active": "2\u00d72,4\n",
+        "recovery": "15\n",
+        "onBlock": "-4\n",
+        "onHit": "\u00b10\n",
+        "onCH": "\u00b10\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Lowain_cM.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "c.XX\n",
+        "damage": "700\n",
+        "guard": "Mid\n",
+        "startup": "9\n",
+        "active": "3\n",
+        "recovery": "15\n",
+        "onBlock": "-3\n",
+        "onHit": "+1\n",
+        "onCH": "+5\n",
+        "meter": "+480\n",
+        "images": [
+            "GBVSR_Lowain_cXX.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "c.XX6H\n",
+        "damage": "1000\n",
+        "guard": "High\n",
+        "startup": "18\n",
+        "active": "3\n",
+        "recovery": "22\n",
+        "onBlock": "-4\n",
+        "onHit": "+1Force Crouch\n",
+        "onCH": "HKD +32\n",
+        "meter": "+480\n",
+        "images": [
+            "GBVSR_Lowain_cXX6H.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "c.XX6M\n",
+        "damage": "1000\n",
+        "guard": "Low\n",
+        "startup": "12\n",
+        "active": "3\n",
+        "recovery": "16\n",
+        "onBlock": "-4\n",
+        "onHit": "KD +30\n",
+        "onCH": "HKD +55\n",
+        "meter": "+480\n",
+        "images": [
+            "GBVSR_Lowain_cXX6M.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "c.XXX\n",
+        "damage": "1000\n",
+        "guard": "Mid\n",
+        "startup": "12\n",
+        "active": "3\n",
+        "recovery": "18\n",
+        "onBlock": "-4\n",
+        "onHit": "\u00b10\n",
+        "onCH": "+8\n",
+        "meter": "+600\n",
+        "images": [
+            "GBVSR_Lowain_cXXX.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "f.H\n",
+        "damage": "1300\n",
+        "guard": "Mid\n",
+        "startup": "11\n",
+        "active": "6\n",
+        "recovery": "18\n",
+        "onBlock": "-7\n",
+        "onHit": "-3\n",
+        "onCH": "+5\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Lowain_fH.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "f.L\n",
+        "damage": "600\n",
+        "guard": "Mid\n",
+        "startup": "6\n",
+        "active": "3\n",
+        "recovery": "9\n",
+        "onBlock": "+1\n",
+        "onHit": "+5\n",
+        "onCH": "+7\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Lowain_fL.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "f.M\n",
+        "damage": "900\n",
+        "guard": "Mid\n",
+        "startup": "9\n",
+        "active": "3\n",
+        "recovery": "18\n",
+        "onBlock": "-6\n",
+        "onHit": "-2\n",
+        "onCH": "+2\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Lowain_fM.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "j.H\n",
+        "damage": "1000\n",
+        "guard": "High\/Air\n",
+        "startup": "9\n",
+        "active": "6\n",
+        "recovery": "Until L+1\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Lowain_jH.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "j.L\n",
+        "damage": "600\n",
+        "guard": "High\/Air\n",
+        "startup": "5\n",
+        "active": "Until L\n",
+        "recovery": "1\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Lowain_jL.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "j.M\n",
+        "damage": "700\n",
+        "guard": "High\/Air\n",
+        "startup": "8\n",
+        "active": "3\n",
+        "recovery": "Until L+1\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Lowain_jM.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "j.U\n",
+        "damage": "350\u00d7N\n",
+        "guard": "High\/Airx2, All\n",
+        "startup": "12\n",
+        "active": "2[(3)2]\u00d7Until L\n",
+        "recovery": "1\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Lowain_jU.png\n"
+        ]
+    },
+    {
+        "name": "Air Throw\n",
+        "input": "j.LU\n",
+        "damage": "2500\n",
+        "guard": "Airthrow\n",
+        "startup": "5\n",
+        "active": "5\n",
+        "recovery": "Until L+6\n",
+        "onBlock": "",
+        "onHit": "HKD +47\n",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Lowain_AirThrow.png\n"
+        ]
+    },
+    {
+        "name": "Axis Mundi\n",
+        "input": "236236U~M\n",
+        "damage": "1500\n",
+        "guard": "All\n",
+        "startup": "22~69\n",
+        "active": "",
+        "recovery": "Total 55~102\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Lowain_Yggdrasil_5M.png\n"
+        ]
+    },
+    {
+        "name": "Brave Counter\n",
+        "input": "BC\n",
+        "damage": "500\n",
+        "guard": "Mid\n",
+        "startup": "10 [18]\n",
+        "active": "3 [2]\n",
+        "recovery": "19 [35]\n",
+        "onBlock": "-2\n",
+        "onHit": "Air Tech +21 [+5]\n",
+        "onCH": "HKD +54 [HKD +43]\n",
+        "meter": "\u00b10\n",
+        "images": [
+            "GBVSR_Lowain_BC.png\n"
+        ]
+    },
+    {
+        "name": "Catch 'Em Slippin'\n",
+        "input": "236236H~U\n",
+        "damage": "1200\n",
+        "guard": "Low\n",
+        "startup": "23\n",
+        "active": "11\n",
+        "recovery": "15\n",
+        "onBlock": "-7\n",
+        "onHit": "HKD +72\n",
+        "onCH": "HKD +84\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Lowain_HPA_5U.png\n"
+        ]
+    },
+    {
+        "name": "Definitely Don't Try This at Home\n",
+        "input": "236236H~M\n",
+        "damage": "800\n",
+        "guard": "Mid\n",
+        "startup": "9\n",
+        "active": "6\n",
+        "recovery": "15\n",
+        "onBlock": "-2\n",
+        "onHit": "+2\n",
+        "onCH": "+14\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Lowain_HPA_5M.png\n"
+        ]
+    },
+    {
+        "name": "Don't Mind If I Do\n",
+        "input": "5U\n",
+        "damage": "",
+        "guard": "",
+        "startup": "38\n",
+        "active": "",
+        "recovery": "6\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Lowain_5U.png",
+            "GBVSR_Lowain_5U_Food.png\n"
+        ]
+    },
+    {
+        "name": "Earth Pillar\n",
+        "input": "236236U~L\n",
+        "damage": "600\u00d73\n",
+        "guard": "Mid\n",
+        "startup": "18\n",
+        "active": "9\u00d73\n",
+        "recovery": "11\n",
+        "onBlock": "+7\n",
+        "onHit": "HKD +58\n",
+        "onCH": "HKD +58\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Lowain_Yggdrasil_5L.png\n"
+        ]
+    },
+    {
+        "name": "Flex On 'Em\n",
+        "input": "236236H~H\n",
+        "damage": "1000\n",
+        "guard": "High\n",
+        "startup": "19\n",
+        "active": "3\n",
+        "recovery": "12\n",
+        "onBlock": "+1\n",
+        "onHit": "+18Force Crouch\n",
+        "onCH": "+30Force Crouch\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Lowain_HPA_5H.png\n"
+        ]
+    },
+    {
+        "name": "Ground Throw\n",
+        "input": "LU\n",
+        "damage": "2500\n",
+        "guard": "Throw\n",
+        "startup": "4\n",
+        "active": "3\n",
+        "recovery": "26\n",
+        "onBlock": "",
+        "onHit": "HKD +44\/HKD +36\n",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Lowain_Throw.png",
+            "GBVSR_Lowain_BackThrow.png\n"
+        ]
+    },
+    {
+        "name": "H Awesome Sauce\n",
+        "input": "214H\n",
+        "damage": "400\u00d73\n",
+        "guard": "Mid\n",
+        "startup": "15\n",
+        "active": "4(6)2(8)2\n",
+        "recovery": "21\n",
+        "onBlock": "-5\n",
+        "onHit": "KD +25\n",
+        "onCH": "KD +26\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Lowain_214L.png",
+            "GBVSR_Lowain_214M.png",
+            "GBVSR_Lowain_214H.png\n"
+        ]
+    },
+    {
+        "name": "H Come at Me, Bro!\n",
+        "input": "623H\n",
+        "damage": "1200\n",
+        "guard": "Unblockable\n",
+        "startup": "1 [14]\n",
+        "active": "16 [3]\n",
+        "recovery": "10 [28]\n",
+        "onBlock": "",
+        "onHit": "KD +32\n",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Lowain_623H.png\n"
+        ]
+    },
+    {
+        "name": "H Magnificent Tool of Destruction\n",
+        "input": "22H\n",
+        "damage": "200\u00d76\n",
+        "guard": "All\n",
+        "startup": "38\n",
+        "active": "",
+        "recovery": "Total 34\n",
+        "onBlock": "+41\n",
+        "onHit": "KD +80\n",
+        "onCH": "KD +80\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Lowain_22H.png\n"
+        ]
+    },
+    {
+        "name": "H Sammy &amp; Tommy\n",
+        "input": "236H\n",
+        "damage": "700\u00d72\n",
+        "guard": "Low\/Air, All\n",
+        "startup": "21\n",
+        "active": "12\/23\n",
+        "recovery": "Total 29\n",
+        "onBlock": "+39~+73\n",
+        "onHit": "KD +76~+115\n",
+        "onCH": "KD +76~+115\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Lowain_236X.png\n"
+        ]
+    },
+    {
+        "name": "Human! Pyramid! Attack!\n",
+        "input": "236236H\n",
+        "damage": "",
+        "guard": "",
+        "startup": "5+6\n",
+        "active": "420\n",
+        "recovery": "45\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "-10000\n",
+        "images": [
+            "GBVSR_Lowain_236236H.png",
+            "GBVSR_Lowain_236236H_2.png\n"
+        ]
+    },
+    {
+        "name": "It's Lit, Bros\n",
+        "input": "236236H~L\n",
+        "damage": "200\u00d72, 300\n",
+        "guard": "Mid\n",
+        "startup": "8\n",
+        "active": "3\u00d73\n",
+        "recovery": "12\n",
+        "onBlock": "+2\n",
+        "onHit": "+6\n",
+        "onCH": "+8\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Lowain_HPA_5L.png",
+            "GBVSR_Lowain_HPA_5L_2.png",
+            "GBVSR_Lowain_HPA_5L_3.png\n"
+        ]
+    },
+    {
+        "name": "L Awesome Sauce\n",
+        "input": "214L\n",
+        "damage": "800\n",
+        "guard": "Mid\n",
+        "startup": "19\n",
+        "active": "10\n",
+        "recovery": "9\n",
+        "onBlock": "-4\n",
+        "onHit": "KD +29\n",
+        "onCH": "KD +33\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Lowain_214L.png\n"
+        ]
+    },
+    {
+        "name": "L Come at Me, Bro!\n",
+        "input": "623L\n",
+        "damage": "1200\n",
+        "guard": "Unblockable\n",
+        "startup": "4 [14]\n",
+        "active": "19 [3]\n",
+        "recovery": "12 [28]\n",
+        "onBlock": "",
+        "onHit": "KD +40\n",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Lowain_623L.png\n"
+        ]
+    },
+    {
+        "name": "L Magnificent Tool of Destruction\n",
+        "input": "22L\n",
+        "damage": "400\u00d72\n",
+        "guard": "All\n",
+        "startup": "38\n",
+        "active": "6(3)6 [18(3)18]\n",
+        "recovery": "Total 34\n",
+        "onBlock": "+47\n",
+        "onHit": "+53\n",
+        "onCH": "+53\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Lowain_22L.png\n"
+        ]
+    },
+    {
+        "name": "L Sammy &amp; Tommy\n",
+        "input": "236L\n",
+        "damage": "700\n",
+        "guard": "Low\/Air\n",
+        "startup": "21\n",
+        "active": "12\n",
+        "recovery": "Total 34\n",
+        "onBlock": "+11~+37\n",
+        "onHit": "KD +53~+79\n",
+        "onCH": "KD +55~+81\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Lowain_236X.png\n"
+        ]
+    },
+    {
+        "name": "Luminox Genesi\n",
+        "input": "236236U~U\n",
+        "damage": "1300, 200\u00d75\n",
+        "guard": "All\n",
+        "startup": "45\n",
+        "active": "4\u00d75\n",
+        "recovery": "20\n",
+        "onBlock": "+15\n",
+        "onHit": "Air Tech +74\n",
+        "onCH": "Air Tech +74\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Lowain_Yggdrasil_5U.png\n"
+        ]
+    },
+    {
+        "name": "M Awesome Sauce\n",
+        "input": "214M\n",
+        "damage": "500\u00d72\n",
+        "guard": "Mid\n",
+        "startup": "17\n",
+        "active": "4(6)2\n",
+        "recovery": "21\n",
+        "onBlock": "-8\n",
+        "onHit": "KD +29\n",
+        "onCH": "KD +30\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Lowain_214L.png",
+            "GBVSR_Lowain_214M.png\n"
+        ]
+    },
+    {
+        "name": "M Come at Me, Bro!\n",
+        "input": "623M\n",
+        "damage": "1200\n",
+        "guard": "Unblockable\n",
+        "startup": "1 [14]\n",
+        "active": "19 [3]\n",
+        "recovery": "15 [28]\n",
+        "onBlock": "",
+        "onHit": "KD +45\n",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Lowain_623M.png\n"
+        ]
+    },
+    {
+        "name": "M Magnificent Tool of Destruction\n",
+        "input": "22M\n",
+        "damage": "800\n",
+        "guard": "All\n",
+        "startup": "38\n",
+        "active": "6\n",
+        "recovery": "Total 34\n",
+        "onBlock": "+26\n",
+        "onHit": "+43\n",
+        "onCH": "+47\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Lowain_22M.png\n"
+        ]
+    },
+    {
+        "name": "M Sammy &amp; Tommy\n",
+        "input": "236M\n",
+        "damage": "700\n",
+        "guard": "All\n",
+        "startup": "26\n",
+        "active": "30\n",
+        "recovery": "Total 34\n",
+        "onBlock": "+37~+61\n",
+        "onHit": "+47~+71\n",
+        "onCH": "+49~+73\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Lowain_236X.png\n"
+        ]
+    },
+    {
+        "name": "Moment of Truth\n",
+        "input": "236236H~236U\n",
+        "damage": "3000\n",
+        "guard": "Mid\n",
+        "startup": "14\n",
+        "active": "10\n",
+        "recovery": "33\n",
+        "onBlock": "-6\n",
+        "onHit": "HKD +39\n",
+        "onCH": "HKD +51\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Lowain_HPA_236U.png\n"
+        ]
+    },
+    {
+        "name": "Nether Veil\n",
+        "input": "236236U~H\n",
+        "damage": "1800\n",
+        "guard": "Unblockable\n",
+        "startup": "30\n",
+        "active": "3\n",
+        "recovery": "15\n",
+        "onBlock": "",
+        "onHit": "Air Tech +52\n",
+        "onCH": "Air Tech +76\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Lowain_Yggdrasil_5H.png\n"
+        ]
+    },
+    {
+        "name": "Raging Chain\n",
+        "input": "MH~MH\n",
+        "damage": "1000\n",
+        "guard": "Mid\n",
+        "startup": "13\n",
+        "active": "5\n",
+        "recovery": "17\n",
+        "onBlock": "+4\n",
+        "onHit": "+15Force Crouch (HKD +63)\n",
+        "onCH": "+15Force Crouch\n",
+        "meter": "-2500\n",
+        "images": [
+            "GBVSR_Lowain_MH-MH.png\n"
+        ]
+    },
+    {
+        "name": "Raging Strike\n",
+        "input": "MH\n",
+        "damage": "1500\n",
+        "guard": "Guard Crush 45 [52]\n",
+        "startup": "28 (1)\n",
+        "active": "1\n",
+        "recovery": "37\n",
+        "onBlock": "+8Force Stand [+15Force Stand]\n",
+        "onHit": "+15Force Crouch (KD +40)\n",
+        "onCH": "+15Force Crouch\n",
+        "meter": "\u00b10\n",
+        "images": [
+            "GBVSR_Lowain_MH.png\n"
+        ]
+    },
+    {
+        "name": "Totally Rad Juke\n",
+        "input": "236236H~G\n",
+        "damage": "",
+        "guard": "",
+        "startup": "",
+        "active": "",
+        "recovery": "Total 29\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Lowain_HPA_5G.png\n"
+        ]
+    },
+    {
+        "name": "Try This on for Size!\n",
+        "input": "236236U\n",
+        "damage": "",
+        "guard": "",
+        "startup": "4+29\n",
+        "active": "540\n",
+        "recovery": "31+15\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "-10000\n",
+        "images": [
+            "GBVSR_Lowain_236236U.png\n"
+        ]
+    },
+    {
+        "name": "Ultimate Awesome Sauce\n",
+        "input": "214U\n",
+        "damage": "500x3, 1000 [250\u00d74\/500\u00d73]\n",
+        "guard": "Mid\n",
+        "startup": "11\n",
+        "active": "2(3)1(7)2(8)2 [4(6)2[(8)2]\u00d72]\n",
+        "recovery": "23\n",
+        "onBlock": "-6\n",
+        "onHit": "HKD +98 [HKD +63]\n",
+        "onCH": "HKD +98 [HKD +63]\n",
+        "meter": "-5000\n",
+        "images": [
+            "GBVSR_Lowain_214U.png\n"
+        ]
+    },
+    {
+        "name": "Ultimate Come at Me, Bro!\n",
+        "input": "623U\n",
+        "damage": "700x2, 600\n",
+        "guard": "Midx2, Low\n",
+        "startup": "8\n",
+        "active": "2,4(13)12 [3(7)11]\n",
+        "recovery": "33\n",
+        "onBlock": "-26\n",
+        "onHit": "HKD +34 [HKD +30]\n",
+        "onCH": "HKD +34 [HKD +30]\n",
+        "meter": "-5000\n",
+        "images": [
+            "GBVSR_Lowain_623U.png\n"
+        ]
+    },
+    {
+        "name": "Ultimate Magnificent Tool of Destruction\n",
+        "input": "22U\n",
+        "damage": "50\u00d71~50, (10\u00d7N), 1000\n",
+        "guard": "Mid\n",
+        "startup": "17\n",
+        "active": "[2\u00d76(1)]\u00d7N {5(1)5}\n",
+        "recovery": "Total 61\n",
+        "onBlock": "+29~+172\n",
+        "onHit": "HKD +116~+259\n",
+        "onCH": "HKD +116~+259\n",
+        "meter": "-5000\n",
+        "images": [
+            "GBVSR_Lowain_22U.png\n"
+        ]
+    },
+    {
+        "name": "Ultimate Sammy &amp; Tommy\n",
+        "input": "236U\n",
+        "damage": "400x5\n",
+        "guard": "Mid\n",
+        "startup": "6\n",
+        "active": "",
+        "recovery": "20\n",
+        "onBlock": "+16~+36\n",
+        "onHit": "HKD +85~+105\n",
+        "onCH": "HKD +85~+105\n",
+        "meter": "-5000\n",
+        "images": [
+            "GBVSR_Lowain_236U.png\n"
+        ]
+    }
+]

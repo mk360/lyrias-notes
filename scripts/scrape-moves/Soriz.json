@@ -1,0 +1,792 @@
+[
+    {
+        "name": "",
+        "input": "2H\n",
+        "damage": "1300\n",
+        "guard": "Mid\n",
+        "startup": "11\n",
+        "active": "5\n",
+        "recovery": "22\n",
+        "onBlock": "-10\n",
+        "onHit": "-6\n",
+        "onCH": "+2\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Soriz_2H.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "2L\n",
+        "damage": "400\n",
+        "guard": "Low\n",
+        "startup": "6\n",
+        "active": "3\n",
+        "recovery": "10\n",
+        "onBlock": "-2\n",
+        "onHit": "+2\n",
+        "onCH": "+4\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Soriz_2L.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "2M\n",
+        "damage": "900\n",
+        "guard": "Mid\n",
+        "startup": "7\n",
+        "active": "6\n",
+        "recovery": "11\n",
+        "onBlock": "-2\n",
+        "onHit": "+2\n",
+        "onCH": "+6\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Soriz_2M.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "2U\n",
+        "damage": "1000\n",
+        "guard": "Low\n",
+        "startup": "10\n",
+        "active": "6\n",
+        "recovery": "21\n",
+        "onBlock": "-12\n",
+        "onHit": "HKD +43\n",
+        "onCH": "HKD +47\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Soriz_2U.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "66H\n",
+        "damage": "1200\n",
+        "guard": "Mid\n",
+        "startup": "20\n",
+        "active": "5\n",
+        "recovery": "22\n",
+        "onBlock": "-8\n",
+        "onHit": "+11Force Crouch\n",
+        "onCH": "+15Force Crouch\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Soriz_66H.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "66L\n",
+        "damage": "600\n",
+        "guard": "Mid\n",
+        "startup": "8\n",
+        "active": "3\n",
+        "recovery": "10 [15]\n",
+        "onBlock": "+2\n",
+        "onHit": "+6\n",
+        "onCH": "+8\n",
+        "meter": "+480\n",
+        "images": [
+            "GBVSR_Soriz_66L.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "66M\n",
+        "damage": "1100\n",
+        "guard": "High\n",
+        "startup": "28\n",
+        "active": "4\n",
+        "recovery": "17\n",
+        "onBlock": "-4\n",
+        "onHit": "+1Force Crouch\n",
+        "onCH": "+5Force Crouch\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Soriz_cXX6H.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "c.H\n",
+        "damage": "1600\n",
+        "guard": "Mid\n",
+        "startup": "10\n",
+        "active": "6\n",
+        "recovery": "12\n",
+        "onBlock": "+1\n",
+        "onHit": "+5\n",
+        "onCH": "+17\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Soriz_cH.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "c.L\n",
+        "damage": "600\n",
+        "guard": "Mid\n",
+        "startup": "5\n",
+        "active": "3\n",
+        "recovery": "6\n",
+        "onBlock": "+4\n",
+        "onHit": "+8\n",
+        "onCH": "+10\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Soriz_cL.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "c.M\n",
+        "damage": "1100\n",
+        "guard": "Mid\n",
+        "startup": "6\n",
+        "active": "5\n",
+        "recovery": "10\n",
+        "onBlock": "\u00b10\n",
+        "onHit": "+4\n",
+        "onCH": "+8\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Soriz_cM.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "c.XX\n",
+        "damage": "700\n",
+        "guard": "Mid\n",
+        "startup": "9\n",
+        "active": "3\n",
+        "recovery": "15\n",
+        "onBlock": "-3\n",
+        "onHit": "+1\n",
+        "onCH": "+5\n",
+        "meter": "+480\n",
+        "images": [
+            "GBVSR_Soriz_cXX.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "c.XX6H\n",
+        "damage": "1000\n",
+        "guard": "High\n",
+        "startup": "18\n",
+        "active": "3\n",
+        "recovery": "22\n",
+        "onBlock": "-4\n",
+        "onHit": "+1Force Crouch\n",
+        "onCH": "HKD +32\n",
+        "meter": "+480\n",
+        "images": [
+            "GBVSR_Soriz_cXX6H.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "c.XX6M\n",
+        "damage": "1000\n",
+        "guard": "Low\n",
+        "startup": "12\n",
+        "active": "3\n",
+        "recovery": "16\n",
+        "onBlock": "-4\n",
+        "onHit": "KD +30\n",
+        "onCH": "HKD +55\n",
+        "meter": "+480\n",
+        "images": [
+            "GBVSR_Soriz_cXX6M.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "c.XXX\n",
+        "damage": "1000\n",
+        "guard": "Mid\n",
+        "startup": "12\n",
+        "active": "3\n",
+        "recovery": "18\n",
+        "onBlock": "-4\n",
+        "onHit": "\u00b10\n",
+        "onCH": "+8\n",
+        "meter": "+600\n",
+        "images": [
+            "GBVSR_Soriz_cXXX.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "f.H\n",
+        "damage": "1300\n",
+        "guard": "Mid\n",
+        "startup": "11\n",
+        "active": "6\n",
+        "recovery": "19\n",
+        "onBlock": "-8\n",
+        "onHit": "-4\n",
+        "onCH": "+4\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Soriz_fH.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "f.L\n",
+        "damage": "600\n",
+        "guard": "Low\n",
+        "startup": "7\n",
+        "active": "3\n",
+        "recovery": "9\n",
+        "onBlock": "+1\n",
+        "onHit": "+5\n",
+        "onCH": "+7\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Soriz_fL.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "f.M\n",
+        "damage": "900\n",
+        "guard": "Mid\n",
+        "startup": "8\n",
+        "active": "5\n",
+        "recovery": "14\n",
+        "onBlock": "-4\n",
+        "onHit": "\u00b10\n",
+        "onCH": "+4\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Soriz_fM.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "j.H\n",
+        "damage": "1000\n",
+        "guard": "High\/Air\n",
+        "startup": "8\n",
+        "active": "6\n",
+        "recovery": "Until L+1\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Soriz_jH.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "j.L\n",
+        "damage": "600\n",
+        "guard": "High\/Air\n",
+        "startup": "5\n",
+        "active": "Until L\n",
+        "recovery": "1\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Soriz_jL.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "j.M\n",
+        "damage": "800\n",
+        "guard": "High\/Air\n",
+        "startup": "7\n",
+        "active": "9\n",
+        "recovery": "Until L+1\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Soriz_jM.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "j.U\n",
+        "damage": "1000\n",
+        "guard": "High\/Air\n",
+        "startup": "7\n",
+        "active": "6\n",
+        "recovery": "Until L+1\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Soriz_jU.png\n"
+        ]
+    },
+    {
+        "name": "Air Throw\n",
+        "input": "j.LU\n",
+        "damage": "2500\n",
+        "guard": "Throw\n",
+        "startup": "5\n",
+        "active": "5\n",
+        "recovery": "Until L+6\n",
+        "onBlock": "",
+        "onHit": "HKD \u2248+45\n",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Soriz_AirThrow.png\n"
+        ]
+    },
+    {
+        "name": "Bravado Bullet\n",
+        "input": "mu.214X~236X\n",
+        "damage": "1000\n",
+        "guard": "Mid\n",
+        "startup": "14\n",
+        "active": "6\n",
+        "recovery": "21\n",
+        "onBlock": "-8\n",
+        "onHit": "KD +28\n",
+        "onCH": "KD +45~+49\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Soriz_Macho_214X-236X.png\n"
+        ]
+    },
+    {
+        "name": "Brave Counter\n",
+        "input": "BC\n",
+        "damage": "500\n",
+        "guard": "Mid\n",
+        "startup": "10 [18]\n",
+        "active": "3 [2]\n",
+        "recovery": "19 [35]\n",
+        "onBlock": "-2\n",
+        "onHit": "Air Tech +21 [+5]\n",
+        "onCH": "HKD +54 [HKD +43]\n",
+        "meter": "\u00b10\n",
+        "images": [
+            "GBVSR_Soriz_BC.png\n"
+        ]
+    },
+    {
+        "name": "Ground Throw\n",
+        "input": "LU\n",
+        "damage": "2500\n",
+        "guard": "Throw\n",
+        "startup": "4\n",
+        "active": "3\n",
+        "recovery": "26\n",
+        "onBlock": "",
+        "onHit": "HKD +11\/HKD +42\n",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Soriz_Throw.png",
+            "GBVSR_Soriz_BackThrow.png\n"
+        ]
+    },
+    {
+        "name": "H Impact Knuckles\n",
+        "input": "236H\n",
+        "damage": "1800\n",
+        "guard": "Mid\n",
+        "startup": "15~17 [14~16]\n",
+        "active": "6\n",
+        "recovery": "17\n",
+        "onBlock": "-3\n",
+        "onHit": "KD +39\n",
+        "onCH": "KD +43\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Soriz_236X.png\n"
+        ]
+    },
+    {
+        "name": "H Punch the Stars\n",
+        "input": "214H\n",
+        "damage": "450\u00d74 [250\u00d78]\n",
+        "guard": "Mid\n",
+        "startup": "13\n",
+        "active": "2[(3)2]\u00d73 [2[(3)2]\u00d77]\n",
+        "recovery": "12\n",
+        "onBlock": "+1\n",
+        "onHit": "+5\n",
+        "onCH": "+5\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Soriz_214X.png\n"
+        ]
+    },
+    {
+        "name": "H Rock Smash\n",
+        "input": "22H\n",
+        "damage": "1500\n",
+        "guard": "Mid\n",
+        "startup": "15\n",
+        "active": "6\n",
+        "recovery": "11\n",
+        "onBlock": "+4\n",
+        "onHit": "KD +42\n",
+        "onCH": "KD +46\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Soriz_22X.png\n"
+        ]
+    },
+    {
+        "name": "H Roundhouse Fang\n",
+        "input": "623H\n",
+        "damage": "1500\n",
+        "guard": "Mid\n",
+        "startup": "5\n",
+        "active": "7\n",
+        "recovery": "20\n",
+        "onBlock": "-8\n",
+        "onHit": "KD +36\n",
+        "onCH": "KD +40\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Soriz_623X.png\n"
+        ]
+    },
+    {
+        "name": "L Impact Knuckles\n",
+        "input": "236L\n",
+        "damage": "1100\n",
+        "guard": "Mid\n",
+        "startup": "15~17 [13~15]\n",
+        "active": "4\n",
+        "recovery": "17\n",
+        "onBlock": "-3\n",
+        "onHit": "+1\n",
+        "onCH": "+5\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Soriz_236X.png\n"
+        ]
+    },
+    {
+        "name": "L Punch the Stars\n",
+        "input": "214L\n",
+        "damage": "250\u00d74 [140\u00d78]\n",
+        "guard": "Mid\n",
+        "startup": "13\n",
+        "active": "2[(3)2]\u00d73 [2[(3)2]\u00d77]\n",
+        "recovery": "14\n",
+        "onBlock": "-1\n",
+        "onHit": "+3\n",
+        "onCH": "+3\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Soriz_214X.png\n"
+        ]
+    },
+    {
+        "name": "L Rock Smash\n",
+        "input": "22L\n",
+        "damage": "900\n",
+        "guard": "Mid\n",
+        "startup": "18\n",
+        "active": "6\n",
+        "recovery": "17\n",
+        "onBlock": "-2\n",
+        "onHit": "Air Tech +31\n",
+        "onCH": "KD +46\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Soriz_22X.png\n"
+        ]
+    },
+    {
+        "name": "L Roundhouse Fang\n",
+        "input": "623L\n",
+        "damage": "1000\n",
+        "guard": "Mid\n",
+        "startup": "6\n",
+        "active": "6\n",
+        "recovery": "18\n",
+        "onBlock": "-7\n",
+        "onHit": "Air Tech +26\n",
+        "onCH": "KD +41\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Soriz_623X.png\n"
+        ]
+    },
+    {
+        "name": "Leaping Tiger, Charging Dragon\n",
+        "input": "236236H\n",
+        "damage": "2000, 2500 [2400, 3000] (1500, 2000)\n",
+        "guard": "Mid\n",
+        "startup": "7+6\n",
+        "active": "2(27)3\n",
+        "recovery": "45\n",
+        "onBlock": "-29\n",
+        "onHit": "HKD +45\n",
+        "onCH": "HKD +45\n",
+        "meter": "-10000\n",
+        "images": [
+            "GBVSR_Soriz_236236H_Start.png",
+            "GBVSR_Soriz_236236H_1.png",
+            "GBVSR_Soriz_236236H_2.png\n"
+        ]
+    },
+    {
+        "name": "M Impact Knuckles\n",
+        "input": "236M\n",
+        "damage": "1400\n",
+        "guard": "Mid\n",
+        "startup": "26~31 [25~30]\n",
+        "active": "6\n",
+        "recovery": "15\n",
+        "onBlock": "+1\n",
+        "onHit": "KD +35\n",
+        "onCH": "KD +39\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Soriz_236X.png\n"
+        ]
+    },
+    {
+        "name": "M Punch the Stars\n",
+        "input": "214M\n",
+        "damage": "300\u00d74 [170\u00d78]\n",
+        "guard": "Mid\n",
+        "startup": "21\n",
+        "active": "2[(3)2]\u00d73 [2[(3)2]\u00d77]\n",
+        "recovery": "14\n",
+        "onBlock": "-1\n",
+        "onHit": "Air Tech +27\n",
+        "onCH": "Air Tech +27\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Soriz_214X.png\n"
+        ]
+    },
+    {
+        "name": "M Rock Smash\n",
+        "input": "22M\n",
+        "damage": "1200\n",
+        "guard": "Mid\n",
+        "startup": "28\n",
+        "active": "6\n",
+        "recovery": "13\n",
+        "onBlock": "+8\n",
+        "onHit": "KD +42\n",
+        "onCH": "KD +52\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Soriz_22X.png\n"
+        ]
+    },
+    {
+        "name": "M Roundhouse Fang\n",
+        "input": "623M\n",
+        "damage": "1000\n",
+        "guard": "Mid\n",
+        "startup": "7\n",
+        "active": "6\n",
+        "recovery": "20\n",
+        "onBlock": "-9\n",
+        "onHit": "KD +36\n",
+        "onCH": "KD +40\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Soriz_623X.png\n"
+        ]
+    },
+    {
+        "name": "Macho Ultimatum\n",
+        "input": "236236U\n",
+        "damage": "",
+        "guard": "",
+        "startup": "10+0\n",
+        "active": "",
+        "recovery": "10\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "\u00b10\n",
+        "images": [
+            "GBVSR_Soriz_236236U.png\n"
+        ]
+    },
+    {
+        "name": "Muscle Fury\n",
+        "input": "5U\n",
+        "damage": "",
+        "guard": "",
+        "startup": "3\n",
+        "active": "27~57\n",
+        "recovery": "9\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Soriz_5U.png\n"
+        ]
+    },
+    {
+        "name": "Raging Chain\n",
+        "input": "MH~MH\n",
+        "damage": "1000\n",
+        "guard": "Mid\n",
+        "startup": "13\n",
+        "active": "5\n",
+        "recovery": "17\n",
+        "onBlock": "",
+        "onHit": "+15Force Crouch (HKD +63)\n",
+        "onCH": "",
+        "meter": "-2500\n",
+        "images": [
+            "GBVSR_Soriz_MH-MH.png\n"
+        ]
+    },
+    {
+        "name": "Raging Strike\n",
+        "input": "MH\n",
+        "damage": "1500\n",
+        "guard": "Guard Crush 45 [52]\n",
+        "startup": "28 (1)\n",
+        "active": "1\n",
+        "recovery": "37\n",
+        "onBlock": "+8Force Stand [+15Force Stand]\n",
+        "onHit": "+15Force Crouch (KD +40)\n",
+        "onCH": "+15Force Crouch\n",
+        "meter": "\u00b10\n",
+        "images": [
+            "GBVSR_Soriz_MH.png\n"
+        ]
+    },
+    {
+        "name": "Reactive Muscles\n",
+        "input": "5U~6X\n",
+        "damage": "900\n",
+        "guard": "Mid\n",
+        "startup": "11\n",
+        "active": "3\n",
+        "recovery": "33\n",
+        "onBlock": "-3\n",
+        "onHit": "+4Force Crouch\n",
+        "onCH": "+5Force Crouch\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Soriz_5U-6X.png\n"
+        ]
+    },
+    {
+        "name": "Tenacious Will\n",
+        "input": "mu.214X~214X\n",
+        "damage": "1000\n",
+        "guard": "Guard Crush 30\n",
+        "startup": "20\n",
+        "active": "3\n",
+        "recovery": "23\n",
+        "onBlock": "+5\n",
+        "onHit": "+5Force Crouch\n",
+        "onCH": "+5Force Crouch\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Soriz_Macho_214X-214X.png\n"
+        ]
+    },
+    {
+        "name": "Ultimate Impact Knuckles\n",
+        "input": "236U\n",
+        "damage": "2300 [2500]\n",
+        "guard": "Mid\n",
+        "startup": "15~20\n",
+        "active": "4~6\n",
+        "recovery": "23 (26)\n",
+        "onBlock": "-4\n",
+        "onHit": "HKD +63~+70\n",
+        "onCH": "HKD +63~+70\n",
+        "meter": "-5000\n",
+        "images": [
+            "GBVSR_Soriz_236U.png\n"
+        ]
+    },
+    {
+        "name": "Ultimate Punch the Stars\n",
+        "input": "214U\n",
+        "damage": "250x8, 1000 [250\u00d78, 500, 700]\n",
+        "guard": "Mid [Mid\u00d78, Guard Crush 30, Mid]\n",
+        "startup": "13\n",
+        "active": "22(10)3 (17)[22(15)5(24)6 (17)]\n",
+        "recovery": "44 (16)[21 (16)]\n",
+        "onBlock": "+4 [HKD +46]\n",
+        "onHit": "HKD +49 [HKD +46]\n",
+        "onCH": "HKD +49 [HKD +46]\n",
+        "meter": "-5000\n",
+        "images": [
+            "GBVSR_Soriz_214U.png",
+            "GBVSR_Soriz_214U_2.png",
+            "GBVSR_Soriz_Macho_214U_2.png\n"
+        ]
+    },
+    {
+        "name": "Ultimate Rock Smash\n",
+        "input": "22U\n",
+        "damage": "900x3 [1000x3]\n",
+        "guard": "Mid\n",
+        "startup": "22\n",
+        "active": "6\u00d72,3\n",
+        "recovery": "10 (15)\n",
+        "onBlock": "+4\n",
+        "onHit": "HKD +70\n",
+        "onCH": "HKD +70\n",
+        "meter": "-5000\n",
+        "images": [
+            "GBVSR_Soriz_22U.png\n"
+        ]
+    },
+    {
+        "name": "Ultimate Roundhouse Fang\n",
+        "input": "623U\n",
+        "damage": "1000\u00d72\n",
+        "guard": "Mid\n",
+        "startup": "8\n",
+        "active": "10(7)8 (5(4)6)\n",
+        "recovery": "25\n",
+        "onBlock": "-14\n",
+        "onHit": "HKD +31\n",
+        "onCH": "HKD +31\n",
+        "meter": "-5000\n",
+        "images": [
+            "GBVSR_Soriz_623U.png\n"
+        ]
+    },
+    {
+        "name": "Way of the Fundoshi Fist\n",
+        "input": "mu.236236U\n",
+        "damage": "0, 1200, 1800, 3000 [1100]\n",
+        "guard": "Throw, Mid\n",
+        "startup": "9+0\n",
+        "active": "1(10)3\n",
+        "recovery": "42\n",
+        "onBlock": "-26\n",
+        "onHit": "HKD +44 [HKD +48]\n",
+        "onCH": "HKD +44 [HKD +48]\n",
+        "meter": "-10000\n",
+        "images": [
+            "GBVSR_Soriz_Macho_236236U_Start.png",
+            "GBVSR_Soriz_Macho_236236U.png\n"
+        ]
+    }
+]

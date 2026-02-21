@@ -1,0 +1,948 @@
+[
+    {
+        "name": "",
+        "input": "2H\n",
+        "damage": "1000, 300\n",
+        "guard": "Mid\n",
+        "startup": "11\n",
+        "active": "3\u00d72\n",
+        "recovery": "24\n",
+        "onBlock": "-10\n",
+        "onHit": "-6\n",
+        "onCH": "-6\n",
+        "meter": "+480\u00d72\n",
+        "images": [
+            "GBVSR_Yuel_2H.png",
+            "GBVSR_Yuel_2H_2.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "2L\n",
+        "damage": "400\n",
+        "guard": "Low\n",
+        "startup": "6\n",
+        "active": "3\n",
+        "recovery": "10\n",
+        "onBlock": "-2\n",
+        "onHit": "+2\n",
+        "onCH": "+4\n",
+        "meter": "+240\n",
+        "images": [
+            "GBVSR_Yuel_2L.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "2M\n",
+        "damage": "900\n",
+        "guard": "Mid\n",
+        "startup": "6\n",
+        "active": "3\n",
+        "recovery": "15\n",
+        "onBlock": "-3\n",
+        "onHit": "+1\n",
+        "onCH": "+5\n",
+        "meter": "+480\n",
+        "images": [
+            "GBVSR_Yuel_2M.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "2U\n",
+        "damage": "1000\n",
+        "guard": "Low\n",
+        "startup": "7\n",
+        "active": "3\n",
+        "recovery": "24\n",
+        "onBlock": "-12\n",
+        "onHit": "HKD +43\n",
+        "onCH": "HKD +47\n",
+        "meter": "+480\n",
+        "images": [
+            "GBVSR_Yuel_2U.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "66H\n",
+        "damage": "1200\n",
+        "guard": "Mid\n",
+        "startup": "15\n",
+        "active": "4\n",
+        "recovery": "23\n",
+        "onBlock": "-8\n",
+        "onHit": "+10 [Force Crouch]\n",
+        "onCH": "+14 [Force Crouch]\n",
+        "meter": "+720\n",
+        "images": [
+            "GBVSR_Yuel_66H.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "66L\n",
+        "damage": "600\n",
+        "guard": "Mid\n",
+        "startup": "8\n",
+        "active": "3\n",
+        "recovery": "10 [15]\n",
+        "onBlock": "+2\n",
+        "onHit": "+6\n",
+        "onCH": "+8\n",
+        "meter": "+480\n",
+        "images": [
+            "GBVSR_Yuel_66L.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "66M\n",
+        "damage": "1100\n",
+        "guard": "Low\n",
+        "startup": "12\n",
+        "active": "4\n",
+        "recovery": "21\n",
+        "onBlock": "-8\n",
+        "onHit": "KD +24\n",
+        "onCH": "HKD +49\n",
+        "meter": "+600\n",
+        "images": [
+            "GBVSR_Yuel_cXX6M.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "c.H\n",
+        "damage": "1000, 200\u00d72\n",
+        "guard": "Mid\n",
+        "startup": "8\n",
+        "active": "2\u00d73\n",
+        "recovery": "21\n",
+        "onBlock": "-4\n",
+        "onHit": "\u00b10\n",
+        "onCH": "\u00b10\n",
+        "meter": "+360\u00d73\n",
+        "images": [
+            "GBVSR_Yuel_cH.png",
+            "GBVSR_Yuel_cH_2.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "c.L\n",
+        "damage": "600\n",
+        "guard": "Mid\n",
+        "startup": "5\n",
+        "active": "3\n",
+        "recovery": "6\n",
+        "onBlock": "+4\n",
+        "onHit": "+8\n",
+        "onCH": "+10\n",
+        "meter": "+360\n",
+        "images": [
+            "GBVSR_Yuel_cL.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "c.M\n",
+        "damage": "1100\n",
+        "guard": "Mid\n",
+        "startup": "6\n",
+        "active": "3\n",
+        "recovery": "14\n",
+        "onBlock": "-2\n",
+        "onHit": "+2\n",
+        "onCH": "+6\n",
+        "meter": "+480\n",
+        "images": [
+            "GBVSR_Yuel_cM.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "c.XX\n",
+        "damage": "700\n",
+        "guard": "Mid\n",
+        "startup": "9\n",
+        "active": "3\n",
+        "recovery": "15\n",
+        "onBlock": "-3\n",
+        "onHit": "+1\n",
+        "onCH": "+5\n",
+        "meter": "+480\n",
+        "images": [
+            "GBVSR_Yuel_cXX.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "c.XX6H\n",
+        "damage": "1000\n",
+        "guard": "High\n",
+        "startup": "18\n",
+        "active": "3\n",
+        "recovery": "22\n",
+        "onBlock": "-4\n",
+        "onHit": "+1Force Crouch\n",
+        "onCH": "HKD +32\n",
+        "meter": "+480\n",
+        "images": [
+            "GBVSR_Yuel_cXX6H.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "c.XX6M\n",
+        "damage": "1000\n",
+        "guard": "Low\n",
+        "startup": "12\n",
+        "active": "3\n",
+        "recovery": "16\n",
+        "onBlock": "-4\n",
+        "onHit": "KD +30\n",
+        "onCH": "HKD +55\n",
+        "meter": "+480\n",
+        "images": [
+            "GBVSR_Yuel_cXX6M.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "c.XXX\n",
+        "damage": "1000\n",
+        "guard": "Mid\n",
+        "startup": "12\n",
+        "active": "3\n",
+        "recovery": "18\n",
+        "onBlock": "-4\n",
+        "onHit": "\u00b10\n",
+        "onCH": "+8\n",
+        "meter": "+600\n",
+        "images": [
+            "GBVSR_Yuel_cXXX.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "f.H\n",
+        "damage": "1300\n",
+        "guard": "Mid\n",
+        "startup": "10\n",
+        "active": "6\n",
+        "recovery": "19\n",
+        "onBlock": "-8\n",
+        "onHit": "-4\n",
+        "onCH": "+4\n",
+        "meter": "+600\n",
+        "images": [
+            "GBVSR_Yuel_fH.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "f.L\n",
+        "damage": "600\n",
+        "guard": "Low\n",
+        "startup": "6\n",
+        "active": "3\n",
+        "recovery": "8\n",
+        "onBlock": "+2\n",
+        "onHit": "+6\n",
+        "onCH": "+8\n",
+        "meter": "+360\n",
+        "images": [
+            "GBVSR_Yuel_fL.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "f.M\n",
+        "damage": "600, 300\n",
+        "guard": "Mid\n",
+        "startup": "9\n",
+        "active": "3,1\n",
+        "recovery": "21\n",
+        "onBlock": "-7\n",
+        "onHit": "-3\n",
+        "onCH": "-3\n",
+        "meter": "+360\u00d72\n",
+        "images": [
+            "GBVSR_Yuel_fM.png",
+            "GBVSR_Yuel_fM_2.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "j.H\n",
+        "damage": "500\u00d72\n",
+        "guard": "High\/Air, All\n",
+        "startup": "8\n",
+        "active": "4(3)3\n",
+        "recovery": "Until L+1\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "+360\u00d72\n",
+        "images": [
+            "GBVSR_Yuel_jH.png",
+            "GBVSR_Yuel_jH_2.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "j.L\n",
+        "damage": "600\n",
+        "guard": "High\/Air\n",
+        "startup": "5\n",
+        "active": "Until L\n",
+        "recovery": "1\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "+360\n",
+        "images": [
+            "GBVSR_Yuel_jL.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "j.M\n",
+        "damage": "400\u00d72\n",
+        "guard": "High\/Air, All\n",
+        "startup": "6\n",
+        "active": "3\u00d72\n",
+        "recovery": "Until L+1\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "+360\u00d72\n",
+        "images": [
+            "GBVSR_Yuel_jM.png",
+            "GBVSR_Yuel_jM_2.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "j.U\n",
+        "damage": "250\u00d7N\n",
+        "guard": "All\n",
+        "startup": "19\n",
+        "active": "3\u00d7NUntil L+2\n",
+        "recovery": "14\n",
+        "onBlock": "-2\n",
+        "onHit": "+2\n",
+        "onCH": "+2\n",
+        "meter": "+360\u00d7N\n",
+        "images": [
+            "GBVSR_Yuel_jU.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "td.2L\n",
+        "damage": "800\n",
+        "guard": "Mid\n",
+        "startup": "8\n",
+        "active": "3\n",
+        "recovery": "15\n",
+        "onBlock": "-3\n",
+        "onHit": "Air Tech +28\n",
+        "onCH": "Air Tech +32\n",
+        "meter": "+480\n",
+        "images": [
+            "GBVSR_Yuel_5U-2L.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "td.2M\n",
+        "damage": "900\n",
+        "guard": "Low\n",
+        "startup": "10\n",
+        "active": "6\n",
+        "recovery": "5\n",
+        "onBlock": "+2\n",
+        "onHit": "+6\n",
+        "onCH": "+8\n",
+        "meter": "+720\n",
+        "images": [
+            "GBVSR_Yuel_5U-2M.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "td.44\n",
+        "damage": "",
+        "guard": "",
+        "startup": "",
+        "active": "",
+        "recovery": "Total 17\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "\u00b10\n",
+        "images": [
+            ""
+        ]
+    },
+    {
+        "name": "",
+        "input": "td.5L\n",
+        "damage": "600\n",
+        "guard": "Mid\n",
+        "startup": "5\n",
+        "active": "3\n",
+        "recovery": "8\n",
+        "onBlock": "\u00b10\n",
+        "onHit": "+4\n",
+        "onCH": "+6\n",
+        "meter": "+240\n",
+        "images": [
+            "GBVSR_Yuel_5U-5L.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "td.5M\n",
+        "damage": "1300\n",
+        "guard": "High\n",
+        "startup": "14\n",
+        "active": "2\n",
+        "recovery": "21\n",
+        "onBlock": "-6\n",
+        "onHit": "KD +31\n",
+        "onCH": "KD +39\n",
+        "meter": "+600\n",
+        "images": [
+            "GBVSR_Yuel_5U-5M.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "td.66\n",
+        "damage": "",
+        "guard": "",
+        "startup": "",
+        "active": "",
+        "recovery": "Total 14\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "\u00b10\n",
+        "images": [
+            ""
+        ]
+    },
+    {
+        "name": "",
+        "input": "td.LM\n",
+        "damage": "2500\n",
+        "guard": "Throw\n",
+        "startup": "20\n",
+        "active": "3\n",
+        "recovery": "26\n",
+        "onBlock": "",
+        "onHit": "HKD +44\n",
+        "onCH": "",
+        "meter": "+480, 1800\n",
+        "images": [
+            "GBVSR_Yuel_Throw.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "td.U\n",
+        "damage": "",
+        "guard": "",
+        "startup": "3\n",
+        "active": "",
+        "recovery": "9\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "\u00b10\n",
+        "images": [
+            "GBVSR_Yuel_5U.png\n"
+        ]
+    },
+    {
+        "name": "Air Throw\n",
+        "input": "j.LU\n",
+        "damage": "2500\n",
+        "guard": "Airthrow\n",
+        "startup": "5\n",
+        "active": "5\n",
+        "recovery": "Until L+6\n",
+        "onBlock": "",
+        "onHit": "HKD \u2248+47\n",
+        "onCH": "",
+        "meter": "+480, 1800\n",
+        "images": [
+            "GBVSR_Yuel_AirThrow.png\n"
+        ]
+    },
+    {
+        "name": "Brave Counter\n",
+        "input": "BC\n",
+        "damage": "500\n",
+        "guard": "Mid\n",
+        "startup": "10 [18]\n",
+        "active": "3 [2]\n",
+        "recovery": "19 [35]\n",
+        "onBlock": "-2\n",
+        "onHit": "Air Tech +21 [+5]\n",
+        "onCH": "HKD +54 [HKD +43]\n",
+        "meter": "\u00b10\n",
+        "images": [
+            "GBVSR_Yuel_BC.png\n"
+        ]
+    },
+    {
+        "name": "Crimson Dance: Rinnen-aratame\n",
+        "input": "236236H\n",
+        "damage": "1000, 1500\u00d72\n",
+        "guard": "Mid\n",
+        "startup": "9+5~14\n",
+        "active": "3\n",
+        "recovery": "39\n",
+        "onBlock": "-23\n",
+        "onHit": "HKD +46\n",
+        "onCH": "HKD +46\n",
+        "meter": "-10000\n",
+        "images": [
+            "GBVSR_Yuel_236236H_start.png",
+            "GBVSR_Yuel_236236H.png\n"
+        ]
+    },
+    {
+        "name": "Eye of the Sparrow\n",
+        "input": "td.623X\n",
+        "damage": "1300\n",
+        "guard": "Mid\n",
+        "startup": "1 [7]\n",
+        "active": "15 [9]\n",
+        "recovery": "20 [22]\n",
+        "onBlock": "",
+        "onHit": "Air Tech +25\n",
+        "onCH": "",
+        "meter": "+600\n",
+        "images": [
+            "GBVSR_Yuel_5U-623X.png",
+            "GBVSR_Yuel_5U-623X_Catch.png\n"
+        ]
+    },
+    {
+        "name": "Ground Throw\n",
+        "input": "LU\n",
+        "damage": "2500\n",
+        "guard": "Throw\n",
+        "startup": "4\n",
+        "active": "3\n",
+        "recovery": "26\n",
+        "onBlock": "",
+        "onHit": "HKD +44\n",
+        "onCH": "",
+        "meter": "+480, 1800\n",
+        "images": [
+            "GBVSR_Yuel_Throw.png",
+            "GBVSR_Yuel_BackThrow.png\n"
+        ]
+    },
+    {
+        "name": "Gurren\n",
+        "input": "td.5H\n",
+        "damage": "1600\n",
+        "guard": "Mid\n",
+        "startup": "15~29\n",
+        "active": "11\n",
+        "recovery": "14\n",
+        "onBlock": "-4\n",
+        "onHit": "KD +27\n",
+        "onCH": "KD +31\n",
+        "meter": "+720\n",
+        "images": [
+            "GBVSR_Yuel_5U-5H.png\n"
+        ]
+    },
+    {
+        "name": "H Foxflame\n",
+        "input": "22H\n",
+        "damage": "1200\n",
+        "guard": "Mid\n",
+        "startup": "22\n",
+        "active": "9\n",
+        "recovery": "13\n",
+        "onBlock": "+4\n",
+        "onHit": "+8\n",
+        "onCH": "+12\n",
+        "meter": "+400+720\n",
+        "images": [
+            "GBVSR_Yuel_22X.png\n"
+        ]
+    },
+    {
+        "name": "H Hanaarashi\n",
+        "input": "214H\n",
+        "damage": "900\u00d72\n",
+        "guard": "Mid\n",
+        "startup": "42\n",
+        "active": "3\u00d72\n",
+        "recovery": "12\n",
+        "onBlock": "+2\n",
+        "onHit": "+6\n",
+        "onCH": "+6\n",
+        "meter": "+400+720, 120\n",
+        "images": [
+            "GBVSR_Yuel_214L.png",
+            "GBVSR_Yuel_214L_2.png\n"
+        ]
+    },
+    {
+        "name": "H Hanaarashi (Low)\n",
+        "input": "214H~M\n",
+        "damage": "1500\n",
+        "guard": "Low\n",
+        "startup": "38\n",
+        "active": "6\n",
+        "recovery": "15\n",
+        "onBlock": "-4\n",
+        "onHit": "KD +37\n",
+        "onCH": "KD +41\n",
+        "meter": "+400, 720\n",
+        "images": [
+            "GBVSR_Yuel_214M.png\n"
+        ]
+    },
+    {
+        "name": "H Hien: Homuragaeshi\n",
+        "input": "623H\n",
+        "damage": "100\u00d710, 500\n",
+        "guard": "Mid\n",
+        "startup": "11\n",
+        "active": "2\u00d710\n",
+        "recovery": "39\n",
+        "onBlock": "-36\n",
+        "onHit": "KD -27\n",
+        "onCH": "KD +27\n",
+        "meter": "+400+720, 120\u00d74, 60\u00d76\n",
+        "images": [
+            "GBVSR_Yuel_623X.png\n"
+        ]
+    },
+    {
+        "name": "H Starlit Sky\n",
+        "input": "236H\n",
+        "damage": "100\u00d76, 700\n",
+        "guard": "Mid\n",
+        "startup": "14\n",
+        "active": "2\u00d76,7 [2x6]\n",
+        "recovery": "16 [12]\n",
+        "onBlock": "-6\n",
+        "onHit": "KD +29\n",
+        "onCH": "KD +29\n",
+        "meter": "+400+720, 120\u00d75, 60\u00d72\n",
+        "images": [
+            "GBVSR_Yuel_236X.png",
+            "GBVSR_Yuel_236X_2.png\n"
+        ]
+    },
+    {
+        "name": "Hanaarashi (Cancel)\n",
+        "input": "214X~U\n",
+        "damage": "",
+        "guard": "",
+        "startup": "",
+        "active": "",
+        "recovery": "Total 6\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Yuel_5U.png\n"
+        ]
+    },
+    {
+        "name": "L Foxflame\n",
+        "input": "22L\n",
+        "damage": "800\n",
+        "guard": "Mid\n",
+        "startup": "19\n",
+        "active": "9\n",
+        "recovery": "17\n",
+        "onBlock": "\u00b10\n",
+        "onHit": "+4\n",
+        "onCH": "+8\n",
+        "meter": "+200+720\n",
+        "images": [
+            "GBVSR_Yuel_22X.png\n"
+        ]
+    },
+    {
+        "name": "L Hanaarashi\n",
+        "input": "214L\n",
+        "damage": "600\u00d72\n",
+        "guard": "Mid\n",
+        "startup": "46\n",
+        "active": "3\u00d72\n",
+        "recovery": "13\n",
+        "onBlock": "+1\n",
+        "onHit": "+5\n",
+        "onCH": "+5\n",
+        "meter": "+200+720, 120\n",
+        "images": [
+            "GBVSR_Yuel_214X.png",
+            "GBVSR_Yuel_214L.png",
+            "GBVSR_Yuel_214L_2.png\n"
+        ]
+    },
+    {
+        "name": "L Hien: Homuragaeshi\n",
+        "input": "623L\n",
+        "damage": "200\u00d75\n",
+        "guard": "All\n",
+        "startup": "6\n",
+        "active": "2\u00d75\n",
+        "recovery": "27\n",
+        "onBlock": "-12\n",
+        "onHit": "KD +31\n",
+        "onCH": "KD +31\n",
+        "meter": "+200+720, 120\u00d74\n",
+        "images": [
+            "GBVSR_Yuel_623X.png\n"
+        ]
+    },
+    {
+        "name": "L Starlit Sky\n",
+        "input": "236L\n",
+        "damage": "300\u00d73\n",
+        "guard": "Mid\n",
+        "startup": "14\n",
+        "active": "4\u00d73 [4x2]\n",
+        "recovery": "16 [12]\n",
+        "onBlock": "-3\n",
+        "onHit": "Air Tech +21\n",
+        "onCH": "Air Tech +21\n",
+        "meter": "+200+720, 120\u00d72\n",
+        "images": [
+            "GBVSR_Yuel_236X.png",
+            "GBVSR_Yuel_236X_2.png\n"
+        ]
+    },
+    {
+        "name": "M Foxflame\n",
+        "input": "22M\n",
+        "damage": "1000\n",
+        "guard": "Mid\n",
+        "startup": "31\n",
+        "active": "16\n",
+        "recovery": "6\n",
+        "onBlock": "+5\n",
+        "onHit": "+9\n",
+        "onCH": "+13\n",
+        "meter": "+200+720\n",
+        "images": [
+            "GBVSR_Yuel_22X.png\n"
+        ]
+    },
+    {
+        "name": "M Hanaarashi\n",
+        "input": "214M\n",
+        "damage": "1000\n",
+        "guard": "Low\n",
+        "startup": "41\n",
+        "active": "6\n",
+        "recovery": "18\n",
+        "onBlock": "-7\n",
+        "onHit": "KD +37\n",
+        "onCH": "KD +41\n",
+        "meter": "+200+720\n",
+        "images": [
+            "GBVSR_Yuel_214M.png\n"
+        ]
+    },
+    {
+        "name": "M Hien: Homuragaeshi\n",
+        "input": "623M\n",
+        "damage": "200\u00d73, 100\u00d75\n",
+        "guard": "Mid, All\n",
+        "startup": "9\n",
+        "active": "2\u00d78\n",
+        "recovery": "35\n",
+        "onBlock": "-26\n",
+        "onHit": "Air Tech +16\n",
+        "onCH": "Air Tech +16\n",
+        "meter": "+200+720, 120\u00d74, 60\u00d72\n",
+        "images": [
+            "GBVSR_Yuel_623X.png\n"
+        ]
+    },
+    {
+        "name": "M Starlit Sky\n",
+        "input": "236M\n",
+        "damage": "100\u00d76, 500\n",
+        "guard": "Mid\n",
+        "startup": "14\n",
+        "active": "2\u00d76,4 [2x6]\n",
+        "recovery": "21 [12]\n",
+        "onBlock": "-8\n",
+        "onHit": "KD +27\n",
+        "onCH": "KD +27\n",
+        "meter": "+200+720, 120\u00d75, 60\u00d72\n",
+        "images": [
+            "GBVSR_Yuel_236X.png",
+            "GBVSR_Yuel_236X_2.png\n"
+        ]
+    },
+    {
+        "name": "Raging Chain\n",
+        "input": "MH~MH\n",
+        "damage": "1000\n",
+        "guard": "Mid\n",
+        "startup": "13\n",
+        "active": "5\n",
+        "recovery": "17\n",
+        "onBlock": "",
+        "onHit": "+15Force Crouch (HKD +63)\n",
+        "onCH": "",
+        "meter": "-2500\n",
+        "images": [
+            "GBVSR_Yuel_MH-MH.png\n"
+        ]
+    },
+    {
+        "name": "Raging Strike\n",
+        "input": "MH\n",
+        "damage": "1500\n",
+        "guard": "Guard Crush 45 [52]\n",
+        "startup": "28 (1)\n",
+        "active": "1\n",
+        "recovery": "37\n",
+        "onBlock": "+8Force Stand [+15Force Stand]\n",
+        "onHit": "+15Force Crouch (KD +40)\n",
+        "onCH": "+15Force Crouch\n",
+        "meter": "\u00b10\n",
+        "images": [
+            "GBVSR_Yuel_MH.png\n"
+        ]
+    },
+    {
+        "name": "Sapphire Dance: Gentiana\n",
+        "input": "236236U\n",
+        "damage": "120\u00d719, 1320, 2400 [100\u00d719, 2100]\n",
+        "guard": "Mid\n",
+        "startup": "7+7\n",
+        "active": "3\u00d720\n",
+        "recovery": "40\n",
+        "onBlock": "-24\n",
+        "onHit": "HKD +43 [HKD \u2248+47]\n",
+        "onCH": "HKD +43 [HKD \u2248+47]\n",
+        "meter": "-10000\n",
+        "images": [
+            "GBVSR_Yuel_236236U_Start.png",
+            "GBVSR_Yuel_236236U.png",
+            "GBVSR_Yuel_236236U_Finish.png\n"
+        ]
+    },
+    {
+        "name": "Third Dance\n",
+        "input": "5U\n",
+        "damage": "",
+        "guard": "",
+        "startup": "3\n",
+        "active": "",
+        "recovery": "17\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "\u00b10\n",
+        "images": [
+            "GBVSR_Yuel_5U.png\n"
+        ]
+    },
+    {
+        "name": "Ultimate Foxflame\n",
+        "input": "22U\n",
+        "damage": "600\u00d73\n",
+        "guard": "Mid\n",
+        "startup": "9\n",
+        "active": "1,3\u00d72 [5]\n",
+        "recovery": "12 [7]\n",
+        "onBlock": "+6\n",
+        "onHit": "+10\n",
+        "onCH": "HKD +70\n",
+        "meter": "-5000\n",
+        "images": [
+            "GBVSR_Yuel_22U.png\n"
+        ]
+    },
+    {
+        "name": "Ultimate Hanaarashi\n",
+        "input": "214U\n",
+        "damage": "500\u00d73, 800\n",
+        "guard": "Mid\n",
+        "startup": "20\n",
+        "active": "3\u00d72,1,3\n",
+        "recovery": "10 [20]\n",
+        "onBlock": "+4\n",
+        "onHit": "HKD +63\n",
+        "onCH": "HKD +63\n",
+        "meter": "-5000\n",
+        "images": [
+            "GBVSR_Yuel_214U.png",
+            "GBVSR_Yuel_214U_2.png\n"
+        ]
+    },
+    {
+        "name": "Ultimate Hien: Homuragaeshi\n",
+        "input": "623U\n",
+        "damage": "100\u00d710, 1000\n",
+        "guard": "Mid\n",
+        "startup": "8\n",
+        "active": "2\u00d710(12)4 [10(12)4]\n",
+        "recovery": "37\n",
+        "onBlock": "-52\n",
+        "onHit": "HKD +39\n",
+        "onCH": "HKD +39\n",
+        "meter": "-5000\n",
+        "images": [
+            "GBVSR_Yuel_623U.png\n"
+        ]
+    },
+    {
+        "name": "Ultimate Starlit Sky\n",
+        "input": "236U\n",
+        "damage": "900, 100\u00d77, 900\n",
+        "guard": "Mid\n",
+        "startup": "13\n",
+        "active": "2x8,9 [11]\n",
+        "recovery": "12\n",
+        "onBlock": "-4\n",
+        "onHit": "HKD +48\n",
+        "onCH": "HKD +48\n",
+        "meter": "-5000\n",
+        "images": [
+            "GBVSR_Yuel_236U.png",
+            "GBVSR_Yuel_236U_2.png\n"
+        ]
+    },
+    {
+        "name": "Yugetsu\n",
+        "input": "td.2H\n",
+        "damage": "1300\n",
+        "guard": "Mid\n",
+        "startup": "10\n",
+        "active": "6\n",
+        "recovery": "24\n",
+        "onBlock": "-13\n",
+        "onHit": "KD +39\n",
+        "onCH": "KD +47\n",
+        "meter": "+600\n",
+        "images": [
+            "GBVSR_Yuel_5U-2H.png\n"
+        ]
+    }
+]

@@ -1,0 +1,798 @@
+[
+    {
+        "name": "",
+        "input": "2H\n",
+        "damage": "900\n",
+        "guard": "All\n",
+        "startup": "11\n",
+        "active": "24\n",
+        "recovery": "Total 40\n",
+        "onBlock": "-8\n",
+        "onHit": "-4\n",
+        "onCH": "+7\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Metera_2H.png",
+            "GBVSR_Metera_1H.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "2L\n",
+        "damage": "400\n",
+        "guard": "Low\n",
+        "startup": "6\n",
+        "active": "3\n",
+        "recovery": "10\n",
+        "onBlock": "-2\n",
+        "onHit": "+2\n",
+        "onCH": "+4\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Metera_2L.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "2M\n",
+        "damage": "900\n",
+        "guard": "Mid\n",
+        "startup": "8\n",
+        "active": "6\n",
+        "recovery": "12\n",
+        "onBlock": "-3\n",
+        "onHit": "+1\n",
+        "onCH": "+5\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Metera_2M.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "2U\n",
+        "damage": "1000\n",
+        "guard": "Low\n",
+        "startup": "13\n",
+        "active": "15\n",
+        "recovery": "14\n",
+        "onBlock": "-14\n",
+        "onHit": "HKD +41\n",
+        "onCH": "HKD +45\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Metera_2U.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "66H\n",
+        "damage": "1300\n",
+        "guard": "Mid\n",
+        "startup": "20\n",
+        "active": "7\n",
+        "recovery": "16\n",
+        "onBlock": "-4\n",
+        "onHit": "KD +32\n",
+        "onCH": "KD +36\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Metera_66H.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "66L\n",
+        "damage": "600\n",
+        "guard": "Mid\n",
+        "startup": "8\n",
+        "active": "3\n",
+        "recovery": "10 [15]\n",
+        "onBlock": "+2\n",
+        "onHit": "+6\n",
+        "onCH": "+8\n",
+        "meter": "+480\n",
+        "images": [
+            "GBVSR_Metera_66L.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "66M\n",
+        "damage": "1100\n",
+        "guard": "High\n",
+        "startup": "26\n",
+        "active": "6\n",
+        "recovery": "17\n",
+        "onBlock": "-6\n",
+        "onHit": "Air Tech +20\n",
+        "onCH": "HKD +57\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Metera_66M.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "c.H\n",
+        "damage": "1000, 200\u00d72\n",
+        "guard": "Mid\n",
+        "startup": "11\n",
+        "active": "2\u00d73\n",
+        "recovery": "21\n",
+        "onBlock": "-4\n",
+        "onHit": "\u00b10\n",
+        "onCH": "\u00b10\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Metera_cH.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "c.L\n",
+        "damage": "600\n",
+        "guard": "Mid\n",
+        "startup": "6\n",
+        "active": "3\n",
+        "recovery": "8\n",
+        "onBlock": "+2\n",
+        "onHit": "+6\n",
+        "onCH": "+8\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Metera_cL.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "c.M\n",
+        "damage": "1100\n",
+        "guard": "Mid\n",
+        "startup": "7\n",
+        "active": "3\n",
+        "recovery": "12\n",
+        "onBlock": "\u00b10\n",
+        "onHit": "+4\n",
+        "onCH": "+8\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Metera_cM.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "c.XX\n",
+        "damage": "700\n",
+        "guard": "Mid\n",
+        "startup": "9\n",
+        "active": "3\n",
+        "recovery": "15\n",
+        "onBlock": "-3\n",
+        "onHit": "+1\n",
+        "onCH": "+5\n",
+        "meter": "+480\n",
+        "images": [
+            "GBVSR_Metera_cXX.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "c.XX6H\n",
+        "damage": "1000\n",
+        "guard": "High\n",
+        "startup": "18\n",
+        "active": "3\n",
+        "recovery": "22\n",
+        "onBlock": "-4\n",
+        "onHit": "+1Force Crouch\n",
+        "onCH": "HKD +32\n",
+        "meter": "+480\n",
+        "images": [
+            "GBVSR_Metera_cXX6H.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "c.XX6M\n",
+        "damage": "1000\n",
+        "guard": "Low\n",
+        "startup": "12\n",
+        "active": "3\n",
+        "recovery": "16\n",
+        "onBlock": "-4\n",
+        "onHit": "KD +30\n",
+        "onCH": "HKD +55\n",
+        "meter": "+480\n",
+        "images": [
+            "GBVSR_Metera_cXX6M.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "c.XXX\n",
+        "damage": "1000\n",
+        "guard": "Mid\n",
+        "startup": "12\n",
+        "active": "3\n",
+        "recovery": "18\n",
+        "onBlock": "-4\n",
+        "onHit": "\u00b10\n",
+        "onCH": "+8\n",
+        "meter": "+600\n",
+        "images": [
+            "GBVSR_Metera_cXXX.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "f.H\n",
+        "damage": "900\n",
+        "guard": "All\n",
+        "startup": "13\n",
+        "active": "15\n",
+        "recovery": "Total 42\n",
+        "onBlock": "-8\n",
+        "onHit": "-4\n",
+        "onCH": "\u00b10\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Metera_fH.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "f.L\n",
+        "damage": "600\n",
+        "guard": "Low\n",
+        "startup": "8\n",
+        "active": "6\n",
+        "recovery": "5\n",
+        "onBlock": "+2\n",
+        "onHit": "+6\n",
+        "onCH": "+8\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Metera_fL.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "f.M\n",
+        "damage": "900\n",
+        "guard": "Mid\n",
+        "startup": "8\n",
+        "active": "9\n",
+        "recovery": "15\n",
+        "onBlock": "-7\n",
+        "onHit": "-3\n",
+        "onCH": "+1\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Metera_fM.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "j.H\n",
+        "damage": "1000\n",
+        "guard": "High\/Air\n",
+        "startup": "13\n",
+        "active": "6\n",
+        "recovery": "Until L+1\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Metera_jH.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "j.L\n",
+        "damage": "600\n",
+        "guard": "High\/Air\n",
+        "startup": "5\n",
+        "active": "Until L\n",
+        "recovery": "1\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Metera_jL.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "j.M\n",
+        "damage": "400\u00d72\n",
+        "guard": "High\/Air, All\n",
+        "startup": "8\n",
+        "active": "3(5)3\n",
+        "recovery": "Until L+1\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Metera_jM.png",
+            "GBVSR_Metera_jM_2.png\n"
+        ]
+    },
+    {
+        "name": "Aetherial Seal\n",
+        "input": "22X\n",
+        "damage": "200\u00d75(\u00d72)\n",
+        "guard": "All\n",
+        "startup": "21 [16]\n",
+        "active": "[25]\n",
+        "recovery": "Total 32\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Metera_22X.png",
+            "GBVSR_Metera_22H.png",
+            "GBVSR_Metera_22X_Explosion.png\n"
+        ]
+    },
+    {
+        "name": "Air H Starry Sky (High)\n",
+        "input": "j.236H\n",
+        "damage": "500\u00d73\n",
+        "guard": "All\n",
+        "startup": "22\n",
+        "active": "",
+        "recovery": "Until L+6\n",
+        "onBlock": "+12\n",
+        "onHit": "KD +52\n",
+        "onCH": "KD +51\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Metera_j236X.png\n"
+        ]
+    },
+    {
+        "name": "Air H Starry Sky (Low)\n",
+        "input": "j.214H\n",
+        "damage": "500\u00d73\n",
+        "guard": "All\n",
+        "startup": "22\n",
+        "active": "",
+        "recovery": "Until L+6\n",
+        "onBlock": "+12\n",
+        "onHit": "KD +52\n",
+        "onCH": "KD +51\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Metera_j214X.png\n"
+        ]
+    },
+    {
+        "name": "Air L Starry Sky (High)\n",
+        "input": "j.236L\n",
+        "damage": "1000\n",
+        "guard": "All\n",
+        "startup": "19\n",
+        "active": "",
+        "recovery": "Until L+6\n",
+        "onBlock": "\u00b10\n",
+        "onHit": "+4\n",
+        "onCH": "+6\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Metera_j236X.png\n"
+        ]
+    },
+    {
+        "name": "Air M Starry Sky (High)\n",
+        "input": "j.236M\n",
+        "damage": "1000\n",
+        "guard": "All\n",
+        "startup": "22\n",
+        "active": "",
+        "recovery": "Until L+6\n",
+        "onBlock": "-3\n",
+        "onHit": "+1\n",
+        "onCH": "KD +37\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Metera_j236X.png\n"
+        ]
+    },
+    {
+        "name": "Air Throw\n",
+        "input": "j.LU\n",
+        "damage": "2500\n",
+        "guard": "Airthrow\n",
+        "startup": "5\n",
+        "active": "5\n",
+        "recovery": "Until L+6\n",
+        "onBlock": "",
+        "onHit": "HKD \u2248+45\n",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Metera_AirThrow.png\n"
+        ]
+    },
+    {
+        "name": "Air Zephyr\n",
+        "input": "j.U\n",
+        "damage": "",
+        "guard": "",
+        "startup": "",
+        "active": "",
+        "recovery": "Total 21\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Metera_5U.png",
+            "GBVSR_Metera_4U.png\n"
+        ]
+    },
+    {
+        "name": "Brave Counter\n",
+        "input": "BC\n",
+        "damage": "500\n",
+        "guard": "Mid\n",
+        "startup": "10 [18]\n",
+        "active": "3 [2]\n",
+        "recovery": "19 [35]\n",
+        "onBlock": "-2\n",
+        "onHit": "Air Tech +21 [+5]\n",
+        "onCH": "HKD +54 [HKD +43]\n",
+        "meter": "\u00b10\n",
+        "images": [
+            "GBVSR_Metera_BC.png\n"
+        ]
+    },
+    {
+        "name": "Dense Caress\n",
+        "input": "236236H\n",
+        "damage": "1500, 1000, 2000 [1500, 1000\u00d72]\n",
+        "guard": "Mid\n",
+        "startup": "8+5\n",
+        "active": "9(12)6\u00d72\n",
+        "recovery": "53\n",
+        "onBlock": "-67\n",
+        "onHit": "HKD +37 [HKD \u2248+43]\n",
+        "onCH": "HKD +37 [HKD \u2248+43]\n",
+        "meter": "-10000\n",
+        "images": [
+            "GBVSR_Metera_236236H.png",
+            "GBVSR_Metera_236236H_Finish.png\n"
+        ]
+    },
+    {
+        "name": "Ground Throw\n",
+        "input": "LU\n",
+        "damage": "2500\n",
+        "guard": "Throw\n",
+        "startup": "4\n",
+        "active": "3\n",
+        "recovery": "26\n",
+        "onBlock": "",
+        "onHit": "HKD +49\n",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Metera_Throw.png",
+            "GBVSR_Metera_BackThrow.png\n"
+        ]
+    },
+    {
+        "name": "H Starry Sky (High)\n",
+        "input": "236H\n",
+        "damage": "500\u00d73\n",
+        "guard": "All\n",
+        "startup": "10\n",
+        "active": "",
+        "recovery": "Total 41\n",
+        "onBlock": "+5\n",
+        "onHit": "KD +44\n",
+        "onCH": "KD +43\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Metera_236X.png\n"
+        ]
+    },
+    {
+        "name": "H Starry Sky (Low)\n",
+        "input": "214H\n",
+        "damage": "500\u00d73\n",
+        "guard": "All\n",
+        "startup": "11\n",
+        "active": "",
+        "recovery": "Total 41\n",
+        "onBlock": "+3\n",
+        "onHit": "KD +43\n",
+        "onCH": "KD +42\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Metera_214X.png\n"
+        ]
+    },
+    {
+        "name": "H The Great Fall\n",
+        "input": "623H\n",
+        "damage": "900, 150\u00d74\n",
+        "guard": "Mid, All\n",
+        "startup": "15\n",
+        "active": "8(14)23\n",
+        "recovery": "Total 53\n",
+        "onBlock": "-12 [+21]\n",
+        "onHit": "KD +49 [+31]\n",
+        "onCH": "KD +49 [+31]\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Metera_623X.png\n"
+        ]
+    },
+    {
+        "name": "L Starry Sky (High)\n",
+        "input": "236L\n",
+        "damage": "1000\n",
+        "guard": "All\n",
+        "startup": "10\n",
+        "active": "",
+        "recovery": "Total 41\n",
+        "onBlock": "-5\n",
+        "onHit": "Air Tech +18\n",
+        "onCH": "KD +32\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Metera_236X.png\n"
+        ]
+    },
+    {
+        "name": "L Starry Sky (Low)\n",
+        "input": "214L\n",
+        "damage": "1000\n",
+        "guard": "All\n",
+        "startup": "11\n",
+        "active": "",
+        "recovery": "Total 41\n",
+        "onBlock": "-7\n",
+        "onHit": "Air Tech +19\n",
+        "onCH": "KD +33\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Metera_214X.png\n"
+        ]
+    },
+    {
+        "name": "L The Great Fall\n",
+        "input": "623L\n",
+        "damage": "600, 100\u00d74\n",
+        "guard": "Mid, All\n",
+        "startup": "18\n",
+        "active": "8(14)24\n",
+        "recovery": "Total 44\n",
+        "onBlock": "+28\n",
+        "onHit": "+38\n",
+        "onCH": "+38\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Metera_623X.png\n"
+        ]
+    },
+    {
+        "name": "M Starry Sky (High)\n",
+        "input": "236M\n",
+        "damage": "1000\n",
+        "guard": "All\n",
+        "startup": "10\n",
+        "active": "",
+        "recovery": "Total 41\n",
+        "onBlock": "-5\n",
+        "onHit": "+2\n",
+        "onCH": "+4\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Metera_236X.png\n"
+        ]
+    },
+    {
+        "name": "M Starry Sky (Low)\n",
+        "input": "214M\n",
+        "damage": "1000\n",
+        "guard": "All\n",
+        "startup": "11\n",
+        "active": "",
+        "recovery": "Total 41\n",
+        "onBlock": "-7\n",
+        "onHit": "+1\n",
+        "onCH": "KD +33\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Metera_214X.png\n"
+        ]
+    },
+    {
+        "name": "M The Great Fall\n",
+        "input": "623M\n",
+        "damage": "600, 100\u00d74\n",
+        "guard": "Mid, All\n",
+        "startup": "18\n",
+        "active": "8(14)23\n",
+        "recovery": "Total 48\n",
+        "onBlock": "+24\n",
+        "onHit": "+34\n",
+        "onCH": "+34\n",
+        "meter": "",
+        "images": [
+            "GBVSR_Metera_623X.png\n"
+        ]
+    },
+    {
+        "name": "Raging Chain\n",
+        "input": "MH~MH\n",
+        "damage": "1000\n",
+        "guard": "Mid\n",
+        "startup": "13\n",
+        "active": "5\n",
+        "recovery": "17\n",
+        "onBlock": "+4\n",
+        "onHit": "+15Force Crouch (HKD +63)\n",
+        "onCH": "+15Force Crouch\n",
+        "meter": "-2500\n",
+        "images": [
+            "GBVSR_Metera_MH-MH.png\n"
+        ]
+    },
+    {
+        "name": "Raging Strike\n",
+        "input": "MH\n",
+        "damage": "1500\n",
+        "guard": "Guard Crush 45 [52]\n",
+        "startup": "28 (1)\n",
+        "active": "1\n",
+        "recovery": "37\n",
+        "onBlock": "+8Force Stand [+15Force Stand]\n",
+        "onHit": "+15Force Crouch (KD +40)\n",
+        "onCH": "+15Force Crouch\n",
+        "meter": "\u00b10\n",
+        "images": [
+            "GBVSR_Metera_MH.png\n"
+        ]
+    },
+    {
+        "name": "Rapid Pulverize\n",
+        "input": "236236U\n",
+        "damage": "3600, 1200\u00d72 [200\u00d710, 2000]\n",
+        "guard": "All\n",
+        "startup": "5+8\n",
+        "active": "43\n",
+        "recovery": "Total 108\n",
+        "onBlock": "-29\n",
+        "onHit": "HKD +48 [HKD +34]\n",
+        "onCH": "HKD +48 [HKD +34]\n",
+        "meter": "-10000\n",
+        "images": [
+            "GBVSR_Metera_236236U_Start.png",
+            "GBVSR_Metera_236236U.png",
+            "GBVSR_Metera_236236U_Finish.png\n"
+        ]
+    },
+    {
+        "name": "Ultimate Aerial Starry Sky (High)\n",
+        "input": "j.236U\n",
+        "damage": "2000\n",
+        "guard": "All\n",
+        "startup": "11\n",
+        "active": "",
+        "recovery": "Until L+6\n",
+        "onBlock": "+14\n",
+        "onHit": "HKD +53\n",
+        "onCH": "HKD +53\n",
+        "meter": "-5000\n",
+        "images": [
+            "GBVSR_Metera_j236U.png\n"
+        ]
+    },
+    {
+        "name": "Ultimate Aerial Starry Sky (Low)\n",
+        "input": "j.214U\n",
+        "damage": "2000\n",
+        "guard": "All\n",
+        "startup": "11\n",
+        "active": "",
+        "recovery": "Until L+6\n",
+        "onBlock": "+14\n",
+        "onHit": "HKD +53\n",
+        "onCH": "HKD +53\n",
+        "meter": "-5000\n",
+        "images": [
+            "GBVSR_Metera_j214U.png\n"
+        ]
+    },
+    {
+        "name": "Ultimate Aetherial Seal\n",
+        "input": "22U\n",
+        "damage": "1500, 500\u00d72\n",
+        "guard": "All\n",
+        "startup": "12 [12]\n",
+        "active": "[30]\n",
+        "recovery": "Total 20\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "-5000\n",
+        "images": [
+            "GBVSR_Metera_22U.png",
+            "GBVSR_Metera_22U_Explosion.png\n"
+        ]
+    },
+    {
+        "name": "Ultimate Starry Sky (High)\n",
+        "input": "236U\n",
+        "damage": "2000\n",
+        "guard": "All\n",
+        "startup": "11\n",
+        "active": "",
+        "recovery": "Total 36\n",
+        "onBlock": "+4\n",
+        "onHit": "HKD +60\n",
+        "onCH": "HKD +60\n",
+        "meter": "-5000\n",
+        "images": [
+            "GBVSR_Metera_236U.png\n"
+        ]
+    },
+    {
+        "name": "Ultimate Starry Sky (Low)\n",
+        "input": "214U\n",
+        "damage": "2000\n",
+        "guard": "All\n",
+        "startup": "11\n",
+        "active": "",
+        "recovery": "Total 36\n",
+        "onBlock": "+4\n",
+        "onHit": "HKD +60\n",
+        "onCH": "HKD +60\n",
+        "meter": "-5000\n",
+        "images": [
+            "GBVSR_Metera_214U.png\n"
+        ]
+    },
+    {
+        "name": "Ultimate The Great Fall\n",
+        "input": "623U\n",
+        "damage": "1000\u00d72 [500, 1000]\n",
+        "guard": "Mid\n",
+        "startup": "8\n",
+        "active": "4\n",
+        "recovery": "25\n",
+        "onBlock": "-24\n",
+        "onHit": "HKD +32~+35\n",
+        "onCH": "HKD +32~+35\n",
+        "meter": "-5000\n",
+        "images": [
+            "GBVSR_Metera_623U.png",
+            "GBVSR_Metera_623U_2.png\n"
+        ]
+    },
+    {
+        "name": "Zephyr\n",
+        "input": "5U\n",
+        "damage": "",
+        "guard": "",
+        "startup": "",
+        "active": "",
+        "recovery": "Total 21\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Metera_5U.png",
+            "GBVSR_Metera_4U.png\n"
+        ]
+    }
+]

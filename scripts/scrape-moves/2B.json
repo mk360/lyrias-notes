@@ -1,0 +1,757 @@
+[
+    {
+        "name": "",
+        "input": "2H\n",
+        "damage": "1300\n",
+        "guard": "Mid\n",
+        "startup": "11\n",
+        "active": "6\n",
+        "recovery": "23\n",
+        "onBlock": "-12\n",
+        "onHit": "-8\n",
+        "onCH": "0\n",
+        "meter": "50\n",
+        "images": [
+            "GBVSR_2B_2H.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "2L\n",
+        "damage": "400\n",
+        "guard": "Low\n",
+        "startup": "6\n",
+        "active": "3\n",
+        "recovery": "10\n",
+        "onBlock": "-2\n",
+        "onHit": "+2\n",
+        "onCH": "+4\n",
+        "meter": "20\n",
+        "images": [
+            "GBVSR_2B_2L.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "2M\n",
+        "damage": "900\n",
+        "guard": "Mid\n",
+        "startup": "8\n",
+        "active": "4\n",
+        "recovery": "16\n",
+        "onBlock": "-5\n",
+        "onHit": "-1\n",
+        "onCH": "+3\n",
+        "meter": "40\n",
+        "images": [
+            "GBVSR_2B_2M.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "2U\n",
+        "damage": "1000\n",
+        "guard": "Low\n",
+        "startup": "8\n",
+        "active": "3\n",
+        "recovery": "23\n",
+        "onBlock": "-11\n",
+        "onHit": "+44 HKD\n",
+        "onCH": "+48 HKD\n",
+        "meter": "40\n",
+        "images": [
+            "GBVSR_2B_2U.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "5H\n",
+        "damage": "1400\n",
+        "guard": "Mid\n",
+        "startup": "14\n",
+        "active": "5\n",
+        "recovery": "24\n",
+        "onBlock": "-10\n",
+        "onHit": "-6\n",
+        "onCH": "+6\n",
+        "meter": "60\n",
+        "images": [
+            "GBVSR_2B_5H.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "5HH\n",
+        "damage": "900\n",
+        "guard": "Mid\n",
+        "startup": "15\n",
+        "active": "3\n",
+        "recovery": "26\n",
+        "onBlock": "-10\n",
+        "onHit": "-6\n",
+        "onCH": "+6\n",
+        "meter": "10\n",
+        "images": [
+            "GBVSR_2B_5HH.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "5HHH\n",
+        "damage": "900\n",
+        "guard": "Mid\n",
+        "startup": "15\n",
+        "active": "3\n",
+        "recovery": "26\n",
+        "onBlock": "-10\n",
+        "onHit": "-6\n",
+        "onCH": "+6\n",
+        "meter": "10\n",
+        "images": [
+            "GBVSR_2B_5HHH.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "5HHHH\n",
+        "damage": "1000\n",
+        "guard": "Mid\n",
+        "startup": "15\n",
+        "active": "3\n",
+        "recovery": "26\n",
+        "onBlock": "-10\n",
+        "onHit": "KD +26\n",
+        "onCH": "KD +38\n",
+        "meter": "60\n",
+        "images": [
+            "GBVSR_2B_5HHHH.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "5L\n",
+        "damage": "500\n",
+        "guard": "Mid\n",
+        "startup": "6\n",
+        "active": "3\n",
+        "recovery": "8\n",
+        "onBlock": "+2\n",
+        "onHit": "+6\n",
+        "onCH": "+8\n",
+        "meter": "30\n",
+        "images": [
+            "GBVSR_2B_5L.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "5LL\n",
+        "damage": "600\n",
+        "guard": "Mid\n",
+        "startup": "6\n",
+        "active": "3\n",
+        "recovery": "14\n",
+        "onBlock": "-2\n",
+        "onHit": "+2\n",
+        "onCH": "+6\n",
+        "meter": "10\n",
+        "images": [
+            "GBVSR_2B_5LL.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "5LLL\n",
+        "damage": "700\n",
+        "guard": "Mid\n",
+        "startup": "10\n",
+        "active": "3\n",
+        "recovery": "18\n",
+        "onBlock": "-6\n",
+        "onHit": "-2\n",
+        "onCH": "+2\n",
+        "meter": "10\n",
+        "images": [
+            "GBVSR_2B_5LLL.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "5LLLL\n",
+        "damage": "500\n",
+        "guard": "All\n",
+        "startup": "10\n",
+        "active": "",
+        "recovery": "Total 40\n",
+        "onBlock": "-6~+6\n",
+        "onHit": "+20\n",
+        "onCH": "+36 point black\n",
+        "meter": "40\n",
+        "images": [
+            "GBVSR_2B_5LLLL.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "5M\n",
+        "damage": "700\n",
+        "guard": "Mid\n",
+        "startup": "9\n",
+        "active": "4\n",
+        "recovery": "21\n",
+        "onBlock": "-10\n",
+        "onHit": "-6\n",
+        "onCH": "-2\n",
+        "meter": "40\n",
+        "images": [
+            "GBVSR_2B_5M.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "5MM\n",
+        "damage": "700\n",
+        "guard": "Mid\n",
+        "startup": "9\n",
+        "active": "3\n",
+        "recovery": "20\n",
+        "onBlock": "-8\n",
+        "onHit": "-4\n",
+        "onCH": "0\n",
+        "meter": "10\n",
+        "images": [
+            "GBVSR_2B_5MM.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "5MMM\n",
+        "damage": "300\u00d73\n",
+        "guard": "Mid\n",
+        "startup": "10\n",
+        "active": "6\n",
+        "recovery": "21\n",
+        "onBlock": "-8\n",
+        "onHit": "-4\n",
+        "onCH": "-4\n",
+        "meter": "10 per hit\n",
+        "images": [
+            "GBVSR_2B_5MMM.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "5MMMM\n",
+        "damage": "400*3\n",
+        "guard": "Mid\n",
+        "startup": "11\n",
+        "active": "2(2)2(2)4\n",
+        "recovery": "21\n",
+        "onBlock": "-8\n",
+        "onHit": "KD +29\n",
+        "onCH": "",
+        "meter": "60 [40], 10\n",
+        "images": [
+            "GBVSR_2B_5MMMM.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "j.H\n",
+        "damage": "900\n",
+        "guard": "High\/Air\n",
+        "startup": "12\n",
+        "active": "6\n",
+        "recovery": "Until L+1\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "40\n",
+        "images": [
+            "GBVSR_2B_jH.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "j.L\n",
+        "damage": "600\n",
+        "guard": "High\n",
+        "startup": "5\n",
+        "active": "6\n",
+        "recovery": "Until L+1\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "30\n",
+        "images": [
+            "GBVSR_2B_jL.png\n"
+        ]
+    },
+    {
+        "name": "",
+        "input": "j.M\n",
+        "damage": "800\n",
+        "guard": "High\/Air\n",
+        "startup": "6\n",
+        "active": "8\n",
+        "recovery": "Until L+1\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "40\n",
+        "images": [
+            "GBVSR_2B_jM.png\n"
+        ]
+    },
+    {
+        "name": "5H~L \/ 5L~H\n",
+        "input": "5H~L\n",
+        "damage": "1000, 1000\n",
+        "guard": "Mid (All)\n",
+        "startup": "19 [48]\n",
+        "active": "",
+        "recovery": "",
+        "onBlock": "-10 [+3]\n",
+        "onHit": "+23 [+50]\n",
+        "onCH": "+35 [+50]\n",
+        "meter": "10 per hit\n",
+        "images": [
+            "GBVSR_2B_5HL.png\n"
+        ]
+    },
+    {
+        "name": "5L~M \/ 5M~L\n",
+        "input": "5L~M\n",
+        "damage": "300\u00d72, 500\n",
+        "guard": "Mid (All)\n",
+        "startup": "11(45)\n",
+        "active": "3(3)3(18)~40\n",
+        "recovery": "Total 68\n",
+        "onBlock": "-3\n",
+        "onHit": "KD +31\n",
+        "onCH": "KD +31\n",
+        "meter": "10 per hit\n",
+        "images": [
+            "GBVSR_2B_5LM.png\n"
+        ]
+    },
+    {
+        "name": "5M~H \/ 5H~M\n",
+        "input": "5M~H\n",
+        "damage": "400\u00d75\n",
+        "guard": "Mid\n",
+        "startup": "13\n",
+        "active": "3(4)3(4)2(2)2(2)4\n",
+        "recovery": "28\n",
+        "onBlock": "-15\n",
+        "onHit": "KD +22\n",
+        "onCH": "KD +22\n",
+        "meter": "10 per hit\n",
+        "images": [
+            "GBVSR_2B_5MH.png\n"
+        ]
+    },
+    {
+        "name": "A080: Wave\n",
+        "input": "22L\n",
+        "damage": "1200\n",
+        "guard": "All\n",
+        "startup": "33\n",
+        "active": "12\n",
+        "recovery": "Total 56\n",
+        "onBlock": "+3\n",
+        "onHit": "KD +40~+51\n",
+        "onCH": "KD +42~+53\n",
+        "meter": "10, 40\n",
+        "images": [
+            "GBVSR_2B_22L.png\n"
+        ]
+    },
+    {
+        "name": "A090: Wire\n",
+        "input": "214M\n",
+        "damage": "700\n",
+        "guard": "All\n",
+        "startup": "23\n",
+        "active": "29\n",
+        "recovery": "Total 57\n",
+        "onBlock": "+5\n",
+        "onHit": "+9\n",
+        "onCH": "+9\n",
+        "meter": "10, 40\n",
+        "images": [
+            "GBVSR_2B_214M.png\n"
+        ]
+    },
+    {
+        "name": "A130: Bomb\n",
+        "input": "22U\n",
+        "damage": "300\u00d76\n",
+        "guard": "All\n",
+        "startup": "42\n",
+        "active": "46\n",
+        "recovery": "Total 51\n",
+        "onBlock": "+60 \n",
+        "onHit": "+65\n",
+        "onCH": "+65\n",
+        "meter": "-5000\n",
+        "images": [
+            "GBVSR_2B_22U.png\n"
+        ]
+    },
+    {
+        "name": "A140: Gravity\n",
+        "input": "22M\n",
+        "damage": "",
+        "guard": "",
+        "startup": "~50\n",
+        "active": "",
+        "recovery": "36\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "10\n",
+        "images": [
+            "GBVSR_2B_22M.png\n"
+        ]
+    },
+    {
+        "name": "A150: Volt\n",
+        "input": "22H\n",
+        "damage": "1000\n",
+        "guard": "All\n",
+        "startup": "33 [12]\n",
+        "active": "",
+        "recovery": "Total 33 [Total 40]\n",
+        "onBlock": "- [+16 ]\n",
+        "onHit": "- [KD +61]\n",
+        "onCH": "- [KD +61]\n",
+        "meter": "20 [20, 40]\n",
+        "images": [
+            "GBVSR_2B_22H.png",
+            "GBVSR_2B_22H_2.png\n"
+        ]
+    },
+    {
+        "name": "A160: Missile\n",
+        "input": "214L\n",
+        "damage": "1400\n",
+        "guard": "Mid\n",
+        "startup": "14\n",
+        "active": "10\n",
+        "recovery": "22\n",
+        "onBlock": "-6\n",
+        "onHit": "Air Recovery +29\n",
+        "onCH": "KD +45\n",
+        "meter": "20, 60\n",
+        "images": [
+            "GBVSR_2B_214L.png\n"
+        ]
+    },
+    {
+        "name": "Air Throw\n",
+        "input": "j.LU\n",
+        "damage": "2500\n",
+        "guard": "Throw\n",
+        "startup": "5\n",
+        "active": "5\n",
+        "recovery": "Until L+5\n",
+        "onBlock": "",
+        "onHit": "About +40 HKD\n",
+        "onCH": "",
+        "meter": "40, 150\n",
+        "images": [
+            "GBVSR_2B_AirThrow.png\n"
+        ]
+    },
+    {
+        "name": "Android Kick Sequence\n",
+        "input": "236236H\n",
+        "damage": "800\u00d75 [3000]\n",
+        "guard": "Mid\n",
+        "startup": "8+6\n",
+        "active": "3(21)3\n",
+        "recovery": "36\n",
+        "onBlock": "-20\n",
+        "onHit": "HKD +38 [HKD +32]\n",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_2B_236236H.png\n"
+        ]
+    },
+    {
+        "name": "Brave Counter\n",
+        "input": "BC\n",
+        "damage": "500\n",
+        "guard": "Mid\n",
+        "startup": "10 [18]\n",
+        "active": "3 [2]\n",
+        "recovery": "19 [35]\n",
+        "onBlock": "-2\n",
+        "onHit": "Air Tech +21 [+5]\n",
+        "onCH": "HKD +54 [HKD +43]\n",
+        "meter": "\u00b10\n",
+        "images": [
+            "GBVSR_2B_BC.png\n"
+        ]
+    },
+    {
+        "name": "Counterstrike\n",
+        "input": "5U~U\n",
+        "damage": "1200\n",
+        "guard": "All\n",
+        "startup": "5\n",
+        "active": "15\n",
+        "recovery": "28\n",
+        "onBlock": "-12\n",
+        "onHit": "KD +20\n",
+        "onCH": "KD +32\n",
+        "meter": "60\n",
+        "images": [
+            "GBVSR_2B_5HHH.png\n"
+        ]
+    },
+    {
+        "name": "Evasive Maneuver\n",
+        "input": "5U\n",
+        "damage": "",
+        "guard": "",
+        "startup": "",
+        "active": "",
+        "recovery": "Total 42\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_2B_5U.png\n"
+        ]
+    },
+    {
+        "name": "Evasive Maneuver\n",
+        "input": "6U\n",
+        "damage": "",
+        "guard": "",
+        "startup": "",
+        "active": "",
+        "recovery": "Total 20\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_2B_6U.png\n"
+        ]
+    },
+    {
+        "name": "Extermination Blade\n",
+        "input": "236236U\n",
+        "damage": "1800, 360\u00d74, 960, 60\u00d710, 1200 [1500, 300\u00d74, 1300]\n",
+        "guard": "Mid\n",
+        "startup": "7+7\n",
+        "active": "8\n",
+        "recovery": "40\n",
+        "onBlock": "-35\n",
+        "onHit": "HKD +42\n",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_2B_236236U_Start.png",
+            "GBVSR_2B_236236U.png",
+            "GBVSR_2B_236236U_Finish.png\n"
+        ]
+    },
+    {
+        "name": "Grab Pod\n",
+        "input": "j.U\n",
+        "damage": "",
+        "guard": "",
+        "startup": "",
+        "active": "",
+        "recovery": "L+3\n",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_2B_jU.png\n"
+        ]
+    },
+    {
+        "name": "Grab Pod Follow-up\n",
+        "input": "j.U~U\n",
+        "damage": "700\n",
+        "guard": "High\/Air\n",
+        "startup": "11\n",
+        "active": "6\n",
+        "recovery": "",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "40\n",
+        "images": [
+            "GBVSR_2B_jUU.png\n"
+        ]
+    },
+    {
+        "name": "Ground Throw\n",
+        "input": "LU\n",
+        "damage": "2500\n",
+        "guard": "Throw\n",
+        "startup": "4\n",
+        "active": "3\n",
+        "recovery": "26\n",
+        "onBlock": "",
+        "onHit": "+44 HKD\n",
+        "onCH": "",
+        "meter": "40, 150\n",
+        "images": [
+            "GBVSR_2B_Throw.png\n"
+        ]
+    },
+    {
+        "name": "Pod A\n",
+        "input": "236L\n",
+        "damage": "150\u00d75\n",
+        "guard": "All\n",
+        "startup": "13\n",
+        "active": "27\n",
+        "recovery": "Total 57 (Total 48)\n",
+        "onBlock": "-4 \n",
+        "onHit": "Air recovery +21\n",
+        "onCH": "KD +33\n",
+        "meter": "10, 40, 10\n",
+        "images": [
+            "GBVSR_2B_236L.png\n"
+        ]
+    },
+    {
+        "name": "Pod B\n",
+        "input": "236M\n",
+        "damage": "1200\n",
+        "guard": "All\n",
+        "startup": "18\/22\n",
+        "active": "9\n",
+        "recovery": "Total 46\n",
+        "onBlock": "-4\/+0\n",
+        "onHit": "+24\/+28\n",
+        "onCH": "+44\/+48\n",
+        "meter": "10, 40\n",
+        "images": [
+            "GBVSR_2B_236M.png\n"
+        ]
+    },
+    {
+        "name": "Pod C\n",
+        "input": "236H\n",
+        "damage": "1400\n",
+        "guard": "All\n",
+        "startup": "13~28\n",
+        "active": "16\n",
+        "recovery": "Total 45\n",
+        "onBlock": "+4~+19 \n",
+        "onHit": "+43~+58\n",
+        "onCH": "+58~+73\n",
+        "meter": "20, 40\n",
+        "images": [
+            "GBVSR_2B_236H.png\n"
+        ]
+    },
+    {
+        "name": "R010: Laser\n",
+        "input": "236U\n",
+        "damage": "1600\n",
+        "guard": "All\n",
+        "startup": "16~20\n",
+        "active": "10\n",
+        "recovery": "17\n",
+        "onBlock": "-4~+2 \n",
+        "onHit": "Crumple 35F, HKD +83\n",
+        "onCH": "Crumple 35F, HKD +83\n",
+        "meter": "-5000\n",
+        "images": [
+            "GBVSR_2B_236U.png\n"
+        ]
+    },
+    {
+        "name": "R020: Mirage\n",
+        "input": "214U\n",
+        "damage": "1000, 100\u00d710\n",
+        "guard": "Mid\n",
+        "startup": "8\n",
+        "active": "10\n",
+        "recovery": "54\n",
+        "onBlock": "-26 \n",
+        "onHit": "HKD +44\n",
+        "onCH": "HKD +44\n",
+        "meter": "-5000\n",
+        "images": [
+            "GBVSR_2B_214U.png\n"
+        ]
+    },
+    {
+        "name": "R030: Hammer\n",
+        "input": "214H\n",
+        "damage": "1600 [2000]\n",
+        "guard": "Mid\n",
+        "startup": "19\n",
+        "active": "6\n",
+        "recovery": "19\n",
+        "onBlock": "-6 [+6]\n",
+        "onHit": "+6 [+42]\n",
+        "onCH": "+10 [+46]\n",
+        "meter": "20, 80\n",
+        "images": [
+            "GBVSR_2B_214H.png\n"
+        ]
+    },
+    {
+        "name": "Raging Chain\n",
+        "input": "MH~MH\n",
+        "damage": "1000\n",
+        "guard": "Mid\n",
+        "startup": "13\n",
+        "active": "5\n",
+        "recovery": "17\n",
+        "onBlock": "+4\n",
+        "onHit": "+15Force Crouch (HKD +63)\n",
+        "onCH": "+15Force Crouch\n",
+        "meter": "-2500\n",
+        "images": [
+            "GBVSR_2B_MH-MH.png\n"
+        ]
+    },
+    {
+        "name": "Raging Strike\n",
+        "input": "MH\n",
+        "damage": "1500\n",
+        "guard": "Guard Crush 45 [52]\n",
+        "startup": "28 (1)\n",
+        "active": "1\n",
+        "recovery": "37\n",
+        "onBlock": "+8Force Stand [+15Force Stand]\n",
+        "onHit": "+15Force Crouch (KD +40)\n",
+        "onCH": "+15Force Crouch\n",
+        "meter": "\u00b10\n",
+        "images": [
+            "GBVSR_2B_MH.png\n"
+        ]
+    },
+    {
+        "name": "Self-Destruct\n",
+        "input": "720U\n",
+        "damage": "6600\n",
+        "guard": "Unblockable\n",
+        "startup": "4+59+0 [4+0]\n",
+        "active": "",
+        "recovery": "",
+        "onBlock": "",
+        "onHit": "-2\n",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_2B_720U.png\n"
+        ]
+    }
+]
