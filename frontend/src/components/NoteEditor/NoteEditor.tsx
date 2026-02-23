@@ -1,16 +1,15 @@
-import React, { useEffect, useState } from 'react';
-import { useEditor, EditorContent } from '@tiptap/react';
-import StarterKit from '@tiptap/starter-kit';
 import { Color } from '@tiptap/extension-color';
-import TextStyle from '@tiptap/extension-text-style';
 import Image from '@tiptap/extension-image';
 import Link from '@tiptap/extension-link';
+import TextStyle from '@tiptap/extension-text-style';
+import { EditorContent, useEditor } from '@tiptap/react';
+import StarterKit from '@tiptap/starter-kit';
+import React, { useEffect, useState } from 'react';
+import { Note } from '../../services/storage';
+import { Config } from '../../types';
 import FontSize from './extensions/FontSize';
 import NotationHighlight from './extensions/NotationHighlight';
-import { Config } from '../../types';
-import { Note } from '../../services/storage';
 import MenuBar from './MenuBar';
-import InputNotationPicker from './InputNotationPicker';
 import './NoteEditor.css';
 
 interface NoteEditorProps {

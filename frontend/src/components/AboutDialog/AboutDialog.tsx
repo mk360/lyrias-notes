@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { useAppContext } from '../../context/AppContext';
-import { useUpdateCheck } from '../../hooks/useUpdateCheck';
 
 interface AboutDialogProps {
   isOpen: boolean;
@@ -9,16 +8,6 @@ interface AboutDialogProps {
 
 export const AboutDialog: React.FC<AboutDialogProps> = ({ isOpen, onClose }) => {
   const { config } = useAppContext();
-  const { updateInfo, checking, checkForUpdates } = useUpdateCheck();
-  const [hasCheckedOnOpen, setHasCheckedOnOpen] = useState(false);
-
-  useEffect(() => {
-    if (isOpen && !hasCheckedOnOpen) {
-      // Silent check when dialog opens
-      checkForUpdates();
-      setHasCheckedOnOpen(true);
-    }
-  }, [isOpen, hasCheckedOnOpen, checkForUpdates]);
 
   if (!isOpen || !config) return null;
 
@@ -31,12 +20,6 @@ export const AboutDialog: React.FC<AboutDialogProps> = ({ isOpen, onClose }) => 
   const openRepository = () => {
     if (config.app.repository) {
       window.open(config.app.repository, '_blank');
-    }
-  };
-
-  const openUpdateURL = () => {
-    if (updateInfo?.update_url) {
-      window.open(updateInfo.update_url, '_blank');
     }
   };
 
@@ -69,17 +52,6 @@ export const AboutDialog: React.FC<AboutDialogProps> = ({ isOpen, onClose }) => 
             className="text-blue-400 hover:text-blue-300 underline"
           >
             {config.app.repository}
-          </button>
-        </div>
-
-        {/* Update Check Section */}
-        <div className="bg-gray-700 rounded-lg p-4 mb-6">
-          <button
-            onClick={checkForUpdates}
-            disabled={checking}
-            className="w-full bg-blue-600 hover:bg-blue-700 disabled:bg-gray-600 text-white py-2 px-4 rounded transition-colors mb-3"
-          >
-            {checking ? 'Checking for updates...' : 'Check for Updates'}
           </button>
         </div>
 

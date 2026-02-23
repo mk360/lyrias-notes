@@ -12,11 +12,11 @@ interface NotationHighlightOptions {
   };
 }
 
-interface NotationMatch {
-  from: number;
-  to: number;
-  color: string;
-}
+// interface NotationMatch {
+//   from: number;
+//   to: number;
+//   color: string;
+// }
 
 const NotationHighlight = Extension.create<NotationHighlightOptions>({
   name: 'notationHighlight',
@@ -60,7 +60,6 @@ const NotationHighlight = Extension.create<NotationHighlightOptions>({
 
 function findNotations(doc: any, colors: NotationHighlightOptions['colors']): DecorationSet {
   const decorations: Decoration[] = [];
-  const text = doc.textContent;
 
   // Regex patterns for different notation types
   const patterns = [
