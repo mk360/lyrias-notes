@@ -28,8 +28,8 @@ function App() {
 
           {/* Routes */}
           <Routes>
-            <Route path="/" element={<CharacterGrid />} />
-            <Route path="/character/:characterName" element={<CharacterRoute />} />
+            <Route path="/lyrias-notes/" element={<CharacterGrid />} />
+            <Route path="/lyrias-notes/character/:characterName" element={<CharacterRoute />} />
           </Routes>
 
           {/* About Dialog */}

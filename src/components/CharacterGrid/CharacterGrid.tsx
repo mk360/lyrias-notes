@@ -20,7 +20,7 @@ export const CharacterGrid: React.FC = () => {
     const charName = exModeEnabled && EX_CHARACTERS.includes(character) 
       ? `${character}_ex` 
       : character;
-    navigate(`/character/${charName}`);
+    navigate(`character/${charName}`);
   };
 
   const isCharacterDisabled = (character: string) => {
@@ -31,13 +31,13 @@ export const CharacterGrid: React.FC = () => {
     const charName = exModeEnabled && EX_CHARACTERS.includes(character)
       ? `${character}_ex`
       : character;
-    return `/img/character_select/${character}.png`;
+    return `/lyrias-notes/img/character_select/${character}.png`;
   };
 
   const getExToggleImage = () => {
     return exModeEnabled 
-      ? '/ex-on.png' 
-      : '/ex-off.png';
+      ? '/lyrias-notes/ex-on.png' 
+      : '/lyrias-notes/ex-off.png';
   };
 
   return (

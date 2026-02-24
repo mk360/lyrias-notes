@@ -3,9 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import NoteEditor from '../NoteEditor';
 import NotesList from '../NotesList';
 import FrameDataPanel from '../FrameDataPanel';
-import { Note, Config } from '../../types';
-import { GetConfig, GetNotesByCharacter, CreateNote, UpdateNote, DeleteNote } from '../../../wailsjs/go/main/App';
-import { models } from '../../../wailsjs/go/models';
+import { Config } from '../../types';
+import { Note, GetConfig, GetNotesByCharacter, CreateNote, UpdateNote, DeleteNote } from '../../services/storage';
 
 interface CharacterViewProps {
   characterName: string;
@@ -57,24 +56,22 @@ const CharacterView: React.FC<CharacterViewProps> = ({ characterName }) => {
     try {
       if (selectedNote) {
         // Update existing note
-        const updatedNote = new models.Note({
+        const updatedNote: Note = {
           ...selectedNote,
           title,
           content,
           updated_at: new Date().toISOString(),
-        });
+        };
         await UpdateNote(updatedNote);
       } else {
         // Create new note
-        const newNote = new models.Note({
-          id: 0, // Will be assigned by backend
+        await CreateNote({
           character_name: characterName,
           title,
           content,
           created_at: new Date().toISOString(),
           updated_at: new Date().toISOString(),
         });
-        await CreateNote(newNote);
       }
       
       await loadNotes();
@@ -157,7 +154,7 @@ const CharacterView: React.FC<CharacterViewProps> = ({ characterName }) => {
       <div className="bg-white border-b border-gray-200 px-4 py-3 flex items-center justify-between">
         <div className="flex items-center gap-4">
           <button
-            onClick={() => navigate('/')}
+            onClick={() => navigate('/lyrias-notes')}
             className="text-gray-600 hover:text-gray-900 flex items-center gap-2"
           >
             ← Back to Character Select
