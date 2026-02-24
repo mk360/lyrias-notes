@@ -10,6 +10,7 @@
     "preview": "vite preview",
     "serve": "vite preview --port 3000"
   },
+  "homepage": "https://mk360.github.io/lyrias-notes",
   "dependencies": {
     "@tiptap/extension-color": "^2.1.13",
     "@tiptap/extension-image": "^2.1.13",

@@ -22,9 +22,9 @@ go.work
 *.db-wal
 
 # Frontend
-frontend/node_modules/
-frontend/dist/
-frontend/.vite/
+node_modules/
+dist/
+.vite/
 
 # IDE
 .vscode/
