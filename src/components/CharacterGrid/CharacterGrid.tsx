@@ -42,6 +42,8 @@ export const CharacterGrid: React.FC = () => {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900 p-8">
+      <h1>Lyria's Notes</h1>
+      <h3>Click on a character card to start adding your notes</h3>
       {/* EX Toggle Button */}
       <button
         onClick={toggleExMode}
