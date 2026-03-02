@@ -31,7 +31,7 @@ export const CharacterGrid: React.FC = () => {
     const charName = exModeEnabled && EX_CHARACTERS.includes(character)
       ? `${character}_ex`
       : character;
-    return `/lyrias-notes/img/character_select/${character}.png`;
+    return `/lyrias-notes/img/character_select/${character}.webp`;
   };
 
   const getExToggleImage = () => {

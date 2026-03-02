@@ -40,7 +40,7 @@ const FrameDataPanel: React.FC<FrameDataPanelProps> = ({ characterName }) => {
       // For now, using mock data
       
       // Set character portrait
-      const portraitPath = `/img/characters/${characterName}.png`;
+      const portraitPath = `/img/characters/${characterName}.webp`;
       setCharacterPortrait(portraitPath);
 
       // Mock move data - will be replaced with actual Dustloop scraping
