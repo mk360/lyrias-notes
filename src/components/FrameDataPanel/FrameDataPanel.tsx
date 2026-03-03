@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { FrameData } from '../../types';
 
 interface FrameDataPanelProps {
   characterName: string;

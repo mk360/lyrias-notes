@@ -85,10 +85,7 @@ func downloadMoveImg(targetDir string, filename string, character string, wg *sy
 			log.Fatalln(err)
 		}
 		var data, _ = io.ReadAll(req.Body)
-		err = os.WriteFile(moveDir+"/"+fullFilename, data, 0644)
-		if err != nil {
-			errors = append(errors, fullFilename)
-		}
+		convertToWebp(data, fullFilename)
 	}
 	wg.Done()
 }

@@ -2,15 +2,29 @@ package main
 
 import (
 	"bytes"
-	"image"
+	"image/png"
+	"log"
 	"os"
+	"strings"
 
-	"image/webp"
+	webp "github.com/HugoSmits86/nativewebp"
 )
 
-func convertToWebp(data []byte, filename string) {
-	img, _, _ := image.Decode(bytes.NewReader(data))
-	file, err := os.Create(filename)
-	defer file.Close()
-	err = webp.()
+func convertToWebp(pngData []byte, filepath string) {
+	// Decode the PNG data into an image.Image
+	img, err := png.Decode(bytes.NewReader(pngData))
+
+	if err != nil {
+		log.Fatalln(err)
+	}
+
+	var webpFilepath = strings.Replace(filepath, ".png", ".webp", 1)
+
+	var fileHandle, _ = os.Create(webpFilepath)
+	defer fileHandle.Close()
+
+	// Encode the image to WebP format in the buffer
+	err = webp.Encode(fileHandle, img, nil)
+	log.Println(err)
+	os.Exit(0)
 }
