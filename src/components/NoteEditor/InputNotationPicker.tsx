@@ -96,7 +96,10 @@ const InputNotationPicker: React.FC<InputNotationPickerProps> = ({
   const previewNotation = buildNotation();
 
   return (
-    <div className="bg-white border border-gray-300 rounded shadow-lg p-4 w-80">
+    <div className="bg-white border border-gray-300 rounded shadow-lg p-4 w-80" style={{
+      overflowY: "scroll",
+      height: 400
+    }}>
       <div className="flex justify-between items-center mb-3">
         <h3 className="font-semibold">Insert Move Input</h3>
         <button

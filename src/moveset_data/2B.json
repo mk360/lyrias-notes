@@ -1,0 +1,969 @@
+[
+    {
+        "name": "",
+        "input": "2H",
+        "damage": "1300",
+        "guard": "Mid",
+        "startup": "11",
+        "active": "6",
+        "recovery": "23",
+        "onBlock": "-12",
+        "onHit": "-8",
+        "onCH": "0",
+        "meter": "50",
+        "images": [
+            "GBVSR_2B_2H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_2B_2H_Hitbox.webp",
+            "GBVSR_2B_2H_Hitbox_2.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "2L",
+        "damage": "400",
+        "guard": "Low",
+        "startup": "6",
+        "active": "3",
+        "recovery": "10",
+        "onBlock": "-2",
+        "onHit": "+2",
+        "onCH": "+4",
+        "meter": "20",
+        "images": [
+            "GBVSR_2B_2L.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_2B_2L_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "2M",
+        "damage": "900",
+        "guard": "Mid",
+        "startup": "8",
+        "active": "4",
+        "recovery": "16",
+        "onBlock": "-5",
+        "onHit": "-1",
+        "onCH": "+3",
+        "meter": "40",
+        "images": [
+            "GBVSR_2B_2M.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_2B_2M_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "2U",
+        "damage": "1000",
+        "guard": "Low",
+        "startup": "8",
+        "active": "3",
+        "recovery": "23",
+        "onBlock": "-11",
+        "onHit": "+44 HKD",
+        "onCH": "+48 HKD",
+        "meter": "40",
+        "images": [
+            "GBVSR_2B_2U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_2B_2U_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "5H",
+        "damage": "1400",
+        "guard": "Mid",
+        "startup": "14",
+        "active": "5",
+        "recovery": "24",
+        "onBlock": "-10",
+        "onHit": "-6",
+        "onCH": "+6",
+        "meter": "60",
+        "images": [
+            "GBVSR_2B_5H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_2B_5H_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "5HH",
+        "damage": "900",
+        "guard": "Mid",
+        "startup": "15",
+        "active": "3",
+        "recovery": "26",
+        "onBlock": "-10",
+        "onHit": "-6",
+        "onCH": "+6",
+        "meter": "10",
+        "images": [
+            "GBVSR_2B_5HH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_2B_5HH_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "5HHH",
+        "damage": "900",
+        "guard": "Mid",
+        "startup": "15",
+        "active": "3",
+        "recovery": "26",
+        "onBlock": "-10",
+        "onHit": "-6",
+        "onCH": "+6",
+        "meter": "10",
+        "images": [
+            "GBVSR_2B_5HHH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_2B_5HHH_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "5HHHH",
+        "damage": "1000",
+        "guard": "Mid",
+        "startup": "15",
+        "active": "3",
+        "recovery": "26",
+        "onBlock": "-10",
+        "onHit": "KD +26",
+        "onCH": "KD +38",
+        "meter": "60",
+        "images": [
+            "GBVSR_2B_5HHHH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_2B_5HHHH_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "5L",
+        "damage": "500",
+        "guard": "Mid",
+        "startup": "6",
+        "active": "3",
+        "recovery": "8",
+        "onBlock": "+2",
+        "onHit": "+6",
+        "onCH": "+8",
+        "meter": "30",
+        "images": [
+            "GBVSR_2B_5L.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_2B_5L_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "5LL",
+        "damage": "600",
+        "guard": "Mid",
+        "startup": "6",
+        "active": "3",
+        "recovery": "14",
+        "onBlock": "-2",
+        "onHit": "+2",
+        "onCH": "+6",
+        "meter": "10",
+        "images": [
+            "GBVSR_2B_5LL.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_2B_5LL_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "5LLL",
+        "damage": "700",
+        "guard": "Mid",
+        "startup": "10",
+        "active": "3",
+        "recovery": "18",
+        "onBlock": "-6",
+        "onHit": "-2",
+        "onCH": "+2",
+        "meter": "10",
+        "images": [
+            "GBVSR_2B_5LLL.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_2B_5LLL_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "5LLLL",
+        "damage": "500",
+        "guard": "All",
+        "startup": "10",
+        "active": "",
+        "recovery": "Total 40",
+        "onBlock": "-6~+6",
+        "onHit": "+20",
+        "onCH": "+36 point black",
+        "meter": "40",
+        "images": [
+            "GBVSR_2B_5LLLL.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_2B_5LLLL_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "5M",
+        "damage": "700",
+        "guard": "Mid",
+        "startup": "9",
+        "active": "4",
+        "recovery": "21",
+        "onBlock": "-10",
+        "onHit": "-6",
+        "onCH": "-2",
+        "meter": "40",
+        "images": [
+            "GBVSR_2B_5M.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_2B_5M_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "5MM",
+        "damage": "700",
+        "guard": "Mid",
+        "startup": "9",
+        "active": "3",
+        "recovery": "20",
+        "onBlock": "-8",
+        "onHit": "-4",
+        "onCH": "0",
+        "meter": "10",
+        "images": [
+            "GBVSR_2B_5MM.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_2B_5MM_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "5MMM",
+        "damage": "300\u00d73",
+        "guard": "Mid",
+        "startup": "10",
+        "active": "6",
+        "recovery": "21",
+        "onBlock": "-8",
+        "onHit": "-4",
+        "onCH": "-4",
+        "meter": "10 per hit",
+        "images": [
+            "GBVSR_2B_5MMM.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_2B_5MMM_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "5MMMM",
+        "damage": "400*3",
+        "guard": "Mid",
+        "startup": "11",
+        "active": "2(2)2(2)4",
+        "recovery": "21",
+        "onBlock": "-8",
+        "onHit": "KD +29",
+        "onCH": "",
+        "meter": "60 [40], 10",
+        "images": [
+            "GBVSR_2B_5MMMM.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_2B_5MMMM_Hitbox.webp",
+            "GBVSR_2B_5MMMM_Hitbox_2.webp",
+            "GBVSR_2B_5MMMM_Hitbox_3.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "j.H",
+        "damage": "900",
+        "guard": "High\/Air",
+        "startup": "12",
+        "active": "6",
+        "recovery": "Until L+1",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "40",
+        "images": [
+            "GBVSR_2B_jH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_2B_jH_Hitbox.webp",
+            "GBVSR_2B_jH_Hitbox_2.webp",
+            "GBVSR_2B_jH_Hitbox_3.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "j.L",
+        "damage": "600",
+        "guard": "High",
+        "startup": "5",
+        "active": "6",
+        "recovery": "Until L+1",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "30",
+        "images": [
+            "GBVSR_2B_jL.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_2B_jL_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "j.M",
+        "damage": "800",
+        "guard": "High\/Air",
+        "startup": "6",
+        "active": "8",
+        "recovery": "Until L+1",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "40",
+        "images": [
+            "GBVSR_2B_jM.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_2B_jM_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "5H~L \/ 5L~H",
+        "input": "5H~L",
+        "damage": "1000, 1000",
+        "guard": "Mid (All)",
+        "startup": "19 [48]",
+        "active": "",
+        "recovery": "",
+        "onBlock": "-10 [+3]",
+        "onHit": "+23 [+50]",
+        "onCH": "+35 [+50]",
+        "meter": "10 per hit",
+        "images": [
+            "GBVSR_2B_5HL.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_2B_5HHHH_Hitbox.webp",
+            "GBVSR_2B_5LH_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "5L~M \/ 5M~L",
+        "input": "5L~M",
+        "damage": "300\u00d72, 500",
+        "guard": "Mid (All)",
+        "startup": "11(45)",
+        "active": "3(3)3(18)~40",
+        "recovery": "Total 68",
+        "onBlock": "-3",
+        "onHit": "KD +31",
+        "onCH": "KD +31",
+        "meter": "10 per hit",
+        "images": [
+            "GBVSR_2B_5LM.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_2B_5LM_Hitbox.webp",
+            "GBVSR_2B_5LM_Hitbox_2.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "5M~H \/ 5H~M",
+        "input": "5M~H",
+        "damage": "400\u00d75",
+        "guard": "Mid",
+        "startup": "13",
+        "active": "3(4)3(4)2(2)2(2)4",
+        "recovery": "28",
+        "onBlock": "-15",
+        "onHit": "KD +22",
+        "onCH": "KD +22",
+        "meter": "10 per hit",
+        "images": [
+            "GBVSR_2B_5MH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_2B_5MH_Hitbox.webp",
+            "GBVSR_2B_5MH_Hitbox_2.webp",
+            "GBVSR_2B_5MMMM_Hitbox.webp",
+            "GBVSR_2B_5MMMM_Hitbox_2.webp",
+            "GBVSR_2B_5MMMM_Hitbox_3.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "A080: Wave",
+        "input": "22L",
+        "damage": "1200",
+        "guard": "All",
+        "startup": "33",
+        "active": "12",
+        "recovery": "Total 56",
+        "onBlock": "+3",
+        "onHit": "KD +40~+51",
+        "onCH": "KD +42~+53",
+        "meter": "10, 40",
+        "images": [
+            "GBVSR_2B_22L.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_2B_22L_Hitbox.webp",
+            "GBVSR_2B_22L_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "A090: Wire",
+        "input": "214M",
+        "damage": "700",
+        "guard": "All",
+        "startup": "23",
+        "active": "29",
+        "recovery": "Total 57",
+        "onBlock": "+5",
+        "onHit": "+9",
+        "onCH": "+9",
+        "meter": "10, 40",
+        "images": [
+            "GBVSR_2B_214M.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_2B_214M_Hitbox.webp",
+            "GBVSR_2B_214M_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "A130: Bomb",
+        "input": "22U",
+        "damage": "300\u00d76",
+        "guard": "All",
+        "startup": "42",
+        "active": "46",
+        "recovery": "Total 51",
+        "onBlock": "+60",
+        "onHit": "+65",
+        "onCH": "+65",
+        "meter": "-5000",
+        "images": [
+            "GBVSR_2B_22U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_2B_22U_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "A140: Gravity",
+        "input": "22M",
+        "damage": "",
+        "guard": "",
+        "startup": "~50",
+        "active": "",
+        "recovery": "36",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "10",
+        "images": [
+            "GBVSR_2B_22M.webp"
+        ],
+        "hitboxes": [
+            ""
+        ],
+        "type": "special"
+    },
+    {
+        "name": "A150: Volt",
+        "input": "22H",
+        "damage": "1000",
+        "guard": "All",
+        "startup": "33 [12]",
+        "active": "",
+        "recovery": "Total 33 [Total 40]",
+        "onBlock": "- [+16]",
+        "onHit": "- [KD +61]",
+        "onCH": "- [KD +61]",
+        "meter": "20 [20, 40]",
+        "images": [
+            "GBVSR_2B_22H.webp",
+            "GBVSR_2B_22H_2.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_2B_22H_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "A160: Missile",
+        "input": "214L",
+        "damage": "1400",
+        "guard": "Mid",
+        "startup": "14",
+        "active": "10",
+        "recovery": "22",
+        "onBlock": "-6",
+        "onHit": "Air Recovery +29",
+        "onCH": "KD +45",
+        "meter": "20, 60",
+        "images": [
+            "GBVSR_2B_214L.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_2B_214L_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Air Throw",
+        "input": "j.LU",
+        "damage": "2500",
+        "guard": "Throw",
+        "startup": "5",
+        "active": "5",
+        "recovery": "Until L+5",
+        "onBlock": "",
+        "onHit": "About +40 HKD",
+        "onCH": "",
+        "meter": "40, 150",
+        "images": [
+            "GBVSR_2B_AirThrow.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_2B_AirThrow_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "Android Kick Sequence",
+        "input": "236236H",
+        "damage": "800\u00d75 [3000]",
+        "guard": "Mid",
+        "startup": "8+6",
+        "active": "3(21)3",
+        "recovery": "36",
+        "onBlock": "-20",
+        "onHit": "HKD +38 [HKD +32]",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_2B_236236H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_2B_236236H_Hitbox.webp",
+            "GBVSR_2B_236236H_2_Hitbox.webp"
+        ],
+        "type": "super"
+    },
+    {
+        "name": "Brave Counter",
+        "input": "BC",
+        "damage": "500",
+        "guard": "Mid",
+        "startup": "10 [18]",
+        "active": "3 [2]",
+        "recovery": "19 [35]",
+        "onBlock": "-2",
+        "onHit": "Air Tech+21 [+5]",
+        "onCH": "HKD+54 [HKD+43]",
+        "meter": "\u00b10",
+        "images": [
+            "GBVSR_2B_BC.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_2B_BC_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "Counterstrike",
+        "input": "5U~U",
+        "damage": "1200",
+        "guard": "All",
+        "startup": "5",
+        "active": "15",
+        "recovery": "28",
+        "onBlock": "-12",
+        "onHit": "KD +20",
+        "onCH": "KD +32",
+        "meter": "60",
+        "images": [
+            "GBVSR_2B_5HHH.webp"
+        ],
+        "hitboxes": [
+            ""
+        ],
+        "type": "unique"
+    },
+    {
+        "name": "Evasive Maneuver",
+        "input": "5U",
+        "damage": "",
+        "guard": "",
+        "startup": "",
+        "active": "",
+        "recovery": "Total 42",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_2B_5U.webp"
+        ],
+        "hitboxes": [
+            ""
+        ],
+        "type": "unique"
+    },
+    {
+        "name": "Evasive Maneuver",
+        "input": "6U",
+        "damage": "",
+        "guard": "",
+        "startup": "",
+        "active": "",
+        "recovery": "Total 20",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_2B_6U.webp"
+        ],
+        "hitboxes": [
+            ""
+        ],
+        "type": "unique"
+    },
+    {
+        "name": "Extermination Blade",
+        "input": "236236U",
+        "damage": "1800, 360\u00d74, 960, 60\u00d710, 1200 [1500, 300\u00d74, 1300]",
+        "guard": "Mid",
+        "startup": "7+7",
+        "active": "8",
+        "recovery": "40",
+        "onBlock": "-35",
+        "onHit": "HKD +42",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_2B_236236U_Start.webp",
+            "GBVSR_2B_236236U.webp",
+            "GBVSR_2B_236236U_Finish.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_2B_236236U_Hitbox.webp",
+            "GBVSR_2B_236236U_Hitbox_2.webp",
+            "GBVSR_2B_236236U_2_Hitbox.webp",
+            "GBVSR_2B_236236U_3_Hitbox.webp"
+        ],
+        "type": "super"
+    },
+    {
+        "name": "Grab Pod",
+        "input": "j.U",
+        "damage": "",
+        "guard": "",
+        "startup": "",
+        "active": "",
+        "recovery": "L+3",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_2B_jU.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_2B_jU_Hitbox.webp"
+        ],
+        "type": "unique"
+    },
+    {
+        "name": "Grab Pod Follow-up",
+        "input": "j.U~U",
+        "damage": "700",
+        "guard": "High\/Air",
+        "startup": "11",
+        "active": "6",
+        "recovery": "",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "40",
+        "images": [
+            "GBVSR_2B_jUU.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_2B_jU_2_Hitbox.webp",
+            "GBVSR_2B_jU_2_Hitbox_2.webp"
+        ],
+        "type": "unique"
+    },
+    {
+        "name": "Ground Throw",
+        "input": "LU",
+        "damage": "2500",
+        "guard": "Throw",
+        "startup": "4",
+        "active": "3",
+        "recovery": "26",
+        "onBlock": "",
+        "onHit": "+44 HKD",
+        "onCH": "",
+        "meter": "40, 150",
+        "images": [
+            "GBVSR_2B_Throw.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_2B_Throw_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "Pod A",
+        "input": "236L",
+        "damage": "150\u00d75",
+        "guard": "All",
+        "startup": "13",
+        "active": "27",
+        "recovery": "Total 57 (Total 48)",
+        "onBlock": "-4",
+        "onHit": "Air recovery +21",
+        "onCH": "KD +33",
+        "meter": "10, 40, 10",
+        "images": [
+            "GBVSR_2B_236L.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_2B_236L_Hitbox.webp",
+            "GBVSR_2B_236L_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Pod B",
+        "input": "236M",
+        "damage": "1200",
+        "guard": "All",
+        "startup": "18\/22",
+        "active": "9",
+        "recovery": "Total 46",
+        "onBlock": "-4\/+0",
+        "onHit": "+24\/+28",
+        "onCH": "+44\/+48",
+        "meter": "10, 40",
+        "images": [
+            "GBVSR_2B_236M.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_2B_236M_Hitbox.webp",
+            "GBVSR_2B_236M_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Pod C",
+        "input": "236H",
+        "damage": "1400",
+        "guard": "All",
+        "startup": "13~28",
+        "active": "16",
+        "recovery": "Total 45",
+        "onBlock": "+4~+19",
+        "onHit": "+43~+58",
+        "onCH": "+58~+73",
+        "meter": "20, 40",
+        "images": [
+            "GBVSR_2B_236H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_2B_236H_Hitbox.webp",
+            "GBVSR_2B_236H_Hitbox_2.webp",
+            "GBVSR_2B_236H_Hitbox_3.webp",
+            "GBVSR_2B_236H_Hitbox_4.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "R010: Laser",
+        "input": "236U",
+        "damage": "1600",
+        "guard": "All",
+        "startup": "16~20",
+        "active": "10",
+        "recovery": "17",
+        "onBlock": "-4~+2",
+        "onHit": "Crumple 35F, HKD +83",
+        "onCH": "Crumple 35F, HKD +83",
+        "meter": "-5000",
+        "images": [
+            "GBVSR_2B_236U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_2B_236U_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "R020: Mirage",
+        "input": "214U",
+        "damage": "1000, 100\u00d710",
+        "guard": "Mid",
+        "startup": "8",
+        "active": "10",
+        "recovery": "54",
+        "onBlock": "-26",
+        "onHit": "HKD +44",
+        "onCH": "HKD +44",
+        "meter": "-5000",
+        "images": [
+            "GBVSR_2B_214U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_2B_214U_Hitbox.webp",
+            "GBVSR_2B_214U_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "R030: Hammer",
+        "input": "214H",
+        "damage": "1600 [2000]",
+        "guard": "Mid",
+        "startup": "19",
+        "active": "6",
+        "recovery": "19",
+        "onBlock": "-6 [+6]",
+        "onHit": "+6 [+42]",
+        "onCH": "+10 [+46]",
+        "meter": "20, 80",
+        "images": [
+            "GBVSR_2B_214H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_2B_214H_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Raging Chain",
+        "input": "MH~MH",
+        "damage": "1000",
+        "guard": "Mid",
+        "startup": "13",
+        "active": "5",
+        "recovery": "17",
+        "onBlock": "+4",
+        "onHit": "+15Force Crouch (HKD+63)",
+        "onCH": "+15Force Crouch",
+        "meter": "-2500",
+        "images": [
+            "GBVSR_2B_MH-MH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_2B_MH-MH_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "Raging Strike",
+        "input": "MH",
+        "damage": "1500",
+        "guard": "Guard Crush 45 [52]",
+        "startup": "28 (1)",
+        "active": "1",
+        "recovery": "37",
+        "onBlock": "+8Force Stand [+15Force Stand]",
+        "onHit": "+15Force Crouch (KD+40)",
+        "onCH": "+15Force Crouch",
+        "meter": "\u00b10",
+        "images": [
+            "GBVSR_2B_MH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_2B_MH_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "Self-Destruct",
+        "input": "720U",
+        "damage": "6600",
+        "guard": "Unblockable",
+        "startup": "4+59+0 [4+0]",
+        "active": "",
+        "recovery": "",
+        "onBlock": "",
+        "onHit": "-2",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_2B_720U.webp"
+        ],
+        "hitboxes": [
+            ""
+        ],
+        "type": "super"
+    }
+]

@@ -1,0 +1,1211 @@
+[
+    {
+        "name": "",
+        "input": "2H",
+        "damage": "1300",
+        "guard": "Mid",
+        "startup": "11",
+        "active": "6",
+        "recovery": "23",
+        "onBlock": "-12",
+        "onHit": "-8",
+        "onCH": "0",
+        "meter": "",
+        "images": [
+            "GBVSR_Avatar_Belial_2H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Avatar_Belial_2H_Hitbox.webp",
+            "GBVSR_Avatar_Belial_2H_Hitbox_2.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "2L",
+        "damage": "400",
+        "guard": "Mid",
+        "startup": "5",
+        "active": "3",
+        "recovery": "12",
+        "onBlock": "-4",
+        "onHit": "0",
+        "onCH": "+2",
+        "meter": "",
+        "images": [
+            "GBVSR_Avatar_Belial_2L.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Avatar_Belial_2L_Hitbox.webp",
+            "GBVSR_Avatar_Belial_2L_Hitbox_2.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "2M",
+        "damage": "800",
+        "guard": "Low",
+        "startup": "6",
+        "active": "5",
+        "recovery": "13",
+        "onBlock": "-3",
+        "onHit": "KD+31",
+        "onCH": "+38",
+        "meter": "",
+        "images": [
+            "GBVSR_Avatar_Belial_2M.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Avatar_Belial_2M_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "2U",
+        "damage": "1000",
+        "guard": "Low",
+        "startup": "10",
+        "active": "6",
+        "recovery": "20",
+        "onBlock": "-11",
+        "onHit": "HKD+44",
+        "onCH": "HKD+48",
+        "meter": "",
+        "images": [
+            "GBVSR_Avatar_Belial_2U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Avatar_Belial_2U_Hitbox.webp",
+            "GBVSR_Avatar_Belial_2U_Hitbox_2.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "66H",
+        "damage": "1200",
+        "guard": "Mid",
+        "startup": "15",
+        "active": "4",
+        "recovery": "23",
+        "onBlock": "-8~-5",
+        "onHit": "+10",
+        "onCH": "+14",
+        "meter": "",
+        "images": [
+            "GBVSR_Avatar_Belial_66H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Avatar_Belial_66H_Hitbox.webp",
+            "GBVSR_Avatar_Belial_66H_Hitbox_2.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "66L",
+        "damage": "600",
+        "guard": "Mid",
+        "startup": "8",
+        "active": "3",
+        "recovery": "10 [15]",
+        "onBlock": "+2",
+        "onHit": "+6",
+        "onCH": "+8",
+        "meter": "+480",
+        "images": [
+            "GBVSR_Avatar Belial_66L.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Avatar Belial_66L_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "66M",
+        "damage": "1100",
+        "guard": "Low",
+        "startup": "18",
+        "active": "3",
+        "recovery": "13",
+        "onBlock": "+1",
+        "onHit": "+5",
+        "onCH": "+9",
+        "meter": "",
+        "images": [
+            "GBVSR_Avatar_Belial_cXX6M.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Avatar_Belial_cXX6M_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.H",
+        "damage": "1000,600",
+        "guard": "Mid",
+        "startup": "8",
+        "active": "2(1)3",
+        "recovery": "19",
+        "onBlock": "-3",
+        "onHit": "+1",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Avatar_Belial_cH.webp",
+            "GBVSR_Avatar_Belial_cH_2.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Avatar_Belial_cH_Hitbox.webp",
+            "GBVSR_Avatar_Belial_cH_2_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.L",
+        "damage": "600",
+        "guard": "Mid",
+        "startup": "5",
+        "active": "3",
+        "recovery": "6",
+        "onBlock": "+4",
+        "onHit": "+8",
+        "onCH": "+10",
+        "meter": "",
+        "images": [
+            "GBVSR_Avatar_Belial_cL.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Avatar_Belial_cL_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.M",
+        "damage": "1100",
+        "guard": "Mid",
+        "startup": "6",
+        "active": "3",
+        "recovery": "12",
+        "onBlock": "0",
+        "onHit": "+4",
+        "onCH": "+8",
+        "meter": "",
+        "images": [
+            "GBVSR_Avatar_Belial_cM.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Avatar_Belial_cM_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.XX",
+        "damage": "700",
+        "guard": "Mid",
+        "startup": "9",
+        "active": "3",
+        "recovery": "15",
+        "onBlock": "-3",
+        "onHit": "+1",
+        "onCH": "+5",
+        "meter": "+480",
+        "images": [
+            "GBVSR_Avatar Belial_cXX.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Avatar Belial_cXX_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.XX6H",
+        "damage": "1000",
+        "guard": "High",
+        "startup": "18",
+        "active": "3",
+        "recovery": "22",
+        "onBlock": "-4",
+        "onHit": "+1Force Crouch",
+        "onCH": "HKD+32",
+        "meter": "+480",
+        "images": [
+            "GBVSR_Avatar Belial_cXX6H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Avatar Belial_cXX6H_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.XX6M",
+        "damage": "1000",
+        "guard": "Low",
+        "startup": "12",
+        "active": "3",
+        "recovery": "16",
+        "onBlock": "-4",
+        "onHit": "KD+30",
+        "onCH": "HKD+55",
+        "meter": "+480",
+        "images": [
+            "GBVSR_Avatar Belial_cXX6M.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Avatar Belial_cXX6M_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.XXX",
+        "damage": "1000",
+        "guard": "Mid",
+        "startup": "12",
+        "active": "3",
+        "recovery": "18",
+        "onBlock": "-4",
+        "onHit": "\u00b10",
+        "onCH": "+8",
+        "meter": "+600",
+        "images": [
+            "GBVSR_Avatar Belial_cXXX.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Avatar Belial_cXXX_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "f.H",
+        "damage": "1300",
+        "guard": "Mid",
+        "startup": "9",
+        "active": "4",
+        "recovery": "22",
+        "onBlock": "-9",
+        "onHit": "-5",
+        "onCH": "+3",
+        "meter": "",
+        "images": [
+            "GBVSR_Avatar_Belial_fH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Avatar_Belial_fH_Hitbox.webp",
+            "GBVSR_Avatar_Belial_fH_Hitbox_2.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "f.L",
+        "damage": "600",
+        "guard": "Mid",
+        "startup": "6",
+        "active": "5",
+        "recovery": "7",
+        "onBlock": "+1",
+        "onHit": "+5",
+        "onCH": "+7",
+        "meter": "",
+        "images": [
+            "GBVSR_Avatar_Belial_fL.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Avatar_Belial_fL_Hitbox.webp",
+            "GBVSR_Avatar_Belial_fL_Hitbox_2.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "f.M",
+        "damage": "300, 600",
+        "guard": "Mid",
+        "startup": "7",
+        "active": "1,3",
+        "recovery": "18",
+        "onBlock": "-6",
+        "onHit": "-2",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Avatar_Belial_fM.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Avatar_Belial_fM_Hitbox.webp",
+            "GBVSR_Avatar_Belial_fM_Hitbox_2.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "j.H",
+        "damage": "1000",
+        "guard": "High\/Air",
+        "startup": "9",
+        "active": "6",
+        "recovery": "Until L+1",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Avatar_Belial_jH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Avatar_Belial_jH_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "j.L",
+        "damage": "600",
+        "guard": "High\/Air",
+        "startup": "5",
+        "active": "Until L",
+        "recovery": "0",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Avatar_Belial_jL.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Avatar_Belial_jL_Hitbox.webp",
+            "GBVSR_Avatar_Belial_jL_Hitbox_2.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "j.M",
+        "damage": "700",
+        "guard": "High\/Air",
+        "startup": "7",
+        "active": "6",
+        "recovery": "Until L+1",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Avatar_Belial_jM.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Avatar_Belial_jM_Hitbox.webp",
+            "GBVSR_Avatar_Belial_jM_Hitbox_2.webp",
+            "GBVSR_Avatar_Belial_jM_Hitbox_3.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "j.U",
+        "damage": "1000",
+        "guard": "All",
+        "startup": "20",
+        "active": "Until L+1",
+        "recovery": "21",
+        "onBlock": "-4 at best",
+        "onHit": "KD",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Avatar_Belial_jU.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Avatar_Belial_jU_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "Air Throw",
+        "input": "j.LU",
+        "damage": "2500",
+        "guard": "Throw",
+        "startup": "5",
+        "active": "5",
+        "recovery": "Until L+1",
+        "onBlock": "",
+        "onHit": "HKD",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Avatar_Belial_AirThrow.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Avatar_Belial_AirThrow_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "Beleth",
+        "input": "22X~M",
+        "damage": "600, 100\u00d75",
+        "guard": "All",
+        "startup": "21",
+        "active": "Until L",
+        "recovery": "14",
+        "onBlock": "+2",
+        "onHit": "KD+37",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Avatar_Belial_22X-M.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Avatar_Belial_22X-M_Hitbox.webp",
+            "GBVSR_Avatar_Belial_22X-M_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Brave Counter",
+        "input": "BC",
+        "damage": "500",
+        "guard": "Mid",
+        "startup": "10 [18]",
+        "active": "3 [2]",
+        "recovery": "19 [35]",
+        "onBlock": "-2",
+        "onHit": "Air Tech+21 [+5]",
+        "onCH": "HKD+54 [HKD+43]",
+        "meter": "\u00b10",
+        "images": [
+            "GBVSR_Avatar Belial_BC.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Avatar Belial_BC_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "Destructive Delusions",
+        "input": "236M",
+        "damage": "500, 200, 100\u00d73",
+        "guard": "All",
+        "startup": "16",
+        "active": "",
+        "recovery": "Total 48",
+        "onBlock": "-5",
+        "onHit": "-2",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Avatar_Belial_236M.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Avatar_Belial_236M_Hitbox.webp",
+            "GBVSR_Avatar_Belial_236M_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Diafthora",
+        "input": "236236H",
+        "damage": "4000",
+        "guard": "Mid",
+        "startup": "9+4",
+        "active": "8",
+        "recovery": "31",
+        "onBlock": "-17~-13",
+        "onHit": "HKD+43",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Avatar_Belial_236236H_Start.webp",
+            "GBVSR_Avatar_Belial_236236H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Avatar_Belial_236236H_Hitbox.webp",
+            "GBVSR_Avatar_Belial_236236H_Hitbox_2.webp"
+        ],
+        "type": "super"
+    },
+    {
+        "name": "Diafthora",
+        "input": "j.236236H",
+        "damage": "4000",
+        "guard": "All",
+        "startup": "7+8",
+        "active": "Until L+2",
+        "recovery": "31",
+        "onBlock": "-17~-13",
+        "onHit": "HKD+43",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Avatar_Belial_236236H_Start.webp",
+            "GBVSR_Avatar_Belial_236236H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Avatar_Belial_236236H_Hitbox.webp",
+            "GBVSR_Avatar_Belial_236236H_Hitbox_2.webp"
+        ],
+        "type": "super"
+    },
+    {
+        "name": "Follow-up 1",
+        "input": "214X~4X",
+        "damage": "400\/600\/700",
+        "guard": "Mid",
+        "startup": "9",
+        "active": "4",
+        "recovery": "21",
+        "onBlock": "-8\/-8\/-6",
+        "onHit": "Air Recovery+21\/Air Recovery+21\/KD+30",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Avatar_Belial_214X-4X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Avatar_Belial_214X-4X_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Follow-up 2",
+        "input": "214X~4X~4X",
+        "damage": "700\/1000\/1100",
+        "guard": "Mid",
+        "startup": "13",
+        "active": "6",
+        "recovery": "21",
+        "onBlock": "-16",
+        "onHit": "KD+31\/ KD+31 \/ KD+25",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Avatar_Belial_214X-4X-4X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Avatar_Belial_214X-4X-4X_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Ground Throw",
+        "input": "LU",
+        "damage": "2500",
+        "guard": "Throw",
+        "startup": "4",
+        "active": "3",
+        "recovery": "26",
+        "onBlock": "",
+        "onHit": "HKD+44",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Avatar_Belial_Throw.webp",
+            "GBVSR_Avatar_Belial_BackThrow.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Avatar_Belial_Throw_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "H Barbatos",
+        "input": "22H~H",
+        "damage": "2000",
+        "guard": "Throw",
+        "startup": "30~35",
+        "active": "Until L",
+        "recovery": "34",
+        "onBlock": "",
+        "onHit": "HKD+39",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Avatar_Belial_22X-H.webp",
+            "GBVSR_Avatar_Belial_22X-H_2.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Avatar_Belial_22X-H_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "H Blind Devotion",
+        "input": "623H",
+        "damage": "700, 100, 50\u00d74, 700",
+        "guard": "Mid",
+        "startup": "11",
+        "active": "2,3,3,3,3,3",
+        "recovery": "35",
+        "onBlock": "-24[-30]",
+        "onHit": "KD+31",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Avatar_Belial_623X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Avatar_Belial_623M_Hitbox.webp",
+            "GBVSR_Avatar_Belial_623M_Hitbox_2.webp",
+            "GBVSR_Avatar_Belial_623M_Hitbox_3.webp",
+            "GBVSR_Avatar_Belial_623H_Hitbox_3.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "H Carnal Passion",
+        "input": "214H",
+        "damage": "700",
+        "guard": "Mid",
+        "startup": "16",
+        "active": "4",
+        "recovery": "14",
+        "onBlock": "-3",
+        "onHit": "+1",
+        "onCH": "+3",
+        "meter": "",
+        "images": [
+            "GBVSR_Avatar_Belial_214X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Avatar_Belial_214X_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "H Rejected Truth",
+        "input": "236H",
+        "damage": "900, 150\u00d74",
+        "guard": "All",
+        "startup": "16",
+        "active": "",
+        "recovery": "Total 55",
+        "onBlock": "+2",
+        "onHit": "+6",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Avatar_Belial_236X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Avatar_Belial_236X_Hitbox.webp",
+            "GBVSR_Avatar_Belial_236X_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "H Wings Bestowed",
+        "input": "22H",
+        "damage": "",
+        "guard": "",
+        "startup": "",
+        "active": "",
+        "recovery": "Total 105",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Avatar_Belial_22X.webp",
+            "GBVSR_Avatar_Belial_22X_2.webp"
+        ],
+        "hitboxes": [
+            ""
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Habakkuk",
+        "input": "5U",
+        "damage": "1300",
+        "guard": "All",
+        "startup": "28",
+        "active": "2",
+        "recovery": "21",
+        "onBlock": "+4",
+        "onHit": "+10",
+        "onCH": "+14",
+        "meter": "",
+        "images": [
+            "GBVSR_Avatar_Belial_5U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Avatar_Belial_5U_Hitbox.webp"
+        ],
+        "type": "unique"
+    },
+    {
+        "name": "Habakkuk (Charged)",
+        "input": "5[U]",
+        "damage": "1300",
+        "guard": "All",
+        "startup": "40",
+        "active": "8",
+        "recovery": "9",
+        "onBlock": "+10",
+        "onHit": "KD+49",
+        "onCH": "KD+53",
+        "meter": "",
+        "images": [
+            "GBVSR_Avatar_Belial_5U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Avatar_Belial_5U_Hitbox.webp"
+        ],
+        "type": "unique"
+    },
+    {
+        "name": "Habakkuk (Midair)",
+        "input": "22X~U",
+        "damage": "1000",
+        "guard": "All",
+        "startup": "27",
+        "active": "5",
+        "recovery": "Until L+10",
+        "onBlock": "-1~-7",
+        "onHit": "KD",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Avatar_Belial_22X-U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Avatar_Belial_22X-U_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Habakkuk (Midair, Charged)",
+        "input": "22X~[U]",
+        "damage": "1100",
+        "guard": "All",
+        "startup": "27",
+        "active": "3,3,3,3",
+        "recovery": "Until L+13",
+        "onBlock": "-5~-11",
+        "onHit": "KD",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Avatar_Belial_22X-U_Charged.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Avatar_Belial_22X-U_Charged_Hitbox.webp",
+            "GBVSR_Avatar_Belial_22X-U_Charged_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "L Barbatos",
+        "input": "22L~H",
+        "damage": "2000",
+        "guard": "Throw",
+        "startup": "31",
+        "active": "Until L",
+        "recovery": "34",
+        "onBlock": "",
+        "onHit": "HKD+39",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Avatar_Belial_22X-H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Avatar_Belial_22X-H_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "L Blind Devotion",
+        "input": "623L",
+        "damage": "1000",
+        "guard": "All",
+        "startup": "6",
+        "active": "6",
+        "recovery": "31",
+        "onBlock": "-20",
+        "onHit": "KD+30",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Avatar_Belial_623X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Avatar_Belial_623L_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "L Carnal Passion",
+        "input": "214L",
+        "damage": "400",
+        "guard": "Mid",
+        "startup": "13",
+        "active": "4",
+        "recovery": "15",
+        "onBlock": "-4",
+        "onHit": "0",
+        "onCH": "+2",
+        "meter": "",
+        "images": [
+            "GBVSR_Avatar_Belial_214X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Avatar_Belial_214X_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "L Wings Bestowed",
+        "input": "22L",
+        "damage": "",
+        "guard": "",
+        "startup": "",
+        "active": "",
+        "recovery": "Total 62",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Avatar_Belial_22X.webp"
+        ],
+        "hitboxes": [
+            ""
+        ],
+        "type": "special"
+    },
+    {
+        "name": "M Barbatos",
+        "input": "22M~H",
+        "damage": "2500",
+        "guard": "Throw",
+        "startup": "29~33",
+        "active": "Until L",
+        "recovery": "34",
+        "onBlock": "",
+        "onHit": "HKD+39",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Avatar_Belial_22X-H.webp",
+            "GBVSR_Avatar_Belial_22X-H_2.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Avatar_Belial_22X-H_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "M Blind Devotion",
+        "input": "623M",
+        "damage": "600, 100\u00d75",
+        "guard": "Mid, All\u00d75",
+        "startup": "9",
+        "active": "2,3,3,3,3,4",
+        "recovery": "34",
+        "onBlock": "-24[-30]",
+        "onHit": "Air Recovery+19",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Avatar_Belial_623X.webp",
+            "GBVSR_Avatar_Belial_623X_2.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Avatar_Belial_623M_Hitbox.webp",
+            "GBVSR_Avatar_Belial_623M_Hitbox_2.webp",
+            "GBVSR_Avatar_Belial_623M_Hitbox_3.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "M Carnal Passion",
+        "input": "214M",
+        "damage": "600",
+        "guard": "Mid",
+        "startup": "20",
+        "active": "6",
+        "recovery": "15",
+        "onBlock": "-4",
+        "onHit": "0",
+        "onCH": "+2",
+        "meter": "",
+        "images": [
+            "GBVSR_Avatar_Belial_214X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Avatar_Belial_214X_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "M Wings Bestowed",
+        "input": "22M",
+        "damage": "",
+        "guard": "",
+        "startup": "",
+        "active": "",
+        "recovery": "Total 75",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Avatar_Belial_22X.webp"
+        ],
+        "hitboxes": [
+            ""
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Pact (5U)",
+        "input": "5U Follow-Up",
+        "damage": "2000",
+        "guard": "Mid",
+        "startup": "20[1]",
+        "active": "3",
+        "recovery": "27",
+        "onBlock": "-11",
+        "onHit": "Air Recovery+18 {KD+32}",
+        "onCH": "KD+40 {KD+42}",
+        "meter": "",
+        "images": [
+            "GBVSR_Avatar_Belial_5U_Followup.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Avatar_Belial_5U_Followup_Hitbox.webp",
+            "GBVSR_Avatar_Belial_5U_Followup_Hitbox_2.webp"
+        ],
+        "type": "unique"
+    },
+    {
+        "name": "Pact (8U)",
+        "input": "8U Follow-Up",
+        "damage": "1200",
+        "guard": "All",
+        "startup": "37[1]",
+        "active": "7",
+        "recovery": "10",
+        "onBlock": "+3 (+5)",
+        "onHit": "+3 (+8) {HKD+60}",
+        "onCH": "HKD+39 {HKD+58}",
+        "meter": "",
+        "images": [
+            "GBVSR_Avatar_Belial_22X-L.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Avatar_Belial_22X-L_Hitbox.webp"
+        ],
+        "type": "unique"
+    },
+    {
+        "name": "Raging Chain",
+        "input": "MH~MH",
+        "damage": "1000",
+        "guard": "Mid",
+        "startup": "13",
+        "active": "5",
+        "recovery": "17",
+        "onBlock": "",
+        "onHit": "+15Force Crouch (HKD+63)",
+        "onCH": "",
+        "meter": "-2500",
+        "images": [
+            "GBVSR_Avatar Belial_MH-MH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Avatar Belial_MH-MH_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "Raging Strike",
+        "input": "MH",
+        "damage": "1500",
+        "guard": "Guard Crush 45 [52]",
+        "startup": "28 (1)",
+        "active": "1",
+        "recovery": "37",
+        "onBlock": "+8Force Stand [+15Force Stand]",
+        "onHit": "+15Force Crouch (KD+40)",
+        "onCH": "+15Force Crouch",
+        "meter": "\u00b10",
+        "images": [
+            "GBVSR_Avatar Belial_MH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Avatar Belial_MH_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "Rejected Truth",
+        "input": "236L",
+        "damage": "500, 100\u00d73",
+        "guard": "All",
+        "startup": "13",
+        "active": "",
+        "recovery": "Total 53",
+        "onBlock": "-6",
+        "onHit": "-2",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Avatar_Belial_236X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Avatar_Belial_236X_Hitbox.webp",
+            "GBVSR_Avatar_Belial_236X_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Stolas",
+        "input": "22X~L",
+        "damage": "700",
+        "guard": "All",
+        "startup": "15",
+        "active": "Until L+1",
+        "recovery": "11",
+        "onBlock": "+2\/+4(crouch)",
+        "onHit": "+3",
+        "onCH": "+7",
+        "meter": "",
+        "images": [
+            "GBVSR_Avatar_Belial_22X-L.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Avatar_Belial_22X-L_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Ultimate Blind Devotion",
+        "input": "623U",
+        "damage": "700, 300, 50x4, 300, 400, 100",
+        "guard": "Mid",
+        "startup": "8",
+        "active": "17 (9)",
+        "recovery": "27 [35] (33)",
+        "onBlock": "-27",
+        "onHit": "HKD+44",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Avatar_Belial_623U_1.webp",
+            "GBVSR_Avatar_Belial_623U_2.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Avatar_Belial_623U_Hitbox.webp",
+            "GBVSR_Avatar_Belial_623U_Hitbox_2.webp",
+            "GBVSR_Avatar_Belial_623U_Hitbox_3.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Ultimate Carnal Passion",
+        "input": "214U",
+        "damage": "800x2, 1000",
+        "guard": "Mid",
+        "startup": "13 [20]",
+        "active": "4(11)4(16)6",
+        "recovery": "29 [9]",
+        "onBlock": "-2",
+        "onHit": "HKD+50",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Avatar_Belial_214U.webp",
+            "GBVSR_Avatar_Belial_214U_Far.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Avatar_Belial_214U_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Ultimate Destructive Delusions",
+        "input": "236U",
+        "damage": "2300 total",
+        "guard": "All",
+        "startup": "9",
+        "active": "-",
+        "recovery": "Total 49",
+        "onBlock": "+6",
+        "onHit": "+62",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Avatar_Belial_236U.webp",
+            "GBVSR_Avatar_Belial_236U_2.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Avatar_Belial_236U_Hitbox.webp",
+            "GBVSR_Avatar_Belial_236U_Hitbox_2.webp",
+            "GBVSR_Avatar_Belial_236U_2_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Ultimate Wings Bestowed",
+        "input": "22U",
+        "damage": "700, 600, 200x4, 300x2, 800",
+        "guard": "Mid",
+        "startup": "9 [33]",
+        "active": "3(19)17 [3(21)17]",
+        "recovery": "12",
+        "onBlock": "+4",
+        "onHit": "HKD+37",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Avatar_Belial_22U.webp",
+            "GBVSR_Avatar_Belial_22U_2.webp",
+            "GBVSR_Avatar_Belial_22U_Far.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Avatar_Belial_22U_Hitbox.webp",
+            "GBVSR_Avatar_Belial_22U_Hitbox_2.webp",
+            "GBVSR_Avatar_Belial_22U_Hitbox_3.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Wild Sin",
+        "input": "236236U",
+        "damage": "6000[2000x2]",
+        "guard": "Grab[All]",
+        "startup": "13+0",
+        "active": "2",
+        "recovery": "Total 116",
+        "onBlock": "-32",
+        "onHit": "HKD+41 [+35]",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Avatar_Belial_236236U_Start.webp",
+            "GBVSR_Avatar_Belial_236236U.webp",
+            "GBVSR_Avatar_Belial_236236U_Finish.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Avatar_Belial_236236U_Hitbox.webp",
+            "GBVSR_Avatar_Belial_236236U_Hitbox_2.webp",
+            "GBVSR_Avatar_Belial_236236U_Hitbox_3.webp",
+            "GBVSR_Avatar_Belial_236236U_Hitbox_4.webp",
+            "GBVSR_Avatar_Belial_236236U_Hitbox_5.webp"
+        ],
+        "type": "super"
+    }
+]

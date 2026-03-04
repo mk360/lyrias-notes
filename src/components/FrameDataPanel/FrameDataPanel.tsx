@@ -39,6 +39,8 @@ const FrameDataPanel: React.FC<FrameDataPanelProps> = ({ characterName }) => {
       // For now, using mock data
       
       // Set character portrait
+      const moveset = await import(`../../moveset_data/${characterName}.json`);
+      console.log(moveset.default)
       const portraitPath = `/img/characters/${characterName}.webp`;
       setCharacterPortrait(portraitPath);
 

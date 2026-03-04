@@ -1,0 +1,1083 @@
+[
+    {
+        "name": "",
+        "input": "2H",
+        "damage": "1300",
+        "guard": "Mid",
+        "startup": "11",
+        "active": "6",
+        "recovery": "23",
+        "onBlock": "-10",
+        "onHit": "-8",
+        "onCH": "+4",
+        "meter": "",
+        "images": [
+            "GBVSR_Siegfried_2H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Siegfried_2H_Hitbox.webp",
+            "GBVSR_Siegfried_2H_Hitbox_2.webp",
+            "GBVSR_Siegfried_2H_Hitbox_3.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "2L",
+        "damage": "400",
+        "guard": "Low",
+        "startup": "6",
+        "active": "3",
+        "recovery": "10",
+        "onBlock": "-2",
+        "onHit": "+2",
+        "onCH": "+4",
+        "meter": "",
+        "images": [
+            "GBVSR_Siegfried_2L.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Siegfried_2L_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "2M",
+        "damage": "900",
+        "guard": "Mid",
+        "startup": "8",
+        "active": "5",
+        "recovery": "13",
+        "onBlock": "-3",
+        "onHit": "+1",
+        "onCH": "+5",
+        "meter": "",
+        "images": [
+            "GBVSR_Siegfried_2M.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Siegfried_2M_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "2U",
+        "damage": "500\u00d72",
+        "guard": "Low",
+        "startup": "7",
+        "active": "3(12)5",
+        "recovery": "20",
+        "onBlock": "-10",
+        "onHit": "HKD+45",
+        "onCH": "HKD+45 [HKD+49]",
+        "meter": "",
+        "images": [
+            "GBVSR_Siegfried_2U.webp",
+            "GBVSR_Siegfried_2U_2.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Siegfried_2U_Hitbox.webp",
+            "GBVSR_Siegfried_2U_Hitbox_2.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "66H",
+        "damage": "600, 1200",
+        "guard": "Mid",
+        "startup": "8",
+        "active": "2(10)3",
+        "recovery": "24",
+        "onBlock": "-8",
+        "onHit": "KD+38 [+10Force Crouch]",
+        "onCH": "HKD+59 [+14Force Crouch]",
+        "meter": "",
+        "images": [
+            "GBVSR_Siegfried_66H.webp",
+            "GBVSR_Siegfried_66H_2.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Siegfried_66H_Hitbox.webp",
+            "GBVSR_Siegfried_66H_Hitbox_2.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "66L",
+        "damage": "600",
+        "guard": "Mid",
+        "startup": "8",
+        "active": "3",
+        "recovery": "10 [15]",
+        "onBlock": "+2",
+        "onHit": "+6",
+        "onCH": "+8",
+        "meter": "+480",
+        "images": [
+            "GBVSR_Siegfried_66L.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Siegfried_66L_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "66M",
+        "damage": "1100",
+        "guard": "Low",
+        "startup": "12",
+        "active": "4",
+        "recovery": "21",
+        "onBlock": "-8",
+        "onHit": "KD+24",
+        "onCH": "HKD+49",
+        "meter": "",
+        "images": [
+            "GBVSR_Siegfried_66M.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Siegfried_66M_Hitbox.webp",
+            "GBVSR_Siegfried_66M_Hitbox_2.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.H",
+        "damage": "1600",
+        "guard": "Mid",
+        "startup": "9",
+        "active": "6",
+        "recovery": "15",
+        "onBlock": "-2",
+        "onHit": "+2",
+        "onCH": "+14",
+        "meter": "",
+        "images": [
+            "GBVSR_Siegfried_cH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Siegfried_cH_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.L",
+        "damage": "600",
+        "guard": "Mid",
+        "startup": "5",
+        "active": "3",
+        "recovery": "6",
+        "onBlock": "+4",
+        "onHit": "+8",
+        "onCH": "+10",
+        "meter": "",
+        "images": [
+            "GBVSR_Siegfried_cL.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Siegfried_cL_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.M",
+        "damage": "1100",
+        "guard": "Mid",
+        "startup": "7",
+        "active": "3",
+        "recovery": "12",
+        "onBlock": "\u00b10",
+        "onHit": "+4",
+        "onCH": "+8",
+        "meter": "",
+        "images": [
+            "GBVSR_Siegfried_cM.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Siegfried_cM_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.XX",
+        "damage": "700",
+        "guard": "Mid",
+        "startup": "9",
+        "active": "3",
+        "recovery": "15",
+        "onBlock": "-3",
+        "onHit": "+1",
+        "onCH": "+5",
+        "meter": "+480",
+        "images": [
+            "GBVSR_Siegfried_cXX.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Siegfried_cXX_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.XX6H",
+        "damage": "1000",
+        "guard": "High",
+        "startup": "18",
+        "active": "3",
+        "recovery": "22",
+        "onBlock": "-4",
+        "onHit": "+1Force Crouch",
+        "onCH": "HKD+32",
+        "meter": "+480",
+        "images": [
+            "GBVSR_Siegfried_cXX6H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Siegfried_cXX6H_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.XX6M",
+        "damage": "1000",
+        "guard": "Low",
+        "startup": "12",
+        "active": "3",
+        "recovery": "16",
+        "onBlock": "-4",
+        "onHit": "KD+30",
+        "onCH": "HKD+55",
+        "meter": "+480",
+        "images": [
+            "GBVSR_Siegfried_cXX6M.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Siegfried_cXX6M_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.XXX",
+        "damage": "1000",
+        "guard": "Mid",
+        "startup": "12",
+        "active": "3",
+        "recovery": "18",
+        "onBlock": "-4",
+        "onHit": "\u00b10",
+        "onCH": "+8",
+        "meter": "+600",
+        "images": [
+            "GBVSR_Siegfried_cXXX.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Siegfried_cXXX_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "f.H",
+        "damage": "1600",
+        "guard": "Mid",
+        "startup": "17",
+        "active": "4",
+        "recovery": "28",
+        "onBlock": "-13",
+        "onHit": "-9",
+        "onCH": "+3",
+        "meter": "",
+        "images": [
+            "GBVSR_Siegfried_fH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Siegfried_fH_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "f.L",
+        "damage": "600",
+        "guard": "Mid",
+        "startup": "6",
+        "active": "4",
+        "recovery": "8",
+        "onBlock": "+1",
+        "onHit": "+5",
+        "onCH": "+7",
+        "meter": "",
+        "images": [
+            "GBVSR_Siegfried_fL.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Siegfried_fL_Hitbox.webp",
+            "GBVSR_Siegfried_fL_Hitbox_2.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "f.M",
+        "damage": "900",
+        "guard": "Mid",
+        "startup": "9",
+        "active": "4",
+        "recovery": "17",
+        "onBlock": "-6",
+        "onHit": "-2",
+        "onCH": "+2",
+        "meter": "",
+        "images": [
+            "GBVSR_Siegfried_fM.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Siegfried_fM_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "j.H",
+        "damage": "1000",
+        "guard": "High\/Air",
+        "startup": "11",
+        "active": "4",
+        "recovery": "Until L+1",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Siegfried_jH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Siegfried_jH_Hitbox.webp",
+            "GBVSR_Siegfried_jH_Hitbox_2.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "j.L",
+        "damage": "600",
+        "guard": "High\/Air",
+        "startup": "5",
+        "active": "Until L",
+        "recovery": "1",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Siegfried_jL.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Siegfried_jL_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "j.M",
+        "damage": "700",
+        "guard": "High\/Air",
+        "startup": "8",
+        "active": "5",
+        "recovery": "Until L+1",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Siegfried_jM.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Siegfried_jM_Hitbox.webp",
+            "GBVSR_Siegfried_jM_Hitbox_2.webp",
+            "GBVSR_Siegfried_jM_Hitbox_3.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "j.U",
+        "damage": "500\u00d72",
+        "guard": "All",
+        "startup": "20",
+        "active": "Until L,2",
+        "recovery": "18",
+        "onBlock": "-5",
+        "onHit": "Air Tech+18",
+        "onCH": "KD+31",
+        "meter": "",
+        "images": [
+            "GBVSR_Siegfried_jU.webp",
+            "GBVSR_Siegfried_jU_2.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Siegfried_jU_Hitbox.webp",
+            "GBVSR_Siegfried_jU_Hitbox_2.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "Air Throw",
+        "input": "j.LU",
+        "damage": "2500",
+        "guard": "Airthrow",
+        "startup": "5",
+        "active": "5",
+        "recovery": "Until L+6",
+        "onBlock": "",
+        "onHit": "HKD+45",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Siegfried_AirThrow.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Siegfried_AirThrow_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "Blood of the Dragon",
+        "input": "214214H",
+        "damage": "",
+        "guard": "",
+        "startup": "8+0",
+        "active": "",
+        "recovery": "9",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "-10000",
+        "images": [
+            "GBVSR_Siegfried_214214H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Siegfried_214214H_Hitbox.webp"
+        ],
+        "type": "super"
+    },
+    {
+        "name": "Brave Counter",
+        "input": "BC",
+        "damage": "500",
+        "guard": "Mid",
+        "startup": "10 [18]",
+        "active": "3 [2]",
+        "recovery": "19 [35]",
+        "onBlock": "-2",
+        "onHit": "Air Tech+21 [+5]",
+        "onCH": "HKD+54 [HKD+43]",
+        "meter": "\u00b10",
+        "images": [
+            "GBVSR_Siegfried_BC.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Siegfried_BC_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "Cancel",
+        "input": "22X~4",
+        "damage": "",
+        "guard": "",
+        "startup": "",
+        "active": "",
+        "recovery": "Total 20",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Siegfried_22X_2.webp"
+        ],
+        "hitboxes": [
+            ""
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Delivrance",
+        "input": "22X~U",
+        "damage": "1000, 1500 [1000, 2000]",
+        "guard": "Throw",
+        "startup": "26 [23]",
+        "active": "3",
+        "recovery": "37",
+        "onBlock": "",
+        "onHit": "HKD+52",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Siegfried_22X-U.webp",
+            "GBVSR_Siegfried_22X-U_2.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Siegfried_22X-U_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Ground Throw",
+        "input": "LU",
+        "damage": "2500",
+        "guard": "Throw",
+        "startup": "4",
+        "active": "3",
+        "recovery": "26",
+        "onBlock": "",
+        "onHit": "HKD+44",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Siegfried_Throw.webp",
+            "GBVSR_Siegfried_BackThrow.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Siegfried_Throw_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "H Messager",
+        "input": "623H",
+        "damage": "600, 300\u00d73",
+        "guard": "Mid",
+        "startup": "11",
+        "active": "6(6)2,4,2 [6]",
+        "recovery": "41",
+        "onBlock": "-24",
+        "onHit": "KD+26",
+        "onCH": "KD+26",
+        "meter": "",
+        "images": [
+            "GBVSR_Siegfried_623M.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Siegfried_623H_Hitbox.webp",
+            "GBVSR_Siegfried_623H_Hitbox_2.webp",
+            "GBVSR_Siegfried_623H_Hitbox_3.webp",
+            "GBVSR_Siegfried_623H_Hitbox_4.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "H Nelah Nav",
+        "input": "236H",
+        "damage": "400\u00d73",
+        "guard": "All",
+        "startup": "18",
+        "active": "26",
+        "recovery": "Total 48",
+        "onBlock": "+12",
+        "onHit": "KD+41",
+        "onCH": "KD+41",
+        "meter": "",
+        "images": [
+            "GBVSR_Siegfried_236L.webp",
+            "GBVSR_Siegfried_236M.webp",
+            "GBVSR_Siegfried_236H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Siegfried_236L_Hitbox.webp",
+            "GBVSR_Siegfried_236L_Hitbox_2.webp",
+            "GBVSR_Siegfried_236M_Hitbox.webp",
+            "GBVSR_Siegfried_236M_Hitbox_2.webp",
+            "GBVSR_Siegfried_236H_Hitbox.webp",
+            "GBVSR_Siegfried_236H_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "H Orkan",
+        "input": "22H",
+        "damage": "400\u00d72",
+        "guard": "Mid",
+        "startup": "18",
+        "active": "2(6)1 [2(6)3]",
+        "recovery": "27",
+        "onBlock": "-11",
+        "onHit": "KD+30 (KD+29)",
+        "onCH": "KD+30 (KD+33)",
+        "meter": "",
+        "images": [
+            "GBVSR_Siegfried_22X.webp",
+            "GBVSR_Siegfried_22X_2.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Siegfried_22X_Hitbox.webp",
+            "GBVSR_Siegfried_22X_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "H Verdr\u00e4ngen",
+        "input": "214H",
+        "damage": "2400 [2600]",
+        "guard": "All",
+        "startup": "19 [31]",
+        "active": "6",
+        "recovery": "17",
+        "onBlock": "-4 [+3]",
+        "onHit": "KD+30 [KD+41]",
+        "onCH": "KD+34 [KD+45]",
+        "meter": "",
+        "images": [
+            "GBVSR_Siegfried_214X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Siegfried_214X_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "H\u00e9ritier",
+        "input": "22X~L",
+        "damage": "600 [900]",
+        "guard": "Mid",
+        "startup": "13",
+        "active": "6",
+        "recovery": "13",
+        "onBlock": "-2",
+        "onHit": "Air Tech+25 [KD+37]",
+        "onCH": "KD+41",
+        "meter": "",
+        "images": [
+            "GBVSR_Siegfried_22X-L.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Siegfried_22X-L_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "L Messager",
+        "input": "623L",
+        "damage": "1000",
+        "guard": "All",
+        "startup": "6",
+        "active": "6",
+        "recovery": "31",
+        "onBlock": "-20",
+        "onHit": "KD+29",
+        "onCH": "KD+29",
+        "meter": "",
+        "images": [
+            "GBVSR_Siegfried_623L.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Siegfried_623L_Hitbox.webp",
+            "GBVSR_Siegfried_623L_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "L Nelah Nav",
+        "input": "236L",
+        "damage": "800",
+        "guard": "All",
+        "startup": "20",
+        "active": "",
+        "recovery": "Total 50",
+        "onBlock": "-6",
+        "onHit": "Air recovery+20",
+        "onCH": "KD+33",
+        "meter": "",
+        "images": [
+            "GBVSR_Siegfried_236L.webp",
+            "GBVSR_Siegfried_236M.webp",
+            "GBVSR_Siegfried_236H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Siegfried_236L_Hitbox.webp",
+            "GBVSR_Siegfried_236L_Hitbox_2.webp",
+            "GBVSR_Siegfried_236M_Hitbox.webp",
+            "GBVSR_Siegfried_236M_Hitbox_2.webp",
+            "GBVSR_Siegfried_236H_Hitbox.webp",
+            "GBVSR_Siegfried_236H_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "L Orkan",
+        "input": "22L",
+        "damage": "400\u00d72",
+        "guard": "Mid",
+        "startup": "14",
+        "active": "2(6)1 [2(6)3]",
+        "recovery": "23",
+        "onBlock": "-7",
+        "onHit": "Air Tech+22",
+        "onCH": "KD+34 (KD+37)",
+        "meter": "",
+        "images": [
+            "GBVSR_Siegfried_22X.webp",
+            "GBVSR_Siegfried_22X_2.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Siegfried_22X_Hitbox.webp",
+            "GBVSR_Siegfried_22X_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "L Verdr\u00e4ngen",
+        "input": "214L",
+        "damage": "1600",
+        "guard": "All",
+        "startup": "18",
+        "active": "6",
+        "recovery": "17",
+        "onBlock": "-4",
+        "onHit": "KD+30",
+        "onCH": "KD+34",
+        "meter": "",
+        "images": [
+            "GBVSR_Siegfried_214X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Siegfried_214X_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "L'Ombre d'Hier",
+        "input": "22X~M",
+        "damage": "1200 [1200, 200\u00d73]",
+        "guard": "Unblockable, Mid",
+        "startup": "5 (2)",
+        "active": "19 (1(28)4)",
+        "recovery": "12 (25 [31])",
+        "onBlock": "",
+        "onHit": "KD+24 [KD+35]",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Siegfried_22X-M.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Siegfried_22X-M_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "M Messager",
+        "input": "623M",
+        "damage": "500, 300\u00d72",
+        "guard": "Mid, All",
+        "startup": "12",
+        "active": "2,4,2",
+        "recovery": "41",
+        "onBlock": "-24",
+        "onHit": "Air Tech+15",
+        "onCH": "Air Tech+15",
+        "meter": "",
+        "images": [
+            "GBVSR_Siegfried_623M.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Siegfried_623M_Hitbox.webp",
+            "GBVSR_Siegfried_623M_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "M Nelah Nav",
+        "input": "236M",
+        "damage": "800",
+        "guard": "All",
+        "startup": "31",
+        "active": "60",
+        "recovery": "Total 61",
+        "onBlock": "-6",
+        "onHit": "-2",
+        "onCH": "KD+33",
+        "meter": "",
+        "images": [
+            "GBVSR_Siegfried_236L.webp",
+            "GBVSR_Siegfried_236M.webp",
+            "GBVSR_Siegfried_236H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Siegfried_236L_Hitbox.webp",
+            "GBVSR_Siegfried_236L_Hitbox_2.webp",
+            "GBVSR_Siegfried_236M_Hitbox.webp",
+            "GBVSR_Siegfried_236M_Hitbox_2.webp",
+            "GBVSR_Siegfried_236H_Hitbox.webp",
+            "GBVSR_Siegfried_236H_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "M Orkan",
+        "input": "22M",
+        "damage": "400\u00d72",
+        "guard": "Mid",
+        "startup": "20",
+        "active": "2(6)1 [2(6)3]",
+        "recovery": "23",
+        "onBlock": "-7",
+        "onHit": "KD+34 (KD+33)",
+        "onCH": "KD+34 (KD+37)",
+        "meter": "",
+        "images": [
+            "GBVSR_Siegfried_22X.webp",
+            "GBVSR_Siegfried_22X_2.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Siegfried_22X_Hitbox.webp",
+            "GBVSR_Siegfried_22X_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "M Verdr\u00e4ngen",
+        "input": "214M",
+        "damage": "2200 [2420]",
+        "guard": "All",
+        "startup": "30 [41]",
+        "active": "6",
+        "recovery": "13",
+        "onBlock": "\u00b10 [+3]",
+        "onHit": "KD+34 [KD+41]",
+        "onCH": "KD+38 [KD+45]",
+        "meter": "",
+        "images": [
+            "GBVSR_Siegfried_214X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Siegfried_214X_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Manigance",
+        "input": "5U",
+        "damage": "1200",
+        "guard": "Mid",
+        "startup": "15",
+        "active": "2",
+        "recovery": "18",
+        "onBlock": "-5",
+        "onHit": "KD+32",
+        "onCH": "KD+36",
+        "meter": "",
+        "images": [
+            "GBVSR_Siegfried_5U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Siegfried_5U_Hitbox.webp"
+        ],
+        "type": "unique"
+    },
+    {
+        "name": "Raging Chain",
+        "input": "MH~MH",
+        "damage": "1000",
+        "guard": "Mid",
+        "startup": "13",
+        "active": "5",
+        "recovery": "17",
+        "onBlock": "",
+        "onHit": "+15Force Crouch (HKD+63)",
+        "onCH": "",
+        "meter": "-2500",
+        "images": [
+            "GBVSR_Siegfried_MH-MH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Siegfried_MH-MH_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "Raging Strike",
+        "input": "MH",
+        "damage": "1500",
+        "guard": "Guard Crush 45 [52]",
+        "startup": "28 (1)",
+        "active": "1",
+        "recovery": "37",
+        "onBlock": "+8Force Stand [+15Force Stand]",
+        "onHit": "+15Force Crouch (KD+40)",
+        "onCH": "+15Force Crouch",
+        "meter": "\u00b10",
+        "images": [
+            "GBVSR_Siegfried_MH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Siegfried_MH_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "Rasendes Scharzblut",
+        "input": "236236U",
+        "damage": "0, 2400, 3600 [0, 2000\u00d72]",
+        "guard": "Mid",
+        "startup": "8+6",
+        "active": "12",
+        "recovery": "30",
+        "onBlock": "-21",
+        "onHit": "HKD+49",
+        "onCH": "HKD+49",
+        "meter": "-10000",
+        "images": [
+            "GBVSR_Siegfried_236236U_Start.webp",
+            "GBVSR_Siegfried_236236U.webp",
+            "GBVSR_Siegfried_236236U_Finish.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Siegfried_236236U_Hitbox.webp",
+            "GBVSR_Siegfried_236236U_Hitbox_2.webp"
+        ],
+        "type": "super"
+    },
+    {
+        "name": "Schwarze F\u00e4nge",
+        "input": "236236H",
+        "damage": "500, 1000\u00d74 [500, 1000\u00d73]",
+        "guard": "Mid",
+        "startup": "8+5",
+        "active": "7,1",
+        "recovery": "48",
+        "onBlock": "-30",
+        "onHit": "HKD+42",
+        "onCH": "HKD+42",
+        "meter": "-10000",
+        "images": [
+            "GBVSR_Siegfried_236236H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Siegfried_236236H_Hitbox.webp"
+        ],
+        "type": "super"
+    },
+    {
+        "name": "Ultimate Messager",
+        "input": "623U",
+        "damage": "600, 1400",
+        "guard": "Mid",
+        "startup": "8True Startup:13",
+        "active": "6(12)6 [3]",
+        "recovery": "33 [34]",
+        "onBlock": "-20",
+        "onHit": "HKD+40",
+        "onCH": "HKD+40",
+        "meter": "-5000",
+        "images": [
+            "GBVSR_Siegfried_623U.webp",
+            "GBVSR_Siegfried_623U_2.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Siegfried_623U_Hitbox.webp",
+            "GBVSR_Siegfried_623U_Hitbox_2.webp",
+            "GBVSR_Siegfried_623U_Hitbox_3.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Ultimate Nelah Nav",
+        "input": "236U",
+        "damage": "500Strike Hitbox, 1600",
+        "guard": "Mid, All",
+        "startup": "9True Startup:15",
+        "active": "8,P [3,P]",
+        "recovery": "Total 44 [35]",
+        "onBlock": "-7",
+        "onHit": "HKD+62 [HKD+56]",
+        "onCH": "HKD+62 [HKD+56]",
+        "meter": "-5000",
+        "images": [
+            "GBVSR_Siegfried_236U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Siegfried_236U_Hitbox.webp",
+            "GBVSR_Siegfried_236U_Hitbox_2.webp",
+            "GBVSR_Siegfried_236U_Hitbox_3.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Ultimate Orkan",
+        "input": "22U",
+        "damage": "400\u00d72, 700, 1500",
+        "guard": "Mid",
+        "startup": "18True Startup:33",
+        "active": "2(6)3(18)3 [2(6)3]",
+        "recovery": "24 [23]",
+        "onBlock": "-4",
+        "onHit": "HKD+52",
+        "onCH": "HKD+52",
+        "meter": "-5000",
+        "images": [
+            "GBVSR_Siegfried_22U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Siegfried_22U_Hitbox.webp",
+            "GBVSR_Siegfried_22U_Hitbox_2.webp",
+            "GBVSR_Siegfried_22U_Hitbox_3.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Ultimate Verdr\u00e4ngen",
+        "input": "214U",
+        "damage": "3500",
+        "guard": "Unblockable",
+        "startup": "35True Startup:50",
+        "active": "1",
+        "recovery": "26",
+        "onBlock": "",
+        "onHit": "HKD+58",
+        "onCH": "HKD+75",
+        "meter": "-5000",
+        "images": [
+            "GBVSR_Siegfried_214U.webp",
+            "GBVSR_Siegfried_214U_2.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Siegfried_214U_Hitbox.webp",
+            "GBVSR_Siegfried_214U_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Uwe",
+        "input": "22X~H",
+        "damage": "400, 1200 [600, 1800]",
+        "guard": "Mid",
+        "startup": "17",
+        "active": "6(8)3",
+        "recovery": "22",
+        "onBlock": "-6",
+        "onHit": "KD+36 [KD+37] (KD+32 [KD+33])",
+        "onCH": "KD+36 [KD+37] (KD+32 [KD+37])",
+        "meter": "",
+        "images": [
+            "GBVSR_Siegfried_22X-H.webp",
+            "GBVSR_Siegfried_22X-H_2.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Siegfried_22X-H_Hitbox.webp",
+            "GBVSR_Siegfried_22X-H_Hitbox_2.webp"
+        ],
+        "type": "special"
+    }
+]

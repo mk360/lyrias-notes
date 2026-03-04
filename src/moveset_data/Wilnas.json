@@ -1,0 +1,858 @@
+[
+    {
+        "name": "",
+        "input": "2H",
+        "damage": "1500",
+        "guard": "Mid",
+        "startup": "11",
+        "active": "6",
+        "recovery": "23",
+        "onBlock": "-12",
+        "onHit": "-8",
+        "onCH": "KD+42",
+        "meter": "",
+        "images": [
+            "GBVSR_Wilnas_2H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Wilnas_2H_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "2L",
+        "damage": "400",
+        "guard": "Low",
+        "startup": "6",
+        "active": "3",
+        "recovery": "12",
+        "onBlock": "-2",
+        "onHit": "+2",
+        "onCH": "+4",
+        "meter": "",
+        "images": [
+            "GBVSR_Wilnas_2L.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Wilnas_2L_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "2M",
+        "damage": "900",
+        "guard": "Low",
+        "startup": "8",
+        "active": "3",
+        "recovery": "14",
+        "onBlock": "-2",
+        "onHit": "+2",
+        "onCH": "+6",
+        "meter": "",
+        "images": [
+            "GBVSR_Wilnas_2M.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Wilnas_2M_Hitbox.webp",
+            "GBVSR_Wilnas_2M_Hitbox_2.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "2U",
+        "damage": "1000",
+        "guard": "Low",
+        "startup": "10",
+        "active": "4",
+        "recovery": "25",
+        "onBlock": "-12",
+        "onHit": "HKD+41",
+        "onCH": "HKD+49",
+        "meter": "",
+        "images": [
+            "GBVSR_Wilnas_2U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Wilnas_2U_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.H",
+        "damage": "1800",
+        "guard": "Mid",
+        "startup": "10",
+        "active": "4",
+        "recovery": "12",
+        "onBlock": "+3",
+        "onHit": "+7",
+        "onCH": "+19",
+        "meter": "",
+        "images": [
+            "GBVSR_Wilnas_cH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Wilnas_cH_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.L",
+        "damage": "600",
+        "guard": "Mid",
+        "startup": "7",
+        "active": "3",
+        "recovery": "6",
+        "onBlock": "+4",
+        "onHit": "+8",
+        "onCH": "+10",
+        "meter": "",
+        "images": [
+            "GBVSR_Wilnas_cL.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Wilnas_cL_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.M",
+        "damage": "1100",
+        "guard": "Mid",
+        "startup": "8",
+        "active": "4",
+        "recovery": "8",
+        "onBlock": "+5",
+        "onHit": "+9",
+        "onCH": "+17",
+        "meter": "",
+        "images": [
+            "GBVSR_Wilnas_cM.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Wilnas_cM_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "f.H",
+        "damage": "1400",
+        "guard": "Mid",
+        "startup": "12",
+        "active": "5",
+        "recovery": "23",
+        "onBlock": "-9",
+        "onHit": "-5",
+        "onCH": "+7",
+        "meter": "",
+        "images": [
+            "GBVSR_Wilnas_fH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Wilnas_fH_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "f.L",
+        "damage": "700",
+        "guard": "Mid",
+        "startup": "7",
+        "active": "3",
+        "recovery": "11",
+        "onBlock": "+1",
+        "onHit": "+5",
+        "onCH": "+9",
+        "meter": "",
+        "images": [
+            "GBVSR_Wilnas_fL.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Wilnas_fL_Hitbox.webp",
+            "GBVSR_Wilnas_fL_Hitbox_2.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "f.M",
+        "damage": "1000",
+        "guard": "Mid",
+        "startup": "9",
+        "active": "4",
+        "recovery": "16",
+        "onBlock": "-3",
+        "onHit": "+1",
+        "onCH": "+9",
+        "meter": "",
+        "images": [
+            "GBVSR_Wilnas_fM.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Wilnas_fM_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "j.H",
+        "damage": "900",
+        "guard": "High\/Air",
+        "startup": "9",
+        "active": "6",
+        "recovery": "Until L+1",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Wilnas_jH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Wilnas_jH_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "j.L",
+        "damage": "600",
+        "guard": "High\/Air",
+        "startup": "5",
+        "active": "Until L",
+        "recovery": "1",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Wilnas_jL.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Wilnas_jL_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "j.M",
+        "damage": "800",
+        "guard": "High\/Air",
+        "startup": "6",
+        "active": "4",
+        "recovery": "Until L+1",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Wilnas_jM.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Wilnas_jM_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "j.U",
+        "damage": "1000",
+        "guard": "High\/Air",
+        "startup": "13",
+        "active": "Until L",
+        "recovery": "1",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Wilnas_jU.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Wilnas_jU_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "Advancing H",
+        "input": "66~H",
+        "damage": "2000",
+        "guard": "Mid",
+        "startup": "30",
+        "active": "4",
+        "recovery": "10",
+        "onBlock": "+5",
+        "onHit": "HKD+42",
+        "onCH": "HKD+78",
+        "meter": "",
+        "images": [
+            "GBVSR_Wilnas_66~H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Wilnas_66~H_Hitbox.webp"
+        ],
+        "type": "unique"
+    },
+    {
+        "name": "Advancing L",
+        "input": "66~L",
+        "damage": "700",
+        "guard": "Mid",
+        "startup": "8",
+        "active": "2",
+        "recovery": "21",
+        "onBlock": "-8",
+        "onHit": "Air Tech+25",
+        "onCH": "KD+40",
+        "meter": "",
+        "images": [
+            "GBVSR_Wilnas_66~L.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Wilnas_66~L_Hitbox.webp"
+        ],
+        "type": "unique"
+    },
+    {
+        "name": "Advancing M",
+        "input": "66~M",
+        "damage": "1000",
+        "guard": "Mid",
+        "startup": "14",
+        "active": "3",
+        "recovery": "18",
+        "onBlock": "-4",
+        "onHit": "KD+26",
+        "onCH": "KD+42",
+        "meter": "",
+        "images": [
+            "GBVSR_Wilnas_66~M.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Wilnas_66~M_Hitbox.webp"
+        ],
+        "type": "unique"
+    },
+    {
+        "name": "Air Throw",
+        "input": "j.LU",
+        "damage": "2500",
+        "guard": "Airthrow",
+        "startup": "5",
+        "active": "5",
+        "recovery": "Until L+6",
+        "onBlock": "",
+        "onHit": "HKD \u2248+40",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Wilnas_AirThrow.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Wilnas_AirThrow_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "Brave Counter",
+        "input": "BC",
+        "damage": "500",
+        "guard": "Mid",
+        "startup": "10 [18]",
+        "active": "3 [2]",
+        "recovery": "19 [35]",
+        "onBlock": "-2",
+        "onHit": "Air Tech+21 [+5]",
+        "onCH": "HKD+54 [HKD+43]",
+        "meter": "\u00b10",
+        "images": [
+            "GBVSR_Wilnas_BC.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Wilnas_BC_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "Flame Claw",
+        "input": "5U",
+        "damage": "1000",
+        "guard": "High",
+        "startup": "26",
+        "active": "4 [2]",
+        "recovery": "21",
+        "onBlock": "-4",
+        "onHit": "+7Force Crouch",
+        "onCH": "+19Force Crouch",
+        "meter": "",
+        "images": [
+            "GBVSR_Wilnas_5U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Wilnas_5U_Hitbox.webp"
+        ],
+        "type": "unique"
+    },
+    {
+        "name": "Ground Throw",
+        "input": "LU",
+        "damage": "2500",
+        "guard": "Throw",
+        "startup": "4",
+        "active": "3",
+        "recovery": "26",
+        "onBlock": "",
+        "onHit": "HKD+27\/HKD+44",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Wilnas_Throw.webp",
+            "GBVSR_Wilnas_BackThrow.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Wilnas_Throw_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "H Flame Uppercut",
+        "input": "623H",
+        "damage": "1600",
+        "guard": "Mid",
+        "startup": "11",
+        "active": "6",
+        "recovery": "38",
+        "onBlock": "-25",
+        "onHit": "KD+36",
+        "onCH": "KD+36",
+        "meter": "",
+        "images": [
+            "GBVSR_Wilnas_623X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Wilnas_623M_Hitbox.webp",
+            "GBVSR_Wilnas_623M_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "H Hardon Smash",
+        "input": "236H",
+        "damage": "2800",
+        "guard": "Mid",
+        "startup": "22",
+        "active": "6",
+        "recovery": "28",
+        "onBlock": "-9",
+        "onHit": "KD+32~+36",
+        "onCH": "KD+36~+40",
+        "meter": "",
+        "images": [
+            "GBVSR_Wilnas_236X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Wilnas_236X_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "H Lava Swipe",
+        "input": "22H",
+        "damage": "1800",
+        "guard": "Low",
+        "startup": "19",
+        "active": "3",
+        "recovery": "18",
+        "onBlock": "-4",
+        "onHit": "KD+41",
+        "onCH": "KD+45",
+        "meter": "",
+        "images": [
+            "GBVSR_Wilnas_22X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Wilnas_22X_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "H Volcanic Knee",
+        "input": "214H",
+        "damage": "2100",
+        "guard": "Mid",
+        "startup": "14~28",
+        "active": "5",
+        "recovery": "16",
+        "onBlock": "+4",
+        "onHit": "KD+41",
+        "onCH": "KD+45",
+        "meter": "",
+        "images": [
+            "GBVSR_Wilnas_214X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Wilnas_214X_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "L Flame Uppercut",
+        "input": "623L",
+        "damage": "1000",
+        "guard": "All",
+        "startup": "6",
+        "active": "6",
+        "recovery": "26",
+        "onBlock": "-15",
+        "onHit": "KD+37",
+        "onCH": "KD+37",
+        "meter": "",
+        "images": [
+            "GBVSR_Wilnas_623X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Wilnas_623L_Hitbox.webp",
+            "GBVSR_Wilnas_623L_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "L Hardon Smash",
+        "input": "236L",
+        "damage": "2000",
+        "guard": "Mid",
+        "startup": "16",
+        "active": "6",
+        "recovery": "25",
+        "onBlock": "-9",
+        "onHit": "KD+19",
+        "onCH": "KD+23",
+        "meter": "",
+        "images": [
+            "GBVSR_Wilnas_236X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Wilnas_236X_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "L Lava Swipe",
+        "input": "22L",
+        "damage": "1200",
+        "guard": "Low",
+        "startup": "20",
+        "active": "3",
+        "recovery": "16",
+        "onBlock": "-2",
+        "onHit": "KD+26",
+        "onCH": "KD+30",
+        "meter": "",
+        "images": [
+            "GBVSR_Wilnas_22X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Wilnas_22X_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "L Volcanic Knee",
+        "input": "214L",
+        "damage": "1400",
+        "guard": "Mid",
+        "startup": "14~22",
+        "active": "5",
+        "recovery": "24",
+        "onBlock": "-4",
+        "onHit": "Air Tech+29",
+        "onCH": "Air Tech+33",
+        "meter": "",
+        "images": [
+            "GBVSR_Wilnas_214X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Wilnas_214X_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "M Flame Uppercut",
+        "input": "623M",
+        "damage": "1400",
+        "guard": "All",
+        "startup": "9",
+        "active": "6",
+        "recovery": "38",
+        "onBlock": "-25",
+        "onHit": "Air Tech+20",
+        "onCH": "Air Tech+20",
+        "meter": "",
+        "images": [
+            "GBVSR_Wilnas_623X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Wilnas_623M_Hitbox.webp",
+            "GBVSR_Wilnas_623M_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "M Hardon Smash",
+        "input": "236M",
+        "damage": "2400",
+        "guard": "Mid",
+        "startup": "20",
+        "active": "6",
+        "recovery": "28",
+        "onBlock": "-9",
+        "onHit": "KD+32~+37",
+        "onCH": "KD+36~+41",
+        "meter": "",
+        "images": [
+            "GBVSR_Wilnas_236X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Wilnas_236X_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "M Lava Swipe",
+        "input": "22M",
+        "damage": "1500",
+        "guard": "Low",
+        "startup": "31",
+        "active": "3",
+        "recovery": "12",
+        "onBlock": "+2",
+        "onHit": "KD+40",
+        "onCH": "KD+44",
+        "meter": "",
+        "images": [
+            "GBVSR_Wilnas_22X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Wilnas_22X_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "M Volcanic Knee",
+        "input": "214M",
+        "damage": "1500",
+        "guard": "Mid",
+        "startup": "21~26",
+        "active": "5",
+        "recovery": "24",
+        "onBlock": "-4",
+        "onHit": "Air Tech+31",
+        "onCH": "Air Tech+35",
+        "meter": "",
+        "images": [
+            "GBVSR_Wilnas_214X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Wilnas_214X_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Magma Chamber",
+        "input": "236236H",
+        "damage": "1500, 1000, 50\u00d738, 100 [1500, 2000]",
+        "guard": "Mid",
+        "startup": "8+4",
+        "active": "9(3)3",
+        "recovery": "35",
+        "onBlock": "-19",
+        "onHit": "HKD+44 [HKD+43]",
+        "onCH": "HKD+44 [HKD+43]",
+        "meter": "-10000",
+        "images": [
+            "GBVSR_Wilnas_236236H.webp",
+            "GBVSR_Wilnas_236236H_2.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Wilnas_236236H_Hitbox.webp",
+            "GBVSR_Wilnas_236236H_Hitbox_2.webp",
+            "GBVSR_Wilnas_236236H_2_Hitbox.webp"
+        ],
+        "type": "super"
+    },
+    {
+        "name": "Raging Chain",
+        "input": "MH~MH",
+        "damage": "1000",
+        "guard": "Mid",
+        "startup": "13",
+        "active": "5",
+        "recovery": "17",
+        "onBlock": "",
+        "onHit": "+15Force Crouch (HKD+63)",
+        "onCH": "",
+        "meter": "-2500",
+        "images": [
+            "GBVSR_Wilnas_MH-MH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Wilnas_MH-MH_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "Raging Strike",
+        "input": "MH",
+        "damage": "1500",
+        "guard": "Guard Crush 45 [52]",
+        "startup": "28 (1)",
+        "active": "1",
+        "recovery": "37",
+        "onBlock": "+8Force Stand [+15Force Stand]",
+        "onHit": "+15Force Crouch (KD+40)",
+        "onCH": "+15Force Crouch",
+        "meter": "\u00b10",
+        "images": [
+            "GBVSR_Wilnas_MH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Wilnas_MH_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "Step",
+        "input": "66",
+        "damage": "",
+        "guard": "",
+        "startup": "25",
+        "active": "",
+        "recovery": "6",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Wilnas_66.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Wilnas_66_Hitbox.webp"
+        ],
+        "type": "unique"
+    },
+    {
+        "name": "Ultimate Flame Uppercut",
+        "input": "623U",
+        "damage": "1000, 800, 200",
+        "guard": "Mid",
+        "startup": "8True Startup:13",
+        "active": "6 [3]",
+        "recovery": "38 [31]",
+        "onBlock": "-25",
+        "onHit": "HKD+44",
+        "onCH": "HKD+44",
+        "meter": "-5000",
+        "images": [
+            "GBVSR_Wilnas_623U.webp",
+            "GBVSR_Wilnas_623U_2.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Wilnas_623U_Hitbox.webp",
+            "GBVSR_Wilnas_623U_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Ultimate Hadron Smash",
+        "input": "236U",
+        "damage": "2200, 100\u00d74, 200",
+        "guard": "Mid",
+        "startup": "12True Startup:21",
+        "active": "6 [3]",
+        "recovery": "28 [25]",
+        "onBlock": "-9",
+        "onHit": "HKD+66~+68",
+        "onCH": "HKD+66~+68",
+        "meter": "-5000",
+        "images": [
+            "GBVSR_Wilnas_236U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Wilnas_236U_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Ultimate Lava Swipe",
+        "input": "22U",
+        "damage": "1500, 1500",
+        "guard": "Low",
+        "startup": "14True Startup:25",
+        "active": "3 [2]",
+        "recovery": "22 [19]",
+        "onBlock": "-6",
+        "onHit": "HKD+28",
+        "onCH": "HKD+28",
+        "meter": "-5000",
+        "images": [
+            "GBVSR_Wilnas_22U.webp",
+            "GBVSR_Wilnas_22U_2.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Wilnas_22U_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Ultimate Volcanic Knee",
+        "input": "214U",
+        "damage": "2800",
+        "guard": "Mid",
+        "startup": "13~19True Startup:23~34",
+        "active": "5",
+        "recovery": "23 [24]",
+        "onBlock": "-4",
+        "onHit": "HKD+1(HKD+52~+68)",
+        "onCH": "HKD+1(HKD+52~+68)",
+        "meter": "-5000",
+        "images": [
+            "GBVSR_Wilnas_214U.webp",
+            "GBVSR_Wilnas_214U_2.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Wilnas_214U_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Wilnas Kick",
+        "input": "236236U",
+        "damage": "3600, 2400 [4000]",
+        "guard": "Mid, All",
+        "startup": "8+4",
+        "active": "11",
+        "recovery": "39",
+        "onBlock": "-31",
+        "onHit": "HKD+43 [HKD+57]",
+        "onCH": "HKD+43 [HKD+57]",
+        "meter": "-10000",
+        "images": [
+            "GBVSR_Wilnas_236236U_Start.webp",
+            "GBVSR_Wilnas_236236U.webp",
+            "GBVSR_Wilnas_236236U_Finish.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Wilnas_236236U_Hitbox.webp",
+            "GBVSR_Wilnas_236236U_Hitbox_2.webp"
+        ],
+        "type": "super"
+    }
+]

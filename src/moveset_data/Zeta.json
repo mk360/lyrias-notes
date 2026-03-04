@@ -1,0 +1,1152 @@
+[
+    {
+        "name": "",
+        "input": "2H",
+        "damage": "1300",
+        "guard": "Mid",
+        "startup": "11",
+        "active": "5",
+        "recovery": "24",
+        "onBlock": "-12",
+        "onHit": "-8",
+        "onCH": "\u00b10",
+        "meter": "",
+        "images": [
+            "GBVSR_Zeta_2H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Zeta_2H_Hitbox_1.webp",
+            "GBVSR_Zeta_2H_Hitbox_2.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "2L",
+        "damage": "400",
+        "guard": "Low",
+        "startup": "6",
+        "active": "3",
+        "recovery": "10",
+        "onBlock": "-2",
+        "onHit": "+2",
+        "onCH": "+4",
+        "meter": "",
+        "images": [
+            "GBVSR_Zeta_2L.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Zeta_2L_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "2M",
+        "damage": "900",
+        "guard": "Mid",
+        "startup": "8",
+        "active": "6",
+        "recovery": "12",
+        "onBlock": "-3",
+        "onHit": "+1",
+        "onCH": "+5",
+        "meter": "",
+        "images": [
+            "GBVSR_Zeta_2M.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Zeta_2M_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "2U",
+        "damage": "500\u00d72",
+        "guard": "Low",
+        "startup": "7",
+        "active": "3(15)3",
+        "recovery": "19",
+        "onBlock": "-7",
+        "onHit": "HKD+48",
+        "onCH": "HKD+48 [HKD+52]",
+        "meter": "",
+        "images": [
+            "GBVSR_Zeta_2U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Zeta_2U_Hitbox_1.webp",
+            "GBVSR_Zeta_2U_Hitbox_2.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "66H",
+        "damage": "1200",
+        "guard": "Mid",
+        "startup": "17",
+        "active": "6",
+        "recovery": "26",
+        "onBlock": "-8",
+        "onHit": "+11Force Crouch",
+        "onCH": "+15Force Crouch",
+        "meter": "",
+        "images": [
+            "GBVSR_Zeta_66H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Zeta_66H_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "66L",
+        "damage": "600",
+        "guard": "Mid",
+        "startup": "8",
+        "active": "3",
+        "recovery": "10 [15]",
+        "onBlock": "+2",
+        "onHit": "+6",
+        "onCH": "+8",
+        "meter": "+480",
+        "images": [
+            "GBVSR_Zeta_66L.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Zeta_66L_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "66M",
+        "damage": "1100",
+        "guard": "Low",
+        "startup": "12",
+        "active": "4",
+        "recovery": "21",
+        "onBlock": "-8",
+        "onHit": "KD+24",
+        "onCH": "HKD+49",
+        "meter": "",
+        "images": [
+            "GBVSR_Zeta_66M.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Zeta_66M_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.H",
+        "damage": "1600",
+        "guard": "Mid",
+        "startup": "9",
+        "active": "6",
+        "recovery": "17",
+        "onBlock": "-4",
+        "onHit": "\u00b10",
+        "onCH": "+12",
+        "meter": "",
+        "images": [
+            "GBVSR_Zeta_cH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Zeta_cH_Hitbox_1.webp",
+            "GBVSR_Zeta_cH_Hitbox_2.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.L",
+        "damage": "600",
+        "guard": "Mid",
+        "startup": "5",
+        "active": "3",
+        "recovery": "6",
+        "onBlock": "+4",
+        "onHit": "+8",
+        "onCH": "+10",
+        "meter": "",
+        "images": [
+            "GBVSR_Zeta_cL.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Zeta_cL_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.M",
+        "damage": "1100",
+        "guard": "Mid",
+        "startup": "6",
+        "active": "3",
+        "recovery": "15",
+        "onBlock": "-3",
+        "onHit": "+1",
+        "onCH": "+5",
+        "meter": "",
+        "images": [
+            "GBVSR_Zeta_cM.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Zeta_cM_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.XX",
+        "damage": "700",
+        "guard": "Mid",
+        "startup": "9",
+        "active": "3",
+        "recovery": "15",
+        "onBlock": "-3",
+        "onHit": "+1",
+        "onCH": "+5",
+        "meter": "+480",
+        "images": [
+            "GBVSR_Zeta_cXX.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Zeta_cXX_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.XX6H",
+        "damage": "1000",
+        "guard": "High",
+        "startup": "18",
+        "active": "3",
+        "recovery": "22",
+        "onBlock": "-4",
+        "onHit": "+1Force Crouch",
+        "onCH": "HKD+32",
+        "meter": "+480",
+        "images": [
+            "GBVSR_Zeta_cXX6H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Zeta_cXX6H_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.XX6M",
+        "damage": "1000",
+        "guard": "Low",
+        "startup": "12",
+        "active": "3",
+        "recovery": "16",
+        "onBlock": "-4",
+        "onHit": "KD+30",
+        "onCH": "HKD+55",
+        "meter": "+480",
+        "images": [
+            "GBVSR_Zeta_66M.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Zeta_66M_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.XXX",
+        "damage": "1000",
+        "guard": "Mid",
+        "startup": "12",
+        "active": "3",
+        "recovery": "18",
+        "onBlock": "-4",
+        "onHit": "\u00b10",
+        "onCH": "+8",
+        "meter": "+600",
+        "images": [
+            "GBVSR_Zeta_cXXX.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Zeta_cXXX_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "f.H",
+        "damage": "1300",
+        "guard": "Mid",
+        "startup": "9",
+        "active": "6",
+        "recovery": "18",
+        "onBlock": "-7",
+        "onHit": "-3",
+        "onCH": "+5",
+        "meter": "",
+        "images": [
+            "GBVSR_Zeta_fH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Zeta_fH_Hitbox_1.webp",
+            "GBVSR_Zeta_fH_Hitbox_2.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "f.L",
+        "damage": "600",
+        "guard": "Mid",
+        "startup": "6",
+        "active": "3",
+        "recovery": "9",
+        "onBlock": "+1",
+        "onHit": "+5",
+        "onCH": "+7",
+        "meter": "",
+        "images": [
+            "GBVSR_Zeta_fL.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Zeta_fL_Hitbox_1.webp",
+            "GBVSR_Zeta_fL_Hitbox_2.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "f.M",
+        "damage": "900",
+        "guard": "Mid",
+        "startup": "10",
+        "active": "4",
+        "recovery": "17",
+        "onBlock": "-6",
+        "onHit": "-2",
+        "onCH": "+2",
+        "meter": "",
+        "images": [
+            "GBVSR_Zeta_fM.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Zeta_fM_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "j.H",
+        "damage": "1000",
+        "guard": "High\/Air",
+        "startup": "7",
+        "active": "9",
+        "recovery": "Until L+1",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Zeta_jH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Zeta_jH_Hitbox_1.webp",
+            "GBVSR_Zeta_jH_Hitbox_2.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "j.L",
+        "damage": "600",
+        "guard": "High\/Air",
+        "startup": "5",
+        "active": "Until L",
+        "recovery": "1",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Zeta_jL.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Zeta_jL_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "j.M",
+        "damage": "700",
+        "guard": "High\/Air",
+        "startup": "7",
+        "active": "6",
+        "recovery": "Until L+1",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Zeta_jM.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Zeta_jM_Hitbox_1.webp",
+            "GBVSR_Zeta_jM_Hitbox_2.webp",
+            "GBVSR_Zeta_jM_Hitbox_3.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "j.U",
+        "damage": "700",
+        "guard": "High\/Air [Mid, Mid]",
+        "startup": "5 [6, 7]",
+        "active": "Until L",
+        "recovery": "1 (5)",
+        "onBlock": "+9",
+        "onHit": "+9 [Air Tech \u2248+38, \u2248+45]",
+        "onCH": "+13 [KD \u2248+29, \u2248+27]",
+        "meter": "",
+        "images": [
+            "GBVSR_Zeta_jU.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Zeta_jU_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "Air Throw",
+        "input": "j.LU",
+        "damage": "2500",
+        "guard": "Airthrow",
+        "startup": "5",
+        "active": "5",
+        "recovery": "Until L+6",
+        "onBlock": "",
+        "onHit": "HKD \u2248+43",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Zeta_AirThrow.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Zeta_AirThrow_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "Brave Counter",
+        "input": "BC",
+        "damage": "500",
+        "guard": "Mid",
+        "startup": "10 [18]",
+        "active": "3 [2]",
+        "recovery": "19 [35]",
+        "onBlock": "-2",
+        "onHit": "Air Tech+21 [+5]",
+        "onCH": "HKD+54 [HKD+43]",
+        "meter": "\u00b10",
+        "images": [
+            "GBVSR_Zeta_BC.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Zeta_BC_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "Crimson Cleave",
+        "input": "214X~L",
+        "damage": "1000 [1400]",
+        "guard": "Mid",
+        "startup": "13 [15]",
+        "active": "3",
+        "recovery": "22",
+        "onBlock": "-8",
+        "onHit": "KD+32",
+        "onCH": "KD+36",
+        "meter": "",
+        "images": [
+            "GBVSR_Zeta_214X-L.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Zeta_214X-L_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Ground Throw",
+        "input": "LU",
+        "damage": "2500",
+        "guard": "Throw",
+        "startup": "4",
+        "active": "3",
+        "recovery": "26",
+        "onBlock": "",
+        "onHit": "HKD+48",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Zeta_Throw.webp",
+            "GBVSR_Zeta_BackThrow.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Zeta_Throw_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "H Infinite Wonders",
+        "input": "236H",
+        "damage": "400Charging Hitbox, 700",
+        "guard": "All",
+        "startup": "16",
+        "active": "12\u00d72",
+        "recovery": "Total 57",
+        "onBlock": "-3",
+        "onHit": "KD+34",
+        "onCH": "KD+34 [KD+37]",
+        "meter": "",
+        "images": [
+            "GBVSR_Zeta_236X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Zeta_236H_Hitbox.webp",
+            "GBVSR_Zeta_236X_Hitbox_1.webp",
+            "GBVSR_Zeta_236X_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "H Rhapsody",
+        "input": "214H",
+        "damage": "",
+        "guard": "",
+        "startup": "1",
+        "active": "26",
+        "recovery": "37",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Zeta_214X.webp"
+        ],
+        "hitboxes": [
+            ""
+        ],
+        "type": "special"
+    },
+    {
+        "name": "H Spear of Arvess",
+        "input": "623H",
+        "damage": "900",
+        "guard": "Mid",
+        "startup": "15",
+        "active": "12",
+        "recovery": "19",
+        "onBlock": "-14",
+        "onHit": "KD+24",
+        "onCH": "KD+28",
+        "meter": "",
+        "images": [
+            "GBVSR_Zeta_623X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Zeta_623X_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "H Spear of Arvess (Fall)",
+        "input": "j.22H",
+        "damage": "1100",
+        "guard": "All",
+        "startup": "16",
+        "active": "4~Until L+1",
+        "recovery": "21",
+        "onBlock": "-8",
+        "onHit": "KD+30",
+        "onCH": "KD+34",
+        "meter": "",
+        "images": [
+            "GBVSR_Zeta_j22X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Zeta_j22X_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "H Spear of Arvess (Rise)",
+        "input": "22H",
+        "damage": "1100",
+        "guard": "Mid",
+        "startup": "9",
+        "active": "12",
+        "recovery": "43",
+        "onBlock": "-38",
+        "onHit": "KD+16",
+        "onCH": "KD+29",
+        "meter": "",
+        "images": [
+            "GBVSR_Zeta_22X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Zeta_22X_Hitbox_1.webp",
+            "GBVSR_Zeta_22X_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Knee Assault",
+        "input": "214X~H",
+        "damage": "600 [900]",
+        "guard": "Mid",
+        "startup": "8",
+        "active": "4",
+        "recovery": "16",
+        "onBlock": "-5",
+        "onHit": "Air Tech+15 [KD+27]",
+        "onCH": "KD+31",
+        "meter": "",
+        "images": [
+            "GBVSR_Zeta_214X-H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Zeta_214X-H_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "L Infinite Wonders",
+        "input": "236L",
+        "damage": "700",
+        "guard": "All",
+        "startup": "20",
+        "active": "12",
+        "recovery": "Total 49",
+        "onBlock": "-3",
+        "onHit": "1",
+        "onCH": "3",
+        "meter": "",
+        "images": [
+            "GBVSR_Zeta_236X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Zeta_236X_Hitbox_1.webp",
+            "GBVSR_Zeta_236X_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "L Rhapsody",
+        "input": "214L",
+        "damage": "",
+        "guard": "",
+        "startup": "3",
+        "active": "24",
+        "recovery": "37",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Zeta_214X.webp"
+        ],
+        "hitboxes": [
+            ""
+        ],
+        "type": "special"
+    },
+    {
+        "name": "L Spear of Arvess",
+        "input": "623L",
+        "damage": "600",
+        "guard": "Mid",
+        "startup": "16",
+        "active": "6",
+        "recovery": "19",
+        "onBlock": "-8",
+        "onHit": "KD+30",
+        "onCH": "KD+34",
+        "meter": "",
+        "images": [
+            "GBVSR_Zeta_623X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Zeta_623X_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "L Spear of Arvess (Fall)",
+        "input": "j.22L",
+        "damage": "800",
+        "guard": "All",
+        "startup": "16",
+        "active": "4~Until L+1",
+        "recovery": "21",
+        "onBlock": "-8",
+        "onHit": "KD+30",
+        "onCH": "KD+34",
+        "meter": "",
+        "images": [
+            "GBVSR_Zeta_j22X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Zeta_j22X_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "L Spear of Arvess (Rise)",
+        "input": "22L",
+        "damage": "800",
+        "guard": "Mid",
+        "startup": "9",
+        "active": "12",
+        "recovery": "43",
+        "onBlock": "-38",
+        "onHit": "KD+16",
+        "onCH": "KD+29",
+        "meter": "",
+        "images": [
+            "GBVSR_Zeta_22X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Zeta_22X_Hitbox_1.webp",
+            "GBVSR_Zeta_22X_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "M Infinite Wonders",
+        "input": "236M",
+        "damage": "900 [1300]",
+        "guard": "All",
+        "startup": "28~60 [61]",
+        "active": "12",
+        "recovery": "Total 57~89 [90]",
+        "onBlock": "-3",
+        "onHit": "KD+88",
+        "onCH": "KD+56",
+        "meter": "",
+        "images": [
+            "GBVSR_Zeta_236X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Zeta_236X_Hitbox_1.webp",
+            "GBVSR_Zeta_236X_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "M Rhapsody",
+        "input": "214M",
+        "damage": "",
+        "guard": "",
+        "startup": "3",
+        "active": "24",
+        "recovery": "37",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Zeta_214X.webp"
+        ],
+        "hitboxes": [
+            ""
+        ],
+        "type": "special"
+    },
+    {
+        "name": "M Spear of Arvess",
+        "input": "623M",
+        "damage": "800",
+        "guard": "Mid",
+        "startup": "19",
+        "active": "9",
+        "recovery": "19",
+        "onBlock": "-11",
+        "onHit": "KD+27",
+        "onCH": "KD+31",
+        "meter": "",
+        "images": [
+            "GBVSR_Zeta_623X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Zeta_623X_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "M Spear of Arvess (Fall)",
+        "input": "j.22M",
+        "damage": "800",
+        "guard": "All",
+        "startup": "16",
+        "active": "4~Until L+1",
+        "recovery": "21",
+        "onBlock": "-8",
+        "onHit": "KD+30",
+        "onCH": "KD+34",
+        "meter": "",
+        "images": [
+            "GBVSR_Zeta_j22X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Zeta_j22M_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "M Spear of Arvess (Rise)",
+        "input": "22M",
+        "damage": "1000",
+        "guard": "Mid",
+        "startup": "9",
+        "active": "12",
+        "recovery": "44",
+        "onBlock": "-39",
+        "onHit": "KD+20",
+        "onCH": "KD+28",
+        "meter": "",
+        "images": [
+            "GBVSR_Zeta_22X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Zeta_22X_Hitbox_1.webp",
+            "GBVSR_Zeta_22X_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Raging Chain",
+        "input": "MH~MH",
+        "damage": "1000",
+        "guard": "Mid",
+        "startup": "13",
+        "active": "5",
+        "recovery": "17",
+        "onBlock": "",
+        "onHit": "+15Force Crouch (HKD+63)",
+        "onCH": "",
+        "meter": "-2500",
+        "images": [
+            "GBVSR_Zeta_MH-MH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Zeta_MH-MH_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "Raging Strike",
+        "input": "MH",
+        "damage": "1500",
+        "guard": "Guard Crush 45 [52]",
+        "startup": "28 (1)",
+        "active": "1",
+        "recovery": "37",
+        "onBlock": "+8Force Stand [+15Force Stand]",
+        "onHit": "+15Force Crouch (KD+40)",
+        "onCH": "+15Force Crouch",
+        "meter": "\u00b10",
+        "images": [
+            "GBVSR_Zeta_MH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Zeta_MH_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "Resolute Strike",
+        "input": "236236H",
+        "damage": "500\u00d76, 1500 [500\u00d77]",
+        "guard": "Mid",
+        "startup": "8+6",
+        "active": "1\u00d77 [1\u00d76,3]",
+        "recovery": "39 [33]",
+        "onBlock": "-21",
+        "onHit": "HKD+42",
+        "onCH": "HKD+42",
+        "meter": "-10000",
+        "images": [
+            "GBVSR_Zeta_236236H_Start.webp",
+            "GBVSR_Zeta_236236H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Zeta_236236H_Hitbox_1.webp",
+            "GBVSR_Zeta_236236H_Hitbox_2.webp"
+        ],
+        "type": "super"
+    },
+    {
+        "name": "Resolute Strike",
+        "input": "j.236236H",
+        "damage": "500\u00d76, 1000",
+        "guard": "All",
+        "startup": "8+4",
+        "active": "Until L+1",
+        "recovery": "37",
+        "onBlock": "-19",
+        "onHit": "HKD+43",
+        "onCH": "HKD+43",
+        "meter": "-10000",
+        "images": [
+            "GBVSR_Zeta_236236H_Start.webp",
+            "GBVSR_Zeta_j236236H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Zeta_j236236H_Hitbox.webp"
+        ],
+        "type": "super"
+    },
+    {
+        "name": "Rising Split",
+        "input": "214X~M",
+        "damage": "1200 [1600]",
+        "guard": "Mid",
+        "startup": "6 [9]",
+        "active": "6",
+        "recovery": "20",
+        "onBlock": "-9",
+        "onHit": "KD+36 [KD+43]",
+        "onCH": "KD+56",
+        "meter": "",
+        "images": [
+            "GBVSR_Zeta_214X-M.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Zeta_214X-M_Hitbox_1.webp",
+            "GBVSR_Zeta_214X-M_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Signo Drive",
+        "input": "5U",
+        "damage": "600, 100\u00d73~12",
+        "guard": "Mid",
+        "startup": "8",
+        "active": "3(5)3\u00d73~12",
+        "recovery": "18",
+        "onBlock": "-2",
+        "onHit": "Air Tech+23~+26",
+        "onCH": "KD+35~+38",
+        "meter": "",
+        "images": [
+            "GBVSR_Zeta_5U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Zeta_5U_Hitbox_1.webp",
+            "GBVSR_Zeta_5U_Hitbox_2.webp",
+            "GBVSR_Zeta_5U_Hitbox_3.webp",
+            "GBVSR_Zeta_5U_Hitbox_4.webp"
+        ],
+        "type": "unique"
+    },
+    {
+        "name": "Sirius Roar",
+        "input": "236236U",
+        "damage": "3000, 120\u00d715, 1200 [1000\u00d74]",
+        "guard": "Mid",
+        "startup": "8+5",
+        "active": "6,2\u00d73",
+        "recovery": "58",
+        "onBlock": "-41",
+        "onHit": "HKD+50 [HKD+38]",
+        "onCH": "HKD+50 [HKD+38]",
+        "meter": "-10000",
+        "images": [
+            "GBVSR_Zeta_236236U.webp",
+            "GBVSR_Zeta_236236U_Finish.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Zeta_236236U_Hitbox_1.webp",
+            "GBVSR_Zeta_236236U_Hitbox_2.webp",
+            "GBVSR_Zeta_236236U_Hitbox_3.webp"
+        ],
+        "type": "super"
+    },
+    {
+        "name": "Spear of Arvess (Down Follow-ups)",
+        "input": "22X~2X",
+        "damage": "500",
+        "guard": "All",
+        "startup": "16",
+        "active": "Until L+1",
+        "recovery": "21",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Zeta_22X_3X_Followup.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Zeta_j22X_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Spear of Arvess (Side Follow-ups)",
+        "input": "22X~5X",
+        "damage": "500",
+        "guard": "All",
+        "startup": "16",
+        "active": "12",
+        "recovery": "19 [Until L+20]",
+        "onBlock": "-14",
+        "onHit": "KD+27",
+        "onCH": "KD+28",
+        "meter": "",
+        "images": [
+            "GBVSR_Zeta_623X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Zeta_623X_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Spear of Arvess (Up Follow-ups)",
+        "input": "22X~8X",
+        "damage": "700",
+        "guard": "All",
+        "startup": "16",
+        "active": "12",
+        "recovery": "Until L+14",
+        "onBlock": "-38\/-39\/-38",
+        "onHit": "KD+18\/KD+22\/KD+18",
+        "onCH": "KD+19\/KD+22\/KD+19",
+        "meter": "",
+        "images": [
+            "GBVSR_Zeta_623X_9X_Followup.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Zeta_22X_Hitbox_1.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Ultimate Aerial Spear of Arvess",
+        "input": "j.22U",
+        "damage": "1000, 200\u00d75",
+        "guard": "All",
+        "startup": "12",
+        "active": "Until L",
+        "recovery": "37 [Until L+3]",
+        "onBlock": "-7",
+        "onHit": "HKD+62~+75",
+        "onCH": "HKD+62~+75",
+        "meter": "-5000",
+        "images": [
+            "GBVSR_Zeta_j22U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Zeta_j22X_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Ultimate Infinite Wonders",
+        "input": "236U",
+        "damage": "400, 500\u00d72, 600",
+        "guard": "All",
+        "startup": "9",
+        "active": "6,14",
+        "recovery": "Total 46",
+        "onBlock": "+2",
+        "onHit": "HKD+66~+81",
+        "onCH": "HKD+66~+81",
+        "meter": "-5000",
+        "images": [
+            "GBVSR_Zeta_236U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Zeta_236U_Hitbox_1.webp",
+            "GBVSR_Zeta_236U_Hitbox_2.webp",
+            "GBVSR_Zeta_236U_Hitbox_3.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Ultimate Rhapsody",
+        "input": "214U",
+        "damage": "600\u00d72, 800",
+        "guard": "Mid",
+        "startup": "1",
+        "active": "27",
+        "recovery": "21",
+        "onBlock": "",
+        "onHit": "HKD+48",
+        "onCH": "",
+        "meter": "-5000",
+        "images": [
+            "GBVSR_Zeta_214U.webp",
+            "GBVSR_Zeta_214U_2.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Zeta_214U_Hitbox_1.webp",
+            "GBVSR_Zeta_214U_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Ultimate Spear of Arvess",
+        "input": "623U",
+        "damage": "1500, 200\u00d75",
+        "guard": "Mid",
+        "startup": "13",
+        "active": "11",
+        "recovery": "22",
+        "onBlock": "-4",
+        "onHit": "HKD+59~+65",
+        "onCH": "HKD+59~+65",
+        "meter": "-5000",
+        "images": [
+            "GBVSR_Zeta_623U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Zeta_623X_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Ultimate Spear of Arvess (Rise)",
+        "input": "22U",
+        "damage": "1000, 200\u00d75",
+        "guard": "Mid",
+        "startup": "9",
+        "active": "5",
+        "recovery": "44 [Until L+3]",
+        "onBlock": "-7",
+        "onHit": "HKD+66~+77",
+        "onCH": "HKD+66~+77",
+        "meter": "-5000",
+        "images": [
+            "GBVSR_Zeta_22U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Zeta_22X_Hitbox_1.webp"
+        ],
+        "type": "special"
+    }
+]

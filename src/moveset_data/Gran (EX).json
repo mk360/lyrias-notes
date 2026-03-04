@@ -1,0 +1,357 @@
+[
+    {
+        "name": "H Armor Break",
+        "input": "623H",
+        "damage": "1400",
+        "guard": "Mid",
+        "startup": "16",
+        "active": "3",
+        "recovery": "28",
+        "onBlock": "-12",
+        "onHit": "+2Force Crouch",
+        "onCH": "+2Force Crouch",
+        "meter": "",
+        "images": [
+            "GBVSR Gran (EX) 623X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR Gran (EX) 623X Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "H Decimate",
+        "input": "214H",
+        "damage": "700, 200x4",
+        "guard": "Mid",
+        "startup": "23",
+        "active": "2\u00d75 [2\u00d73]",
+        "recovery": "17 [23]",
+        "onBlock": "+4",
+        "onHit": "KD+40",
+        "onCH": "KD+40",
+        "meter": "",
+        "images": [
+            "GBVSR_Gran_(EX)_214X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Gran_(EX)_214X_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "H Overdrive Surge",
+        "input": "22H",
+        "damage": "600, 1200",
+        "guard": "Mid",
+        "startup": "9",
+        "active": "3(8)10",
+        "recovery": "15",
+        "onBlock": "-6",
+        "onHit": "KD+28",
+        "onCH": "KD+30 [KD+32]",
+        "meter": "",
+        "images": [
+            "GBVSR Gran (EX) 22X.webp",
+            "GBVSR Gran (EX) 22X 2.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Gran_(EX)_22X_Hitbox.webp",
+            "GBVSR_Gran_(EX)_22X_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "H Reginleiv",
+        "input": "236H",
+        "damage": "500x2, 400",
+        "guard": "Mid",
+        "startup": "13",
+        "active": "9",
+        "recovery": "Total 44",
+        "onBlock": "+3",
+        "onHit": "+7",
+        "onCH": "KD+43",
+        "meter": "",
+        "images": [
+            "GBVSR Gran (EX) 236X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR Gran (EX) 236X Hitbox.webp",
+            "GBVSR Gran (EX) 236X Hitbox 2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "L Armor Break",
+        "input": "623L",
+        "damage": "1000",
+        "guard": "Mid",
+        "startup": "18",
+        "active": "3",
+        "recovery": "28",
+        "onBlock": "-12",
+        "onHit": "-8Force Stand",
+        "onCH": "-8Force Stand",
+        "meter": "",
+        "images": [
+            "GBVSR Gran (EX) 623X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR Gran (EX) 623X Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "L Decimate",
+        "input": "214L",
+        "damage": "600, 200x2",
+        "guard": "Mid",
+        "startup": "18",
+        "active": "2\u00d73",
+        "recovery": "21",
+        "onBlock": "-2",
+        "onHit": "+2",
+        "onCH": "+2",
+        "meter": "",
+        "images": [
+            "GBVSR_Gran_(EX)_214X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Gran_(EX)_214X_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "L Overdrive Surge",
+        "input": "22L",
+        "damage": "400, 800",
+        "guard": "Mid",
+        "startup": "9",
+        "active": "3(8)8",
+        "recovery": "15",
+        "onBlock": "-6",
+        "onHit": "Air Tech+21[Air Tech+20]",
+        "onCH": "Air Tech+21[Air Tech+20]",
+        "meter": "",
+        "images": [
+            "GBVSR Gran (EX) 22X.webp",
+            "GBVSR Gran (EX) 22X 2.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Gran_(EX)_22X_Hitbox.webp",
+            "GBVSR_Gran_(EX)_22X_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "L Reginleiv",
+        "input": "236L",
+        "damage": "900",
+        "guard": "Mid",
+        "startup": "10",
+        "active": "4",
+        "recovery": "Total 38",
+        "onBlock": "-4",
+        "onHit": "\u00b10",
+        "onCH": "KD+38",
+        "meter": "",
+        "images": [
+            "GBVSR Gran (EX) 236X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR Gran (EX) 236X Hitbox.webp",
+            "GBVSR Gran (EX) 236X Hitbox 2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "M Armor Break",
+        "input": "623M",
+        "damage": "1200",
+        "guard": "Mid",
+        "startup": "20",
+        "active": "3",
+        "recovery": "28",
+        "onBlock": "-12",
+        "onHit": "KD+28",
+        "onCH": "KD+28",
+        "meter": "",
+        "images": [
+            "GBVSR Gran (EX) 623X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR Gran (EX) 623X Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "M Decimate",
+        "input": "214M",
+        "damage": "700, 200x4",
+        "guard": "Mid",
+        "startup": "27",
+        "active": "2\u00d75 [2\u00d73]",
+        "recovery": "17 [21]",
+        "onBlock": "+2",
+        "onHit": "KD+38",
+        "onCH": "KD+38",
+        "meter": "",
+        "images": [
+            "GBVSR_Gran_(EX)_214X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Gran_(EX)_214X_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "M Overdrive Surge",
+        "input": "22M",
+        "damage": "500, 1000",
+        "guard": "Mid",
+        "startup": "14",
+        "active": "3(8)10",
+        "recovery": "15",
+        "onBlock": "-6",
+        "onHit": "KD+28",
+        "onCH": "KD+30 [KD+32]",
+        "meter": "",
+        "images": [
+            "GBVSR Gran (EX) 22X.webp",
+            "GBVSR Gran (EX) 22X 2.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Gran_(EX)_22X_Hitbox.webp",
+            "GBVSR_Gran_(EX)_22X_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "M Reginleiv",
+        "input": "236M",
+        "damage": "1000",
+        "guard": "Mid",
+        "startup": "12",
+        "active": "6",
+        "recovery": "Total 40",
+        "onBlock": "-4",
+        "onHit": "Air Tech+24",
+        "onCH": "KD+38",
+        "meter": "",
+        "images": [
+            "GBVSR Gran (EX) 236X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR Gran (EX) 236X Hitbox.webp",
+            "GBVSR Gran (EX) 236X Hitbox 2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Rising Sword",
+        "input": "5U",
+        "damage": "600, 500",
+        "guard": "Mid, All",
+        "startup": "12",
+        "active": "2,10",
+        "recovery": "33",
+        "onBlock": "-25",
+        "onHit": "Air Tech+11",
+        "onCH": "Air Tech+11",
+        "meter": "",
+        "images": [
+            "GBVSR Gran 623X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Gran_(EX)_5U_Hitbox.webp",
+            "GBVSR_Gran_(EX)_5U_Hitbox_2.webp",
+            "GBVSR_Gran_623L_Hitbox.webp"
+        ],
+        "type": "unique"
+    },
+    {
+        "name": "Ultimate Armor Break",
+        "input": "623U",
+        "damage": "2000",
+        "guard": "Guard Crush 32",
+        "startup": "18True Startup:33",
+        "active": "3",
+        "recovery": "28",
+        "onBlock": "+2",
+        "onHit": "HKD+63",
+        "onCH": "HKD+63",
+        "meter": "-5000",
+        "images": [
+            "GBVSR Gran (EX) 623U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR Gran (EX) 623U Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Ultimate Decimate",
+        "input": "214U",
+        "damage": "1000, 200x4, 1000",
+        "guard": "Mid",
+        "startup": "16True Startup:29",
+        "active": "2\u00d75 [1\u00d72,2]",
+        "recovery": "19 [28]",
+        "onBlock": "+4",
+        "onHit": "HKD+52",
+        "onCH": "HKD+52",
+        "meter": "-5000",
+        "images": [
+            "GBVSR Gran (EX) 214U.webp",
+            "GBVSR Gran (EX) 214U 2.webp"
+        ],
+        "hitboxes": [
+            "GBVSR Gran (EX) 214U_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Ultimate Overdrive Surge",
+        "input": "22U",
+        "damage": "500, 200x4, 700 [200\u00d75]",
+        "guard": "Mid",
+        "startup": "8True Startup:13",
+        "active": "6(6)14 [3(3)10]",
+        "recovery": "45",
+        "onBlock": "-38",
+        "onHit": "HKD+44 [HKD+38]",
+        "onCH": "HKD+44 [HKD+38]",
+        "meter": "-5000",
+        "images": [
+            "GBVSR Gran (EX) 22U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR Gran (EX) 22U Hitbox.webp",
+            "GBVSR Gran (EX) 22U Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Ultimate Reginleiv",
+        "input": "236U",
+        "damage": "1000Strike Hitbox, 1600",
+        "guard": "Mid",
+        "startup": "9True Startup:15",
+        "active": "10(4)P [5(2)4]",
+        "recovery": "Total 51 [Total 42]",
+        "onBlock": "-4",
+        "onHit": "HKD+54 [HKD+52]",
+        "onCH": "HKD+54 [HKD+52]",
+        "meter": "-5000",
+        "images": [
+            "GBVSR Gran (EX) 236U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Gran_(EX)_236U_Hitbox.webp",
+            "GBVSR_Gran_(EX)_236U_Hitbox_2.webp",
+            "GBVSR_Gran_(EX)_236U_Hitbox_3.webp"
+        ],
+        "type": "special"
+    }
+]

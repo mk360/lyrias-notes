@@ -1,0 +1,1048 @@
+[
+    {
+        "name": "",
+        "input": "2H",
+        "damage": "1300",
+        "guard": "Mid",
+        "startup": "11",
+        "active": "5",
+        "recovery": "24",
+        "onBlock": "-12",
+        "onHit": "-8",
+        "onCH": "\u00b10",
+        "meter": "",
+        "images": [
+            "GBVSR_Lancelot_2H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Lancelot_2H_Hitbox_1.webp",
+            "GBVSR_Lancelot_2H_Hitbox_2.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "2L",
+        "damage": "400",
+        "guard": "Low",
+        "startup": "6",
+        "active": "1",
+        "recovery": "12",
+        "onBlock": "-2",
+        "onHit": "+2",
+        "onCH": "+4",
+        "meter": "",
+        "images": [
+            "GBVSR_Lancelot_2L.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Lancelot_2L_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "2M",
+        "damage": "700",
+        "guard": "Mid",
+        "startup": "6",
+        "active": "2",
+        "recovery": "15",
+        "onBlock": "-2",
+        "onHit": "+2",
+        "onCH": "+6",
+        "meter": "",
+        "images": [
+            "GBVSR_Lancelot_2M.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Lancelot_2M_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "2U",
+        "damage": "1000",
+        "guard": "Low",
+        "startup": "11",
+        "active": "16",
+        "recovery": "14",
+        "onBlock": "-15",
+        "onHit": "HKD+40",
+        "onCH": "HKD+44",
+        "meter": "",
+        "images": [
+            "GBVSR_Lancelot_2U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Lancelot_2U_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "5L",
+        "damage": "600",
+        "guard": "Mid",
+        "startup": "5",
+        "active": "2",
+        "recovery": "9",
+        "onBlock": "+2",
+        "onHit": "+6",
+        "onCH": "+8",
+        "meter": "",
+        "images": [
+            "GBVSR_Lancelot_5L.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Lancelot_5L_Hitbox.webp",
+            "GBVSR_Lancelot_5L_Hitbox_2.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "66H",
+        "damage": "1200",
+        "guard": "Mid",
+        "startup": "15",
+        "active": "4",
+        "recovery": "21",
+        "onBlock": "-6",
+        "onHit": "KD+38",
+        "onCH": "KD+42",
+        "meter": "",
+        "images": [
+            "GBVSR_Lancelot_66H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Lancelot_66H_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "66L",
+        "damage": "600",
+        "guard": "Mid",
+        "startup": "8",
+        "active": "3",
+        "recovery": "10 [15]",
+        "onBlock": "+2",
+        "onHit": "+6",
+        "onCH": "+8",
+        "meter": "+480",
+        "images": [
+            "GBVSR_Lancelot_66L.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Lancelot_66L_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "66M",
+        "damage": "1100",
+        "guard": "Low",
+        "startup": "12",
+        "active": "4",
+        "recovery": "21",
+        "onBlock": "-8",
+        "onHit": "KD+24",
+        "onCH": "HKD+49",
+        "meter": "",
+        "images": [
+            "GBVSR_Lancelot_66M.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Lancelot_66M_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.H",
+        "damage": "1000, 400",
+        "guard": "Mid",
+        "startup": "7",
+        "active": "3(3)3",
+        "recovery": "18",
+        "onBlock": "-2",
+        "onHit": "+2",
+        "onCH": "+2",
+        "meter": "",
+        "images": [
+            "GBVSR_Lancelot_cH1.webp",
+            "GBVSR_Lancelot_cH_2.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Lancelot_cH_Hitbox_1.webp",
+            "GBVSR_Lancelot_cH_Hitbox_2.webp",
+            "GBVSR_Lancelot_cH_Hitbox_3.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.M",
+        "damage": "1100",
+        "guard": "Mid",
+        "startup": "6",
+        "active": "1",
+        "recovery": "14",
+        "onBlock": "\u00b10",
+        "onHit": "+4",
+        "onCH": "+8",
+        "meter": "",
+        "images": [
+            "GBVSR_Lancelot_cM.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Lancelot_cM_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.XX",
+        "damage": "700",
+        "guard": "Mid",
+        "startup": "9",
+        "active": "3",
+        "recovery": "15",
+        "onBlock": "-3",
+        "onHit": "+1",
+        "onCH": "+5",
+        "meter": "+480",
+        "images": [
+            "GBVSR_Lancelot_cXX.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Lancelot_cXX_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.XX6H",
+        "damage": "1000",
+        "guard": "High",
+        "startup": "18",
+        "active": "3",
+        "recovery": "22",
+        "onBlock": "-4",
+        "onHit": "+1Force Crouch",
+        "onCH": "HKD+32",
+        "meter": "+480",
+        "images": [
+            "GBVSR_Lancelot_cXX6H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Lancelot_cXX6H_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.XX6M",
+        "damage": "1000",
+        "guard": "Low",
+        "startup": "12",
+        "active": "3",
+        "recovery": "16",
+        "onBlock": "-4",
+        "onHit": "KD+30",
+        "onCH": "HKD+55",
+        "meter": "+480",
+        "images": [
+            "GBVSR_Lancelot_66M.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Lancelot_66M_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.XXX",
+        "damage": "1000",
+        "guard": "Mid",
+        "startup": "12",
+        "active": "3",
+        "recovery": "18",
+        "onBlock": "-4",
+        "onHit": "\u00b10",
+        "onCH": "+8",
+        "meter": "+600",
+        "images": [
+            "GBVSR_Lancelot_cXXX.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Lancelot_cXXX_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "f.H",
+        "damage": "1300",
+        "guard": "Mid",
+        "startup": "10",
+        "active": "3",
+        "recovery": "22",
+        "onBlock": "-8",
+        "onHit": "-4",
+        "onCH": "+4",
+        "meter": "",
+        "images": [
+            "GBVSR_Lancelot_fH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Lancelot_fH_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "f.M",
+        "damage": "900",
+        "guard": "Mid",
+        "startup": "7",
+        "active": "3",
+        "recovery": "17",
+        "onBlock": "-5",
+        "onHit": "-1",
+        "onCH": "+3",
+        "meter": "",
+        "images": [
+            "GBVSR_Lancelot_fM.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Lancelot_fM_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "j.H",
+        "damage": "500\u00d72",
+        "guard": "High\/Air, All",
+        "startup": "10",
+        "active": "3(3)6",
+        "recovery": "Until L+1",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Lancelot_jH1.webp",
+            "GBVSR_Lancelot_jH2.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Lancelot_jH_Hitbox_1.webp",
+            "GBVSR_Lancelot_jH_Hitbox_2.webp",
+            "GBVSR_Lancelot_jH_Hitbox_3.webp",
+            "GBVSR_Lancelot_jH_Hitbox_4.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "j.L",
+        "damage": "600",
+        "guard": "High\/Air",
+        "startup": "5",
+        "active": "Until L",
+        "recovery": "1",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Lancelot_jL.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Lancelot_jL_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "j.M",
+        "damage": "700",
+        "guard": "High\/Air",
+        "startup": "7",
+        "active": "3",
+        "recovery": "Until L+1",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Lancelot_jM.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Lancelot_jM_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "Air Throw",
+        "input": "j.LU",
+        "damage": "2500",
+        "guard": "Airthrow",
+        "startup": "5",
+        "active": "5",
+        "recovery": "Until L+6",
+        "onBlock": "",
+        "onHit": "HKD \u2248+46",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Lancelot_AirThrow.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Lancelot_AirThrow_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "Brave Counter",
+        "input": "BC",
+        "damage": "500",
+        "guard": "Mid",
+        "startup": "10 [18]",
+        "active": "3 [2]",
+        "recovery": "19 [35]",
+        "onBlock": "-2",
+        "onHit": "Air Tech+21 [+5]",
+        "onCH": "HKD+54 [HKD+43]",
+        "meter": "\u00b10",
+        "images": [
+            "GBVSR_Lancelot_BC.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Lancelot_BC_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "Cross Over",
+        "input": "5U~6U",
+        "damage": "",
+        "guard": "",
+        "startup": "",
+        "active": "",
+        "recovery": "Total 18",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Lancelot_5U-6U.webp"
+        ],
+        "hitboxes": [
+            ""
+        ],
+        "type": "unique"
+    },
+    {
+        "name": "Delta Leap",
+        "input": "DeltaLeap",
+        "damage": "",
+        "guard": "",
+        "startup": "",
+        "active": "",
+        "recovery": "Total 15",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Lancelot_DeltaLeap.webp"
+        ],
+        "hitboxes": [
+            ""
+        ],
+        "type": "unique"
+    },
+    {
+        "name": "Feint",
+        "input": "5U~4U",
+        "damage": "",
+        "guard": "",
+        "startup": "",
+        "active": "",
+        "recovery": "Total 16",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Lancelot_5U-4U.webp"
+        ],
+        "hitboxes": [
+            ""
+        ],
+        "type": "unique"
+    },
+    {
+        "name": "Ground Throw",
+        "input": "LU",
+        "damage": "2500",
+        "guard": "Throw",
+        "startup": "4",
+        "active": "3",
+        "recovery": "26",
+        "onBlock": "",
+        "onHit": "HKD+46",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Lancelot_Throw.webp",
+            "GBVSR_Lancelot_BackThrow.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Lancelot_LU_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "H Blade Impulse",
+        "input": "623H",
+        "damage": "1200",
+        "guard": "Mid",
+        "startup": "16",
+        "active": "9",
+        "recovery": "18",
+        "onBlock": "-8",
+        "onHit": "KD+32",
+        "onCH": "KD+36",
+        "meter": "",
+        "images": [
+            "GBVSR_Lancelot_623X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Lancelot_623X_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "H Southern Cross (4)",
+        "input": "214H~4H~4H~4H",
+        "damage": "600",
+        "guard": "Mid",
+        "startup": "7",
+        "active": "3",
+        "recovery": "16",
+        "onBlock": "-4",
+        "onHit": "\u00b10",
+        "onCH": "+4",
+        "meter": "",
+        "images": [
+            "GBVSR_Lancelot_214X-4X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Lancelot_214X4X_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "H Southern Cross (5)",
+        "input": "214H~4H~4H~4H~4H",
+        "damage": "650",
+        "guard": "Mid",
+        "startup": "12",
+        "active": "7",
+        "recovery": "24",
+        "onBlock": "-16",
+        "onHit": "KD+26",
+        "onCH": "KD+30",
+        "meter": "",
+        "images": [
+            "GBVSR_Lancelot_214X-4X-4X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Lancelot_214X4X4X_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "H Wogenstrom",
+        "input": "236H",
+        "damage": "350\u00d72, 400",
+        "guard": "All",
+        "startup": "33",
+        "active": "52",
+        "recovery": "Total 41",
+        "onBlock": "+40",
+        "onHit": "+44",
+        "onCH": "+44",
+        "meter": "",
+        "images": [
+            "GBVSR_Lancelot_236X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Lancelot_236X_Hitbox_1.webp",
+            "GBVSR_Lancelot_236X_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Jump",
+        "input": "5U~2U",
+        "damage": "",
+        "guard": "",
+        "startup": "",
+        "active": "",
+        "recovery": "Total 25",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Lancelot_5U-2U.webp"
+        ],
+        "hitboxes": [
+            ""
+        ],
+        "type": "unique"
+    },
+    {
+        "name": "L Blade Impulse",
+        "input": "623L",
+        "damage": "800",
+        "guard": "Mid",
+        "startup": "16",
+        "active": "6",
+        "recovery": "14",
+        "onBlock": "-5",
+        "onHit": "KD+35",
+        "onCH": "KD+35",
+        "meter": "",
+        "images": [
+            "GBVSR_Lancelot_623X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Lancelot_623X_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "L Wogenstrom",
+        "input": "236L",
+        "damage": "700",
+        "guard": "All",
+        "startup": "33",
+        "active": "38",
+        "recovery": "Total 45",
+        "onBlock": "+4",
+        "onHit": "+8",
+        "onCH": "+10",
+        "meter": "",
+        "images": [
+            "GBVSR_Lancelot_236X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Lancelot_236X_Hitbox_1.webp",
+            "GBVSR_Lancelot_236X_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "M Blade Impulse",
+        "input": "623M",
+        "damage": "1000",
+        "guard": "Mid",
+        "startup": "25",
+        "active": "9",
+        "recovery": "16",
+        "onBlock": "-6",
+        "onHit": "KD+28 [KD+38]",
+        "onCH": "KD+32 [KD+35]",
+        "meter": "",
+        "images": [
+            "GBVSR_Lancelot_623X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Lancelot_623X_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "M Wogenstrom",
+        "input": "236M",
+        "damage": "700",
+        "guard": "All",
+        "startup": "38",
+        "active": "71",
+        "recovery": "Total 45",
+        "onBlock": "+9",
+        "onHit": "+13",
+        "onCH": "+15",
+        "meter": "",
+        "images": [
+            "GBVSR_Lancelot_236X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Lancelot_236X_Hitbox_1.webp",
+            "GBVSR_Lancelot_236X_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Quick Stop",
+        "input": "5U~5U",
+        "damage": "",
+        "guard": "",
+        "startup": "",
+        "active": "",
+        "recovery": "Total 14",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Lancelot_5U-5U.webp"
+        ],
+        "hitboxes": [
+            ""
+        ],
+        "type": "unique"
+    },
+    {
+        "name": "Raging Chain",
+        "input": "MH~MH",
+        "damage": "1000",
+        "guard": "Mid",
+        "startup": "13",
+        "active": "5",
+        "recovery": "17",
+        "onBlock": "+4",
+        "onHit": "+15Force Crouch (HKD+63)",
+        "onCH": "+15Force Crouch",
+        "meter": "-2500",
+        "images": [
+            "GBVSR_Lancelot_MH-MH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Lancelot_MH-MH_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "Raging Strike",
+        "input": "MH",
+        "damage": "1500",
+        "guard": "Guard Crush 45 [52]",
+        "startup": "28 (1)",
+        "active": "1",
+        "recovery": "37",
+        "onBlock": "+8Force Stand [+15Force Stand]",
+        "onHit": "+15Force Crouch (KD+40)",
+        "onCH": "+15Force Crouch",
+        "meter": "\u00b10",
+        "images": [
+            "GBVSR_Lancelot_MH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Lancelot_MH_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "Sch\u00f6ner Winterh\u00fcgel",
+        "input": "236236U",
+        "damage": "1200\u00d72, 3000",
+        "guard": "Mid",
+        "startup": "10+6",
+        "active": "Until L+1",
+        "recovery": "34",
+        "onBlock": "-19",
+        "onHit": "HKD+50",
+        "onCH": "HKD+50",
+        "meter": "-10000",
+        "images": [
+            "GBVSR_Lancelot_236236U_Start.webp",
+            "GBVSR_Lancelot_236236U_Finish_1.webp",
+            "GBVSR_Lancelot_236236U_Finish_2.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Lancelot_236236U_Hitbox.webp"
+        ],
+        "type": "super"
+    },
+    {
+        "name": "Sch\u00f6ner Winterh\u00fcgel",
+        "input": "j.236236U",
+        "damage": "1200\u00d72, 3000",
+        "guard": "All",
+        "startup": "7+7",
+        "active": "Until L+1",
+        "recovery": "34",
+        "onBlock": "-17",
+        "onHit": "HKD+50",
+        "onCH": "HKD+50",
+        "meter": "-10000",
+        "images": [
+            "GBVSR_Lancelot_236236U_Start.webp",
+            "GBVSR_Lancelot_236236U_Finish_1.webp",
+            "GBVSR_Lancelot_236236U_Finish_2.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Lancelot_236236U_Hitbox.webp"
+        ],
+        "type": "super"
+    },
+    {
+        "name": "Southern Cross (1)",
+        "input": "214X",
+        "damage": "400\/500\/400",
+        "guard": "Mid",
+        "startup": "14\/19\/11",
+        "active": "5\/6\/3",
+        "recovery": "13\/13\/15",
+        "onBlock": "-3\/-4\/-3",
+        "onHit": "+1\/\u00b10\/+1",
+        "onCH": "+5\/KD+38\/+5",
+        "meter": "",
+        "images": [
+            "GBVSR_Lancelot_214X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Lancelot_214X_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Southern Cross (2)",
+        "input": "214X~4X",
+        "damage": "500\/600\/450",
+        "guard": "Mid",
+        "startup": "9\/9\/7",
+        "active": "3\/3\/3",
+        "recovery": "16\/16\/16",
+        "onBlock": "-4\/-4\/-4",
+        "onHit": "\u00b10\/\u00b10\/\u00b10",
+        "onCH": "+4\/+4\/+4",
+        "meter": "",
+        "images": [
+            "GBVSR_Lancelot_214X-4X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Lancelot_214X4X_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Southern Cross (3)",
+        "input": "214X~4X~4X",
+        "damage": "600\/700\/550",
+        "guard": "Mid",
+        "startup": "14\/14\/9",
+        "active": "7\/7\/3",
+        "recovery": "24\/24\/16",
+        "onBlock": "-16\/-16\/-4",
+        "onHit": "Air Recovery+17\/KD+26\/\u00b10",
+        "onCH": "KD+32\/KD+30\/+4",
+        "meter": "",
+        "images": [
+            "GBVSR_Lancelot_214X-4X-4X.webp",
+            "GBVSR_Lancelot_214X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Lancelot_214X4X4X_Hitbox.webp",
+            "GBVSR_Lancelot_214X_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Turbulenz",
+        "input": "22X",
+        "damage": "",
+        "guard": "",
+        "startup": "",
+        "active": "",
+        "recovery": "Total 30",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Lancelot_22X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Lancelot_22X_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Turbulenz (Charged Attack)",
+        "input": "22[X]",
+        "damage": "1000",
+        "guard": "High",
+        "startup": "31",
+        "active": "8",
+        "recovery": "30",
+        "onBlock": "-16",
+        "onHit": "KD+31",
+        "onCH": "KD+31",
+        "meter": "",
+        "images": [
+            "GBVSR_Lancelot_22X-Attack.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Lancelot_22X_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Ultimate Blade Impulse",
+        "input": "623U",
+        "damage": "1000, 200\u00d73",
+        "guard": "Mid",
+        "startup": "14",
+        "active": "10",
+        "recovery": "29 [24]",
+        "onBlock": "-6",
+        "onHit": "HKD+77",
+        "onCH": "HKD+77",
+        "meter": "-5000",
+        "images": [
+            "GBVSR_Lancelot_623U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Lancelot_623U_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Ultimate Southern Cross",
+        "input": "214U",
+        "damage": "300\u00d74, 200\u00d74, 600",
+        "guard": "Mid",
+        "startup": "11",
+        "active": "5(5)3(9)3(5)3 [3(2)2]",
+        "recovery": "10 [16]",
+        "onBlock": "+2",
+        "onHit": "HKD+51",
+        "onCH": "HKD+51",
+        "meter": "-5000",
+        "images": [
+            "GBVSR_Lancelot_214U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Lancelot_214X_Hitbox.webp",
+            "GBVSR_Lancelot_214X4X_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Ultimate Turbulenz",
+        "input": "22U",
+        "damage": "700, 800, 50\u00d72, 100\u00d74 [700, 800]",
+        "guard": "Mid, High",
+        "startup": "8",
+        "active": "9(26)4 [5(20)6]",
+        "recovery": "40",
+        "onBlock": "-25",
+        "onHit": "HKD+31",
+        "onCH": "HKD+31",
+        "meter": "-5000",
+        "images": [
+            "GBVSR_Lancelot_22U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Lancelot_22U_Hitbox_1.webp",
+            "GBVSR_Lancelot_22U_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Ultimate Wogenstrom",
+        "input": "236U",
+        "damage": "1200",
+        "guard": "All",
+        "startup": "18",
+        "active": "12",
+        "recovery": "Total 45",
+        "onBlock": "+10",
+        "onHit": "+18",
+        "onCH": "+22",
+        "meter": "-5000",
+        "images": [
+            "GBVSR_Lancelot_236U.webp",
+            "GBVSR_Lancelot_236U_2.webp",
+            "GBVSR_Lancelot_236U_3.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Lancelot_236X_Hitbox_1.webp",
+            "GBVSR_Lancelot_236X_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Weiss Flugel",
+        "input": "236236H",
+        "damage": "1000, 100\u00d78, 400, 100\u00d76, 1200",
+        "guard": "Mid",
+        "startup": "9+4~13",
+        "active": "3",
+        "recovery": "28 [29]",
+        "onBlock": "-13",
+        "onHit": "HKD+45",
+        "onCH": "HKD+45",
+        "meter": "-10000",
+        "images": [
+            "GBVSR_Lancelot_236236H_Start.webp",
+            "GBVSR_Lancelot_236236H_Finish.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Lancelot_236236H_Hitbox_1.webp",
+            "GBVSR_Lancelot_236236H_Hitbox_2.webp"
+        ],
+        "type": "super"
+    },
+    {
+        "name": "Wirbelwind",
+        "input": "5U",
+        "damage": "",
+        "guard": "",
+        "startup": "28",
+        "active": "",
+        "recovery": "8",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Lancelot_5U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Lancelot_5U_Hitbox.webp"
+        ],
+        "type": "unique"
+    },
+    {
+        "name": "Wirbelwind",
+        "input": "j.U",
+        "damage": "",
+        "guard": "",
+        "startup": "13",
+        "active": "",
+        "recovery": "Until L+7",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Lancelot_jU.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Lancelot_jU_Hitbox.webp"
+        ],
+        "type": "unique"
+    }
+]

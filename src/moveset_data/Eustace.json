@@ -1,0 +1,1418 @@
+[
+    {
+        "name": "",
+        "input": "2H",
+        "damage": "1300",
+        "guard": "Mid",
+        "startup": "11",
+        "active": "6",
+        "recovery": "23",
+        "onBlock": "-12",
+        "onHit": "-8",
+        "onCH": "\u00b10",
+        "meter": "",
+        "images": [
+            "GBVSR_Eustace_2H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Eustace_2H_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "2HH",
+        "damage": "700",
+        "guard": "All",
+        "startup": "4",
+        "active": "6",
+        "recovery": "23",
+        "onBlock": "-12 [+2]",
+        "onHit": "Air Tech+29 [KD+45]",
+        "onCH": "KD+46 [KD+42]",
+        "meter": "",
+        "images": [
+            "GBVSR_Eustace_2HH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Eustace_2HH_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "2L",
+        "damage": "400",
+        "guard": "Low",
+        "startup": "6",
+        "active": "3",
+        "recovery": "10",
+        "onBlock": "-2",
+        "onHit": "+2",
+        "onCH": "+4",
+        "meter": "",
+        "images": [
+            "GBVSR_Eustace_2L.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Eustace_2L_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "2M",
+        "damage": "900",
+        "guard": "Mid",
+        "startup": "7",
+        "active": "3",
+        "recovery": "15",
+        "onBlock": "-3",
+        "onHit": "+1",
+        "onCH": "+5",
+        "meter": "",
+        "images": [
+            "GBVSR_Eustace_2M.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Eustace_2M_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "2U",
+        "damage": "1000",
+        "guard": "Low",
+        "startup": "10",
+        "active": "6",
+        "recovery": "20",
+        "onBlock": "-11",
+        "onHit": "HKD+44",
+        "onCH": "HKD+48",
+        "meter": "",
+        "images": [
+            "GBVSR_Eustace_2U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Eustace_2U_Hitbox1.webp",
+            "GBVSR_Eustace_2U_Hitbox2.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "66H",
+        "damage": "1200",
+        "guard": "Mid",
+        "startup": "15",
+        "active": "3",
+        "recovery": "24",
+        "onBlock": "-8 [+4]",
+        "onHit": "KD+39 [KD+47]",
+        "onCH": "KD+43 [KD+44]",
+        "meter": "",
+        "images": [
+            "GBVSR_Eustace_66H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Eustace_66H_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "66L",
+        "damage": "600",
+        "guard": "Mid",
+        "startup": "8",
+        "active": "3",
+        "recovery": "10 (15)",
+        "onBlock": "+2",
+        "onHit": "+6",
+        "onCH": "+8",
+        "meter": "+480",
+        "images": [
+            "GBVSR_Eustace_66L.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Eustace_66L_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "66M",
+        "damage": "1100",
+        "guard": "High",
+        "startup": "28",
+        "active": "4",
+        "recovery": "17",
+        "onBlock": "-4",
+        "onHit": "+1Force Crouch",
+        "onCH": "+5Force Crouch",
+        "meter": "",
+        "images": [
+            "GBVSR_Eustace_66M.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Eustace_66M_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.H",
+        "damage": "1600",
+        "guard": "Mid",
+        "startup": "9",
+        "active": "5",
+        "recovery": "17",
+        "onBlock": "-3",
+        "onHit": "+1",
+        "onCH": "+13",
+        "meter": "",
+        "images": [
+            "GBVSR_Eustace_cH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Eustace_cH_Hitbox1.webp",
+            "GBVSR_Eustace_cH_Hitbox2.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.L",
+        "damage": "600",
+        "guard": "Mid",
+        "startup": "5",
+        "active": "3",
+        "recovery": "6",
+        "onBlock": "+4",
+        "onHit": "+8",
+        "onCH": "+10",
+        "meter": "",
+        "images": [
+            "GBVSR_Eustace_cL.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Eustace_cL_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.M",
+        "damage": "1100",
+        "guard": "Mid",
+        "startup": "7",
+        "active": "3",
+        "recovery": "13",
+        "onBlock": "-1",
+        "onHit": "+3",
+        "onCH": "+7",
+        "meter": "",
+        "images": [
+            "GBVSR_Eustace_cM.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Eustace_cM_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.XX",
+        "damage": "700",
+        "guard": "Mid",
+        "startup": "9",
+        "active": "3",
+        "recovery": "15",
+        "onBlock": "-3",
+        "onHit": "+1",
+        "onCH": "+5",
+        "meter": "+480",
+        "images": [
+            "GBVSR_Eustace_cXX.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Eustace_cXX_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.XX6H",
+        "damage": "1000",
+        "guard": "High",
+        "startup": "18",
+        "active": "3",
+        "recovery": "22",
+        "onBlock": "-4",
+        "onHit": "+1Force Crouch",
+        "onCH": "HKD+32",
+        "meter": "+480",
+        "images": [
+            "GBVSR_Eustace_cXX6H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Eustace_cXX6H_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.XX6M",
+        "damage": "1000",
+        "guard": "Low",
+        "startup": "12",
+        "active": "3",
+        "recovery": "16",
+        "onBlock": "-4",
+        "onHit": "KD+30",
+        "onCH": "HKD+55",
+        "meter": "+480",
+        "images": [
+            "GBVSR_Eustace_cXX6M.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Eustace_cXX6M_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.XXX",
+        "damage": "1000",
+        "guard": "Mid",
+        "startup": "12",
+        "active": "3",
+        "recovery": "18",
+        "onBlock": "-4",
+        "onHit": "\u00b10",
+        "onCH": "+8",
+        "meter": "+600",
+        "images": [
+            "GBVSR_Eustace_cXXX.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Eustace_cXXX_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "f.H",
+        "damage": "1300",
+        "guard": "Mid",
+        "startup": "9",
+        "active": "3",
+        "recovery": "23",
+        "onBlock": "-9",
+        "onHit": "-5",
+        "onCH": "+3",
+        "meter": "",
+        "images": [
+            "GBVSR_Eustace_fH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Eustace_fH_Hitbox1.webp",
+            "GBVSR_Eustace_fH_Hitbox2.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "f.HH",
+        "damage": "700",
+        "guard": "All",
+        "startup": "4",
+        "active": "6",
+        "recovery": "20",
+        "onBlock": "-9 [+5]",
+        "onHit": "Air Tech+29 [KD+48]",
+        "onCH": "KD+48 [KD+45]",
+        "meter": "",
+        "images": [
+            "GBVSR_Eustace_fHH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Eustace_fHH_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "f.L",
+        "damage": "600",
+        "guard": "Mid",
+        "startup": "6",
+        "active": "3",
+        "recovery": "9",
+        "onBlock": "+1",
+        "onHit": "+5",
+        "onCH": "+7",
+        "meter": "",
+        "images": [
+            "GBVSR_Eustace_fL.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Eustace_fL_Hitbox1.webp",
+            "GBVSR_Eustace_fL_Hitbox2.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "f.M",
+        "damage": "900",
+        "guard": "Mid",
+        "startup": "8",
+        "active": "3",
+        "recovery": "18",
+        "onBlock": "-6",
+        "onHit": "-2",
+        "onCH": "+2",
+        "meter": "",
+        "images": [
+            "GBVSR_Eustace_fM.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Eustace_fM_Hitbox1.webp",
+            "GBVSR_Eustace_fM_Hitbox2.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "j.H",
+        "damage": "1000",
+        "guard": "High\/Air",
+        "startup": "8",
+        "active": "6",
+        "recovery": "Until L+1",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Eustace_jH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Eustace_jH_Hitbox1.webp",
+            "GBVSR_Eustace_jH_Hitbox2.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "j.L",
+        "damage": "600",
+        "guard": "High\/Air",
+        "startup": "5",
+        "active": "Until L",
+        "recovery": "1",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Eustace_jL.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Eustace_jL_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "j.M",
+        "damage": "800",
+        "guard": "High\/Air",
+        "startup": "7",
+        "active": "7",
+        "recovery": "Until L+1",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Eustace_jM.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Eustace_jM_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "j.U",
+        "damage": "1000",
+        "guard": "All",
+        "startup": "15",
+        "active": "6",
+        "recovery": "Until L+7",
+        "onBlock": "-16 [\u00b10]",
+        "onHit": "KD+21 [KD+54]",
+        "onCH": "KD+25 [KD+53]",
+        "meter": "",
+        "images": [
+            "GBVSR_Eustace_jU.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Eustace_jU_Hitbox1.webp",
+            "GBVSR_Eustace_jU_Hitbox2.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "Acidrage Howl",
+        "input": "236236H",
+        "damage": "1000, 1500, 100\u00d715[1000, 1500, 2300]",
+        "guard": "Mid",
+        "startup": "9+4~13",
+        "active": "3((12)3\u00d73(15)2)",
+        "recovery": "36",
+        "onBlock": "-19",
+        "onHit": "HKD+42",
+        "onCH": "HKD+42",
+        "meter": "-10000",
+        "images": [
+            "GBVSR_Eustace_236236H_Start.webp",
+            "GBVSR_Eustace_236236H.webp",
+            "GBVSR_Eustace_236236H_Finish.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Eustace_236236H_Hitbox.webp"
+        ],
+        "type": "super"
+    },
+    {
+        "name": "Air Throw",
+        "input": "j.LU",
+        "damage": "2500",
+        "guard": "Airthrow",
+        "startup": "5",
+        "active": "5",
+        "recovery": "Until L+6",
+        "onBlock": "",
+        "onHit": "HKD \u2248+35 [KD \u2248+47]",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Eustace_jLU.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Eustace_AirThrow_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "Back Throw",
+        "input": "4LU",
+        "damage": "2500 (3550)",
+        "guard": "Throw",
+        "startup": "4",
+        "active": "3",
+        "recovery": "26",
+        "onBlock": "",
+        "onHit": "HKD+44 [KD+45] (HKD+73)",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Eustace_BThrow.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Eustace_Throw_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "Brake",
+        "input": "214X~G",
+        "damage": "",
+        "guard": "",
+        "startup": "",
+        "active": "",
+        "recovery": "Total 16",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Eustace_214X-G.webp"
+        ],
+        "hitboxes": [
+            ""
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Brave Counter",
+        "input": "BC",
+        "damage": "500",
+        "guard": "Mid",
+        "startup": "10 [18]",
+        "active": "3 [2]",
+        "recovery": "19 [35]",
+        "onBlock": "-2",
+        "onHit": "Air Tech+21 [+5]",
+        "onCH": "HKD+54 [HKD+43]",
+        "meter": "\u00b10",
+        "images": [
+            "GBVSR_Eustace_BC.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Eustace_BC_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "Dead-End Fall",
+        "input": "236236U",
+        "damage": "[960], 240\u00d716, 60\u00d733, 180([800], 200\u00d715, 1000)",
+        "guard": "Mid, All",
+        "startup": "9+4",
+        "active": "3\u00d716",
+        "recovery": "Total 121",
+        "onBlock": "-27",
+        "onHit": "HKD+45 (HKD+54)",
+        "onCH": "HKD+45 (HKD+54)",
+        "meter": "-10000",
+        "images": [
+            "GBVSR_Eustace_236236U_Start.webp",
+            "GBVSR_Eustace_236236U.webp",
+            "GBVSR_Eustace_236236U_Finish.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Eustace_236236U_Hitbox1.webp",
+            "GBVSR_Eustace_236236U_Hitbox2.webp"
+        ],
+        "type": "super"
+    },
+    {
+        "name": "Follow-Up",
+        "input": "5UU",
+        "damage": "600",
+        "guard": "All",
+        "startup": "5~23",
+        "active": "3",
+        "recovery": "20",
+        "onBlock": "-6 [+8]",
+        "onHit": "Air Tech+27 [KD+50]",
+        "onCH": "KD+39 [KD+50]",
+        "meter": "",
+        "images": [
+            "GBVSR_Eustace_5UU.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Eustace_5UU_Hitbox.webp"
+        ],
+        "type": "unique"
+    },
+    {
+        "name": "Follow-Up (Charged)",
+        "input": "5U[U]",
+        "damage": "800",
+        "guard": "All",
+        "startup": "24",
+        "active": "3",
+        "recovery": "20",
+        "onBlock": "-6 [+8]",
+        "onHit": "KD+38 [KD+50]",
+        "onCH": "KD+38 [KD+50]",
+        "meter": "",
+        "images": [
+            "GBVSR_Eustace_5UU.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Eustace_5UU_Hitbox.webp"
+        ],
+        "type": "unique"
+    },
+    {
+        "name": "Front Throw",
+        "input": "LU",
+        "damage": "2500 (3550)",
+        "guard": "Throw",
+        "startup": "4",
+        "active": "3",
+        "recovery": "26",
+        "onBlock": "",
+        "onHit": "HKD+44 [KD+50] (HKD+54)",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Eustace_LU.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Eustace_Throw_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "H Assault Knife",
+        "input": "214H~H",
+        "damage": "800, 100\u00d74",
+        "guard": "Mid",
+        "startup": "7",
+        "active": "3\u00d76,2",
+        "recovery": "27",
+        "onBlock": "-22",
+        "onHit": "KD+35 (KD+37)",
+        "onCH": "KD+35",
+        "meter": "",
+        "images": [
+            "GBVSR_Eustace_214X-H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Eustace_214XH_Hitbox1.webp",
+            "GBVSR_Eustace_214XH_Hitbox2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "H Close Combat",
+        "input": "214H",
+        "damage": "500",
+        "guard": "Mid",
+        "startup": "15~26",
+        "active": "6",
+        "recovery": "16",
+        "onBlock": "-7",
+        "onHit": "KD+30",
+        "onCH": "KD+30",
+        "meter": "",
+        "images": [
+            "GBVSR_Eustace_214M.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Eustace_214M_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "H Flamek Thunder",
+        "input": "[4]6H",
+        "damage": "400\u00d73",
+        "guard": "All",
+        "startup": "13~24",
+        "active": "",
+        "recovery": "Total 45~56",
+        "onBlock": "+3 [+20]",
+        "onHit": "+7 [KD+60]",
+        "onCH": "+7 [KD+60]",
+        "meter": "",
+        "images": [
+            "GBVSR_Eustace_46X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Eustace_46X_Hitbox1.webp",
+            "GBVSR_Eustace_46X_Hitbox2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "H Flamek Thunder (Charged)",
+        "input": "[4]6[H]",
+        "damage": "1800",
+        "guard": "All",
+        "startup": "25~45",
+        "active": "",
+        "recovery": "Total 50~70",
+        "onBlock": "+13 [+18]",
+        "onHit": "KD+38 [KD+60]",
+        "onCH": "KD+40 [KD+59]",
+        "meter": "",
+        "images": [
+            "GBVSR_Eustace_46X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Eustace_46X_Charged_Hitbox1.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "H Rat Race",
+        "input": "623H",
+        "damage": "800 [800]",
+        "guard": "All [Mid]",
+        "startup": "21",
+        "active": "64,1 [1]",
+        "recovery": "Total 46",
+        "onBlock": "+3 [N\u2248+16]",
+        "onHit": "+7 [KD+N]",
+        "onCH": "+7 [KD+N]",
+        "meter": "",
+        "images": [
+            "GBVSR_Eustace_623X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Eustace_623X_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "H Slow Kill",
+        "input": "[2]8H",
+        "damage": "500\u00d72",
+        "guard": "All",
+        "startup": "12~23",
+        "active": "",
+        "recovery": "Total 39~50",
+        "onBlock": "-2 [+13]",
+        "onHit": "KD+37 [KD+54]",
+        "onCH": "KD+37 [KD+54]",
+        "meter": "",
+        "images": [
+            "GBVSR_Eustace_28X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Eustace_28X_Hitbox.webp",
+            "GBVSR_Eustace_28X_Hitbox2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "H Slow Kill (Charged)",
+        "input": "[2]8[H]",
+        "damage": "300\u00d74",
+        "guard": "All",
+        "startup": "24",
+        "active": "",
+        "recovery": "Total 51",
+        "onBlock": "+11 [+25]",
+        "onHit": "KD+50 [KD+65]",
+        "onCH": "KD+50 [KD+65]",
+        "meter": "",
+        "images": [
+            "GBVSR_Eustace_28X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Eustace_28X_Hitbox.webp",
+            "GBVSR_Eustace_28X_Hitbox2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "H Spreadshot",
+        "input": "214H~U",
+        "damage": "600\u00d73",
+        "guard": "All",
+        "startup": "26",
+        "active": "15",
+        "recovery": "Total 65",
+        "onBlock": "+1 [+18]",
+        "onHit": "+5 [KD+58]",
+        "onCH": "+5 [KD+58]",
+        "meter": "",
+        "images": [
+            "GBVSR_Eustace_214X-U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Eustace_214XU_Hitbox1.webp",
+            "GBVSR_Eustace_214XU_Hitbox2.webp",
+            "GBVSR_Eustace_214XU_Hitbox3.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "H Stunlight",
+        "input": "214H~L",
+        "damage": "750",
+        "guard": "Mid",
+        "startup": "15",
+        "active": "3",
+        "recovery": "14",
+        "onBlock": "-2 [+14]",
+        "onHit": "+2 (KD+38)[KD+54 (KD+58)]",
+        "onCH": "KD+39 [KD+54]",
+        "meter": "",
+        "images": [
+            "GBVSR_Eustace_214X-L.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Eustace_214XL_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "H Takedown",
+        "input": "214H~M",
+        "damage": "900",
+        "guard": "Low",
+        "startup": "9",
+        "active": "9",
+        "recovery": "13",
+        "onBlock": "-7",
+        "onHit": "KD+29 (KD+39)",
+        "onCH": "KD+33",
+        "meter": "",
+        "images": [
+            "GBVSR_Eustace_214X-M.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Eustace_214XM_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "L Assault Knife",
+        "input": "214L~H",
+        "damage": "600, 400",
+        "guard": "Mid, All",
+        "startup": "7",
+        "active": "3,17",
+        "recovery": "27",
+        "onBlock": "-27",
+        "onHit": "KD+30",
+        "onCH": "KD+30",
+        "meter": "",
+        "images": [
+            "GBVSR_Eustace_214X-H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Eustace_214XH_Hitbox1.webp",
+            "GBVSR_Eustace_214XH_Hitbox2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "L Close Combat",
+        "input": "214L",
+        "damage": "",
+        "guard": "",
+        "startup": "26",
+        "active": "",
+        "recovery": "14",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Eustace_214L.webp"
+        ],
+        "hitboxes": [
+            ""
+        ],
+        "type": "special"
+    },
+    {
+        "name": "L Flamek Thunder",
+        "input": "[4]6L",
+        "damage": "800",
+        "guard": "All",
+        "startup": "13~24",
+        "active": "",
+        "recovery": "Total 45~56",
+        "onBlock": "-6 [+9]",
+        "onHit": "Air Tech+18 [KD+51]",
+        "onCH": "KD+31 [KD+50]",
+        "meter": "",
+        "images": [
+            "GBVSR_Eustace_46X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Eustace_46X_Hitbox1.webp",
+            "GBVSR_Eustace_46X_Hitbox2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "L Flamek Thunder (Charged)",
+        "input": "[4]6[L]",
+        "damage": "1200",
+        "guard": "All",
+        "startup": "25",
+        "active": "",
+        "recovery": "Total 52",
+        "onBlock": "+5 [+16]",
+        "onHit": "KD+36 [KD+58]",
+        "onCH": "KD+38 [KD+57]",
+        "meter": "",
+        "images": [
+            "GBVSR_Eustace_46X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Eustace_46X_Charged_Hitbox1.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "L Rat Race",
+        "input": "623L",
+        "damage": "200, 600",
+        "guard": "All",
+        "startup": "28",
+        "active": "53,2",
+        "recovery": "Total 53",
+        "onBlock": "-4",
+        "onHit": "\u00b10",
+        "onCH": "\u00b10",
+        "meter": "",
+        "images": [
+            "GBVSR_Eustace_623X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Eustace_623X_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "L Slow Kill",
+        "input": "[2]8L",
+        "damage": "700",
+        "guard": "All",
+        "startup": "15~26",
+        "active": "",
+        "recovery": "Total 40~51",
+        "onBlock": "-7 [+10]",
+        "onHit": "-3 [KD+50]",
+        "onCH": "-1 [KD+50]",
+        "meter": "",
+        "images": [
+            "GBVSR_Eustace_28X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Eustace_28X_Hitbox.webp",
+            "GBVSR_Eustace_28X_Hitbox2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "L Slow Kill (Charged)",
+        "input": "[2]8[L]",
+        "damage": "400\u00d72",
+        "guard": "All",
+        "startup": "27",
+        "active": "",
+        "recovery": "Total 52",
+        "onBlock": "+9 [+25]",
+        "onHit": "+13 [KD+65]",
+        "onCH": "+13 [KD+65]",
+        "meter": "",
+        "images": [
+            "GBVSR_Eustace_28X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Eustace_28X_Hitbox.webp",
+            "GBVSR_Eustace_28X_Hitbox2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "L Spreadshot",
+        "input": "214L~U",
+        "damage": "400\u00d73",
+        "guard": "All",
+        "startup": "26",
+        "active": "15",
+        "recovery": "Total 65",
+        "onBlock": "+3 [+18]",
+        "onHit": "+7 [KD+58]",
+        "onCH": "+7 [KD+58]",
+        "meter": "",
+        "images": [
+            "GBVSR_Eustace_214X-U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Eustace_214XU_Hitbox1.webp",
+            "GBVSR_Eustace_214XU_Hitbox2.webp",
+            "GBVSR_Eustace_214XU_Hitbox3.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "L Stunlight",
+        "input": "214L~L",
+        "damage": "700",
+        "guard": "Mid",
+        "startup": "12",
+        "active": "3",
+        "recovery": "15",
+        "onBlock": "-3 [+13]",
+        "onHit": "+1 [KD+53]",
+        "onCH": "KP+38 [KD+53]",
+        "meter": "",
+        "images": [
+            "GBVSR_Eustace_214X-L.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Eustace_214XL_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "L Takedown",
+        "input": "214L~M",
+        "damage": "800",
+        "guard": "Low",
+        "startup": "9",
+        "active": "9",
+        "recovery": "13",
+        "onBlock": "-7",
+        "onHit": "Air Tech+19",
+        "onCH": "KD+34",
+        "meter": "",
+        "images": [
+            "GBVSR_Eustace_214X-M.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Eustace_214XM_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "M Assault Knife",
+        "input": "214M~H",
+        "damage": "400\u00d72",
+        "guard": "Mid, All",
+        "startup": "7",
+        "active": "3,17",
+        "recovery": "27",
+        "onBlock": "-27",
+        "onHit": "KD+30",
+        "onCH": "KD+30",
+        "meter": "",
+        "images": [
+            "GBVSR_Eustace_214X-H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Eustace_214XH_Hitbox1.webp",
+            "GBVSR_Eustace_214XH_Hitbox2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "M Close Combat",
+        "input": "214M",
+        "damage": "500",
+        "guard": "Mid",
+        "startup": "16~25",
+        "active": "6",
+        "recovery": "16",
+        "onBlock": "-7",
+        "onHit": "-3",
+        "onCH": "+1",
+        "meter": "",
+        "images": [
+            "GBVSR_Eustace_214M.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Eustace_214M_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "M Flamek Thunder",
+        "input": "[4]6M",
+        "damage": "800",
+        "guard": "All",
+        "startup": "15~35",
+        "active": "",
+        "recovery": "Total 45~65",
+        "onBlock": "-6 [+9]",
+        "onHit": "Air Tech+18 [KD+51]",
+        "onCH": "KD+31 [KD+50]",
+        "meter": "",
+        "images": [
+            "GBVSR_Eustace_46X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Eustace_46X_Hitbox1.webp",
+            "GBVSR_Eustace_46X_Hitbox2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "M Flamek Thunder (Charged)",
+        "input": "[4]6[M]",
+        "damage": "1200",
+        "guard": "All",
+        "startup": "39",
+        "active": "",
+        "recovery": "Total 66",
+        "onBlock": "+5 [+16]",
+        "onHit": "KD+36 [KD+58]",
+        "onCH": "KD+38 [KD+57]",
+        "meter": "",
+        "images": [
+            "GBVSR_Eustace_46X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Eustace_46X_Charged_Hitbox1.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "M Rat Race",
+        "input": "623M",
+        "damage": "200, 600",
+        "guard": "All",
+        "startup": "24",
+        "active": "28,37Until Hit(28)3",
+        "recovery": "Total 46",
+        "onBlock": "+2 (+33)",
+        "onHit": "+6 (+37)",
+        "onCH": "+8 (+37)",
+        "meter": "",
+        "images": [
+            "GBVSR_Eustace_623X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Eustace_623X_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "M Slow Kill",
+        "input": "[2]8M",
+        "damage": "700",
+        "guard": "All",
+        "startup": "15~26",
+        "active": "",
+        "recovery": "Total 40~51",
+        "onBlock": "-7 [+10]",
+        "onHit": "-3 [KD+50]",
+        "onCH": "-1 [KD+50]",
+        "meter": "",
+        "images": [
+            "GBVSR_Eustace_28X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Eustace_28X_Hitbox.webp",
+            "GBVSR_Eustace_28X_Hitbox2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "M Slow Kill (Charged)",
+        "input": "[2]8[M]",
+        "damage": "400\u00d72",
+        "guard": "All",
+        "startup": "27",
+        "active": "",
+        "recovery": "Total 52",
+        "onBlock": "+9 [+25]",
+        "onHit": "+13 [KD+65]",
+        "onCH": "+13 [KD+65]",
+        "meter": "",
+        "images": [
+            "GBVSR_Eustace_28X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Eustace_28X_Hitbox.webp",
+            "GBVSR_Eustace_28X_Hitbox2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "M Spreadshot",
+        "input": "214M~U",
+        "damage": "400\u00d73",
+        "guard": "All",
+        "startup": "26",
+        "active": "15",
+        "recovery": "Total 65",
+        "onBlock": "+3 [+18]",
+        "onHit": "+7 [KD+58]",
+        "onCH": "+7 [KD+58]",
+        "meter": "",
+        "images": [
+            "GBVSR_Eustace_214X-U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Eustace_214XU_Hitbox1.webp",
+            "GBVSR_Eustace_214XU_Hitbox2.webp",
+            "GBVSR_Eustace_214XU_Hitbox3.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "M Stunlight",
+        "input": "214M~L",
+        "damage": "500",
+        "guard": "Mid",
+        "startup": "12",
+        "active": "3",
+        "recovery": "15",
+        "onBlock": "-3 [+13]",
+        "onHit": "+1 [KD+53]",
+        "onCH": "KD+38 [KD+53]",
+        "meter": "",
+        "images": [
+            "GBVSR_Eustace_214X-L.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Eustace_214XL_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "M Takedown",
+        "input": "214M~M",
+        "damage": "600",
+        "guard": "Low",
+        "startup": "9",
+        "active": "9",
+        "recovery": "13",
+        "onBlock": "-7",
+        "onHit": "Air Tech+19",
+        "onCH": "KD+34",
+        "meter": "",
+        "images": [
+            "GBVSR_Eustace_214X-M.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Eustace_214XM_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Raging Chain",
+        "input": "MH~MH",
+        "damage": "1000",
+        "guard": "Mid",
+        "startup": "13",
+        "active": "5",
+        "recovery": "17",
+        "onBlock": "+4",
+        "onHit": "+15Force Crouch (HKD+63)",
+        "onCH": "+15Force Crouch",
+        "meter": "-2500",
+        "images": [
+            "GBVSR_Eustace_MH-MH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Eustace_MH-MH_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "Raging Strike",
+        "input": "MH",
+        "damage": "1500",
+        "guard": "Guard Crush 45 [52]",
+        "startup": "28 (1)",
+        "active": "1",
+        "recovery": "37",
+        "onBlock": "+8Force Stand [+15Force Stand]",
+        "onHit": "+15Force Crouch (KD+40)",
+        "onCH": "+15Force Crouch",
+        "meter": "\u00b10",
+        "images": [
+            "GBVSR_Eustace_MH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Eustace_MH_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "Stay Tonight",
+        "input": "5U",
+        "damage": "800",
+        "guard": "Mid",
+        "startup": "19",
+        "active": "3",
+        "recovery": "20",
+        "onBlock": "-6",
+        "onHit": "-2",
+        "onCH": "+2",
+        "meter": "",
+        "images": [
+            "GBVSR_Eustace_5U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Eustace_5U_Hitbox.webp",
+            "GBVSR_Eustace_5U_Hitbox_2.webp"
+        ],
+        "type": "unique"
+    },
+    {
+        "name": "Ultimate Assault Knife",
+        "input": "214U",
+        "damage": "700, 100\u00d76, 600(700, 200\u00d73, 100)",
+        "guard": "Mid",
+        "startup": "8True Startup:13",
+        "active": "3\u00d76 (9)",
+        "recovery": "32 (31)",
+        "onBlock": "-25",
+        "onHit": "HKD+46 (HKD+43)",
+        "onCH": "HKD+46 (HKD+43)",
+        "meter": "-5000",
+        "images": [
+            "GBVSR_Eustace_214U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Eustace_214U_Hitbox.webp",
+            "GBVSR_Eustace_214U_Hitbox2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Ultimate Flamek Thunder",
+        "input": "[4]6U",
+        "damage": "500\u00d74, 600",
+        "guard": "All",
+        "startup": "11True Startup:19",
+        "active": "4(5)10(13)",
+        "recovery": "Total 86",
+        "onBlock": "-4 [+1]",
+        "onHit": "HKD+54 [HKD+81]",
+        "onCH": "HKD+54 [HKD+81]",
+        "meter": "-5000",
+        "images": [
+            "GBVSR_Eustace_46U.webp",
+            "GBVSR_Eustace_46U_2.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Eustace_46U_Hitbox.webp",
+            "GBVSR_Eustace_46U_Hitbox2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Ultimate Rat Race",
+        "input": "623U",
+        "damage": "500\u00d73",
+        "guard": "All",
+        "startup": "11~97",
+        "active": "13~36",
+        "recovery": "Total20True Total:35",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "-5000",
+        "images": [
+            "GBVSR_Eustace_623U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Eustace_623U_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Ultimate Slow Kill",
+        "input": "[2]8U",
+        "damage": "1600, 400\u00d72",
+        "guard": "All",
+        "startup": "13True Startup:23",
+        "active": "P(2)P(19)P",
+        "recovery": "Total 65",
+        "onBlock": "\u00b10 [+1]",
+        "onHit": "HKD+57 [HKD+74]",
+        "onCH": "HKD+57 [HKD+74]",
+        "meter": "-5000",
+        "images": [
+            "GBVSR_Eustace_28U.webp",
+            "GBVSR_Eustace_28U_2.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Eustace_28X_Hitbox.webp",
+            "GBVSR_Eustace_28X_Hitbox2.webp"
+        ],
+        "type": "special"
+    }
+]

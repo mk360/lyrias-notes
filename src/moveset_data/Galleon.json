@@ -1,0 +1,1096 @@
+[
+    {
+        "name": "",
+        "input": "2H",
+        "damage": "1300",
+        "guard": "Mid",
+        "startup": "11",
+        "active": "6",
+        "recovery": "22",
+        "onBlock": "-11",
+        "onHit": "-7",
+        "onCH": "+1",
+        "meter": "",
+        "images": [
+            "GBVSR Galleon 2H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR Galleon 2H Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "2L",
+        "damage": "400",
+        "guard": "Mid",
+        "startup": "6",
+        "active": "3",
+        "recovery": "8",
+        "onBlock": "\u00b10",
+        "onHit": "+4",
+        "onCH": "+6",
+        "meter": "",
+        "images": [
+            "GBVSR Galleon 2L.webp"
+        ],
+        "hitboxes": [
+            "GBVSR Galleon 2L Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "2M",
+        "damage": "900",
+        "guard": "Low",
+        "startup": "8",
+        "active": "6",
+        "recovery": "13",
+        "onBlock": "-4",
+        "onHit": "\u00b10",
+        "onCH": "+4",
+        "meter": "",
+        "images": [
+            "GBVSR Galleon 2M.webp"
+        ],
+        "hitboxes": [
+            "GBVSR Galleon 2M Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "2U",
+        "damage": "600, 200\u00d72",
+        "guard": "Low, Mid\u00d72",
+        "startup": "8",
+        "active": "2\u00d73",
+        "recovery": "26",
+        "onBlock": "-13",
+        "onHit": "HKD+42",
+        "onCH": "HKD+42",
+        "meter": "",
+        "images": [
+            "GBVSR Galleon 2U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Galleon_2U_Hitbox.webp",
+            "GBVSR_Galleon_2U_Hitbox_2.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "66H",
+        "damage": "1500",
+        "guard": "Mid",
+        "startup": "15",
+        "active": "6",
+        "recovery": "40",
+        "onBlock": "-23",
+        "onHit": "HKD+44",
+        "onCH": "HKD+48",
+        "meter": "",
+        "images": [
+            "GBVSR Galleon 66H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR Galleon 66H Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "66L",
+        "damage": "600",
+        "guard": "Mid",
+        "startup": "8",
+        "active": "3",
+        "recovery": "10 [15]",
+        "onBlock": "+2",
+        "onHit": "+6",
+        "onCH": "+8",
+        "meter": "+480",
+        "images": [
+            "GBVSR_Galleon_66L.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Galleon_66L_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "66M",
+        "damage": "1100",
+        "guard": "Low",
+        "startup": "12",
+        "active": "4",
+        "recovery": "21",
+        "onBlock": "-8",
+        "onHit": "KD+24",
+        "onCH": "HKD+49",
+        "meter": "",
+        "images": [
+            "GBVSR Galleon 66M.webp"
+        ],
+        "hitboxes": [
+            "GBVSR Galleon 66M Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.H",
+        "damage": "1600",
+        "guard": "Mid",
+        "startup": "11",
+        "active": "4",
+        "recovery": "20",
+        "onBlock": "-5",
+        "onHit": "-1",
+        "onCH": "+11",
+        "meter": "",
+        "images": [
+            "GBVSR Galleon cH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR Galleon cH Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.L",
+        "damage": "600",
+        "guard": "Mid",
+        "startup": "6",
+        "active": "3",
+        "recovery": "6",
+        "onBlock": "+4",
+        "onHit": "+8",
+        "onCH": "+10",
+        "meter": "",
+        "images": [
+            "GBVSR Galleon cL.webp"
+        ],
+        "hitboxes": [
+            "GBVSR Galleon cL Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.M",
+        "damage": "1100",
+        "guard": "Mid",
+        "startup": "7",
+        "active": "3",
+        "recovery": "18",
+        "onBlock": "-6",
+        "onHit": "-2",
+        "onCH": "+2",
+        "meter": "",
+        "images": [
+            "GBVSR Galleon cM.webp"
+        ],
+        "hitboxes": [
+            "GBVSR Galleon cM Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.XX",
+        "damage": "700",
+        "guard": "Mid",
+        "startup": "9",
+        "active": "3",
+        "recovery": "15",
+        "onBlock": "-3",
+        "onHit": "+1",
+        "onCH": "+5",
+        "meter": "+480",
+        "images": [
+            "GBVSR_Galleon_cXX.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Galleon_cXX_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.XX6H",
+        "damage": "1000",
+        "guard": "High",
+        "startup": "18",
+        "active": "3",
+        "recovery": "22",
+        "onBlock": "-4",
+        "onHit": "+1Force Crouch",
+        "onCH": "HKD+32",
+        "meter": "+480",
+        "images": [
+            "GBVSR_Galleon_cXX6H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Galleon_cXX6H_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.XX6M",
+        "damage": "1000",
+        "guard": "Low",
+        "startup": "12",
+        "active": "3",
+        "recovery": "16",
+        "onBlock": "-4",
+        "onHit": "KD+30",
+        "onCH": "HKD+55",
+        "meter": "+480",
+        "images": [
+            "GBVSR_Galleon_cXX6M.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Galleon_cXX6M_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.XXX",
+        "damage": "1000",
+        "guard": "Mid",
+        "startup": "12",
+        "active": "3",
+        "recovery": "18",
+        "onBlock": "-4",
+        "onHit": "\u00b10",
+        "onCH": "+8",
+        "meter": "+600",
+        "images": [
+            "GBVSR_Galleon_cXXX.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Galleon_cXXX_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "f.H",
+        "damage": "1300",
+        "guard": "Mid",
+        "startup": "13",
+        "active": "7",
+        "recovery": "12",
+        "onBlock": "\u00b10",
+        "onHit": "+4",
+        "onCH": "+16",
+        "meter": "",
+        "images": [
+            "GBVSR Galleon fH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR Galleon fH Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "f.L",
+        "damage": "600",
+        "guard": "Mid",
+        "startup": "6",
+        "active": "3",
+        "recovery": "9",
+        "onBlock": "+1",
+        "onHit": "+5",
+        "onCH": "+7",
+        "meter": "",
+        "images": [
+            "GBVSR Galleon fL.webp"
+        ],
+        "hitboxes": [
+            "GBVSR Galleon fL Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "f.M",
+        "damage": "900",
+        "guard": "Mid",
+        "startup": "8",
+        "active": "6",
+        "recovery": "15",
+        "onBlock": "-6",
+        "onHit": "-2",
+        "onCH": "+2",
+        "meter": "",
+        "images": [
+            "GBVSR Galleon fM.webp"
+        ],
+        "hitboxes": [
+            "GBVSR Galleon fM Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "j.H",
+        "damage": "1000",
+        "guard": "High\/Air",
+        "startup": "11",
+        "active": "10",
+        "recovery": "Until L+1",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR Galleon jH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR Galleon jH Hitbox.webp",
+            "GBVSR Galleon jH Hitbox 2.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "j.L",
+        "damage": "600",
+        "guard": "High\/Air",
+        "startup": "5",
+        "active": "Until L",
+        "recovery": "Until L+1",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR Galleon jL.webp"
+        ],
+        "hitboxes": [
+            "GBVSR Galleon jL Hitbox.webp",
+            "GBVSR Galleon jL Hitbox 2.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "j.M",
+        "damage": "800",
+        "guard": "High\/Air",
+        "startup": "6",
+        "active": "6",
+        "recovery": "Until L+1",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR Galleon jM.webp"
+        ],
+        "hitboxes": [
+            "GBVSR Galleon jM Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "j.U",
+        "damage": "300x3",
+        "guard": "High\/Air, Midx2",
+        "startup": "11",
+        "active": "3\u00d7Until L",
+        "recovery": "1",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR Galleon jU.webp"
+        ],
+        "hitboxes": [
+            "GBVSR Galleon jU Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "Air Throw",
+        "input": "j.LU",
+        "damage": "2500",
+        "guard": "Airthrow",
+        "startup": "5",
+        "active": "5",
+        "recovery": "Until L+6",
+        "onBlock": "",
+        "onHit": "HKD \u2248+45",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR Galleon AirThrow.webp"
+        ],
+        "hitboxes": [
+            "GBVSR Galleon AirThrow Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "Brave Counter",
+        "input": "BC",
+        "damage": "500",
+        "guard": "Mid",
+        "startup": "10 [18]",
+        "active": "3 [2]",
+        "recovery": "19 [35]",
+        "onBlock": "-2",
+        "onHit": "Air Tech+21 [+5]",
+        "onCH": "HKD+54 [HKD+43]",
+        "meter": "\u00b10",
+        "images": [
+            "GBVSR_Galleon_BC.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Galleon_BC_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "Ground Throw",
+        "input": "LU",
+        "damage": "2500",
+        "guard": "Throw",
+        "startup": "4",
+        "active": "3",
+        "recovery": "26",
+        "onBlock": "",
+        "onHit": "HKD+37\/HKD+43",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR Galleon Throw.webp",
+            "GBVSR Galleon BackThrow.webp"
+        ],
+        "hitboxes": [
+            "GBVSR Galleon Throw Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "H Bedrock Blast",
+        "input": "623H",
+        "damage": "800, 1600 [400x3]",
+        "guard": "Airthrow [All]",
+        "startup": "9",
+        "active": "15[(16)22]",
+        "recovery": "10",
+        "onBlock": "[+24]",
+        "onHit": "KD+39 [+34Force Crouch]",
+        "onCH": "KD+39 [+34Force Crouch]",
+        "meter": "",
+        "images": [
+            "GBVSR Galleon 623X.webp",
+            "GBVSR Galleon 623H_2.webp"
+        ],
+        "hitboxes": [
+            "GBVSR Galleon 623X Hitbox.webp",
+            "GBVSR Galleon 623H_2_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "H Meteorite",
+        "input": "22H",
+        "damage": "",
+        "guard": "",
+        "startup": "17",
+        "active": "",
+        "recovery": "Total 30 [Total 48]",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR Galleon 22X.webp",
+            "GBVSR Galleon 22X_LVL1.webp",
+            "GBVSR Galleon 22X_LVL2.webp",
+            "GBVSR Galleon 22X_LVL3.webp",
+            "GBVSR Galleon 22X_LVL4.webp"
+        ],
+        "hitboxes": [
+            "GBVSR Galleon 22X Hitbox.webp",
+            "GBVSR Galleon 22XU lvl 0 Hitbox.webp",
+            "GBVSR Galleon 22XU lvl 1 Hitbox.webp",
+            "GBVSR Galleon 22XU lvl 2 Hitbox.webp",
+            "GBVSR Galleon 22XU lvl 3 Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "H Muddy Embrace",
+        "input": "j.214H",
+        "damage": "200\u00d714, 300",
+        "guard": "Throw\/Airthrow",
+        "startup": "13",
+        "active": "Until L",
+        "recovery": "41",
+        "onBlock": "",
+        "onHit": "KD+34",
+        "onCH": "KD+34",
+        "meter": "",
+        "images": [
+            "GBVSR Galleon j214X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR Galleon j214X Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "H Primordial Grasp",
+        "input": "632146H",
+        "damage": "3200, [300~900]",
+        "guard": "Throw",
+        "startup": "21",
+        "active": "6",
+        "recovery": "47",
+        "onBlock": "",
+        "onHit": "HKD+54 [HKD+63]",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR Galleon 632146X.webp",
+            "GBVSR Galleon 632146X 2.webp"
+        ],
+        "hitboxes": [
+            "GBVSR Galleon 632146X Hitbox.webp",
+            "GBVSR Galleon 22XU lvl 0 Hitbox.webp",
+            "GBVSR Galleon 22XU lvl 1 Hitbox.webp",
+            "GBVSR Galleon 22XU lvl 2 Hitbox.webp",
+            "GBVSR Galleon 22XU lvl 3 Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "H Will of the Earth",
+        "input": "236H",
+        "damage": "1500",
+        "guard": "Mid",
+        "startup": "15",
+        "active": "9",
+        "recovery": "22",
+        "onBlock": "+4",
+        "onHit": "KD+32~+54",
+        "onCH": "KD+36~+58",
+        "meter": "",
+        "images": [
+            "GBVSR Galleon 236H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR Galleon 236H Hitbox.webp",
+            "GBVSR Galleon 236H Hitbox 2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "L Bedrock Blast",
+        "input": "623L",
+        "damage": "1600",
+        "guard": "Airthrow",
+        "startup": "6",
+        "active": "6",
+        "recovery": "28",
+        "onBlock": "",
+        "onHit": "KD+30",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR Galleon 623X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR Galleon 623X Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "L Meteorite",
+        "input": "22L",
+        "damage": "",
+        "guard": "",
+        "startup": "17",
+        "active": "",
+        "recovery": "Total 30 [Total 48]",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR Galleon 22X.webp",
+            "GBVSR Galleon 22X_LVL1.webp",
+            "GBVSR Galleon 22X_LVL2.webp",
+            "GBVSR Galleon 22X_LVL3.webp",
+            "GBVSR Galleon 22X_LVL4.webp"
+        ],
+        "hitboxes": [
+            "GBVSR Galleon 22X Hitbox.webp",
+            "GBVSR Galleon 22XU lvl 0 Hitbox.webp",
+            "GBVSR Galleon 22XU lvl 1 Hitbox.webp",
+            "GBVSR Galleon 22XU lvl 2 Hitbox.webp",
+            "GBVSR Galleon 22XU lvl 3 Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "L Muddy Embrace",
+        "input": "j.214L",
+        "damage": "300\u00d79",
+        "guard": "Throw\/Airthrow",
+        "startup": "13",
+        "active": "Until L",
+        "recovery": "41",
+        "onBlock": "",
+        "onHit": "KD+34",
+        "onCH": "KD+34",
+        "meter": "",
+        "images": [
+            "GBVSR Galleon j214X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR Galleon j214X Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "L Primordial Grasp",
+        "input": "632146L",
+        "damage": "2800, [300~900]",
+        "guard": "Throw",
+        "startup": "21",
+        "active": "6",
+        "recovery": "47",
+        "onBlock": "",
+        "onHit": "HKD+19 [HKD+29]",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR Galleon 632146X.webp",
+            "GBVSR Galleon 632146X 2.webp"
+        ],
+        "hitboxes": [
+            "GBVSR Galleon 632146X Hitbox.webp",
+            "GBVSR Galleon 22XU lvl 0 Hitbox.webp",
+            "GBVSR Galleon 22XU lvl 1 Hitbox.webp",
+            "GBVSR Galleon 22XU lvl 2 Hitbox.webp",
+            "GBVSR Galleon 22XU lvl 3 Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "L Will of the Earth",
+        "input": "236L",
+        "damage": "1000",
+        "guard": "Mid",
+        "startup": "16",
+        "active": "5",
+        "recovery": "18 [25]",
+        "onBlock": "-2",
+        "onHit": "Air Tech+31",
+        "onCH": "Air Tech+31",
+        "meter": "",
+        "images": [
+            "GBVSR Galleon 236L.webp"
+        ],
+        "hitboxes": [
+            "GBVSR Galleon 236L Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "M Bedrock Blast",
+        "input": "623M",
+        "damage": "2000",
+        "guard": "Airthrow",
+        "startup": "9",
+        "active": "15",
+        "recovery": "31",
+        "onBlock": "",
+        "onHit": "KD+30",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR Galleon 623X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR Galleon 623X Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "M Meteorite",
+        "input": "22M",
+        "damage": "",
+        "guard": "",
+        "startup": "17",
+        "active": "",
+        "recovery": "Total 30 [Total 48]",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR Galleon 22X.webp",
+            "GBVSR Galleon 22X_LVL1.webp",
+            "GBVSR Galleon 22X_LVL2.webp",
+            "GBVSR Galleon 22X_LVL3.webp",
+            "GBVSR Galleon 22X_LVL4.webp"
+        ],
+        "hitboxes": [
+            "GBVSR Galleon 22X Hitbox.webp",
+            "GBVSR Galleon 22XU lvl 0 Hitbox.webp",
+            "GBVSR Galleon 22XU lvl 1 Hitbox.webp",
+            "GBVSR Galleon 22XU lvl 2 Hitbox.webp",
+            "GBVSR Galleon 22XU lvl 3 Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "M Muddy Embrace",
+        "input": "j.214M",
+        "damage": "300\u00d79",
+        "guard": "Throw\/Airthrow",
+        "startup": "13",
+        "active": "Until L",
+        "recovery": "41",
+        "onBlock": "",
+        "onHit": "KD+34",
+        "onCH": "KD+34",
+        "meter": "",
+        "images": [
+            "GBVSR Galleon j214X.webp",
+            "GBVSR Galleon j214X_2.webp"
+        ],
+        "hitboxes": [
+            "GBVSR Galleon j214X Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "M Primordial Grasp",
+        "input": "632146M",
+        "damage": "3200, [300~900]",
+        "guard": "Throw",
+        "startup": "21",
+        "active": "6",
+        "recovery": "47",
+        "onBlock": "",
+        "onHit": "HKD+37",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR Galleon 632146X.webp",
+            "GBVSR Galleon 632146X 2.webp"
+        ],
+        "hitboxes": [
+            "GBVSR Galleon 632146X Hitbox.webp",
+            "GBVSR Galleon 22XU lvl 0 Hitbox.webp",
+            "GBVSR Galleon 22XU lvl 1 Hitbox.webp",
+            "GBVSR Galleon 22XU lvl 2 Hitbox.webp",
+            "GBVSR Galleon 22XU lvl 3 Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "M Will of the Earth",
+        "input": "236M",
+        "damage": "1200",
+        "guard": "Mid",
+        "startup": "30",
+        "active": "9",
+        "recovery": "14",
+        "onBlock": "+4",
+        "onHit": "Air Tech+41",
+        "onCH": "KD+61",
+        "meter": "",
+        "images": [
+            "GBVSR Galleon 236M.webp"
+        ],
+        "hitboxes": [
+            "GBVSR Galleon 236M Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Raging Chain",
+        "input": "MH~MH",
+        "damage": "1000",
+        "guard": "Mid",
+        "startup": "13",
+        "active": "5",
+        "recovery": "17",
+        "onBlock": "",
+        "onHit": "+15Force Crouch (HKD+63)",
+        "onCH": "",
+        "meter": "-2500",
+        "images": [
+            "GBVSR_Galleon_MH-MH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Galleon_MH-MH_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "Raging Strike",
+        "input": "MH",
+        "damage": "1500",
+        "guard": "Guard Crush 45 [52]",
+        "startup": "28 (1)",
+        "active": "1",
+        "recovery": "37",
+        "onBlock": "+8Force Stand [+15Force Stand]",
+        "onHit": "+15Force Crouch (KD+40)",
+        "onCH": "+15Force Crouch",
+        "meter": "\u00b10",
+        "images": [
+            "GBVSR_Galleon_MH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Galleon_MH_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "Seism",
+        "input": "5U",
+        "damage": "0, [900~1500]",
+        "guard": "Low, [Mid]",
+        "startup": "18",
+        "active": "2 [2(10)6]",
+        "recovery": "41 [25]",
+        "onBlock": "-5 [+16]",
+        "onHit": "Air Tech+39 [HKD+77]",
+        "onCH": "KD+56 [HKD+77]",
+        "meter": "",
+        "images": [
+            "GBVSR Galleon 5U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR Galleon 5U Hitbox.webp",
+            "GBVSR Galleon 22XU lvl 0 Hitbox.webp",
+            "GBVSR Galleon 22XU lvl 1 Hitbox.webp",
+            "GBVSR Galleon 22XU lvl 2 Hitbox.webp",
+            "GBVSR Galleon 22XU lvl 3 Hitbox.webp"
+        ],
+        "type": "unique"
+    },
+    {
+        "name": "Seism (Charged)",
+        "input": "5[U]",
+        "damage": "0, [900~1500]",
+        "guard": "Low, [Mid]",
+        "startup": "33",
+        "active": "2 [2(10)6]",
+        "recovery": "41 [25]",
+        "onBlock": "-5 [+16]",
+        "onHit": "Crumple+79 [Crumple+84]",
+        "onCH": "Crumple+83 [Crumple+84]",
+        "meter": "",
+        "images": [
+            "GBVSR Galleon 5U hold.webp",
+            "GBVSR Galleon 22XU.webp"
+        ],
+        "hitboxes": [
+            "GBVSR Galleon 5U hold Hitbox.webp",
+            "GBVSR Galleon 22XU lvl 0 Hitbox.webp",
+            "GBVSR Galleon 22XU lvl 1 Hitbox.webp",
+            "GBVSR Galleon 22XU lvl 2 Hitbox.webp",
+            "GBVSR Galleon 22XU lvl 3 Hitbox.webp"
+        ],
+        "type": "unique"
+    },
+    {
+        "name": "Swat",
+        "input": "236236U",
+        "damage": "6240",
+        "guard": "Throw",
+        "startup": "10+1",
+        "active": "2",
+        "recovery": "69",
+        "onBlock": "",
+        "onHit": "HKD+43",
+        "onCH": "",
+        "meter": "-10000",
+        "images": [
+            "GBVSR Galleon 236236U Start.webp",
+            "GBVSR Galleon 236236U.webp",
+            "GBVSR Galleon 236236U Finish.webp"
+        ],
+        "hitboxes": [
+            "GBVSR Galleon 236236U Hitbox.webp"
+        ],
+        "type": "super"
+    },
+    {
+        "name": "Terrestrial Pulse (Projectile)",
+        "input": "214214H",
+        "damage": "700, 200\u00d79",
+        "guard": "All",
+        "startup": "6+21",
+        "active": "80",
+        "recovery": "Total 71",
+        "onBlock": "+59",
+        "onHit": "HKD+138",
+        "onCH": "HKD+138",
+        "meter": "-10000",
+        "images": [
+            "GBVSR Galleon 214214H.webp",
+            "GBVSR Galleon 214214H Finish.webp"
+        ],
+        "hitboxes": [
+            "GBVSR Galleon 214214H Hitbox.webp",
+            "GBVSR Galleon 214214H 2 Hitbox.webp"
+        ],
+        "type": "super"
+    },
+    {
+        "name": "Terrestrial Pulse (Throw)",
+        "input": "236236H",
+        "damage": "0, 400\u00d79, 900",
+        "guard": "Throw",
+        "startup": "10+1",
+        "active": "2",
+        "recovery": "50",
+        "onBlock": "",
+        "onHit": "HKD+43",
+        "onCH": "",
+        "meter": "-10000",
+        "images": [
+            "GBVSR Galleon 236236H.webp",
+            "GBVSR Galleon 236236H Finish.webp"
+        ],
+        "hitboxes": [
+            "GBVSR Galleon 236236H Hitbox.webp"
+        ],
+        "type": "super"
+    },
+    {
+        "name": "Ultimate Bedrock Blast",
+        "input": "623U",
+        "damage": "500\u00d72, 1000 [500\u00d72]",
+        "guard": "Mid, Airthrow",
+        "startup": "8True Startup:13",
+        "active": "6(16)11 [3(9)11]",
+        "recovery": "31",
+        "onBlock": "-29",
+        "onHit": "HKD+56",
+        "onCH": "HKD+56",
+        "meter": "-5000",
+        "images": [
+            "GBVSR Galleon 623U.webp",
+            "GBVSR Galleon 623U_2.webp"
+        ],
+        "hitboxes": [
+            "GBVSR Galleon 623U Hitbox.webp",
+            "GBVSR Galleon 623U Hitbox_2.webp",
+            "GBVSR Galleon 623U 2 Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Ultimate Meteorite",
+        "input": "22U",
+        "damage": "1600\/1800\/2000\/2200",
+        "guard": "All",
+        "startup": "19True Startup:34",
+        "active": "6",
+        "recovery": "27",
+        "onBlock": "+11",
+        "onHit": "HKD+75",
+        "onCH": "HKD+75",
+        "meter": "-5000",
+        "images": [
+            "GBVSR Galleon 22U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR Galleon 22XU lvl 0 Hitbox.webp",
+            "GBVSR Galleon 22XU lvl 1 Hitbox.webp",
+            "GBVSR Galleon 22XU lvl 2 Hitbox.webp",
+            "GBVSR Galleon 22XU lvl 3 Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Ultimate Muddy Embrace",
+        "input": "j.214U",
+        "damage": "200\u00d714, 300",
+        "guard": "Throw\/Airthrow",
+        "startup": "13True Startup:23",
+        "active": "Until L",
+        "recovery": "41",
+        "onBlock": "",
+        "onHit": "HKD+55",
+        "onCH": "",
+        "meter": "-5000",
+        "images": [
+            "GBVSR Galleon j214U.webp",
+            "GBVSR Galleon j214X 2.webp"
+        ],
+        "hitboxes": [
+            "GBVSR Galleon j214U Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Ultimate Primordial Grasp",
+        "input": "632146U",
+        "damage": "3600",
+        "guard": "Throw",
+        "startup": "12True Startup:20",
+        "active": "15",
+        "recovery": "44",
+        "onBlock": "",
+        "onHit": "HKD+54",
+        "onCH": "",
+        "meter": "-5000",
+        "images": [
+            "GBVSR Galleon 632146U.webp",
+            "GBVSR Galleon 632146U_2.webp"
+        ],
+        "hitboxes": [
+            "GBVSR Galleon 632146U Hitbox.webp",
+            "GBVSR Galleon 22XU lvl 0 Hitbox.webp",
+            "GBVSR Galleon 22XU lvl 1 Hitbox.webp",
+            "GBVSR Galleon 22XU lvl 2 Hitbox.webp",
+            "GBVSR Galleon 22XU lvl 3 Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Ultimate Will of the Earth",
+        "input": "236U",
+        "damage": "2000",
+        "guard": "Mid",
+        "startup": "16True Startup:29",
+        "active": "7",
+        "recovery": "23",
+        "onBlock": "-4",
+        "onHit": "Crumple+79",
+        "onCH": "Crumple+83",
+        "meter": "-5000",
+        "images": [
+            "GBVSR Galleon 236U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR Galleon 236U Hitbox.webp",
+            "GBVSR Galleon 236U Hitbox 2.webp"
+        ],
+        "type": "special"
+    }
+]

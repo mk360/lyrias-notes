@@ -1,0 +1,1117 @@
+[
+    {
+        "name": "",
+        "input": "2H",
+        "damage": "650\u00d72",
+        "guard": "Mid",
+        "startup": "11",
+        "active": "2\u00d72",
+        "recovery": "23",
+        "onBlock": "-8",
+        "onHit": "KD+38",
+        "onCH": "KD+38 [KD+46]",
+        "meter": "",
+        "images": [
+            "GBVSR_Ladiva_2H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Ladiva_2H_Hitbox1.webp",
+            "GBVSR_Ladiva_2H_Hitbox2.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "2L",
+        "damage": "400",
+        "guard": "Mid",
+        "startup": "6",
+        "active": "3",
+        "recovery": "8",
+        "onBlock": "\u00b10",
+        "onHit": "+4",
+        "onCH": "+6",
+        "meter": "",
+        "images": [
+            "GBVSR_Ladiva_2L.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Ladiva_2L_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "2M",
+        "damage": "900",
+        "guard": "Low",
+        "startup": "8",
+        "active": "5",
+        "recovery": "12",
+        "onBlock": "-2",
+        "onHit": "+2",
+        "onCH": "+6",
+        "meter": "",
+        "images": [
+            "GBVSR_Ladiva_2M.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Ladiva_2M_Hitbox1.webp",
+            "GBVSR_Ladiva_2M_Hitbox2.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "2U",
+        "damage": "1200",
+        "guard": "Low",
+        "startup": "7",
+        "active": "6",
+        "recovery": "28",
+        "onBlock": "-19",
+        "onHit": "HKD+36",
+        "onCH": "HKD+40",
+        "meter": "",
+        "images": [
+            "GBVSR_Ladiva_2U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Ladiva_2U_Hitbox1.webp",
+            "GBVSR_Ladiva_2U_Hitbox2.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "66H",
+        "damage": "1500",
+        "guard": "Mid",
+        "startup": "20",
+        "active": "6",
+        "recovery": "16",
+        "onBlock": "-3",
+        "onHit": "+1",
+        "onCH": "KD+40~+51",
+        "meter": "",
+        "images": [
+            "GBVSR_Ladiva_66H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Ladiva_66H_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "66L",
+        "damage": "600",
+        "guard": "Mid",
+        "startup": "8",
+        "active": "3",
+        "recovery": "10 [15]",
+        "onBlock": "+2",
+        "onHit": "+6",
+        "onCH": "+8",
+        "meter": "+480",
+        "images": [
+            "GBVSR_Ladiva_66L.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Ladiva_66L_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "66M",
+        "damage": "1100",
+        "guard": "High",
+        "startup": "22",
+        "active": "9",
+        "recovery": "22",
+        "onBlock": "-14",
+        "onHit": "Air Tech+12",
+        "onCH": "HKD+49",
+        "meter": "",
+        "images": [
+            "GBVSR_Ladiva_66M.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Ladiva_66M_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.H",
+        "damage": "1800",
+        "guard": "Mid",
+        "startup": "12",
+        "active": "6",
+        "recovery": "15",
+        "onBlock": "-2",
+        "onHit": "+2",
+        "onCH": "+14",
+        "meter": "",
+        "images": [
+            "GBVSR_Ladiva_cH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Ladiva_cH_Hitbox1.webp",
+            "GBVSR_Ladiva_cH_Hitbox2.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.L",
+        "damage": "600",
+        "guard": "Mid",
+        "startup": "6",
+        "active": "3",
+        "recovery": "6",
+        "onBlock": "+4",
+        "onHit": "+8",
+        "onCH": "+10",
+        "meter": "",
+        "images": [
+            "GBVSR_Ladiva_cL.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Ladiva_cL_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.M",
+        "damage": "1100",
+        "guard": "Mid",
+        "startup": "7",
+        "active": "1",
+        "recovery": "14",
+        "onBlock": "\u00b10",
+        "onHit": "+4",
+        "onCH": "+8",
+        "meter": "",
+        "images": [
+            "GBVSR_Ladiva_cM.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Ladiva_cM_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.XX",
+        "damage": "700",
+        "guard": "Mid",
+        "startup": "9",
+        "active": "3",
+        "recovery": "15",
+        "onBlock": "-3",
+        "onHit": "+1",
+        "onCH": "+5",
+        "meter": "+480",
+        "images": [
+            "GBVSR_Ladiva_cXX.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Ladiva_cXX_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.XX6H",
+        "damage": "1000",
+        "guard": "High",
+        "startup": "18",
+        "active": "3",
+        "recovery": "22",
+        "onBlock": "-4",
+        "onHit": "+1Force Crouch",
+        "onCH": "HKD+32",
+        "meter": "+480",
+        "images": [
+            "GBVSR_Ladiva_cXX6H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Ladiva_cXX6H_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.XX6M",
+        "damage": "1000",
+        "guard": "Low",
+        "startup": "12",
+        "active": "3",
+        "recovery": "16",
+        "onBlock": "-4",
+        "onHit": "KD+30",
+        "onCH": "HKD+55",
+        "meter": "+480",
+        "images": [
+            "GBVSR_Ladiva_cXX6M.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Ladiva_cXX6M_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.XXX",
+        "damage": "1000",
+        "guard": "Mid",
+        "startup": "12",
+        "active": "3",
+        "recovery": "18",
+        "onBlock": "-4",
+        "onHit": "\u00b10Force Stand",
+        "onCH": "+8",
+        "meter": "+600",
+        "images": [
+            "GBVSR_Ladiva_cXXX.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Ladiva_cXXX_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "f.H",
+        "damage": "1400",
+        "guard": "Mid",
+        "startup": "13",
+        "active": "6",
+        "recovery": "17",
+        "onBlock": "-6",
+        "onHit": "-2",
+        "onCH": "+6",
+        "meter": "",
+        "images": [
+            "GBVSR_Ladiva_fH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Ladiva_fH_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "f.L",
+        "damage": "600",
+        "guard": "Mid",
+        "startup": "6",
+        "active": "3",
+        "recovery": "8",
+        "onBlock": "+2",
+        "onHit": "+6",
+        "onCH": "+8",
+        "meter": "",
+        "images": [
+            "GBVSR_Ladiva_fL.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Ladiva_fL_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "f.M",
+        "damage": "900",
+        "guard": "Mid",
+        "startup": "8",
+        "active": "3",
+        "recovery": "18",
+        "onBlock": "-6",
+        "onHit": "-2",
+        "onCH": "+2",
+        "meter": "",
+        "images": [
+            "GBVSR_Ladiva_fM.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Ladiva_fM_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "j.H",
+        "damage": "1100",
+        "guard": "High\/Air",
+        "startup": "11",
+        "active": "8",
+        "recovery": "Until L+1",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Ladiva_jH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Ladiva_jH_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "j.L",
+        "damage": "600",
+        "guard": "High\/Air",
+        "startup": "5",
+        "active": "6",
+        "recovery": "Until L+1",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Ladiva_jL.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Ladiva_jL_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "j.M",
+        "damage": "800",
+        "guard": "High\/Air",
+        "startup": "7",
+        "active": "10",
+        "recovery": "Until L+1",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Ladiva_jM.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Ladiva_jM_Hitbox1.webp",
+            "GBVSR_Ladiva_jM_Hitbox2.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "j.U",
+        "damage": "1000",
+        "guard": "High\/Air",
+        "startup": "12",
+        "active": "15",
+        "recovery": "Until L+1",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Ladiva_jU.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Ladiva_jU_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "Air Throw",
+        "input": "j.LU",
+        "damage": "2500",
+        "guard": "Throw",
+        "startup": "5",
+        "active": "5",
+        "recovery": "Until L+6",
+        "onBlock": "",
+        "onHit": "HKD+56",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Ladiva_AirThrow.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Ladiva_AirThrow_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "Brave Counter",
+        "input": "BC",
+        "damage": "500",
+        "guard": "Mid",
+        "startup": "10 [18]",
+        "active": "3 [2]",
+        "recovery": "19 [35]",
+        "onBlock": "-2",
+        "onHit": "Air Tech+21 [+5]",
+        "onCH": "HKD+54 [HKD+43]",
+        "meter": "\u00b10",
+        "images": [
+            "GBVSR_Ladiva_BC.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Ladiva_BC_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "Ground Throw",
+        "input": "LU",
+        "damage": "2500",
+        "guard": "Throw",
+        "startup": "4",
+        "active": "3",
+        "recovery": "26",
+        "onBlock": "",
+        "onHit": "+3\/HKD+43",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Ladiva_Throw.webp",
+            "GBVSR_Ladiva_BackThrow.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Ladiva_Throw_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "H Devoted Body Slam",
+        "input": "623H",
+        "damage": "1000, 2000",
+        "guard": "Airthrow",
+        "startup": "10",
+        "active": "5",
+        "recovery": "22",
+        "onBlock": "",
+        "onHit": "KD+27",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Ladiva_623X_Whiff.webp",
+            "GBVSR_Ladiva_623L.webp",
+            "GBVSR_Ladiva_623M.webp",
+            "GBVSR_Ladiva_623H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Ladiva_623X_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "H Elegant Lariat",
+        "input": "214H",
+        "damage": "1800",
+        "guard": "Mid",
+        "startup": "18",
+        "active": "6",
+        "recovery": "21",
+        "onBlock": "+5",
+        "onHit": "KD+41",
+        "onCH": "KD+45",
+        "meter": "",
+        "images": [
+            "GBVSR_Ladiva_214X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Ladiva_214X_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "H Headbutt of Love (1)",
+        "input": "236H",
+        "damage": "800",
+        "guard": "Mid",
+        "startup": "17",
+        "active": "6",
+        "recovery": "11",
+        "onBlock": "+3",
+        "onHit": "KD+37",
+        "onCH": "KD+41",
+        "meter": "",
+        "images": [
+            "GBVSR_Ladiva_236X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Ladiva_236M_Hitbox1.webp",
+            "GBVSR_Ladiva_236M_Hitbox2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "H Headbutt of Love (2)",
+        "input": "236H~6H",
+        "damage": "800",
+        "guard": "Mid",
+        "startup": "15",
+        "active": "6",
+        "recovery": "15",
+        "onBlock": "-2",
+        "onHit": "KD+33",
+        "onCH": "KD+37",
+        "meter": "",
+        "images": [
+            "GBVSR_Ladiva_236X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Ladiva_236M_Hitbox1.webp",
+            "GBVSR_Ladiva_236M_Hitbox2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "H Headbutt of Love (3)",
+        "input": "236H~6H~6H",
+        "damage": "1200",
+        "guard": "Mid",
+        "startup": "15",
+        "active": "6",
+        "recovery": "17",
+        "onBlock": "-4",
+        "onHit": "KD+36",
+        "onCH": "KD+40",
+        "meter": "",
+        "images": [
+            "GBVSR_Ladiva_236X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Ladiva_236M_Hitbox1.webp",
+            "GBVSR_Ladiva_236M_Hitbox2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "H Hurl",
+        "input": "5U~H",
+        "damage": "",
+        "guard": "",
+        "startup": "",
+        "active": "",
+        "recovery": "Total 102~108",
+        "onBlock": "",
+        "onHit": "HKD+84",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Ladiva_5U-X.webp"
+        ],
+        "hitboxes": [
+            ""
+        ],
+        "type": "unique"
+    },
+    {
+        "name": "H Jewel Resort Screwdriver",
+        "input": "360H",
+        "damage": "3500",
+        "guard": "Throw",
+        "startup": "6",
+        "active": "3",
+        "recovery": "46",
+        "onBlock": "",
+        "onHit": "HKD+57 [HKD+11]",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Ladiva_360X_Whiff.webp",
+            "GBVSR_Ladiva_360X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Ladiva_360H_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "H Leg Drop of Adoration",
+        "input": "j.360H",
+        "damage": "500, 3000",
+        "guard": "Airthrow",
+        "startup": "4",
+        "active": "3",
+        "recovery": "Until L+15",
+        "onBlock": "",
+        "onHit": "HKD+57",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Ladiva_j360X_Whiff.webp",
+            "GBVSR_Ladiva_j360X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Ladiva_j360M_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "L Devoted Body Slam",
+        "input": "623L",
+        "damage": "1500",
+        "guard": "Airthrow",
+        "startup": "10",
+        "active": "5",
+        "recovery": "22",
+        "onBlock": "",
+        "onHit": "HKD+27",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Ladiva_623X_Whiff.webp",
+            "GBVSR_Ladiva_623L.webp",
+            "GBVSR_Ladiva_623M.webp",
+            "GBVSR_Ladiva_623H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Ladiva_623X_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "L Elegant Lariat",
+        "input": "214L",
+        "damage": "1200",
+        "guard": "Mid",
+        "startup": "16",
+        "active": "6",
+        "recovery": "16",
+        "onBlock": "+3",
+        "onHit": "Air Tech+25",
+        "onCH": "Air Tech+25",
+        "meter": "",
+        "images": [
+            "GBVSR_Ladiva_214X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Ladiva_214X_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "L Headbutt of Love",
+        "input": "236L",
+        "damage": "1000",
+        "guard": "Mid",
+        "startup": "16",
+        "active": "3",
+        "recovery": "14",
+        "onBlock": "-2",
+        "onHit": "+3Force Crouch",
+        "onCH": "+7Force Crouch",
+        "meter": "",
+        "images": [
+            "GBVSR_Ladiva_236X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Ladiva_236L_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "L Jewel Resort Screwdriver",
+        "input": "360L",
+        "damage": "2700",
+        "guard": "Throw",
+        "startup": "5",
+        "active": "3",
+        "recovery": "46",
+        "onBlock": "",
+        "onHit": "HKD+30 [HKD+5]",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Ladiva_360X_Whiff.webp",
+            "GBVSR_Ladiva_360X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Ladiva_360L_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "L Leg Drop of Adoration",
+        "input": "j.360L",
+        "damage": "500, 2200",
+        "guard": "Airthrow",
+        "startup": "4",
+        "active": "3",
+        "recovery": "Until L+15",
+        "onBlock": "",
+        "onHit": "HKD+44",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Ladiva_j360X_Whiff.webp",
+            "GBVSR_Ladiva_j360X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Ladiva_j360L_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Love Grapple",
+        "input": "5U",
+        "damage": "1300",
+        "guard": "Throw",
+        "startup": "34~40",
+        "active": "3",
+        "recovery": "32",
+        "onBlock": "",
+        "onHit": "HKD+62~+75",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Ladiva_5U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Ladiva_5U_Hitbox.webp"
+        ],
+        "type": "unique"
+    },
+    {
+        "name": "M Devoted Body Slam",
+        "input": "623M",
+        "damage": "1000, 1500",
+        "guard": "Airthrow",
+        "startup": "10",
+        "active": "5",
+        "recovery": "22",
+        "onBlock": "",
+        "onHit": "KD+5",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Ladiva_623X_Whiff.webp",
+            "GBVSR_Ladiva_623L.webp",
+            "GBVSR_Ladiva_623M.webp",
+            "GBVSR_Ladiva_623H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Ladiva_623X_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "M Elegant Lariat",
+        "input": "214M",
+        "damage": "1500",
+        "guard": "Guard Crush 23",
+        "startup": "30",
+        "active": "6",
+        "recovery": "11",
+        "onBlock": "+6",
+        "onHit": "KD+41",
+        "onCH": "KD+45",
+        "meter": "",
+        "images": [
+            "GBVSR_Ladiva_214X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Ladiva_214X_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "M Headbutt of Love",
+        "input": "236M",
+        "damage": "1200",
+        "guard": "Mid",
+        "startup": "28",
+        "active": "6",
+        "recovery": "11",
+        "onBlock": "+2",
+        "onHit": "+7Force Crouch",
+        "onCH": "+11Force Crouch",
+        "meter": "",
+        "images": [
+            "GBVSR_Ladiva_236X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Ladiva_236M_Hitbox1.webp",
+            "GBVSR_Ladiva_236M_Hitbox2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "M Hurl",
+        "input": "5U~M",
+        "damage": "",
+        "guard": "",
+        "startup": "",
+        "active": "",
+        "recovery": "Total 96~102",
+        "onBlock": "",
+        "onHit": "HKD+65~+77",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Ladiva_5U-X.webp"
+        ],
+        "hitboxes": [
+            ""
+        ],
+        "type": "unique"
+    },
+    {
+        "name": "M Jewel Resort Screwdriver",
+        "input": "360M",
+        "damage": "3000",
+        "guard": "Throw",
+        "startup": "9",
+        "active": "3",
+        "recovery": "46",
+        "onBlock": "",
+        "onHit": "HKD+30 [HKD+5]",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Ladiva_360X_Whiff.webp",
+            "GBVSR_Ladiva_360X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Ladiva_360M_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "M Leg Drop of Adoration",
+        "input": "j.360M",
+        "damage": "500, 2500",
+        "guard": "Airthrow",
+        "startup": "7",
+        "active": "3",
+        "recovery": "Until L+15",
+        "onBlock": "",
+        "onHit": "HKD+44",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Ladiva_j360X_Whiff.webp",
+            "GBVSR_Ladiva_j360X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Ladiva_j360M_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Maximum Love Bomb (Strike)",
+        "input": "236236H",
+        "damage": "1700, 2300",
+        "guard": "Mid",
+        "startup": "7+8",
+        "active": "6",
+        "recovery": "26",
+        "onBlock": "-13",
+        "onHit": "HKD+18",
+        "onCH": "HKD+18",
+        "meter": "-10000",
+        "images": [
+            "GBVSR_Ladiva_236236H_Start.webp",
+            "GBVSR_Ladiva_236236H.webp",
+            "GBVSR_Ladiva_236236H_Finish.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Ladiva_236236H_Hitbox.webp"
+        ],
+        "type": "super"
+    },
+    {
+        "name": "Maximum Love Bomb (Throw)",
+        "input": "214214H",
+        "damage": "200, 2000, 2300",
+        "guard": "Throw",
+        "startup": "9+0",
+        "active": "2",
+        "recovery": "39",
+        "onBlock": "",
+        "onHit": "HKD+18",
+        "onCH": "",
+        "meter": "-10000",
+        "images": [
+            "GBVSR_Ladiva_214214H.webp",
+            "GBVSR_Ladiva_236236H_Finish.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Ladiva_214214H_Hitbox.webp"
+        ],
+        "type": "super"
+    },
+    {
+        "name": "Raging Chain",
+        "input": "MH~MH",
+        "damage": "1000",
+        "guard": "Mid",
+        "startup": "13",
+        "active": "5",
+        "recovery": "17",
+        "onBlock": "",
+        "onHit": "+15Force Crouch (HKD+63)",
+        "onCH": "",
+        "meter": "-2500",
+        "images": [
+            "GBVSR_Ladiva_MH-MH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Ladiva_MH-MH_Hitbox_1.webp",
+            "GBVSR_Ladiva_MH-MH_Hitbox_2.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "Raging Strike",
+        "input": "MH",
+        "damage": "1500",
+        "guard": "Guard Crush 45 [52]",
+        "startup": "28 (1)",
+        "active": "1",
+        "recovery": "37",
+        "onBlock": "+8Force Stand [+15Force Stand]",
+        "onHit": "+15Force Crouch (KD+40)",
+        "onCH": "+15Force Crouch",
+        "meter": "\u00b10",
+        "images": [
+            "GBVSR_Ladiva_MH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Ladiva_MH_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "The Shape of Love",
+        "input": "720U",
+        "damage": "360\u00d74, 24\u00d7100, 2400 [360\u00d74, 24\u00d7100, 2880]",
+        "guard": "Throw",
+        "startup": "9+0",
+        "active": "1",
+        "recovery": "39",
+        "onBlock": "",
+        "onHit": "HKD+17",
+        "onCH": "",
+        "meter": "-10000",
+        "images": [
+            "GBVSR_Ladiva_720U_Start.webp",
+            "GBVSR_Ladiva_720U_Finish_1.webp",
+            "GBVSR_Ladiva_720U_Finish_2.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Ladiva_720U_Hitbox.webp"
+        ],
+        "type": "super"
+    },
+    {
+        "name": "Ultimate Devoted Body Slam",
+        "input": "623U",
+        "damage": "1000, 2000",
+        "guard": "Airthrow",
+        "startup": "7",
+        "active": "5",
+        "recovery": "25",
+        "onBlock": "",
+        "onHit": "HKD+24",
+        "onCH": "",
+        "meter": "-5000",
+        "images": [
+            "GBVSR_Ladiva_623U_whiff.webp",
+            "GBVSR_Ladiva_623U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Ladiva_623U_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Ultimate Elegant Lariat",
+        "input": "214U",
+        "damage": "1500, 1000 [1000]",
+        "guard": "Unblockable [Guard Crush 41]",
+        "startup": "16",
+        "active": "5,1",
+        "recovery": "27",
+        "onBlock": "HKD+26 [+5]",
+        "onHit": "HKD+62",
+        "onCH": "HKD+62",
+        "meter": "-5000",
+        "images": [
+            "GBVSR_Ladiva_214U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Ladiva_214U_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Ultimate Headbutt of Love",
+        "input": "236U",
+        "damage": "2000",
+        "guard": "Mid",
+        "startup": "16",
+        "active": "3",
+        "recovery": "34",
+        "onBlock": "-4",
+        "onHit": "HKD+38",
+        "onCH": "HKD+38",
+        "meter": "-5000",
+        "images": [
+            "GBVSR_Ladiva_236U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Ladiva_236U_Hitbox_1.webp",
+            "GBVSR_Ladiva_236U_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Ultimate Jewel Resort Screwdriver",
+        "input": "360U",
+        "damage": "4000",
+        "guard": "Throw",
+        "startup": "5",
+        "active": "3",
+        "recovery": "46",
+        "onBlock": "",
+        "onHit": "HKD+44",
+        "onCH": "",
+        "meter": "-5000",
+        "images": [
+            "GBVSR_Ladiva_360U_whiff.webp",
+            "GBVSR_Ladiva_360U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Ladiva_360U_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Ultimate Leg Drop of Adoration",
+        "input": "j.360U",
+        "damage": "500, 3500",
+        "guard": "Airthrow",
+        "startup": "5~13",
+        "active": "5",
+        "recovery": "Until L+5",
+        "onBlock": "",
+        "onHit": "HKD+44",
+        "onCH": "",
+        "meter": "-5000",
+        "images": [
+            "GBVSR_Ladiva_j360U_whiff.webp",
+            "GBVSR_Ladiva_j360X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Ladiva_j360U_Hitbox.webp"
+        ],
+        "type": "special"
+    }
+]

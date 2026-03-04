@@ -1,0 +1,1305 @@
+[
+    {
+        "name": "",
+        "input": "2H",
+        "damage": "1300",
+        "guard": "Mid",
+        "startup": "11",
+        "active": "6",
+        "recovery": "23",
+        "onBlock": "-12",
+        "onHit": "-8",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Nier_2H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Nier_2H_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "2L",
+        "damage": "400",
+        "guard": "Mid",
+        "startup": "6",
+        "active": "3",
+        "recovery": "10",
+        "onBlock": "-2",
+        "onHit": "+2",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Nier_2L.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Nier_2L_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "2M",
+        "damage": "900",
+        "guard": "Low",
+        "startup": "7",
+        "active": "4",
+        "recovery": "17",
+        "onBlock": "-6",
+        "onHit": "-2",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Nier_2M.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Nier_2M_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "2U",
+        "damage": "1000",
+        "guard": "Low",
+        "startup": "11",
+        "active": "5",
+        "recovery": "22",
+        "onBlock": "-12",
+        "onHit": "+43 HKD",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Nier_2U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Nier_2U_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "66H",
+        "damage": "1200",
+        "guard": "Mid",
+        "startup": "15",
+        "active": "3",
+        "recovery": "20",
+        "onBlock": "-4",
+        "onHit": "-",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Nier_66H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Nier_66H_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "66L",
+        "damage": "600",
+        "guard": "Mid",
+        "startup": "8",
+        "active": "3",
+        "recovery": "10 [15]",
+        "onBlock": "+2",
+        "onHit": "+6",
+        "onCH": "+8",
+        "meter": "+480",
+        "images": [
+            "GBVSR_Nier_66L.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Nier_66L_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "66L",
+        "damage": "600",
+        "guard": "Mid",
+        "startup": "8",
+        "active": "3",
+        "recovery": "10 [15]",
+        "onBlock": "+2",
+        "onHit": "+6",
+        "onCH": "+8",
+        "meter": "+480",
+        "images": [
+            "GBVSR_Nier_66L.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Nier_66L_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "66M",
+        "damage": "1100",
+        "guard": "High",
+        "startup": "26",
+        "active": "6",
+        "recovery": "17",
+        "onBlock": "-6",
+        "onHit": "-2",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Nier_66M.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Nier_66M_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.H",
+        "damage": "1600",
+        "guard": "Mid",
+        "startup": "10",
+        "active": "4",
+        "recovery": "18",
+        "onBlock": "-3",
+        "onHit": "+1",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Nier_cH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Nier_cH_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.L",
+        "damage": "600",
+        "guard": "Mid",
+        "startup": "5",
+        "active": "3",
+        "recovery": "6",
+        "onBlock": "+4",
+        "onHit": "+8",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Nier_cL.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Nier_cL_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.M",
+        "damage": "1100",
+        "guard": "Mid",
+        "startup": "6",
+        "active": "3",
+        "recovery": "15",
+        "onBlock": "-3",
+        "onHit": "+1",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Nier_cM.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Nier_cM_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.XX",
+        "damage": "700",
+        "guard": "Mid",
+        "startup": "9",
+        "active": "3",
+        "recovery": "15",
+        "onBlock": "-3",
+        "onHit": "+1",
+        "onCH": "+5",
+        "meter": "+480",
+        "images": [
+            "GBVSR_Nier_cXX.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Nier_cXX_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.XX6H",
+        "damage": "1000",
+        "guard": "High",
+        "startup": "18",
+        "active": "3",
+        "recovery": "22",
+        "onBlock": "-4",
+        "onHit": "+1Force Crouch",
+        "onCH": "HKD+32",
+        "meter": "+480",
+        "images": [
+            "GBVSR_Nier_cXX6H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Nier_cXX6H_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.XX6M",
+        "damage": "1000",
+        "guard": "Low",
+        "startup": "12",
+        "active": "3",
+        "recovery": "16",
+        "onBlock": "-4",
+        "onHit": "KD+30",
+        "onCH": "HKD+55",
+        "meter": "+480",
+        "images": [
+            "GBVSR_Nier_cXX6M.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Nier_cXX6M_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.XXX",
+        "damage": "1000",
+        "guard": "Mid",
+        "startup": "12",
+        "active": "3",
+        "recovery": "18",
+        "onBlock": "-4",
+        "onHit": "\u00b10",
+        "onCH": "+8",
+        "meter": "+600",
+        "images": [
+            "GBVSR_Nier_cXXX.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Nier_cXXX_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "d.2H",
+        "damage": "1250",
+        "guard": "Mid",
+        "startup": "11",
+        "active": "6",
+        "recovery": "23",
+        "onBlock": "-12",
+        "onHit": "-8",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Nier_D2H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Nier_D2H_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "d.2M",
+        "damage": "850",
+        "guard": "Low",
+        "startup": "7",
+        "active": "4",
+        "recovery": "17",
+        "onBlock": "-6",
+        "onHit": "-2",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Nier_D2M.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Nier_D2M_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "d.2U",
+        "damage": "950",
+        "guard": "Low",
+        "startup": "11",
+        "active": "5",
+        "recovery": "12",
+        "onBlock": "-12",
+        "onHit": "+43 HKD",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Nier_D2U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Nier_D2U_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "d.66H",
+        "damage": "1150",
+        "guard": "Mid",
+        "startup": "15",
+        "active": "-",
+        "recovery": "-",
+        "onBlock": "-4",
+        "onHit": "-",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Nier_D66H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Nier_D66H_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "d.c.H",
+        "damage": "1550",
+        "guard": "Mid",
+        "startup": "10",
+        "active": "4",
+        "recovery": "18",
+        "onBlock": "-3",
+        "onHit": "+1",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Nier_DcH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Nier_DcH_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "d.c.M",
+        "damage": "1050",
+        "guard": "Mid",
+        "startup": "6",
+        "active": "3",
+        "recovery": "15",
+        "onBlock": "-3",
+        "onHit": "+1",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Nier_DcM.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Nier_DcM_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "d.f.H",
+        "damage": "1250",
+        "guard": "Mid",
+        "startup": "12",
+        "active": "4",
+        "recovery": "23",
+        "onBlock": "-10",
+        "onHit": "-6",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Nier_DfH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Nier_DfH_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "d.f.M",
+        "damage": "850",
+        "guard": "Mid",
+        "startup": "9",
+        "active": "3",
+        "recovery": "20",
+        "onBlock": "-8",
+        "onHit": "-4",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Nier_DfM.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Nier_DfM_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "d.j.H",
+        "damage": "950",
+        "guard": "High\/Air",
+        "startup": "8",
+        "active": "6",
+        "recovery": "Until L",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Nier_DjH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Nier_DjH_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "d.j.M",
+        "damage": "650",
+        "guard": "High\/Air",
+        "startup": "7",
+        "active": "6",
+        "recovery": "Until L",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Nier_DjM.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Nier_DjM_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "f.H",
+        "damage": "1300",
+        "guard": "Mid",
+        "startup": "12",
+        "active": "4",
+        "recovery": "23",
+        "onBlock": "-10",
+        "onHit": "-6",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Nier_fH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Nier_fH_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "f.L",
+        "damage": "600",
+        "guard": "Mid",
+        "startup": "6",
+        "active": "3",
+        "recovery": "9",
+        "onBlock": "+1",
+        "onHit": "+5",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Nier_fL.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Nier_fL_Hitbox.webp",
+            "GBVSR_Nier_fL_Hitbox_2.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "f.M",
+        "damage": "900",
+        "guard": "Mid",
+        "startup": "9",
+        "active": "3",
+        "recovery": "20",
+        "onBlock": "-8",
+        "onHit": "-4",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Nier_fM.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Nier_fM_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "j.H",
+        "damage": "1000",
+        "guard": "High\/Air",
+        "startup": "8",
+        "active": "6",
+        "recovery": "Until L",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Nier_jH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Nier_jH_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "j.L",
+        "damage": "600",
+        "guard": "High\/Air",
+        "startup": "5",
+        "active": "Until L",
+        "recovery": "0",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Nier_jL.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Nier_jL_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "j.M",
+        "damage": "700",
+        "guard": "High\/Air",
+        "startup": "7",
+        "active": "6",
+        "recovery": "Until L",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Nier_jM.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Nier_jM_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "Air Throw",
+        "input": "d.j.LU",
+        "damage": "2000",
+        "guard": "Throw",
+        "startup": "5",
+        "active": "5",
+        "recovery": "Until L+6",
+        "onBlock": "",
+        "onHit": "HKD",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Nier_AirThrow.webp"
+        ],
+        "hitboxes": [
+            ""
+        ],
+        "type": "other"
+    },
+    {
+        "name": "Air Throw",
+        "input": "j.LU",
+        "damage": "2500",
+        "guard": "Throw",
+        "startup": "5",
+        "active": "5",
+        "recovery": "Until L+6",
+        "onBlock": "",
+        "onHit": "HKD",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Nier_AirThrow.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Nier_AirThrow_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "Brave Counter",
+        "input": "BC",
+        "damage": "500",
+        "guard": "Mid",
+        "startup": "10 [18]",
+        "active": "3 [2]",
+        "recovery": "19 [35]",
+        "onBlock": "-2",
+        "onHit": "Air Tech+21 [+5]",
+        "onCH": "HKD+54 [HKD+43]",
+        "meter": "\u00b10",
+        "images": [
+            "GBVSR_Nier_BC.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Nier_BC_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "Brave Counter",
+        "input": "BC",
+        "damage": "500",
+        "guard": "Mid",
+        "startup": "10 [18]",
+        "active": "3 [2]",
+        "recovery": "19 [35]",
+        "onBlock": "-2",
+        "onHit": "Air Tech+21 [+5]",
+        "onCH": "HKD+54 [HKD+43]",
+        "meter": "\u00b10",
+        "images": [
+            "GBVSR_Nier_BC.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Nier_BC_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "Drowned in an Exquisite and Eternal Adieu",
+        "input": "236236U",
+        "damage": "See notes",
+        "guard": "Mid",
+        "startup": "11+3",
+        "active": "",
+        "recovery": "Total 49 [63]",
+        "onBlock": "",
+        "onHit": "HKD+40",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Nier_236236U.webp",
+            "GBVSR_Nier_236236U_2.webp",
+            "GBVSR_Nier_236236U_3.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Nier_236236U_Hitbox.webp",
+            "GBVSR_Nier_236236U_Hitbox_2.webp"
+        ],
+        "type": "super"
+    },
+    {
+        "name": "Ground Throw",
+        "input": "d.LU",
+        "damage": "2000",
+        "guard": "Throw",
+        "startup": "4",
+        "active": "3",
+        "recovery": "31",
+        "onBlock": "",
+        "onHit": "HKD+42",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Nier_Throw.webp",
+            "GBVSR_Nier_BackThrow.webp"
+        ],
+        "hitboxes": [
+            ""
+        ],
+        "type": "other"
+    },
+    {
+        "name": "Ground Throw",
+        "input": "LU",
+        "damage": "2500",
+        "guard": "Throw",
+        "startup": "4",
+        "active": "3",
+        "recovery": "31",
+        "onBlock": "",
+        "onHit": "HKD+42",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Nier_Throw.webp",
+            "GBVSR_Nier_bThrow.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Nier_Throw_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "H Death, Reversed",
+        "input": "22H",
+        "damage": "1300",
+        "guard": "All",
+        "startup": "18",
+        "active": "17",
+        "recovery": "13",
+        "onBlock": "-3",
+        "onHit": "KD+37",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Nier_22X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Nier_22X_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "H Fatal Waltz",
+        "input": "236H",
+        "damage": "100\u00d76, 500",
+        "guard": "All",
+        "startup": "18",
+        "active": "12(2)4",
+        "recovery": "41",
+        "onBlock": "+4",
+        "onHit": "KD+43",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Nier_236X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Nier_236X_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "H Misfortune",
+        "input": "623H",
+        "damage": "1500",
+        "guard": "All",
+        "startup": "12",
+        "active": "6",
+        "recovery": "49",
+        "onBlock": "-23",
+        "onHit": "KD+26",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Nier_623X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Nier_623X_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "H Ominous Turn",
+        "input": "214H",
+        "damage": "1300",
+        "guard": "All",
+        "startup": "16",
+        "active": "17",
+        "recovery": "15",
+        "onBlock": "-5",
+        "onHit": "KD+38",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Nier_214X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Nier_214X_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Klagen Totentanz",
+        "input": "236236H",
+        "damage": "See notes",
+        "guard": "Mid",
+        "startup": "7+7",
+        "active": "39",
+        "recovery": "52",
+        "onBlock": "-34",
+        "onHit": "HKD+43",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Nier_236236H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Nier_236236H_Hitbox.webp",
+            "GBVSR_Nier_236236H_Hitbox_2.webp"
+        ],
+        "type": "super"
+    },
+    {
+        "name": "L Death, Reversed",
+        "input": "22L",
+        "damage": "1000",
+        "guard": "All",
+        "startup": "18",
+        "active": "17",
+        "recovery": "12",
+        "onBlock": "-2",
+        "onHit": "Air Recovery+26",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Nier_22X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Nier_22X_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "L Fatal Waltz",
+        "input": "236L",
+        "damage": "100\u00d73, 500",
+        "guard": "All",
+        "startup": "19",
+        "active": "12(2)4",
+        "recovery": "32",
+        "onBlock": "-2",
+        "onHit": "Air Recovery+25",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Nier_236X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Nier_236X_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "L Misfortune",
+        "input": "623L",
+        "damage": "1200",
+        "guard": "All",
+        "startup": "14",
+        "active": "6",
+        "recovery": "33",
+        "onBlock": "-6",
+        "onHit": "Air Recovery+26",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Nier_623X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Nier_623X_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "L Ominous Turn",
+        "input": "214L",
+        "damage": "1000",
+        "guard": "All",
+        "startup": "19",
+        "active": "17",
+        "recovery": "13",
+        "onBlock": "-6",
+        "onHit": "Air Recovery+27",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Nier_214X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Nier_214X_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Love's Redemption",
+        "input": "5U",
+        "damage": "1300",
+        "guard": "Mid",
+        "startup": "18",
+        "active": "3",
+        "recovery": "16",
+        "onBlock": "-2",
+        "onHit": "KD",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Nier_5UCharge.webp",
+            "GBVSR_Nier_5U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Nier_5UCharge_Hitbox.webp",
+            "GBVSR_Nier_5U_Hitbox.webp"
+        ],
+        "type": "unique"
+    },
+    {
+        "name": "Love's Redemption (Charged)",
+        "input": "5[U]",
+        "damage": "1600",
+        "guard": "Mid",
+        "startup": "36",
+        "active": "3",
+        "recovery": "16",
+        "onBlock": "-2",
+        "onHit": "KD",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Nier_5UCharge.webp",
+            "GBVSR_Nier_5U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Nier_5UCharge_Hitbox.webp",
+            "GBVSR_Nier_5U_Hitbox.webp"
+        ],
+        "type": "unique"
+    },
+    {
+        "name": "M Death, Reversed",
+        "input": "22M",
+        "damage": "1200",
+        "guard": "All",
+        "startup": "43",
+        "active": "-",
+        "recovery": "Total 57",
+        "onBlock": "+12",
+        "onHit": "+30 (Forced crouch)",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Nier_22X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Nier_22X_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "M Fatal Waltz",
+        "input": "236M",
+        "damage": "100\u00d712, 500",
+        "guard": "All",
+        "startup": "52",
+        "active": "48",
+        "recovery": "Total 58",
+        "onBlock": "+86",
+        "onHit": "Air Recovery+113",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Nier_236X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Nier_236X_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "M Misfortune",
+        "input": "623M",
+        "damage": "1200",
+        "guard": "All",
+        "startup": "30",
+        "active": "6",
+        "recovery": "17",
+        "onBlock": "+10",
+        "onHit": "Air Recovery+47",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Nier_623X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Nier_623X_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "M Ominous Turn",
+        "input": "214M",
+        "damage": "1200",
+        "guard": "All",
+        "startup": "43",
+        "active": "-",
+        "recovery": "Total 57",
+        "onBlock": "+12",
+        "onHit": "Air Recovery+41",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Nier_214X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Nier_214X_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Pain",
+        "input": "d.j.U",
+        "damage": "800",
+        "guard": "All",
+        "startup": "8",
+        "active": "6",
+        "recovery": "Until L",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Nier_DjU.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Nier_DjU_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "Pain",
+        "input": "j.U",
+        "damage": "1000",
+        "guard": "High\/Air",
+        "startup": "-",
+        "active": "-",
+        "recovery": "Until L",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Nier_jU.webp",
+            "GBVSR_Nier_jU_1.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Nier_jU_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "Pain (Back)",
+        "input": "j.4U",
+        "damage": "1000",
+        "guard": "All",
+        "startup": "-",
+        "active": "-",
+        "recovery": "Until L",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            ""
+        ],
+        "hitboxes": [
+            ""
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "Pain (Forward)",
+        "input": "j.6U",
+        "damage": "1000",
+        "guard": "All",
+        "startup": "-",
+        "active": "-",
+        "recovery": "Until L",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            ""
+        ],
+        "hitboxes": [
+            ""
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "Raging Chain",
+        "input": "MH~MH",
+        "damage": "1000",
+        "guard": "Mid",
+        "startup": "13",
+        "active": "5",
+        "recovery": "17",
+        "onBlock": "+4",
+        "onHit": "+15Force Crouch (HKD+63)",
+        "onCH": "+15Force Crouch",
+        "meter": "-2500",
+        "images": [
+            "GBVSR_Nier_MH-MH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Nier_MH-MH_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "Raging Strike",
+        "input": "MH",
+        "damage": "1500",
+        "guard": "Guard Crush 45 [52]",
+        "startup": "28 (1)",
+        "active": "1",
+        "recovery": "37",
+        "onBlock": "+8Force Stand [+15Force Stand]",
+        "onHit": "+15Force Crouch (KD+40)",
+        "onCH": "+15Force Crouch",
+        "meter": "\u00b10",
+        "images": [
+            "GBVSR_Nier_MH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Nier_MH_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "U Death, Reversed",
+        "input": "22U",
+        "damage": "700\u00d73",
+        "guard": "All",
+        "startup": "13",
+        "active": "42",
+        "recovery": "Total 40",
+        "onBlock": "+27",
+        "onHit": "HKD+93",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Nier_22U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Nier_22U_Hitbox.webp",
+            "GBVSR_Nier_22U_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "U Fatal Waltz",
+        "input": "236U",
+        "damage": "150\u00d712, 600",
+        "guard": "All",
+        "startup": "20",
+        "active": "59(2)18",
+        "recovery": "Total 31",
+        "onBlock": "+80",
+        "onHit": "HKD+140",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Nier_236U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Nier_236U_Hitbox.webp",
+            "GBVSR_Nier_236U_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "U Misfortune",
+        "input": "623U",
+        "damage": "1200, 0, 800",
+        "guard": "Mid",
+        "startup": "8",
+        "active": "24",
+        "recovery": "34",
+        "onBlock": "-25",
+        "onHit": "HKD+41",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Nier_623U.webp",
+            "GBVSR_Nier_623U_2.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Nier_623U_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "U Ominous Turn",
+        "input": "214U",
+        "damage": "800, 700\u00d72",
+        "guard": "All",
+        "startup": "15",
+        "active": "18(8)17(8)17",
+        "recovery": "Total 42",
+        "onBlock": "+44",
+        "onHit": "HKD+114",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Nier_214U.webp",
+            "GBVSR_Nier_214U_2.webp",
+            "GBVSR_Nier_214U_3.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Nier_214U_Hitbox.webp",
+            "GBVSR_Nier_214U_Hitbox_2.webp",
+            "GBVSR_Nier_214U_Hitbox_3.webp",
+            "GBVSR_Nier_214U_Hitbox_4.webp",
+            "GBVSR_Nier_214U_Hitbox_3_Combo.webp",
+            "GBVSR_Nier_214U_Hitbox_4_Combo.webp",
+            "GBVSR_Nier_214U_Hitbox_5.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "World of Death and Love",
+        "input": "214214H",
+        "damage": "",
+        "guard": "-",
+        "startup": "",
+        "active": "",
+        "recovery": "9+11",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Nier_214214H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Nier_214214H_Hitbox.webp"
+        ],
+        "type": "super"
+    }
+]

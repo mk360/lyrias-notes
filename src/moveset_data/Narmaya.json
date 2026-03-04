@@ -1,0 +1,1469 @@
+[
+    {
+        "name": "",
+        "input": "2H[g]",
+        "damage": "1300",
+        "guard": "Mid",
+        "startup": "11",
+        "active": "5",
+        "recovery": "23",
+        "onBlock": "-11",
+        "onHit": "-7",
+        "onCH": "+1",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_2H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_2H_Hitbox.webp",
+            "GBVSR_Narmaya_2H_Hitbox_2.webp"
+        ],
+        "type": "normal[g]"
+    },
+    {
+        "name": "",
+        "input": "2H[k]",
+        "damage": "1300",
+        "guard": "Mid",
+        "startup": "11",
+        "active": "8",
+        "recovery": "22",
+        "onBlock": "-13",
+        "onHit": "-9",
+        "onCH": "-1",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_2H_Kagura.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_2H_Kagura_Hitbox.webp",
+            "GBVSR_Narmaya_2H_Kagura_Hitbox_2.webp",
+            "GBVSR_Narmaya_2H_Kagura_Hitbox_3.webp"
+        ],
+        "type": "normal[k]"
+    },
+    {
+        "name": "",
+        "input": "2L[g]",
+        "damage": "400",
+        "guard": "Low",
+        "startup": "6",
+        "active": "3",
+        "recovery": "10",
+        "onBlock": "-2",
+        "onHit": "+2",
+        "onCH": "+4",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_2L.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_2L_Hitbox.webp"
+        ],
+        "type": "normal[g]"
+    },
+    {
+        "name": "",
+        "input": "2L[k]",
+        "damage": "400",
+        "guard": "Low",
+        "startup": "6",
+        "active": "3",
+        "recovery": "10",
+        "onBlock": "-2",
+        "onHit": "+2",
+        "onCH": "+4",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_2L_Kagura.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_2L_Kagura_Hitbox.webp"
+        ],
+        "type": "normal[k]"
+    },
+    {
+        "name": "",
+        "input": "2M[g]",
+        "damage": "900",
+        "guard": "Mid",
+        "startup": "8",
+        "active": "4",
+        "recovery": "14",
+        "onBlock": "-3",
+        "onHit": "+1",
+        "onCH": "+5",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_2M.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_2M_Hitbox.webp"
+        ],
+        "type": "normal[g]"
+    },
+    {
+        "name": "",
+        "input": "2M[k]",
+        "damage": "900",
+        "guard": "Mid",
+        "startup": "7",
+        "active": "3",
+        "recovery": "11",
+        "onBlock": "+1",
+        "onHit": "+5",
+        "onCH": "+9",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_2M_Kagura.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_2M_Kagura_Hitbox.webp",
+            "GBVSR_Narmaya_2M_Kagura_Hitbox_2.webp"
+        ],
+        "type": "normal[k]"
+    },
+    {
+        "name": "",
+        "input": "2U[g]",
+        "damage": "1000",
+        "guard": "Low",
+        "startup": "9",
+        "active": "6",
+        "recovery": "20",
+        "onBlock": "-11",
+        "onHit": "HKD+44",
+        "onCH": "HKD+48",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_2U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_2U_Hitbox.webp",
+            "GBVSR_Narmaya_2U_Hitbox_2.webp"
+        ],
+        "type": "normal[g]"
+    },
+    {
+        "name": "",
+        "input": "2U[k]",
+        "damage": "1000",
+        "guard": "Low",
+        "startup": "7",
+        "active": "6",
+        "recovery": "21",
+        "onBlock": "-12",
+        "onHit": "HKD+43",
+        "onCH": "HKD+47",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_2U_Kagura.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_2U_Kagura_Hitbox.webp",
+            "GBVSR_Narmaya_2U_Kagura_Hitbox_2.webp"
+        ],
+        "type": "normal[k]"
+    },
+    {
+        "name": "",
+        "input": "5L[g]",
+        "damage": "600",
+        "guard": "Mid",
+        "startup": "6",
+        "active": "3",
+        "recovery": "7",
+        "onBlock": "+3",
+        "onHit": "+7",
+        "onCH": "+9",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_5L.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_5L_Hitbox.webp",
+            "GBVSR_Narmaya_5L_Hitbox_2.webp"
+        ],
+        "type": "normal[g]"
+    },
+    {
+        "name": "",
+        "input": "5L[k]",
+        "damage": "600",
+        "guard": "Mid",
+        "startup": "5",
+        "active": "3",
+        "recovery": "6",
+        "onBlock": "+4",
+        "onHit": "+8",
+        "onCH": "+10",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_5L_Kagura.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_5L_Kagura_Hitbox.webp",
+            "GBVSR_Narmaya_5L_Kagura_Hitbox_2.webp"
+        ],
+        "type": "normal[k]"
+    },
+    {
+        "name": "",
+        "input": "66H[g]",
+        "damage": "1200",
+        "guard": "Mid",
+        "startup": "20",
+        "active": "3",
+        "recovery": "20",
+        "onBlock": "-4",
+        "onHit": "KD+41",
+        "onCH": "KD+45",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_66Hg.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_66Hg_Hitbox_startup.webp",
+            "GBVSR_Narmaya_66Hg_Hitbox.webp"
+        ],
+        "type": "normal[g]"
+    },
+    {
+        "name": "",
+        "input": "66H[k]",
+        "damage": "1200",
+        "guard": "Mid",
+        "startup": "15",
+        "active": "4",
+        "recovery": "23",
+        "onBlock": "-8",
+        "onHit": "+11Force Crouch",
+        "onCH": "+15Force Crouch",
+        "meter": "2",
+        "images": [
+            "GBVSR_Narmaya_66Hk.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_66Hk_Hitbox.webp"
+        ],
+        "type": "normal[k]"
+    },
+    {
+        "name": "",
+        "input": "66L",
+        "damage": "600",
+        "guard": "Mid",
+        "startup": "8",
+        "active": "3",
+        "recovery": "10 [15]",
+        "onBlock": "+2",
+        "onHit": "+6",
+        "onCH": "+8",
+        "meter": "+480",
+        "images": [
+            "GBVSR_Narmaya_66L.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_66L_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "66M",
+        "damage": "1100",
+        "guard": "Low",
+        "startup": "12",
+        "active": "4",
+        "recovery": "21",
+        "onBlock": "-8",
+        "onHit": "KD+24",
+        "onCH": "HKD+49",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_cXX6M.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_cXX6M_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.H[g]",
+        "damage": "1000, 400",
+        "guard": "Mid",
+        "startup": "8",
+        "active": "2,3",
+        "recovery": "23",
+        "onBlock": "-7",
+        "onHit": "-3",
+        "onCH": "-3",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_cH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_cH_Hitbox.webp",
+            "GBVSR_Narmaya_cH_Hitbox_2.webp"
+        ],
+        "type": "normal[g]"
+    },
+    {
+        "name": "",
+        "input": "c.H[k]",
+        "damage": "1600",
+        "guard": "Mid",
+        "startup": "9",
+        "active": "6",
+        "recovery": "15",
+        "onBlock": "-2",
+        "onHit": "+2",
+        "onCH": "+14",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_cH_Kagura.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_cH_Kagura_Hitbox.webp",
+            "GBVSR_Narmaya_cH_Kagura_Hitbox_2.webp"
+        ],
+        "type": "normal[k]"
+    },
+    {
+        "name": "",
+        "input": "c.M[g]",
+        "damage": "1100",
+        "guard": "Mid",
+        "startup": "6",
+        "active": "3",
+        "recovery": "14",
+        "onBlock": "-2",
+        "onHit": "+2",
+        "onCH": "+6",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_cM.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_cM_Hitbox.webp"
+        ],
+        "type": "normal[g]"
+    },
+    {
+        "name": "",
+        "input": "c.M[k]",
+        "damage": "1100",
+        "guard": "Mid",
+        "startup": "6",
+        "active": "3",
+        "recovery": "12",
+        "onBlock": "\u00b10",
+        "onHit": "+4",
+        "onCH": "+8",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_cM_Kagura.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_cM_Kagura_Hitbox.webp"
+        ],
+        "type": "normal[k]"
+    },
+    {
+        "name": "",
+        "input": "c.XX",
+        "damage": "700",
+        "guard": "Mid",
+        "startup": "9",
+        "active": "3",
+        "recovery": "15",
+        "onBlock": "-3",
+        "onHit": "+1",
+        "onCH": "+5",
+        "meter": "+480",
+        "images": [
+            "GBVSR_Narmaya_cXX.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_cXX_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.XX6H",
+        "damage": "1000",
+        "guard": "High",
+        "startup": "18",
+        "active": "3",
+        "recovery": "22",
+        "onBlock": "-4",
+        "onHit": "+1Force Crouch",
+        "onCH": "HKD+32",
+        "meter": "+480",
+        "images": [
+            "GBVSR_Narmaya_cXX6H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_cXX6H_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.XX6M",
+        "damage": "1000",
+        "guard": "Low",
+        "startup": "12",
+        "active": "3",
+        "recovery": "16",
+        "onBlock": "-4",
+        "onHit": "KD+30",
+        "onCH": "HKD+55",
+        "meter": "+480",
+        "images": [
+            "GBVSR_Narmaya_cXX6M.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_cXX6M_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.XXX",
+        "damage": "1000",
+        "guard": "Mid",
+        "startup": "12",
+        "active": "3",
+        "recovery": "18",
+        "onBlock": "-4",
+        "onHit": "\u00b10",
+        "onCH": "+8",
+        "meter": "+600",
+        "images": [
+            "GBVSR_Narmaya_cXXX.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_cXXX_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "f.H[g]",
+        "damage": "1300",
+        "guard": "Mid",
+        "startup": "10",
+        "active": "6",
+        "recovery": "22",
+        "onBlock": "-11",
+        "onHit": "-7",
+        "onCH": "+1",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_fH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_fH_Hitbox.webp",
+            "GBVSR_Narmaya_fH_Hitbox_2.webp"
+        ],
+        "type": "normal[g]"
+    },
+    {
+        "name": "",
+        "input": "f.H[k]",
+        "damage": "1300",
+        "guard": "Mid",
+        "startup": "9",
+        "active": "6",
+        "recovery": "20",
+        "onBlock": "-9",
+        "onHit": "-5",
+        "onCH": "+3",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_fH_Kagura.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_fH_Kagura_Hitbox.webp",
+            "GBVSR_Narmaya_fH_Kagura_Hitbox_2.webp"
+        ],
+        "type": "normal[k]"
+    },
+    {
+        "name": "",
+        "input": "f.M[g]",
+        "damage": "900",
+        "guard": "Mid",
+        "startup": "9",
+        "active": "4",
+        "recovery": "17",
+        "onBlock": "-6",
+        "onHit": "-2",
+        "onCH": "+2",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_fM.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_fM_Hitbox.webp"
+        ],
+        "type": "normal[g]"
+    },
+    {
+        "name": "",
+        "input": "f.M[k]",
+        "damage": "900",
+        "guard": "Mid",
+        "startup": "7",
+        "active": "5",
+        "recovery": "15",
+        "onBlock": "-5",
+        "onHit": "-1",
+        "onCH": "+3",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_fM_Kagura.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_fM_Kagura_Hitbox.webp",
+            "GBVSR_Narmaya_fM_Kagura_Hitbox_2.webp"
+        ],
+        "type": "normal[k]"
+    },
+    {
+        "name": "",
+        "input": "j.H[g]",
+        "damage": "1000",
+        "guard": "High\/Air",
+        "startup": "9",
+        "active": "6",
+        "recovery": "Until L+1",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_jH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_jH_Hitbox.webp"
+        ],
+        "type": "normal[g]"
+    },
+    {
+        "name": "",
+        "input": "j.H[k]",
+        "damage": "1000",
+        "guard": "High\/Air",
+        "startup": "9",
+        "active": "9",
+        "recovery": "Until L+1",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_jH_Kagura.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_jH_Kagura_Hitbox.webp",
+            "GBVSR_Narmaya_jH_Kagura_Hitbox_2.webp"
+        ],
+        "type": "normal[k]"
+    },
+    {
+        "name": "",
+        "input": "j.L[g]",
+        "damage": "600",
+        "guard": "High\/Air",
+        "startup": "5",
+        "active": "Until L",
+        "recovery": "1",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_jL.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_jL_Hitbox.webp"
+        ],
+        "type": "normal[g]"
+    },
+    {
+        "name": "",
+        "input": "j.L[k]",
+        "damage": "600",
+        "guard": "High\/Air",
+        "startup": "5",
+        "active": "Until L",
+        "recovery": "1",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_jL_Kagura.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_jL_Kagura_Hitbox.webp",
+            "GBVSR_Narmaya_jL_Kagura_Hitbox_2.webp"
+        ],
+        "type": "normal[k]"
+    },
+    {
+        "name": "",
+        "input": "j.M[g]",
+        "damage": "700",
+        "guard": "High\/Air",
+        "startup": "6",
+        "active": "6",
+        "recovery": "Until L+1",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_jM.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_jM_Hitbox.webp",
+            "GBVSR_Narmaya_jM_Hitbox_2.webp"
+        ],
+        "type": "normal[g]"
+    },
+    {
+        "name": "",
+        "input": "j.M[k]",
+        "damage": "700",
+        "guard": "High\/Air",
+        "startup": "7",
+        "active": "8",
+        "recovery": "Until L+1",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_jM_Kagura.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_jM_Kagura_Hitbox.webp",
+            "GBVSR_Narmaya_jM_Kagura_Hitbox_2.webp",
+            "GBVSR_Narmaya_jM_Kagura_Hitbox_3.webp"
+        ],
+        "type": "normal[k]"
+    },
+    {
+        "name": "",
+        "input": "j.U[g]",
+        "damage": "1000",
+        "guard": "High\/Air",
+        "startup": "10",
+        "active": "6",
+        "recovery": "Until L+1",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_jU.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_jU_Hitbox.webp"
+        ],
+        "type": "normal[g]"
+    },
+    {
+        "name": "",
+        "input": "j.U[k]",
+        "damage": "1000",
+        "guard": "High\/Air",
+        "startup": "7",
+        "active": "6",
+        "recovery": "Until L+1",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_jU_Kagura.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_jU_Kagura_Hitbox.webp",
+            "GBVSR_Narmaya_jU_Kagura_Hitbox_2.webp"
+        ],
+        "type": "normal[k]"
+    },
+    {
+        "name": "Air Throw",
+        "input": "j.LU",
+        "damage": "2500",
+        "guard": "Airthrow",
+        "startup": "5",
+        "active": "5",
+        "recovery": "Until L+5",
+        "onBlock": "",
+        "onHit": "HKD \u2248+46",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_AirThrow.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_AirThrow_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "Brave Counter",
+        "input": "BC",
+        "damage": "500",
+        "guard": "Mid",
+        "startup": "10 [18]",
+        "active": "3 [2]",
+        "recovery": "19 [35]",
+        "onBlock": "-2",
+        "onHit": "Air Tech+21 [+5]",
+        "onCH": "HKD+54 [HKD+43]",
+        "meter": "\u00b10",
+        "images": [
+            "GBVSR_Narmaya_BC.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_BC_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "Butterfly Effect",
+        "input": "5U",
+        "damage": "",
+        "guard": "",
+        "startup": "2",
+        "active": "",
+        "recovery": "8",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_Genji_Stance.webp",
+            "GBVSR_Narmaya_Kagura_Stance.webp"
+        ],
+        "hitboxes": [
+            ""
+        ],
+        "type": "unique"
+    },
+    {
+        "name": "Butterfly Effect: Ame-no-Uzume",
+        "input": "236236U",
+        "damage": "360\u00d710, 240\u00d75, 1200 [200\u00d715, 1000]",
+        "guard": "Mid, All",
+        "startup": "7+7",
+        "active": "3[(3)3]\u00d715",
+        "recovery": "48",
+        "onBlock": "-32",
+        "onHit": "HKD+42 [HKD+30]",
+        "onCH": "HKD+42 [HKD+30]",
+        "meter": "-10000",
+        "images": [
+            "GBVSR_Narmaya_236236U_Start.webp",
+            "GBVSR_Narmaya_236236U.webp",
+            "GBVSR_Narmaya_236236U_Finish.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_236236U_Hitbox1.webp",
+            "GBVSR_Narmaya_236236U_Hitbox2.webp",
+            "GBVSR_Narmaya_236236U_Hitbox3.webp"
+        ],
+        "type": "super"
+    },
+    {
+        "name": "Ground Throw",
+        "input": "LU",
+        "damage": "2500",
+        "guard": "Throw",
+        "startup": "4",
+        "active": "3",
+        "recovery": "29",
+        "onBlock": "",
+        "onHit": "HKD+44",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_Throw.webp",
+            "GBVSR_Narmaya_BackThrow.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_Throw_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "H Absolute Horizon",
+        "input": "623H[g]",
+        "damage": "600, 300\u00d73",
+        "guard": "Mid",
+        "startup": "11",
+        "active": "2(2)2\u00d73",
+        "recovery": "44",
+        "onBlock": "-27",
+        "onHit": "KD+31",
+        "onCH": "KD+31",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_623X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_623X_Hitbox1.webp",
+            "GBVSR_Narmaya_623X_Hitbox2.webp"
+        ],
+        "type": "special[g]"
+    },
+    {
+        "name": "H Crescent Moon",
+        "input": "214H[k]",
+        "damage": "1600",
+        "guard": "All",
+        "startup": "32 [28]",
+        "active": "8",
+        "recovery": "7",
+        "onBlock": "+2",
+        "onHit": "+6",
+        "onCH": "+8",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_214X_Kagura.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_214X_Kagura_Hitbox1.webp",
+            "GBVSR_Narmaya_214X_Kagura_Hitbox2.webp"
+        ],
+        "type": "special[k]"
+    },
+    {
+        "name": "H Crescent Moon (Midair)",
+        "input": "j.214H[k]",
+        "damage": "1500",
+        "guard": "All",
+        "startup": "5",
+        "active": "3",
+        "recovery": "Until L+1 [L+7]",
+        "onBlock": "+2",
+        "onHit": "KD+40",
+        "onCH": "KD+44",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_214X_Kagura.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_214X_Kagura_Hitbox6.webp"
+        ],
+        "type": "special[k]"
+    },
+    {
+        "name": "H Kyokasuigetsu",
+        "input": "236H[k]",
+        "damage": "400\u00d73",
+        "guard": "Mid",
+        "startup": "15 [7]",
+        "active": "[2(9)]\u00d72,6",
+        "recovery": "21",
+        "onBlock": "-8",
+        "onHit": "KD+39",
+        "onCH": "KD+40",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_236X_Kagura.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_236X_Kagura_Hitbox1.webp",
+            "GBVSR_Narmaya_236X_Kagura_Hitbox2.webp",
+            "GBVSR_Narmaya_236X_Kagura_Hitbox3.webp",
+            "GBVSR_Narmaya_236X_Kagura_Hitbox4.webp"
+        ],
+        "type": "special[k]"
+    },
+    {
+        "name": "H Mugenkagura",
+        "input": "623H[k]",
+        "damage": "600, 300\u00d73",
+        "guard": "Mid",
+        "startup": "20 [6]",
+        "active": "4,3,2,1",
+        "recovery": "40",
+        "onBlock": "-22",
+        "onHit": "KD+29",
+        "onCH": "KD+29",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_623X_Kagura.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_623X_Kagura_Hitbox1.webp",
+            "GBVSR_Narmaya_623X_Kagura_Hitbox2.webp",
+            "GBVSR_Narmaya_623X_Kagura_Hitbox3.webp"
+        ],
+        "type": "special[k]"
+    },
+    {
+        "name": "H Setsuna",
+        "input": "236H[g]",
+        "damage": "1300",
+        "guard": "All",
+        "startup": "15",
+        "active": "7",
+        "recovery": "18 [29]",
+        "onBlock": "-2",
+        "onHit": "KD+37",
+        "onCH": "KD+41",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_236X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_236X_Hitbox1.webp",
+            "GBVSR_Narmaya_236X_Hitbox2.webp",
+            "GBVSR_Narmaya_236X_Hitbox3.webp",
+            "GBVSR_Narmaya_236X_Hitbox4.webp"
+        ],
+        "type": "special[g]"
+    },
+    {
+        "name": "H Transient",
+        "input": "214H[g]",
+        "damage": "",
+        "guard": "",
+        "startup": "23~31",
+        "active": "",
+        "recovery": "5",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_214X.webp"
+        ],
+        "hitboxes": [
+            ""
+        ],
+        "type": "special[g]"
+    },
+    {
+        "name": "L Absolute Horizon",
+        "input": "623L[g]",
+        "damage": "600, 400",
+        "guard": "All",
+        "startup": "6",
+        "active": "2(2)6",
+        "recovery": "27",
+        "onBlock": "-16",
+        "onHit": "KD+31",
+        "onCH": "KD+31",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_623X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_623X_Hitbox1.webp",
+            "GBVSR_Narmaya_623X_Hitbox2.webp"
+        ],
+        "type": "special[g]"
+    },
+    {
+        "name": "L Crescent Moon",
+        "input": "214L[k]",
+        "damage": "1100",
+        "guard": "All",
+        "startup": "27 [23]",
+        "active": "8",
+        "recovery": "9",
+        "onBlock": "-2",
+        "onHit": "KD+17",
+        "onCH": "KD+21",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_214X_Kagura.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_214X_Kagura_Hitbox1.webp",
+            "GBVSR_Narmaya_214X_Kagura_Hitbox2.webp"
+        ],
+        "type": "special[k]"
+    },
+    {
+        "name": "L Crescent Moon (Midair)",
+        "input": "j.214L[k]",
+        "damage": "1000",
+        "guard": "All",
+        "startup": "5",
+        "active": "7",
+        "recovery": "Until L+4 [L+7]",
+        "onBlock": "-3",
+        "onHit": "KD+27",
+        "onCH": "KD+31",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_214X_Kagura.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_214X_Kagura_Hitbox4.webp",
+            "GBVSR_Narmaya_214X_Kagura_Hitbox5.webp",
+            "GBVSR_Narmaya_214X_Kagura_Hitbox6.webp"
+        ],
+        "type": "special[k]"
+    },
+    {
+        "name": "L Kyokasuigetsu",
+        "input": "236L[k]",
+        "damage": "900",
+        "guard": "Mid",
+        "startup": "13 [6]",
+        "active": "2",
+        "recovery": "19",
+        "onBlock": "-5",
+        "onHit": "Air Tech+17",
+        "onCH": "KD+33",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_236X_Kagura.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_236X_Kagura_Hitbox1.webp",
+            "GBVSR_Narmaya_236X_Kagura_Hitbox2.webp",
+            ""
+        ],
+        "type": "special[k]"
+    },
+    {
+        "name": "L Mugenkagura",
+        "input": "623L[k]",
+        "damage": "600, 400",
+        "guard": "All",
+        "startup": "6",
+        "active": "4,6",
+        "recovery": "27",
+        "onBlock": "-14",
+        "onHit": "KD+30",
+        "onCH": "KD+30",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_623X_Kagura.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_623X_Kagura_Hitbox1.webp",
+            "GBVSR_Narmaya_623X_Kagura_Hitbox2.webp",
+            "GBVSR_Narmaya_623X_Kagura_Hitbox3.webp"
+        ],
+        "type": "special[k]"
+    },
+    {
+        "name": "L Setsuna",
+        "input": "236L[g]",
+        "damage": "900",
+        "guard": "All",
+        "startup": "14",
+        "active": "7",
+        "recovery": "28 [35]",
+        "onBlock": "-8",
+        "onHit": "Air Tech+18",
+        "onCH": "KD+34",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_236X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_236X_Hitbox1.webp",
+            "GBVSR_Narmaya_236X_Hitbox2.webp",
+            "GBVSR_Narmaya_236X_Hitbox3.webp",
+            "GBVSR_Narmaya_236X_Hitbox4.webp"
+        ],
+        "type": "special[g]"
+    },
+    {
+        "name": "L Transient",
+        "input": "214L[g]",
+        "damage": "",
+        "guard": "",
+        "startup": "34",
+        "active": "",
+        "recovery": "5",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_214X.webp"
+        ],
+        "hitboxes": [
+            ""
+        ],
+        "type": "special[g]"
+    },
+    {
+        "name": "M Absolute Horizon",
+        "input": "623M[g]",
+        "damage": "700, 400",
+        "guard": "Mid, All",
+        "startup": "9",
+        "active": "2(2)6",
+        "recovery": "40",
+        "onBlock": "-27",
+        "onHit": "Air Tech+15",
+        "onCH": "Air Tech+15",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_623X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_623X_Hitbox1.webp",
+            "GBVSR_Narmaya_623X_Hitbox2.webp"
+        ],
+        "type": "special[g]"
+    },
+    {
+        "name": "M Crescent Moon",
+        "input": "214M[k]",
+        "damage": "1200",
+        "guard": "All",
+        "startup": "38 [34]",
+        "active": "7",
+        "recovery": "9",
+        "onBlock": "-1",
+        "onHit": "+3",
+        "onCH": "+7",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_214X_Kagura.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_214X_Kagura_Hitbox3.webp",
+            "GBVSR_Narmaya_214X_Kagura_Hitbox1.webp",
+            "GBVSR_Narmaya_214X_Kagura_Hitbox2.webp"
+        ],
+        "type": "special[k]"
+    },
+    {
+        "name": "M Crescent Moon (Midair)",
+        "input": "j.214M[k]",
+        "damage": "1000",
+        "guard": "All",
+        "startup": "5",
+        "active": "7",
+        "recovery": "Until L+13",
+        "onBlock": "-15",
+        "onHit": "KD+36",
+        "onCH": "KD+40",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_214X_Kagura.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_214X_Kagura_Hitbox4.webp",
+            "GBVSR_Narmaya_214X_Kagura_Hitbox5.webp",
+            "GBVSR_Narmaya_214X_Kagura_Hitbox6.webp"
+        ],
+        "type": "special[k]"
+    },
+    {
+        "name": "M Kyokasuigetsu",
+        "input": "236M[k]",
+        "damage": "600\u00d72",
+        "guard": "Mid",
+        "startup": "16 [8]",
+        "active": "2(9)2",
+        "recovery": "21",
+        "onBlock": "-8",
+        "onHit": "KD+29",
+        "onCH": "KD+31",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_236X_Kagura.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_236X_Kagura_Hitbox1.webp",
+            "GBVSR_Narmaya_236X_Kagura_Hitbox2.webp",
+            "GBVSR_Narmaya_236X_Kagura_Hitbox3.webp",
+            ""
+        ],
+        "type": "special[k]"
+    },
+    {
+        "name": "M Mugenkagura",
+        "input": "623M[k]",
+        "damage": "700, 400",
+        "guard": "Mid, All",
+        "startup": "20 [6]",
+        "active": "4,6",
+        "recovery": "35",
+        "onBlock": "-22",
+        "onHit": "Air Tech+15",
+        "onCH": "Air Tech+15",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_623X_Kagura.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_623X_Kagura_Hitbox1.webp",
+            "GBVSR_Narmaya_623X_Kagura_Hitbox2.webp",
+            "GBVSR_Narmaya_623X_Kagura_Hitbox3.webp"
+        ],
+        "type": "special[k]"
+    },
+    {
+        "name": "M Setsuna",
+        "input": "236M[g]",
+        "damage": "1500",
+        "guard": "All",
+        "startup": "32~58",
+        "active": "7",
+        "recovery": "10 [21]",
+        "onBlock": "+10",
+        "onHit": "+20Force Crouch",
+        "onCH": "HKD+95",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_236X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_236X_Hitbox1.webp",
+            "GBVSR_Narmaya_236X_Hitbox2.webp",
+            "GBVSR_Narmaya_236X_Hitbox3.webp",
+            "GBVSR_Narmaya_236X_Hitbox4.webp"
+        ],
+        "type": "special[g]"
+    },
+    {
+        "name": "M Transient",
+        "input": "214M[g]",
+        "damage": "",
+        "guard": "",
+        "startup": "40 [21]",
+        "active": "",
+        "recovery": "5 [10]",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_214X.webp"
+        ],
+        "hitboxes": [
+            ""
+        ],
+        "type": "special[g]"
+    },
+    {
+        "name": "One Hundred Cloudscapes",
+        "input": "236236H",
+        "damage": "2500, 750\u00d72 (2500)",
+        "guard": "Mid",
+        "startup": "7+4 [3+4]",
+        "active": "6",
+        "recovery": "56",
+        "onBlock": "-43",
+        "onHit": "HKD+52 (HKD+73)",
+        "onCH": "HKD+52 (HKD+73)",
+        "meter": "-10000",
+        "images": [
+            "GBVSR_Narmaya_236236H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_236236H_Hitbox.webp"
+        ],
+        "type": "super"
+    },
+    {
+        "name": "Raging Chain",
+        "input": "MH~MH",
+        "damage": "1000",
+        "guard": "Mid",
+        "startup": "13",
+        "active": "5",
+        "recovery": "17",
+        "onBlock": "",
+        "onHit": "+15Force Crouch (HKD+63)",
+        "onCH": "",
+        "meter": "-2500",
+        "images": [
+            "GBVSR_Narmaya_MH-MH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_MH-MH_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "Raging Strike",
+        "input": "MH",
+        "damage": "1500",
+        "guard": "Guard Crush 45 [52]",
+        "startup": "28 (1)",
+        "active": "1",
+        "recovery": "37",
+        "onBlock": "+8Force Stand [+15Force Stand]",
+        "onHit": "+15Force Crouch (KD+40)",
+        "onCH": "+15Force Crouch",
+        "meter": "\u00b10",
+        "images": [
+            "GBVSR_Narmaya_MH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_MH_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "Ultimate Absolute Horizon",
+        "input": "623U[g]",
+        "damage": "600, 100\u00d76, 800",
+        "guard": "Mid",
+        "startup": "8",
+        "active": "2(2)1\u00d76(6)3 [1(1)1\u00d73(3)2]",
+        "recovery": "28 [27]",
+        "onBlock": "-21",
+        "onHit": "HKD+44",
+        "onCH": "HKD+44",
+        "meter": "-5000",
+        "images": [
+            "GBVSR_Narmaya_623U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_623U_Hitbox1.webp",
+            "GBVSR_Narmaya_623U2.webp",
+            "GBVSR_Narmaya_623U3.webp"
+        ],
+        "type": "special[g]"
+    },
+    {
+        "name": "Ultimate Aerial Crescent Moon",
+        "input": "j.214U[k]",
+        "damage": "2000",
+        "guard": "All",
+        "startup": "27",
+        "active": "4",
+        "recovery": "9",
+        "onBlock": "+4",
+        "onHit": "+8",
+        "onCH": "+8",
+        "meter": "-5000",
+        "images": [
+            "GBVSR_Narmaya_214U_Kagura.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_214Uk_Hitbox.webp"
+        ],
+        "type": "special[k]"
+    },
+    {
+        "name": "Ultimate Crescent Moon",
+        "input": "214U[k]",
+        "damage": "2000",
+        "guard": "All",
+        "startup": "27",
+        "active": "4",
+        "recovery": "9",
+        "onBlock": "+4",
+        "onHit": "+8",
+        "onCH": "+8",
+        "meter": "-5000",
+        "images": [
+            "GBVSR_Narmaya_214U_Kagura.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_214Uk_Hitbox.webp"
+        ],
+        "type": "special[k]"
+    },
+    {
+        "name": "Ultimate Kyokasuigetsu",
+        "input": "236U[k]",
+        "damage": "700\u00d72, 600\u00d72",
+        "guard": "Mid",
+        "startup": "13",
+        "active": "3(9)1(9)3\u00d72 [2(5)2]",
+        "recovery": "22 [24]",
+        "onBlock": "-6",
+        "onHit": "HKD+61",
+        "onCH": "HKD+61",
+        "meter": "-5000",
+        "images": [
+            "GBVSR_Narmaya_236U_Kagura.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_236U_Kagura_Hitbox1.webp",
+            "GBVSR_Narmaya_236U_Kagura_Hitbox2.webp",
+            "GBVSR_Narmaya_236U_Kagura_Hitbox3.webp",
+            "GBVSR_Narmaya_236U_Kagura_Hitbox4.webp"
+        ],
+        "type": "special[k]"
+    },
+    {
+        "name": "Ultimate Mugenkagura",
+        "input": "623U[k]",
+        "damage": "600, 900 [600, 900, (200\u00d75)]",
+        "guard": "Mid",
+        "startup": "12 [7]",
+        "active": "4,6 [4,6]",
+        "recovery": "34 [35]",
+        "onBlock": "-22",
+        "onHit": "HKD+44",
+        "onCH": "HKD+44",
+        "meter": "-5000",
+        "images": [
+            "GBVSR_Narmaya_623U_Kagura.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_623U_Kagura_Hitbox1.webp",
+            "GBVSR_Narmaya_623U_Kagura_Hitbox2.webp"
+        ],
+        "type": "special[k]"
+    },
+    {
+        "name": "Ultimate Setsuna",
+        "input": "236U[g]",
+        "damage": "900, 80\u00d75, 700 (900, 80\u00d75, 500)",
+        "guard": "All",
+        "startup": "14",
+        "active": "4",
+        "recovery": "16 [18]",
+        "onBlock": "+4",
+        "onHit": "HKD+60",
+        "onCH": "HKD+60",
+        "meter": "-5000",
+        "images": [
+            "GBVSR_Narmaya_236U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_236U_Hitbox1.webp",
+            "GBVSR_Narmaya_236U2.webp"
+        ],
+        "type": "special[g]"
+    },
+    {
+        "name": "Ultimate Transient",
+        "input": "214U[g]",
+        "damage": "2000, 200\u00d76",
+        "guard": "Mid",
+        "startup": "17",
+        "active": "1",
+        "recovery": "37",
+        "onBlock": "-4",
+        "onHit": "HKD+44",
+        "onCH": "HKD+44",
+        "meter": "-5000",
+        "images": [
+            "GBVSR_Narmaya_214U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_214U_Hitbox1.webp"
+        ],
+        "type": "special[g]"
+    }
+]

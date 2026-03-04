@@ -1,0 +1,979 @@
+[
+    {
+        "name": "",
+        "input": "2H",
+        "damage": "1300 [1400]",
+        "guard": "Mid",
+        "startup": "14~26 [27]",
+        "active": "6",
+        "recovery": "21",
+        "onBlock": "-10 [-8]",
+        "onHit": "-6 [-4]",
+        "onCH": "+2 [KD+55]",
+        "meter": "",
+        "images": [
+            "GBVSR_Charlotta_2H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Charlotta_2H_Hitbox.webp",
+            "GBVSR_Charlotta_2H_Hitbox_2.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "2L",
+        "damage": "400",
+        "guard": "Low",
+        "startup": "6",
+        "active": "3",
+        "recovery": "10",
+        "onBlock": "-2",
+        "onHit": "+2",
+        "onCH": "+4",
+        "meter": "",
+        "images": [
+            "GBVSR_Charlotta_2L.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Charlotta_2L_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "2M",
+        "damage": "900",
+        "guard": "Mid",
+        "startup": "9",
+        "active": "5",
+        "recovery": "12",
+        "onBlock": "-2",
+        "onHit": "+2",
+        "onCH": "+6",
+        "meter": "",
+        "images": [
+            "GBVSR_Charlotta_2M.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Charlotta_2M_Hitbox.webp",
+            "GBVSR_Charlotta_2M_Hitbox_2.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "2U",
+        "damage": "1000",
+        "guard": "Low",
+        "startup": "9",
+        "active": "6",
+        "recovery": "18",
+        "onBlock": "-9",
+        "onHit": "HKD+46",
+        "onCH": "HKD+50",
+        "meter": "",
+        "images": [
+            "GBVSR_Charlotta_2U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Charlotta_2U_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "66H",
+        "damage": "1200",
+        "guard": "Mid",
+        "startup": "15",
+        "active": "4",
+        "recovery": "23",
+        "onBlock": "-8",
+        "onHit": "+11Force Crouch",
+        "onCH": "+15Force Crouch",
+        "meter": "",
+        "images": [
+            "GBVSR_Charlotta_66H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Charlotta_66H_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "66L",
+        "damage": "600",
+        "guard": "Mid",
+        "startup": "8",
+        "active": "3",
+        "recovery": "10 [15]",
+        "onBlock": "+2",
+        "onHit": "+6",
+        "onCH": "+8",
+        "meter": "+480",
+        "images": [
+            "GBVSR_Charlotta_66L.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Charlotta_66L_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "66M",
+        "damage": "1100",
+        "guard": "Low",
+        "startup": "12",
+        "active": "4",
+        "recovery": "21",
+        "onBlock": "-8",
+        "onHit": "KD+24",
+        "onCH": "HKD+49",
+        "meter": "",
+        "images": [
+            "GBVSR_Charlotta_66M.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Charlotta_66M_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.H",
+        "damage": "1600",
+        "guard": "Mid",
+        "startup": "9",
+        "active": "6",
+        "recovery": "15",
+        "onBlock": "-2",
+        "onHit": "+2",
+        "onCH": "+14",
+        "meter": "",
+        "images": [
+            "GBVSR_Charlotta_cH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Charlotta_cH_Hitbox.webp",
+            "GBVSR_Charlotta_cH_Hitbox_2.webp",
+            "GBVSR_Charlotta_cH_Hitbox3.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.L",
+        "damage": "600",
+        "guard": "Mid",
+        "startup": "5",
+        "active": "3",
+        "recovery": "6",
+        "onBlock": "+4",
+        "onHit": "+8",
+        "onCH": "+10",
+        "meter": "",
+        "images": [
+            "GBVSR_Charlotta_cL.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Charlotta_cL_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.M",
+        "damage": "1100",
+        "guard": "Mid",
+        "startup": "6",
+        "active": "3",
+        "recovery": "16",
+        "onBlock": "-4",
+        "onHit": "\u00b10",
+        "onCH": "+4",
+        "meter": "",
+        "images": [
+            "GBVSR_Charlotta_cM.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Charlotta_cM_Hitbox.webp",
+            "GBVSR_Charlotta_cM_Hitbox_2.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.XX",
+        "damage": "700",
+        "guard": "Mid",
+        "startup": "9",
+        "active": "3",
+        "recovery": "15",
+        "onBlock": "-3",
+        "onHit": "+1",
+        "onCH": "+5",
+        "meter": "+480",
+        "images": [
+            "GBVSR_Charlotta_cXX.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Charlotta_cXX_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.XX6H",
+        "damage": "1000",
+        "guard": "High",
+        "startup": "18",
+        "active": "3",
+        "recovery": "22",
+        "onBlock": "-4",
+        "onHit": "+1Force Crouch",
+        "onCH": "HKD+32",
+        "meter": "+480",
+        "images": [
+            "GBVSR_Charlotta_cXX6H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Charlotta_cXX6H_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.XX6M",
+        "damage": "1000",
+        "guard": "Low",
+        "startup": "12",
+        "active": "3",
+        "recovery": "16",
+        "onBlock": "-4",
+        "onHit": "KD+30",
+        "onCH": "HKD+55",
+        "meter": "+480",
+        "images": [
+            "GBVSR_Charlotta_cXX6M.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Charlotta_cXX6M_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.XXX",
+        "damage": "1000",
+        "guard": "Mid",
+        "startup": "12",
+        "active": "3",
+        "recovery": "18",
+        "onBlock": "-4",
+        "onHit": "\u00b10",
+        "onCH": "+8",
+        "meter": "+600",
+        "images": [
+            "GBVSR_Charlotta_cXXX.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Charlotta_cXXX_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "f.H",
+        "damage": "1300",
+        "guard": "Mid",
+        "startup": "24",
+        "active": "6",
+        "recovery": "18",
+        "onBlock": "-5",
+        "onHit": "-1",
+        "onCH": "+11",
+        "meter": "",
+        "images": [
+            "GBVSR_Charlotta_fH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Charlotta_fH_Hitbox.webp",
+            "GBVSR_Charlotta_fH_Hitbox_2.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "f.L",
+        "damage": "600",
+        "guard": "Mid",
+        "startup": "6",
+        "active": "3",
+        "recovery": "9",
+        "onBlock": "+1",
+        "onHit": "+5",
+        "onCH": "+7",
+        "meter": "",
+        "images": [
+            "GBVSR_Charlotta_fL.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Charlotta_fL_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "f.M",
+        "damage": "900",
+        "guard": "Mid",
+        "startup": "7",
+        "active": "3",
+        "recovery": "18",
+        "onBlock": "-6",
+        "onHit": "-2",
+        "onCH": "+2",
+        "meter": "",
+        "images": [
+            "GBVSR_Charlotta_fM.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Charlotta_fM_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "j.H",
+        "damage": "1000",
+        "guard": "High\/Air",
+        "startup": "8",
+        "active": "6",
+        "recovery": "Until L+1",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Charlotta_jH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Charlotta_jH_Hitbox.webp",
+            "GBVSR_Charlotta_jH_Hitbox_2.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "j.L",
+        "damage": "600",
+        "guard": "High\/Air",
+        "startup": "5",
+        "active": "Until L",
+        "recovery": "1",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Charlotta_jL.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Charlotta_jL_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "j.M",
+        "damage": "700",
+        "guard": "High\/Air",
+        "startup": "6",
+        "active": "3",
+        "recovery": "Until L+1",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Charlotta_jM.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Charlotta_jM_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "j.U",
+        "damage": "400, 800",
+        "guard": "High\/Air",
+        "startup": "6",
+        "active": "3(4)3",
+        "recovery": "Until L+1",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Charlotta_jU.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Charlotta_jU_Hitbox.webp",
+            "GBVSR_Charlotta_jU_Hitbox_2.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "Air Throw",
+        "input": "j.LU",
+        "damage": "2500",
+        "guard": "Airthrow",
+        "startup": "5",
+        "active": "5",
+        "recovery": "Until L+6",
+        "onBlock": "",
+        "onHit": "HKD \u2248+44",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Charlotta_AirThrow.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Charlotta_AirThrow_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "Brave Counter",
+        "input": "BC",
+        "damage": "500",
+        "guard": "Mid",
+        "startup": "10 [18]",
+        "active": "3 [2]",
+        "recovery": "19 [35]",
+        "onBlock": "-2",
+        "onHit": "Air Tech+21 [+5]",
+        "onCH": "HKD+54 [HKD+43]",
+        "meter": "\u00b10",
+        "images": [
+            "GBVSR_Charlotta_BC.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Charlotta_BC_Hitbox_1.webp",
+            "GBVSR_Charlotta_BC_Hitbox_2.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "Brilliant Moon",
+        "input": "236236H",
+        "damage": "1000, 250\u00d79, 1250",
+        "guard": "Mid",
+        "startup": "8+5",
+        "active": "2\u00d79,1\u00d72 [2\u00d79]",
+        "recovery": "38 [19]",
+        "onBlock": "-20",
+        "onHit": "HKD+43",
+        "onCH": "HKD+43",
+        "meter": "-10000",
+        "images": [
+            "GBVSR_Charlotta_236236H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Charlotta_236236H_Hitbox.webp",
+            "GBVSR_Charlotta_236236H_Hitbox_2.webp"
+        ],
+        "type": "super"
+    },
+    {
+        "name": "Ground Throw",
+        "input": "LU",
+        "damage": "2500",
+        "guard": "Throw",
+        "startup": "4",
+        "active": "3",
+        "recovery": "26",
+        "onBlock": "",
+        "onHit": "HKD+40",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Charlotta_Throw.webp",
+            "GBVSR_Charlotta_BackThrow.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Charlotta_Throw_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "H Holy Ladder",
+        "input": "[2]8H",
+        "damage": "100\u00d78, 700",
+        "guard": "Mid",
+        "startup": "11",
+        "active": "1\u00d78(12)9",
+        "recovery": "23",
+        "onBlock": "-18~-15",
+        "onHit": "KD+12",
+        "onCH": "KD+12",
+        "meter": "",
+        "images": [
+            "GBVSR_Charlotta_28X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Charlotta_28X_Hitbox.webp",
+            "GBVSR_Charlotta_28X_Hitbox_2.webp",
+            "GBVSR_Charlotta_28X_Hitbox_3.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "H Shining Onslaught",
+        "input": "[4]6H",
+        "damage": "1500",
+        "guard": "Mid",
+        "startup": "11",
+        "active": "16",
+        "recovery": "27 [8]",
+        "onBlock": "-6",
+        "onHit": "KD+30",
+        "onCH": "KD+34",
+        "meter": "",
+        "images": [
+            "GBVSR_Charlotta_46X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Charlotta_46X_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "H Sword of Lumiel",
+        "input": "214H",
+        "damage": "300\u00d75",
+        "guard": "Mid",
+        "startup": "13",
+        "active": "2[(8)2]\u00d74",
+        "recovery": "9",
+        "onBlock": "+4",
+        "onHit": "+8",
+        "onCH": "+8",
+        "meter": "",
+        "images": [
+            "GBVSR_Charlotta_214X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Charlotta_214X_Hitbox.webp",
+            "GBVSR_Charlotta_214X_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "K\u00f6nigsschild",
+        "input": "5U",
+        "damage": "2000",
+        "guard": "Unblockable",
+        "startup": "6",
+        "active": "18",
+        "recovery": "17",
+        "onBlock": "",
+        "onHit": "HKD+37 [+6]",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Charlotta_5U.webp",
+            "GBVSR_Charlotta_5U_Attack.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Charlotta_5U_Hitbox.webp"
+        ],
+        "type": "unique"
+    },
+    {
+        "name": "L Holy Ladder",
+        "input": "[2]8L",
+        "damage": "500\u00d72",
+        "guard": "Mid, All",
+        "startup": "6",
+        "active": "4(12)7",
+        "recovery": "19",
+        "onBlock": "-4",
+        "onHit": "KD+25",
+        "onCH": "KD+25",
+        "meter": "",
+        "images": [
+            "GBVSR_Charlotta_28X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Charlotta_28L_Hitbox.webp",
+            "GBVSR_Charlotta_28L_Hitbox_2.webp",
+            "GBVSR_Charlotta_28X_Hitbox_3.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "L Shining Onslaught",
+        "input": "[4]6L",
+        "damage": "1000",
+        "guard": "Mid",
+        "startup": "11",
+        "active": "16",
+        "recovery": "20 [8]",
+        "onBlock": "-2",
+        "onHit": "+2",
+        "onCH": "+6",
+        "meter": "",
+        "images": [
+            "GBVSR_Charlotta_46X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Charlotta_46X_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "L Sword of Lumiel",
+        "input": "214L",
+        "damage": "300\u00d72, 400",
+        "guard": "Mid",
+        "startup": "7",
+        "active": "2[(8)2]\u00d72",
+        "recovery": "15",
+        "onBlock": "-2",
+        "onHit": "Air Tech+24",
+        "onCH": "Air Tech+24",
+        "meter": "",
+        "images": [
+            "GBVSR_Charlotta_214X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Charlotta_214X_Hitbox.webp",
+            "GBVSR_Charlotta_214X_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "M Holy Ladder",
+        "input": "[2]8M",
+        "damage": "500, 600",
+        "guard": "Mid, All",
+        "startup": "9",
+        "active": "8(18)9",
+        "recovery": "23",
+        "onBlock": "-18~-15",
+        "onHit": "KD+10",
+        "onCH": "KD+10",
+        "meter": "",
+        "images": [
+            "GBVSR_Charlotta_28X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Charlotta_28X_Hitbox.webp",
+            "GBVSR_Charlotta_28X_Hitbox_2.webp",
+            "GBVSR_Charlotta_28X_Hitbox_3.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "M Shining Onslaught",
+        "input": "[4]6M",
+        "damage": "1400",
+        "guard": "Mid",
+        "startup": "15",
+        "active": "16",
+        "recovery": "28 [8]",
+        "onBlock": "-10",
+        "onHit": "KD+26",
+        "onCH": "KD+30",
+        "meter": "",
+        "images": [
+            "GBVSR_Charlotta_46X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Charlotta_46X_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "M Sword of Lumiel",
+        "input": "214M",
+        "damage": "200, 250\u00d74",
+        "guard": "Mid",
+        "startup": "18",
+        "active": "2[(8)2]\u00d74 [2[(8)2]\u00d72]",
+        "recovery": "12 [8]",
+        "onBlock": "+1",
+        "onHit": "+5",
+        "onCH": "+5",
+        "meter": "",
+        "images": [
+            "GBVSR_Charlotta_214X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Charlotta_214X_Hitbox.webp",
+            "GBVSR_Charlotta_214X_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Noble Execution",
+        "input": "236236U",
+        "damage": "3000\u00d72 [2000]",
+        "guard": "Mid,All",
+        "startup": "8+3",
+        "active": "11(10)17",
+        "recovery": "20",
+        "onBlock": "-18",
+        "onHit": "HKD+49 [HKD+44]",
+        "onCH": "HKD+49 [HKD+44]",
+        "meter": "-10000",
+        "images": [
+            "GBVSR_Charlotta_236236U_Start.webp",
+            "GBVSR_Charlotta_236236U.webp",
+            "GBVSR_Charlotta_236236U_2.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Charlotta_236236U_Hitbox.webp",
+            "GBVSR_Charlotta_236236U_Hitbox_2.webp",
+            "GBVSR_Charlotta_236236U_Hitbox_3.webp",
+            "GBVSR_Charlotta_236236U_Hitbox_4.webp",
+            "GBVSR_Charlotta_236236U_Hitbox_5.webp"
+        ],
+        "type": "super"
+    },
+    {
+        "name": "Noble Strategy",
+        "input": "22X",
+        "damage": "",
+        "guard": "",
+        "startup": "21 [26]",
+        "active": "(2)15 [(2)10]",
+        "recovery": "0",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Charlotta_22X.webp"
+        ],
+        "hitboxes": [
+            ""
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Raging Chain",
+        "input": "MH~MH",
+        "damage": "1000",
+        "guard": "Mid",
+        "startup": "13",
+        "active": "5",
+        "recovery": "17",
+        "onBlock": "",
+        "onHit": "+15Force Crouch (HKD+63)",
+        "onCH": "",
+        "meter": "-2500",
+        "images": [
+            "GBVSR_Charlotta_MH-MH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Charlotta_MH-MH_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "Raging Strike",
+        "input": "MH",
+        "damage": "1500",
+        "guard": "Guard Crush 45 [52]",
+        "startup": "28 (1)",
+        "active": "1",
+        "recovery": "37",
+        "onBlock": "+8Force Stand [+15Force Stand]",
+        "onHit": "+15Force Crouch (KD+40)",
+        "onCH": "+15Force Crouch",
+        "meter": "\u00b10",
+        "images": [
+            "GBVSR_Charlotta_MH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Charlotta_MH_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "Ultimate Holy Ladder",
+        "input": "[2]8U",
+        "damage": "1000\u00d72 [600, 500]",
+        "guard": "Mid",
+        "startup": "8",
+        "active": "1\u00d78(12)11,1 [4(6)12]",
+        "recovery": "26",
+        "onBlock": "-16",
+        "onHit": "HKD+40",
+        "onCH": "HKD+40",
+        "meter": "-5000",
+        "images": [
+            "GBVSR_Charlotta_28U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Charlotta_28U_Hitbox.webp",
+            "GBVSR_Charlotta_28U_Hitbox_2.webp",
+            "GBVSR_Charlotta_28U_Hitbox_3.webp",
+            "GBVSR_Charlotta_28U_Hitbox_4.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Ultimate Noble Strategy",
+        "input": "22U",
+        "damage": "600, 800\u00d72",
+        "guard": "Mid\u00d72, Low",
+        "startup": "9",
+        "active": "1(8)7(6)13",
+        "recovery": "12",
+        "onBlock": "-6",
+        "onHit": "HKD+61",
+        "onCH": "HKD+61",
+        "meter": "-5000",
+        "images": [
+            "GBVSR_Charlotta_22U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Charlotta_22U_Hitbox.webp",
+            "GBVSR_Charlotta_22U_Hitbox_2.webp",
+            "GBVSR_Charlotta_22U_Hitbox_3.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Ultimate Shining Onslaught",
+        "input": "[4]6U",
+        "damage": "1200, 1400",
+        "guard": "Mid",
+        "startup": "11",
+        "active": "17(7)3 [17]",
+        "recovery": "20 [13]",
+        "onBlock": "-4",
+        "onHit": "HKD+67",
+        "onCH": "HKD+67",
+        "meter": "-5000",
+        "images": [
+            "GBVSR_Charlotta_46U.webp",
+            "GBVSR_Charlotta_46U_2.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Charlotta_46U_Hitbox.webp",
+            "GBVSR_Charlotta_46U_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Ultimate Sword of Lumiel",
+        "input": "214U",
+        "damage": "500, 100, 150x8, 700",
+        "guard": "Mid",
+        "startup": "11",
+        "active": "10\u00d74,2 [35]",
+        "recovery": "9 [15]",
+        "onBlock": "+4",
+        "onHit": "HKD+40",
+        "onCH": "HKD+40",
+        "meter": "-5000",
+        "images": [
+            "GBVSR_Charlotta_214U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Charlotta_214U_Hitbox.webp",
+            "GBVSR_Charlotta_214U_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "With Flying Nobility!",
+        "input": "22X~L",
+        "damage": "800 [1200]",
+        "guard": "All",
+        "startup": "9",
+        "active": "Until L",
+        "recovery": "6",
+        "onBlock": "-3 [+3]",
+        "onHit": "+3 [+7]",
+        "onCH": "+5 [+9]",
+        "meter": "",
+        "images": [
+            "GBVSR_Charlotta_22X-L.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Charlotta_22X-L_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "With Purest Bravery!",
+        "input": "22X~M",
+        "damage": "1200 [1800]",
+        "guard": "High\/Air",
+        "startup": "16",
+        "active": "Until L",
+        "recovery": "15",
+        "onBlock": "-3",
+        "onHit": "KD+12",
+        "onCH": "KD+16",
+        "meter": "",
+        "images": [
+            "GBVSR_Charlotta_22X-M.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Charlotta_22X-M_Hitbox.webp",
+            "GBVSR_Charlotta_22X-M_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "With Surest Strike!",
+        "input": "22X~5",
+        "damage": "1200 [1800]",
+        "guard": "Low",
+        "startup": "9",
+        "active": "10",
+        "recovery": "8",
+        "onBlock": "+1",
+        "onHit": "KD+31 [KD+44]",
+        "onCH": "KD+43 [KD+48]",
+        "meter": "",
+        "images": [
+            "GBVSR_Charlotta_22X-5.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Charlotta_22X-5_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "With Sweetest Skills!",
+        "input": "22X~H",
+        "damage": "2000 [3000]",
+        "guard": "Throw",
+        "startup": "5",
+        "active": "8",
+        "recovery": "Until L+21",
+        "onBlock": "",
+        "onHit": "HKD \u2248+66",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Charlotta_22X-H_Whiff.webp",
+            "GBVSR_Charlotta_22X-H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Charlotta_22X-H_Hitbox.webp"
+        ],
+        "type": "special"
+    }
+]

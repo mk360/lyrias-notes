@@ -1,0 +1,1385 @@
+[
+    {
+        "name": "",
+        "input": "2H",
+        "damage": "1300",
+        "guard": "Mid",
+        "startup": "11",
+        "active": "6",
+        "recovery": "23",
+        "onBlock": "-12",
+        "onHit": "-8",
+        "onCH": "0",
+        "meter": "",
+        "images": [
+            "GBVSR_Sandalphon_2H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Sandalphon_2H_Hitbox.webp",
+            "GBVSR_Sandalphon_2H_Hitbox_2.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "2L",
+        "damage": "400",
+        "guard": "Low",
+        "startup": "6",
+        "active": "3",
+        "recovery": "10",
+        "onBlock": "-2",
+        "onHit": "+2",
+        "onCH": "+4",
+        "meter": "",
+        "images": [
+            "GBVSR_Sandalphon_2L.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Sandalphon_2L_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "2M",
+        "damage": "900",
+        "guard": "Mid",
+        "startup": "7",
+        "active": "4",
+        "recovery": "14",
+        "onBlock": "-3",
+        "onHit": "+1",
+        "onCH": "+5",
+        "meter": "",
+        "images": [
+            "GBVSR_Sandalphon_2M.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Sandalphon_2M_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "2U",
+        "damage": "100",
+        "guard": "Low",
+        "startup": "8",
+        "active": "5",
+        "recovery": "21",
+        "onBlock": "-7~11",
+        "onHit": "HKD +44~+48",
+        "onCH": "HKD +48~+52",
+        "meter": "",
+        "images": [
+            "GBVSR_Sandalphon_2U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Sandalphon_2U_Hitbox.webp",
+            "GBVSR_Sandalphon_2U_Hitbox_2.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "66H",
+        "damage": "1200",
+        "guard": "",
+        "startup": "15",
+        "active": "4",
+        "recovery": "23",
+        "onBlock": "-8",
+        "onHit": "+10",
+        "onCH": "+14",
+        "meter": "",
+        "images": [
+            "GBVSR_Sandalphon_66H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Sandalphon_66H_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "66L",
+        "damage": "600",
+        "guard": "Mid",
+        "startup": "8",
+        "active": "3",
+        "recovery": "10 [15]",
+        "onBlock": "+2",
+        "onHit": "+6",
+        "onCH": "+8",
+        "meter": "+480",
+        "images": [
+            "GBVSR_Sandalphon_66L.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Sandalphon_66L_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "66M",
+        "damage": "1100",
+        "guard": "Low",
+        "startup": "12",
+        "active": "4",
+        "recovery": "21",
+        "onBlock": "-8",
+        "onHit": "KD +24",
+        "onCH": "HKD +49",
+        "meter": "",
+        "images": [
+            "GBVSR_Sandalphon_cXX6M.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Sandalphon_cXX6M_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.H",
+        "damage": "1600",
+        "guard": "Mid",
+        "startup": "9",
+        "active": "4",
+        "recovery": "19",
+        "onBlock": "-4",
+        "onHit": "0",
+        "onCH": "+12",
+        "meter": "",
+        "images": [
+            "GBVSR_Sandalphon_cH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Sandalphon_cH_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.L",
+        "damage": "600",
+        "guard": "Mid",
+        "startup": "5",
+        "active": "3",
+        "recovery": "6",
+        "onBlock": "+4",
+        "onHit": "+8",
+        "onCH": "+10",
+        "meter": "",
+        "images": [
+            "GBVSR_Sandalphon_cL.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Sandalphon_cL_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.M",
+        "damage": "1100",
+        "guard": "Mid",
+        "startup": "6",
+        "active": "3",
+        "recovery": "13",
+        "onBlock": "-1",
+        "onHit": "+3",
+        "onCH": "+7",
+        "meter": "",
+        "images": [
+            "GBVSR_Sandalphon_cM.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Sandalphon_cM_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.XX",
+        "damage": "700",
+        "guard": "Mid",
+        "startup": "9",
+        "active": "3",
+        "recovery": "15",
+        "onBlock": "-3",
+        "onHit": "+1",
+        "onCH": "+5",
+        "meter": "+480",
+        "images": [
+            "GBVSR_Sandalphon_cXX.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Sandalphon_cXX_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.XX6H",
+        "damage": "1000",
+        "guard": "High",
+        "startup": "18",
+        "active": "3",
+        "recovery": "22",
+        "onBlock": "-4",
+        "onHit": "+1Force Crouch",
+        "onCH": "HKD+32",
+        "meter": "+480",
+        "images": [
+            "GBVSR_Sandalphon_cXX6H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Sandalphon_cXX6H_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.XX6M",
+        "damage": "1000",
+        "guard": "Low",
+        "startup": "12",
+        "active": "3",
+        "recovery": "16",
+        "onBlock": "-4",
+        "onHit": "KD+30",
+        "onCH": "HKD+55",
+        "meter": "+480",
+        "images": [
+            "GBVSR_Sandalphon_cXX6M.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Sandalphon_cXX6M_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.XXX",
+        "damage": "1000",
+        "guard": "Mid",
+        "startup": "12",
+        "active": "3",
+        "recovery": "18",
+        "onBlock": "-4",
+        "onHit": "\u00b10",
+        "onCH": "+8",
+        "meter": "+600",
+        "images": [
+            "GBVSR_Sandalphon_cXXX.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Sandalphon_cXXX_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "f.H",
+        "damage": "1300",
+        "guard": "Mid",
+        "startup": "10",
+        "active": "5",
+        "recovery": "22",
+        "onBlock": "-10",
+        "onHit": "-6",
+        "onCH": "+2",
+        "meter": "",
+        "images": [
+            "GBVSR_Sandalphon_fH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Sandalphon_fH_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "f.L",
+        "damage": "600",
+        "guard": "Mid",
+        "startup": "6",
+        "active": "4",
+        "recovery": "8",
+        "onBlock": "+1",
+        "onHit": "+5",
+        "onCH": "+7",
+        "meter": "",
+        "images": [
+            "GBVSR_Sandalphon_fL.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Sandalphon_fL_Hitbox.webp",
+            "GBVSR_Sandalphon_fL_Hitbox_2.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "f.M",
+        "damage": "900",
+        "guard": "Mid",
+        "startup": "8",
+        "active": "3",
+        "recovery": "18",
+        "onBlock": "-6",
+        "onHit": "-2",
+        "onCH": "+2",
+        "meter": "",
+        "images": [
+            "GBVSR_Sandalphon_fM.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Sandalphon_fM_Hitbox.webp",
+            "GBVSR_Sandalphon_fM_Hitbox_2.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "j.H",
+        "damage": "1000",
+        "guard": "High\/Air",
+        "startup": "8",
+        "active": "6",
+        "recovery": "Until Landing+1",
+        "onBlock": "+2 - +13",
+        "onHit": "+2 - +13",
+        "onCH": "+6 - +17",
+        "meter": "",
+        "images": [
+            "GBVSR_Sandalphon_jH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Sandalphon_jH_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "j.L",
+        "damage": "600",
+        "guard": "High\/Air",
+        "startup": "5",
+        "active": "Until Landing+1",
+        "recovery": "1",
+        "onBlock": "+2 - +11",
+        "onHit": "+2-+13",
+        "onCH": "+4 - +15",
+        "meter": "",
+        "images": [
+            "GBVSR_Sandalphon_jL.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Sandalphon_jL_Hitbox.webp",
+            "GBVSR_Sandalphon_jL_Hitbox_2.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "j.M",
+        "damage": "700",
+        "guard": "High\/Air",
+        "startup": "6",
+        "active": "6",
+        "recovery": "Until Landing+1",
+        "onBlock": "+4 - +13",
+        "onHit": "+8 - +13",
+        "onCH": "+12 - +17",
+        "meter": "",
+        "images": [
+            "GBVSR_Sandalphon_jM.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Sandalphon_jM_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "j.U",
+        "damage": "1000",
+        "guard": "High\/Air",
+        "startup": "16",
+        "active": "Until Landing+1",
+        "recovery": "4",
+        "onBlock": "-14 - +10",
+        "onHit": "Air Tech +12 - +36",
+        "onCH": "SKD +27 - +51",
+        "meter": "",
+        "images": [
+            "GBVSR_Sandalphon_jU.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Sandalphon_jU_Hitbox.webp",
+            "GBVSR_Sandalphon_jU_Hitbox_2.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "22H Silence",
+        "input": "22H~L\/M",
+        "damage": "700",
+        "guard": "All",
+        "startup": "13",
+        "active": "",
+        "recovery": "Total 37",
+        "onBlock": "0",
+        "onHit": "KD +37",
+        "onCH": "KD +39",
+        "meter": "",
+        "images": [
+            "GBVSR_Sandalphon_22X-L.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Sandalphon_22X-L_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "22M Silence",
+        "input": "22M~L\/M",
+        "damage": "700",
+        "guard": "All",
+        "startup": "13",
+        "active": "40",
+        "recovery": "Total 43",
+        "onBlock": "-6",
+        "onHit": "Air Recovery +20",
+        "onCH": "KD +33",
+        "meter": "",
+        "images": [
+            "GBVSR_Sandalphon_22X-L.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Sandalphon_22X-L_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Ain Soph Aur",
+        "input": "236236H",
+        "damage": "2200, 300\u00d74, 100\u00d711 [3500]",
+        "guard": "Mid",
+        "startup": "7+7",
+        "active": "6",
+        "recovery": "46",
+        "onBlock": "-33",
+        "onHit": "HKD +44",
+        "onCH": "HKD +44",
+        "meter": "-10000",
+        "images": [
+            "GBVSR_Sandalphon_236236H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Sandalphon_236236H_Hitbox.webp"
+        ],
+        "type": "super"
+    },
+    {
+        "name": "Air Dash",
+        "input": "wi.j.66",
+        "damage": "",
+        "guard": "",
+        "startup": "",
+        "active": "",
+        "recovery": "25+4L",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Sandalphon_j66_wind.webp"
+        ],
+        "hitboxes": [
+            ""
+        ],
+        "type": "unique"
+    },
+    {
+        "name": "Brave Counter",
+        "input": "BC",
+        "damage": "500",
+        "guard": "Mid",
+        "startup": "10 [18]",
+        "active": "3 [2]",
+        "recovery": "19 [35]",
+        "onBlock": "-2",
+        "onHit": "Air Tech+21 [+5]",
+        "onCH": "HKD+54 [HKD+43]",
+        "meter": "\u00b10",
+        "images": [
+            "GBVSR_Sandalphon_BC.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Sandalphon_BC_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "Ethereal Prison",
+        "input": "22X~U",
+        "damage": "(1300) 1600 [2000]",
+        "guard": "Mid",
+        "startup": "25~43 \/ 17~35",
+        "active": "3",
+        "recovery": "30",
+        "onBlock": "0",
+        "onHit": "KD +52",
+        "onCH": "KD +52",
+        "meter": "",
+        "images": [
+            "GBVSR_Sandalphon_22X-U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Sandalphon_22X-U_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Ground Throw",
+        "input": "j.LU",
+        "damage": "2500",
+        "guard": "Throw",
+        "startup": "5",
+        "active": "5",
+        "recovery": "Until L+5",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Sandalphon_AirThrow.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Sandalphon_AirThrow_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "Ground Throw",
+        "input": "LU",
+        "damage": "1000,1500",
+        "guard": "Throw",
+        "startup": "4",
+        "active": "3",
+        "recovery": "26",
+        "onBlock": "",
+        "onHit": "+44",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Sandalphon_Throw.webp",
+            "GBVSR_Sandalphon_BackThrow.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Sandalphon_Throw_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "H Ecliptica",
+        "input": "236H",
+        "damage": "400\u00d73",
+        "guard": "All",
+        "startup": "14",
+        "active": "",
+        "recovery": "Total 45",
+        "onBlock": "+3",
+        "onHit": "+7",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Sandalphon_236X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Sandalphon_236X_Hitbox.webp",
+            "GBVSR_Sandalphon_236X_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "H Elemental Release",
+        "input": "214H~U",
+        "damage": "100\u00d76, 600",
+        "guard": "Mid (Guard Crush)",
+        "startup": "16",
+        "active": "21",
+        "recovery": "28",
+        "onBlock": "+3",
+        "onHit": "KD +45",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Sandalphon_214X-U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Sandalphon_214X-U_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "H First In Line",
+        "input": "22H",
+        "damage": "900",
+        "guard": "Mid",
+        "startup": "19",
+        "active": "",
+        "recovery": "",
+        "onBlock": "-57",
+        "onHit": "-53",
+        "onCH": "-49",
+        "meter": "",
+        "images": [
+            "GBVSR_Sandalphon_22X.webp"
+        ],
+        "hitboxes": [
+            ""
+        ],
+        "type": "special"
+    },
+    {
+        "name": "H Gabriel's Water",
+        "input": "wa.236H",
+        "damage": "900",
+        "guard": "All",
+        "startup": "14",
+        "active": "180",
+        "recovery": "Total 45",
+        "onBlock": "+3",
+        "onHit": "KD+39",
+        "onCH": "KD+41",
+        "meter": "",
+        "images": [
+            "GBVSR_Sandalphon_236X_water.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Sandalphon_236X_water_Hitbox.webp",
+            "GBVSR_Sandalphon_236M_water_Hitbox.webp",
+            "GBVSR_Sandalphon_236X_water_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "H Michael's Flame",
+        "input": "fi.236H",
+        "damage": "500\u00d73",
+        "guard": "All",
+        "startup": "14",
+        "active": "",
+        "recovery": "Total 45",
+        "onBlock": "+3",
+        "onHit": "KD+41",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Sandalphon_236X_fire.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Sandalphon_236X_fire_Hitbox.webp",
+            "GBVSR_Sandalphon_236X_fire_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "H Raphael's Gale",
+        "input": "wi.236H",
+        "damage": "500,100\u00d74",
+        "guard": "All",
+        "startup": "14",
+        "active": "",
+        "recovery": "Total 45",
+        "onBlock": "+3",
+        "onHit": "KD+42",
+        "onCH": "KD+42",
+        "meter": "",
+        "images": [
+            "GBVSR_Sandalphon_236X_wind.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Sandalphon_236X_wind_Hitbox.webp",
+            "GBVSR_Sandalphon_236X_wind_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "H Running Lights",
+        "input": "623H",
+        "damage": "700, 400\u00d72",
+        "guard": "Mid",
+        "startup": "11",
+        "active": "15",
+        "recovery": "38",
+        "onBlock": "-25",
+        "onHit": "KD +27",
+        "onCH": "KD +27",
+        "meter": "",
+        "images": [
+            "GBVSR_Sandalphon_623X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Sandalphon_623M_Hitbox.webp",
+            "GBVSR_Sandalphon_623M_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "H Uriel's Earth",
+        "input": "ea.236H",
+        "damage": "200, 100\u00d77",
+        "guard": "All",
+        "startup": "14",
+        "active": "24",
+        "recovery": "Total 51",
+        "onBlock": "+12",
+        "onHit": "+16",
+        "onCH": "+16",
+        "meter": "",
+        "images": [
+            "GBVSR_Sandalphon_236X_earth.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Sandalphon_236X_earth_Hitbox.webp",
+            "GBVSR_Sandalphon_236X_earth_Hitbox_2.webp",
+            "GBVSR_Sandalphon_236X_earth_Hitbox_3.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "H Zohar Strike",
+        "input": "214H",
+        "damage": "1300",
+        "guard": "Mid",
+        "startup": "14",
+        "active": "8",
+        "recovery": "22",
+        "onBlock": "-6",
+        "onHit": "KD +32",
+        "onCH": "KD +36",
+        "meter": "",
+        "images": [
+            "GBVSR_Sandalphon_214X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Sandalphon_214X_Hitbox.webp",
+            "GBVSR_Sandalphon_214X_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "L Ecliptica",
+        "input": "236L",
+        "damage": "800",
+        "guard": "All",
+        "startup": "14",
+        "active": "",
+        "recovery": "Total 45",
+        "onBlock": "-7",
+        "onHit": "-3",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Sandalphon_236X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Sandalphon_236X_Hitbox.webp",
+            "GBVSR_Sandalphon_236X_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "L Elemental Release",
+        "input": "214L~U",
+        "damage": "500",
+        "guard": "Mid",
+        "startup": "16",
+        "active": "3",
+        "recovery": "19",
+        "onBlock": "-2",
+        "onHit": "KD +32",
+        "onCH": "KD +32",
+        "meter": "",
+        "images": [
+            "GBVSR_Sandalphon_214X-U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Sandalphon_214X-U_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "L First In Line",
+        "input": "22L",
+        "damage": "900",
+        "guard": "Mid",
+        "startup": "16",
+        "active": "3",
+        "recovery": "24",
+        "onBlock": "-10",
+        "onHit": "KD +20",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Sandalphon_22L.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Sandalphon_22L_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "L Gabriel's Water",
+        "input": "wa.236L",
+        "damage": "400 (300)",
+        "guard": "Mid (All)",
+        "startup": "14 (17)",
+        "active": "3 (25)",
+        "recovery": "Total 45",
+        "onBlock": "-7",
+        "onHit": "Air recovery+19",
+        "onCH": "Air recovery+19",
+        "meter": "",
+        "images": [
+            "GBVSR_Sandalphon_236X_water.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Sandalphon_236X_water_Hitbox.webp",
+            "GBVSR_Sandalphon_236M_water_Hitbox.webp",
+            "GBVSR_Sandalphon_236X_water_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "L Michael's Flame",
+        "input": "fi.236L",
+        "damage": "1000",
+        "guard": "All",
+        "startup": "14",
+        "active": "",
+        "recovery": "Total 45",
+        "onBlock": "-7",
+        "onHit": "Air Recovery+21",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Sandalphon_236X_fire.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Sandalphon_236X_fire_Hitbox.webp",
+            "GBVSR_Sandalphon_236X_fire_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "L Raphael's Gale",
+        "input": "wi.236L",
+        "damage": "600",
+        "guard": "All",
+        "startup": "14",
+        "active": "",
+        "recovery": "Total 45",
+        "onBlock": "-7",
+        "onHit": "Air Recovery+21",
+        "onCH": "KD+32",
+        "meter": "",
+        "images": [
+            "GBVSR_Sandalphon_236X_wind.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Sandalphon_236X_wind_Hitbox.webp",
+            "GBVSR_Sandalphon_236X_wind_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "L Running Lights",
+        "input": "623L",
+        "damage": "1000",
+        "guard": "All",
+        "startup": "6",
+        "active": "8",
+        "recovery": "29",
+        "onBlock": "-20",
+        "onHit": "KD +26",
+        "onCH": "KD +26",
+        "meter": "",
+        "images": [
+            "GBVSR_Sandalphon_623X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Sandalphon_623X_Hitbox.webp",
+            "GBVSR_Sandalphon_623X_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "L Uriel's Earth",
+        "input": "ea.236L",
+        "damage": "400, 100\u00d74",
+        "guard": "All",
+        "startup": "32",
+        "active": "40",
+        "recovery": "Total 63",
+        "onBlock": "+5",
+        "onHit": "Air recovery+40",
+        "onCH": "Air recovery+40",
+        "meter": "",
+        "images": [
+            "GBVSR_Sandalphon_236X_earth.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Sandalphon_236X_earth_Hitbox.webp",
+            "GBVSR_Sandalphon_236X_earth_Hitbox_2.webp",
+            "GBVSR_Sandalphon_236X_earth_Hitbox_3.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "L Zohar Strike",
+        "input": "214L",
+        "damage": "1000",
+        "guard": "Mid",
+        "startup": "13",
+        "active": "6",
+        "recovery": "22",
+        "onBlock": "-4",
+        "onHit": "Air Recovery +22",
+        "onCH": "Air Recovery +26",
+        "meter": "",
+        "images": [
+            "GBVSR_Sandalphon_214X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Sandalphon_214X_Hitbox.webp",
+            "GBVSR_Sandalphon_214X_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "M Ecliptica",
+        "input": "236M",
+        "damage": "500\u00d72",
+        "guard": "All",
+        "startup": "32",
+        "active": "",
+        "recovery": "Total 63",
+        "onBlock": "+3",
+        "onHit": "+7",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Sandalphon_236X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Sandalphon_236X_Hitbox.webp",
+            "GBVSR_Sandalphon_236X_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "M Elemental Release",
+        "input": "214M~U",
+        "damage": "200\u00d74",
+        "guard": "Mid (Guard Crush)",
+        "startup": "16",
+        "active": "12",
+        "recovery": "28",
+        "onBlock": "+3",
+        "onHit": "KD +23",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Sandalphon_214X-U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Sandalphon_214X-U_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "M First In Line",
+        "input": "22M",
+        "damage": "",
+        "guard": "",
+        "startup": "",
+        "active": "",
+        "recovery": "",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Sandalphon_22X.webp"
+        ],
+        "hitboxes": [
+            ""
+        ],
+        "type": "special"
+    },
+    {
+        "name": "M Gabriel's Water",
+        "input": "wa.236M",
+        "damage": "400 (300)",
+        "guard": "Mid (All)",
+        "startup": "14 (17)",
+        "active": "3 (120)",
+        "recovery": "Total 63",
+        "onBlock": "-14",
+        "onHit": "Air recovery+14",
+        "onCH": "Air recovery+14",
+        "meter": "",
+        "images": [
+            "GBVSR_Sandalphon_236X_water.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Sandalphon_236X_water_Hitbox.webp",
+            "GBVSR_Sandalphon_236M_water_Hitbox.webp",
+            "GBVSR_Sandalphon_236X_water_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "M Michael's Flame",
+        "input": "fi.236M",
+        "damage": "650\u00d72",
+        "guard": "All",
+        "startup": "32",
+        "active": "",
+        "recovery": "Total 63",
+        "onBlock": "+3",
+        "onHit": "KD+42",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Sandalphon_236X_fire.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Sandalphon_236X_fire_Hitbox.webp",
+            "GBVSR_Sandalphon_236X_fire_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "M Raphael's Gale",
+        "input": "wi.236M",
+        "damage": "400,100\u00d74",
+        "guard": "All",
+        "startup": "32",
+        "active": "",
+        "recovery": "Total 63",
+        "onBlock": "+3",
+        "onHit": "KD+41",
+        "onCH": "KD+41",
+        "meter": "",
+        "images": [
+            "GBVSR_Sandalphon_236X_wind.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Sandalphon_236X_wind_Hitbox.webp",
+            "GBVSR_Sandalphon_236X_wind_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "M Running Lights",
+        "input": "623M",
+        "damage": "600, 500",
+        "guard": "Mid, All",
+        "startup": "9",
+        "active": "15",
+        "recovery": "38",
+        "onBlock": "-31",
+        "onHit": "Air Recovery +15",
+        "onCH": "Air Recovery +15",
+        "meter": "",
+        "images": [
+            "GBVSR_Sandalphon_623X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Sandalphon_623M_Hitbox.webp",
+            "GBVSR_Sandalphon_623M_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "M Uriel's Earth",
+        "input": "ea.236M",
+        "damage": "400, 100\u00d74",
+        "guard": "All",
+        "startup": "32",
+        "active": "30",
+        "recovery": "Total 69",
+        "onBlock": "+5",
+        "onHit": "Air recovery+40",
+        "onCH": "+40",
+        "meter": "",
+        "images": [
+            "GBVSR_Sandalphon_236X_earth.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Sandalphon_236X_earth_Hitbox.webp",
+            "GBVSR_Sandalphon_236X_earth_Hitbox_2.webp",
+            "GBVSR_Sandalphon_236X_earth_Hitbox_3.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "M Zohar Strike",
+        "input": "214M",
+        "damage": "1100",
+        "guard": "Mid",
+        "startup": "19",
+        "active": "8",
+        "recovery": "22",
+        "onBlock": "-6",
+        "onHit": "KD +32",
+        "onCH": "KD +36",
+        "meter": "",
+        "images": [
+            "GBVSR_Sandalphon_214X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Sandalphon_214X_Hitbox.webp",
+            "GBVSR_Sandalphon_214X_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "No Way Out",
+        "input": "22X~H",
+        "damage": "(900) 1000 [1200]",
+        "guard": "Mid",
+        "startup": "7~18",
+        "active": "4",
+        "recovery": "23",
+        "onBlock": "-6",
+        "onHit": "KD +36 \/ KD +39",
+        "onCH": "KD +40 \/ KD +39",
+        "meter": "",
+        "images": [
+            "GBVSR_Sandalphon_22X-H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Sandalphon_22X-H_Hitbox.webp",
+            "GBVSR_Sandalphon_22X-H_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Paradise Lost",
+        "input": "236236U",
+        "damage": "1200\u00d72, 600\u00d72, 60\u00d720, 1200 [500\u00d78]",
+        "guard": "Mid, All",
+        "startup": "7+7",
+        "active": "",
+        "recovery": "",
+        "onBlock": "-28",
+        "onHit": "HKD +44",
+        "onCH": "HKD +44",
+        "meter": "-10000",
+        "images": [
+            "GBVSR_Sandalphon_236236U_Start.webp",
+            "GBVSR_Sandalphon_236236U.webp",
+            "GBVSR_Sandalphon_236236U_Finish.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Sandalphon_236236U_Hitbox.webp",
+            "GBVSR_Sandalphon_236236U_Hitbox_2.webp",
+            "GBVSR_Sandalphon_236236U_Hitbox_3.webp"
+        ],
+        "type": "super"
+    },
+    {
+        "name": "Raging Chain",
+        "input": "MH~MH",
+        "damage": "1000",
+        "guard": "Mid",
+        "startup": "13",
+        "active": "5",
+        "recovery": "17",
+        "onBlock": "",
+        "onHit": "+15Force Crouch (HKD+63)",
+        "onCH": "",
+        "meter": "-2500",
+        "images": [
+            "GBVSR_Sandalphon_MH-MH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Sandalphon_MH-MH_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "Raging Strike",
+        "input": "MH",
+        "damage": "1500",
+        "guard": "Guard Crush 45 [52]",
+        "startup": "28 (1)",
+        "active": "1",
+        "recovery": "37",
+        "onBlock": "+8Force Stand [+15Force Stand]",
+        "onHit": "+15Force Crouch (KD+40)",
+        "onCH": "+15Force Crouch",
+        "meter": "\u00b10",
+        "images": [
+            "GBVSR_Sandalphon_MH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Sandalphon_MH_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "Supreme Wings",
+        "input": "214X~U",
+        "damage": "",
+        "guard": "",
+        "startup": "",
+        "active": "",
+        "recovery": "Total 41",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Sandalphon_5U.webp"
+        ],
+        "hitboxes": [
+            ""
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Supreme Wings",
+        "input": "5U",
+        "damage": "",
+        "guard": "",
+        "startup": "28",
+        "active": "",
+        "recovery": "17",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Sandalphon_5U.webp"
+        ],
+        "hitboxes": [
+            ""
+        ],
+        "type": "unique"
+    },
+    {
+        "name": "The Vice",
+        "input": "22X~6\/4",
+        "damage": "",
+        "guard": "",
+        "startup": "",
+        "active": "",
+        "recovery": "Total 41",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Sandalphon_22X-6.webp",
+            "GBVSR_Sandalphon_22X-4.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Sandalphon_22X-6_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Ultimate Ecliptica",
+        "input": "236U",
+        "damage": "1600",
+        "guard": "All",
+        "startup": "11",
+        "active": "46",
+        "recovery": "Total 39",
+        "onBlock": "-4",
+        "onHit": "HKD +55",
+        "onCH": "HKD +55",
+        "meter": "-5000",
+        "images": [
+            "GBVSR_Sandalphon_236U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Sandalphon_236U_Hitbox.webp",
+            "GBVSR_Sandalphon_236U_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Ultimate First In Line",
+        "input": "22U",
+        "damage": "200\u00d78, 1400",
+        "guard": "All",
+        "startup": "18",
+        "active": "14",
+        "recovery": "Total 54",
+        "onBlock": "-4",
+        "onHit": "HKD +52",
+        "onCH": "HKD +52",
+        "meter": "-5000",
+        "images": [
+            "GBVSR_Sandalphon_22U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Sandalphon_22U_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Ultimate Running Lights",
+        "input": "623U",
+        "damage": "700, 400\u00d72, 100\u00d75",
+        "guard": "Mid",
+        "startup": "8",
+        "active": "8",
+        "recovery": "35",
+        "onBlock": "-25",
+        "onHit": "HKD +44",
+        "onCH": "HKD +44",
+        "meter": "-5000",
+        "images": [
+            "GBVSR_Sandalphon_623U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Sandalphon_623U_Hitbox.webp",
+            "GBVSR_Sandalphon_623U_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Ultimate Zohar Strike",
+        "input": "214U",
+        "damage": "1200, 100\u00d710",
+        "guard": "Mid",
+        "startup": "14",
+        "active": "5",
+        "recovery": "18",
+        "onBlock": "-6",
+        "onHit": "HKD +63",
+        "onCH": "HKD +63",
+        "meter": "-5000",
+        "images": [
+            "GBVSR_Sandalphon_214U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Sandalphon_214U_Hitbox.webp",
+            "GBVSR_Sandalphon_214U_Hitbox_2.webp"
+        ],
+        "type": "special"
+    }
+]

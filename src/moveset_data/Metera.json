@@ -1,0 +1,1027 @@
+[
+    {
+        "name": "",
+        "input": "2H",
+        "damage": "900",
+        "guard": "All",
+        "startup": "11",
+        "active": "24",
+        "recovery": "Total 40",
+        "onBlock": "-8",
+        "onHit": "-4",
+        "onCH": "+7",
+        "meter": "",
+        "images": [
+            "GBVSR_Metera_2H.webp",
+            "GBVSR_Metera_1H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Metera_2H_Hitbox.webp",
+            "GBVSR_Metera_2H_Hitbox_2.webp",
+            "GBVSR_Metera_2H_Hitbox_3.webp",
+            "GBVSR_Metera_1H_Hitbox.webp",
+            "GBVSR_Metera_1H_Hitbox_2.webp",
+            "GBVSR_Metera_1H_Hitbox_3.webp",
+            ""
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "2L",
+        "damage": "400",
+        "guard": "Low",
+        "startup": "6",
+        "active": "3",
+        "recovery": "10",
+        "onBlock": "-2",
+        "onHit": "+2",
+        "onCH": "+4",
+        "meter": "",
+        "images": [
+            "GBVSR_Metera_2L.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Metera_2L_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "2M",
+        "damage": "900",
+        "guard": "Mid",
+        "startup": "8",
+        "active": "6",
+        "recovery": "12",
+        "onBlock": "-3",
+        "onHit": "+1",
+        "onCH": "+5",
+        "meter": "",
+        "images": [
+            "GBVSR_Metera_2M.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Metera_2M_Hitbox.webp",
+            "GBVSR_Metera_2M_Hitbox_2.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "2U",
+        "damage": "1000",
+        "guard": "Low",
+        "startup": "13",
+        "active": "15",
+        "recovery": "14",
+        "onBlock": "-14",
+        "onHit": "HKD+41",
+        "onCH": "HKD+45",
+        "meter": "",
+        "images": [
+            "GBVSR_Metera_2U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Metera_2U_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "66H",
+        "damage": "1300",
+        "guard": "Mid",
+        "startup": "20",
+        "active": "7",
+        "recovery": "16",
+        "onBlock": "-4",
+        "onHit": "KD+32",
+        "onCH": "KD+36",
+        "meter": "",
+        "images": [
+            "GBVSR_Metera_66H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Metera_66H_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "66L",
+        "damage": "600",
+        "guard": "Mid",
+        "startup": "8",
+        "active": "3",
+        "recovery": "10 [15]",
+        "onBlock": "+2",
+        "onHit": "+6",
+        "onCH": "+8",
+        "meter": "+480",
+        "images": [
+            "GBVSR_Metera_66L.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Metera_66L_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "66M",
+        "damage": "1100",
+        "guard": "High",
+        "startup": "26",
+        "active": "6",
+        "recovery": "17",
+        "onBlock": "-6",
+        "onHit": "Air Tech+20",
+        "onCH": "HKD+57",
+        "meter": "",
+        "images": [
+            "GBVSR_Metera_66M.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Metera_66M_Hitbox.webp",
+            "GBVSR_Metera_66M_Hitbox_2.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.H",
+        "damage": "1000, 200\u00d72",
+        "guard": "Mid",
+        "startup": "11",
+        "active": "2\u00d73",
+        "recovery": "21",
+        "onBlock": "-4",
+        "onHit": "\u00b10",
+        "onCH": "\u00b10",
+        "meter": "",
+        "images": [
+            "GBVSR_Metera_cH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Metera_cH_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.L",
+        "damage": "600",
+        "guard": "Mid",
+        "startup": "6",
+        "active": "3",
+        "recovery": "8",
+        "onBlock": "+2",
+        "onHit": "+6",
+        "onCH": "+8",
+        "meter": "",
+        "images": [
+            "GBVSR_Metera_cL.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Metera_cL_Hitbox.webp",
+            "GBVSR_Metera_cL_Hitbox_2.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.M",
+        "damage": "1100",
+        "guard": "Mid",
+        "startup": "7",
+        "active": "3",
+        "recovery": "12",
+        "onBlock": "\u00b10",
+        "onHit": "+4",
+        "onCH": "+8",
+        "meter": "",
+        "images": [
+            "GBVSR_Metera_cM.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Metera_cM_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.XX",
+        "damage": "700",
+        "guard": "Mid",
+        "startup": "9",
+        "active": "3",
+        "recovery": "15",
+        "onBlock": "-3",
+        "onHit": "+1",
+        "onCH": "+5",
+        "meter": "+480",
+        "images": [
+            "GBVSR_Metera_cXX.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Metera_cXX_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.XX6H",
+        "damage": "1000",
+        "guard": "High",
+        "startup": "18",
+        "active": "3",
+        "recovery": "22",
+        "onBlock": "-4",
+        "onHit": "+1Force Crouch",
+        "onCH": "HKD+32",
+        "meter": "+480",
+        "images": [
+            "GBVSR_Metera_cXX6H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Metera_cXX6H_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.XX6M",
+        "damage": "1000",
+        "guard": "Low",
+        "startup": "12",
+        "active": "3",
+        "recovery": "16",
+        "onBlock": "-4",
+        "onHit": "KD+30",
+        "onCH": "HKD+55",
+        "meter": "+480",
+        "images": [
+            "GBVSR_Metera_cXX6M.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Metera_cXX6M_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.XXX",
+        "damage": "1000",
+        "guard": "Mid",
+        "startup": "12",
+        "active": "3",
+        "recovery": "18",
+        "onBlock": "-4",
+        "onHit": "\u00b10",
+        "onCH": "+8",
+        "meter": "+600",
+        "images": [
+            "GBVSR_Metera_cXXX.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Metera_cXXX_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "f.H",
+        "damage": "900",
+        "guard": "All",
+        "startup": "13",
+        "active": "15",
+        "recovery": "Total 42",
+        "onBlock": "-8",
+        "onHit": "-4",
+        "onCH": "\u00b10",
+        "meter": "",
+        "images": [
+            "GBVSR_Metera_fH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Metera_fH_Hitbox.webp",
+            "GBVSR_Metera_fH_Hitbox_2.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "f.L",
+        "damage": "600",
+        "guard": "Low",
+        "startup": "8",
+        "active": "6",
+        "recovery": "5",
+        "onBlock": "+2",
+        "onHit": "+6",
+        "onCH": "+8",
+        "meter": "",
+        "images": [
+            "GBVSR_Metera_fL.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Metera_fL_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "f.M",
+        "damage": "900",
+        "guard": "Mid",
+        "startup": "8",
+        "active": "9",
+        "recovery": "15",
+        "onBlock": "-7",
+        "onHit": "-3",
+        "onCH": "+1",
+        "meter": "",
+        "images": [
+            "GBVSR_Metera_fM.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Metera_fM_Hitbox.webp",
+            "GBVSR_Metera_fM_Hitbox_2.webp",
+            "GBVSR_Metera_fM_Hitbox_3.webp",
+            "GBVSR_Metera_fM_Hitbox_4.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "j.H",
+        "damage": "1000",
+        "guard": "High\/Air",
+        "startup": "13",
+        "active": "6",
+        "recovery": "Until L+1",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Metera_jH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Metera_jH_Hitbox.webp",
+            "GBVSR_Metera_jH_Hitbox_2.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "j.L",
+        "damage": "600",
+        "guard": "High\/Air",
+        "startup": "5",
+        "active": "Until L",
+        "recovery": "1",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Metera_jL.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Metera_jL_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "j.M",
+        "damage": "400\u00d72",
+        "guard": "High\/Air, All",
+        "startup": "8",
+        "active": "3(5)3",
+        "recovery": "Until L+1",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Metera_jM.webp",
+            "GBVSR_Metera_jM_2.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Metera_jM_Hitbox.webp",
+            "GBVSR_Metera_jM_2_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "Aetherial Seal",
+        "input": "22X",
+        "damage": "200\u00d75(\u00d72)",
+        "guard": "All",
+        "startup": "21 [16]",
+        "active": "[25]",
+        "recovery": "Total 32",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Metera_22X.webp",
+            "GBVSR_Metera_22H.webp",
+            "GBVSR_Metera_22X_Explosion.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Metera_22X_Explosion_Hitbox.webp",
+            "GBVSR_Metera_22X_Explosion_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Air H Starry Sky (High)",
+        "input": "j.236H",
+        "damage": "500\u00d73",
+        "guard": "All",
+        "startup": "22",
+        "active": "",
+        "recovery": "Until L+6",
+        "onBlock": "+12",
+        "onHit": "KD+52",
+        "onCH": "KD+51",
+        "meter": "",
+        "images": [
+            "GBVSR_Metera_j236X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Metera_j214L_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Air H Starry Sky (Low)",
+        "input": "j.214H",
+        "damage": "500\u00d73",
+        "guard": "All",
+        "startup": "22",
+        "active": "",
+        "recovery": "Until L+6",
+        "onBlock": "+12",
+        "onHit": "KD+52",
+        "onCH": "KD+51",
+        "meter": "",
+        "images": [
+            "GBVSR_Metera_j214X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Metera_j214M_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Air L Starry Sky (High)",
+        "input": "j.236L",
+        "damage": "1000",
+        "guard": "All",
+        "startup": "19",
+        "active": "",
+        "recovery": "Until L+6",
+        "onBlock": "\u00b10",
+        "onHit": "+4",
+        "onCH": "+6",
+        "meter": "",
+        "images": [
+            "GBVSR_Metera_j236X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Metera_j214L_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Air M Starry Sky (High)",
+        "input": "j.236M",
+        "damage": "1000",
+        "guard": "All",
+        "startup": "22",
+        "active": "",
+        "recovery": "Until L+6",
+        "onBlock": "-3",
+        "onHit": "+1",
+        "onCH": "KD+37",
+        "meter": "",
+        "images": [
+            "GBVSR_Metera_j236X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Metera_j214M_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Air Throw",
+        "input": "j.LU",
+        "damage": "2500",
+        "guard": "Airthrow",
+        "startup": "5",
+        "active": "5",
+        "recovery": "Until L+6",
+        "onBlock": "",
+        "onHit": "HKD \u2248+45",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Metera_AirThrow.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Metera_AirThrow_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "Air Zephyr",
+        "input": "j.U",
+        "damage": "",
+        "guard": "",
+        "startup": "",
+        "active": "",
+        "recovery": "Total 21",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Metera_5U.webp",
+            "GBVSR_Metera_4U.webp"
+        ],
+        "hitboxes": [
+            ""
+        ],
+        "type": "unique"
+    },
+    {
+        "name": "Brave Counter",
+        "input": "BC",
+        "damage": "500",
+        "guard": "Mid",
+        "startup": "10 [18]",
+        "active": "3 [2]",
+        "recovery": "19 [35]",
+        "onBlock": "-2",
+        "onHit": "Air Tech+21 [+5]",
+        "onCH": "HKD+54 [HKD+43]",
+        "meter": "\u00b10",
+        "images": [
+            "GBVSR_Metera_BC.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Metera_BC_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "Dense Caress",
+        "input": "236236H",
+        "damage": "1500, 1000, 2000 [1500, 1000\u00d72]",
+        "guard": "Mid",
+        "startup": "8+5",
+        "active": "9(12)6\u00d72",
+        "recovery": "53",
+        "onBlock": "-67",
+        "onHit": "HKD+37 [HKD \u2248+43]",
+        "onCH": "HKD+37 [HKD \u2248+43]",
+        "meter": "-10000",
+        "images": [
+            "GBVSR_Metera_236236H.webp",
+            "GBVSR_Metera_236236H_Finish.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Metera_236236H_Hitbox.webp",
+            "GBVSR_Metera_236236H_Hitbox_2.webp",
+            "GBVSR_Metera_236236H_Hitbox_3.webp",
+            "GBVSR_Metera_236236H_Hitbox_4.webp"
+        ],
+        "type": "super"
+    },
+    {
+        "name": "Ground Throw",
+        "input": "LU",
+        "damage": "2500",
+        "guard": "Throw",
+        "startup": "4",
+        "active": "3",
+        "recovery": "26",
+        "onBlock": "",
+        "onHit": "HKD+49",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Metera_Throw.webp",
+            "GBVSR_Metera_BackThrow.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Metera_Throw_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "H Starry Sky (High)",
+        "input": "236H",
+        "damage": "500\u00d73",
+        "guard": "All",
+        "startup": "10",
+        "active": "",
+        "recovery": "Total 41",
+        "onBlock": "+5",
+        "onHit": "KD+44",
+        "onCH": "KD+43",
+        "meter": "",
+        "images": [
+            "GBVSR_Metera_236X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Metera_236X_Hitbox.webp",
+            "GBVSR_Metera_236X_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "H Starry Sky (Low)",
+        "input": "214H",
+        "damage": "500\u00d73",
+        "guard": "All",
+        "startup": "11",
+        "active": "",
+        "recovery": "Total 41",
+        "onBlock": "+3",
+        "onHit": "KD+43",
+        "onCH": "KD+42",
+        "meter": "",
+        "images": [
+            "GBVSR_Metera_214X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Metera_214X_Hitbox.webp",
+            "GBVSR_Metera_214X_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "H The Great Fall",
+        "input": "623H",
+        "damage": "900, 150\u00d74",
+        "guard": "Mid, All",
+        "startup": "15",
+        "active": "8(14)23",
+        "recovery": "Total 53",
+        "onBlock": "-12 [+21]",
+        "onHit": "KD+49 [+31]",
+        "onCH": "KD+49 [+31]",
+        "meter": "",
+        "images": [
+            "GBVSR_Metera_623X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Metera_623M_Hitbox.webp",
+            "GBVSR_Metera_623X_2_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "L Starry Sky (High)",
+        "input": "236L",
+        "damage": "1000",
+        "guard": "All",
+        "startup": "10",
+        "active": "",
+        "recovery": "Total 41",
+        "onBlock": "-5",
+        "onHit": "Air Tech+18",
+        "onCH": "KD+32",
+        "meter": "",
+        "images": [
+            "GBVSR_Metera_236X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Metera_236X_Hitbox.webp",
+            "GBVSR_Metera_236X_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "L Starry Sky (Low)",
+        "input": "214L",
+        "damage": "1000",
+        "guard": "All",
+        "startup": "11",
+        "active": "",
+        "recovery": "Total 41",
+        "onBlock": "-7",
+        "onHit": "Air Tech+19",
+        "onCH": "KD+33",
+        "meter": "",
+        "images": [
+            "GBVSR_Metera_214X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Metera_214X_Hitbox.webp",
+            "GBVSR_Metera_214X_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "L The Great Fall",
+        "input": "623L",
+        "damage": "600, 100\u00d74",
+        "guard": "Mid, All",
+        "startup": "18",
+        "active": "8(14)24",
+        "recovery": "Total 44",
+        "onBlock": "+28",
+        "onHit": "+38",
+        "onCH": "+38",
+        "meter": "",
+        "images": [
+            "GBVSR_Metera_623X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Metera_623L_Hitbox.webp",
+            "GBVSR_Metera_623X_2_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "M Starry Sky (High)",
+        "input": "236M",
+        "damage": "1000",
+        "guard": "All",
+        "startup": "10",
+        "active": "",
+        "recovery": "Total 41",
+        "onBlock": "-5",
+        "onHit": "+2",
+        "onCH": "+4",
+        "meter": "",
+        "images": [
+            "GBVSR_Metera_236X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Metera_236X_Hitbox.webp",
+            "GBVSR_Metera_236X_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "M Starry Sky (Low)",
+        "input": "214M",
+        "damage": "1000",
+        "guard": "All",
+        "startup": "11",
+        "active": "",
+        "recovery": "Total 41",
+        "onBlock": "-7",
+        "onHit": "+1",
+        "onCH": "KD+33",
+        "meter": "",
+        "images": [
+            "GBVSR_Metera_214X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Metera_214X_Hitbox.webp",
+            "GBVSR_Metera_214X_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "M The Great Fall",
+        "input": "623M",
+        "damage": "600, 100\u00d74",
+        "guard": "Mid, All",
+        "startup": "18",
+        "active": "8(14)23",
+        "recovery": "Total 48",
+        "onBlock": "+24",
+        "onHit": "+34",
+        "onCH": "+34",
+        "meter": "",
+        "images": [
+            "GBVSR_Metera_623X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Metera_623M_Hitbox.webp",
+            "GBVSR_Metera_623X_2_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Raging Chain",
+        "input": "MH~MH",
+        "damage": "1000",
+        "guard": "Mid",
+        "startup": "13",
+        "active": "5",
+        "recovery": "17",
+        "onBlock": "+4",
+        "onHit": "+15Force Crouch (HKD+63)",
+        "onCH": "+15Force Crouch",
+        "meter": "-2500",
+        "images": [
+            "GBVSR_Metera_MH-MH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Metera_MH-MH_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "Raging Strike",
+        "input": "MH",
+        "damage": "1500",
+        "guard": "Guard Crush 45 [52]",
+        "startup": "28 (1)",
+        "active": "1",
+        "recovery": "37",
+        "onBlock": "+8Force Stand [+15Force Stand]",
+        "onHit": "+15Force Crouch (KD+40)",
+        "onCH": "+15Force Crouch",
+        "meter": "\u00b10",
+        "images": [
+            "GBVSR_Metera_MH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Metera_MH_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "Rapid Pulverize",
+        "input": "236236U",
+        "damage": "3600, 1200\u00d72 [200\u00d710, 2000]",
+        "guard": "All",
+        "startup": "5+8",
+        "active": "43",
+        "recovery": "Total 108",
+        "onBlock": "-29",
+        "onHit": "HKD+48 [HKD+34]",
+        "onCH": "HKD+48 [HKD+34]",
+        "meter": "-10000",
+        "images": [
+            "GBVSR_Metera_236236U_Start.webp",
+            "GBVSR_Metera_236236U.webp",
+            "GBVSR_Metera_236236U_Finish.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Metera_236236U_Hitbox.webp",
+            "GBVSR_Metera_236236U_Hitbox_2.webp"
+        ],
+        "type": "super"
+    },
+    {
+        "name": "Ultimate Aerial Starry Sky (High)",
+        "input": "j.236U",
+        "damage": "2000",
+        "guard": "All",
+        "startup": "11",
+        "active": "",
+        "recovery": "Until L+6",
+        "onBlock": "+14",
+        "onHit": "HKD+53",
+        "onCH": "HKD+53",
+        "meter": "-5000",
+        "images": [
+            "GBVSR_Metera_j236U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Metera_j236U_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Ultimate Aerial Starry Sky (Low)",
+        "input": "j.214U",
+        "damage": "2000",
+        "guard": "All",
+        "startup": "11",
+        "active": "",
+        "recovery": "Until L+6",
+        "onBlock": "+14",
+        "onHit": "HKD+53",
+        "onCH": "HKD+53",
+        "meter": "-5000",
+        "images": [
+            "GBVSR_Metera_j214U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Metera_j214U_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Ultimate Aetherial Seal",
+        "input": "22U",
+        "damage": "1500, 500\u00d72",
+        "guard": "All",
+        "startup": "12 [12]",
+        "active": "[30]",
+        "recovery": "Total 20",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "-5000",
+        "images": [
+            "GBVSR_Metera_22U.webp",
+            "GBVSR_Metera_22U_Explosion.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Metera_22U_Explosion_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Ultimate Starry Sky (High)",
+        "input": "236U",
+        "damage": "2000",
+        "guard": "All",
+        "startup": "11",
+        "active": "",
+        "recovery": "Total 36",
+        "onBlock": "+4",
+        "onHit": "HKD+60",
+        "onCH": "HKD+60",
+        "meter": "-5000",
+        "images": [
+            "GBVSR_Metera_236U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Metera_236U_Hitbox.webp",
+            "GBVSR_Metera_236U_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Ultimate Starry Sky (Low)",
+        "input": "214U",
+        "damage": "2000",
+        "guard": "All",
+        "startup": "11",
+        "active": "",
+        "recovery": "Total 36",
+        "onBlock": "+4",
+        "onHit": "HKD+60",
+        "onCH": "HKD+60",
+        "meter": "-5000",
+        "images": [
+            "GBVSR_Metera_214U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Metera_214U_Hitbox.webp",
+            "GBVSR_Metera_214U_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Ultimate The Great Fall",
+        "input": "623U",
+        "damage": "1000\u00d72 [500, 1000]",
+        "guard": "Mid",
+        "startup": "8",
+        "active": "4",
+        "recovery": "25",
+        "onBlock": "-24",
+        "onHit": "HKD+32~+35",
+        "onCH": "HKD+32~+35",
+        "meter": "-5000",
+        "images": [
+            "GBVSR_Metera_623U.webp",
+            "GBVSR_Metera_623U_2.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Metera_623U_Hitbox.webp",
+            "GBVSR_Metera_623U_Hitbox_2.webp",
+            "GBVSR_Metera_623U_Hitbox_3.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Zephyr",
+        "input": "5U",
+        "damage": "",
+        "guard": "",
+        "startup": "",
+        "active": "",
+        "recovery": "Total 21",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Metera_5U.webp",
+            "GBVSR_Metera_4U.webp"
+        ],
+        "hitboxes": [
+            ""
+        ],
+        "type": "unique"
+    }
+]

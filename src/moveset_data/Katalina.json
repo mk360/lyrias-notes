@@ -1,0 +1,950 @@
+[
+    {
+        "name": "",
+        "input": "2H",
+        "damage": "1300",
+        "guard": "Mid",
+        "startup": "11",
+        "active": "6",
+        "recovery": "23",
+        "onBlock": "-12",
+        "onHit": "-8",
+        "onCH": "\u00b10",
+        "meter": "",
+        "images": [
+            "GBVSR_Katalina_2H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Katalina_2H_Hitbox1.webp",
+            "GBVSR_Katalina_2H_Hitbox2.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "2L",
+        "damage": "400",
+        "guard": "Low",
+        "startup": "6",
+        "active": "3",
+        "recovery": "10",
+        "onBlock": "-2",
+        "onHit": "+2",
+        "onCH": "+4",
+        "meter": "",
+        "images": [
+            "GBVSR_Katalina_2L.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Katalina_2L_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "2M",
+        "damage": "900",
+        "guard": "Mid",
+        "startup": "7",
+        "active": "5",
+        "recovery": "15",
+        "onBlock": "-5",
+        "onHit": "-1",
+        "onCH": "+3",
+        "meter": "",
+        "images": [
+            "GBVSR_Katalina_2M.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Katalina_2M_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "2U",
+        "damage": "1000",
+        "guard": "Low",
+        "startup": "8",
+        "active": "5",
+        "recovery": "21",
+        "onBlock": "-11",
+        "onHit": "HKD+44",
+        "onCH": "HKD+48",
+        "meter": "",
+        "images": [
+            "GBVSR_Katalina_2U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Katalina_2U_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "66H",
+        "damage": "1200",
+        "guard": "Mid",
+        "startup": "15",
+        "active": "4",
+        "recovery": "19",
+        "onBlock": "-4",
+        "onHit": "KD+41",
+        "onCH": "KD+45",
+        "meter": "",
+        "images": [
+            "GBVSR_Katalina_66H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Katalina_66H_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "66L",
+        "damage": "600",
+        "guard": "Mid",
+        "startup": "8",
+        "active": "3",
+        "recovery": "10 [15]",
+        "onBlock": "+2",
+        "onHit": "+6",
+        "onCH": "+8",
+        "meter": "+480",
+        "images": [
+            "GBVSR_Katalina_66L.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Katalina_66L_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "66M",
+        "damage": "1100",
+        "guard": "Low",
+        "startup": "12",
+        "active": "4",
+        "recovery": "21",
+        "onBlock": "-8",
+        "onHit": "KD+24",
+        "onCH": "HKD+49",
+        "meter": "",
+        "images": [
+            "GBVSR_Katalina_66M.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Katalina_66M_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.H",
+        "damage": "1600",
+        "guard": "Mid",
+        "startup": "9",
+        "active": "6",
+        "recovery": "21",
+        "onBlock": "-8",
+        "onHit": "-4",
+        "onCH": "+8",
+        "meter": "",
+        "images": [
+            "GBVSR_Katalina_cH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Katalina_cH_Hitbox1.webp",
+            "GBVSR_Katalina_cH_Hitbox2.webp",
+            "GBVSR_Katalina_cH_Hitbox3.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.L",
+        "damage": "600",
+        "guard": "Mid",
+        "startup": "5",
+        "active": "3",
+        "recovery": "6",
+        "onBlock": "+4",
+        "onHit": "+8",
+        "onCH": "+10",
+        "meter": "",
+        "images": [
+            "GBVSR_Katalina_cL.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Katalina_cL_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.M",
+        "damage": "1100",
+        "guard": "Mid",
+        "startup": "6",
+        "active": "3",
+        "recovery": "13",
+        "onBlock": "-1",
+        "onHit": "+3",
+        "onCH": "+7",
+        "meter": "",
+        "images": [
+            "GBVSR_Katalina_cM.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Katalina_cM_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.XX",
+        "damage": "700",
+        "guard": "Mid",
+        "startup": "9",
+        "active": "3",
+        "recovery": "15",
+        "onBlock": "-3",
+        "onHit": "+1",
+        "onCH": "+5",
+        "meter": "+480",
+        "images": [
+            "GBVSR_Katalina_cXX.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Katalina_cXX_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.XX6H",
+        "damage": "1000",
+        "guard": "High",
+        "startup": "18",
+        "active": "3",
+        "recovery": "22",
+        "onBlock": "-4",
+        "onHit": "+1Force Crouch",
+        "onCH": "HKD+32",
+        "meter": "+480",
+        "images": [
+            "GBVSR_Katalina_cXX6H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Katalina_cXX6H_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.XX6M",
+        "damage": "1000",
+        "guard": "Low",
+        "startup": "12",
+        "active": "3",
+        "recovery": "16",
+        "onBlock": "-4",
+        "onHit": "KD+30",
+        "onCH": "HKD+55",
+        "meter": "+480",
+        "images": [
+            "GBVSR_Katalina_cXX6M.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Katalina_cXX6M_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.XXX",
+        "damage": "1000",
+        "guard": "Mid",
+        "startup": "12",
+        "active": "3",
+        "recovery": "18",
+        "onBlock": "-4",
+        "onHit": "\u00b10",
+        "onCH": "+8",
+        "meter": "+600",
+        "images": [
+            "GBVSR_Katalina_cXXX.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Katalina_cXXX_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "f.H",
+        "damage": "1300",
+        "guard": "Mid",
+        "startup": "9",
+        "active": "4",
+        "recovery": "23",
+        "onBlock": "-10",
+        "onHit": "-6",
+        "onCH": "+2",
+        "meter": "",
+        "images": [
+            "GBVSR_Katalina_fH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Katalina_fH_Hitbox1.webp",
+            "GBVSR_Katalina_fH_Hitbox2.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "f.L",
+        "damage": "600",
+        "guard": "Mid",
+        "startup": "6",
+        "active": "3",
+        "recovery": "9",
+        "onBlock": "+1",
+        "onHit": "+5",
+        "onCH": "+7",
+        "meter": "",
+        "images": [
+            "GBVSR_Katalina_fL.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Katalina_fL_Hitbox1.webp",
+            "GBVSR_Katalina_fL_Hitbox2.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "f.M",
+        "damage": "900",
+        "guard": "Mid",
+        "startup": "8",
+        "active": "3",
+        "recovery": "18",
+        "onBlock": "-6",
+        "onHit": "-2",
+        "onCH": "+2",
+        "meter": "",
+        "images": [
+            "GBVSR_Katalina_fM.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Katalina_fM_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "j.H",
+        "damage": "1000",
+        "guard": "High\/Air",
+        "startup": "7",
+        "active": "6",
+        "recovery": "Until L+1",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Katalina_jH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Katalina_jH_Hitbox1.webp",
+            "GBVSR_Katalina_jH_Hitbox2.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "j.L",
+        "damage": "600",
+        "guard": "High\/Air",
+        "startup": "5",
+        "active": "Until L",
+        "recovery": "1",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Katalina_jL.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Katalina_jL_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "j.M",
+        "damage": "800",
+        "guard": "High\/Air",
+        "startup": "6",
+        "active": "7",
+        "recovery": "Until L+1",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Katalina_jM.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Katalina_jM_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "j.U",
+        "damage": "900",
+        "guard": "High\/Air",
+        "startup": "10",
+        "active": "12",
+        "recovery": "Until L+1",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Katalina_jU.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Katalina_jU_Hitbox1.webp",
+            "GBVSR_Katalina_jU_Hitbox2.webp",
+            "GBVSR_Katalina_jU_Hitbox3.webp",
+            "GBVSR_Katalina_jU_Hitbox4.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "Air Throw",
+        "input": "j.LU",
+        "damage": "2500",
+        "guard": "Throw",
+        "startup": "5",
+        "active": "5",
+        "recovery": "Until L+6",
+        "onBlock": "",
+        "onHit": "HKD \u2248+45",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Katalina_AirThrow.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Katalina_AirThrow_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "Backstep",
+        "input": "5U~44",
+        "damage": "",
+        "guard": "",
+        "startup": "",
+        "active": "",
+        "recovery": "Total 22",
+        "onBlock": "-8\/-6\/-4",
+        "onHit": "KD+35\/KD+36\/HKD+80",
+        "onCH": "KD+37\/KD+44\/HKD+91",
+        "meter": "",
+        "images": [
+            "GBVSR_Katalina_5U_Attack.webp"
+        ],
+        "hitboxes": [
+            ""
+        ],
+        "type": "unique"
+    },
+    {
+        "name": "Blades of Frost",
+        "input": "236236H",
+        "damage": "1000\u00d72,2500 [1000\u00d72,1500]",
+        "guard": "Mid",
+        "startup": "8+5",
+        "active": "3(15)6(24)9",
+        "recovery": "30",
+        "onBlock": "-20~-16",
+        "onHit": "HKD+45 [HKD+36]",
+        "onCH": "HKD+45 [HKD+36]",
+        "meter": "",
+        "images": [
+            "GBVSR_Katalina_236236H.webp",
+            "GBVSR_Katalina_236236H_2.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Katalina_236236H_Hitbox_1.webp",
+            "GBVSR_Katalina_236236H_Hitbox_2.webp",
+            "GBVSR_Katalina_236236H_Hitbox_3.webp",
+            "GBVSR_Katalina_236236H_Hitbox_4.webp"
+        ],
+        "type": "super"
+    },
+    {
+        "name": "Brave Counter",
+        "input": "BC",
+        "damage": "500",
+        "guard": "Mid",
+        "startup": "10 [18]",
+        "active": "3 [2]",
+        "recovery": "19 [35]",
+        "onBlock": "-2",
+        "onHit": "Air Tech+21 [+5]",
+        "onCH": "HKD+54 [HKD+43]",
+        "meter": "\u00b10",
+        "images": [
+            "GBVSR_Katalina_BC.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Katalina_BC_Hitbox_1.webp",
+            "GBVSR_Katalina_BC_Hitbox_2.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "Frontstep",
+        "input": "5U~66",
+        "damage": "",
+        "guard": "",
+        "startup": "",
+        "active": "",
+        "recovery": "Total 19",
+        "onBlock": "-5\/-3\/-1",
+        "onHit": "KD+38\/KD+39\/HKD+83",
+        "onCH": "KD+40\/KD+47\/HKD+94",
+        "meter": "",
+        "images": [
+            "GBVSR_Katalina_5U_Attack.webp"
+        ],
+        "hitboxes": [
+            ""
+        ],
+        "type": "unique"
+    },
+    {
+        "name": "Ground Throw",
+        "input": "LU",
+        "damage": "2500",
+        "guard": "Throw",
+        "startup": "4",
+        "active": "3",
+        "recovery": "26",
+        "onBlock": "",
+        "onHit": "HKD+44",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Katalina_Throw.webp",
+            "GBVSR_Katalina_BackThrow.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Katalina_Throw_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "H Emerald Sword",
+        "input": "623H",
+        "damage": "700, 400x2",
+        "guard": "Mid",
+        "startup": "11",
+        "active": "2(1)6\u00d72",
+        "recovery": "35",
+        "onBlock": "-22",
+        "onHit": "KD+26",
+        "onCH": "KD+26",
+        "meter": "",
+        "images": [
+            "GBVSR_Katalina_623X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Katalina_623X_Hitbox1.webp",
+            "GBVSR_Katalina_623X_Hitbox2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "H Enchanted Lands",
+        "input": "214H",
+        "damage": "1500 [1800]",
+        "guard": "Mid",
+        "startup": "16~33 [34]",
+        "active": "6",
+        "recovery": "21",
+        "onBlock": "-8",
+        "onHit": "KD+29 [+6Force Crouch]",
+        "onCH": "KD+33 [+10Force Crouch]",
+        "meter": "",
+        "images": [
+            "GBVSR_Katalina_214X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Katalina_214X_Hitbox1.webp",
+            "GBVSR_Katalina_214X_Hitbox2.webp",
+            "GBVSR_Katalina_214X_Hitbox3.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "H Frozen Blade",
+        "input": "236H",
+        "damage": "400\u00d73",
+        "guard": "All",
+        "startup": "16",
+        "active": "",
+        "recovery": "Total 48",
+        "onBlock": "+2",
+        "onHit": "KD+41",
+        "onCH": "KD+41",
+        "meter": "",
+        "images": [
+            "GBVSR_Katalina_236X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Katalina_236X_Hitbox1.webp",
+            "GBVSR_Katalina_236X_Hitbox2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "L Emerald Sword",
+        "input": "623L",
+        "damage": "1000 [500]",
+        "guard": "Mid [All]",
+        "startup": "6",
+        "active": "2(2)6",
+        "recovery": "27",
+        "onBlock": "-20 [-16]",
+        "onHit": "KD+26 [KD+27]",
+        "onCH": "KD+26 [KD+27]",
+        "meter": "",
+        "images": [
+            "GBVSR_Katalina_623X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Katalina_623X_Hitbox1.webp",
+            "GBVSR_Katalina_623X_Hitbox2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "L Enchanted Lands",
+        "input": "214L",
+        "damage": "1000",
+        "guard": "Mid",
+        "startup": "15",
+        "active": "6",
+        "recovery": "18",
+        "onBlock": "-7",
+        "onHit": "Air Tech+19",
+        "onCH": "KD+35",
+        "meter": "",
+        "images": [
+            "GBVSR_Katalina_214X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Katalina_214X_Hitbox1.webp",
+            "GBVSR_Katalina_214X_Hitbox2.webp",
+            "GBVSR_Katalina_214X_Hitbox3.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "L Frozen Blade",
+        "input": "236L",
+        "damage": "800",
+        "guard": "All",
+        "startup": "16",
+        "active": "",
+        "recovery": "Total 45",
+        "onBlock": "-7",
+        "onHit": "-3",
+        "onCH": "-1",
+        "meter": "",
+        "images": [
+            "GBVSR_Katalina_236X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Katalina_236X_Hitbox1.webp",
+            "GBVSR_Katalina_236X_Hitbox2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Light Wall",
+        "input": "5U",
+        "damage": "1300",
+        "guard": "Mid",
+        "startup": "21~38",
+        "active": "6",
+        "recovery": "24",
+        "onBlock": "-15",
+        "onHit": "KD+28",
+        "onCH": "KD+30",
+        "meter": "",
+        "images": [
+            "GBVSR_Katalina_5U.webp",
+            "GBVSR_Katalina_5U_Attack.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Katalina_5U_Hitbox1.webp",
+            "GBVSR_Katalina_5U_Hitbox2.webp"
+        ],
+        "type": "unique"
+    },
+    {
+        "name": "Light Wall (Charged)",
+        "input": "5[U]",
+        "damage": "1500",
+        "guard": "Mid",
+        "startup": "69",
+        "active": "6",
+        "recovery": "24",
+        "onBlock": "-11",
+        "onHit": "HKD+73",
+        "onCH": "HKD+84",
+        "meter": "",
+        "images": [
+            "GBVSR_Katalina_5U.webp",
+            "GBVSR_Katalina_5U_Attack.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Katalina_5U_Hitbox1.webp",
+            "GBVSR_Katalina_5U_Hitbox2.webp"
+        ],
+        "type": "unique"
+    },
+    {
+        "name": "Light Wall (Partially Charged)",
+        "input": "5{U}",
+        "damage": "1400",
+        "guard": "Mid",
+        "startup": "39~68",
+        "active": "6",
+        "recovery": "24",
+        "onBlock": "-13",
+        "onHit": "KD+29",
+        "onCH": "KD+37",
+        "meter": "",
+        "images": [
+            "GBVSR_Katalina_5U.webp",
+            "GBVSR_Katalina_5U_Attack.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Katalina_5U_Hitbox1.webp",
+            "GBVSR_Katalina_5U_Hitbox2.webp"
+        ],
+        "type": "unique"
+    },
+    {
+        "name": "M Emerald Sword",
+        "input": "623M",
+        "damage": "600, 500",
+        "guard": "Mid, All",
+        "startup": "9",
+        "active": "2(2)12",
+        "recovery": "34",
+        "onBlock": "-27",
+        "onHit": "Air Tech+15",
+        "onCH": "Air Tech+15",
+        "meter": "",
+        "images": [
+            "GBVSR_Katalina_623X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Katalina_623X_Hitbox1.webp",
+            "GBVSR_Katalina_623X_Hitbox2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "M Enchanted Lands",
+        "input": "214M",
+        "damage": "1400",
+        "guard": "Mid",
+        "startup": "20",
+        "active": "6",
+        "recovery": "21",
+        "onBlock": "-8",
+        "onHit": "KD+28",
+        "onCH": "KD+32",
+        "meter": "",
+        "images": [
+            "GBVSR_Katalina_214X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Katalina_214X_Hitbox1.webp",
+            "GBVSR_Katalina_214X_Hitbox2.webp",
+            "GBVSR_Katalina_214X_Hitbox3.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "M Frozen Blade",
+        "input": "236M",
+        "damage": "800",
+        "guard": "All",
+        "startup": "16",
+        "active": "",
+        "recovery": "Total 45",
+        "onBlock": "-7",
+        "onHit": "-3",
+        "onCH": "-1",
+        "meter": "",
+        "images": [
+            "GBVSR_Katalina_236X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Katalina_236X_Hitbox1.webp",
+            "GBVSR_Katalina_236X_Hitbox2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Raging Chain",
+        "input": "MH~MH",
+        "damage": "1000",
+        "guard": "Mid",
+        "startup": "13",
+        "active": "5",
+        "recovery": "17",
+        "onBlock": "",
+        "onHit": "+15Force Crouch (HKD+63)",
+        "onCH": "",
+        "meter": "-2500",
+        "images": [
+            "GBVSR_Katalina_MH-MH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Katalina_MH-MH_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "Raging Strike",
+        "input": "MH",
+        "damage": "1500",
+        "guard": "Guard Crush 45 [52]",
+        "startup": "28 (1)",
+        "active": "1",
+        "recovery": "37",
+        "onBlock": "+8Force Stand [+15Force Stand]",
+        "onHit": "+15Force Crouch (KD+40)",
+        "onCH": "+15Force Crouch",
+        "meter": "\u00b10",
+        "images": [
+            "GBVSR_Katalina_MH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Katalina_MH_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "Realm of Ice",
+        "input": "236236U",
+        "damage": "3600, 1200\u00d72 [1000, 400\u00d75, 1000]",
+        "guard": "Mid",
+        "startup": "6+6",
+        "active": "6(12)3\u00d75,6",
+        "recovery": "55",
+        "onBlock": "-48",
+        "onHit": "HKD+47 [HKD+44]",
+        "onCH": "HKD+47 [HKD+44]",
+        "meter": "",
+        "images": [
+            "GBVSR_Katalina_236236U_Start.webp",
+            "GBVSR_Katalina_236236U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Katalina_236236U_Hitbox_1.webp",
+            "GBVSR_Katalina_236236U_Hitbox_2.webp",
+            "GBVSR_Katalina_236236U_Hitbox_3.webp",
+            "GBVSR_Katalina_236236U_Hitbox_4.webp",
+            "GBVSR_Katalina_236236U_Hitbox_5.webp",
+            "GBVSR_Katalina_236236U_Hitbox_6.webp",
+            "GBVSR_Katalina_236236U_Hitbox_7.webp",
+            "GBVSR_Katalina_236236U_Hitbox_8.webp"
+        ],
+        "type": "super"
+    },
+    {
+        "name": "Ultimate Emerald Sword",
+        "input": "623U",
+        "damage": "700, 300x2, 700 [700, 400]",
+        "guard": "Mid",
+        "startup": "8",
+        "active": "2(1)6\u00d72 [1(1)6]",
+        "recovery": "32 [35]",
+        "onBlock": "-22",
+        "onHit": "HKD+44 [HKD+45]",
+        "onCH": "HKD+44 [HKD+45]",
+        "meter": "",
+        "images": [
+            "GBVSR_Katalina_623U.webp",
+            "GBVSR_Katalina_623U_2.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Katalina_623X_Hitbox1.webp",
+            "GBVSR_Katalina_623X_Hitbox2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Ultimate Enchanted Lands",
+        "input": "214U",
+        "damage": "700, 1800",
+        "guard": "Mid",
+        "startup": "9",
+        "active": "2(7)7",
+        "recovery": "24",
+        "onBlock": "-6",
+        "onHit": "HKD+52 [HKD+51]",
+        "onCH": "HKD+52 [HKD+51]",
+        "meter": "",
+        "images": [
+            "GBVSR_Katalina_214U.webp",
+            "GBVSR_Katalina_214U_Attack.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Katalina_214U_Hitbox_1.webp",
+            "GBVSR_Katalina_214U_Hitbox_2.webp",
+            "GBVSR_Katalina_214U_Hitbox_3.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Ultimate Frozen Blade",
+        "input": "236U",
+        "damage": "2000",
+        "guard": "All",
+        "startup": "16",
+        "active": "8",
+        "recovery": "24",
+        "onBlock": "-4",
+        "onHit": "HKD+85",
+        "onCH": "HKD+85",
+        "meter": "-5000",
+        "images": [
+            "GBVSR_Katalina_236U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Katalina_236U_Hitbox1.webp",
+            "GBVSR_Katalina_236U_Hitbox2.webp",
+            "GBVSR_Katalina_236U_Hitbox3.webp"
+        ],
+        "type": "special"
+    }
+]

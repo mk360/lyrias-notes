@@ -1,0 +1,1060 @@
+[
+    {
+        "name": "",
+        "input": "2H",
+        "damage": "1300",
+        "guard": "Mid",
+        "startup": "11",
+        "active": "6",
+        "recovery": "23",
+        "onBlock": "-12",
+        "onHit": "-8",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_2H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Belial_2H_Hitbox.webp",
+            "GBVSR_Belial_2H_Hitbox_2.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "2L",
+        "damage": "400",
+        "guard": "Mid",
+        "startup": "5",
+        "active": "3",
+        "recovery": "12",
+        "onBlock": "-4",
+        "onHit": "0",
+        "onCH": "+2",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_2L.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Belial_2L_Hitbox.webp",
+            "GBVSR_Belial_2L_Hitbox_2.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "2M",
+        "damage": "900",
+        "guard": "Low",
+        "startup": "7",
+        "active": "3",
+        "recovery": "11",
+        "onBlock": "+1",
+        "onHit": "+5",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_2M.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Belial_2M_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "2U",
+        "damage": "1000",
+        "guard": "Low",
+        "startup": "10",
+        "active": "6",
+        "recovery": "20",
+        "onBlock": "-11",
+        "onHit": "HKD",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_2U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Belial_2U_Hitbox.webp",
+            "GBVSR_Belial_2U_Hitbox_2.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "66H",
+        "damage": "1300",
+        "guard": "Mid",
+        "startup": "20",
+        "active": "8",
+        "recovery": "14",
+        "onBlock": "-3",
+        "onHit": "KD",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_66H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Belial_66H_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "66L",
+        "damage": "600",
+        "guard": "Mid",
+        "startup": "8",
+        "active": "3",
+        "recovery": "10 [15]",
+        "onBlock": "+2",
+        "onHit": "+6",
+        "onCH": "+8",
+        "meter": "+480",
+        "images": [
+            "GBVSR_Belial_66L.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Belial_66L_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "66M",
+        "damage": "1100",
+        "guard": "Low",
+        "startup": "18",
+        "active": "3",
+        "recovery": "13",
+        "onBlock": "+1",
+        "onHit": "+5",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_cXX6M.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Belial_cXX6M_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.H",
+        "damage": "1600",
+        "guard": "Mid",
+        "startup": "9",
+        "active": "5",
+        "recovery": "19",
+        "onBlock": "-5",
+        "onHit": "-1",
+        "onCH": "+11",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_cH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Belial_cH_Hitbox.webp",
+            "GBVSR_Belial_cH_Hitbox_2.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.L",
+        "damage": "600",
+        "guard": "Mid",
+        "startup": "5",
+        "active": "3",
+        "recovery": "6",
+        "onBlock": "+4",
+        "onHit": "+8",
+        "onCH": "+10",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_cL.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Belial_cL_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.M",
+        "damage": "1100",
+        "guard": "Mid",
+        "startup": "6",
+        "active": "3",
+        "recovery": "12",
+        "onBlock": "0",
+        "onHit": "+4",
+        "onCH": "+8",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_cM.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Belial_cM_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.XX",
+        "damage": "700",
+        "guard": "Mid",
+        "startup": "9",
+        "active": "3",
+        "recovery": "15",
+        "onBlock": "-3",
+        "onHit": "+1",
+        "onCH": "+5",
+        "meter": "+480",
+        "images": [
+            "GBVSR_Belial_cXX.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Belial_cXX_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.XX6H",
+        "damage": "1000",
+        "guard": "High",
+        "startup": "18",
+        "active": "3",
+        "recovery": "22",
+        "onBlock": "-4",
+        "onHit": "+1Force Crouch",
+        "onCH": "HKD+32",
+        "meter": "+480",
+        "images": [
+            "GBVSR_Belial_cXX6H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Belial_cXX6H_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.XX6M",
+        "damage": "1000",
+        "guard": "Low",
+        "startup": "12",
+        "active": "3",
+        "recovery": "16",
+        "onBlock": "-4",
+        "onHit": "KD+30",
+        "onCH": "HKD+55",
+        "meter": "+480",
+        "images": [
+            "GBVSR_Belial_cXX6M.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Belial_cXX6M_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "c.XXX",
+        "damage": "1000",
+        "guard": "Mid",
+        "startup": "12",
+        "active": "3",
+        "recovery": "18",
+        "onBlock": "-4",
+        "onHit": "\u00b10",
+        "onCH": "+8",
+        "meter": "+600",
+        "images": [
+            "GBVSR_Belial_cXXX.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Belial_cXXX_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "f.H",
+        "damage": "800, 500",
+        "guard": "Mid",
+        "startup": "9",
+        "active": "2(13)2",
+        "recovery": "18",
+        "onBlock": "-3",
+        "onHit": "+2 (forces crouch)",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_fH.webp",
+            "GBVSR_Belial_fH_2.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Belial_fH_Hitbox.webp",
+            "GBVSR_Belial_fH_2_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "f.L",
+        "damage": "600",
+        "guard": "Mid",
+        "startup": "6",
+        "active": "5",
+        "recovery": "7",
+        "onBlock": "+1",
+        "onHit": "+5",
+        "onCH": "+7",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_fL.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Belial_fL_Hitbox.webp",
+            "GBVSR_Belial_fL_Hitbox_2.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "f.M",
+        "damage": "300, 600",
+        "guard": "Mid",
+        "startup": "6",
+        "active": "2,3",
+        "recovery": "14",
+        "onBlock": "-2",
+        "onHit": "+2",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_fM.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Belial_fM_Hitbox.webp",
+            "GBVSR_Belial_fM_Hitbox_2.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "j.H",
+        "damage": "1000",
+        "guard": "High\/Air",
+        "startup": "10",
+        "active": "6",
+        "recovery": "L+1",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_jH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Belial_jH_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "j.L",
+        "damage": "600",
+        "guard": "High\/Air",
+        "startup": "5",
+        "active": "Until L",
+        "recovery": "1",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_jL.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Belial_jL_Hitbox.webp",
+            "GBVSR_Belial_jL_Hitbox_2.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "j.M",
+        "damage": "700",
+        "guard": "High\/Air",
+        "startup": "7",
+        "active": "6",
+        "recovery": "L+1",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_jM.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Belial_jM_Hitbox.webp",
+            "GBVSR_Belial_jM_Hitbox_2.webp",
+            "GBVSR_Belial_jM_Hitbox_3.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "",
+        "input": "j.U",
+        "damage": "1000",
+        "guard": "All",
+        "startup": "26\/23",
+        "active": "Until L+1",
+        "recovery": "18\/19\/L+1",
+        "onBlock": "-5",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_jU.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Belial_jU_Hitbox.webp"
+        ],
+        "type": "normal"
+    },
+    {
+        "name": "Air Throw",
+        "input": "j.LM",
+        "damage": "2500",
+        "guard": "Airthrow",
+        "startup": "5",
+        "active": "5",
+        "recovery": "Until L+6",
+        "onBlock": "",
+        "onHit": "HKD (+48 to +51)",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_AirThrow.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Belial_AirThrow_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "Anagenesis",
+        "input": "236236U",
+        "damage": "3000, 600, 120\u00d710, 120 [2500, 1500]",
+        "guard": "Mid",
+        "startup": "8+5",
+        "active": "3(12)3",
+        "recovery": "45",
+        "onBlock": "-29",
+        "onHit": "HKD (+41)",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_236236U_Start.webp",
+            "GBVSR_Belial_236236U.webp",
+            "GBVSR_Belial_236236U_Finish.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Belial_236236U_Hitbox.webp",
+            "GBVSR_Belial_236236U_2_Hitbox.webp"
+        ],
+        "type": "super"
+    },
+    {
+        "name": "Brave Counter",
+        "input": "BC",
+        "damage": "500",
+        "guard": "Mid",
+        "startup": "10 [18]",
+        "active": "3 [2]",
+        "recovery": "19 [35]",
+        "onBlock": "-2",
+        "onHit": "Air Tech+21 [+5]",
+        "onCH": "HKD+54 [HKD+43]",
+        "meter": "\u00b10",
+        "images": [
+            "GBVSR_Belial_BC.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Belial_BC_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "Give Daddy Some Sugar",
+        "input": "5U",
+        "damage": "",
+        "guard": "",
+        "startup": "3",
+        "active": "85",
+        "recovery": "48",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_5U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Belial_5U_Hitbox.webp"
+        ],
+        "type": "unique"
+    },
+    {
+        "name": "Give Daddy Some Sugar (Attack)",
+        "input": "5U Catch",
+        "damage": "300, 900",
+        "guard": "All",
+        "startup": "Jump+11",
+        "active": "Until L+2",
+        "recovery": "11",
+        "onBlock": "-4",
+        "onHit": "HKD (+47)",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_5U_Hit.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Belial_5U_Hitbox.webp",
+            "GBVSR_Belial_jU_Hitbox.webp"
+        ],
+        "type": "unique"
+    },
+    {
+        "name": "Ground Throw",
+        "input": "LM",
+        "damage": "2500",
+        "guard": "Throw",
+        "startup": "4",
+        "active": "3",
+        "recovery": "31",
+        "onBlock": "",
+        "onHit": "HKD (+44)",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_Throw.webp",
+            "GBVSR_Belial_BackThrow.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Belial_Throw_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "H Asmodeus",
+        "input": "214H",
+        "damage": "700, 800",
+        "guard": "Mid",
+        "startup": "14",
+        "active": "4",
+        "recovery": "19",
+        "onBlock": "-8",
+        "onHit": "KD",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_214X.webp",
+            "GBVSR_Belial_214X_2.webp"
+        ],
+        "hitboxes": [
+            ""
+        ],
+        "type": "special"
+    },
+    {
+        "name": "H Everyone's A Little Crooked",
+        "input": "236X~4H",
+        "damage": "100\u00d75",
+        "guard": "All",
+        "startup": "27",
+        "active": "3\u00d715",
+        "recovery": "Total 40",
+        "onBlock": "+12",
+        "onHit": "+16",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_236L-4X.webp",
+            "GBVSR_Belial_236M-4X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Belial_236X_XX_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "H Goetia",
+        "input": "236H",
+        "damage": "400\u00d73",
+        "guard": "All",
+        "startup": "15",
+        "active": "Until hit",
+        "recovery": "Total 49",
+        "onBlock": "-2",
+        "onHit": "+6",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_236X.webp"
+        ],
+        "hitboxes": [
+            ""
+        ],
+        "type": "special"
+    },
+    {
+        "name": "H Notoria",
+        "input": "623H",
+        "damage": "600, 400, 500",
+        "guard": "Mid\u00d72, All",
+        "startup": "11",
+        "active": "2(3)9(18)5",
+        "recovery": "24",
+        "onBlock": "-15 to-13",
+        "onHit": "KD",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_623H.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Belial_623H_Hitbox.webp",
+            "GBVSR_Belial_623H_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "H Vassago",
+        "input": "632146H",
+        "damage": "500, 2000",
+        "guard": "Throw",
+        "startup": "27~82",
+        "active": "3",
+        "recovery": "34",
+        "onBlock": "",
+        "onHit": "HKD (+19)",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_632146X_Whiff.webp",
+            "GBVSR_Belial_632146X.webp"
+        ],
+        "hitboxes": [
+            ""
+        ],
+        "type": "special"
+    },
+    {
+        "name": "L Asmodeus",
+        "input": "214L",
+        "damage": "700, 500",
+        "guard": "Mid",
+        "startup": "15",
+        "active": "4",
+        "recovery": "21",
+        "onBlock": "-5",
+        "onHit": "KD",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_214X.webp",
+            "GBVSR_Belial_214X_2.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Belial_214X_Hitbox.webp",
+            "GBVSR_Belial_214X_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "L Everyone's A Little Crooked",
+        "input": "236X~4L",
+        "damage": "150\u00d73",
+        "guard": "All",
+        "startup": "13",
+        "active": "9\u00d73",
+        "recovery": "Total 38",
+        "onBlock": "-4 to+2",
+        "onHit": "+6 (forces standing)",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_236L-4X.webp",
+            "GBVSR_Belial_236M-4X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Belial_236X_XX_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "L Goetia",
+        "input": "236L",
+        "damage": "800",
+        "guard": "All",
+        "startup": "15",
+        "active": "Until hit",
+        "recovery": "Total 47",
+        "onBlock": "-10",
+        "onHit": "-6",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_236X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Belial_236X_Hitbox.webp",
+            "GBVSR_Belial_236X_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "L Notoria",
+        "input": "623L",
+        "damage": "700, 300",
+        "guard": "All",
+        "startup": "6",
+        "active": "2(3)5",
+        "recovery": "27",
+        "onBlock": "-15",
+        "onHit": "KD",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_623L.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Belial_623L_Hitbox.webp",
+            "GBVSR_Belial_623L_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "L Vassago",
+        "input": "632146L",
+        "damage": "500, 1500",
+        "guard": "Throw",
+        "startup": "34",
+        "active": "3",
+        "recovery": "36",
+        "onBlock": "",
+        "onHit": "HKD (+19)",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_632146X_Whiff.webp",
+            "GBVSR_Belial_632146X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Belial_632146X_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Legemeton",
+        "input": "236236H",
+        "damage": "1000\u00d72, 500, 2000 [1000, 2500]",
+        "guard": "Mid",
+        "startup": "8+5",
+        "active": "4(18)9",
+        "recovery": "30",
+        "onBlock": "-20",
+        "onHit": "HKD (+40)",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_236236H.webp",
+            "GBVSR_Belial_236236H_2.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Belial_236236H_Hitbox.webp",
+            "GBVSR_Belial_236236H_2_Hitbox.webp"
+        ],
+        "type": "super"
+    },
+    {
+        "name": "M Asmodeus",
+        "input": "214M",
+        "damage": "700, 700",
+        "guard": "Mid",
+        "startup": "21",
+        "active": "4",
+        "recovery": "19",
+        "onBlock": "-4",
+        "onHit": "KD",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_214X.webp",
+            "GBVSR_Belial_214X_2.webp"
+        ],
+        "hitboxes": [
+            ""
+        ],
+        "type": "special"
+    },
+    {
+        "name": "M Everyone's A Little Crooked",
+        "input": "236X~4M",
+        "damage": "150\u00d73",
+        "guard": "All",
+        "startup": "13",
+        "active": "9\u00d73",
+        "recovery": "Total 38",
+        "onBlock": "-4 to+2",
+        "onHit": "+6 (forces standing)",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_236L-4X.webp",
+            "GBVSR_Belial_236M-4X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Belial_236X_XX_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "M Goetia",
+        "input": "236M",
+        "damage": "1200",
+        "guard": "All",
+        "startup": "17",
+        "active": "Until hit",
+        "recovery": "Total 43",
+        "onBlock": "-4",
+        "onHit": "Air recovery +34",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_236X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Belial_236M_Hitbox.webp",
+            "GBVSR_Belial_236M_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "M Notoria",
+        "input": "623M",
+        "damage": "1000, 500",
+        "guard": "All",
+        "startup": "38",
+        "active": "5",
+        "recovery": "10",
+        "onBlock": "+2",
+        "onHit": "KD",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_623M.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Belial_623M_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "M Vassago",
+        "input": "632146M",
+        "damage": "500, 2000",
+        "guard": "Throw",
+        "startup": "46",
+        "active": "3",
+        "recovery": "12",
+        "onBlock": "",
+        "onHit": "HKD (+19)",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_632146X_Whiff.webp",
+            "GBVSR_Belial_632146X.webp"
+        ],
+        "hitboxes": [
+            ""
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Raging Chain",
+        "input": "MH~MH",
+        "damage": "1000",
+        "guard": "Mid",
+        "startup": "13",
+        "active": "5",
+        "recovery": "17",
+        "onBlock": "",
+        "onHit": "+15Force Crouch (HKD+63)",
+        "onCH": "",
+        "meter": "-2500",
+        "images": [
+            "GBVSR_Belial_MH-MH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Belial_MH-MH_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "Raging Strike",
+        "input": "MH",
+        "damage": "1500",
+        "guard": "Guard Crush 45 [52]",
+        "startup": "28 (1)",
+        "active": "1",
+        "recovery": "37",
+        "onBlock": "+8Force Stand [+15Force Stand]",
+        "onHit": "+15Force Crouch (KD+40)",
+        "onCH": "+15Force Crouch",
+        "meter": "\u00b10",
+        "images": [
+            "GBVSR_Belial_MH.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Belial_MH_Hitbox.webp"
+        ],
+        "type": "other"
+    },
+    {
+        "name": "Ultimate Asmodeus",
+        "input": "214U",
+        "damage": "1500\u00d72",
+        "guard": "Mid",
+        "startup": "13",
+        "active": "2",
+        "recovery": "13",
+        "onBlock": "+4 to+8",
+        "onHit": "HKD (+41)",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_214U.webp",
+            "GBVSR_Belial_214U_2.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Belial_214U_Hitbox.webp",
+            "GBVSR_Belial_214U_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Ultimate Goetia",
+        "input": "236U",
+        "damage": "550, 70\u00d715",
+        "guard": "All",
+        "startup": "13",
+        "active": "",
+        "recovery": "Total 47",
+        "onBlock": "+38",
+        "onHit": "HKD",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_236U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Belial_236U_Hitbox.webp",
+            "GBVSR_Belial_236U_Hitbox_2.webp",
+            "GBVSR_Belial_236U_Hitbox_3.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Ultimate Notoria",
+        "input": "623U",
+        "damage": "700, 300, 0, 500, 400, 100",
+        "guard": "Mid",
+        "startup": "8",
+        "active": "1(2)4(12)5",
+        "recovery": "24",
+        "onBlock": "-15 to-13",
+        "onHit": "HKD",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_623U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Belial_623U_Hitbox.webp",
+            "GBVSR_Belial_623U_Hitbox_2.webp",
+            "GBVSR_Belial_623U_Hitbox_3.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Ultimate Vassago",
+        "input": "632146U",
+        "damage": "0",
+        "guard": "",
+        "startup": "3",
+        "active": "85",
+        "recovery": "48",
+        "onBlock": "",
+        "onHit": "",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_5U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Belial_5U_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Ultimate Vassago Catch",
+        "input": "632146U Catch",
+        "damage": "900\u00d72",
+        "guard": "Mid",
+        "startup": "Jump+11",
+        "active": "Until L+2",
+        "recovery": "11",
+        "onBlock": "-4",
+        "onHit": "HKD +47",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_5U_Hit.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Belial_632146U_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Ultimate Vassago Throw",
+        "input": "632146U Throw",
+        "damage": "500, 1000, 1500",
+        "guard": "Throw",
+        "startup": "8",
+        "active": "4",
+        "recovery": "16",
+        "onBlock": "",
+        "onHit": "HKD +48",
+        "onCH": "",
+        "meter": "",
+        "images": [
+            "GBVSR_Belial_632146U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Belial_632146U_Hitbox.webp"
+        ],
+        "type": "special"
+    }
+]

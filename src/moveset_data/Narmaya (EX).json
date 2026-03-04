@@ -1,0 +1,297 @@
+[
+    {
+        "name": "H Apex of Nothingness",
+        "input": "623H",
+        "damage": "500\u00d72, 250\u00d72",
+        "guard": "Mid",
+        "startup": "11",
+        "active": "5,9",
+        "recovery": "34",
+        "onBlock": "-24",
+        "onHit": "KD+34",
+        "onCH": "KD+34",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_(EX)_623X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_(EX)_623M_Hitbox.webp",
+            "GBVSR_Narmaya_(EX)_623M_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "H Fuuka",
+        "input": "214H",
+        "damage": "1500",
+        "guard": "Mid",
+        "startup": "18",
+        "active": "4",
+        "recovery": "23",
+        "onBlock": "-8",
+        "onHit": "+12Force Crouch (KD+32)",
+        "onCH": "+16Force Crouch (KD+36)",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_(EX)_214M.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_(EX)_214X_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "H Iridescent Bloom",
+        "input": "236H",
+        "damage": "700, 100\u00d74, 700",
+        "guard": "Mid",
+        "startup": "18",
+        "active": "5\u00d74,3(2)2",
+        "recovery": "21",
+        "onBlock": "-4",
+        "onHit": "KD+39",
+        "onCH": "KD+39",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_(EX)_236X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_(EX)_236X_Hitbox.webp",
+            "GBVSR_Narmaya_(EX)_236X_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "L Apex of Nothingness",
+        "input": "623L",
+        "damage": "700, 300",
+        "guard": "Mid, All",
+        "startup": "6",
+        "active": "5,6",
+        "recovery": "26",
+        "onBlock": "-15",
+        "onHit": "KD+29",
+        "onCH": "KD+29",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_(EX)_623X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_(EX)_623L_Hitbox.webp",
+            "GBVSR_Narmaya_(EX)_623L_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "L Fuuka",
+        "input": "214L",
+        "damage": "1000",
+        "guard": "Mid",
+        "startup": "15",
+        "active": "4",
+        "recovery": "19",
+        "onBlock": "-4",
+        "onHit": "Air Tech+24",
+        "onCH": "KD+40",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_(EX)_214L.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_(EX)_214X_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "L Iridescent Bloom",
+        "input": "236L",
+        "damage": "500, 100\u00d72, 500",
+        "guard": "Mid",
+        "startup": "18",
+        "active": "5\u00d72,3(2)2",
+        "recovery": "21",
+        "onBlock": "-4",
+        "onHit": "Air Tech+23",
+        "onCH": "Air Tech+23",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_(EX)_236X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_(EX)_236X_Hitbox.webp",
+            "GBVSR_Narmaya_(EX)_236X_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "M Apex of Nothingness",
+        "input": "623M",
+        "damage": "700, 400",
+        "guard": "Mid, All",
+        "startup": "9",
+        "active": "5,9",
+        "recovery": "34",
+        "onBlock": "-24",
+        "onHit": "Air Tech+16",
+        "onCH": "Air Tech+16",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_(EX)_623X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_(EX)_623M_Hitbox.webp",
+            "GBVSR_Narmaya_(EX)_623M_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "M Fuuka",
+        "input": "214M",
+        "damage": "1400 [1700]",
+        "guard": "Mid",
+        "startup": "21~32 [33]",
+        "active": "4",
+        "recovery": "21",
+        "onBlock": "-6",
+        "onHit": "+8Force Crouch [HKD+77] (KD+34)",
+        "onCH": "+12Force Crouch [HKD+81] (KD+38)",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_(EX)_214M.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_(EX)_214X_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "M Iridescent Bloom",
+        "input": "236M",
+        "damage": "600, 100\u00d73, 600",
+        "guard": "Mid",
+        "startup": "26",
+        "active": "5\u00d73,3(2)2",
+        "recovery": "16",
+        "onBlock": "+1",
+        "onHit": "Air Tech+33",
+        "onCH": "Air Tech+33",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_(EX)_236X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_(EX)_236X_Hitbox.webp",
+            "GBVSR_Narmaya_(EX)_236X_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Setsuna",
+        "input": "5U",
+        "damage": "900",
+        "guard": "All",
+        "startup": "14",
+        "active": "7",
+        "recovery": "28 [35]",
+        "onBlock": "-8",
+        "onHit": "Air Tech+18",
+        "onCH": "KD+33",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_236X.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_236X_Hitbox1.webp",
+            "GBVSR_Narmaya_236X_Hitbox2.webp",
+            "GBVSR_Narmaya_236X_Hitbox3.webp",
+            "GBVSR_Narmaya_236X_Hitbox4.webp"
+        ],
+        "type": "unique"
+    },
+    {
+        "name": "Setsuna (Bladefall)",
+        "input": "6U",
+        "damage": "900",
+        "guard": "All",
+        "startup": "17 (5)",
+        "active": "7",
+        "recovery": "22 [26]",
+        "onBlock": "-4",
+        "onHit": "Air Tech+35",
+        "onCH": "KD+57",
+        "meter": "",
+        "images": [
+            "GBVSR_Narmaya_(EX)_6U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_(EX)_6U_Hitbox.webp",
+            "GBVSR_Narmaya_(EX)_6U_Hitbox_2.webp",
+            "GBVSR_Narmaya_(EX)_6U_Hitbox_3.webp",
+            "GBVSR_Narmaya_(EX)_6U_Hitbox_4.webp"
+        ],
+        "type": "unique"
+    },
+    {
+        "name": "Ultimate Apex of Nothingness",
+        "input": "623U",
+        "damage": "500\u00d72, 250\u00d74",
+        "guard": "Mid",
+        "startup": "8True Startup:13",
+        "active": "5,9 [7]",
+        "recovery": "34 [31]",
+        "onBlock": "-24",
+        "onHit": "HKD+44",
+        "onCH": "HKD+44",
+        "meter": "-5000",
+        "images": [
+            "GBVSR_Narmaya_(EX)_623U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_(EX)_623U_Hitbox.webp",
+            "GBVSR_Narmaya_(EX)_623U_Hitbox_2.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Ultimate Fuuka",
+        "input": "214U",
+        "damage": "1500\u00d72 (2000)",
+        "guard": "Mid",
+        "startup": "13~16True Startup:23~29",
+        "active": "4 [2]",
+        "recovery": "19 [16~18]",
+        "onBlock": "-4",
+        "onHit": "HKD+44 (HKD+63~+73)",
+        "onCH": "HKD+44 (HKD+63~+73)",
+        "meter": "-5000",
+        "images": [
+            "GBVSR_Narmaya_(EX)_214U.webp",
+            "GBVSR_Narmaya_(EX)_214U_2.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_(EX)_214U_Hitbox.webp"
+        ],
+        "type": "special"
+    },
+    {
+        "name": "Ultimate Iridescent Bloom",
+        "input": "236U",
+        "damage": "700, 200\u00d75, 700",
+        "guard": "Mid",
+        "startup": "11True Startup:19",
+        "active": "5\u00d75,3(2)2 [21(2)2]",
+        "recovery": "23",
+        "onBlock": "-6",
+        "onHit": "HKD+62",
+        "onCH": "HKD+62",
+        "meter": "-5000",
+        "images": [
+            "GBVSR_Narmaya_(EX)_236U.webp"
+        ],
+        "hitboxes": [
+            "GBVSR_Narmaya_(EX)_236U_Hitbox.webp",
+            "GBVSR_Narmaya_(EX)_236U_Hitbox_2.webp"
+        ],
+        "type": "special"
+    }
+]

@@ -12,3 +12,21 @@ var Roster = []string{
 	// EX variants
 	"Narmaya (EX)", "Gran (EX)", "Djeeta (EX)",
 }
+
+type MoveData struct {
+	MoveName     string   `json:"name"`
+	Input        string   `json:"input"`
+	Damage       string   `json:"damage"`
+	Guard        string   `json:"guard"`
+	Startup      string   `json:"startup"`
+	Active       string   `json:"active"`
+	Recovery     string   `json:"recovery"`
+	OnBlock      string   `json:"onBlock"`
+	OnHit        string   `json:"onHit"`
+	OnCounterhit string   `json:"onCH"`
+	MeterChange  string   `json:"meter"`
+	ClashLevel   string   `json:"cls"`
+	Images       []string `json:"images"`
+	Hitboxes     []string `json:"hitboxes"`
+	Type         string   `json:"type"`
+}

@@ -1,9 +1,11 @@
 package main
 
 import (
+	"bytes"
 	"encoding/json"
 	"fmt"
 	"gbvsr-matchup-notes/common"
+	"image/png"
 	"io"
 	"log"
 	"net/http"
@@ -12,80 +14,152 @@ import (
 	"regexp"
 	"strings"
 	"sync"
+
+	webp "github.com/HugoSmits86/nativewebp"
 )
 
-var frameDataRegex, regexErr = regexp.Compile(`(\n|)<[\/]*.+?>(\n|)`)
+var frameDataRegex, regexErr = regexp.Compile(`(\s*<[\/]*.+?>)`)
+var newlineRegex, _ = regexp.Compile(`\\n`)
+var PNGtoWEBPRegex, _ = regexp.Compile(`.png`)
 
-type MoveData struct {
-	Character    string   `json:"chara"`
-	MoveName     string   `json:"name"`
-	Input        string   `json:"input"`
-	Damage       string   `json:"damage"`
-	Guard        string   `json:"guard"`
-	Startup      string   `json:"startup"`
-	Active       string   `json:"active"`
-	Recovery     string   `json:"recovery"`
-	OnBlock      string   `json:"onBlock"`
-	OnHit        string   `json:"onHit"`
-	OnCounterhit string   `json:"onCH"`
-	MeterChange  string   `json:"meter"`
-	ClashLevel   string   `json:"cls"`
-	Images       []string `json:"images"`
+type WEBPGenerationRequest struct {
+	FileData     []byte
+	FullFilename string
+}
+
+type PNGDownloadRequest struct {
+	Filename  string
+	Character string
+	TargetDir string
+}
+
+func getMoveset(character string) ([]byte, []common.MoveData) {
+	var storedMoveData = []common.MoveData{}
+	var query = url.Values{}
+	query.Set("tables", "MoveData_GBVSR")
+	query.Set("fields", "name, input, damage, guard, startup, active, recovery, onBlock, onHit, onCH, meter, images, hitboxes, type")
+	query.Set("where", fmt.Sprintf("chara = \"%s\"", character))
+	query.Set("limit", "5000")
+	query.Set("format", "json")
+	query.Set("parse values", "yes")
+	var fullUrl = fmt.Sprintf("https://dustloop.com/wiki/index.php?title=Special:CargoExport&%s", query.Encode())
+	var req, err = http.Get(fullUrl)
+	if err != nil {
+		log.Fatalln(err)
+	}
+	var data, _ = io.ReadAll(req.Body)
+	defer req.Body.Close()
+	var cleanedData = frameDataRegex.ReplaceAll(data, nil)
+	cleanedData = newlineRegex.ReplaceAll(cleanedData, nil)
+	json.Unmarshal(cleanedData, &storedMoveData)
+	cleanedData = PNGtoWEBPRegex.ReplaceAll(cleanedData, []byte(".webp"))
+	return cleanedData, storedMoveData
 }
 
 func main() {
 	if regexErr != nil {
 		log.Fatalln(regexErr)
 	}
-	var targetDir = "../../frontend/public/img/moves"
-	var errors = []string{}
-	os.MkdirAll(targetDir, 0644)
-	var moveImagesWaitingGroup sync.WaitGroup
-	for _, char := range common.Roster {
-		var storedMoveData = []MoveData{}
-		var query = url.Values{}
-		query.Set("tables", "MoveData_GBVSR")
-		query.Set("fields", "name, input, damage, guard, startup, active, recovery, onBlock, onHit, onCH, meter, images")
-		query.Set("where", fmt.Sprintf("chara = \"%s\"", char))
-		query.Set("limit", "5000")
-		query.Set("format", "json")
-		query.Set("parse values", "yes")
-		var fullUrl = fmt.Sprintf("https://dustloop.com/wiki/index.php?title=Special:CargoExport&%s", query.Encode())
-		var req, err = http.Get(fullUrl)
-		if err != nil {
-			log.Fatalln(err)
-		}
-		var data, _ = io.ReadAll(req.Body)
-		var cleanedData = frameDataRegex.ReplaceAll(data, []byte(""))
-		json.Unmarshal(cleanedData, &storedMoveData)
 
-		for _, move := range storedMoveData {
-			for _, img := range move.Images {
-				moveImagesWaitingGroup.Add(1)
-				go downloadMoveImg(targetDir, img, char, &moveImagesWaitingGroup, errors)
+	var fileDownloadCount = 10
+	var fileDownloadWorkers = make(chan PNGDownloadRequest, fileDownloadCount)
+	var webpConversionWorkers = make(chan WEBPGenerationRequest, fileDownloadCount*40)
+	var characterDownloadWaitingGroup = sync.WaitGroup{}
+	var movesTargetDir = "../../public/img/moves"
+	var hitboxesTargetDir = "../../public/img/hitboxes"
+	os.MkdirAll(movesTargetDir, 0644)
+	os.MkdirAll(hitboxesTargetDir, 0644)
+
+	for range fileDownloadCount {
+		go func() {
+			for downloadRequest := range fileDownloadWorkers {
+				var byteData = downloadMoveImg(downloadRequest.TargetDir, downloadRequest.Filename, downloadRequest.Character)
+				if byteData != nil {
+					var fullFilename = downloadRequest.TargetDir + "/" + downloadRequest.Character + "/" + strings.Replace(downloadRequest.Filename, ".png", ".webp", 1)
+					var conversionRequest = WEBPGenerationRequest{
+						FullFilename: fullFilename,
+						FileData:     byteData,
+					}
+					webpConversionWorkers <- conversionRequest
+				}
+				characterDownloadWaitingGroup.Done()
+			}
+		}()
+		go func() {
+			for conversionRequest := range webpConversionWorkers {
+				convertToWebp(conversionRequest.FileData, conversionRequest.FullFilename)
+			}
+		}()
+	}
+	defer close(fileDownloadWorkers)
+	defer close(webpConversionWorkers)
+
+	for _, char := range common.Roster {
+		var rawMovesetBytes, moveset = getMoveset(char)
+		var movesetPath = "../../src/moveset_data/"
+		os.WriteFile(movesetPath+char+".json", rawMovesetBytes, 0644)
+		for j, move := range moveset {
+			for i, pngImg := range move.Images {
+				moveset[j].Images[i] = strings.Replace(pngImg, ".png", ".webp", 1)
+				var downloadRequest = PNGDownloadRequest{
+					Filename:  pngImg,
+					Character: char,
+					TargetDir: movesTargetDir,
+				}
+				characterDownloadWaitingGroup.Add(1)
+				fileDownloadWorkers <- downloadRequest
+			}
+
+			for i, pngImg := range move.Hitboxes {
+				moveset[j].Hitboxes[i] = strings.Replace(pngImg, ".png", ".webp", 1)
+				var downloadRequest = PNGDownloadRequest{
+					Filename:  pngImg,
+					Character: char,
+					TargetDir: hitboxesTargetDir,
+				}
+				characterDownloadWaitingGroup.Add(1)
+				fileDownloadWorkers <- downloadRequest
 			}
 		}
-		moveImagesWaitingGroup.Wait()
-		fmt.Println(errors)
-		errors = []string{}
-		os.WriteFile(char+".json", cleanedData, 0644)
 	}
+	characterDownloadWaitingGroup.Wait()
 }
 
-func downloadMoveImg(targetDir string, filename string, character string, wg *sync.WaitGroup, errors []string) {
+func downloadMoveImg(targetDir string, filename string, character string) []byte {
 	var moveDir = targetDir + "/" + character
 	os.MkdirAll(moveDir, 0644)
 	var strippedFilename = strings.ReplaceAll(filename, "\n", "")
-	var fullFilename = strippedFilename
-	var _, er = os.Stat(moveDir + "/" + fullFilename)
-	if er != nil {
+	var movePath = moveDir + "/" + strippedFilename
+	var webpFilepath = strings.Replace(movePath, ".png", ".webp", 1)
+	var _, er = os.Stat(webpFilepath)
+	if os.IsNotExist(er) {
 		var filepath = fmt.Sprintf("https://dustloop.com/w/Special:Filepath/%s", strippedFilename)
 		var req, err = http.Get(filepath)
 		if err != nil {
 			log.Fatalln(err)
 		}
 		var data, _ = io.ReadAll(req.Body)
-		convertToWebp(data, fullFilename)
+		return data
 	}
-	wg.Done()
+
+	return nil
+}
+
+func convertToWebp(pngData []byte, filepath string) error {
+	img, err := png.Decode(bytes.NewReader(pngData))
+
+	if err != nil {
+		log.Println("Unable to decode file destined for path " + filepath)
+		os.WriteFile(filepath, pngData, 044)
+		return nil
+	}
+
+	var fileHandle, _ = os.Create(filepath)
+	defer fileHandle.Close()
+
+	err = webp.Encode(fileHandle, img, nil)
+	if err != nil {
+		log.Fatalln(err)
+	}
+	return nil
 }
