@@ -10,7 +10,7 @@ interface NotebookFrameProps {
 }
 
 const TABS: { id: NavTab; label: string; path: string }[] = [
-  { id: 'roster',   label: 'Roster',   path: '/roster' },
+  { id: 'roster',   label: 'Roster',   path: '/' },
   { id: 'matchups', label: 'Matchups', path: '/matchups' },
   { id: 'combos',   label: 'Combos',   path: '/combos' }
 ]
