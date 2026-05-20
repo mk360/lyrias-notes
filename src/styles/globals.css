@@ -1,0 +1,81 @@
+@import './tokens.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html, body, #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    font-family: 'Fredoka', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+@layer utilities {
+  /* Asymmetric border-radius helpers */
+  .rounded-hand-sm { border-radius: var(--radius-sm); }
+  .rounded-hand-md { border-radius: var(--radius-md); }
+  .rounded-hand-lg { border-radius: var(--radius-lg); }
+
+  /* Shadow helpers */
+  .shadow-stamp    { box-shadow: var(--shadow-stamp); }
+  .shadow-stamp-lg { box-shadow: var(--shadow-stamp-lg); }
+  .shadow-stamp-sm { box-shadow: var(--shadow-stamp-sm); }
+  .shadow-float    { box-shadow: var(--shadow-float); }
+
+  /* Typography shorthands */
+  .font-display-xl { font-family: 'Caveat', cursive; font-size: 48px; line-height: 0.9; font-weight: 700; }
+  .font-display-lg { font-family: 'Caveat', cursive; font-size: 30px; line-height: 1; font-weight: 700; }
+  .font-display-md { font-family: 'Caveat', cursive; font-size: 22px; line-height: 1; font-weight: 700; }
+  .font-body       { font-family: 'Fredoka', sans-serif; font-size: 15px; line-height: 1.6; font-weight: 400; }
+  .font-body-sm    { font-family: 'Fredoka', sans-serif; font-size: 13px; line-height: 1.5; font-weight: 400; }
+  .font-label      { font-family: 'Fredoka', sans-serif; font-size: 12px; line-height: 1.4; font-weight: 500; text-transform: uppercase; letter-spacing: 0.04em; }
+  .font-mono       { font-family: 'Special Elite', monospace; font-size: 12px; line-height: 1.4; font-weight: 400; }
+
+  /* Binding hole */
+  .binding-hole {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--color-paper);
+    border: 1.5px solid var(--color-ink);
+    box-shadow: inset 1px 1px 2px rgba(31,45,62,0.18);
+  }
+}
+
+/* TipTap editor reset */
+.ProseMirror {
+  outline: none;
+  min-height: 100%;
+}
+
+.ProseMirror p.is-editor-empty:first-child::before {
+  color: var(--color-ink3);
+  content: attr(data-placeholder);
+  float: left;
+  height: 0;
+  pointer-events: none;
+  font-family: 'Fredoka', sans-serif;
+}
+
+.ProseMirror h1 { font-family: 'Caveat', cursive; font-size: 30px; font-weight: 700; color: var(--color-sky700); margin: 16px 0 8px; }
+.ProseMirror h2 { font-family: 'Caveat', cursive; font-size: 22px; font-weight: 700; color: var(--color-sky700); margin: 16px 0 8px; }
+.ProseMirror h3 { font-family: 'Caveat', cursive; font-size: 18px; font-weight: 600; color: var(--color-sky700); margin: 12px 0 6px; }
+.ProseMirror ul { list-style: disc; padding-left: 20px; margin: 8px 0; }
+.ProseMirror li { margin: 4px 0; }
+.ProseMirror strong { font-weight: 700; }
+.ProseMirror em { font-style: italic; }
+.ProseMirror u { text-decoration: underline; }

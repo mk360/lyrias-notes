@@ -1,0 +1,47 @@
+import type { Character } from './types'
+
+export const CHARACTERS: Character[] = [
+  { id: 'gran',         name: 'Gran',         tag: 'GRN', archetype: 'all-rounder' },
+  { id: 'katalina',     name: 'Katalina',     tag: 'KAT', archetype: 'all-rounder' },
+  { id: 'charlotta',    name: 'Charlotta',    tag: 'CHA', archetype: 'rushdown' },
+  { id: 'lancelot',     name: 'Lancelot',     tag: 'LAN', archetype: 'rushdown' },
+  { id: 'percival',     name: 'Percival',     tag: 'PER', archetype: 'technical' },
+  { id: 'ferry',        name: 'Ferry',        tag: 'FER', archetype: 'setplay' },
+  { id: 'lowain',       name: 'Lowain',       tag: 'LOW', archetype: 'setplay' },
+  { id: 'ladiva',       name: 'Ladiva',       tag: 'LAD', archetype: 'grappler' },
+  { id: 'metera',       name: 'Metera',       tag: 'MET', archetype: 'zoner' },
+  { id: 'zeta',         name: 'Zeta',         tag: 'ZET', archetype: 'rushdown' },
+  { id: 'vaseraga',     name: 'Vaseraga',     tag: 'VAS', archetype: 'grappler' },
+  { id: 'beelzebub',    name: 'Beelzebub',    tag: 'BEL', archetype: 'zoner' },
+  { id: 'narmaya',      name: 'Narmaya',      tag: 'NAR', archetype: 'technical' },
+  { id: 'soriz',        name: 'Soriz',        tag: 'SOR', archetype: 'grappler' },
+  { id: 'djeeta',       name: 'Djeeta',       tag: 'DJE', archetype: 'all-rounder' },
+  { id: 'zooey',        name: 'Zooey',        tag: 'ZOO', archetype: 'all-rounder' },
+  { id: 'belial',       name: 'Belial',       tag: 'BLL', archetype: 'technical' },
+  { id: 'cagliostro',   name: 'Cagliostro',   tag: 'CAG', archetype: 'setplay' },
+  { id: 'yuel',         name: 'Yuel',         tag: 'YUE', archetype: 'rushdown' },
+  { id: 'anre',         name: 'Anre',         tag: 'ANR', archetype: 'zoner' },
+  { id: 'eustace',      name: 'Eustace',      tag: 'EUS', archetype: 'zoner' },
+  { id: 'seox',         name: 'Seox',         tag: 'SEO', archetype: 'rushdown' },
+  { id: 'vira',         name: 'Vira',         tag: 'VIR', archetype: 'rushdown' },
+  { id: 'avatar-belial',name: 'Avatar Belial',tag: 'AVB', archetype: 'grappler' },
+  { id: 'anila',        name: 'Anila',        tag: 'ANI', archetype: 'setplay' },
+  { id: 'grimnir',      name: 'Grimnir',      tag: 'GRI', archetype: 'zoner' },
+  { id: 'nier',         name: 'Nier',         tag: 'NIE', archetype: 'setplay' },
+  { id: 'siegfried',    name: 'Siegfried',    tag: 'SIE', archetype: 'all-rounder' },
+  { id: '2b',           name: '2B',           tag: 'TWB', archetype: 'technical' },
+  { id: 'versusia',     name: 'Versusia',     tag: 'VRS', archetype: 'zoner' },
+  { id: 'vane',         name: 'Vane',         tag: 'VAN', archetype: 'grappler' },
+  { id: 'tweyen',       name: 'Tweyen',       tag: 'TWE', archetype: 'zoner' },
+  { id: 'lucilius',     name: 'Lucilius',     tag: 'LUC', archetype: 'technical' },
+  { id: 'galleon',      name: 'Galleon',      tag: 'GAL', archetype: 'grappler' },
+  { id: 'vikala',       name: 'Vikala',       tag: 'VIK', archetype: 'rushdown' },
+  { id: 'beatrix',      name: 'Beatrix',      tag: 'BEA', archetype: 'all-rounder' },
+  { id: 'cain',         name: 'Cain',         tag: 'CAI', archetype: 'all-rounder' },
+  { id: 'nehan',        name: 'Nehan',        tag: 'NEH', archetype: 'technical' },
+  { id: 'sandalphon',   name: 'Sandalphon',   tag: 'SAN', archetype: 'all-rounder' },
+]
+
+export function getCharacterById(id: string): Character | undefined {
+  return CHARACTERS.find(c => c.id === id)
+}

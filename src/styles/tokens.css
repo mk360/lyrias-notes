@@ -1,0 +1,40 @@
+/* tokens.css — all design tokens as CSS custom properties */
+:root {
+  /* Colors */
+  --color-ink:    #1F2D3E;
+  --color-ink2:   #5A6E83;
+  --color-ink3:   #8C9CAD;
+  --color-paper:  #FBF6E8;
+  --color-paper2: #F2E9CF;
+  --color-paper3: #E8DEBA;
+  --color-rule:   #D8C9A0;
+  --color-sky100: #E4F0F7;
+  --color-sky200: #C3DEEE;
+  --color-sky300: #9EC8E0;
+  --color-sky500: #5390B5;
+  --color-sky700: #2B638A;
+  --color-gold:   #C49A3B;
+  --color-goldDk: #8E6D1C;
+  --color-goldLt: #E8C97A;
+  --color-red:    #B14939;
+  --color-green:  #4C8A5A;
+
+  /* Rating bucket bg/fg pairs */
+  --rb-0-bg:  #E8C8C0; --rb-0-fg:  #7A2A1F;
+  --rb-3-bg:  #EBD0BD; --rb-3-fg:  #7A4A28;
+  --rb-5-bg:  #EFE4C2; --rb-5-fg:  #5A4A20;
+  --rb-6-bg:  #D9E5C8; --rb-6-fg:  #3F6A3F;
+  --rb-8-bg:  #C3DCBA; --rb-8-fg:  #2C5E36;
+  --rb-u-bg:  #EEE6CC; --rb-u-fg:  #8C9CAD;
+
+  /* Radii — asymmetric hand-cut */
+  --radius-sm: 8px 5px 7px 6px / 6px 8px 5px 7px;
+  --radius-md: 14px 9px 12px 8px / 9px 13px 8px 14px;
+  --radius-lg: 20px 14px 18px 12px / 14px 18px 12px 20px;
+
+  /* Shadows */
+  --shadow-stamp:    2px 2.5px 0 #1F2D3E;
+  --shadow-stamp-lg: 3px 4px 0 #1F2D3E;
+  --shadow-stamp-sm: 1.5px 1.5px 0 rgba(31,45,62,0.33);
+  --shadow-float:    4px 5px 0 #1F2D3E, 0 10px 32px rgba(31,45,62,0.12);
+}
