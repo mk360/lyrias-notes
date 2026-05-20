@@ -6,7 +6,7 @@ import { RatingStepper } from '@/components/rating-stepper'
 import { WashiLabel } from '@/components/washi-label'
 import { StickyNote } from '@/components/sticky-note'
 import { FrameDataTable } from '@/components/frame-data-table'
-import { NotesEditor } from '@/components/wysiwyg/editor'
+import { NotesEditor, NotesEditorHandle } from '@/components/wysiwyg/editor'
 import { useApp } from '@/context/AppContext'
 import { CHARACTERS } from '@/lib/characters'
 import type { Move } from '@/lib/types'
@@ -25,7 +25,7 @@ export function MatchupDetail({ readOnly = false }: { readOnly?: boolean }) {
   const [mobileTab, setMobileTab] = useState<DetailTab>('notes')
   const [frameTab, setFrameTab] = useState<'opp' | 'self'>('opp')
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768)
-  const editorRef = useRef<any>(null)
+  const editorRef = useRef<NotesEditorHandle>(null)
 
   useEffect(() => {
     const handler = () => setIsMobile(window.innerWidth < 768)
@@ -59,6 +59,7 @@ export function MatchupDetail({ readOnly = false }: { readOnly?: boolean }) {
   }
 
   function handleMoveClick(move: Move) {
+    console.log(editorRef.current)
     if (editorRef.current?.insertMoveChipAtCursor) {
       editorRef.current.insertMoveChipAtCursor(move.characterId, move.id)
     }
@@ -152,6 +153,7 @@ export function MatchupDetail({ readOnly = false }: { readOnly?: boolean }) {
         <div className="flex-1 overflow-auto" style={{ minHeight: 0 }}>
           {mobileTab === 'notes' && (
             <NotesEditor
+              ref={editorRef}
               content={matchup?.notes ?? {}}
               onChange={handleNotesChange}
               opponentCharId={oCharId}
@@ -234,6 +236,7 @@ export function MatchupDetail({ readOnly = false }: { readOnly?: boolean }) {
           {/* Notes editor */}
           <div className="flex-1 overflow-hidden" style={{ minHeight: 0 }}>
             <NotesEditor
+              ref={editorRef}
               content={matchup?.notes ?? {}}
               onChange={handleNotesChange}
               opponentCharId={oCharId}

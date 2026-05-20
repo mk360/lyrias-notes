@@ -1,4 +1,4 @@
-import React, { useEffect, useCallback } from 'react'
+import React, { useEffect, useCallback, forwardRef, useImperativeHandle } from 'react'
 import { useEditor, EditorContent } from '@tiptap/react'
 import StarterKit from '@tiptap/starter-kit'
 import Underline from '@tiptap/extension-underline'
@@ -9,7 +9,7 @@ import BulletList from '@tiptap/extension-bullet-list'
 import ListItem from '@tiptap/extension-list-item'
 import Placeholder from '@tiptap/extension-placeholder'
 import {
-  Slash,
+  SlashCmd, Slash,
   enableKeyboardNavigation,
   SlashCmdProvider,
   createSuggestionsItems,
@@ -32,7 +32,11 @@ interface NotesEditorProps {
   compact?: boolean
 }
 
-// Slash command suggestions
+export interface NotesEditorHandle {
+  insertMoveChipAtCursor: (characterId: string, moveId: string) => void
+}
+
+// SlashCmd command suggestions
 function buildSlashItems(playerCharId?: string, playerId?: string) {
   const comboItems = (playerCharId && playerId)
     ? getCombosByCharacter(playerId, playerCharId).map(combo => ({
@@ -73,7 +77,7 @@ function buildSlashItems(playerCharId?: string, playerId?: string) {
   ])
 }
 
-export function NotesEditor({
+export const NotesEditor = forwardRef<NotesEditorHandle, NotesEditorProps>(function NotesEditor({
   content,
   onChange,
   opponentCharId,
@@ -82,7 +86,7 @@ export function NotesEditor({
   matchupId,
   readOnly = false,
   compact = false,
-}: NotesEditorProps) {
+}, ref) {
   // Register move resolver
   useEffect(() => {
     setMoveResolver((charId, moveId) => {
@@ -152,12 +156,9 @@ export function NotesEditor({
     }).run()
   }, [editor])
 
-  // Expose insertMoveChip on the editor instance for external use
-  useEffect(() => {
-    if (editor) {
-      (editor as any).insertMoveChipAtCursor = insertMoveChipAtCursor
-    }
-  }, [editor, insertMoveChipAtCursor])
+  useImperativeHandle(ref, () => ({
+    insertMoveChipAtCursor
+  }), [insertMoveChipAtCursor])
 
   return (
     <SlashCmdProvider>
@@ -175,30 +176,30 @@ export function NotesEditor({
           <EditorContent editor={editor} className="h-full" />
         </div>
 
-        {/* Slash command palette */}
+        {/* SlashCmd command palette */}
         {!readOnly && editor && (
-          <Slash.Root editor={editor}>
-            <Slash.Cmd
+          <SlashCmd.Root editor={editor}>
+            <SlashCmd.Cmd
               className="bg-paper border-2 border-ink shadow-stamp-lg overflow-hidden"
               style={{ borderRadius: 'var(--radius-md)', minWidth: 220, maxHeight: 240 } as React.CSSProperties}
             >
-              <Slash.Empty className="p-3 font-body-sm text-ink3">No commands</Slash.Empty>
-              <Slash.List className="py-1">
+              <SlashCmd.Empty className="p-3 font-body-sm text-ink3">No commands</SlashCmd.Empty>
+              <SlashCmd.List className="py-1">
                 {slashItems.map(item => (
-                  <Slash.Item
+                  <SlashCmd.Item
                     key={item.title}
                     value={item.title}
                     onCommand={(val: any) => item.command(val)}
                     className="flex items-center gap-2 px-3 py-2 font-fredoka text-sm text-ink hover:bg-sky100 cursor-pointer data-[selected=true]:bg-sky100"
                   >
                     <span>{item.title}</span>
-                  </Slash.Item>
+                  </SlashCmd.Item>
                 ))}
-              </Slash.List>
-            </Slash.Cmd>
-          </Slash.Root>
+              </SlashCmd.List>
+            </SlashCmd.Cmd>
+          </SlashCmd.Root>
         )}
       </div>
     </SlashCmdProvider>
   )
-}
+})

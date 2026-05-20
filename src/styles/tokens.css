@@ -1,23 +1,23 @@
 /* tokens.css — all design tokens as CSS custom properties */
 :root {
   /* Colors */
-  --color-ink:    #1F2D3E;
-  --color-ink2:   #5A6E83;
-  --color-ink3:   #8C9CAD;
-  --color-paper:  #FBF6E8;
-  --color-paper2: #F2E9CF;
-  --color-paper3: #E8DEBA;
-  --color-rule:   #D8C9A0;
-  --color-sky100: #E4F0F7;
-  --color-sky200: #C3DEEE;
-  --color-sky300: #9EC8E0;
-  --color-sky500: #5390B5;
-  --color-sky700: #2B638A;
-  --color-gold:   #C49A3B;
-  --color-goldDk: #8E6D1C;
-  --color-goldLt: #E8C97A;
-  --color-red:    #B14939;
-  --color-green:  #4C8A5A;
+  --color-ink:    #0D1B2E;   /* was #1F2D3E — deeper navy */
+  --color-ink2:   #4A6080;   /* was #5A6E83 */
+  --color-ink3:   #7A90A8;   /* was #8C9CAD */
+  --color-paper:  #F0E6C8;   /* was #FBF6E8 — warmer parchment */
+  --color-paper2: #E8D9B0;   /* was #F2E9CF */
+  --color-paper3: #DBC99A;   /* was #E8DEBA */
+  --color-rule:   #C8B478;   /* was #D8C9A0 */
+  --color-sky100: #D6E8F4;   /* was #E4F0F7 */
+  --color-sky200: #A8CDE6;   /* was #C3DEEE */
+  --color-sky300: #6AAED6;   /* was #9EC8E0 */
+  --color-sky500: #1A6FA8;   /* was #5390B5 — saturated cerulean */
+  --color-sky700: #0F4A78;   /* was #2B638A */
+  --color-gold:   #D4A832;   /* was #C49A3B — richer gold */
+  --color-goldDk: #9A7018;   /* was #8E6D1C */
+  --color-goldLt: #F0CE70;   /* was #E8C97A */
+  --color-red:    #C0392B;   /* was #B14939 — HP bar red */
+  --color-green:  #27AE60;   /* was #4C8A5A — victory green */
 
   /* Rating bucket bg/fg pairs */
   --rb-0-bg:  #E8C8C0; --rb-0-fg:  #7A2A1F;

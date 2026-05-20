@@ -79,10 +79,10 @@ export function getRatingTier(rating: number | null): RatingTier {
 }
 
 export function getRatingBucket(rating: number | null): { bg: string; fg: string } {
-  if (rating === null) return { bg: '#EEE6CC', fg: '#8C9CAD' }
-  if (rating <= 2)  return { bg: '#E8C8C0', fg: '#7A2A1F' }
-  if (rating <= 4)  return { bg: '#EBD0BD', fg: '#7A4A28' }
-  if (rating === 5) return { bg: '#EFE4C2', fg: '#5A4A20' }
-  if (rating <= 7)  return { bg: '#D9E5C8', fg: '#3F6A3F' }
-  return { bg: '#C3DCBA', fg: '#2C5E36' }
+  if (rating === null) return { bg: '#DDD0A8', fg: '#7A90A8' }
+  if (rating <= 2)  return { bg: '#E8C0B8', fg: '#6A1A10' }   // hellish — deeper red
+  if (rating <= 4)  return { bg: '#E8CCA8', fg: '#6A3A10' }   // rough
+  if (rating === 5) return { bg: '#E8DCA0', fg: '#4A3A10' }   // mirror
+  if (rating <= 7)  return { bg: '#C8DCA8', fg: '#2A5A2A' }   // workable
+  return { bg: '#A8D0A0', fg: '#185A20' }         // free
 }

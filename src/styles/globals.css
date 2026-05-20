@@ -56,6 +56,12 @@
   }
 }
 
+/* Native <dialog> backdrop */
+dialog::backdrop {
+  background: rgba(13, 27, 46, 0.55);
+  backdrop-filter: blur(1px);
+}
+
 /* TipTap editor reset */
 .ProseMirror {
   outline: none;

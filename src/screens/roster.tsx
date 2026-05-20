@@ -121,7 +121,8 @@ export function RosterScreen() {
                     <Portrait
                       tag={char.tag}
                       tone={isMain ? 'warm' : 'default'}
-                      size={48}
+                      size={56}
+                      imgSrc={`/thumbnails/${char.name}.webp`}
                     />
                     <span className="font-fredoka text-xs text-center text-ink leading-tight">{char.name}</span>
                   </div>
@@ -129,7 +130,7 @@ export function RosterScreen() {
                   {/* Star badge / toggle */}
                   <button
                     onClick={e => handleStarClick(e, char.id)}
-                    className="absolute -top-2 -right-2 w-6 h-6 flex items-center justify-center text-sm border-2 border-ink shadow-stamp-sm transition-all hover:scale-110"
+                    className="absolute -top-2 -right-2 w-4 h-4 w-5-sm h-5-sm flex items-center justify-center text-sm border-2 border-ink shadow-stamp-sm transition-all hover:scale-110"
                     style={{
                       borderRadius: '50%',
                       background: isMain ? 'var(--color-gold)' : 'var(--color-paper)',
@@ -236,7 +237,7 @@ export function RosterScreen() {
                             if (!isAlreadyMain) { addMain(char.id); setShowAddPicker(false); setPickerQuery('') }
                           }}
                         >
-                          <Portrait tag={char.tag} tone={isAlreadyMain ? 'warm' : 'default'} size={36} />
+                          <Portrait tag={char.tag} tone={isAlreadyMain ? 'warm' : 'default'} size={36} imgSrc={`/thumbnails/${char.name}.webp`} />
                           <div className="flex-1">
                             <div className="font-fredoka font-500 text-sm">{char.name}</div>
                             <div className="font-elite text-xs text-ink3">{char.tag}</div>
