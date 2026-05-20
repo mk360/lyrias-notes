@@ -122,7 +122,7 @@ export function RosterScreen() {
                       tag={char.tag}
                       tone={isMain ? 'warm' : 'default'}
                       size={56}
-                      imgSrc={`/thumbnails/${char.name}.webp`}
+                      imgSrc={`/lyrias-notes/thumbnails/${char.name}.webp`}
                     />
                     <span className="font-fredoka text-xs text-center text-ink leading-tight">{char.name}</span>
                   </div>
@@ -237,7 +237,7 @@ export function RosterScreen() {
                             if (!isAlreadyMain) { addMain(char.id); setShowAddPicker(false); setPickerQuery('') }
                           }}
                         >
-                          <Portrait tag={char.tag} tone={isAlreadyMain ? 'warm' : 'default'} size={36} imgSrc={`/thumbnails/${char.name}.webp`} />
+                          <Portrait tag={char.tag} tone={isAlreadyMain ? 'warm' : 'default'} size={36} imgSrc={`/lyrias-notes/thumbnails/${char.name}.webp`} />
                           <div className="flex-1">
                             <div className="font-fredoka font-500 text-sm">{char.name}</div>
                             <div className="font-elite text-xs text-ink3">{char.tag}</div>
