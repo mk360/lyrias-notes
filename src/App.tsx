@@ -10,7 +10,7 @@ import { DialogProvider } from './context/DialogContext'
 
 export function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/lyrias-notes'>
       <AppProvider>
           <DialogProvider>
             <Routes>

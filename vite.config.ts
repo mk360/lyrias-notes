@@ -9,6 +9,7 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
+  base: "/lyrias-notes/",
   build: {
     outDir: 'dist',
   },
