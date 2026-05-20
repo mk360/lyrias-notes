@@ -28,7 +28,7 @@ export function StickyNote({ children, tone = 'gold', tilt = 2.5, className = ''
         borderRadius: 'var(--radius-md)',
         transform: `rotate(${tilt}deg)`,
         boxShadow: '2px 3px 0 rgba(31,45,62,0.18)',
-        borderOpacity: 0.6,
+        borderWidth: 0.6,
       }}
     >
       {children}
