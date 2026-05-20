@@ -1,4 +1,3 @@
-import React from 'react'
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import { AppProvider } from '@/context/AppContext'
 import { RosterScreen } from '@/screens/roster'
@@ -8,9 +7,15 @@ import { ComboNotebook } from '@/screens/combos'
 import { ShareScreen } from '@/screens/share'
 import { DialogProvider } from './context/DialogContext'
 
+interface ImportMeta {
+  env: {
+    BASE_URL: string
+  }
+}
+
 export function App() {
   return (
-    <BrowserRouter basename='/lyrias-notes'>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <AppProvider>
           <DialogProvider>
             <Routes>
