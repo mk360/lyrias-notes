@@ -17,7 +17,7 @@ export function FrameDataTable({ characterId, onMoveClick, className = '' }: Fra
   const filtered = query
     ? moves.filter(m =>
         m.name.toLowerCase().includes(query.toLowerCase()) ||
-        m.tag.toLowerCase().includes(query.toLowerCase())
+        m.type.toLowerCase().includes(query.toLowerCase())
       )
     : moves
 
@@ -85,7 +85,7 @@ export function FrameDataTable({ characterId, onMoveClick, className = '' }: Fra
                 >
                   {move.onHit}
                 </td>
-                <td className="font-elite text-xs px-2 py-1.5 text-ink3">{move.tag}</td>
+                <td className="font-elite text-xs px-2 py-1.5 text-ink3">{move.type}</td>
               </tr>
             ))}
             {filtered.length === 0 && (

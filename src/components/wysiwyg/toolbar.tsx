@@ -32,7 +32,7 @@ export function WYSIWYGToolbar({ editor, opponentCharId, matchupId, compact = fa
 
   const moves: Move[] = opponentCharId ? getMovesByCharacter(opponentCharId) : []
   const filteredMoves = moveQuery
-    ? moves.filter(m => m.name.toLowerCase().includes(moveQuery.toLowerCase()) || m.tag.toLowerCase().includes(moveQuery.toLowerCase()))
+    ? moves.filter(m => m.name.toLowerCase().includes(moveQuery.toLowerCase()) || m.type.toLowerCase().includes(moveQuery.toLowerCase()))
     : moves
 
   function insertMoveChip(move: Move) {
