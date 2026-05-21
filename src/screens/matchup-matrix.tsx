@@ -10,7 +10,7 @@ import { CHARACTERS } from '@/lib/characters'
 
 export function MatchupMatrix() {
   const navigate = useNavigate()
-  const { player, matchups } = useApp()
+  const { player, matchups, setActiveMain } = useApp()
   const matrixRef = useRef<HTMLDivElement>(null)
 
   const displayMains = player.mains.length > 0 ? player.mains : []
@@ -45,7 +45,9 @@ export function MatchupMatrix() {
               className="font-fredoka font-500 text-sm bg-ink text-paper border-2 border-ink px-3 py-1.5 cursor-pointer shadow-stamp"
               style={{ borderRadius: 'var(--radius-sm)' }}
               value={player.activeMain}
-              onChange={e => {/* setActiveMain handled by player context */}}
+              onChange={e => {
+                setActiveMain(e.target.value)
+              }}
             >
               {player.mains.map(m => {
                 const c = CHARACTERS.find(ch => ch.id === m)
