@@ -85,3 +85,61 @@ dialog::backdrop {
 .ProseMirror strong { font-weight: 700; }
 .ProseMirror em { font-style: italic; }
 .ProseMirror u { text-decoration: underline; }
+
+@keyframes notebook-flip {
+  0%   { transform: perspective(2000px) rotateY(0deg);    opacity: 1;   }
+  70%  { transform: perspective(2000px) rotateY(-90deg);  opacity: 1;   }
+  85%  { transform: perspective(2000px) rotateY(-250deg); opacity: 0.6; }
+  100% { transform: perspective(2000px) rotateY(-180deg); opacity: 0;   }
+}
+
+@keyframes cover-title-glow {
+  0%,100% { filter: drop-shadow(0 0 8px rgba(142,109,28,0.7)) drop-shadow(0 0 20px rgba(142,109,28,0.35)); }
+  50%     { filter: drop-shadow(0 0 14px rgba(142,109,28,1.0)) drop-shadow(0 0 32px rgba(142,109,28,0.6)); }
+}
+
+.notebook-cover,
+.notebook-cover-fullscreen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  transform-origin: left center;
+  animation: notebook-flip 2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  animation-delay: 1s;
+  backface-visibility: hidden;
+}
+
+.notebook-cover {
+  width: 100%;
+  height: 100%;
+  border-radius: var(--radius-md);
+  border: 2px solid var(--color-ink);
+  box-shadow: var(--shadow-stamp-lg);
+  overflow: hidden;
+}
+
+.notebook-cover-fullscreen {
+  width: 100vw;
+  height: 100vh;
+  border-radius: 0;
+}
+
+.notebook-cover-title {
+  font-family: 'Caveat', cursive;
+  font-weight: 700;
+  font-size: clamp(36px, 5vw, 64px);
+  background: linear-gradient(
+    135deg,
+    var(--color-goldLt)  0%,
+    var(--color-gold)    40%,
+    var(--color-goldDk)  70%,
+    var(--color-goldLt)  100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: cover-title-glow 2s ease-in-out infinite;
+  user-select: none;
+  letter-spacing: 0.02em;
+}

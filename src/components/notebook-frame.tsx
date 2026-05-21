@@ -12,7 +12,8 @@ interface NotebookFrameProps {
 const TABS: { id: NavTab; label: string; path: string }[] = [
   { id: 'roster',   label: 'Roster',   path: '/' },
   { id: 'matchups', label: 'Matchups', path: '/matchups' },
-  { id: 'combos',   label: 'Combos',   path: '/combos' }
+  { id: 'combos',   label: 'Combos',   path: '/combos' },
+  { id: 'you',      label: 'You',      path: '/you' },
 ]
 
 const HOLE_COUNT = 18
@@ -23,10 +24,12 @@ export function NotebookFrame({ children, spreadMode = false, activeTab }: Noteb
 
   // Determine active tab from current path if not provided
   const currentTab = activeTab ?? (
-    TABS.find(t => location.pathname.startsWith(t.path))?.id ?? 'matchups'
+    TABS.find(t => location.pathname.startsWith(t.path))?.id ?? 'roster'
   )
 
   return (
+    <>
+    <h3 className='text-ink font-display-xl bg-transparent'>Lyria's Notes</h3>
     <div
       className="min-h-screen w-full flex items-center justify-center p-4"
       style={{
@@ -57,6 +60,25 @@ export function NotebookFrame({ children, spreadMode = false, activeTab }: Noteb
             borderRight: '2px solid var(--color-ink)',
           }}
         >
+          {/* Brand mark — rotated vertically, sits above the holes */}
+          <div
+            style={{
+              writingMode: 'vertical-rl',
+              transform: 'rotate(180deg)',
+              fontFamily: 'Caveat, cursive',
+              fontWeight: 700,
+              fontSize: 13,
+              color: 'var(--color-ink)',
+              letterSpacing: '0.08em',
+              opacity: 0.55,
+              marginBottom: 12,
+              userSelect: 'none',
+              whiteSpace: 'nowrap',
+            }}
+          >
+            Lyria's Notes
+          </div>
+
           {Array.from({ length: HOLE_COUNT }).map((_, i) => (
             <div
               key={i}
@@ -115,5 +137,6 @@ export function NotebookFrame({ children, spreadMode = false, activeTab }: Noteb
         </div>
       </div>
     </div>
+    </>
   )
 }
