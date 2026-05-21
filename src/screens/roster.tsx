@@ -28,8 +28,7 @@ export function RosterScreen() {
   const filtered = filter === 'all' ? sorted : sorted.filter(c => c.archetype === filter)
 
   const pickerFiltered = CHARACTERS.filter(c =>
-    c.name.toLowerCase().includes(pickerQuery.toLowerCase()) ||
-    c.tag.toLowerCase().includes(pickerQuery.toLowerCase())
+    c.name.toLowerCase().includes(pickerQuery.toLowerCase())
   )
 
   useEffect(() => {
@@ -64,7 +63,7 @@ export function RosterScreen() {
     <NotebookFrame activeTab="roster">
       <div className="flex gap-0 h-full min-h-[600px]">
         {/* Main area */}
-        <div className="flex-1 p-4 overflow-auto">
+        <div className="flex-1 p-4">
           {/* Header */}
           <div className="flex items-start justify-between mb-4">
             <div className="flex items-center gap-3">
@@ -149,7 +148,7 @@ export function RosterScreen() {
 
         {/* Right rail — My Mains */}
         <div
-          className="w-64 shrink-0 border-l-2 border-ink p-4 flex flex-col gap-4 overflow-auto"
+          className="w-64 shrink-0 border-l-2 border-ink p-4 flex flex-col gap-4"
           style={{ background: 'var(--color-paper2)' }}
         >
           <div>
@@ -240,7 +239,6 @@ export function RosterScreen() {
                           <Portrait tag={char.tag} tone={isAlreadyMain ? 'warm' : 'default'} size={36} imgSrc={`${import.meta.env.BASE_URL}thumbnails/${char.name}.webp`} />
                           <div className="flex-1">
                             <div className="font-fredoka font-500 text-sm">{char.name}</div>
-                            <div className="font-elite text-xs text-ink3">{char.tag}</div>
                           </div>
                           {isAlreadyMain ? (
                             <span className="font-label text-gold text-xs">★ main</span>

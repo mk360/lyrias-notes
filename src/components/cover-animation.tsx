@@ -51,7 +51,7 @@ export function CoverAnimation({ onDone, fullscreen = false }: CoverAnimationPro
 
       {/* Main title */}
       <span className="notebook-cover-title">
-        Lyria's Notes
+        Lyria's Notebook
       </span>
 
       {/* Subtitle */}
@@ -103,7 +103,7 @@ export function CoverAnimation({ onDone, fullscreen = false }: CoverAnimationPro
           userSelect: 'none',
           whiteSpace: 'nowrap',
         }}>
-          Lyria's Notes
+          Lyria's Notebook
         </div>
 
         {/* Binding holes */}

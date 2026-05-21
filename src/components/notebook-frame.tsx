@@ -75,7 +75,7 @@ export function NotebookFrame({ children, spreadMode = false, activeTab }: Noteb
               whiteSpace: 'nowrap',
             }}
           >
-            Lyria's Notes
+            Lyria's Notebook
           </div>
 
           {Array.from({ length: HOLE_COUNT }).map((_, i) => (
@@ -87,7 +87,7 @@ export function NotebookFrame({ children, spreadMode = false, activeTab }: Noteb
         </div>
 
         {/* Page content area */}
-        <div className="flex-1 overflow-auto relative">
+        <div className="flex-1 relative">
           {/* Center fold line for spread mode */}
           {spreadMode && (
             <div
