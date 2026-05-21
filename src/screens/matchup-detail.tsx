@@ -216,21 +216,24 @@ export function MatchupDetail({ readOnly = false }: { readOnly?: boolean }) {
         <div className="flex-1 flex flex-col border-r-0 overflow-hidden" style={{ minWidth: 0 }}>
           {/* Left header */}
           <div className="flex items-center gap-3 px-4 pt-4 pb-3 border-b-2 border-rule flex-wrap">
-            <Portrait tag={pChar.tag} tone="warm" size={48} />
+            <Portrait imgSrc={`${import.meta.env.BASE_URL}thumbnails/${pChar.name}.webp`} tag={pChar.tag} tone="warm" size={48} />
             <span className="font-fredoka font-500 text-ink2">vs</span>
-            <Portrait tag={oChar.tag} tone="default" size={48} />
+            <Portrait imgSrc={`${import.meta.env.BASE_URL}thumbnails/${oChar.name}.webp`} tag={oChar.tag} tone="default" size={48} />
             <div className="flex flex-col">
               <h2 className="font-display-lg font-caveat text-ink">{title}</h2>
               <span className="font-elite text-xs text-ink3">
                 matchup #{pIndex + 1} · {matchup ? `edited ${new Date(matchup.updatedAt).toLocaleDateString()}` : 'new'}
               </span>
             </div>
-            <RatingStepper
-              value={matchup?.rating ?? null}
-              onChange={handleRatingChange}
-              size="md"
-              className="ml-auto"
-            />
+            <div className='flex flex-col'>
+              <h3 className='font-display-xs font-500 text-ink2'>Ease of matchup</h3>
+              <RatingStepper
+                value={matchup?.rating ?? null}
+                onChange={handleRatingChange}
+                size="md"
+                className="ml-auto"
+              />
+            </div>
           </div>
 
           {/* Notes editor */}
