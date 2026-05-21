@@ -273,7 +273,7 @@ export function RosterScreen() {
           </div>
 
           {/* Sticky notes */}
-          <StickyNote tone="gold" tilt={2}>
+          {/* <StickyNote tone="gold" tilt={2}>
             <p className="font-fredoka font-600 text-sm mb-1">Reminder ✦</p>
             <p className="font-body-sm">need to fight Belial 3x this week</p>
           </StickyNote>
@@ -281,7 +281,7 @@ export function RosterScreen() {
           <StickyNote tone="sky" tilt={-3}>
             <p className="font-fredoka font-600 text-sm mb-1">Tip ✶</p>
             <p className="font-body-sm">swap to Ladiva vs zoners</p>
-          </StickyNote>
+          </StickyNote> */}
         </div>
       </div>
     </NotebookFrame>

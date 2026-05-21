@@ -694,10 +694,10 @@ export function ComboNotebook() {
             </p>
           </div>
 
-          <StickyNote tone="sky" tilt={-2}>
+          {/* <StickyNote tone="sky" tilt={-2}>
             <p className="font-fredoka font-600 text-sm mb-1">Lab queue ✶</p>
             <p className="font-body-sm">still need to grind:<br />- corner meterless<br />- AA confirm</p>
-          </StickyNote>
+          </StickyNote> */}
         </div>
       </div>
 
