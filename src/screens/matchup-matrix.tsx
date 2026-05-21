@@ -131,7 +131,7 @@ export function MatchupMatrix() {
                 <tr>
                   <td
                     className="font-fredoka text-sm text-ink3 pr-3 cursor-pointer hover:text-sky700 transition-colors pt-1"
-                    onClick={() => navigate('/roster')}
+                    onClick={() => navigate('/')}
                   >
                     + add character
                   </td>

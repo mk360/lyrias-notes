@@ -47,7 +47,7 @@ export function NotebookFrame({ children, spreadMode = false, activeTab }: Noteb
           borderRadius: 'var(--radius-md)',
           boxShadow: 'var(--shadow-stamp-lg)',
           background: 'var(--color-paper)',
-          overflow: 'hidden',
+          overflow: 'auto',
         }}
       >
         {/* Binding strip (left edge) */}
