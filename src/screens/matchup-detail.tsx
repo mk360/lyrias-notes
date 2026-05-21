@@ -288,12 +288,12 @@ export function MatchupDetail({ readOnly = false }: { readOnly?: boolean }) {
           </div>
 
           {/* Floating sticky notes */}
-          <div className="absolute right-24 top-1/3 pointer-events-none" style={{ zIndex: 5 }}>
+          {/* <div className="absolute right-24 top-1/3 pointer-events-none" style={{ zIndex: 5 }}>
             <StickyNote tone="gold" tilt={3} className="text-xs max-w-[120px] pointer-events-auto">
               <p className="font-fredoka font-600 text-xs mb-1">⚠ Warning</p>
               <p>her 632146H has armor frames!</p>
             </StickyNote>
-          </div>
+          </div> */}
 
           {/* Actions footer */}
           <div

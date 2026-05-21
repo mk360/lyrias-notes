@@ -10,7 +10,9 @@ interface FrameDataTableProps {
 
 export function FrameDataTable({ characterId, onMoveClick, className = '' }: FrameDataTableProps) {
   const [query, setQuery] = useState('')
+  console.log(characterId)
   const moves = getMovesByCharacter(characterId)
+  console.log(moves)
 
   const filtered = query
     ? moves.filter(m =>
@@ -61,7 +63,7 @@ export function FrameDataTable({ characterId, onMoveClick, className = '' }: Fra
                 `}
                 title={onMoveClick ? 'Click to insert chip into notes' : undefined}
               >
-                <td className="font-elite text-xs px-2 py-1.5 font-bold text-ink">{move.name}</td>
+                <td className="font-elite text-xs px-2 py-1.5 font-bold text-ink">{move.name || move.input}</td>
                 <td className="font-elite text-xs px-2 py-1.5 text-ink2">{move.startup}f</td>
                 <td
                   className="font-elite text-xs px-2 py-1.5"

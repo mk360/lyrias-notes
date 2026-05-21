@@ -344,7 +344,7 @@ function ComboEditor({ combo, characterId, playerId, onSave, onDelete, onClose }
                       className="font-elite text-xs bg-paper border-2 border-ink px-2 py-px hover:bg-sky100 transition-colors shadow-stamp-sm"
                       style={{ borderRadius: 'var(--radius-sm)' }}
                     >
-                      {m.name}
+                      {m.name || m.input}
                     </button>
                   ))}
                 </div>

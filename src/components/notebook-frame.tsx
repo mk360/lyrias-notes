@@ -29,7 +29,6 @@ export function NotebookFrame({ children, spreadMode = false, activeTab }: Noteb
 
   return (
     <>
-    <h3 className='text-ink font-display-xl bg-transparent'>Lyria's Notes</h3>
     <div
       className="min-h-screen w-full flex items-center justify-center p-4"
       style={{

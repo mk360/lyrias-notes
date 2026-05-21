@@ -16,8 +16,9 @@ export interface Move {
   recovery: number
   onBlock: string
   onHit: string
+  type: string
+  input: string
   damage: number
-  tag: string
 }
 
 export interface Player {
