@@ -9,15 +9,11 @@ import type { Character } from '@/lib/types'
 import React, { useEffect, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
-type SortKey = 'a-z' | 'archetype' | "ingamedisplay"
+type SortKey = 'a-z' | "ingamedisplay"
 type FilterKey = 'all' | 'grappler' | 'rushdown' | 'zoner' | 'all-rounder' | 'technical' | 'setplay'
 
 function AlphabeticalSort(a: Character, b: Character) {
   return a.name.localeCompare(b.name);
-}
-
-function ArchetypeSort(a: Character, b: Character) {
-  return a.archetype.localeCompare(b.archetype);
 }
 
 function GridDisplaySort(_: Character, __: Character) {
@@ -41,15 +37,12 @@ export function RosterScreen() {
     case "a-z":
       sortingAlgorithm = AlphabeticalSort;
       break;
-    case "archetype":
-      sortingAlgorithm = ArchetypeSort;
-      break;
     case "ingamedisplay":
       sortingAlgorithm = GridDisplaySort;
   }
 
   const sorted = [...CHARACTERS].sort(sortingAlgorithm);
-  const filtered = filter === 'all' ? sorted : sorted.filter(c => c.archetype === filter)
+  const filtered = filter === 'all' ? sorted : sorted.filter(c => c.archetypes.includes(filter))
 
   const pickerFiltered = CHARACTERS.filter(c =>
     c.name.toLowerCase().includes(pickerQuery.toLowerCase())
@@ -107,7 +100,7 @@ export function RosterScreen() {
               <WashiLabel tone="sky">Section 01</WashiLabel>
               <h1 className="font-display-xl font-caveat text-ink" style={{ lineHeight: 1 }}>The Roster</h1>
             </div>
-            <div className="flex gap-2 mt-1">
+            <div className="flex flex-col gap-2 mt-1">
               <select
                 className="font-fredoka text-sm bg-paper2 border-2 border-ink px-2 py-1 shadow-stamp-sm cursor-pointer"
                 style={{ borderRadius: 'var(--radius-sm)' }}
@@ -128,9 +121,8 @@ export function RosterScreen() {
                 value={sort}
                 onChange={e => setSort(e.target.value as SortKey)}
               >
+                <option value="a-z">sort: A-Z</option>
                 <option value="ingamedisplay">sort: in-game grid</option>
-                <option value="a-z">sort: A–Z</option>
-                <option value="archetype">sort: archetype</option>
               </select>
             </div>
           </div>
@@ -186,7 +178,7 @@ export function RosterScreen() {
 
         {/* Right rail — My Mains */}
         <div
-          className="w-64 shrink-0 border-l-2 border-ink p-4 flex flex-col gap-4"
+          className="w-64 shrink-0 border-l-2 border-ink p-2 pt-4 flex flex-col gap-4"
           style={{ background: 'var(--color-paper2)' }}
         >
           <div>
@@ -243,7 +235,7 @@ export function RosterScreen() {
               {showAddPicker && (
                 <div
                   className="absolute top-full left-0 right-0 z-40 bg-paper border-2 border-ink shadow-float mt-1"
-                  style={{ borderRadius: 'var(--radius-md)', width: 320, left: '50%', transform: 'translateX(-50%)' }}
+                  style={{ borderRadius: 'var(--radius-md)' }}
                 >
                   <div className="p-3 border-b-2 border-ink">
                     <h3 className="font-display-md font-caveat mb-1">Add a main</h3>
@@ -262,7 +254,7 @@ export function RosterScreen() {
                     </p>
                   </div>
 
-                  <div style={{ maxHeight: 240, overflowY: 'auto' }}>
+                  <div style={{  overflowY: 'auto' }}>
                     {pickerFiltered.slice(0, 6).map((char, idx) => {
                       const isAlreadyMain = player.mains.includes(char.id)
                       const isHighlighted = idx === pickerHighlight

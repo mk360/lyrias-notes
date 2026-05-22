@@ -1,10 +1,12 @@
 // Core data types for Lyria's Notes
 
+export type Archetype = 'grappler' | 'rushdown' | 'zoner' | 'all-rounder' | 'technical' | 'setplay'
+
 export interface Character {
   id: string
   name: string
   tag: string
-  archetype: 'grappler' | 'rushdown' | 'zoner' | 'all-rounder' | 'technical' | 'setplay'
+  archetypes: Archetype[]
 }
 
 export interface Move {

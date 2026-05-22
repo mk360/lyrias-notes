@@ -68,6 +68,7 @@ export function MatchupMatrix() {
           style={{
             background: 'repeating-linear-gradient(to bottom, transparent, transparent calc(2rem - 1px), var(--color-rule) calc(2rem - 1px), var(--color-rule) 2rem)',
             backgroundOrigin: 'content-box',
+            backgroundPositionY: "-1.3rem"
           }}
         >
           {displayMains.length === 0 ? (
@@ -84,7 +85,7 @@ export function MatchupMatrix() {
                   {CHARACTERS.map(opp => (
                     <th
                       key={opp.id}
-                      className="font-elite text-sm text-ink2 text-center pb-1"
+                      className="font-elite text-ink2 text-center pb-1"
                       style={{
                         writingMode: 'vertical-rl',
                         transform: 'rotate(180deg)',
@@ -107,7 +108,7 @@ export function MatchupMatrix() {
                     <tr key={mainId}>
                       <td
                         className="font-fredoka font-500 text-xl pr-3 whitespace-nowrap"
-                        style={{ color: isActive ? 'var(--color-gold)' : 'var(--color-ink)' }}
+                        style={{ color: isActive ? 'var(--color-goldDk)' : 'var(--color-ink)' }}
                       >
                         {isActive && <span className="mr-1">★</span>}
                         {mainChar?.name ?? mainId}

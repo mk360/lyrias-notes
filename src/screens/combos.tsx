@@ -570,10 +570,11 @@ export function ComboNotebook() {
         <div className="flex-1 p-4 overflow-auto">
           {/* Header */}
           <div className="flex items-center gap-3 mb-2 flex-wrap">
-            <WashiLabel tone="gold">Section 04</WashiLabel>
-            <Portrait tag='' imgSrc={`${import.meta.env.BASE_URL}thumbnails/${charaname?.name}.webp`} />
+            <WashiLabel tone="gold">Section 03</WashiLabel>
+            {!!charaname ? <Portrait tag='' imgSrc={`${import.meta.env.BASE_URL}thumbnails/${charaname?.name}.webp`} /> : null}
             <h1 className="font-display-xl font-caveat text-ink">Combo Notebook</h1>
-            <div className="ml-auto flex gap-2">
+            {!!charaname ? (<>
+              <div className="ml-auto flex gap-2">
               <Button variant="secondary" size="sm">↗ export</Button>
               <Button
                 variant="primary"
@@ -583,6 +584,8 @@ export function ComboNotebook() {
                 + new combo
               </Button>
             </div>
+            </>
+            ) : null}
           </div>
           <p className="font-body-sm text-ink2 mb-4">
             Combos you actually use. Pin one to "paste in notes" and it drops into the current matchup note in one click.
@@ -595,7 +598,7 @@ export function ComboNotebook() {
           >
             <span className="font-label text-ink3">character</span>
             <div className="flex gap-2 flex-wrap">
-              {player.mains.map(mainId => {
+              {player.mains.length > 0 ? player.mains.map(mainId => {
                 const char = CHARACTERS.find(c => c.id === mainId)
                 const count = getCombosByCharacter(player.id, mainId).length
                 const isActive = mainId === activeChar
@@ -620,12 +623,16 @@ export function ComboNotebook() {
                     </span>
                   </button>
                 )
-              })}
+              }) : (
+                <div className='flex flex-col items-center justify-center gap-3 p-8 border-2 border-dashed border-rule'>
+                  <p className='font-display-md font-caveat text-ink3'>Start by adding a main in the Roster tab.</p>
+                </div>
+              )}
             </div>
           </div>
 
           {/* Combo list */}
-          {combos.length === 0 ? (
+          {player.mains.length > 0 && combos.length === 0 ? (
             <div
               className="flex flex-col items-center justify-center gap-3 p-8 border-2 border-dashed border-rule"
               style={{ borderRadius: 'var(--radius-md)' }}

@@ -75,7 +75,7 @@ export function ProgressScreen() {
             className="flex items-center gap-3 px-4 pt-4 pb-3 flex-wrap"
             style={{ borderBottom: '2px solid var(--color-rule)' }}
           >
-            <WashiLabel tone="gold">Section 05</WashiLabel>
+            <WashiLabel tone="gold">Section 04</WashiLabel>
             <h1 className="font-display-xl font-caveat" style={{ color: 'var(--color-ink)', lineHeight: 1 }}>
               My Progress
             </h1>
@@ -83,7 +83,7 @@ export function ProgressScreen() {
 
           {/* Section switcher */}
           <div
-            className="flex items-center gap-2 px-4 py-3"
+            className="flex items-center overflow-x-auto gap-2 px-4 py-3"
             style={{ borderBottom: '2px solid var(--color-rule)', background: 'var(--color-paper2)' }}
           >
             <button
@@ -92,16 +92,16 @@ export function ProgressScreen() {
             >
               General Goals
             </button>
+            {activeChar ?
             <button
               style={{ ...sectionBtnBase(activeSection === 'character'), borderRadius: 'var(--radius-sm)' }}
               onClick={() => setActiveSection('character')}
               disabled={!player.activeMain}
               title={!player.activeMain ? 'Pick a main first' : undefined}
             >
-              {activeChar
-                ? `Goals with ${activeChar.name}`
-                : 'Goals with character'}
+                {`Goals with ${activeChar.name}`}
             </button>
+            : null}
 
             {/* Active main switcher — only shown on character section */}
             {activeSection === 'character' && player.mains.length > 1 && (
@@ -223,6 +223,11 @@ export function ProgressScreen() {
             <p className="font-fredoka font-600 text-sm mb-1">Session focus ✶</p>
             <p className="font-body-sm">write your goals for today's session here</p>
           </StickyNote>
+          {!activeChar ? (
+            <StickyNote tone="gold" tilt={2}>
+              <p className='font-fredoka font-600 text-sm mb-1'>Set a character as your main to use more features!</p>
+            </StickyNote>
+          ) : null}
         </div>
       </div>
     </NotebookFrame>
