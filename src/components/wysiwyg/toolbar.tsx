@@ -2,8 +2,7 @@ import React, { useRef, useState } from 'react'
 import type { Editor } from '@tiptap/react'
 import type { Move } from '@/lib/types'
 import { getMovesByCharacter } from '@/lib/moves'
-import { createClip } from '@/lib/db'
-import { v4 as uuidv4 } from 'uuid'
+import { createClipFromUrl } from '@/lib/db'
 
 interface WYSIWYGToolbarProps {
   editor: Editor | null
@@ -32,7 +31,7 @@ export function WYSIWYGToolbar({ editor, opponentCharId, matchupId, compact = fa
 
   const moves: Move[] = opponentCharId ? getMovesByCharacter(opponentCharId) : []
   const filteredMoves = moveQuery
-    ? moves.filter(m => m.name.toLowerCase().includes(moveQuery.toLowerCase()) || m.type.toLowerCase().includes(moveQuery.toLowerCase()))
+    ? moves.filter(m => m.name.toLowerCase().includes(moveQuery.toLowerCase()) || m.type.toLowerCase().includes(moveQuery.toLowerCase()) || m.input.toLowerCase().includes(moveQuery.toLowerCase()))
     : moves
 
   function insertMoveChip(move: Move) {
@@ -45,15 +44,9 @@ export function WYSIWYGToolbar({ editor, opponentCharId, matchupId, compact = fa
     setMoveQuery('')
   }
 
-  function insertClip(url: string, title: string, thumbnailUrl = '', caption = '') {
+  async function insertClip(url: string, title: string) {
     if (!editor || !matchupId) return
-    const clip = createClip(matchupId, {
-      url,
-      thumbnailUrl,
-      duration: '0:00',
-      title: title || 'Clip',
-      caption,
-    })
+    const clip = await createClipFromUrl(matchupId, url, title || "Clip")
     editor.chain().focus().insertContent({
       type: 'inlineClip',
       attrs: { clipId: clip.id },

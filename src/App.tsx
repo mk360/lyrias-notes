@@ -7,6 +7,7 @@ import { useState } from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { DialogProvider } from './context/DialogContext'
 import { CoverAnimation } from './components/cover-animation'
+import { ProgressScreen } from './screens/progress'
 
 export function App() {
   const [coverDone, setCoverDone] = useState(false);
@@ -44,6 +45,7 @@ export function App() {
                 <Route path="/matchups" element={<MatchupMatrix />} />
                 <Route path="/matchups/:playerChar/:oppChar" element={<MatchupDetail />} />
                 <Route path="/combos" element={<ComboNotebook />} />
+                <Route path="/progress" element={<ProgressScreen />} />
               </Routes>
           </DialogProvider>
       </AppProvider>

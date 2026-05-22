@@ -275,7 +275,7 @@ function ComboEditor({ combo, characterId, playerId, onSave, onDelete, onClose }
           <span className="font-display-md font-caveat text-ink">
             {form.title || 'Untitled combo'}
           </span>
-          <span className="font-elite text-xs text-ink3 ml-auto">⌘S save · esc close</span>
+          <span className="font-elite text-xs text-ink3 ml-auto">esc close</span>
           <button
             onClick={onClose}
             className="w-8 h-8 flex items-center justify-center border-2 border-ink shadow-stamp-sm bg-paper font-caveat font-bold hover:bg-paper2"
@@ -571,7 +571,7 @@ export function ComboNotebook() {
           {/* Header */}
           <div className="flex items-center gap-3 mb-2 flex-wrap">
             <WashiLabel tone="gold">Section 04</WashiLabel>
-            <Portrait imgSrc={`${import.meta.env.BASE_URL}thumbnails/${charaname?.name}.webp`} />
+            <Portrait tag='' imgSrc={`${import.meta.env.BASE_URL}thumbnails/${charaname?.name}.webp`} />
             <h1 className="font-display-xl font-caveat text-ink">Combo Notebook</h1>
             <div className="ml-auto flex gap-2">
               <Button variant="secondary" size="sm">↗ export</Button>

@@ -1,7 +1,7 @@
-import { Node, mergeAttributes } from '@tiptap/core'
-import { ReactNodeViewRenderer, NodeViewWrapper } from '@tiptap/react'
-import React, { useState } from 'react'
 import { getClipById } from '@/lib/db'
+import { Node, mergeAttributes } from '@tiptap/core'
+import { NodeViewWrapper, ReactNodeViewRenderer } from '@tiptap/react'
+import { useState } from 'react'
 
 interface InlineClipNodeViewProps {
   node: {
@@ -10,10 +10,10 @@ interface InlineClipNodeViewProps {
   deleteNode: () => void
 }
 
-function InlineClipNodeView({ node, deleteNode }: InlineClipNodeViewProps) {
+async function InlineClipNodeView({ node, deleteNode }: InlineClipNodeViewProps) {
   const { clipId } = node.attrs
   const [showModal, setShowModal] = useState(false)
-  const clip = getClipById(clipId)
+  const clip = await getClipById(clipId)
 
   if (!clip) {
     return (

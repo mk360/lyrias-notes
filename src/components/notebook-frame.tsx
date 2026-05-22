@@ -1,7 +1,7 @@
 import React from 'react'
 import { useNavigate, useLocation } from 'react-router-dom'
 
-type NavTab = 'roster' | 'matchups' | 'combos' | 'you'
+type NavTab = 'roster' | 'matchups' | 'combos' | 'you' | "progress"
 
 interface NotebookFrameProps {
   children: React.ReactNode
@@ -12,8 +12,8 @@ interface NotebookFrameProps {
 const TABS: { id: NavTab; label: string; path: string }[] = [
   { id: 'roster',   label: 'Roster',   path: '/' },
   { id: 'matchups', label: 'Matchups', path: '/matchups' },
-  { id: 'combos',   label: 'Combos',   path: '/combos' }
-  // { id: 'you',      label: 'You',      path: '/you' },
+  { id: 'combos',   label: 'Combos',   path: '/combos' },
+  { id: 'progress', label: 'My Progress', path: '/progress' }
 ]
 
 const HOLE_COUNT = 18

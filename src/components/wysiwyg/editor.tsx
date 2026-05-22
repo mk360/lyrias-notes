@@ -102,8 +102,7 @@ export const NotesEditor = forwardRef<NotesEditorHandle, NotesEditorProps>(funct
     extensions: [
       StarterKit.configure({ heading: false, bulletList: false }),
       Heading.configure({ levels: [1, 2, 3] }),
-      BulletList,
-      ListItem,
+      BulletList,      
       Underline,
       TextStyle,
       Color,
