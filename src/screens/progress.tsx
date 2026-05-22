@@ -214,7 +214,7 @@ export function ProgressScreen() {
             </p>
             <ul className="font-body-sm flex flex-col gap-1.5" style={{ color: 'var(--color-ink2)', paddingLeft: 14 }}>
               <li>Type <span className="font-elite text-xs px-1" style={{ background: 'var(--color-paper2)', border: '1px solid var(--color-rule)', borderRadius: 3 }}>/combo</span> to reference a combo</li>
-              <li>Click any move in the frame data table to drop a chip</li>
+              {/* <li>Click any move in the frame data table to drop a chip</li> */}
               <li>General Goals apply across all characters</li>
             </ul>
           </div>
