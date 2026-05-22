@@ -59,7 +59,6 @@ export function MatchupDetail({ readOnly = false }: { readOnly?: boolean }) {
   }
 
   function handleMoveClick(move: Move) {
-    console.log(editorRef.current)
     if (editorRef.current?.insertMoveChipAtCursor) {
       editorRef.current.insertMoveChipAtCursor(move.characterId, move.id)
     }

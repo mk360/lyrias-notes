@@ -10,9 +10,7 @@ interface FrameDataTableProps {
 
 export function FrameDataTable({ characterId, onMoveClick, className = '' }: FrameDataTableProps) {
   const [query, setQuery] = useState('')
-  console.log(characterId)
   const moves = getMovesByCharacter(characterId)
-  console.log(moves)
 
   const filtered = query
     ? moves.filter(m =>

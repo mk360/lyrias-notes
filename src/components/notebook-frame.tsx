@@ -47,7 +47,6 @@ export function NotebookFrame({ children, spreadMode = false, activeTab }: Noteb
           borderRadius: 'var(--radius-md)',
           boxShadow: 'var(--shadow-stamp-lg)',
           background: 'var(--color-paper)',
-          overflow: 'auto',
         }}
       >
         {/* Binding strip (left edge) */}
@@ -87,7 +86,7 @@ export function NotebookFrame({ children, spreadMode = false, activeTab }: Noteb
         </div>
 
         {/* Page content area */}
-        <div className="flex-1 relative">
+        <div className="flex-1 relative overflow-auto">
           {/* Center fold line for spread mode */}
           {spreadMode && (
             <div

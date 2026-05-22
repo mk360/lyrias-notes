@@ -34,7 +34,7 @@ export function MatchupMatrix() {
 
   return (
     <NotebookFrame activeTab="matchups">
-      <div className="p-4 overflow-auto h-full flex flex-col">
+      <div className="p-4 h-full flex flex-col">
         {/* Header */}
         <div className="flex items-center gap-3 mb-2 flex-wrap">
           <WashiLabel tone="sky">Section 02</WashiLabel>

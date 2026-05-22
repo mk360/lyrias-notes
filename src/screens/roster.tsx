@@ -1,16 +1,28 @@
-import React, { useState, useRef, useEffect } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { Button } from '@/components/button'
 import { NotebookFrame } from '@/components/notebook-frame'
 import { Portrait } from '@/components/portrait'
 import { WashiLabel } from '@/components/washi-label'
-import { StickyNote } from '@/components/sticky-note'
-import { Button } from '@/components/button'
 import { useApp } from '@/context/AppContext'
+import { useDialog } from '@/context/DialogContext'
 import { CHARACTERS } from '@/lib/characters'
 import type { Character } from '@/lib/types'
+import React, { useEffect, useRef, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
-type SortKey = 'a-z' | 'archetype'
+type SortKey = 'a-z' | 'archetype' | "ingamedisplay"
 type FilterKey = 'all' | 'grappler' | 'rushdown' | 'zoner' | 'all-rounder' | 'technical' | 'setplay'
+
+function AlphabeticalSort(a: Character, b: Character) {
+  return a.name.localeCompare(b.name);
+}
+
+function ArchetypeSort(a: Character, b: Character) {
+  return a.archetype.localeCompare(b.archetype);
+}
+
+function GridDisplaySort(_: Character, __: Character) {
+  return 0;
+}
 
 export function RosterScreen() {
   const navigate = useNavigate()
@@ -20,11 +32,23 @@ export function RosterScreen() {
   const [showAddPicker, setShowAddPicker] = useState(false)
   const [pickerQuery, setPickerQuery] = useState('')
   const [pickerHighlight, setPickerHighlight] = useState(0)
-  const pickerInputRef = useRef<HTMLInputElement>(null)
+  const pickerInputRef = useRef<HTMLInputElement>(null);
+  const { show, close } = useDialog();
 
-  const sorted = [...CHARACTERS].sort((a, b) =>
-    sort === 'a-z' ? a.name.localeCompare(b.name) : a.archetype.localeCompare(b.archetype)
-  )
+  let sortingAlgorithm: (a: Character, b: Character) => number
+
+  switch (sort) {
+    case "a-z":
+      sortingAlgorithm = AlphabeticalSort;
+      break;
+    case "archetype":
+      sortingAlgorithm = ArchetypeSort;
+      break;
+    case "ingamedisplay":
+      sortingAlgorithm = GridDisplaySort;
+  }
+
+  const sorted = [...CHARACTERS].sort(sortingAlgorithm);
   const filtered = filter === 'all' ? sorted : sorted.filter(c => c.archetype === filter)
 
   const pickerFiltered = CHARACTERS.filter(c =>
@@ -40,9 +64,19 @@ export function RosterScreen() {
   function handleCharClick(char: Character) {
     if (player.activeMain === char.id) {
       navigate(`/combos`)
-    } else {
+    } else if (player.activeMain) {
       const dest = player.activeMain || player.mains[0] || char.id
       navigate(`/matchups/${dest}/${char.id}`)
+    } else {
+      show({
+        variant: "info",
+        title: "You need a main",
+        primary: {
+          label: "Go Back",
+          onClick: close
+        },
+        message: "You can mark a character as your main using the star icon."
+      })
     }
   }
 
@@ -94,6 +128,7 @@ export function RosterScreen() {
                 value={sort}
                 onChange={e => setSort(e.target.value as SortKey)}
               >
+                <option value="ingamedisplay">sort: in-game grid</option>
                 <option value="a-z">sort: A–Z</option>
                 <option value="archetype">sort: archetype</option>
               </select>
