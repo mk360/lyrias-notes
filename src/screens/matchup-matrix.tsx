@@ -54,7 +54,6 @@ export function MatchupMatrix() {
                 return <option key={m} value={m}>★ {c?.name ?? m}</option>
               })}
             </select>
-            <Button variant="secondary" size="sm" onClick={handleExport}>↗ export</Button>
           </div>
         </div>
 
@@ -170,7 +169,7 @@ export function MatchupMatrix() {
             </div>
           ))}
           <span className="font-body-sm text-ink3">· · · = unrated</span>
-
+{/* 
           <Button
             variant="primary"
             size="sm"
@@ -178,7 +177,7 @@ export function MatchupMatrix() {
             onClick={handleExport}
           >
             export → tier list PNG
-          </Button>
+          </Button> */}
         </div>
       </div>
     </NotebookFrame>
