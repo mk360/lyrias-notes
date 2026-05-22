@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import type { Move } from '@/lib/types'
 import { getMovesByCharacter } from '@/lib/moves'
+import { MoveDisplay, MoveDisplayToggle } from './move-display-toggle'
 
 interface FrameDataTableProps {
   characterId: string
@@ -10,7 +11,8 @@ interface FrameDataTableProps {
 
 export function FrameDataTable({ characterId, onMoveClick, className = '' }: FrameDataTableProps) {
   const [query, setQuery] = useState('')
-  const moves = getMovesByCharacter(characterId)
+  const moves = getMovesByCharacter(characterId);
+  const [displayType, setDisplayType] = useState<MoveDisplay>("input");
 
   const filtered = query
     ? moves.filter(m =>
@@ -22,14 +24,15 @@ export function FrameDataTable({ characterId, onMoveClick, className = '' }: Fra
   return (
     <div className={`flex flex-col h-full ${className}`}>
       {/* Filter input */}
-      <div className="p-2 border-b-2 border-rule">
+      <div className="p-2 border-b-2 border-rule flex">
         <input
           value={query}
           onChange={e => setQuery(e.target.value)}
           placeholder="filter moves…"
-          className="w-full font-fredoka text-sm bg-paper border-2 border-rule px-2 py-1 outline-none focus:border-ink3 transition-colors"
+          className="flex-1 font-fredoka text-sm bg-paper border-2 border-rule px-2 py-1 outline-none focus:border-ink3 transition-colors"
           style={{ borderRadius: 'var(--radius-sm)' }}
         />
+        <MoveDisplayToggle className='flex_[0.5]' value={displayType} onChange={setDisplayType} />
       </div>
 
       {/* Table */}
@@ -61,7 +64,7 @@ export function FrameDataTable({ characterId, onMoveClick, className = '' }: Fra
                 `}
                 title={onMoveClick ? 'Click to insert chip into notes' : undefined}
               >
-                <td className="font-elite text-xs px-2 py-1.5 font-bold text-ink">{move.name || move.input}</td>
+                <td className="font-elite text-xs px-2 py-1.5 font-bold text-ink">{displayType === "input" ? move.input : (move.name || move.input)}</td>
                 <td className="font-elite text-xs px-2 py-1.5 text-ink2">{move.startup}f</td>
                 <td
                   className="font-elite text-xs px-2 py-1.5"

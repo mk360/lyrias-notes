@@ -13,7 +13,7 @@ export function MoveDisplayToggle({ value, onChange, className = '' }: MoveDispl
 
   return (
     <div
-      className={`inline-flex items-center gap-2 ${className}`}
+      className={`inline-flex items-center gap-2 p-2 flex items-center ${className}`}
       role="group"
       aria-label="Move display mode"
     >
