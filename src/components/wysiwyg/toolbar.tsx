@@ -128,10 +128,10 @@ export function WYSIWYGToolbar({ editor, opponentCharId, matchupId, compact = fa
               else editor.chain().focus().toggleHeading({ level: parseInt(v) as 1|2|3 }).run()
             }}
           >
-            <option value="0">Body</option>
-            <option value="1">H1</option>
-            <option value="2">H2</option>
-            <option value="3">H3</option>
+            <option value="0">Normal text size</option>
+            <option value="1">Heading</option>
+            <option value="2">Mid sized Heading</option>
+            <option value="3">Small Heading</option>
           </select>
         )}
 
@@ -139,10 +139,10 @@ export function WYSIWYGToolbar({ editor, opponentCharId, matchupId, compact = fa
         <button
           type="button"
           onClick={() => editor.chain().focus().toggleBulletList().run()}
-          className={btnClass(editor.isActive('bulletList'))}
+          className={btnClass(editor.isActive('bulletList')) + " flex-1"}
           style={{ borderRadius: 'var(--radius-sm)', fontSize: 16 }}
           title="Bullet list"
-        >·</button>
+        >Bullet list</button>
 
         {/* Color swatches */}
         <div className="flex gap-1 items-center ml-1">
@@ -209,7 +209,7 @@ export function WYSIWYGToolbar({ editor, opponentCharId, matchupId, compact = fa
                 className="w-full text-left px-3 py-2 font-elite text-xs hover:bg-sky100 transition-colors border-b border-rule last:border-0 flex items-center justify-between"
               >
                 <span>{m.name}</span>
-                <span className="text-ink3 text-xs">{m.startup}f · {m.onBlock} blk</span>
+                <span className="text-ink3 text-xs">{m.input}</span>
               </button>
             ))}
             {filteredMoves.length === 0 && (

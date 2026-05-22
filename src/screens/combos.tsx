@@ -561,6 +561,7 @@ export function ComboNotebook() {
 
   // Stats
   const topDamage = combos.reduce((max, c) => Math.max(max, c.damage), 0)
+  const charaname = CHARACTERS.find((i) => i.id === activeChar);
 
   return (
     <NotebookFrame activeTab="combos">
@@ -570,6 +571,7 @@ export function ComboNotebook() {
           {/* Header */}
           <div className="flex items-center gap-3 mb-2 flex-wrap">
             <WashiLabel tone="gold">Section 04</WashiLabel>
+            <Portrait imgSrc={`${import.meta.env.BASE_URL}thumbnails/${charaname?.name}.webp`} />
             <h1 className="font-display-xl font-caveat text-ink">Combo Notebook</h1>
             <div className="ml-auto flex gap-2">
               <Button variant="secondary" size="sm">↗ export</Button>

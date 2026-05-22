@@ -38,9 +38,12 @@ export function RosterScreen() {
   }, [showAddPicker])
 
   function handleCharClick(char: Character) {
-    const dest = player.activeMain || player.mains[0] || char.id
-    navigate(`/matchups/${dest}/${char.id}`)
-    // if no main, specify that i should add a main first
+    if (player.activeMain === char.id) {
+      navigate(`/combos`)
+    } else {
+      const dest = player.activeMain || player.mains[0] || char.id
+      navigate(`/matchups/${dest}/${char.id}`)
+    }
   }
 
   function handleStarClick(e: React.MouseEvent, charId: string) {

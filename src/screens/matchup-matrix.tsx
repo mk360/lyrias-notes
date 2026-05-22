@@ -25,7 +25,7 @@ export function MatchupMatrix() {
 
   async function handleExport() {
     if (!matrixRef.current) return
-    const dataUrl = await toPng(matrixRef.current, { cacheBust: true })
+    const dataUrl = await toPng(matrixRef.current.parentElement!, { cacheBust: true })
     const link = document.createElement('a')
     link.download = 'matchup-matrix.png'
     link.href = dataUrl
