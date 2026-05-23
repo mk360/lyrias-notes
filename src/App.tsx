@@ -13,7 +13,7 @@ import { SettingsProvider } from './context/SettingsContext'
 export function App() {
   const [coverDone, setCoverDone] = useState(false);
   return (
-    <HashRouter basename={import.meta.env.BASE_URL}>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <SettingsProvider>
         <AppProvider>
             <DialogProvider>
@@ -52,6 +52,6 @@ export function App() {
             </DialogProvider>
         </AppProvider>
       </SettingsProvider>
-    </HashRouter>
+    </BrowserRouter>
   )
 }
