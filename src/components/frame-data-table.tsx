@@ -17,7 +17,7 @@ export function FrameDataTable({ characterId, onMoveClick, className = '' }: Fra
   const filtered = query
     ? moves.filter(m =>
         m.name.toLowerCase().includes(query.toLowerCase()) ||
-        m.type.toLowerCase().includes(query.toLowerCase())
+        m.input.toLowerCase().includes(query.toLowerCase())
       )
     : moves
 
@@ -40,7 +40,7 @@ export function FrameDataTable({ characterId, onMoveClick, className = '' }: Fra
         <table className="w-full border-collapse">
           <thead className="sticky top-0 bg-paper2 border-b-2 border-ink">
             <tr>
-              {['MOVE', 'START', 'BLOCK', 'HIT', 'TAG'].map((h, i) => (
+              {['MOVE', 'STARTUP', 'ON BLOCK', 'ON HIT', 'TYPE'].map((h) => (
                 <th
                   key={h}
                   className="font-elite text-xs text-ink2 px-2 py-2 text-left"
@@ -64,10 +64,10 @@ export function FrameDataTable({ characterId, onMoveClick, className = '' }: Fra
                 `}
                 title={onMoveClick ? 'Click to insert chip into notes' : undefined}
               >
-                <td className="font-elite text-xs px-2 py-1.5 font-bold text-ink">{displayType === "input" ? move.input : (move.name || move.input)}</td>
-                <td className="font-elite text-xs px-2 py-1.5 text-ink2">{move.startup}f</td>
+                <td className="font-elite  px-2 py-1.5 font-bold text-ink">{displayType === "input" ? move.input : (move.name || move.input)}</td>
+                <td className="font-elite  px-2 py-1.5 text-ink2">{move.startup}f</td>
                 <td
-                  className="font-elite text-xs px-2 py-1.5"
+                  className="font-elite  px-2 py-1.5"
                   style={{
                     color: move.onBlock.startsWith('-')
                       ? (parseInt(move.onBlock) <= -8 ? '#B14939' : '#7A4A28')

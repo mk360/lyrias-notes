@@ -8,6 +8,8 @@ import { Button } from '@/components/button'
 import { useApp } from '@/context/AppContext'
 import { CHARACTERS } from '@/lib/characters'
 
+const sortedCharacters = CHARACTERS.sort((ch1, ch2) => ch1.name.localeCompare(ch2.name));
+
 export function MatchupMatrix() {
   const navigate = useNavigate()
   const { player, matchups, setActiveMain } = useApp()
@@ -82,10 +84,10 @@ export function MatchupMatrix() {
                 <tr>
                   {/* Row header spacer */}
                   <th className="w-24 shrink-0" />
-                  {CHARACTERS.map(opp => (
+                  {sortedCharacters.map(opp => (
                     <th
                       key={opp.id}
-                      className="font-elite text-ink2 text-center pb-1"
+                      className="font-elite text-ink2 text-center"
                       style={{
                         writingMode: 'vertical-rl',
                         transform: 'rotate(180deg)',
@@ -93,6 +95,7 @@ export function MatchupMatrix() {
                         width: 32,
                         padding: '4px 0',
                         verticalAlign: 'bottom',
+                        // textWrapMode: "nowrap"
                       }}
                     >
                       {opp.name}
@@ -117,11 +120,13 @@ export function MatchupMatrix() {
                         const mu = getMatchup(mainId, opp.id)
                         return (
                           <td key={opp.id} className="p-0.5">
-                            <RatingCell
-                              value={mu?.rating ?? null}
-                              size={28}
-                              onClick={() => navigate(`/matchups/${mainId}/${opp.id}`)}
-                            />
+                            <div className='w-full flex justify-center'>
+                              <RatingCell
+                                value={mu?.rating ?? null}
+                                size={28}
+                                onClick={() => navigate(`/matchups/${mainId}/${opp.id}`)}
+                              />
+                            </div>
                           </td>
                         )
                       })}

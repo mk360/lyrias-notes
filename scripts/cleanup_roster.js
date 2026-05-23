@@ -3,10 +3,11 @@ const dir = fs.readdirSync("../src/data");
 
 const reg = /(<(\/|)[a-z]+( .+?|)>|\n)/g
 
-for (let item of dir) {
-    const moveset = JSON.parse(fs.readFileSync(`../src/data/${item}`, "utf-8"));
+for (let character of dir) {
+    const moveset = JSON.parse(fs.readFileSync(`../src/data/${character}`, "utf-8"));
+    
     for (let move of moveset) {
-        move.id = `${item.replace(".json", "")}-${move.input}`
+        move.id = `${character.replace(".json", "")}-${move.input}`;
         for (let property in move) {
             if (Array.isArray(move[property])) {
                 for (let i = 0; i < move[property].length; i++) {
@@ -16,8 +17,19 @@ for (let item of dir) {
                 move[property] = move[property].replace(reg, "");
             }
         }
+
+        if (move.input === "MH") move.input = "RS";
+        if (move.input === "MH~MH") move.input = "RS~RC";
     }
-    fs.writeFileSync(`../src/cleaned_data/${item}`, JSON.stringify(moveset));
+    
+    
+    // const newMoveset = moveset.sort((move1, move2) => {
+    //     if (move1.type === move2.type) {
+
+    //     }
+    // });
+
+    fs.writeFileSync(`../src/cleaned_data/${character}`, JSON.stringify(moveset));
 }
 
 const NARMAYA = require("../src/cleaned_data/Narmaya.json");

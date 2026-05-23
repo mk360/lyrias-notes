@@ -10,6 +10,7 @@ import { NotesEditor, NotesEditorHandle } from '@/components/wysiwyg/editor'
 import { useApp } from '@/context/AppContext'
 import { CHARACTERS } from '@/lib/characters'
 import type { Move } from '@/lib/types'
+import { Button } from '@/components/button'
 
 type DetailTab = 'notes' | 'frames' | 'clips'
 
@@ -38,6 +39,7 @@ export function MatchupDetail({ readOnly = false }: { readOnly?: boolean }) {
   const oCharId = oppChar ?? ''
   const pChar = CHARACTERS.find(c => c.id === pCharId)
   const oChar = CHARACTERS.find(c => c.id === oCharId)
+  console.log(pChar, oChar)
 
   const matchup = matchups.find(
     m => m.playerCharacterId === pCharId &&
@@ -233,6 +235,7 @@ export function MatchupDetail({ readOnly = false }: { readOnly?: boolean }) {
                 className="ml-auto"
               />
             </div>
+              {/* <Button size="sm">Clear</Button> */}
           </div>
 
           {/* Notes editor */}
