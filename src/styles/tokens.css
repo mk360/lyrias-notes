@@ -38,3 +38,46 @@
   --shadow-stamp-sm: 1.5px 1.5px 0 rgba(31,45,62,0.33);
   --shadow-float:    4px 5px 0 #1F2D3E, 0 10px 32px rgba(31,45,62,0.12);
 }
+
+[data-theme="dark"] {
+  /* Backgrounds */
+  --color-paper:  #0A1628;   /* deep GBVSR navy */
+  --color-paper2: #112040;   /* panel surfaces */
+  --color-paper3: #1A2E50;   /* secondary panels, binding strip */
+  --color-rule:   #1E3560;   /* rule lines, dividers */
+
+  /* Text */
+  --color-ink:    #E8DCC8;   /* warm off-white — readable, not harsh */
+  --color-ink2:   #A8B8CC;   /* secondary */
+  --color-ink3:   #5A7090;   /* muted / placeholder */
+
+  /* Sky — more electric on dark bg */
+  --color-sky100: #0E2040;
+  --color-sky200: #1A3860;
+  --color-sky300: #2A5888;
+  --color-sky500: #2E86C8;
+  --color-sky700: #5AAEE0;   /* inverted — lighter for dark bg use */
+
+  /* Gold — slightly brighter to pop */
+  --color-gold:   #E0B83C;
+  --color-goldDk: #A87C20;
+  --color-goldLt: #F0D070;
+
+  /* Semantic */
+  --color-red:   #D44030;
+  --color-green: #3AAD60;
+
+  /* Rating buckets — desaturated, darker bg, lighter fg */
+  --rb-0-bg:  #2E1A18; --rb-0-fg:  #E89080;
+  --rb-3-bg:  #2E2010; --rb-3-fg:  #E8A870;
+  --rb-5-bg:  #282410; --rb-5-fg:  #D4C060;
+  --rb-6-bg:  #102818; --rb-6-fg:  #70C880;
+  --rb-8-bg:  #082018; --rb-8-fg:  #50D878;
+  --rb-u-bg:  #141E30; --rb-u-fg:  #5A7090;
+
+  /* Shadows — gold rim glow + heavy black drop */
+  --shadow-stamp:    0 0 0 1.5px rgba(224,184,60,0.25), 2px 2.5px 0 rgba(0,0,0,0.7);
+  --shadow-stamp-lg: 0 0 0 1.5px rgba(224,184,60,0.20), 3px 4px 0 rgba(0,0,0,0.8);
+  --shadow-stamp-sm: 0 0 0 1px rgba(224,184,60,0.15),   1.5px 1.5px 0 rgba(0,0,0,0.6);
+  --shadow-float:    0 0 0 1.5px rgba(224,184,60,0.20), 4px 5px 0 rgba(0,0,0,0.9), 0 10px 32px rgba(0,0,0,0.5);
+}

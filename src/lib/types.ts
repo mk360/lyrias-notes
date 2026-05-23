@@ -82,10 +82,13 @@ export function getRatingTier(rating: number | null): RatingTier {
 }
 
 export function getRatingBucket(rating: number | null): { bg: string; fg: string } {
-  if (rating === null) return { bg: '#DDD0A8', fg: '#7A90A8' }
-  if (rating <= 2)  return { bg: '#E8C0B8', fg: '#6A1A10' }   // hellish — deeper red
-  if (rating <= 4)  return { bg: '#E8CCA8', fg: '#6A3A10' }   // rough
-  if (rating === 5) return { bg: '#E8DCA0', fg: '#4A3A10' }   // mirror
-  if (rating <= 7)  return { bg: '#C8DCA8', fg: '#2A5A2A' }   // workable
-  return { bg: '#A8D0A0', fg: '#185A20' }         // free
+  const s = getComputedStyle(document.documentElement)
+  const v = (name: string) => s.getPropertyValue(name).trim()
+
+  if (rating === null) return { bg: v('--rb-u-bg'), fg: v('--rb-u-fg') }
+  if (rating <= 2)     return { bg: v('--rb-0-bg'), fg: v('--rb-0-fg') }
+  if (rating <= 4)     return { bg: v('--rb-3-bg'), fg: v('--rb-3-fg') }
+  if (rating === 5)    return { bg: v('--rb-5-bg'), fg: v('--rb-5-fg') }
+  if (rating <= 7)     return { bg: v('--rb-6-bg'), fg: v('--rb-6-fg') }
+  return               { bg: v('--rb-8-bg'), fg: v('--rb-8-fg') }
 }
