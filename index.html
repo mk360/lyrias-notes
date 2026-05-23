@@ -8,7 +8,7 @@
     <script>
       const p = new URLSearchParams(window.location.search).get('p');
       if (p) {
-        window.location.replace(null, '', '/lyrias-notes' + p);
+        window.history.replaceState(null, '', '/lyrias-notes' + p);
       }
     </script>
     <link

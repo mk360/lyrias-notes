@@ -185,41 +185,6 @@ export function RosterScreen() {
             <h2 className="font-display-md font-caveat text-ink mb-1">My mains</h2>
             <p className="font-body-sm text-ink2 mb-3">Active main appears in matchup matrix</p>
 
-            <div className="flex flex-col gap-2">
-              {player.mains.length === 0 && (
-                <p className="font-body-sm text-ink3">No mains yet — click ☆ on any character</p>
-              )}
-              {player.mains.map(mainId => {
-                const char = CHARACTERS.find(c => c.id === mainId)
-                if (!char) return null
-                const isActive = player.activeMain === mainId
-                return (
-                  <button
-                    key={mainId}
-                    onClick={() => setActiveMain(mainId)}
-                    className="flex items-center gap-2 px-3 py-2 border-2 border-ink text-left transition-all hover:shadow-stamp"
-                    style={{
-                      borderRadius: 'var(--radius-sm)',
-                      background: isActive ? 'var(--color-ink)' : 'var(--color-paper)',
-                      color: isActive ? 'var(--color-paper)' : 'var(--color-ink)',
-                      boxShadow: isActive ? 'none' : 'var(--shadow-stamp-sm)',
-                    }}
-                  >
-                    <span style={{ color: 'var(--color-gold)' }}>★</span>
-                    <span className="font-fredoka font-500 text-sm">{char.name}</span>
-                    {isActive && (
-                      <span
-                        className="ml-auto font-elite text-xs px-1"
-                        style={{ background: 'var(--color-sky500)', borderRadius: '2px', color: 'var(--color-paper)', fontSize: 10 }}
-                      >
-                        active
-                      </span>
-                    )}
-                  </button>
-                )
-              })}
-            </div>
-
             {/* Add character button */}
             <div className="relative mt-3">
               <Button
@@ -298,6 +263,43 @@ export function RosterScreen() {
                 </div>
               )}
             </div>
+
+            <div className="flex flex-col gap-2 mt-3">
+              {player.mains.length === 0 && (
+                <p className="font-body-sm text-ink3">No mains yet — click ☆ on any character</p>
+              )}
+              {player.mains.map(mainId => {
+                const char = CHARACTERS.find(c => c.id === mainId)
+                if (!char) return null
+                const isActive = player.activeMain === mainId
+                return (
+                  <button
+                    key={mainId}
+                    onClick={() => setActiveMain(mainId)}
+                    className="flex items-center gap-2 px-3 py-2 border-2 border-ink text-left transition-all hover:shadow-stamp"
+                    style={{
+                      borderRadius: 'var(--radius-sm)',
+                      background: isActive ? 'var(--color-ink)' : 'var(--color-paper)',
+                      color: isActive ? 'var(--color-paper)' : 'var(--color-ink)',
+                      boxShadow: isActive ? 'none' : 'var(--shadow-stamp-sm)',
+                    }}
+                  >
+                    <span style={{ color: 'var(--color-gold)' }}>★</span>
+                    <span className="font-fredoka font-500 text-sm">{char.name}</span>
+                    {isActive && (
+                      <span
+                        className="ml-auto font-elite text-xs px-1"
+                        style={{ background: 'var(--color-sky500)', borderRadius: '2px', color: 'var(--color-paper)', fontSize: 10 }}
+                      >
+                        active
+                      </span>
+                    )}
+                  </button>
+                )
+              })}
+            </div>
+
+            
           </div>
 
           {/* Sticky notes */}
