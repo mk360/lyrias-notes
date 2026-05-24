@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
 import type { Clip } from '@/lib/types'
+import { useState } from 'react'
 
 interface InlineClipProps {
   clip: Clip

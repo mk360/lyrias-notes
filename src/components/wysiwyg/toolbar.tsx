@@ -44,16 +44,17 @@ export function WYSIWYGToolbar({ editor, opponentCharId, matchupId, compact = fa
     setMoveQuery('')
   }
 
-  async function insertClip(url: string, title: string) {
+  function insertClip(url: string, title: string) {
     if (!editor || !matchupId) return
-    const clip = await createClipFromUrl(matchupId, url, title || "Clip")
-    editor.chain().focus().insertContent({
+    createClipFromUrl(matchupId, url, title || "Clip").then((clip) => {
+      editor.chain().focus().insertContent({
       type: 'inlineClip',
       attrs: { clipId: clip.id },
-    }).run()
-    setShowClipDialog(false)
-    setClipUrl('')
-    setClipTitle('')
+      }).run()
+      setShowClipDialog(false)
+      setClipUrl('')
+      setClipTitle('')
+    });
   }
 
   function handleFileUpload(e: React.ChangeEvent<HTMLInputElement>) {
@@ -145,7 +146,7 @@ export function WYSIWYGToolbar({ editor, opponentCharId, matchupId, compact = fa
               key={c.name}
               type="button"
               onClick={() => editor.chain().focus().setColor(c.value).run()}
-              className="w-5 h-5 border-2 border-ink cursor-pointer hover:scale-110 transition-transform"
+              className="w-4 h-4 border-2 border-ink cursor-pointer hover:scale-110 transition-transform"
               style={{ background: c.value, borderRadius: '50%', boxShadow: '1px 1px 0 var(--color-ink)' }}
               title={c.name}
             />
@@ -227,23 +228,6 @@ export function WYSIWYGToolbar({ editor, opponentCharId, matchupId, compact = fa
               className="font-fredoka text-sm bg-paper2 border-2 border-rule px-2 py-1 outline-none"
               style={{ borderRadius: 'var(--radius-sm)' }}
             />
-            <input
-              value={clipUrl}
-              onChange={e => setClipUrl(e.target.value)}
-              placeholder="Paste video URL…"
-              className="font-fredoka text-sm bg-paper2 border-2 border-rule px-2 py-1 outline-none"
-              style={{ borderRadius: 'var(--radius-sm)' }}
-            />
-            <button
-              type="button"
-              onClick={() => clipUrl && insertClip(clipUrl, clipTitle)}
-              disabled={!clipUrl}
-              className="font-fredoka font-500 text-sm bg-sky700 text-paper border-2 border-ink px-3 py-1.5 shadow-stamp disabled:opacity-40 hover:opacity-80"
-              style={{ borderRadius: 'var(--radius-sm)' }}
-            >
-              Insert clip
-            </button>
-            <div className="text-center font-body-sm text-ink3">— or —</div>
             <button
               type="button"
               onClick={() => fileInputRef.current?.click()}
@@ -255,7 +239,7 @@ export function WYSIWYGToolbar({ editor, opponentCharId, matchupId, compact = fa
             <input
               ref={fileInputRef}
               type="file"
-              accept="video/*"
+              accept="video/mp4"
               onChange={handleFileUpload}
               className="hidden"
             />

@@ -39,7 +39,6 @@ export function MatchupDetail({ readOnly = false }: { readOnly?: boolean }) {
   const oCharId = oppChar ?? ''
   const pChar = CHARACTERS.find(c => c.id === pCharId)
   const oChar = CHARACTERS.find(c => c.id === oCharId)
-  console.log(pChar, oChar)
 
   const matchup = matchups.find(
     m => m.playerCharacterId === pCharId &&

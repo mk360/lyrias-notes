@@ -1,7 +1,8 @@
-import { getClipById } from '@/lib/db'
+import { getBlobUrl, getClipById } from '@/lib/db'
+import { Clip } from '@/lib/types'
 import { Node, mergeAttributes } from '@tiptap/core'
 import { NodeViewWrapper, ReactNodeViewRenderer } from '@tiptap/react'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 interface InlineClipNodeViewProps {
   node: {
@@ -10,24 +11,46 @@ interface InlineClipNodeViewProps {
   deleteNode: () => void
 }
 
-async function InlineClipNodeView({ node, deleteNode }: InlineClipNodeViewProps) {
+function InlineClipNodeView({ node, deleteNode }: InlineClipNodeViewProps) {
   const { clipId } = node.attrs
   const [showModal, setShowModal] = useState(false)
-  const clip = await getClipById(clipId)
+  const [clip, setClip] = useState<Clip | null>(null)
+  const [loading, setLoading] = useState(true)
+  const [resolvedUrl, setResolvedUrl] = useState<string>('')
 
-  if (!clip) {
-    return (
-      <NodeViewWrapper as="div" className="my-2">
-        <div
-          className="inline-flex items-center gap-2 p-2 bg-paper2 border-2 border-rule"
-          style={{ borderRadius: 'var(--radius-sm)' }}
-        >
-          <span className="font-body-sm text-ink3">Clip not found</span>
-          <button onClick={deleteNode} className="text-red font-body-sm">✕ remove</button>
-        </div>
-      </NodeViewWrapper>
-    )
-  }
+  useEffect(() => {
+    let objectUrl: string | null = null
+
+    getClipById(clipId).then(async meta => {
+      setClip(meta)
+      if (!meta) { setLoading(false); return }
+
+      if (meta.url) {
+        setResolvedUrl(meta.url)
+      } else {
+        const url = await getBlobUrl(clipId)
+        if (url) { objectUrl = url; setResolvedUrl(url) }
+      }
+      setLoading(false)
+    })
+
+    return () => { if (objectUrl) URL.revokeObjectURL(objectUrl) }
+  }, [clipId])
+
+  if (loading) return (
+    <NodeViewWrapper as="div" className="my-2" contentEditable={false}>
+      <div className="p-2 font-body-sm text-ink3">Loading clip…</div>
+    </NodeViewWrapper>
+  )
+
+  if (!clip) return (
+    <NodeViewWrapper as="div" className="my-2">
+      <div className="inline-flex items-center gap-2 p-2 bg-paper2 border-2 border-rule" style={{ borderRadius: 'var(--radius-sm)' }}>
+        <span className="font-body-sm text-ink3">Clip not found</span>
+        <button onClick={deleteNode} className="text-red font-body-sm">✕ remove</button>
+      </div>
+    </NodeViewWrapper>
+  )
 
   return (
     <NodeViewWrapper as="div" className="my-2" contentEditable={false}>
