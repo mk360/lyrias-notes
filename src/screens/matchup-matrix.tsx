@@ -26,33 +26,33 @@ export function MatchupMatrix() {
   }
 
   async function handleExport() {
-  const container = matrixRef.current   // the overflow-auto wrapper
+    const container = matrixRef.current   // the overflow-auto wrapper
 
-  if (!container) return
+    if (!container) return
 
-  // Temporarily expand the container to fit the full table
-  const prevOverflow = container.style.overflow
-  const prevWidth = container.style.width
-  container.style.overflow = 'visible'
-  container.style.width = container.scrollWidth + 'px'
-  container.style.backgroundColor = "var(--color-paper)";
-  document.getElementById("add-character")!.style.display = "none";
+    // Temporarily expand the container to fit the full table
+    const prevOverflow = container.style.overflow
+    const prevWidth = container.style.width
+    container.style.overflow = 'visible'
+    container.style.width = container.scrollWidth + 'px'
+    container.style.backgroundColor = "var(--color-paper)";
+    document.getElementById("add-character")!.style.display = "none";
 
-  await document.fonts.ready
+    await document.fonts.ready
 
-  const dataUrl = await toPng(container, { pixelRatio: 2 })
+    const dataUrl = await toPng(container, { pixelRatio: 2 })
 
-  // Restore
-  container.style.overflow = prevOverflow
-  container.style.width = prevWidth
-  container.style.backgroundColor = "none";
-  document.getElementById("add-character")!.style.display = "";
+    // Restore
+    container.style.overflow = prevOverflow
+    container.style.width = prevWidth
+    container.style.backgroundColor = "none";
+    document.getElementById("add-character")!.style.display = "";
 
-  // Download
-  const link = document.createElement('a')
-  link.download = 'matchup-matrix.png'
-  link.href = dataUrl
-  link.click()
+    // Download
+    const link = document.createElement('a')
+    link.download = 'matchup-matrix.png'
+    link.href = dataUrl
+    link.click()
 }
 
   return (
@@ -166,7 +166,7 @@ export function MatchupMatrix() {
                   >
                     + add character
                   </td>
-                  {CHARACTERS.map(opp => (
+                  {sortedCharacters.map(opp => (
                     <td key={opp.id} className="p-0.5">
                       <div
                         className="flex items-center justify-center border-2 border-dashed border-rule"
