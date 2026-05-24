@@ -26,7 +26,6 @@ export function App() {
                     alignItems: 'center',
                     justifyContent: 'center',
                     padding: 16,
-                    pointerEvents: 'none',
                   }}>
                     {/* This inner div mirrors the max-w-7xl card from NotebookFrame
                         so the cover aligns pixel-perfectly with the notebook card */}

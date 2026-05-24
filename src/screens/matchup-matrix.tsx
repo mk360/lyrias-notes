@@ -1,19 +1,19 @@
-import React, { useRef } from 'react'
-import { useNavigate } from 'react-router-dom'
-import { toPng } from 'html-to-image'
+import { Button } from '@/components/button'
 import { NotebookFrame } from '@/components/notebook-frame'
 import { RatingCell } from '@/components/rating-cell'
 import { WashiLabel } from '@/components/washi-label'
-import { Button } from '@/components/button'
 import { useApp } from '@/context/AppContext'
 import { CHARACTERS } from '@/lib/characters'
+import { toPng } from 'html-to-image'
+import { useRef } from 'react'
+import { useNavigate } from 'react-router-dom'
 
-const sortedCharacters = CHARACTERS.sort((ch1, ch2) => ch1.name.localeCompare(ch2.name));
+const sortedCharacters = [...CHARACTERS].sort((ch1, ch2) => ch1.name.localeCompare(ch2.name));
 
 export function MatchupMatrix() {
   const navigate = useNavigate()
   const { player, matchups, setActiveMain } = useApp()
-  const matrixRef = useRef<HTMLDivElement>(null)
+  const matrixRef = useRef<HTMLDivElement>(null);
 
   const displayMains = player.mains.length > 0 ? player.mains : []
 
@@ -26,13 +26,34 @@ export function MatchupMatrix() {
   }
 
   async function handleExport() {
-    if (!matrixRef.current) return
-    const dataUrl = await toPng(matrixRef.current.parentElement!, { cacheBust: true })
-    const link = document.createElement('a')
-    link.download = 'matchup-matrix.png'
-    link.href = dataUrl
-    link.click()
-  }
+  const container = matrixRef.current   // the overflow-auto wrapper
+
+  if (!container) return
+
+  // Temporarily expand the container to fit the full table
+  const prevOverflow = container.style.overflow
+  const prevWidth = container.style.width
+  container.style.overflow = 'visible'
+  container.style.width = container.scrollWidth + 'px'
+  container.style.backgroundColor = "var(--color-paper)";
+  document.getElementById("add-character")!.style.display = "none";
+
+  await document.fonts.ready
+
+  const dataUrl = await toPng(container, { pixelRatio: 2 })
+
+  // Restore
+  container.style.overflow = prevOverflow
+  container.style.width = prevWidth
+  container.style.backgroundColor = "none";
+  document.getElementById("add-character")!.style.display = "";
+
+  // Download
+  const link = document.createElement('a')
+  link.download = 'matchup-matrix.png'
+  link.href = dataUrl
+  link.click()
+}
 
   return (
     <NotebookFrame activeTab="matchups">
@@ -57,6 +78,9 @@ export function MatchupMatrix() {
               })}
             </select>
           </div>
+          <Button size='sm' onClick={() => {
+            handleExport();
+          }}>Export to PNG</Button>
         </div>
 
         <p className="font-body-sm text-ink2 mb-4">
@@ -135,7 +159,7 @@ export function MatchupMatrix() {
                 })}
 
                 {/* + add character row */}
-                <tr>
+                <tr id="add-character">
                   <td
                     className="font-fredoka text-sm text-ink3 pr-3 cursor-pointer hover:text-sky700 transition-colors pt-1"
                     onClick={() => navigate('/')}
