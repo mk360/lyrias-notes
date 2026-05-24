@@ -30,19 +30,8 @@ export function RosterScreen() {
   const [pickerHighlight, setPickerHighlight] = useState(0)
   const pickerInputRef = useRef<HTMLInputElement>(null);
   const { show, close } = useDialog();
-
-  let sortingAlgorithm: (a: Character, b: Character) => number
-
-  switch (sort) {
-    case "a-z":
-      sortingAlgorithm = AlphabeticalSort;
-      break;
-    case "ingamedisplay":
-      sortingAlgorithm = GridDisplaySort;
-  }
-
-  const sorted = [...CHARACTERS].sort(sortingAlgorithm);
-  const filtered = filter === 'all' ? sorted : sorted.filter(c => c.archetypes.includes(filter))
+  const sorted = sort === "ingamedisplay" ? [...CHARACTERS] : [...CHARACTERS].sort(AlphabeticalSort);
+  const filtered = filter === 'all' ? sorted : sorted.filter(c => c.archetypes.includes(filter));
 
   const pickerFiltered = CHARACTERS.filter(c =>
     c.name.toLowerCase().includes(pickerQuery.toLowerCase())
@@ -119,7 +108,10 @@ export function RosterScreen() {
                 className="font-fredoka text-sm bg-paper2 border-2 border-ink px-2 py-1 shadow-stamp-sm cursor-pointer"
                 style={{ borderRadius: 'var(--radius-sm)' }}
                 value={sort}
-                onChange={e => setSort(e.target.value as SortKey)}
+                onChange={e => {
+                  console.log(e.target.value)
+                  setSort(e.target.value as SortKey);
+                }}
               >
                 <option value="a-z">sort: A-Z</option>
                 <option value="ingamedisplay">sort: in-game grid</option>
