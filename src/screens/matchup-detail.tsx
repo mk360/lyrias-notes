@@ -21,7 +21,7 @@ export function MatchupDetail({ readOnly = false }: { readOnly?: boolean }) {
     shareId?: string
   }>()
   const navigate = useNavigate()
-  const { player, matchups, updateMatchupRating, updateMatchupNotes, generateShareId } = useApp()
+  const { player, matchups, updateMatchupRating, updateMatchupNotes, generateShareId } = useApp();
 
   const [mobileTab, setMobileTab] = useState<DetailTab>('notes')
   const [frameTab, setFrameTab] = useState<'opp' | 'self'>('opp')

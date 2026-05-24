@@ -166,7 +166,6 @@ export function WYSIWYGToolbar({ editor, opponentCharId, matchupId, compact = fa
         )}
 
         {/* Clip insert button */}
-        {matchupId && (
           <button
             type="button"
             onClick={() => setShowClipDialog(v => !v)}
@@ -175,7 +174,6 @@ export function WYSIWYGToolbar({ editor, opponentCharId, matchupId, compact = fa
           >
             + clip
           </button>
-        )}
       </div>
 
       {/* Move search palette */}

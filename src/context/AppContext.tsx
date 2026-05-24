@@ -1,6 +1,6 @@
-import React, { createContext, useContext, useState, useCallback, useEffect } from 'react'
-import type { Player, Matchup } from '@/lib/types'
-import { getPlayer, savePlayer, getAllMatchups, saveMatchup } from '@/lib/db'
+import { getAllMatchups, getPlayer, saveMatchup, savePlayer } from '@/lib/db'
+import type { Matchup, Player } from '@/lib/types'
+import React, { createContext, useCallback, useContext, useState } from 'react'
 import { v4 as uuidv4 } from 'uuid'
 
 interface AppContextValue {

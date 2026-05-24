@@ -4,6 +4,7 @@ import { RatingCell } from '@/components/rating-cell'
 import { WashiLabel } from '@/components/washi-label'
 import { useApp } from '@/context/AppContext'
 import { CHARACTERS } from '@/lib/characters'
+import { upsertMatchup } from '@/lib/db'
 import { toPng } from 'html-to-image'
 import { useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
@@ -140,8 +141,8 @@ export function MatchupMatrix() {
                         {isActive && <span className="mr-1">★</span>}
                         {mainChar?.name ?? mainId}
                       </td>
-                      {CHARACTERS.map(opp => {
-                        const mu = getMatchup(mainId, opp.id)
+                      {sortedCharacters.map(opp => {
+                        const mu = getMatchup(mainId, opp.id) || upsertMatchup(player.id, mainId, opp.id, {});
                         return (
                           <td key={opp.id} className="p-0.5">
                             <div className='w-full flex justify-center'>
