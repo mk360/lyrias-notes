@@ -1,7 +1,8 @@
 const fs = require("fs");
 const dir = fs.readdirSync("../src/data");
 
-const reg = /(<(\/|)[a-z]+( .+?|)>|\n)/g
+const reg = /(<(\/|)[a-z]+( .+?|)>|\n)/g;
+const MOVE_STRENGTH_ORDER = ["L", "M", "H", "U"]
 
 for (let character of dir) {
     const moveset = JSON.parse(fs.readFileSync(`../src/data/${character}`, "utf-8"));
@@ -19,15 +20,41 @@ for (let character of dir) {
         }
 
         if (move.input === "MH") move.input = "RS";
-        if (move.input === "MH~MH") move.input = "RS~RC";
+        if (move.input === "MH~MH") {
+            move.input = "RS~RC";
+            move.name = "Raging Strike ~ Raging Chain"
+        }
+    }
+
+    /**
+     * 
+     * @param {string} move1 
+     * @param {string} move2 
+     * @returns 
+     */
+    function weakestFirst(move1, move2) {
+        console.log(move1, move2)
+        const move1Followups = move1.split("~").length;
+        const move2Followups = move2.split("~").length;
+        const baseMoveFirst = move2Followups - move1Followups;
+        if (baseMoveFirst === 0) { // if both moves are specials or rekka starters
+            const move1InputStrength = move1.match(/[LMHU]/)?.[0];
+            const move2InputStrength = move2.match(/[LMHU]/)?.[0];
+            if (move2InputStrength && move1InputStrength)
+                return MOVE_STRENGTH_ORDER.indexOf(move1InputStrength) - MOVE_STRENGTH_ORDER.indexOf(move2InputStrength);
+            return 0;
+        } else {
+            // put 214H before 214H~632146H
+            return baseMoveFirst;
+        }
     }
     
     
-    // const newMoveset = moveset.sort((move1, move2) => {
-    //     if (move1.type === move2.type) {
-
-    //     }
-    // });
+    const newMoveset = moveset.sort((move1, move2) => {
+        if (move1.type === "special" && move2.type === "special") {
+            return weakestFirst(move1.input, move2.input);
+        }
+    });
 
     fs.writeFileSync(`../src/cleaned_data/${character}`, JSON.stringify(moveset));
 }

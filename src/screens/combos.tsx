@@ -335,6 +335,7 @@ function ComboEditor({ combo, characterId, playerId, onSave, onDelete, onClose }
                 { label: 'Specials', moves: grouped.specials },
                 { label: 'Super', moves: grouped.supers },
                 { label: 'Unique', moves: grouped.unique },
+                { label: "System", moves: grouped.system }
               ].map(({ label, moves }) => (
                 <div key={label} className="flex items-center gap-2 mb-2 flex-wrap">
                   <span className="font-label text-ink3 w-16">{label}</span>
