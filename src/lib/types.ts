@@ -44,7 +44,8 @@ export interface Matchup {
 
 export interface Clip {
   id: string
-  matchupId: string
+  matchupId: string | null;
+  noteId: string | null;
   url: string
   thumbnailUrl: string
   duration: string

@@ -192,7 +192,6 @@ function ComboEditor({ combo, characterId, playerId, onSave, onDelete, onClose }
     ...combo,
   })
   const [tagInput, setTagInput] = useState('')
-  const [notationInput, setNotationInput] = useState('')
 
   const grouped = getMovesByCharacterGrouped(characterId)
 
@@ -216,17 +215,6 @@ function ComboEditor({ combo, characterId, playerId, onSave, onDelete, onClose }
 
   function removeMoveFromNotation(idx: number) {
     set('notation', (form.notation ?? []).filter((_, i) => i !== idx))
-  }
-
-  function addNotationByInput() {
-    if (!notationInput.trim()) return
-    const moves = getMovesByCharacterGrouped(characterId)
-    const all = [...moves.normals, ...moves.jumping, ...moves.specials, ...moves.supers]
-    const found = all.find(m => m.name.toLowerCase() === notationInput.trim().toLowerCase())
-    if (found) {
-      addMoveToNotation(found.id)
-      setNotationInput('')
-    }
   }
 
   function handleSave() {
@@ -285,7 +273,7 @@ function ComboEditor({ combo, characterId, playerId, onSave, onDelete, onClose }
         </div>
 
         {/* Body */}
-        <div className="p-6 flex flex-col gap-5">
+        <div className="p-4 flex flex-col gap-5">
           {/* Title */}
           <div>
             <label className="font-label block mb-1">Title</label>
@@ -352,25 +340,6 @@ function ComboEditor({ combo, characterId, playerId, onSave, onDelete, onClose }
                   ))}
                 </div>
               ))}
-              <div className="flex gap-2 mt-2 pt-2 border-t border-rule">
-                <span className="font-label text-ink3 self-center">or type</span>
-                <input
-                  value={notationInput}
-                  onChange={e => setNotationInput(e.target.value)}
-                  onKeyDown={e => e.key === 'Enter' && addNotationByInput()}
-                  placeholder="e.g. 5H"
-                  className="font-elite text-xs bg-paper border-2 border-rule px-2 py-1 outline-none focus:border-ink w-24"
-                  style={{ borderRadius: 'var(--radius-sm)' }}
-                />
-                <button
-                  type="button"
-                  onClick={addNotationByInput}
-                  className="font-fredoka text-xs bg-paper2 border-2 border-ink px-2 py-1 shadow-stamp-sm hover:bg-paper3"
-                  style={{ borderRadius: 'var(--radius-sm)' }}
-                >
-                  add
-                </button>
-              </div>
             </div>
           </div>
 
@@ -711,14 +680,7 @@ export function ComboNotebook() {
           >
             <p className="font-fredoka font-600 text-sm mb-1">💡 use combos in notes</p>
             <p className="font-body-sm text-ink2">
-              In a matchup note, type{' '}
-              <span
-                className="font-elite text-xs px-1 bg-paper2 border border-rule"
-                style={{ borderRadius: '3px' }}
-              >
-                /combo
-              </span>{' '}
-              to insert one from this list.
+              You can add a combo from this list in your matchup notes, or in your Progress section.
             </p>
           </div>
 

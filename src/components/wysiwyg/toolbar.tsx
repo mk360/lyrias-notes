@@ -1,15 +1,19 @@
-import React, { useRef, useState } from 'react'
-import type { Editor } from '@tiptap/react'
-import type { Move } from '@/lib/types'
+import { useApp } from '@/context/AppContext'
+import { createClipFromFile, getCombosByCharacter } from '@/lib/db'
 import { getMovesByCharacter } from '@/lib/moves'
-import { createClipFromUrl } from '@/lib/db'
+import type { Move } from '@/lib/types'
+import type { Editor } from '@tiptap/react'
+import React, { useRef, useState } from 'react'
 
 interface WYSIWYGToolbarProps {
   editor: Editor | null
   opponentCharId?: string
+  playerCharacterId: string;
   matchupId?: string
   compact?: boolean
 }
+
+type OpenedDialog = "" | "clip" | "move" | "combo";
 
 const COLORS = [
   { name: 'ink',    value: '#1F2D3E' },
@@ -19,12 +23,16 @@ const COLORS = [
   { name: 'sky',    value: '#2B638A' },
 ]
 
-export function WYSIWYGToolbar({ editor, opponentCharId, matchupId, compact = false }: WYSIWYGToolbarProps) {
-  const [showMoveSearch, setShowMoveSearch] = useState(false)
-  const [moveQuery, setMoveQuery] = useState('')
-  const [showClipDialog, setShowClipDialog] = useState(false)
-  const [clipUrl, setClipUrl] = useState('')
+export function WYSIWYGToolbar({ editor, opponentCharId, playerCharacterId, matchupId, compact = false }: WYSIWYGToolbarProps) {
+  const [currentDialog, setCurrentDialog] = useState<OpenedDialog>("");
+  const [moveQuery, setMoveQuery] = useState('');
+  const [comboQuery, setComboQuery] = useState("");
   const [clipTitle, setClipTitle] = useState('')
+  const { player } = useApp();
+  const combos = getCombosByCharacter(player.id, playerCharacterId).filter((c) => {
+    const lowercaseQuery = comboQuery.toLowerCase();
+    return c.title.toLowerCase().includes(lowercaseQuery) || c.tags.map((t) => t.toLowerCase()).includes(lowercaseQuery);
+  });
   const fileInputRef = useRef<HTMLInputElement>(null)
 
   if (!editor) return null
@@ -40,28 +48,26 @@ export function WYSIWYGToolbar({ editor, opponentCharId, matchupId, compact = fa
       type: 'moveChip',
       attrs: { characterId: move.characterId, moveId: move.id },
     }).run()
-    setShowMoveSearch(false)
+    setCurrentDialog("");
     setMoveQuery('')
   }
 
-  function insertClip(url: string, title: string) {
-    if (!editor || !matchupId) return
-    createClipFromUrl(matchupId, url, title || "Clip").then((clip) => {
+  function insertClip(file: File, title: string) {
+    if (!editor) return
+    createClipFromFile({ progressNoteId: `progress:${player.id}:${playerCharacterId ?? "global"}`}, file, title || "Clip").then((clip) => {
       editor.chain().focus().insertContent({
       type: 'inlineClip',
       attrs: { clipId: clip.id },
       }).run()
-      setShowClipDialog(false)
-      setClipUrl('')
+      setCurrentDialog("")
       setClipTitle('')
     });
   }
 
   function handleFileUpload(e: React.ChangeEvent<HTMLInputElement>) {
     const file = e.target.files?.[0]
-    if (!file || !matchupId) return
-    const url = URL.createObjectURL(file)
-    insertClip(url, file.name)
+    if (!file) return
+    insertClip(file, file.name)
   }
 
   const btnClass = (active = false) => `
@@ -132,30 +138,40 @@ export function WYSIWYGToolbar({ editor, opponentCharId, matchupId, compact = fa
         <button
           type="button"
           onClick={() => editor.chain().focus().toggleBulletList().run()}
-          className={btnClass(editor.isActive('bulletList')) + " flex-[0.5]"}
+          className={btnClass(editor.isActive('bulletList')) + " flex-1"}
           style={{ borderRadius: 'var(--radius-sm)', fontSize: 16 }}
-          title="Bullet list"
         >Bullet list</button>
-        <select
-            className="font-fredoka text-sm bg-paper border-2 border-ink px-2 h-8 cursor-pointer shadow-stamp-sm"
-            style={{ borderRadius: 'var(--radius-sm)' }}
-            value={
-              editor.isActive('heading', { level: 1 }) ? '1' :
-              editor.isActive('heading', { level: 2 }) ? '2' :
-              editor.isActive('heading', { level: 3 }) ? '3' : '0'
-            }
-            onChange={e => {
-              const v = e.target.value
-              if (v === '0') editor.chain().focus().setParagraph().run()
-              else editor.chain().focus().toggleHeading({ level: parseInt(v) as 1|2|3 }).run()
-            }}
-          >
-            <option value="0">Normal text size</option>
-            <option value="1">Heading</option>
-            <option value="2">Mid sized Heading</option>
-            <option value="3">Small Heading</option>
-        </select>
         {/* <button type="" */}
+
+        {/* Clip insert button */}
+          <button
+            type="button"
+            onClick={() => setCurrentDialog(currentDialog === "clip" ? "" : "clip")}
+            className="font-fredoka font-500 text-xs bg-goldLt border-2 border-gold text-goldDk px-2 h-8 shadow-stamp-sm hover:bg-gold hover:text-ink transition-colors"
+            style={{ borderRadius: 'var(--radius-sm)' }}
+          >
+            + clip
+          </button>
+          <button
+            type="button"
+            onClick={() => setCurrentDialog(currentDialog === "combo" ? "" : "combo")}
+            className="font-fredoka font-500 text-xs bg-gold border-2 border-goldDk text-brown px-2 h-8 shadow-stamp-sm hover:bg-goldDk hover:text-ink transition-colors"
+            style={{ borderRadius: 'var(--radius-sm)' }}
+          >
+            + combo
+          </button>
+
+          {/* Move insert button */}
+        {!!opponentCharId && (
+          <button
+            type="button"
+            onClick={() => setCurrentDialog(currentDialog === "move" ? "" : "move")}
+            className="font-fredoka font-500 text-xs bg-sky200 border-2 border-sky700 text-sky700 px-2 h-8 shadow-stamp-sm hover:bg-sky300 transition-colors"
+            style={{ borderRadius: 'var(--radius-sm)' }}
+          >
+            + move
+          </button>
+        )}
 
         {/* Color swatches */}
         <div className="flex gap-1 items-center ml-1">
@@ -171,32 +187,10 @@ export function WYSIWYGToolbar({ editor, opponentCharId, matchupId, compact = fa
             />
           ))}
         </div>
-
-        {/* Move insert button */}
-        {opponentCharId && (
-          <button
-            type="button"
-            onClick={() => setShowMoveSearch(v => !v)}
-            className="font-fredoka font-500 text-xs bg-sky200 border-2 border-sky700 text-sky700 px-2 h-8 shadow-stamp-sm hover:bg-sky300 transition-colors"
-            style={{ borderRadius: 'var(--radius-sm)' }}
-          >
-            + move
-          </button>
-        )}
-
-        {/* Clip insert button */}
-          <button
-            type="button"
-            onClick={() => setShowClipDialog(v => !v)}
-            className="font-fredoka font-500 text-xs bg-goldLt border-2 border-gold text-goldDk px-2 h-8 shadow-stamp-sm hover:bg-gold hover:text-ink transition-colors"
-            style={{ borderRadius: 'var(--radius-sm)' }}
-          >
-            + clip
-          </button>
       </div>
 
       {/* Move search palette */}
-      {showMoveSearch && (
+      {currentDialog === "move" && (
         <div
           className="absolute top-full left-0 z-30 bg-paper border-2 border-ink shadow-stamp-lg"
           style={{ borderRadius: 'var(--radius-md)', width: 280, maxHeight: 280, overflow: 'auto' }}
@@ -231,9 +225,9 @@ export function WYSIWYGToolbar({ editor, opponentCharId, matchupId, compact = fa
       )}
 
       {/* Clip dialog */}
-      {showClipDialog && (
+      {currentDialog === "clip" && (
         <div
-          className="absolute top-full left-0 z-30 bg-paper border-2 border-ink shadow-stamp-lg p-4"
+          className="absolute top-full left-[0%] z-30 bg-paper border-2 border-ink shadow-stamp-lg p-4"
           style={{ borderRadius: 'var(--radius-md)', width: 320 }}
         >
           <h4 className="font-display-md font-caveat mb-3">Add a clip</h4>
@@ -260,6 +254,47 @@ export function WYSIWYGToolbar({ editor, opponentCharId, matchupId, compact = fa
               onChange={handleFileUpload}
               className="hidden"
             />
+          </div>
+        </div>
+      )}
+
+      {/* Combo dialog */}
+      {currentDialog === "combo" && (
+        <div
+          className="absolute top-full left-0 z-30 bg-paper border-2 border-ink shadow-stamp-lg"
+          style={{ borderRadius: 'var(--radius-md)', width: 280, maxHeight: 280, overflow: 'auto' }}
+        >
+          <div className="p-2 border-b-2 border-rule">
+            <input
+              autoFocus
+              value={comboQuery}
+              onChange={e => setComboQuery(e.target.value)}
+              placeholder="Search for combos"
+              className="w-full font-fredoka text-sm bg-paper2 border-2 border-rule px-2 py-1 outline-none"
+              style={{ borderRadius: 'var(--radius-sm)' }}
+            />
+          </div>
+          <div>
+            {combos.slice(0, 5).map(combo => (
+              <button
+                key={combo.id}
+                type="button"
+                onClick={() => {
+                  editor.chain().focus().insertContent({
+                    type: 'comboBlock',
+                    attrs: { comboId: combo.id },
+                  }).run();
+                  setCurrentDialog("");
+                }}
+                className="w-full text-left px-3 py-2 font-elite text-xs hover:bg-sky100 transition-colors border-b border-rule last:border-0 flex items-center justify-between"
+              >
+                <span>{combo.title || "Untitled Combo"}</span>
+                <span className="text-ink3 text-xs">{combo.damage} damage - {combo.hits} hits</span>
+              </button>
+            ))}
+            {combos.length === 0 && (
+              <p className="p-3 font-body-sm text-ink3">No combo found</p>
+            )}
           </div>
         </div>
       )}

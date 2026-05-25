@@ -25,7 +25,7 @@ interface NotesEditorProps {
   content: object
   onChange: (doc: object) => void
   opponentCharId?: string
-  playerCharId?: string
+  playerCharId: string
   playerId?: string
   matchupId?: string
   readOnly?: boolean
@@ -158,13 +158,14 @@ export const NotesEditor = forwardRef<NotesEditorHandle, NotesEditorProps>(funct
   useImperativeHandle(ref, () => ({
     insertMoveChipAtCursor
   }), [insertMoveChipAtCursor])
-
+  console.log({ playerCharId, opponentCharId, matchupId })
   return (
     <SlashCmdProvider>
       <div className="flex flex-col h-full">
         {!readOnly && (
           <WYSIWYGToolbar
             editor={editor}
+            playerCharacterId={playerCharId}
             opponentCharId={opponentCharId}
             matchupId={matchupId}
             compact={compact}

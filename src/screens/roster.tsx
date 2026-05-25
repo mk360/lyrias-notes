@@ -136,7 +136,6 @@ export function RosterScreen() {
                 return matchup.playerCharacterId === player.activeMain && matchup.opponentCharacterId === char.id && matchup.playerId === player.id;
               });
               const hasMatchupNotes = hasNotes(matchup);
-              console.log(matchup, char.name, char.id)
               return (
                 <div key={char.id} className="relative group">
                   <div
@@ -160,7 +159,7 @@ export function RosterScreen() {
                   {/* has notes or not */}
                   {hasMatchupNotes && (
                     <div
-                      className="absolute -top-2 -right-2 w-4 h-4 w-5-sm h-5-sm flex items-center justify-center text-sm border-2 border-ink shadow-stamp-sm transition-all hover:scale-110"
+                      className="absolute -top-2 -left-2 w-4 h-4 w-5-sm h-5-sm flex items-center justify-center text-sm border-2 border-ink shadow-stamp-sm transition-all hover:scale-110"
                       style={{
                         borderRadius: '50%',
                         background: 'var(--color-gold)',

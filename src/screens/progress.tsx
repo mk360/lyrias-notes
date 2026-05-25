@@ -152,6 +152,7 @@ export function ProgressScreen() {
                 key={`char-${player.activeMain}`}
                 content={charDoc}
                 onChange={handleCharChange}
+                opponentCharId={player.activeMain}
                 playerCharId={player.activeMain}
                 playerId={player.id}
               />
@@ -204,24 +205,23 @@ export function ProgressScreen() {
             </div>
           )}
 
-          {/* Tips */}
           <div
             className="p-3 border-2 border-rule"
             style={{ borderRadius: 'var(--radius-md)', background: 'var(--color-paper)' }}
           >
+            <p className="font-fredoka font-600 text-sm mb-1">Session focus ✶</p>
+            <p className="font-body-sm">write your goals for today's session here</p>
+          </div>
+          
+          <StickyNote tone="sky" tilt={-2}>
             <p className="font-fredoka font-600 text-sm mb-2" style={{ color: 'var(--color-ink)' }}>
               💡 Tips
             </p>
             <ul className="font-body-sm flex flex-col gap-1.5" style={{ color: 'var(--color-ink2)', paddingLeft: 14 }}>
-              <li>Type <span className="font-elite text-xs px-1" style={{ background: 'var(--color-paper2)', border: '1px solid var(--color-rule)', borderRadius: 3 }}>/combo</span> to reference a combo</li>
+              <li>Type <span className="font-elite text-xs px-1" style={{ background: 'var(--color-sky300)', border: '1px solid var(--color-sky400)', borderRadius: 3 }}>/combo</span> to reference a combo</li>
               {/* <li>Click any move in the frame data table to drop a chip</li> */}
               <li>General Goals apply across all characters</li>
             </ul>
-          </div>
-
-          <StickyNote tone="sky" tilt={-2}>
-            <p className="font-fredoka font-600 text-sm mb-1">Session focus ✶</p>
-            <p className="font-body-sm">write your goals for today's session here</p>
           </StickyNote>
           {!activeChar ? (
             <StickyNote tone="gold" tilt={2}>

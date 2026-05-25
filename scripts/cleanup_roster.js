@@ -33,7 +33,6 @@ for (let character of dir) {
      * @returns 
      */
     function weakestFirst(move1, move2) {
-        console.log(move1, move2)
         const move1Followups = move1.split("~").length;
         const move2Followups = move2.split("~").length;
         const baseMoveFirst = move2Followups - move1Followups;

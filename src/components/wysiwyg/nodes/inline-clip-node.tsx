@@ -17,7 +17,7 @@ function InlineClipNodeView({ node, deleteNode }: InlineClipNodeViewProps) {
   const [clip, setClip] = useState<Clip | null>(null)
   const [loading, setLoading] = useState(true)
   const [resolvedUrl, setResolvedUrl] = useState<string>('')
-
+  console.log(clip)
   useEffect(() => {
     let objectUrl: string | null = null
 
@@ -29,7 +29,8 @@ function InlineClipNodeView({ node, deleteNode }: InlineClipNodeViewProps) {
         setResolvedUrl(meta.url)
       } else {
         const url = await getBlobUrl(clipId)
-        if (url) { objectUrl = url; setResolvedUrl(url) }
+        console.log(url)
+        if (url) { setResolvedUrl(url) }
       }
       setLoading(false)
     })
@@ -115,7 +116,7 @@ function InlineClipNodeView({ node, deleteNode }: InlineClipNodeViewProps) {
               style={{ borderRadius: 'var(--radius-sm)' }}
             >✕</button>
             <h3 className="font-display-md mb-2">{clip.title}</h3>
-            <video src={clip.url} controls className="w-full" style={{ borderRadius: 'var(--radius-md)' }} />
+            <video src={resolvedUrl} controls className="w-full" style={{ borderRadius: 'var(--radius-md)' }} />
           </div>
         </div>
       )}

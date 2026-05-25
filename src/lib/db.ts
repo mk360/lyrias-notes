@@ -159,35 +159,26 @@ export async function saveClip(clip: Clip, blob?: Blob): Promise<void> {
   if (blob) await db.put(BLOB_STORE, blob, clip.id)
 }
 
-export async function createClipFromFile(matchupId: string, file: File, title?: string): Promise<Clip> {
+interface MatchupOrNote {
+  matchupId?: string;
+  progressNoteId?: string;
+}
+
+export async function createClipFromFile(id: MatchupOrNote, file: File, title?: string): Promise<Clip> {
   if (file.size > CLIP_MAX_BYTES) {
     throw new Error(`File is too large (${(file.size / 1024 / 1024).toFixed(1)} MB). Maximum allowed size is 50 MB.`)
   }
   const clip: Clip = {
     id: uuidv4(),
-    matchupId,
+    matchupId: id.matchupId || null,
     url: '',
+    noteId: id.progressNoteId || null,
     thumbnailUrl: '',
     duration: '0:00',
     title: title || file.name,
     caption: '',
   }
   await saveClip(clip, file)
-  return clip
-}
-
-export async function createClipFromUrl(matchupId: string, url: string, title: string): Promise<Clip> {
-  const clip: Clip = {
-    id: uuidv4(),
-    matchupId,
-    url,
-    thumbnailUrl: '',
-    duration: '0:00',
-    title: title || 'Clip',
-    caption: '',
-  }
-  const db = await getDB()
-  await db.put(META_STORE, clip, clip.id)
   return clip
 }
 
