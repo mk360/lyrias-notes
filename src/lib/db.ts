@@ -1,6 +1,7 @@
 import { v4 as uuidv4 } from 'uuid'
 import { openDB, type IDBPDatabase } from 'idb'
 import type { Player, Matchup, Clip, Combo } from './types'
+import { CLIP_MAX_BYTES } from './globals'
 
 // ── Key namespaces ────────────────────────────────────────────────────────────
 const KEYS = {
@@ -140,7 +141,6 @@ export function upsertMatchup(
 }
 
 // ── Clip (IndexedDB) ──────────────────────────────────────────────────────────
-export const CLIP_MAX_BYTES = 50 * 1024 * 1024 // 50 MB
 
 export async function getClipById(id: string): Promise<Clip | null> {
   const db = await getDB()

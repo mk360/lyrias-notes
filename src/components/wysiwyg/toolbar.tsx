@@ -1,5 +1,7 @@
 import { useApp } from '@/context/AppContext'
+import { useDialog } from '@/context/DialogContext'
 import { createClipFromFile, getCombosByCharacter } from '@/lib/db'
+import { CLIP_MAX_BYTES } from '@/lib/globals'
 import { getMovesByCharacter } from '@/lib/moves'
 import type { Move } from '@/lib/types'
 import type { Editor } from '@tiptap/react'
@@ -29,6 +31,7 @@ export function WYSIWYGToolbar({ editor, opponentCharId, playerCharacterId, matc
   const [comboQuery, setComboQuery] = useState("");
   const [clipTitle, setClipTitle] = useState('')
   const { player } = useApp();
+  const { show, close } = useDialog();
   const combos = getCombosByCharacter(player.id, playerCharacterId).filter((c) => {
     const lowercaseQuery = comboQuery.toLowerCase();
     return c.title.toLowerCase().includes(lowercaseQuery) || c.tags.map((t) => t.toLowerCase()).includes(lowercaseQuery);
@@ -61,6 +64,16 @@ export function WYSIWYGToolbar({ editor, opponentCharId, playerCharacterId, matc
       }).run()
       setCurrentDialog("")
       setClipTitle('')
+    }).catch((e) => {
+      show({
+        variant: "danger",
+        title: "Error trying to upload clip",
+        message: e.message,
+        primary: {
+          label: "Close",
+          onClick: close
+        }
+      });
     });
   }
 
@@ -231,6 +244,7 @@ export function WYSIWYGToolbar({ editor, opponentCharId, playerCharacterId, matc
           style={{ borderRadius: 'var(--radius-md)', width: 320 }}
         >
           <h4 className="font-display-md font-caveat mb-3">Add a clip</h4>
+          <p className='font-fredoka text-ink'>Max size of {CLIP_MAX_BYTES / 1024 / 1024} MB allowed.</p>
           <div className="flex flex-col gap-2">
             <input
               value={clipTitle}
