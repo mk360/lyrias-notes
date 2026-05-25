@@ -5,7 +5,8 @@ import { WashiLabel } from '@/components/washi-label'
 import { useApp } from '@/context/AppContext'
 import { useDialog } from '@/context/DialogContext'
 import { CHARACTERS } from '@/lib/characters'
-import type { Character } from '@/lib/types'
+import { upsertMatchup } from '@/lib/db'
+import type { Character, Matchup } from '@/lib/types'
 import React, { useEffect, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
@@ -16,14 +17,18 @@ function AlphabeticalSort(a: Character, b: Character) {
   return a.name.localeCompare(b.name);
 }
 
-function GridDisplaySort(_: Character, __: Character) {
-  return 0;
+function hasNotes(matchup: Matchup | undefined): boolean {
+  if (!matchup) return false
+  const doc = matchup.notes as any
+  return doc?.content?.some((node: any) =>
+    node.content?.length > 0 || node.type === 'inlineClip' || node.type === 'comboBlock'
+  ) ?? false
 }
 
 export function RosterScreen() {
   const navigate = useNavigate()
-  const { player, addMain, removeMain, setActiveMain } = useApp()
-  const [sort, setSort] = useState<SortKey>('a-z')
+  const { player, addMain, removeMain, setActiveMain, matchups } = useApp()
+  const [sort, setSort] = useState<SortKey>('a-z');
   const [filter, setFilter] = useState<FilterKey>('all')
   const [showAddPicker, setShowAddPicker] = useState(false)
   const [pickerQuery, setPickerQuery] = useState('')
@@ -43,12 +48,13 @@ export function RosterScreen() {
     }
   }, [showAddPicker])
 
-  function handleCharClick(char: Character) {
-    if (player.activeMain === char.id) {
-      navigate(`/combos`)
-    } else if (player.activeMain) {
+  function handleCharClick(char: Character, hasMatchupNotes: boolean) {
+    if (player.activeMain) {
       const dest = player.activeMain || player.mains[0] || char.id
-      navigate(`/matchups/${dest}/${char.id}`)
+      navigate(`/matchups/${dest}/${char.id}`);
+      if (!hasMatchupNotes) {
+        upsertMatchup(player.id, player.activeMain, char.id, {});
+      }
     } else {
       show({
         variant: "info",
@@ -57,7 +63,7 @@ export function RosterScreen() {
           label: "Go Back",
           onClick: close
         },
-        message: "You can mark a character as your main using the star icon."
+        message: "You can mark a character as your main using the dropdown on the right."
       })
     }
   }
@@ -109,7 +115,6 @@ export function RosterScreen() {
                 style={{ borderRadius: 'var(--radius-sm)' }}
                 value={sort}
                 onChange={e => {
-                  console.log(e.target.value)
                   setSort(e.target.value as SortKey);
                 }}
               >
@@ -121,47 +126,52 @@ export function RosterScreen() {
 
           {/* Subtitle */}
           <p className="font-body-sm text-ink2 mb-4">
-            Tap a character to open their matchup page · click the ☆ in the corner to add them as a main · ★ = main · ✎ = has notes
+            Tap a character to open their matchup page · use the dropdown to add a main · ✎ = has notes
           </p>
 
           {/* Character grid */}
           <div className="grid gap-3" style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(80px, 1fr))' }}>
             {filtered.map(char => {
-              const isMain = player.mains.includes(char.id)
+              const matchup = matchups.find((matchup) => {
+                return matchup.playerCharacterId === player.activeMain && matchup.opponentCharacterId === char.id && matchup.playerId === player.id;
+              });
+              const hasMatchupNotes = hasNotes(matchup);
+              console.log(matchup, char.name, char.id)
               return (
                 <div key={char.id} className="relative group">
                   <div
-                    onClick={() => handleCharClick(char)}
+                    onClick={() => handleCharClick(char, hasMatchupNotes)}
                     className="flex flex-col items-center gap-1 p-2 border-2 border-ink cursor-pointer transition-all hover:shadow-stamp-lg"
                     style={{
                       borderRadius: 'var(--radius-md)',
-                      background: isMain ? 'var(--color-paper2)' : 'var(--color-paper)',
+                      background: hasMatchupNotes ? 'var(--color-paper2)' : 'var(--color-paper)',
                       boxShadow: 'var(--shadow-stamp)',
                     }}
                   >
                     <Portrait
                       tag={char.tag}
-                      tone={isMain ? 'warm' : 'default'}
+                      tone={'default'}
                       size={56}
                       imgSrc={`${import.meta.env.BASE_URL}thumbnails/${char.name}.webp`}
                     />
                     <span className="font-fredoka text-xs text-center text-ink leading-tight">{char.name}</span>
                   </div>
 
-                  {/* Star badge / toggle */}
-                  <button
-                    onClick={e => handleStarClick(e, char.id)}
-                    className="absolute -top-2 -right-2 w-4 h-4 w-5-sm h-5-sm flex items-center justify-center text-sm border-2 border-ink shadow-stamp-sm transition-all hover:scale-110"
-                    style={{
-                      borderRadius: '50%',
-                      background: isMain ? 'var(--color-gold)' : 'var(--color-paper)',
-                      color: isMain ? 'var(--color-paper)' : 'var(--color-ink3)',
-                    }}
-                    title={isMain ? 'Remove as main' : 'Add as main'}
-                    aria-label={isMain ? `Remove ${char.name} as main` : `Add ${char.name} as main`}
-                  >
-                    {isMain ? '★' : '☆'}
-                  </button>
+                  {/* has notes or not */}
+                  {hasMatchupNotes && (
+                    <div
+                      className="absolute -top-2 -right-2 w-4 h-4 w-5-sm h-5-sm flex items-center justify-center text-sm border-2 border-ink shadow-stamp-sm transition-all hover:scale-110"
+                      style={{
+                        borderRadius: '50%',
+                        background: 'var(--color-gold)',
+                        color: 'var(--color-paper)',
+                      }}
+                      title={`You have notes against ${char.name}`}
+                      aria-label={`You have notes against ${char.name}`}
+                    >
+                      {"✎"}
+                    </div>
+                  )}
                 </div>
               )
             })}
@@ -175,7 +185,7 @@ export function RosterScreen() {
         >
           <div>
             <h2 className="font-display-md font-caveat text-ink mb-1">My mains</h2>
-            <p className="font-body-sm text-ink2 mb-3">Active main appears in matchup matrix</p>
+            <p className="font-body-sm text-ink2 mb-3">Active main will be used for other tabs. You can freely switch between mains later.</p>
 
             {/* Add character button */}
             <div className="relative mt-3">

@@ -56,6 +56,7 @@ export function MatchupDetail({ readOnly = false }: { readOnly?: boolean }) {
   }
 
   function handleNotesChange(notes: object) {
+    console.log(pCharId, oCharId, notes);
     updateMatchupNotes(pCharId, oCharId, notes)
   }
 

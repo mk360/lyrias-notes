@@ -16,6 +16,7 @@ import {
 } from '@/lib/db'
 import type { Combo } from '@/lib/types'
 import { v4 as uuidv4 } from 'uuid'
+import { useDialog } from '@/context/DialogContext'
 
 // ─── DifficultyPips ──────────────────────────────────────────────────────────
 function DifficultyPips({ value, onChange }: { value: 1|2|3|4|5; onChange?: (v: 1|2|3|4|5) => void }) {
@@ -527,6 +528,7 @@ export function ComboNotebook() {
   const [activeChar, setActiveChar] = useState<string>(player.activeMain || player.mains[0] || '')
   const [editingCombo, setEditingCombo] = useState<Partial<Combo> | null>(null)
   const [refresh, setRefresh] = useState(0)
+  const { show, close } = useDialog();
 
   const combos = activeChar
     ? getCombosByCharacter(player.id, activeChar)
@@ -554,10 +556,25 @@ export function ComboNotebook() {
   }
 
   function handleDelete(id: string) {
-    if (!confirm('Delete this combo?')) return
-    deleteCombo(id)
-    setEditingCombo(null)
-    setRefresh(r => r + 1)
+    show({
+      variant: "confirm",
+      title: "",
+      message: "Are you sure you want to delete this combo?",
+      primary: {
+        label: "Yes",
+        onClick() {
+          deleteCombo(id)
+          setEditingCombo(null)
+          setRefresh(r => r + 1)
+        }
+      },
+      secondary: {
+        label: "No",
+        onClick() {
+          close();
+        }
+      }
+    })
   }
 
   // Stats
