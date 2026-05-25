@@ -79,8 +79,7 @@ export function WYSIWYGToolbar({ editor, opponentCharId, matchupId, compact = fa
   return (
     <div className="relative">
       <div
-        className="flex flex-wrap items-center gap-1 p-2 border-b-2 border-ink bg-paper"
-      >
+        className="flex flex-wrap items-center gap-1 p-2 border-b-2 border-ink bg-paper">
         {/* Text formatting */}
         <button
           type="button"
@@ -133,10 +132,30 @@ export function WYSIWYGToolbar({ editor, opponentCharId, matchupId, compact = fa
         <button
           type="button"
           onClick={() => editor.chain().focus().toggleBulletList().run()}
-          className={btnClass(editor.isActive('bulletList')) + " flex-1"}
+          className={btnClass(editor.isActive('bulletList')) + " flex-[0.5]"}
           style={{ borderRadius: 'var(--radius-sm)', fontSize: 16 }}
           title="Bullet list"
         >Bullet list</button>
+        <select
+            className="font-fredoka text-sm bg-paper border-2 border-ink px-2 h-8 cursor-pointer shadow-stamp-sm"
+            style={{ borderRadius: 'var(--radius-sm)' }}
+            value={
+              editor.isActive('heading', { level: 1 }) ? '1' :
+              editor.isActive('heading', { level: 2 }) ? '2' :
+              editor.isActive('heading', { level: 3 }) ? '3' : '0'
+            }
+            onChange={e => {
+              const v = e.target.value
+              if (v === '0') editor.chain().focus().setParagraph().run()
+              else editor.chain().focus().toggleHeading({ level: parseInt(v) as 1|2|3 }).run()
+            }}
+          >
+            <option value="0">Normal text size</option>
+            <option value="1">Heading</option>
+            <option value="2">Mid sized Heading</option>
+            <option value="3">Small Heading</option>
+        </select>
+        {/* <button type="" */}
 
         {/* Color swatches */}
         <div className="flex gap-1 items-center ml-1">

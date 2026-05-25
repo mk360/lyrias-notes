@@ -1,25 +1,25 @@
-import React, { useEffect, useCallback, forwardRef, useImperativeHandle } from 'react'
-import { useEditor, EditorContent } from '@tiptap/react'
-import StarterKit from '@tiptap/starter-kit'
-import Underline from '@tiptap/extension-underline'
-import TextStyle from '@tiptap/extension-text-style'
-import { Color } from '@tiptap/extension-color'
-import Heading from '@tiptap/extension-heading'
-import BulletList from '@tiptap/extension-bullet-list'
-import ListItem from '@tiptap/extension-list-item'
-import Placeholder from '@tiptap/extension-placeholder'
+import { getCombosByCharacter } from '@/lib/db'
+import { getMoveById } from '@/lib/moves'
 import {
-  SlashCmd, Slash,
-  enableKeyboardNavigation,
+  Slash,
+  SlashCmd,
   SlashCmdProvider,
   createSuggestionsItems,
+  enableKeyboardNavigation,
 } from '@harshtalks/slash-tiptap'
-import { MoveChipNode, setMoveResolver } from './nodes/move-chip-node'
-import { InlineClipNode } from './nodes/inline-clip-node'
+import BulletList from '@tiptap/extension-bullet-list'
+import { Color } from '@tiptap/extension-color'
+import Heading from '@tiptap/extension-heading'
+import Placeholder from '@tiptap/extension-placeholder'
+import TextStyle from '@tiptap/extension-text-style'
+import Underline from '@tiptap/extension-underline'
+import { EditorContent, useEditor } from '@tiptap/react'
+import StarterKit from '@tiptap/starter-kit'
+import React, { forwardRef, useCallback, useEffect, useImperativeHandle } from 'react'
 import { ComboBlockNode } from './nodes/combo-block-node'
+import { InlineClipNode } from './nodes/inline-clip-node'
+import { MoveChipNode, setMoveResolver } from './nodes/move-chip-node'
 import { WYSIWYGToolbar } from './toolbar'
-import { getMoveById } from '@/lib/moves'
-import { getCombosByCharacter } from '@/lib/db'
 
 interface NotesEditorProps {
   content: object
@@ -149,10 +149,10 @@ export const NotesEditor = forwardRef<NotesEditorHandle, NotesEditorProps>(funct
 
   const insertMoveChipAtCursor = useCallback((characterId: string, moveId: string) => {
     if (!editor) return
-    editor.chain().focus().insertContent({
+    editor.chain().focus().insertContent(" ").insertContent({
       type: 'moveChip',
       attrs: { characterId, moveId },
-    }).run()
+    }).insertContent(" ").run()
   }, [editor])
 
   useImperativeHandle(ref, () => ({
