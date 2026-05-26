@@ -64,7 +64,7 @@ export function FrameDataTable({ characterId, onMoveClick, className = '' }: Fra
                 `}
                 title={onMoveClick ? 'Click to insert chip into notes' : undefined}
               >
-                <td className="font-elite  px-2 py-1.5 font-bold text-ink">{displayType === "input" ? move.input : (move.name || move.input)}</td>
+                <td title={displayType === "input" && !!move.name ? move.name : move.input} className="font-elite  px-2 py-1.5 font-bold text-ink">{displayType === "input" ? move.input : (move.name || move.input)}</td>
                 <td className="font-elite  px-2 py-1.5 text-ink2">{move.startup}f</td>
                 <td
                   className="font-elite  px-2 py-1.5"

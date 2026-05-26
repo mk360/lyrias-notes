@@ -265,7 +265,7 @@ export function RosterScreen() {
                 if (!char) return null
                 const isActive = player.activeMain === mainId
                 return (
-                  <button
+                  <div
                     key={mainId}
                     onClick={() => setActiveMain(mainId)}
                     className="flex flex-1 items-center gap-2 px-3 py-2 border-2 border-ink text-left transition-all hover:shadow-stamp relative"
@@ -295,7 +295,7 @@ export function RosterScreen() {
                         active
                       </span>
                     )}
-                  </button>
+                  </div>
                 )
               })}
             </div>

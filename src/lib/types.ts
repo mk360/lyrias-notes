@@ -53,14 +53,25 @@ export interface Clip {
   caption: string
 }
 
+export type ConnectorType = 'cancel' | 'delay' | 'link' | "stance switch";
+
+export interface NotationEntry {
+  moveId: string
+  characterId: string
+  hits?: number          // for multihit cancels e.g. move(1)
+  holdGuard?: boolean    // renders [G] token before the chip
+  connector?: ConnectorType  // transition after this move — absent on last entry
+}
+
 export interface Combo {
   id: string
   playerId: string
   characterId: string
   title: string
-  notation: { characterId: string; moveId: string }[]
+  notation: NotationEntry[]
   damage: number
   hits: number
+  bp?: -3 | -2 | -1 | 0 | 1
   meter: 0 | 25 | 50 | 75 | 100
   difficulty: 1 | 2 | 3 | 4 | 5
   situation: 'any' | 'midscreen' | 'corner' | 'standing' | 'aerial' | 'counterhit'

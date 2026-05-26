@@ -3,9 +3,12 @@ import { CHARACTERS } from './characters';
 
 //@ts-ignore
 const cleanedDataModules = import.meta.glob('@/cleaned_data/*.json', { eager: true }) as Record<string, { default: Move[] }>
-// const loadedMoves = Object.values(cleanedDataModules).flatMap(module => module.default)
 
-export const MOVES: Move[] = []
+export const MOVES: Move[] = [];
+
+for (let key in cleanedDataModules) {
+  MOVES.push(...cleanedDataModules[key].default);
+}
 
 export function getMovesByCharacter(id: string): Move[] {
   const name = CHARACTERS.find((i) => i.id === id)?.name;

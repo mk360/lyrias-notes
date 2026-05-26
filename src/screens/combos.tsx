@@ -1,22 +1,23 @@
-import React, { useState, useRef } from 'react'
-import { NotebookFrame } from '@/components/notebook-frame'
-import { WashiLabel } from '@/components/washi-label'
-import { StickyNote } from '@/components/sticky-note'
 import { Button } from '@/components/button'
-import { Portrait } from '@/components/portrait'
 import { MoveChip } from '@/components/move-chip'
+import { MoveDisplay, MoveDisplayToggle } from '@/components/move-display-toggle'
+import { NotebookFrame } from '@/components/notebook-frame'
+import { Portrait } from '@/components/portrait'
+import { WashiLabel } from '@/components/washi-label'
 import { useApp } from '@/context/AppContext'
-import { CHARACTERS } from '@/lib/characters'
-import { getMovesByCharacterGrouped, getMoveById } from '@/lib/moves'
-import {
-  getCombosByCharacter,
-  saveCombo,
-  createCombo,
-  deleteCombo,
-} from '@/lib/db'
-import type { Combo } from '@/lib/types'
-import { v4 as uuidv4 } from 'uuid'
 import { useDialog } from '@/context/DialogContext'
+import { CHARACTERS } from '@/lib/characters'
+import {
+  deleteCombo,
+  getCombosByCharacter,
+  saveCombo
+} from '@/lib/db'
+import { ConnectorPicker, ConnectorToken } from '@/components/connector-picker'
+import type { ConnectorType } from '@/lib/types'
+import { getMoveById, getMovesByCharacterGrouped } from '@/lib/moves'
+import type { Combo } from '@/lib/types'
+import React, { useState } from 'react'
+import { v4 as uuidv4 } from 'uuid'
 
 // ─── DifficultyPips ──────────────────────────────────────────────────────────
 function DifficultyPips({ value, onChange }: { value: 1|2|3|4|5; onChange?: (v: 1|2|3|4|5) => void }) {
@@ -77,10 +78,10 @@ interface ComboCardProps {
   combo: Combo
   onEdit: () => void
   onDuplicate: () => void
-  onPasteInNotes?: () => void
+  onExport: () => void;
 }
 
-function ComboCard({ combo, onEdit, onDuplicate }: ComboCardProps) {
+function ComboCard({ combo, onEdit, onDuplicate, onExport }: ComboCardProps) {
   return (
     <div
       className="p-4 border-2 border-ink shadow-stamp mb-4"
@@ -134,6 +135,14 @@ function ComboCard({ combo, onEdit, onDuplicate }: ComboCardProps) {
           </div>
           <span className="font-elite text-xs text-ink2">{combo.meter}% meter</span>
         </div>
+        {combo.bp !== undefined && combo.bp !== 0 && (
+          <span
+            className="font-elite text-xs"
+            style={{ color: combo.bp > 0 ? 'var(--color-green)' : 'var(--color-red)' }}
+          >
+            {combo.bp > 0 ? `${combo.bp} BP gained` : `${Math.abs(combo.bp)} BP spent`}
+          </span>
+        )}
         {combo.description && (
           <span className="font-body-sm text-ink2 italic ml-2 truncate max-w-xs">{combo.description}</span>
         )}
@@ -151,14 +160,19 @@ function ComboCard({ combo, onEdit, onDuplicate }: ComboCardProps) {
             className="font-fredoka text-sm text-ink2 border-2 border-rule px-3 py-1 hover:border-ink hover:bg-paper2 transition-colors"
             style={{ borderRadius: 'var(--radius-sm)' }}
           >
-            ✎ edit
+            edit
           </button>
           <button
             onClick={onDuplicate}
             className="font-fredoka text-sm text-ink2 border-2 border-rule px-3 py-1 hover:border-ink hover:bg-paper2 transition-colors"
-            style={{ borderRadius: 'var(--radius-sm)' }}
-          >
-            ⤓ duplicate
+            style={{ borderRadius: 'var(--radius-sm)' }}>
+            duplicate
+          </button>
+          <button
+            onClick={onExport}
+            className="font-fredoka text-sm text-ink2 border-2 border-rule px-3 py-1 hover:border-ink hover:bg-paper2 transition-colors"
+            style={{ borderRadius: 'var(--radius-sm)' }}>
+            export combo
           </button>
         </div>
       </div>
@@ -177,7 +191,9 @@ interface ComboEditorProps {
 }
 
 function ComboEditor({ combo, characterId, playerId, onSave, onDelete, onClose }: ComboEditorProps) {
-  const isNew = !combo.id
+  const [openConnectorAt, setOpenConnectorAt] = useState<number | null>(null);
+  const isNew = !combo.id;
+  const [moveDisplay, setMoveDisplay] = useState<MoveDisplay>("name");
   const [form, setForm] = useState<Partial<Combo>>({
     title: '',
     notation: [],
@@ -210,7 +226,11 @@ function ComboEditor({ combo, characterId, playerId, onSave, onDelete, onClose }
   }
 
   function addMoveToNotation(moveId: string) {
-    set('notation', [...(form.notation ?? []), { characterId, moveId }])
+    const prev = form.notation ?? []
+    const updated = prev.length > 0
+      ? prev.map((e, i) => i === prev.length - 1 ? { ...e, connector: (e.connector ?? 'link') as ConnectorType } : e)
+      : prev
+    set('notation', [...updated, { characterId, moveId }])
   }
 
   function removeMoveFromNotation(idx: number) {
@@ -231,6 +251,7 @@ function ComboEditor({ combo, characterId, playerId, onSave, onDelete, onClose }
       difficulty: (form.difficulty ?? 1) as Combo['difficulty'],
       situation: (form.situation ?? 'any') as Combo['situation'],
       tags: form.tags ?? [],
+      bp: form.bp ?? 0,
       description: form.description ?? '',
       clipId: form.clipId ?? null,
       createdAt: combo.createdAt ?? now,
@@ -289,27 +310,44 @@ function ComboEditor({ combo, characterId, playerId, onSave, onDelete, onClose }
           {/* Notation builder */}
           <div>
             <label className="font-label block mb-1">Notation</label>
-            {/* Current chain */}
-              <div className='flex gap-3'>
-                <div
-                className="flex flex-[3] flex-wrap items-center gap-1 p-3 border-2 border-ink mb-3"
-                style={{ borderRadius: 'var(--radius-sm)', background: 'var(--color-paper2)', borderStyle: 'dashed' }}
-              >
-                {(form.notation ?? []).map((n, i) => {
-                  const move = getMoveById(n.moveId)
-                  return (
-                    <React.Fragment key={i}>
-                      {i > 0 && <span className="font-caveat font-bold text-ink2">→</span>}
-                      <MoveChip
-                        label={move?.name ?? n.moveId}
-                        onRemove={() => removeMoveFromNotation(i)}
+            <span className="font-body-sm text-ink3 italic">click on an arrow to specify a link, a cancel, a delay..</span>
+            <div
+              className="flex flex-[3] flex-wrap items-center gap-1 p-3 border-2 border-ink mb-3"
+              style={{ borderRadius: 'var(--radius-sm)', background: 'var(--color-paper2)', borderStyle: 'dashed' }}>
+              {(form.notation ?? []).map((n, i) => {
+                const move = getMoveById(n.moveId);
+                const isLast = i === form.notation!.length - 1;
+                return (
+                  <React.Fragment key={i}>
+                    <MoveChip
+                      label={move?.name ?? n.moveId}
+                      onRemove={() => removeMoveFromNotation(i)}
+                    />
+                    {!isLast &&
+                     <div style={{ position: 'relative' }}>
+                      <ConnectorToken
+                        value={n.connector ?? 'link'}
+                        onClick={() => setOpenConnectorAt(openConnectorAt === i ? null : i)}
                       />
-                    </React.Fragment>
-                  )
-                })}
-              </div>
+                      {openConnectorAt === i && (
+                        <ConnectorPicker
+                          value={n.connector ?? 'link'}
+                          onChange={connector => {
+                            const next = [...(form.notation ?? [])]
+                            next[i] = { ...next[i], connector }
+                            set('notation', next)
+                          }}
+                          onClose={() => setOpenConnectorAt(null)}
+                        />
+                      )}
+                    </div>}
+                  </React.Fragment>
+                )
+              })}
             </div>
-            <span className="font-body-sm text-ink3 italic">↓ pick from palette</span>
+            <div className='flex justify-between items-center'><span className="font-body-sm text-ink3 italic">↓ pick from palette</span>
+            <MoveDisplayToggle value={moveDisplay} onChange={setMoveDisplay} />
+            </div>
 
             {/* Move palette */}
             <div
@@ -325,8 +363,7 @@ function ComboEditor({ combo, characterId, playerId, onSave, onDelete, onClose }
                 { label: 'Specials', moves: grouped.specials },
                 { label: 'Super', moves: grouped.supers },
                 { label: 'Unique', moves: grouped.unique },
-                { label: "System", moves: grouped.system },
-                { label: "Modifiers", moves: [{ id: "dl", name: "Delay", input: "dl." }, { id: "microwalk", name: "Microwalk", input: "mw." }, { id: "microdash", name: "Microdash", input: "md." }]}
+                { label: "System", moves: grouped.system }
               ].map(({ label, moves }) => (
                 <div key={label} className="flex items-center gap-2 mb-2 flex-wrap">
                   <span className="font-label text-ink3 w-16">{label}</span>
@@ -337,8 +374,9 @@ function ComboEditor({ combo, characterId, playerId, onSave, onDelete, onClose }
                       onClick={() => addMoveToNotation(m.id)}
                       className="font-elite text-xs bg-paper border-2 border-ink px-2 py-px hover:bg-sky100 transition-colors shadow-stamp-sm"
                       style={{ borderRadius: 'var(--radius-sm)' }}
+                      title={moveDisplay === "name" ? m.input : m.name}
                     >
-                      {m.name || m.input}
+                      {moveDisplay === "name" ? m.name || m.input : m.input}
                     </button>
                   ))}
                 </div>
@@ -375,6 +413,21 @@ function ComboEditor({ combo, characterId, playerId, onSave, onDelete, onClose }
                 {[0, 25, 50, 75, 100].map(v => (
                   <option key={v} value={v}>{v}% meter</option>
                 ))}
+              </select>
+            </div>
+            <div>
+              <label className="font-label block mb-1">Bravery Points Spent / Gained</label>
+              <select
+                value={form.bp ?? 0}
+                onChange={e => set('bp', parseInt(e.target.value) as Combo['bp'])}
+                className="w-full font-fredoka text-sm bg-paper border-2 border-ink px-3 py-2 cursor-pointer"
+                style={{ borderRadius: 'var(--radius-sm)', boxShadow: '1.2px 1.5px 0 rgba(31,45,62,0.33)' }}
+              >
+                <option value={0}>0 BP</option>
+                <option value={1}>+1 BP</option>
+                <option value={-1}>-1 BP</option>
+                <option value={-2}>-2 BP</option>
+                <option value={-3}>-3 BP</option>
               </select>
             </div>
           </div>
@@ -498,7 +551,8 @@ function ComboEditor({ combo, characterId, playerId, onSave, onDelete, onClose }
 // ─── Main Combo Notebook Screen ───────────────────────────────────────────────
 export function ComboNotebook() {
   const { player } = useApp()
-  const [activeChar, setActiveChar] = useState<string>(player.activeMain || player.mains[0] || '')
+  const [activeChar, setActiveChar] = useState<string>(player.activeMain || player.mains[0] || '');
+  const character = CHARACTERS.find((i) => i.id === activeChar)!.name;
   const [editingCombo, setEditingCombo] = useState<Partial<Combo> | null>(null)
   const [refresh, setRefresh] = useState(0)
   const { show, close } = useDialog();
@@ -526,6 +580,13 @@ export function ComboNotebook() {
     }
     saveCombo(dup)
     setRefresh(r => r + 1)
+  }
+
+  function handleExport(combo: Combo) {
+    // const 
+    const comboString = `${combo.title}`
+
+    console.log(combo.notation.map((i) => i.moveId.replace(`${character}-`, "")));
   }
 
   function handleDelete(id: string) {
@@ -640,6 +701,7 @@ export function ComboNotebook() {
                 combo={combo}
                 onEdit={() => setEditingCombo(combo)}
                 onDuplicate={() => handleDuplicate(combo)}
+                onExport={() => handleExport(combo)}
               />
             ))
           )}
