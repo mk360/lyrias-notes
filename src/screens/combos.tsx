@@ -12,7 +12,7 @@ import {
   getCombosByCharacter,
   saveCombo
 } from '@/lib/db'
-import { ConnectorPicker, ConnectorToken } from '@/components/connector-picker'
+import { ConnectorPicker, ConnectorToken, COMBO_CHAIN_OPTIONS } from '@/components/connector-picker'
 import type { ConnectorType } from '@/lib/types'
 import { getMoveById, getMovesByCharacterGrouped } from '@/lib/moves'
 import type { Combo } from '@/lib/types'
@@ -59,10 +59,11 @@ function NotationChain({ notation }: { notation: Combo['notation'] }) {
     >
       {notation.map((n, i) => {
         const move = getMoveById(n.moveId)
+        const displayedConnector = i === 0 ? "" : COMBO_CHAIN_OPTIONS.find((option, j) => option.value === notation[i - 1].connector)?.display;
         return (
           <React.Fragment key={i}>
-            {i > 0 && <span className="font-caveat font-bold text-ink2 text-sm">→</span>}
-            <MoveChip label={move?.name ?? n.moveId} />
+            {i > 0 && <span className="font-caveat font-bold text-ink2">{displayedConnector}</span>}
+            <MoveChip label={move.name || move.input} />
           </React.Fragment>
         )
       })}
@@ -320,7 +321,7 @@ function ComboEditor({ combo, characterId, playerId, onSave, onDelete, onClose }
                 return (
                   <React.Fragment key={i}>
                     <MoveChip
-                      label={move?.name ?? n.moveId}
+                      label={move?.name || move?.input}
                       onRemove={() => removeMoveFromNotation(i)}
                     />
                     {!isLast &&
@@ -583,8 +584,6 @@ export function ComboNotebook() {
   function handleExport(combo: Combo) {
     // const 
     const comboString = `${combo.title}`
-
-    console.log(combo.notation.map((i) => i.moveId.replace(`${character}-`, "")));
   }
 
   function handleDelete(id: string) {

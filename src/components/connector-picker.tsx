@@ -7,7 +7,7 @@ interface ConnectorPickerProps {
   onClose: () => void
 }
 
-const OPTIONS: { value: ConnectorType; label: string; display: string }[] = [
+export const COMBO_CHAIN_OPTIONS: { value: ConnectorType; label: string; display: string }[] = [
   { value: 'link',   label: 'Link',   display: ','   },
   { value: 'cancel', label: 'Cancel', display: '>'   },
   { value: 'delay',  label: 'Delay',  display: 'dl.' },
@@ -43,7 +43,7 @@ export function ConnectorPicker({ value, onChange, onClose }: ConnectorPickerPro
         minWidth: 100,
       }}
     >
-      {OPTIONS.map(opt => (
+      {COMBO_CHAIN_OPTIONS.map(opt => (
         <button
           key={opt.value}
           type="button"

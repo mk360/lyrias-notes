@@ -15,8 +15,8 @@ export function getMovesByCharacter(id: string): Move[] {
   return cleanedDataModules[`/src/cleaned_data/${name}.json`].default;
 }
 
-export function getMoveById(id: string): Move | undefined {
-  return MOVES.find(m => m.id === id)
+export function getMoveById(id: string): Move {
+  return MOVES.find(m => m.id === id)!;
 }
 
 export function getMovesByCharacterGrouped(characterId: string): {
