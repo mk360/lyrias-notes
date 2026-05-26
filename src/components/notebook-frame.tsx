@@ -104,7 +104,7 @@ export function NotebookFrame({ children, spreadMode = false, activeTab }: Noteb
         <div
           className="flex flex-col shrink-0"
           style={{
-            width: 80,
+            width: 100,
             borderLeft: '2px solid var(--color-ink)',
           }}
         >
@@ -115,7 +115,7 @@ export function NotebookFrame({ children, spreadMode = false, activeTab }: Noteb
                 key={tab.id}
                 onClick={() => navigate(tab.path)}
                 className="
-                  relative font-fredoka font-500 text-sm
+                  relative font-fredoka font-500
                   py-3 text-center
                   border-b-2 border-ink
                   transition-all cursor-pointer

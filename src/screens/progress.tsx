@@ -209,8 +209,8 @@ export function ProgressScreen() {
             className="p-3 border-2 border-rule"
             style={{ borderRadius: 'var(--radius-md)', background: 'var(--color-paper)' }}
           >
-            <p className="font-fredoka font-600 text-sm mb-1">Session focus ✶</p>
-            <p className="font-body-sm">write your goals for today's session here</p>
+            <p className="font-fredoka font-600 mb-1">General Goals</p>
+            <p className="font-body-sm">Write your next progress item here</p>
           </div>
           
           <StickyNote tone="sky" tilt={-2}>
@@ -218,8 +218,6 @@ export function ProgressScreen() {
               💡 Tips
             </p>
             <ul className="font-body-sm flex flex-col gap-1.5" style={{ color: 'var(--color-ink2)', paddingLeft: 14 }}>
-              <li>Type <span className="font-elite text-xs px-1" style={{ background: 'var(--color-sky300)', border: '1px solid var(--color-sky400)', borderRadius: 3 }}>/combo</span> to reference a combo</li>
-              {/* <li>Click any move in the frame data table to drop a chip</li> */}
               <li>General Goals apply across all characters</li>
             </ul>
           </StickyNote>

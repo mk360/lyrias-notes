@@ -99,7 +99,6 @@ export function WYSIWYGToolbar({ editor, opponentCharId, playerCharacterId, matc
     <div className="relative">
       <div
         className="flex flex-wrap items-center gap-1 p-2 border-b-2 border-ink bg-paper">
-        {/* Text formatting */}
         <button
           type="button"
           onClick={() => editor.chain().focus().toggleBold().run()}
@@ -160,7 +159,7 @@ export function WYSIWYGToolbar({ editor, opponentCharId, playerCharacterId, matc
           <button
             type="button"
             onClick={() => setCurrentDialog(currentDialog === "clip" ? "" : "clip")}
-            className="font-fredoka font-500 text-xs bg-goldLt border-2 border-gold text-goldDk px-2 h-8 shadow-stamp-sm hover:bg-gold hover:text-ink transition-colors"
+            className="font-fredoka font-500 text-sm bg-goldLt border-2 border-gold text-goldDk px-2 h-8 shadow-stamp-sm hover:bg-gold hover:text-ink transition-colors"
             style={{ borderRadius: 'var(--radius-sm)' }}
           >
             + clip
@@ -168,7 +167,7 @@ export function WYSIWYGToolbar({ editor, opponentCharId, playerCharacterId, matc
           <button
             type="button"
             onClick={() => setCurrentDialog(currentDialog === "combo" ? "" : "combo")}
-            className="font-fredoka font-500 text-xs bg-gold border-2 border-goldDk text-brown px-2 h-8 shadow-stamp-sm hover:bg-goldDk hover:text-ink transition-colors"
+            className="font-fredoka font-500 text-sm bg-gold border-2 border-goldDk text-brown px-2 h-8 shadow-stamp-sm hover:bg-goldDk hover:text-ink transition-colors"
             style={{ borderRadius: 'var(--radius-sm)' }}
           >
             + combo
@@ -179,7 +178,7 @@ export function WYSIWYGToolbar({ editor, opponentCharId, playerCharacterId, matc
           <button
             type="button"
             onClick={() => setCurrentDialog(currentDialog === "move" ? "" : "move")}
-            className="font-fredoka font-500 text-xs bg-sky200 border-2 border-sky700 text-sky700 px-2 h-8 shadow-stamp-sm hover:bg-sky300 transition-colors"
+            className="font-fredoka font-500 text-sm bg-sky200 border-2 border-sky700 text-sky700 px-2 h-8 shadow-stamp-sm hover:bg-sky300 transition-colors"
             style={{ borderRadius: 'var(--radius-sm)' }}
           >
             + move
@@ -188,7 +187,7 @@ export function WYSIWYGToolbar({ editor, opponentCharId, playerCharacterId, matc
 
         {/* Color swatches */}
         <div className="flex gap-1 items-center ml-1">
-          {!compact && <span className="font-label text-ink3 text-xs">color</span>}
+          {!compact && <span className="font-label text-ink3">color</span>}
           {COLORS.map(c => (
             <button
               key={c.name}
@@ -224,10 +223,10 @@ export function WYSIWYGToolbar({ editor, opponentCharId, playerCharacterId, matc
                 key={m.id}
                 type="button"
                 onClick={() => insertMoveChip(m)}
-                className="w-full text-left px-3 py-2 font-elite text-xs hover:bg-sky100 transition-colors border-b border-rule last:border-0 flex items-center justify-between"
+                className="w-full text-left px-3 py-2 font-elite text-sm hover:bg-sky100 transition-colors border-b border-rule last:border-0 flex items-center justify-between"
               >
                 <span>{m.name}</span>
-                <span className="text-ink3 text-xs">{m.input}</span>
+                <span className="text-ink3 text-sm">{m.input}</span>
               </button>
             ))}
             {filteredMoves.length === 0 && (

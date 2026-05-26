@@ -1,4 +1,3 @@
-import React from 'react'
 import { getRatingBucket } from '@/lib/types'
 
 interface RatingCellProps {
@@ -28,7 +27,7 @@ export function RatingCell({ value, onClick, size = 32, className = '' }: Rating
         background: bucket.bg,
         color: bucket.fg,
         borderRadius: 'var(--radius-sm)',
-        fontSize: size < 28 ? 11 : 14,
+        fontSize: size < 28 ? 16 : 20,
       }}
     >
       {value !== null ? value : '·'}

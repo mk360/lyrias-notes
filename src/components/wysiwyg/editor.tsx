@@ -57,7 +57,7 @@ export const NotesEditor = forwardRef<NotesEditorHandle, NotesEditorProps>(funct
       Underline,
       TextStyle,
       Color,
-      Placeholder.configure({ placeholder: 'Start writing your matchup notes…' }),
+      Placeholder.configure({ placeholder: 'Start writing your notes…' }),
       MoveChipNode,
       InlineClipNode,
       ComboBlockNode

@@ -18,7 +18,7 @@
     background-color: var(--color-paper);
     color: var(--color-ink);
     font-family: 'Fredoka', sans-serif;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
   }
@@ -37,13 +37,13 @@
   .shadow-float    { box-shadow: var(--shadow-float); }
 
   /* Typography shorthands */
-  .font-display-xl { font-family: 'Caveat', cursive; font-size: 48px; line-height: 0.9; font-weight: 700; }
-  .font-display-lg { font-family: 'Caveat', cursive; font-size: 30px; line-height: 1; font-weight: 700; }
-  .font-display-md { font-family: 'Caveat', cursive; font-size: 22px; line-height: 1; font-weight: 700; }
-  .font-body       { font-family: 'Fredoka', sans-serif; font-size: 15px; line-height: 1.6; font-weight: 400; }
+  .font-display-xl { font-family: 'Caveat', cursive; font-size: 49px; line-height: 0.9; font-weight: 700; }
+  .font-display-lg { font-family: 'Caveat', cursive; font-size: 31px; line-height: 1; font-weight: 700; }
+  .font-display-md { font-family: 'Caveat', cursive; font-size: 23px; line-height: 1; font-weight: 700; }
+  .font-body       { font-family: 'Fredoka', sans-serif; font-size: 16px; line-height: 1.6; font-weight: 400; }
   .font-body-sm    { font-family: 'Fredoka', sans-serif; font-size: 13px; line-height: 1.5; font-weight: 400; }
-  .font-label      { font-family: 'Fredoka', sans-serif; font-size: 12px; line-height: 1.4; font-weight: 500; text-transform: uppercase; letter-spacing: 0.04em; }
-  .font-mono       { font-family: 'Special Elite', monospace; font-size: 12px; line-height: 1.4; font-weight: 400; }
+  .font-label      { font-family: 'Fredoka', sans-serif; font-size: 13px; line-height: 1.4; font-weight: 500; text-transform: uppercase; letter-spacing: 0.04em; }
+  .font-mono       { font-family: 'Special Elite', monospace; font-size: 13px; line-height: 1.4; font-weight: 400; }
 
   /* Binding hole */
   .binding-hole {

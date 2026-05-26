@@ -81,14 +81,14 @@ export function RosterScreen() {
         {/* Main area */}
         <div className="flex-1 p-4">
           {/* Header */}
-          <div className="flex items-start justify-between mb-4">
+          <div className="flex items-start justify-between mb-2">
             <div className="flex items-center gap-3">
               <WashiLabel tone="sky">Section 01</WashiLabel>
               <h1 className="font-display-xl font-caveat text-ink" style={{ lineHeight: 1 }}>The Roster</h1>
             </div>
             <div className="flex flex-col gap-2 mt-1">
               <select
-                className="font-fredoka text-sm bg-paper2 border-2 border-ink px-2 py-1 shadow-stamp-sm cursor-pointer"
+                className="font-fredoka bg-paper2 border-2 border-ink px-2 py-1 shadow-stamp-sm cursor-pointer"
                 style={{ borderRadius: 'var(--radius-sm)' }}
                 value={filter}
                 onChange={e => setFilter(e.target.value as FilterKey)}
@@ -116,12 +116,12 @@ export function RosterScreen() {
           </div>
 
           {/* Subtitle */}
-          <p className="font-body-sm text-ink2 mb-4">
+          <p className="font-body-md text-ink2 mb-4">
             Tap a character to open their matchup page · use the dropdown to add a main · ✎ = has notes
           </p>
 
           {/* Character grid */}
-          <div className="grid gap-3" style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(80px, 1fr))' }}>
+          <div className="grid gap-3" style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(110px, 1fr))' }}>
             {filtered.map(char => {
               const matchup = matchups.find((matchup) => {
                 return matchup.playerCharacterId === player.activeMain && matchup.opponentCharacterId === char.id && matchup.playerId === player.id;
@@ -144,7 +144,7 @@ export function RosterScreen() {
                       size={56}
                       imgSrc={`${import.meta.env.BASE_URL}thumbnails/${char.name}.webp`}
                     />
-                    <span className="font-fredoka text-xs text-center text-ink leading-tight">{char.name}</span>
+                    <span className="font-fredoka text-sm text-center text-ink leading-tight">{char.name}</span>
                   </div>
 
                   {/* has notes or not */}
@@ -174,8 +174,8 @@ export function RosterScreen() {
           style={{ background: 'var(--color-paper2)' }}
         >
           <div>
-            <h2 className="font-display-md font-caveat text-ink mb-1">My mains</h2>
-            <p className="font-body-sm text-ink2 mb-3">Active main will be used for other tabs. You can freely switch between mains later.</p>
+            <h2 className="font-display-xl font-caveat text-ink mb-2">My mains</h2>
+            <p className="font-body-md text-ink2 mb-3">Active main will be used for other tabs. You can freely switch between mains later.</p>
 
             {/* Add character button */}
             <div className="relative mt-3">
