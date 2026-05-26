@@ -372,7 +372,7 @@ function ComboEditor({ combo, characterId, playerId, onSave, onDelete, onClose }
                       key={m.id}
                       type="button"
                       onClick={() => addMoveToNotation(m.id)}
-                      className="font-elite text-xs bg-paper border-2 border-ink px-2 py-px hover:bg-sky100 transition-colors shadow-stamp-sm"
+                      className="font-elite text-sm bg-paper border-2 border-ink px-2 py-px hover:bg-sky100 transition-colors shadow-stamp-sm"
                       style={{ borderRadius: 'var(--radius-sm)' }}
                       title={moveDisplay === "name" ? m.input : m.name}
                     >
@@ -514,7 +514,7 @@ function ComboEditor({ combo, characterId, playerId, onSave, onDelete, onClose }
         <div
           className="flex items-center justify-between px-6 py-4 border-t-2 border-ink sticky bottom-0 bg-paper"
         >
-          <div>
+          <div className="flex items-center gap-3">
             {!isNew && onDelete && (
               <button
                 type="button"
@@ -525,21 +525,19 @@ function ComboEditor({ combo, characterId, playerId, onSave, onDelete, onClose }
                 🗑 delete combo
               </button>
             )}
-          </div>
-          <div className="flex items-center gap-3">
-            <span className="font-elite text-xs text-ink3 italic">
+            <span className="font-elite text-sm text-ink3 italic">
               {isNew ? 'autosaves as you type' : 'edited just now · unsaved changes'}
             </span>
-            <button
+            <Button variant="secondary"
               type="button"
               onClick={onClose}
               className="font-fredoka text-sm text-ink border-2 border-rule px-4 py-2 hover:bg-paper2 transition-colors"
               style={{ borderRadius: 'var(--radius-sm)' }}
             >
-              cancel
-            </button>
+              Cancel
+            </Button>
             <Button variant="primary" onClick={handleSave}>
-              {isNew ? 'create combo' : 'save changes'}
+              {isNew ? 'Create' : 'Save'}
             </Button>
           </div>
         </div>
@@ -639,7 +637,7 @@ export function ComboNotebook() {
             </>
             ) : null}
           </div>
-          <p className="font-body-sm text-ink2 mb-4">
+          <p className="font-body-md text-ink2 mb-4">
             Combos you actually use. Pin one to "paste in notes" and it drops into the current matchup note in one click.
           </p>
 
@@ -664,7 +662,7 @@ export function ComboNotebook() {
                     <span style={{ color: isActive ? 'var(--color-goldLt)' : 'var(--color-gold)' }}>★</span>
                     {char?.name ?? mainId}
                     <span
-                      className="font-elite text-xs px-1"
+                      className="font-elite text-sm px-1"
                       style={{
                         background: isActive ? 'var(--color-sky500)' : 'var(--color-paper2)',
                         borderRadius: '3px',

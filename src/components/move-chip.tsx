@@ -12,7 +12,7 @@ export function MoveChip({ label, onClick, onRemove, className = '' }: MoveChipP
     <span
       className={`
         inline-flex items-center gap-1
-        font-elite text-xs
+        font-elite text-sm
         bg-paper2 border-2 border-ink
         shadow-stamp-sm
         px-2 py-px
