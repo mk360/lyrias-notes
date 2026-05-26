@@ -10,7 +10,6 @@
     "lint": "eslint src --ext .ts,.tsx"
   },
   "dependencies": {
-    "@harshtalks/slash-tiptap": "^1.3.0",
     "@tiptap/extension-bullet-list": "^2.10.3",
     "@tiptap/extension-color": "^2.10.3",
     "@tiptap/extension-heading": "^2.10.3",
