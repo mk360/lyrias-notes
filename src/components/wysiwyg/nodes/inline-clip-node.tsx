@@ -17,7 +17,6 @@ function InlineClipNodeView({ node, deleteNode }: InlineClipNodeViewProps) {
   const [clip, setClip] = useState<Clip | null>(null)
   const [loading, setLoading] = useState(true)
   const [resolvedUrl, setResolvedUrl] = useState<string>('')
-  console.log(clip)
   useEffect(() => {
     let objectUrl: string | null = null
 
@@ -29,7 +28,6 @@ function InlineClipNodeView({ node, deleteNode }: InlineClipNodeViewProps) {
         setResolvedUrl(meta.url)
       } else {
         const url = await getBlobUrl(clipId)
-        console.log(url)
         if (url) { setResolvedUrl(url) }
       }
       setLoading(false)

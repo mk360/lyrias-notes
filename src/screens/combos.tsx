@@ -290,24 +290,26 @@ function ComboEditor({ combo, characterId, playerId, onSave, onDelete, onClose }
           <div>
             <label className="font-label block mb-1">Notation</label>
             {/* Current chain */}
-            <div
-              className="flex flex-wrap items-center gap-1 p-3 border-2 border-ink mb-3"
-              style={{ borderRadius: 'var(--radius-sm)', background: 'var(--color-paper2)', borderStyle: 'dashed' }}
-            >
-              {(form.notation ?? []).map((n, i) => {
-                const move = getMoveById(n.moveId)
-                return (
-                  <React.Fragment key={i}>
-                    {i > 0 && <span className="font-caveat font-bold text-ink2">→</span>}
-                    <MoveChip
-                      label={move?.name ?? n.moveId}
-                      onRemove={() => removeMoveFromNotation(i)}
-                    />
-                  </React.Fragment>
-                )
-              })}
-              <span className="font-body-sm text-ink3 italic">↓ pick from palette</span>
+              <div className='flex gap-3'>
+                <div
+                className="flex flex-[3] flex-wrap items-center gap-1 p-3 border-2 border-ink mb-3"
+                style={{ borderRadius: 'var(--radius-sm)', background: 'var(--color-paper2)', borderStyle: 'dashed' }}
+              >
+                {(form.notation ?? []).map((n, i) => {
+                  const move = getMoveById(n.moveId)
+                  return (
+                    <React.Fragment key={i}>
+                      {i > 0 && <span className="font-caveat font-bold text-ink2">→</span>}
+                      <MoveChip
+                        label={move?.name ?? n.moveId}
+                        onRemove={() => removeMoveFromNotation(i)}
+                      />
+                    </React.Fragment>
+                  )
+                })}
+              </div>
             </div>
+            <span className="font-body-sm text-ink3 italic">↓ pick from palette</span>
 
             {/* Move palette */}
             <div
@@ -323,7 +325,8 @@ function ComboEditor({ combo, characterId, playerId, onSave, onDelete, onClose }
                 { label: 'Specials', moves: grouped.specials },
                 { label: 'Super', moves: grouped.supers },
                 { label: 'Unique', moves: grouped.unique },
-                { label: "System", moves: grouped.system }
+                { label: "System", moves: grouped.system },
+                { label: "Modifiers", moves: [{ id: "dl", name: "Delay", input: "dl." }, { id: "microwalk", name: "Microwalk", input: "mw." }, { id: "microdash", name: "Microdash", input: "md." }]}
               ].map(({ label, moves }) => (
                 <div key={label} className="flex items-center gap-2 mb-2 flex-wrap">
                   <span className="font-label text-ink3 w-16">{label}</span>

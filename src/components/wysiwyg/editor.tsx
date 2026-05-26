@@ -158,7 +158,6 @@ export const NotesEditor = forwardRef<NotesEditorHandle, NotesEditorProps>(funct
   useImperativeHandle(ref, () => ({
     insertMoveChipAtCursor
   }), [insertMoveChipAtCursor])
-  console.log({ playerCharId, opponentCharId, matchupId })
   return (
     <SlashCmdProvider>
       <div className="flex flex-col h-full">

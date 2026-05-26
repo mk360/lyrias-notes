@@ -68,15 +68,6 @@ export function RosterScreen() {
     }
   }
 
-  function handleStarClick(e: React.MouseEvent, charId: string) {
-    e.stopPropagation()
-    if (player.mains.includes(charId)) {
-      removeMain(charId)
-    } else {
-      addMain(charId)
-    }
-  }
-
   function handlePickerKeyDown(e: React.KeyboardEvent) {
     if (e.key === 'ArrowDown') { e.preventDefault(); setPickerHighlight(h => Math.min(h + 1, Math.min(pickerFiltered.length - 1, 5))) }
     if (e.key === 'ArrowUp')   { e.preventDefault(); setPickerHighlight(h => Math.max(h - 1, 0)) }
@@ -159,7 +150,7 @@ export function RosterScreen() {
                   {/* has notes or not */}
                   {hasMatchupNotes && (
                     <div
-                      className="absolute -top-2 -left-2 w-4 h-4 w-5-sm h-5-sm flex items-center justify-center text-sm border-2 border-ink shadow-stamp-sm transition-all hover:scale-110"
+                      className="absolute -top-2 -left-2 w-4 h-4 flex items-center justify-center text-sm border-2 border-ink shadow-stamp-sm transition-all hover:scale-110"
                       style={{
                         borderRadius: '50%',
                         background: 'var(--color-gold)',
@@ -277,14 +268,23 @@ export function RosterScreen() {
                   <button
                     key={mainId}
                     onClick={() => setActiveMain(mainId)}
-                    className="flex items-center gap-2 px-3 py-2 border-2 border-ink text-left transition-all hover:shadow-stamp"
+                    className="flex flex-1 items-center gap-2 px-3 py-2 border-2 border-ink text-left transition-all hover:shadow-stamp relative"
                     style={{
                       borderRadius: 'var(--radius-sm)',
                       background: isActive ? 'var(--color-ink)' : 'var(--color-paper)',
                       color: isActive ? 'var(--color-paper)' : 'var(--color-ink)',
                       boxShadow: isActive ? 'none' : 'var(--shadow-stamp-sm)',
-                    }}
-                  >
+                    }}>
+                      <button className="absolute -top-2 -right-2 w-4 h-4 flex items-center justify-center text-sm border-2 border-ink shadow-stamp-sm transition-all hover:scale-110" style={{
+                        borderRadius: '50%',
+                        background: 'var(--color-goldDk)',
+                        color: 'var(--color-paper)',
+                      }} onClick={(e) => {
+                        e.stopPropagation();
+                        removeMain(mainId);
+                      }}>
+                        {"X"}
+                      </button>
                     <span style={{ color: 'var(--color-gold)' }}>★</span>
                     <span className="font-fredoka font-500 text-sm">{char.name}</span>
                     {isActive && (
