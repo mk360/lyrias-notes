@@ -79,7 +79,7 @@ export function RosterScreen() {
     <NotebookFrame activeTab="roster">
       <div className="flex gap-0 h-full min-h-[600px]">
         {/* Main area */}
-        <div className="flex-1 p-4">
+        <div className="flex-1 p-4 overflow-y-auto">
           {/* Header */}
           <div className="flex items-start justify-between mb-2">
             <div className="flex items-center gap-3">
@@ -170,7 +170,7 @@ export function RosterScreen() {
 
         {/* Right rail — My Mains */}
         <div
-          className="w-64 shrink-0 border-l-2 border-ink p-2 pt-4 flex flex-col gap-4"
+          className="w-64 shrink-0 border-l-2 border-ink p-2 pt-4 flex flex-col gap-4 overflow-y-auto"
           style={{ background: 'var(--color-paper2)' }}
         >
           <div>
@@ -234,7 +234,7 @@ export function RosterScreen() {
                               className="font-fredoka font-500 text-xs px-2 py-0.5 bg-ink text-paper border-2 border-ink"
                               style={{ borderRadius: 'var(--radius-sm)' }}
                             >
-                              ↵ add
+                              add
                             </span>
                           ) : (
                             <span
@@ -250,7 +250,6 @@ export function RosterScreen() {
                   </div>
 
                   <div className="px-3 py-2 border-t-2 border-rule bg-paper2">
-                    <p className="font-elite text-xs text-ink3">↑↓ nav · ↵ add as main · esc close</p>
                   </div>
                 </div>
               )}

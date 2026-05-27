@@ -41,7 +41,7 @@ export function NotebookFrame({ children, spreadMode = false, activeTab }: Noteb
     >
       {/* Main notebook card */}
       <div
-        className="relative flex w-full max-w-7xl min-h-[640px]"
+        className="relative flex w-full max-w-7xl min-h-[640px] max-h-[660px]"
         style={{
           border: '2px solid var(--color-ink)',
           borderRadius: 'var(--radius-md)',
@@ -85,8 +85,8 @@ export function NotebookFrame({ children, spreadMode = false, activeTab }: Noteb
           ))}
         </div>
 
-        {/* Page content area */}
-        <div className="flex-1 relative overflow-auto">
+        {/* Page content area ; monkey-patch frame to adjust for roster grid scrollable behavior */}
+        <div className={`flex-1 relative ${activeTab !== "roster" ? "overflow-auto" : null}`}>
           {/* Center fold line for spread mode */}
           {spreadMode && (
             <div
