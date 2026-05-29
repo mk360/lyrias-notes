@@ -4,11 +4,11 @@ import { MatchupDetail } from '@/screens/matchup-detail'
 import { MatchupMatrix } from '@/screens/matchup-matrix'
 import { RosterScreen } from '@/screens/roster'
 import { useState } from 'react'
-import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom'
-import { DialogProvider } from './context/DialogContext'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { CoverAnimation } from './components/cover-animation'
-import { ProgressScreen } from './screens/progress'
+import { DialogProvider } from './context/DialogContext'
 import { SettingsProvider } from './context/SettingsContext'
+import { ProgressScreen } from './screens/progress'
 
 export function App() {
   const [coverDone, setCoverDone] = useState(false);

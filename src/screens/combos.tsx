@@ -1,4 +1,5 @@
 import { Button } from '@/components/button'
+import { COMBO_CHAIN_OPTIONS, ConnectorPicker, ConnectorToken } from '@/components/connector-picker'
 import { MoveChip } from '@/components/move-chip'
 import { MoveDisplay, MoveDisplayToggle } from '@/components/move-display-toggle'
 import { NotebookFrame } from '@/components/notebook-frame'
@@ -12,10 +13,8 @@ import {
   getCombosByCharacter,
   saveCombo
 } from '@/lib/db'
-import { ConnectorPicker, ConnectorToken, COMBO_CHAIN_OPTIONS } from '@/components/connector-picker'
-import type { ConnectorType } from '@/lib/types'
 import { getMoveById, getMovesByCharacterGrouped } from '@/lib/moves'
-import type { Combo } from '@/lib/types'
+import type { Combo, ConnectorType } from '@/lib/types'
 import React, { useState } from 'react'
 import { v4 as uuidv4 } from 'uuid'
 
@@ -610,7 +609,6 @@ function ComboEditor({ combo, characterId, playerId, onSave, onDelete, onClose }
 export function ComboNotebook() {
   const { player } = useApp()
   const [activeChar, setActiveChar] = useState<string>(player.activeMain || player.mains[0] || '');
-  const character = CHARACTERS.find((i) => i.id === activeChar)!.name;
   const [editingCombo, setEditingCombo] = useState<Partial<Combo> | null>(null)
   const [refresh, setRefresh] = useState(0)
   const { show, close } = useDialog();
@@ -642,19 +640,20 @@ export function ComboNotebook() {
 
   function handleExport(combo: Combo) {
     const counterHitStarter = combo.counterhit ? "CH " : "";
-    const comboString = `${combo.title}`
-    const notation = combo.notation.map((entry, j) => {
+    const notation = counterHitStarter + " " + combo.notation.map((entry, j) => {
       const move = getMoveById(entry.moveId);
       const previousEntry = combo.notation[j - 1]
       if (previousEntry) {
-        console.log(previousEntry.connector);
         const connector = COMBO_CHAIN_OPTIONS.find((i) => i.value === previousEntry.connector);
         return `${connector?.display} ${move.input}`.trim();
       } else {
         return move.input;
       }
     }).join("");
-    navigator.clipboard.writeText(counterHitStarter + " " + notation).then(() => {
+    const finalCopiedString = `${combo.title}
+${notation}
+${combo.description}`;
+    navigator.clipboard.writeText(finalCopiedString).then(() => {
       show({
         variant: "confirm",
         title: "Success",

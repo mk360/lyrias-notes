@@ -1,7 +1,8 @@
+import { useSettings } from '@/context/SettingsContext'
 import React from 'react'
 import { useNavigate, useLocation } from 'react-router-dom'
 
-type NavTab = 'roster' | 'matchups' | 'combos' | 'you' | "progress"
+type NavTab = 'roster' | 'matchups' | 'combos' | 'you' | "progress" | "preferences"
 
 interface NotebookFrameProps {
   children: React.ReactNode
@@ -132,9 +133,92 @@ export function NotebookFrame({ children, spreadMode = false, activeTab }: Noteb
               </button>
             )
           })}
+          <div className='p-2'><ThemeToggle /></div>
         </div>
       </div>
     </div>
     </>
+  )
+}
+
+
+function ThemeToggle({ className = '' }: { className?: string }) {
+  const { settings, setTheme } = useSettings()
+  const isDark = settings.theme === 'dark'
+
+  return (
+    <div
+      className={`inline-flex items-center gap-2 ${className}`}
+      role="group"
+      aria-label="Theme"
+    >
+      {/* Sun */}
+      <span
+        onClick={() => setTheme('light')}
+        style={{
+          fontSize: 16,
+          cursor: 'pointer',
+          opacity: isDark ? 0.4 : 1,
+          transition: 'opacity 0.15s',
+          userSelect: 'none',
+        }}
+        title="Light mode"
+      >
+        ☀
+      </span>
+
+      {/* Track */}
+      <button
+        type="button"
+        role="switch"
+        aria-checked={isDark}
+        onClick={() => setTheme(isDark ? 'light' : 'dark')}
+        style={{
+          position: 'relative',
+          width: 44,
+          height: 24,
+          border: '2px solid var(--color-ink)',
+          borderRadius: '999px',
+          background: isDark ? 'var(--color-ink)' : 'var(--color-paper3)',
+          boxShadow: 'var(--shadow-stamp-sm)',
+          cursor: 'pointer',
+          padding: 0,
+          flexShrink: 0,
+          transition: 'background 0.2s',
+        }}
+      >
+        {/* Thumb */}
+        <span
+          style={{
+            position: 'absolute',
+            top: 2,
+            left: isDark ? 18 : 2,
+            width: 16,
+            height: 16,
+            borderRadius: '50%',
+            background: isDark ? 'var(--color-goldLt)' : 'var(--color-ink)',
+            border: '1.5px solid var(--color-ink)',
+            boxShadow: '1px 1px 0 rgba(31,45,62,0.25)',
+            transition: 'left 0.18s cubic-bezier(0.4,0,0.2,1), background 0.18s',
+            display: 'block',
+          }}
+        />
+      </button>
+
+      {/* Moon */}
+      <span
+        onClick={() => setTheme('dark')}
+        style={{
+          fontSize: 16,
+          cursor: 'pointer',
+          opacity: isDark ? 1 : 0.4,
+          transition: 'opacity 0.15s',
+          userSelect: 'none',
+        }}
+        title="Dark mode"
+      >
+        ☽
+      </span>
+    </div>
   )
 }

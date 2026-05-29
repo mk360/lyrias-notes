@@ -29,8 +29,7 @@ export function CoverAnimation({ onDone, fullscreen = false }: CoverAnimationPro
           linear-gradient(
             160deg,
             var(--color-paper2)  0%,
-            var(--color-paper3)  35%,
-            var(--color-goldLt)  65%,
+            var(--color-paper3)  55%,
             var(--color-paper2) 100%
           )
         `,

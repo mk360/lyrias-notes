@@ -84,7 +84,7 @@ export function MatchupMatrix() {
           }}>Export to PNG</Button>
         </div>
 
-        <p className="font-body text-ink2 mb-4">
+        <p className="font-body text-ink3 mb-4">
           Rows are your character · columns are the opponent · each cell is your rating from 0 (suffering) to 10 (free win). Click any cell to open the matchup page.
         </p>
 
