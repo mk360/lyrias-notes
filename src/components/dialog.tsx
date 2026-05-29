@@ -59,25 +59,12 @@ export function AppDialog({ options, onClose }: AppDialogProps) {
     if (!el) return
     el.showModal()
 
-    function handleBackdropClick(e: MouseEvent) {
-      // clicks on the ::backdrop land on the <dialog> element itself
-      const rect = el!.getBoundingClientRect()
-      const inside =
-        e.clientX >= rect.left &&
-        e.clientX <= rect.right &&
-        e.clientY >= rect.top &&
-        e.clientY <= rect.bottom
-      if (!inside) onClose()
-    }
-
     function handleEsc(e: KeyboardEvent) {
       if (e.key === 'Escape') { e.preventDefault(); onClose() }
     }
 
-    el.addEventListener('click', handleBackdropClick)
     window.addEventListener('keydown', handleEsc)
     return () => {
-      el.removeEventListener('click', handleBackdropClick)
       window.removeEventListener('keydown', handleEsc)
     }
   }, [onClose])

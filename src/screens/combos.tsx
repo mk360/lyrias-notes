@@ -51,19 +51,20 @@ function tagBg(tag: string): string {
 }
 
 // ─── NotationChain ───────────────────────────────────────────────────────────
-function NotationChain({ notation }: { notation: Combo['notation'] }) {
+function NotationChain({ notation, counterhit }: { notation: Combo['notation'], counterhit: boolean }) {
   return (
     <div
       className="flex flex-wrap items-center gap-1 p-2 border-2 bg-paper"
       style={{ borderRadius: 'var(--radius-sm)', borderStyle: 'dashed', borderColor: 'var(--color-rule)' }}
     >
+      {counterhit && <span>CH</span>}
       {notation.map((n, i) => {
         const move = getMoveById(n.moveId)
         const displayedConnector = i === 0 ? "" : COMBO_CHAIN_OPTIONS.find((option, j) => option.value === notation[i - 1].connector)?.display;
         return (
           <React.Fragment key={i}>
             {i > 0 && <span className="font-caveat font-bold text-ink2">{displayedConnector}</span>}
-            <MoveChip label={move.name || move.input} />
+            <MoveChip label={move.input} />
           </React.Fragment>
         )
       })}
@@ -109,7 +110,7 @@ function ComboCard({ combo, onEdit, onDuplicate, onExport }: ComboCardProps) {
 
       {/* Row 3: notation chain */}
       <div className="mb-3">
-        <NotationChain notation={combo.notation} />
+        <NotationChain counterhit={combo.counterhit} notation={combo.notation} />
       </div>
 
       {/* Row 4: stats */}
@@ -173,7 +174,7 @@ function ComboCard({ combo, onEdit, onDuplicate, onExport }: ComboCardProps) {
             onClick={onExport}
             className="font-fredoka text-sm text-ink2 border-2 border-rule px-3 py-1 hover:border-ink hover:bg-paper2 transition-colors"
             style={{ borderRadius: 'var(--radius-sm)' }}>
-            export combo
+            copy to clipboard
           </button>
         </div>
       </div>
@@ -200,6 +201,7 @@ function ComboEditor({ combo, characterId, playerId, onSave, onDelete, onClose }
     notation: [],
     damage: 0,
     hits: 0,
+    counterhit: false,
     meter: 0,
     difficulty: 1,
     situation: 'any',
@@ -244,6 +246,7 @@ function ComboEditor({ combo, characterId, playerId, onSave, onDelete, onClose }
       id: combo.id ?? uuidv4(),
       playerId,
       characterId,
+      counterhit: form.counterhit!,
       title: form.title ?? 'Untitled combo',
       notation: form.notation ?? [],
       damage: form.damage ?? 0,
@@ -286,7 +289,7 @@ function ComboEditor({ combo, characterId, playerId, onSave, onDelete, onClose }
           <span className="font-display-md font-caveat text-ink">
             {form.title || 'Untitled combo'}
           </span>
-          <span className="font-elite text-xs text-ink3 ml-auto">esc close</span>
+          <span className="font-elite text-xs text-ink3 ml-auto"></span>
           <button
             onClick={onClose}
             className="w-8 h-8 flex items-center justify-center border-2 border-ink shadow-stamp-sm bg-paper font-caveat font-bold hover:bg-paper2"
@@ -308,10 +311,65 @@ function ComboEditor({ combo, characterId, playerId, onSave, onDelete, onClose }
             />
           </div>
 
+          <div className='flex flex-col gap-2'>
+            <label className='font-label block'>Starter</label>
+            <div className='flex gap-2 items-center'>
+              <div
+                onClick={() => setForm((f) => ({
+                  ...f,
+                  counterhit: !f.counterhit
+                }))}
+                style={{
+                  width: 20,
+                  height: 20,
+                  flexShrink: 0,
+                  background: form.counterhit ? 'var(--color-ink)' : 'var(--color-paper)',
+                  border: '2px solid var(--color-ink)',
+                  borderRadius: 'var(--radius-sm)',
+                  boxShadow: 'var(--shadow-stamp-sm)',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  cursor: 'pointer',
+                  transition: 'background 0.1s',
+                }}
+              >
+                {form.counterhit && (
+                  <span style={{
+                    fontFamily: 'Caveat, cursive',
+                    fontSize: 14,
+                    fontWeight: 700,
+                    color: 'var(--color-paper)',
+                    lineHeight: 1,
+                  }}>
+                    ✓
+                  </span>
+                )}
+              </div>
+               <label
+                  onClick={() => setForm((f) => {
+                    return {
+                      ...f,
+                      counterhit: !f.counterhit
+                    }
+                  })}
+                  style={{
+                    fontFamily: 'Fredoka',
+                    fontSize: 15,
+                    color: 'var(--color-ink)',
+                    cursor: 'pointer',
+                    userSelect: 'none',
+                  }}
+                >
+                  Counterhit starter
+                </label>
+            </div>
+          </div>
+
           {/* Notation builder */}
           <div>
             <label className="font-label block mb-1">Notation</label>
-            <span className="font-body-sm text-ink3 italic">click on an arrow to specify a link, a cancel, a delay..</span>
+            <span className="font-body-sm text-ink3 italic">click on the item between moves to specify a link, a cancel, a delay..</span>
             <div
               className="flex flex-[3] flex-wrap items-center gap-1 p-3 border-2 border-ink mb-3"
               style={{ borderRadius: 'var(--radius-sm)', background: 'var(--color-paper2)', borderStyle: 'dashed' }}>
@@ -320,8 +378,9 @@ function ComboEditor({ combo, characterId, playerId, onSave, onDelete, onClose }
                 const isLast = i === form.notation!.length - 1;
                 return (
                   <React.Fragment key={i}>
+                    {form.counterhit && i === 0 && <span>CH</span>}
                     <MoveChip
-                      label={move?.name || move?.input}
+                      label={move?.input}
                       onRemove={() => removeMoveFromNotation(i)}
                     />
                     {!isLast &&
@@ -582,13 +641,35 @@ export function ComboNotebook() {
   }
 
   function handleExport(combo: Combo) {
-    // const 
+    const counterHitStarter = combo.counterhit ? "CH " : "";
     const comboString = `${combo.title}`
+    const notation = combo.notation.map((entry, j) => {
+      const move = getMoveById(entry.moveId);
+      const previousEntry = combo.notation[j - 1]
+      if (previousEntry) {
+        console.log(previousEntry.connector);
+        const connector = COMBO_CHAIN_OPTIONS.find((i) => i.value === previousEntry.connector);
+        return `${connector?.display} ${move.input}`.trim();
+      } else {
+        return move.input;
+      }
+    }).join("");
+    navigator.clipboard.writeText(counterHitStarter + " " + notation).then(() => {
+      show({
+        variant: "confirm",
+        title: "Success",
+        message: "Combo was copied to the clipboard.",
+        primary: {
+          label: "Close",
+          onClick: close
+        }
+      });
+    });
   }
 
   function handleDelete(id: string) {
     show({
-      variant: "confirm",
+      variant: "success",
       title: "",
       message: "Are you sure you want to delete this combo?",
       primary: {
@@ -624,7 +705,6 @@ export function ComboNotebook() {
             <h1 className="font-display-xl font-caveat text-ink">Combo Notebook</h1>
             {!!charaname ? (<>
               <div className="ml-auto flex gap-2">
-              <Button variant="secondary" size="sm">↗ export</Button>
               <Button
                 variant="primary"
                 size="sm"

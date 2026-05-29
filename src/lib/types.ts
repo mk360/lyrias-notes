@@ -68,7 +68,8 @@ export interface Combo {
   playerId: string
   characterId: string
   title: string
-  notation: NotationEntry[]
+  notation: NotationEntry[];
+  counterhit: boolean;
   damage: number
   hits: number
   bp?: -3 | -2 | -1 | 0 | 1

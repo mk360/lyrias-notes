@@ -1,18 +1,18 @@
-import React, { useState, useRef } from 'react'
 import { NotebookFrame } from '@/components/notebook-frame'
-import { WashiLabel } from '@/components/washi-label'
-import { StickyNote } from '@/components/sticky-note'
 import { Portrait } from '@/components/portrait'
-import { NotesEditor } from '@/components/wysiwyg/editor'
+import { StickyNote } from '@/components/sticky-note'
+import { WashiLabel } from '@/components/washi-label'
 import type { NotesEditorHandle } from '@/components/wysiwyg/editor'
+import { NotesEditor } from '@/components/wysiwyg/editor'
 import { useApp } from '@/context/AppContext'
 import { CHARACTERS } from '@/lib/characters'
 import {
-  getGlobalNotes,
-  saveGlobalNotes,
   getCharacterNotes,
+  getGlobalNotes,
   saveCharacterNotes,
+  saveGlobalNotes,
 } from '@/lib/db'
+import React, { useRef, useState } from 'react'
 
 type Section = 'global' | 'character'
 
@@ -93,45 +93,27 @@ export function ProgressScreen() {
               General Goals
             </button>
             {activeChar ?
-            <button
-              style={{ ...sectionBtnBase(activeSection === 'character'), borderRadius: 'var(--radius-sm)' }}
-              onClick={() => setActiveSection('character')}
-              disabled={!player.activeMain}
-              title={!player.activeMain ? 'Pick a main first' : undefined}
-            >
-                {`Goals with ${activeChar.name}`}
-            </button>
+                <select
+                  value={player.activeMain}
+                  onClick={() => {
+                    setActiveSection("character");
+                  }}
+                  onChange={e => {
+                    handleMainSwitch(e.target.value)
+                    if (activeSection !== 'character') setActiveSection('character')
+                  }}
+                  style={{ ...sectionBtnBase(activeSection === 'character'), borderRadius: 'var(--radius-sm)' }}
+                >
+                {player.mains.map(mainId => {
+                  const char = CHARACTERS.find(c => c.id === mainId)
+                  return (
+                    <option key={mainId} value={mainId}>
+                      {char?.name ?? mainId}
+                    </option>
+                  )
+                })}
+              </select>
             : null}
-
-            {/* Active main switcher — only shown on character section */}
-            {activeSection === 'character' && player.mains.length > 1 && (
-              <div className="flex items-center gap-2 ml-auto">
-                <span className="font-label" style={{ color: 'var(--color-ink3)' }}>switch</span>
-                <div className="flex gap-1">
-                  {player.mains.map(mainId => {
-                    const char = CHARACTERS.find(c => c.id === mainId)
-                    const isActive = mainId === player.activeMain
-                    return (
-                      <button
-                        key={mainId}
-                        onClick={() => handleMainSwitch(mainId)}
-                        title={char?.name}
-                        style={{
-                          padding: 2,
-                          border: `2px solid ${isActive ? 'var(--color-gold)' : 'var(--color-ink)'}`,
-                          borderRadius: 'var(--radius-sm)',
-                          background: 'transparent',
-                          cursor: 'pointer',
-                          boxShadow: isActive ? 'var(--shadow-stamp-sm)' : 'none',
-                        }}
-                      >
-                        <Portrait tag={char?.tag ?? '?'} tone={isActive ? 'warm' : 'dim'} size={28} />
-                      </button>
-                    )
-                  })}
-                </div>
-              </div>
-            )}
           </div>
 
           {/* Editor area */}
