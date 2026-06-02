@@ -1,16 +1,15 @@
-import React, { useState, useRef, useCallback, useEffect } from 'react'
-import { useParams, useNavigate } from 'react-router-dom'
+import { Button } from '@/components/button'
+import { FrameDataTable } from '@/components/frame-data-table'
 import { NotebookFrame } from '@/components/notebook-frame'
 import { Portrait } from '@/components/portrait'
 import { RatingStepper } from '@/components/rating-stepper'
 import { WashiLabel } from '@/components/washi-label'
-import { StickyNote } from '@/components/sticky-note'
-import { FrameDataTable } from '@/components/frame-data-table'
 import { NotesEditor, NotesEditorHandle } from '@/components/wysiwyg/editor'
 import { useApp } from '@/context/AppContext'
 import { CHARACTERS } from '@/lib/characters'
 import type { Move } from '@/lib/types'
-import { Button } from '@/components/button'
+import { useEffect, useRef, useState } from 'react'
+import { useNavigate, useParams } from 'react-router-dom'
 
 type DetailTab = 'notes' | 'frames' | 'clips'
 
@@ -221,9 +220,6 @@ export function MatchupDetail({ readOnly = false }: { readOnly?: boolean }) {
             <Portrait imgSrc={`${import.meta.env.BASE_URL}thumbnails/${oChar.name}.webp`} tag={oChar.tag} tone="default" size={48} />
             <div className="flex flex-col">
               <h2 className="font-display-lg font-caveat text-ink">{title}</h2>
-              <span className="font-elite text-xs text-ink3">
-                matchup #{pIndex + 1} · {matchup ? `edited ${new Date(matchup.updatedAt).toLocaleDateString()}` : 'new'}
-              </span>
             </div>
             <div className='flex flex-col'>
               <h3 className='font-display-xs font-500 text-ink2'>Ease of matchup</h3>
@@ -234,7 +230,12 @@ export function MatchupDetail({ readOnly = false }: { readOnly?: boolean }) {
                 className="ml-auto"
               />
             </div>
-              {/* <Button size="sm">Clear</Button> */}
+              <div className='flex items-center justify-end w-full'>
+                <p className="font-elite text-xs text-ink3">
+                matchup #{pIndex + 1} · {matchup ? `edited ${new Date(matchup.updatedAt).toLocaleDateString()}` : 'new'}
+                </p>
+                <Button size="sm">Clear</Button>
+              </div>
           </div>
 
           {/* Notes editor */}
@@ -300,7 +301,7 @@ export function MatchupDetail({ readOnly = false }: { readOnly?: boolean }) {
           </div> */}
 
           {/* Actions footer */}
-          <div
+          {/* <div
             className="px-4 py-3 flex flex-wrap items-center gap-3 border-t-2"
             style={{ borderTop: '2px dashed var(--color-rule)' }}
           >
@@ -333,8 +334,8 @@ export function MatchupDetail({ readOnly = false }: { readOnly?: boolean }) {
               >
                 #{pIndex + 2} →
               </button>
-            </div>
-          </div>
+            </div> */}
+          {/* </div> */}
         </div>
       </div>
     </NotebookFrame>
