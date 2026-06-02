@@ -167,7 +167,7 @@ export function WYSIWYGToolbar({ editor, opponentCharId, playerCharacterId, matc
           <button
             type="button"
             onClick={() => setCurrentDialog(currentDialog === "combo" ? "" : "combo")}
-            className="font-fredoka font-500 text-sm bg-gold border-2 border-goldDk text-brown px-2 h-8 shadow-stamp-sm hover:bg-goldDk hover:text-ink transition-colors"
+            className="font-fredoka font-500 text-sm bg-gold border-2 border-goldDk text-goldDk px-2 h-8 shadow-stamp-sm hover:bg-goldDk hover:text-ink transition-colors"
             style={{ borderRadius: 'var(--radius-sm)' }}
           >
             + combo
