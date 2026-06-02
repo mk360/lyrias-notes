@@ -12,6 +12,7 @@ export const COMBO_CHAIN_OPTIONS: { value: ConnectorType; label: string; display
   { value: 'cancel', label: 'Cancel', display: '>'   },
   { value: 'delay',  label: 'Delay',  display: 'dl.' },
   { value: 'stance switch',  label: 'Stance Switch',  display: '~' },
+  { value: "microdash", label: "Microdash", display: "md." }
 ]
 
 export function ConnectorPicker({ value, onChange, onClose }: ConnectorPickerProps) {

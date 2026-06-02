@@ -230,12 +230,6 @@ export function MatchupDetail({ readOnly = false }: { readOnly?: boolean }) {
                 className="ml-auto"
               />
             </div>
-              <div className='flex items-center justify-end w-full'>
-                <p className="font-elite text-xs text-ink3">
-                matchup #{pIndex + 1} · {matchup ? `edited ${new Date(matchup.updatedAt).toLocaleDateString()}` : 'new'}
-                </p>
-                <Button size="sm">Clear</Button>
-              </div>
           </div>
 
           {/* Notes editor */}

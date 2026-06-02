@@ -53,7 +53,7 @@ export interface Clip {
   caption: string
 }
 
-export type ConnectorType = 'cancel' | 'delay' | 'link' | "stance switch";
+export type ConnectorType = 'cancel' | 'delay' | 'link' | "stance switch" | "microdash";
 
 export interface NotationEntry {
   moveId: string
