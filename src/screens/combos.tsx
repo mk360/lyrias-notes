@@ -699,7 +699,7 @@ ${combo.description}`;
         <div className="flex-1 p-4 overflow-auto">
           {/* Header */}
           <div className="flex items-center gap-3 mb-2 flex-wrap">
-            <WashiLabel tone="gold">Section 03</WashiLabel>
+            <WashiLabel tone="sky">Section 03</WashiLabel>
             {!!charaname ? <Portrait tag='' imgSrc={`${import.meta.env.BASE_URL}thumbnails/${charaname?.name}.webp`} /> : null}
             <h1 className="font-display-xl font-caveat text-ink">Combo Notebook</h1>
             {!!charaname ? (<>

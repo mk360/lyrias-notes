@@ -75,7 +75,7 @@ export function ProgressScreen() {
             className="flex items-center gap-3 px-4 pt-4 pb-3 flex-wrap"
             style={{ borderBottom: '2px solid var(--color-rule)' }}
           >
-            <WashiLabel tone="gold">Section 04</WashiLabel>
+            <WashiLabel tone="sky">Section 04</WashiLabel>
             <h1 className="font-display-xl font-caveat" style={{ color: 'var(--color-ink)', lineHeight: 1 }}>
               My Progress
             </h1>
@@ -174,12 +174,12 @@ export function ProgressScreen() {
                 </div>
               </div>
               <div
-                className="font-elite text-xs px-2 py-0.5"
+                className="font-elite text-sm px-2 py-0.5"
                 style={{
-                  background: 'var(--color-goldLt)',
+                  background: 'var(--color-goldDk)',
                   border: '1px solid var(--color-gold)',
                   borderRadius: '3px',
-                  color: 'var(--color-goldDk)',
+                  color: 'var(--color-ink3)',
                 }}
               >
                 ★ active main
