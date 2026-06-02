@@ -3,6 +3,7 @@ import { NotebookFrame } from '@/components/notebook-frame'
 import { RatingCell } from '@/components/rating-cell'
 import { WashiLabel } from '@/components/washi-label'
 import { useApp } from '@/context/AppContext'
+import { useSettings } from '@/context/SettingsContext'
 import { CHARACTERS } from '@/lib/characters'
 import { upsertMatchup } from '@/lib/db'
 import { toPng } from 'html-to-image'
@@ -15,6 +16,7 @@ export function MatchupMatrix() {
   const navigate = useNavigate()
   const { player, matchups, setActiveMain } = useApp()
   const matrixRef = useRef<HTMLDivElement>(null);
+  useSettings();
 
   const displayMains = player.mains.length > 0 ? player.mains : []
 
@@ -114,16 +116,14 @@ export function MatchupMatrix() {
                       key={opp.id}
                       className="font-elite text-ink2 text-center"
                       style={{
-                        writingMode: 'vertical-rl',
-                        transform: 'rotate(180deg)',
                         height: 80,
-                        width: 32,
+                        width: 50,
                         padding: '4px 0',
                         verticalAlign: 'bottom',
-                        // textWrapMode: "nowrap"
                       }}
                     >
-                      {opp.name}
+                      <img src={import.meta.env.BASE_URL + `thumbnails/${opp.name}.webp`} className='block' />
+                      {opp.name.includes("(EX)") ? <p>EX</p> : <p className='text-transparent'>std</p>}
                     </th>
                   ))}
                 </tr>
@@ -148,7 +148,7 @@ export function MatchupMatrix() {
                             <div className='w-full flex justify-center'>
                               <RatingCell
                                 value={mu?.rating ?? null}
-                                size={28}
+                                size={32}
                                 onClick={() => navigate(`/matchups/${mainId}/${opp.id}`)}
                               />
                             </div>
