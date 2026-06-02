@@ -585,7 +585,7 @@ function ComboEditor({ combo, characterId, playerId, onSave, onDelete, onClose }
               </button>
             )}
             <span className="font-elite text-sm text-ink3 italic">
-              {isNew ? 'autosaves as you type' : 'edited just now · unsaved changes'}
+              autosaves as you type
             </span>
             <Button variant="secondary"
               type="button"
