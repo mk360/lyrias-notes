@@ -60,7 +60,7 @@ export function MatchupDetail({ readOnly = false }: { readOnly?: boolean }) {
 
   function handleMoveClick(move: Move) {
     if (editorRef.current?.insertMoveChipAtCursor) {
-      editorRef.current.insertMoveChipAtCursor(move.characterId, move.id)
+      editorRef.current.insertMoveChipAtCursor(move.characterId, move.input)
     }
     if (isMobile) setMobileTab('notes')
   }
@@ -285,51 +285,6 @@ export function MatchupDetail({ readOnly = false }: { readOnly?: boolean }) {
               onMoveClick={readOnly ? undefined : handleMoveClick}
             />
           </div>
-
-          {/* Floating sticky notes */}
-          {/* <div className="absolute right-24 top-1/3 pointer-events-none" style={{ zIndex: 5 }}>
-            <StickyNote tone="gold" tilt={3} className="text-xs max-w-[120px] pointer-events-auto">
-              <p className="font-fredoka font-600 text-xs mb-1">⚠ Warning</p>
-              <p>her 632146H has armor frames!</p>
-            </StickyNote>
-          </div> */}
-
-          {/* Actions footer */}
-          {/* <div
-            className="px-4 py-3 flex flex-wrap items-center gap-3 border-t-2"
-            style={{ borderTop: '2px dashed var(--color-rule)' }}
-          >
-            <span className="font-label text-ink3">actions</span>
-            <button
-              onClick={handleShare}
-              className="font-fredoka text-sm text-sky700 hover:underline"
-            >↗ share</button>
-            <button className="font-fredoka text-sm text-ink2 hover:text-ink">
-              📅 session
-            </button>
-            <button
-              onClick={() => navigate('/combos')}
-              className="font-fredoka text-sm text-ink2 hover:text-ink"
-            >
-              ⌖ combos
-            </button>
-            <div className="ml-auto flex gap-2">
-              <button
-                onClick={() => prevOpp && navigate(`/matchups/${pCharId}/${prevOpp.id}`)}
-                disabled={!prevOpp}
-                className="font-elite text-xs text-ink2 disabled:opacity-30 hover:text-ink"
-              >
-                ← #{pIndex}
-              </button>
-              <button
-                onClick={() => nextOpp && navigate(`/matchups/${pCharId}/${nextOpp.id}`)}
-                disabled={!nextOpp}
-                className="font-elite text-xs text-ink2 disabled:opacity-30 hover:text-ink"
-              >
-                #{pIndex + 2} →
-              </button>
-            </div> */}
-          {/* </div> */}
         </div>
       </div>
     </NotebookFrame>

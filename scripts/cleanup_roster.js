@@ -85,6 +85,11 @@ const EX_NARMAYA_NORMALS = NARMAYA.filter((move) => {
         move.type === "other" ||
         move.type === "super"
     );
+}).map((move) => {
+    if (move.type.includes("normal")) {
+        move.type = "normal";
+    }
+    return move;
 });
 
 EX_NARMAYA_NORMALS[EX_NARMAYA_NORMALS.findIndex((i) => i.input === "j.H[k]")].input = "j.U";
