@@ -222,7 +222,7 @@ export function MatchupDetail({ readOnly = false }: { readOnly?: boolean }) {
               <h2 className="font-display-lg font-caveat text-ink">{title}</h2>
             </div>
             <div className='flex flex-col'>
-              <h3 className='font-display-xs font-500 text-ink2'>Ease of matchup</h3>
+              <h3 className='font-display-xs font-500 text-ink2'>Matchup Rating</h3>
               <RatingStepper
                 value={matchup?.rating ?? null}
                 onChange={handleRatingChange}

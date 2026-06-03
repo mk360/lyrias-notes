@@ -1,11 +1,8 @@
 import { getMoveById } from '@/lib/moves'
-import BulletList from '@tiptap/extension-bullet-list'
 import { Color } from '@tiptap/extension-color'
-import Heading from '@tiptap/extension-heading'
 import Placeholder from '@tiptap/extension-placeholder'
 import TextStyle from '@tiptap/extension-text-style'
 import Underline from '@tiptap/extension-underline'
-import OrderedList from '@tiptap/extension-ordered-list'
 import { EditorContent, useEditor } from '@tiptap/react'
 import StarterKit from '@tiptap/starter-kit'
 import { forwardRef, useCallback, useEffect, useImperativeHandle } from 'react'
@@ -52,17 +49,16 @@ export const NotesEditor = forwardRef<NotesEditorHandle, NotesEditorProps>(funct
 
   const editor = useEditor({
     extensions: [
-      StarterKit.configure({ heading: false, bulletList: false }),
-      Heading.configure({ levels: [1, 2, 3] }),
-      BulletList,      
+      StarterKit.configure({ heading: {
+        levels: [1, 2, 3]
+      }, bulletList: {} }),
       Underline,
       TextStyle,
       Color,
       Placeholder.configure({ placeholder: 'Start writing your notes…' }),
       MoveChipNode,
       InlineClipNode,
-      ComboBlockNode,
-      OrderedList
+      ComboBlockNode
     ],
     content: Object.keys(content).length ? content : undefined,
     editable: !readOnly,

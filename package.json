@@ -10,11 +10,8 @@
     "lint": "eslint src --ext .ts,.tsx"
   },
   "dependencies": {
-    "@tiptap/extension-bullet-list": "^2.10.3",
     "@tiptap/extension-color": "^2.10.3",
-    "@tiptap/extension-heading": "^2.10.3",
     "@tiptap/extension-list-item": "^2.10.3",
-    "@tiptap/extension-ordered-list": "^3.24.0",
     "@tiptap/extension-placeholder": "^2.10.3",
     "@tiptap/extension-text-style": "^2.10.3",
     "@tiptap/extension-underline": "^2.10.3",
