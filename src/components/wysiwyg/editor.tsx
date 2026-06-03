@@ -5,6 +5,7 @@ import Heading from '@tiptap/extension-heading'
 import Placeholder from '@tiptap/extension-placeholder'
 import TextStyle from '@tiptap/extension-text-style'
 import Underline from '@tiptap/extension-underline'
+import OrderedList from '@tiptap/extension-ordered-list'
 import { EditorContent, useEditor } from '@tiptap/react'
 import StarterKit from '@tiptap/starter-kit'
 import { forwardRef, useCallback, useEffect, useImperativeHandle } from 'react'
@@ -60,7 +61,8 @@ export const NotesEditor = forwardRef<NotesEditorHandle, NotesEditorProps>(funct
       Placeholder.configure({ placeholder: 'Start writing your notes…' }),
       MoveChipNode,
       InlineClipNode,
-      ComboBlockNode
+      ComboBlockNode,
+      OrderedList
     ],
     content: Object.keys(content).length ? content : undefined,
     editable: !readOnly,

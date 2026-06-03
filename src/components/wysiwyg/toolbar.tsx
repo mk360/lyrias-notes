@@ -152,7 +152,16 @@ export function WYSIWYGToolbar({ editor, opponentCharId, playerCharacterId, matc
           onClick={() => editor.chain().focus().toggleBulletList().run()}
           className={btnClass(editor.isActive('bulletList')) + " flex-1"}
           style={{ borderRadius: 'var(--radius-sm)', fontSize: 16 }}
-        >Bullet list</button>
+        >·</button>
+        <button
+          type="button"
+          onClick={() => editor.chain().focus().toggleOrderedList().run()}
+          className={btnClass(editor.isActive('orderedList'))}
+          style={{ borderRadius: 'var(--radius-sm)' }}
+          title="Numbered list"
+        >
+          1.
+        </button>
         {/* <button type="" */}
 
         {/* Clip insert button */}

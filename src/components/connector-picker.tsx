@@ -93,6 +93,7 @@ export function ConnectorToken({
     delay:  'dl.',
     link:   ',',
     "stance switch": "~",
+    "microdash": "md."
   }
 
   return (
