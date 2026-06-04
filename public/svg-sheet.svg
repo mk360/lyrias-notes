@@ -1,24 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
 
   <!-- id="icon-bullet-list" -->
-  <symbol id="icon-bullet-list" viewBox="0 0 24 24">
+  <symbol id="icon-bullet-list" viewBox="0 0 5 5">
     <circle cx="2" cy="4" r="2"/>
-    <rect x="7" y="2.5" width="17" height="3" rx="1.5"/>
-    <circle cx="2" cy="12" r="2"/>
-    <rect x="7" y="10.5" width="17" height="3" rx="1.5"/>
-    <circle cx="2" cy="20" r="2"/>
-    <rect x="7" y="18.5" width="17" height="3" rx="1.5"/>
   </symbol>
 
-  <symbol id="icon-ordered-list" viewBox="0 0 24 24">
+  <symbol id="icon-ordered-list" viewBox="0 0 10 10">
     <!-- Numbers -->
         <text x="0" y="6" font-family="sans-serif" font-size="7" font-weight="700" fill="currentColor">1</text>
-        <text x="0" y="14" font-family="sans-serif" font-size="7" font-weight="700" fill="currentColor">2</text>
-        <text x="0" y="22" font-family="sans-serif" font-size="7" font-weight="700" fill="currentColor">3</text>
-
-        <!-- Lines -->
-        <rect x="8" y="2.5" width="16" height="3" rx="1.5"/>
-        <rect x="8" y="10.5" width="16" height="3" rx="1.5"/>
-        <rect x="8" y="18.5" width="16" height="3" rx="1.5"/>
     </symbol>
 </svg>
