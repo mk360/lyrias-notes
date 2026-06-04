@@ -174,12 +174,11 @@ export function ProgressScreen() {
                 </div>
               </div>
               <div
-                className="font-elite text-sm px-2 py-0.5"
+                className="font-elite text-goldLt text-sm px-2 py-0.5"
                 style={{
                   background: 'var(--color-goldDk)',
                   border: '1px solid var(--color-gold)',
                   borderRadius: '3px',
-                  color: 'var(--color-ink3)',
                 }}
               >
                 ★ active main
