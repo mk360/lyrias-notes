@@ -37,6 +37,14 @@
     />
   </head>
   <body>
+    <div id="sheet"></div>
+    <script type="module">
+      fetch(`${import.meta.env.BASE_URL}svg-sheet.svg`).then((content) => {
+        return content.text()
+      }).then((content) => {
+        document.getElementById("sheet").innerHTML = content;
+      });
+    </script>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>

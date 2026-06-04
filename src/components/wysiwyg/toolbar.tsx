@@ -152,7 +152,11 @@ export function WYSIWYGToolbar({ editor, opponentCharId, playerCharacterId, matc
           onClick={() => editor.chain().focus().toggleBulletList().run()}
           className={btnClass(editor.isActive('bulletList')) + " flex-1"}
           style={{ borderRadius: 'var(--radius-sm)', fontSize: 16 }}
-        >·</button>
+        >
+          <svg fill="currentColor" width="16" height="16">
+            <use href="#icon-bullet-list" />
+          </svg>
+        </button>
         <button
           type="button"
           onClick={() => editor.chain().focus().toggleOrderedList().run()}
@@ -160,7 +164,9 @@ export function WYSIWYGToolbar({ editor, opponentCharId, playerCharacterId, matc
           style={{ borderRadius: 'var(--radius-sm)' }}
           title="Numbered list"
         >
-          1.
+          <svg fill="currentColor" width="16" height="16">
+            <use href="#icon-ordered-list" />
+          </svg>
         </button>
         {/* <button type="" */}
 
