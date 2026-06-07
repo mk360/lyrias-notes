@@ -37,15 +37,16 @@ function ComboBlockNodeView({ node, deleteNode }: ComboBlockNodeViewProps) {
         <div className="flex flex-wrap items-center gap-1 p-2 bg-paper border border-rule" style={{ borderRadius: 'var(--radius-sm)', borderStyle: 'dashed' }}>
           {combo.notation.map((n, i) => {
             const move = getMoveById(n.moveId)
+            const connector = COMBO_CHAIN_OPTIONS.find((con) => con.value === n.connector);
             return (
               <React.Fragment key={i}>
-                {i > 0 && <span className="font-caveat font-bold text-ink2 text-sm">→</span>}
                 <span
                   className="font-elite text-xs bg-paper2 border-2 border-ink px-2 py-px"
                   style={{ borderRadius: 'var(--radius-sm)', boxShadow: '1px 1px 0 var(--color-ink)' }}
                 >
-                  {move?.name || move?.input}
+                  {move?.input}
                 </span>
+                {i < combo.notation.length && <span className="font-caveat font-bold text-ink2 text-sm">{connector?.display}</span>}
               </React.Fragment>
             )
           })}
