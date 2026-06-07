@@ -111,6 +111,7 @@ export const NotesEditor = forwardRef<NotesEditorHandle, NotesEditorProps>(funct
             matchupId={matchupId}
             onImport={(importedNotes, importedRating) => {
               updateMatchupNotes(playerCharId, opponentCharId!, importedNotes)
+              editor?.chain().setContent(importedNotes, true).run();
               if (importedRating !== null) updateMatchupRating(playerCharId, opponentCharId!, importedRating)
             }}
             compact={compact}
