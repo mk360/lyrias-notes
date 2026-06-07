@@ -80,6 +80,14 @@ export function ConnectorPicker({ value, onChange, onClose }: ConnectorPickerPro
   )
 }
 
+const display: Record<ConnectorType, string> = {
+  cancel: '>',
+  delay:  'dl.',
+  link:   ',',
+  "stance switch": "~",
+  "microdash": "md."
+}
+
 // Helper to render a connector token
 export function ConnectorToken({
   value,
@@ -88,13 +96,6 @@ export function ConnectorToken({
   value: ConnectorType
   onClick?: () => void
 }) {
-  const display: Record<ConnectorType, string> = {
-    cancel: '>',
-    delay:  'dl.',
-    link:   ',',
-    "stance switch": "~",
-    "microdash": "md."
-  }
 
   return (
     <button

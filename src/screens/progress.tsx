@@ -134,7 +134,6 @@ export function ProgressScreen() {
                 key={`char-${player.activeMain}`}
                 content={charDoc}
                 onChange={handleCharChange}
-                opponentCharId={player.activeMain}
                 playerCharId={player.activeMain}
                 playerId={player.id}
               />

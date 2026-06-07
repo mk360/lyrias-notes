@@ -4,8 +4,9 @@ import { createClipFromFile, getCombosByCharacter } from '@/lib/db'
 import { CLIP_MAX_BYTES } from '@/lib/globals'
 import { getMovesByCharacter } from '@/lib/moves'
 import type { Move } from '@/lib/types'
-import type { Editor } from '@tiptap/react'
-import React, { useRef, useState } from 'react'
+import type { Editor, JSONContent } from '@tiptap/react'
+import { useRef, useState } from 'react'
+import { exportMatchupNote, checkHasClips, parseLNBKFile } from '@/lib/lnbk'
 
 interface WYSIWYGToolbarProps {
   editor: Editor | null
@@ -13,6 +14,7 @@ interface WYSIWYGToolbarProps {
   playerCharacterId: string;
   matchupId?: string
   compact?: boolean
+  onImport?(notes: JSONContent, rating: number | null): void;
 }
 
 type OpenedDialog = "" | "clip" | "move" | "combo";
@@ -25,12 +27,13 @@ const COLORS = [
   { name: 'sky',    value: '#2B638A' },
 ]
 
-export function WYSIWYGToolbar({ editor, opponentCharId, playerCharacterId, matchupId, compact = false }: WYSIWYGToolbarProps) {
+export function WYSIWYGToolbar({ editor, opponentCharId, playerCharacterId, onImport, compact = false }: WYSIWYGToolbarProps) {
   const [currentDialog, setCurrentDialog] = useState<OpenedDialog>("");
   const [moveQuery, setMoveQuery] = useState('');
   const [comboQuery, setComboQuery] = useState("");
   const [clipTitle, setClipTitle] = useState('')
   const { player } = useApp();
+  const importInputRef = useRef<HTMLInputElement>(null);
   const { show, close } = useDialog();
   const combos = getCombosByCharacter(player.id, playerCharacterId).filter((c) => {
     const lowercaseQuery = comboQuery.toLowerCase();
@@ -53,6 +56,93 @@ export function WYSIWYGToolbar({ editor, opponentCharId, playerCharacterId, matc
     }).run()
     setCurrentDialog("");
     setMoveQuery('')
+  }
+
+  function handleImportExport() {
+    show({
+      variant: 'info',
+      title: 'Import / Export',
+      message: 'Import notes from a file you received, or export your notes to share them with others. You can close this by pressing Escape.',
+      primary: {
+        label: '↙ Export notes',
+        onClick: handleExport,
+      },
+      secondary: {
+        label: '↗ Import notes',
+        onClick: () => {
+          importInputRef.current?.click();
+          close();
+        }
+      },
+    })
+  }
+
+  function handleExport() {
+    close();
+    const notes = editor?.getJSON();
+    if (!playerCharacterId || !notes) return
+    const hasClips = checkHasClips(notes);
+    if (hasClips) {
+      show({
+        variant: 'warning',
+        title: 'Clips will be replaced',
+        message: 'Your notes contain clips. These will be replaced with text placeholders in the exported file and cannot be restored on import.',
+        primary: {
+          label: 'Proceed anyway',
+          onClick: () => exportMatchupNote(playerCharacterId, opponentCharId, notes.rating ?? null, notes),
+        },
+        secondary: {
+          label: 'Cancel',
+          onClick: () => {},
+        },
+      })
+    } else {
+      exportMatchupNote(playerCharacterId, opponentCharId, notes.rating ?? null, notes)
+    }
+  }
+
+  async function handleImportFile(e: React.ChangeEvent<HTMLInputElement>) {
+    const file = e.target.files?.[0];
+    const notes = editor?.getJSON();
+    e.target.value = ''
+    if (!file || !onImport) return
+
+    try {
+      const data = await parseLNBKFile(file)
+      // Check collision
+      const hasExistingNotes =
+        notes &&
+        typeof notes === 'object' &&
+        (notes.content?.length ?? 0) > 0
+
+      if (hasExistingNotes) {
+        show({
+          variant: 'warning',
+          title: 'Overwrite existing notes?',
+          message: `You already have notes for this matchup. Importing will overwrite them permanently.`,
+          primary: {
+            label: 'Overwrite',
+            onClick: () => onImport(data.notes, data.rating),
+          },
+          secondary: {
+            label: 'Cancel',
+            onClick: close,
+          },
+        })
+      } else {
+        onImport(data.notes, data.rating)
+      }
+    } catch (err: any) {
+      show({
+        variant: 'danger',
+        title: 'Import failed',
+        message: err.message ?? 'Something went wrong reading this file.',
+        primary: {
+          label: 'OK',
+          onClick: close,
+        },
+      })
+    }
   }
 
   function insertClip(file: File, title: string) {
@@ -98,7 +188,7 @@ export function WYSIWYGToolbar({ editor, opponentCharId, playerCharacterId, matc
   return (
     <div className="relative">
       <div
-        className="flex flex-wrap items-center gap-1 p-2 border-b-2 border-ink bg-paper">
+        className="flex flex-wrap items-center gap-2 p-2 border-b-2 border-ink bg-paper">
         <button
           type="button"
           onClick={() => editor.chain().focus().toggleBold().run()}
@@ -123,6 +213,25 @@ export function WYSIWYGToolbar({ editor, opponentCharId, playerCharacterId, matc
           title="Underline"
         >U</button>
 
+        {/* Bullet list */}
+        <button
+          type="button"
+          onClick={() => editor.chain().focus().toggleBulletList().run()}
+          className={btnClass(editor.isActive('bulletList')) + " flex-1"}
+          style={{ borderRadius: 'var(--radius-sm)', fontSize: 16 }}
+        >
+          • —
+        </button>
+        <button
+          type="button"
+          onClick={() => editor.chain().focus().toggleOrderedList().run()}
+          className={btnClass(editor.isActive('orderedList')) + " flex-1"}
+          style={{ borderRadius: 'var(--radius-sm)' }}
+          title="Numbered list"
+        >
+          1.
+        </button>
+
         {/* Heading select */}
         {!compact && (
           <select
@@ -145,26 +254,6 @@ export function WYSIWYGToolbar({ editor, opponentCharId, playerCharacterId, matc
             <option value="3">Small Heading</option>
           </select>
         )}
-
-        {/* Bullet list */}
-        <button
-          type="button"
-          onClick={() => editor.chain().focus().toggleBulletList().run()}
-          className={btnClass(editor.isActive('bulletList')) + " flex-1"}
-          style={{ borderRadius: 'var(--radius-sm)', fontSize: 16 }}
-        >
-          •—
-        </button>
-        <button
-          type="button"
-          onClick={() => editor.chain().focus().toggleOrderedList().run()}
-          className={btnClass(editor.isActive('orderedList')) + " flex-1"}
-          style={{ borderRadius: 'var(--radius-sm)' }}
-          title="Numbered list"
-        >
-          1.
-        </button>
-        {/* <button type="" */}
 
         {/* Clip insert button */}
           <button
@@ -196,6 +285,16 @@ export function WYSIWYGToolbar({ editor, opponentCharId, playerCharacterId, matc
           </button>
         )}
 
+         <button
+          type="button"
+          onClick={handleImportExport}
+          className="font-fredoka font-500 text-sm border-2 px-2 h-8 shadow-stamp-sm transition-colors bg-paper2 text-ink border-ink"
+          style={{
+            borderRadius: 'var(--radius-sm)',
+          }}>
+          ⇅ share
+        </button>
+
         {/* Color swatches */}
         <div className="flex gap-1 items-center ml-1">
           {!compact && <span className="font-label text-ink3">color</span>}
@@ -209,6 +308,13 @@ export function WYSIWYGToolbar({ editor, opponentCharId, playerCharacterId, matc
               title={c.name}
             />
           ))}
+          <input
+            ref={importInputRef}
+            type="file"
+            accept=".lnbk"
+            onChange={handleImportFile}
+            className="hidden"
+          />
         </div>
       </div>
 

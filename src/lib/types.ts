@@ -81,6 +81,7 @@ export interface Combo {
   clipId: string | null
   updatedAt: string
   createdAt: string
+  worksAgainst: "everyone" | "bigBodiesOnly" | "noBigBodies"
 }
 
 export type RatingTier = 'hellish' | 'rough' | 'mirror' | 'workable' | 'free' | 'unrated'

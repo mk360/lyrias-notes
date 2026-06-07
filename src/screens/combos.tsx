@@ -13,7 +13,7 @@ import {
   getCombosByCharacter,
   saveCombo
 } from '@/lib/db'
-import { getMoveById, getMovesByCharacterGrouped } from '@/lib/moves'
+import { getMoveById, getMovesByCharacterGrouped, MOVES } from '@/lib/moves'
 import type { Combo, ConnectorType } from '@/lib/types'
 import React, { useState } from 'react'
 import { v4 as uuidv4 } from 'uuid'
@@ -36,7 +36,6 @@ function DifficultyPips({ value, onChange }: { value: 1|2|3|4|5; onChange?: (v: 
           {n}
         </button>
       ))}
-      <span className="font-elite text-xs text-ink3 ml-1">diff · {value}/5</span>
     </div>
   )
 }
@@ -199,6 +198,7 @@ function ComboEditor({ combo, characterId, playerId, onSave, onDelete, onClose }
     title: '',
     notation: [],
     damage: 0,
+    worksAgainst: "everyone",
     hits: 0,
     counterhit: false,
     meter: 0,
@@ -209,7 +209,8 @@ function ComboEditor({ combo, characterId, playerId, onSave, onDelete, onClose }
     clipId: null,
     ...combo,
   })
-  const [tagInput, setTagInput] = useState('')
+  const [tagInput, setTagInput] = useState('');
+  const [customMoveInput, setCustomMoveInput] = useState("");
 
   const grouped = getMovesByCharacterGrouped(characterId)
 
@@ -227,12 +228,12 @@ function ComboEditor({ combo, characterId, playerId, onSave, onDelete, onClose }
     set('tags', (form.tags ?? []).filter(t => t !== tag))
   }
 
-  function addMoveToNotation(moveId: string) {
+  function addMoveToNotation(moveId: string, guardButton = false) {
     const prev = form.notation ?? []
     const updated = prev.length > 0
       ? prev.map((e, i) => i === prev.length - 1 ? { ...e, connector: (e.connector ?? 'link') as ConnectorType } : e)
       : prev
-    set('notation', [...updated, { characterId, moveId }])
+    set('notation', [...updated, { characterId, moveId, holdGuard: guardButton }])
   }
 
   function removeMoveFromNotation(idx: number) {
@@ -243,6 +244,7 @@ function ComboEditor({ combo, characterId, playerId, onSave, onDelete, onClose }
     const now = new Date().toISOString()
     const saved: Combo = {
       id: combo.id ?? uuidv4(),
+      worksAgainst: form.worksAgainst!,
       playerId,
       characterId,
       counterhit: form.counterhit!,
@@ -363,6 +365,161 @@ function ComboEditor({ combo, characterId, playerId, onSave, onDelete, onClose }
                   Counterhit starter
                 </label>
             </div>
+            <label className='font-label block'>Interaction with big bodies</label>
+            <div className='flex gap-2 items-center'>              
+              <div
+                onClick={() => setForm((f) => ({
+                  ...f,
+                  worksAgainst: "everyone"
+                }))}
+                style={{
+                  width: 20,
+                  height: 20,
+                  flexShrink: 0,
+                  backgroundColor: form.worksAgainst === "everyone" ? 'var(--color-ink)' : 'var(--color-paper)',
+                  border: '2px solid var(--color-ink)',
+                  borderRadius: 'var(--radius-lg)',
+                  boxShadow: 'var(--shadow-stamp-sm)',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  cursor: 'pointer',
+                  transition: 'background 0.1s',
+                }}
+              >
+                {form.worksAgainst === "everyone" && (
+                  <span style={{
+                    fontFamily: 'Caveat, cursive',
+                    fontSize: 14,
+                    fontWeight: 700,
+                    color: 'var(--color-paper)',
+                    lineHeight: 1,
+                  }}>
+                    ✓
+                  </span>
+                )}
+              </div>
+               <label
+                  onClick={() => setForm((f) => {
+                    return {
+                      ...f,
+                      worksAgainst: "everyone"
+                    }
+                  })}
+                  style={{
+                    fontFamily: 'Fredoka',
+                    fontSize: 15,
+                    color: 'var(--color-ink)',
+                    cursor: 'pointer',
+                    userSelect: 'none',
+                  }}
+                >
+                  Not specified (works against the whole roster).
+                </label>
+            </div>
+            <div className='flex gap-2 items-center'>              
+              <div
+                onClick={() => setForm((f) => ({
+                  ...f,
+                  worksAgainst: "bigBodiesOnly",
+                }))}
+                style={{
+                  width: 20,
+                  height: 20,
+                  flexShrink: 0,
+                  background: form.worksAgainst === "bigBodiesOnly" ? 'var(--color-ink)' : 'var(--color-paper)',
+                  border: '2px solid var(--color-ink)',
+                  borderRadius: 'var(--radius-lg)',
+                  boxShadow: 'var(--shadow-stamp-sm)',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  cursor: 'pointer',
+                  transition: 'background 0.1s',
+                }}
+              >
+                {form.worksAgainst === "bigBodiesOnly" && (
+                  <span style={{
+                    fontFamily: 'Caveat, cursive',
+                    fontSize: 14,
+                    fontWeight: 700,
+                    color: 'var(--color-paper)',
+                    lineHeight: 1,
+                  }}>
+                    ✓
+                  </span>
+                )}
+              </div>
+               <label
+                  onClick={() => setForm((f) => {
+                    return {
+                      ...f,
+                      worksAgainst: "bigBodiesOnly",
+                    }
+                  })}
+                  style={{
+                    fontFamily: 'Fredoka',
+                    fontSize: 15,
+                    color: 'var(--color-ink)',
+                    cursor: 'pointer',
+                    userSelect: 'none',
+                  }}
+                >
+                  Only works against Ladiva and Vaseraga.
+                </label>
+            </div>
+            <div className='flex gap-2 items-center'>              
+              <div
+                onClick={() => setForm((f) => ({
+                  ...f,
+                  worksAgainst: "noBigBodies",
+                }))}
+                style={{
+                  width: 20,
+                  height: 20,
+                  flexShrink: 0,
+                  background: form.worksAgainst === "noBigBodies" ? 'var(--color-ink)' : 'var(--color-paper)',
+                  border: '2px solid var(--color-ink)',
+                  borderRadius: 'var(--radius-lg)',
+                  boxShadow: 'var(--shadow-stamp-sm)',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  cursor: 'pointer',
+                  transition: 'background 0.1s',
+                }}
+              >
+                {form.worksAgainst === "noBigBodies" && (
+                  <span style={{
+                    fontFamily: 'Caveat, cursive',
+                    fontSize: 14,
+                    fontWeight: 700,
+                    color: 'var(--color-paper)',
+                    lineHeight: 1,
+                  }}>
+                    ✓
+                  </span>
+                )}
+              </div>
+               <label
+                  onClick={() => setForm((f) => {
+                    return {
+                      ...f,
+                      worksAgainst: "noBigBodies"
+                    }
+                  })}
+                  style={{
+                    fontFamily: 'Fredoka',
+                    fontSize: 15,
+                    color: 'var(--color-ink)',
+                    cursor: 'pointer',
+                    userSelect: 'none',
+                  }}
+                >
+                  Drops against Ladiva and Vaseraga, works on the rest of the cast.
+                </label>
+            </div>
+            
           </div>
 
           {/* Notation builder */}
@@ -372,14 +529,14 @@ function ComboEditor({ combo, characterId, playerId, onSave, onDelete, onClose }
             <div
               className="flex flex-[3] flex-wrap items-center gap-1 p-3 border-2 border-ink mb-3"
               style={{ borderRadius: 'var(--radius-sm)', background: 'var(--color-paper2)', borderStyle: 'dashed' }}>
+              {form.counterhit && <span>CH</span>}
               {(form.notation ?? []).map((n, i) => {
                 const move = getMoveById(n.moveId);
                 const isLast = i === form.notation!.length - 1;
                 return (
                   <React.Fragment key={i}>
-                    {form.counterhit && i === 0 && <span>CH</span>}
                     <MoveChip
-                      label={move?.input}
+                      label={move ? `${n.holdGuard ? "[G]": ""} ${move?.input}`.trim() : n.moveId}
                       onRemove={() => removeMoveFromNotation(i)}
                     />
                     {!isLast &&
@@ -427,19 +584,44 @@ function ComboEditor({ combo, characterId, playerId, onSave, onDelete, onClose }
                 <div key={label} className="flex items-center gap-2 mb-2 flex-wrap">
                   <span className="font-label text-ink3 w-16">{label}</span>
                   {moves.map(m => (
-                    <button
-                      key={m.id}
-                      type="button"
-                      onClick={() => addMoveToNotation(m.id)}
-                      className="font-elite text-sm bg-paper border-2 border-ink px-2 py-px hover:bg-sky100 transition-colors shadow-stamp-sm"
-                      style={{ borderRadius: 'var(--radius-sm)' }}
-                      title={moveDisplay === "name" ? m.input : m.name}
-                    >
+                    <div key={m.id}>
+                      <button type="button"
+                        onClick={() => {
+                          addMoveToNotation(m.id, true);
+                        }}
+                        className='font-elite text-sm bg-paper border-2 border-ink px-1 py-px hover:bg-sky100 shadow-stamp-sm rounded-tl-lg rounded-bl-lg transition-colors'
+                        title={`${moveDisplay === "name" ? m.name : m.input} while holding Guard button`}
+                      >
+                        [G]
+                      </button> 
+                      <button
+                        type="button"
+                        onClick={() => addMoveToNotation(m.id)}
+                        className="font-elite text-sm bg-paper border-2 border-l-0 border-ink px-1 py-px hover:bg-sky100 transition-colors shadow-stamp-sm rounded-tr-lg rounded-br-lg"
+                        title={moveDisplay === "name" ? m.input : m.name}
+                      >
                       {moveDisplay === "name" ? m.name || m.input : m.input}
-                    </button>
+                      </button>
+                    </div>
                   ))}
                 </div>
               ))}
+              <div className='flex gap-2 items-center'>
+                <label htmlFor='free-input' className='font-label text-ink3'>Or add your input here</label>
+                <input value={customMoveInput} onChange={(e) => {
+                  setCustomMoveInput(e.target.value.trim());
+                }} id="free-input" className="font-elite text-sm bg-paper border-2 border-ink px-2 py-2 outline-none focus:border-sky700 transition-colors" />
+                <Button onClick={() => {
+                  const startsWithGuard = customMoveInput.toLowerCase().startsWith("[g]");
+                  const rawInput = customMoveInput.replace(/\[g\]/i, "");
+                  const move = MOVES.find((m) => m.input === rawInput && m.characterId === characterId);
+                  if (move) {
+                    addMoveToNotation(move.id, startsWithGuard);
+                  } else {
+                    addMoveToNotation(rawInput);
+                  }
+                }} variant="secondary" size='sm'>Add</Button>
+              </div>
             </div>
           </div>
 
@@ -489,10 +671,6 @@ function ComboEditor({ combo, characterId, playerId, onSave, onDelete, onClose }
                 <option value={-3}>-3 BP</option>
               </select>
             </div>
-          </div>
-
-          {/* Situation / Difficulty */}
-          <div className="grid grid-cols-2 gap-4">
             <div>
               <label className="font-label block mb-1">Situation</label>
               <select
@@ -501,21 +679,19 @@ function ComboEditor({ combo, characterId, playerId, onSave, onDelete, onClose }
                 className="w-full font-fredoka text-sm bg-paper border-2 border-ink px-3 py-2 cursor-pointer"
                 style={{ borderRadius: 'var(--radius-sm)', boxShadow: '1.2px 1.5px 0 rgba(31,45,62,0.33)' }}
               >
-                {['any', 'midscreen', 'corner', 'standing', 'aerial', 'counterhit'].map(s => (
+                {['any', 'midscreen', 'corner', 'standing', 'aerial'].map(s => (
                   <option key={s} value={s}>{s}</option>
                 ))}
               </select>
             </div>
-            <div>
-              <label className="font-label block mb-1">Difficulty</label>
-              <DifficultyPips
-                value={(form.difficulty ?? 1) as 1|2|3|4|5}
-                onChange={v => set('difficulty', v)}
-              />
-            </div>
           </div>
-
-          {/* Tags */}
+          <div>
+            <label className="font-label block mb-1">Difficulty</label>
+            <DifficultyPips
+              value={(form.difficulty ?? 1) as 1|2|3|4|5}
+              onChange={v => set('difficulty', v)}
+            />
+          </div>
           <div>
             <label className="font-label block mb-1">Tags</label>
             <div className="flex flex-wrap gap-1.5 mb-2">

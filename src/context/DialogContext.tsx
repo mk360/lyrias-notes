@@ -14,6 +14,7 @@ export interface DialogOptions {
   message: string
   primary: DialogAction
   secondary?: DialogAction
+  tertiary?: DialogAction;
 }
 
 interface DialogContextValue {

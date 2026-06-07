@@ -10,6 +10,7 @@ import { ComboBlockNode } from './nodes/combo-block-node'
 import { InlineClipNode } from './nodes/inline-clip-node'
 import { MoveChipNode, setMoveResolver } from './nodes/move-chip-node'
 import { WYSIWYGToolbar } from './toolbar'
+import { useApp } from '@/context/AppContext'
 
 interface NotesEditorProps {
   content: object
@@ -32,17 +33,17 @@ export const NotesEditor = forwardRef<NotesEditorHandle, NotesEditorProps>(funct
   onChange,
   opponentCharId,
   playerCharId,
-  playerId,
   matchupId,
   readOnly = false,
   compact = false,
 }, ref) {
+  const { updateMatchupRating, updateMatchupNotes } = useApp();
   // Register move resolver
   useEffect(() => {
     setMoveResolver((charId, moveId) => {
       const move = getMoveById(moveId)
       if (!move) return moveId
-      return `${move.name} · ${move.startup}f`
+      return move.input
     })
   }, [])
 
@@ -108,6 +109,10 @@ export const NotesEditor = forwardRef<NotesEditorHandle, NotesEditorProps>(funct
             playerCharacterId={playerCharId}
             opponentCharId={opponentCharId}
             matchupId={matchupId}
+            onImport={(importedNotes, importedRating) => {
+              updateMatchupNotes(playerCharId, opponentCharId!, importedNotes)
+              if (importedRating !== null) updateMatchupRating(playerCharId, opponentCharId!, importedRating)
+            }}
             compact={compact}
           />
         )}
