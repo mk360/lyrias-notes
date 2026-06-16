@@ -1,7 +1,6 @@
 import type { Move } from './types'
 import { CHARACTERS } from './characters';
 
-//@ts-ignore
 const cleanedDataModules = import.meta.glob('@/cleaned_data/*.json', { eager: true }) as Record<string, { default: Move[] }>
 
 export const MOVES: Move[] = [];
