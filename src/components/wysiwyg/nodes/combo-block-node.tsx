@@ -4,6 +4,7 @@ import React from 'react'
 import { getComboById } from '@/lib/db'
 import { getMoveById } from '@/lib/moves'
 import { COMBO_CHAIN_OPTIONS } from '@/components/connector-picker'
+import { ConnectorType } from '@/lib/types'
 
 interface ComboBlockNodeViewProps {
   node: { attrs: { comboId: string } }
@@ -37,16 +38,16 @@ function ComboBlockNodeView({ node, deleteNode }: ComboBlockNodeViewProps) {
         <div className="flex flex-wrap items-center gap-1 p-2 bg-paper border border-rule" style={{ borderRadius: 'var(--radius-sm)', borderStyle: 'dashed' }}>
           {combo.notation.map((n, i) => {
             const move = getMoveById(n.moveId)
-            const connector = COMBO_CHAIN_OPTIONS.find((con) => con.value === n.connector);
+            const connector = COMBO_CHAIN_OPTIONS[n.connector as ConnectorType];
             return (
               <React.Fragment key={i}>
                 <span
                   className="font-elite text-xs bg-paper2 border-2 border-ink px-2 py-px"
                   style={{ borderRadius: 'var(--radius-sm)', boxShadow: '1px 1px 0 var(--color-ink)' }}
                 >
-                  {move?.input}
+                  {move?.input ?? n.moveId}
                 </span>
-                {i < combo.notation.length && <span className="font-caveat font-bold text-ink2 text-sm">{connector?.display}</span>}
+                {i < combo.notation.length && !!connector && <span className="font-caveat font-bold text-ink2 text-sm">{connector.display}</span>}
               </React.Fragment>
             )
           })}

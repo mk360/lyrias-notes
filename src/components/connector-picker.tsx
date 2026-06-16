@@ -7,13 +7,31 @@ interface ConnectorPickerProps {
   onClose: () => void
 }
 
-export const COMBO_CHAIN_OPTIONS: { value: ConnectorType; label: string; display: string }[] = [
-  { value: 'link',   label: 'Link',   display: ','   },
-  { value: 'cancel', label: 'Cancel', display: '>'   },
-  { value: 'delay',  label: 'Delay',  display: 'dl.' },
-  { value: 'stance switch',  label: 'Stance Switch',  display: '~' },
-  { value: "microdash", label: "Microdash", display: "md." }
-]
+export const COMBO_CHAIN_OPTIONS: { [k in ConnectorType]: {
+  label: string;
+  display: string;
+} } = {
+  "cancel": {
+    label: "Cancel",
+    display: ">"
+  },
+  "delay": {
+    label: "Delay",
+    display: "dl."
+  },
+  "link": {
+    label: "Link",
+    display: ","
+  },
+  "microdash": {
+    label: "Microdash",
+    display: "md."
+  },
+  "stance switch": {
+    label: "Stance Switch",
+    display: "~"
+  }
+}
 
 export function ConnectorPicker({ value, onChange, onClose }: ConnectorPickerProps) {
   const ref = useRef<HTMLDivElement>(null)
@@ -44,18 +62,18 @@ export function ConnectorPicker({ value, onChange, onClose }: ConnectorPickerPro
         minWidth: 100,
       }}
     >
-      {COMBO_CHAIN_OPTIONS.map(opt => (
+      {(Object.keys(COMBO_CHAIN_OPTIONS) as ConnectorType[]).map(opt => (
         <button
-          key={opt.value}
+          key={opt}
           type="button"
-          onClick={() => { onChange(opt.value); onClose() }}
+          onClick={() => { onChange(opt); onClose() }}
           style={{
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'space-between',
             gap: 12,
             padding: '6px 10px',
-            background: opt.value === value ? 'var(--color-sky100)' : 'transparent',
+            background: opt === value ? 'var(--color-sky100)' : 'transparent',
             border: 'none',
             borderRadius: 'var(--radius-sm)',
             cursor: 'pointer',
@@ -64,15 +82,15 @@ export function ConnectorPicker({ value, onChange, onClose }: ConnectorPickerPro
             color: 'var(--color-ink)',
           }}
           onMouseEnter={e => (e.currentTarget.style.background = 'var(--color-paper2)')}
-          onMouseLeave={e => (e.currentTarget.style.background = opt.value === value ? 'var(--color-sky100)' : 'transparent')}
+          onMouseLeave={e => (e.currentTarget.style.background = opt === value ? 'var(--color-sky100)' : 'transparent')}
         >
-          <span>{opt.label}</span>
+          <span>{COMBO_CHAIN_OPTIONS[opt].label}</span>
           <span style={{
             fontFamily: 'Special Elite, monospace',
             fontSize: 12,
             color: 'var(--color-ink2)',
           }}>
-            {opt.display}
+            {COMBO_CHAIN_OPTIONS[opt].display}
           </span>
         </button>
       ))}

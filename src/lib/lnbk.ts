@@ -37,9 +37,9 @@ function transformNodeForExport(node: any): any {
     for (let move of combo.notation) {
       const foundMove = getMoveById(move.moveId);
       comboString += (move.holdGuard ? "[G]" : "") + (foundMove.input ?? foundMove.id);
-      const foundConnector = COMBO_CHAIN_OPTIONS.find((c) => c.value === move.connector);
+      const foundConnector = COMBO_CHAIN_OPTIONS[move.connector!];
       if (foundConnector) {
-        if (foundConnector.value === "link")
+        if (move.connector === "link")
           comboString += foundConnector.display + " ";
         else {
           comboString += " " + foundConnector.display + " ";
@@ -49,7 +49,7 @@ function transformNodeForExport(node: any): any {
     const notation = combo.notation
       .map((n) => {
         const move = getMoveById(n.moveId)
-        return move?.input || move?.id
+        return move?.input ?? move?.id
       })
       .join(' > ')
     return {

@@ -57,12 +57,12 @@ function NotationChain({ notation, counterhit }: { notation: Combo['notation'], 
     >
       {counterhit && <span>CH</span>}
       {notation.map((n, i) => {
-        const move = getMoveById(n.moveId)
-        const displayedConnector = i === 0 ? "" : COMBO_CHAIN_OPTIONS.find((option, j) => option.value === notation[i - 1].connector)?.display;
+        const move = getMoveById(n.moveId);
+        const displayedConnector = i === 0 ? "" : COMBO_CHAIN_OPTIONS[notation[i - 1].connector!]?.display;
         return (
           <React.Fragment key={i}>
             {i > 0 && <span className="font-caveat font-bold text-ink2">{displayedConnector}</span>}
-            <MoveChip label={move.input} />
+            <MoveChip label={move?.input ?? n.moveId} />
           </React.Fragment>
         )
       })}
@@ -820,8 +820,8 @@ export function ComboNotebook() {
       const move = getMoveById(entry.moveId);
       const previousEntry = combo.notation[j - 1]
       if (previousEntry) {
-        const connector = COMBO_CHAIN_OPTIONS.find((i) => i.value === previousEntry.connector);
-        return `${connector?.display} ${move.input}`.trim();
+        const connector = COMBO_CHAIN_OPTIONS[previousEntry.connector!];
+        return `${connector?.display} ${move?.input ?? entry.moveId}`.trim();
       } else {
         return move.input;
       }
@@ -831,7 +831,7 @@ ${notation}
 ${combo.description}`;
     navigator.clipboard.writeText(finalCopiedString).then(() => {
       show({
-        variant: "confirm",
+        variant: "success",
         title: "Success",
         message: "Combo was copied to the clipboard.",
         primary: {
