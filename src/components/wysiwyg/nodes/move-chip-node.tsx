@@ -1,6 +1,5 @@
 import { Node, mergeAttributes } from '@tiptap/core'
-import { ReactNodeViewRenderer, NodeViewWrapper } from '@tiptap/react'
-import React from 'react'
+import { NodeViewWrapper, ReactNodeViewRenderer } from '@tiptap/react'
 
 // Storage for move lookup — injected at editor init
 let moveResolver: ((characterId: string, moveId: string) => string) | null = null

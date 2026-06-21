@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
+import { getMovesArrayByCharacter } from '@/lib/moves'
 import type { Move } from '@/lib/types'
-import { getMovesByCharacter } from '@/lib/moves'
+import { useState } from 'react'
 import { MoveDisplay, MoveDisplayToggle } from './move-display-toggle'
 
 interface FrameDataTableProps {
@@ -11,7 +11,7 @@ interface FrameDataTableProps {
 
 export function FrameDataTable({ characterId, onMoveClick, className = '' }: FrameDataTableProps) {
   const [query, setQuery] = useState('')
-  const moves = getMovesByCharacter(characterId);
+  const moves = getMovesArrayByCharacter(characterId);
   const [displayType, setDisplayType] = useState<MoveDisplay>("input");
 
   const filtered = query

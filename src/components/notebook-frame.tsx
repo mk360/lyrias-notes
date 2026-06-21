@@ -2,7 +2,7 @@ import { useSettings } from '@/context/SettingsContext'
 import React from 'react'
 import { useNavigate, useLocation } from 'react-router-dom'
 
-type NavTab = 'roster' | 'matchups' | 'combos' | 'you' | "progress" | "preferences"
+type NavTab = 'roster' | 'matchups' | 'combos' | 'you' | "progress" | "about" 
 
 interface NotebookFrameProps {
   children: React.ReactNode
@@ -14,7 +14,8 @@ const TABS: { id: NavTab; label: string; path: string }[] = [
   { id: 'roster',   label: 'Roster',   path: '/' },
   { id: 'matchups', label: 'Matchups', path: '/matchups' },
   { id: 'combos',   label: 'Combos',   path: '/combos' },
-  { id: 'progress', label: 'My Progress', path: '/progress' }
+  { id: 'progress', label: 'My Progress', path: '/progress' },
+  // { id: "about", label: "About", path: "/about" }
 ]
 
 const HOLE_COUNT = 18

@@ -1,15 +1,8 @@
 const fs = require("fs");
-const parseNarmayaEX = require("./cleanup_parsers/narmaya_ex");
-const parseGranEX = require("./cleanup_parsers/gran_ex");
 const dir = fs.readdirSync("../src/data");
 
 const reg = /(<(\/|)[a-z]+( .+?|)>|\n)/g;
 const MOVE_STRENGTH_ORDER = ["L", "M", "H", "U", undefined];
-
-const CHARACTER_SPECIFIC_PARSERS = {
-    "Narmaya (EX)": parseNarmayaEX,
-    "Gran (EX)": parseGranEX,
-};
 
 /**
  * 
@@ -18,20 +11,11 @@ const CHARACTER_SPECIFIC_PARSERS = {
  * @returns 
  */
 function weakestFirst(move1, move2) {
-    const move1Followups = move1.split("~").length;
-    const move2Followups = move2.split("~").length;
-    const baseMoveFirst = move1Followups - move2Followups;
-    if (baseMoveFirst === 0) { // if both moves are specials or rekka starters
-        const move1InputStrength = move1.match(/[LMHU]/)?.[0];
-        const move2InputStrength = move2.match(/[LMHU]/)?.[0];
-        console.log({ move1InputStrength, move2InputStrength });
-        if (move2InputStrength && move1InputStrength)
-            return MOVE_STRENGTH_ORDER.indexOf(move1InputStrength) - MOVE_STRENGTH_ORDER.indexOf(move2InputStrength);
-        return 0;
-    } else {
-        // put 214H before 214H~632146H
-        return baseMoveFirst;
-    }
+    const move1InputStrength = move1.match(/[LMHU]/)?.[0];
+    const move2InputStrength = move2.match(/[LMHU]/)?.[0];
+    if (move2InputStrength && move1InputStrength)
+        return MOVE_STRENGTH_ORDER.indexOf(move1InputStrength) - MOVE_STRENGTH_ORDER.indexOf(move2InputStrength);
+    return 0;
 }
 
 
@@ -59,20 +43,31 @@ for (let character of dir) {
         }
 
         if (move.input === "MH") move.input = "RS";
-        if (move.input === "MH~MH") {
-            move.input = "RS~RC";
-            move.name = "Raging Strike ~ Raging Chain"
-        }
+        if (move.input === "MH~MH") move.input = "RS~RC";
     }
-    
-    const sortedMoveset = [...moveset].sort((move1, move2) => {
-        return weakestFirst(move1.input, move2.input)
+
+    const grouped = Object.groupBy(moveset, (move) => {
+        if (move.type.includes("special")) {
+            const [rootMove] = move.input.split("~");
+            const rootMoveInput = rootMove.match(/(.+)([LMHUX])(.*)/);
+            if (rootMoveInput) {
+                return `${rootMoveInput[1]}${rootMoveInput[3]}`;
+            }
+            return rootMove;
+        }
+        return move.type;
     });
 
-    if (cleanedCharacter in CHARACTER_SPECIFIC_PARSERS) {
-        const cleanedMoveset = CHARACTER_SPECIFIC_PARSERS[cleanedCharacter](sortedMoveset);
-        fs.writeFileSync(`../src/cleaned_data/${character}`, JSON.stringify(cleanedMoveset));
-    } else {
-        fs.writeFileSync(`../src/cleaned_data/${character}`, JSON.stringify(sortedMoveset));
+    for (let key in grouped) {
+        grouped[key] = grouped[key].sort((el1, el2) => {
+            const depth1 = getRekkaDepth(el1.input);
+            const depth2 = getRekkaDepth(el2.input);
+            if (depth2 - depth1) {
+                return depth1 - depth2;
+            } else {
+                return weakestFirst(el1.input, el2.input);
+            }
+        });
     }
+    fs.writeFileSync(`../src/cleaned_data/${character}`, JSON.stringify(grouped));
 }

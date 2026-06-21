@@ -9,6 +9,7 @@ import { CoverAnimation } from './components/cover-animation'
 import { DialogProvider } from './context/DialogContext'
 import { SettingsProvider } from './context/SettingsContext'
 import { ProgressScreen } from './screens/progress'
+import { AboutScreen } from './screens/about'
 
 export function App() {
   const [coverDone, setCoverDone] = useState(false);
@@ -47,6 +48,7 @@ export function App() {
                   <Route path="/matchups/:playerChar/:oppChar" element={<MatchupDetail />} />
                   <Route path="/combos" element={<ComboNotebook />} />
                   <Route path="/progress" element={<ProgressScreen />} />
+                  <Route path="/about" element={<AboutScreen />} />
                 </Routes>
             </DialogProvider>
         </AppProvider>

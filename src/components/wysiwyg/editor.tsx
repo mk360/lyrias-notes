@@ -1,4 +1,3 @@
-import { getMoveById } from '@/lib/moves'
 import { Color } from '@tiptap/extension-color'
 import Placeholder from '@tiptap/extension-placeholder'
 import TextStyle from '@tiptap/extension-text-style'
@@ -11,6 +10,7 @@ import { InlineClipNode } from './nodes/inline-clip-node'
 import { MoveChipNode, setMoveResolver } from './nodes/move-chip-node'
 import { WYSIWYGToolbar } from './toolbar'
 import { useApp } from '@/context/AppContext'
+import { FLATTENED_MOVES } from '@/lib/moves'
 
 interface NotesEditorProps {
   content: object
@@ -41,7 +41,7 @@ export const NotesEditor = forwardRef<NotesEditorHandle, NotesEditorProps>(funct
   // Register move resolver
   useEffect(() => {
     setMoveResolver((charId, moveId) => {
-      const move = getMoveById(moveId)
+      const move = FLATTENED_MOVES[moveId];
       if (!move) return moveId
       return move.input
     })

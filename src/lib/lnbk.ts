@@ -1,9 +1,8 @@
 import { COMBO_CHAIN_OPTIONS } from '@/components/connector-picker'
+import { JSONContent } from '@tiptap/react'
 import { getComboById } from './db'
 import { NOTES_FILE_EXTENSION } from './globals'
-import { getMoveById } from './moves'
-import { JSONContent } from '@tiptap/react'
-import { ConnectorType } from './types'
+import { FLATTENED_MOVES } from './moves'
 
 export interface LNBKFile {
   lyria: true
@@ -35,7 +34,7 @@ function transformNodeForExport(node: any): any {
     if (!combo) return { type: 'text', text: '(combo: not found)' }
     let comboString = combo.counterhit ? "CH " : "";
     for (let move of combo.notation) {
-      const foundMove = getMoveById(move.moveId);
+      const foundMove = FLATTENED_MOVES[move.moveId];
       comboString += (move.holdGuard ? "[G]" : "") + (foundMove.input ?? foundMove.id);
       const foundConnector = COMBO_CHAIN_OPTIONS[move.connector!];
       if (foundConnector) {
@@ -48,7 +47,7 @@ function transformNodeForExport(node: any): any {
     }
     const notation = combo.notation
       .map((n) => {
-        const move = getMoveById(n.moveId)
+        const move = FLATTENED_MOVES[n.moveId];
         return move?.input ?? move?.id
       })
       .join(' > ')

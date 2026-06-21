@@ -13,7 +13,7 @@ import {
   getCombosByCharacter,
   saveCombo
 } from '@/lib/db'
-import { getMoveById, getMovesByCharacterGrouped, MOVES } from '@/lib/moves'
+import { FLATTENED_MOVES, getMovesArrayByCharacter, MOVES } from '@/lib/moves'
 import type { Combo, ConnectorType } from '@/lib/types'
 import React, { useState } from 'react'
 import { v4 as uuidv4 } from 'uuid'
@@ -57,7 +57,7 @@ function NotationChain({ notation, counterhit }: { notation: Combo['notation'], 
     >
       {counterhit && <span>CH</span>}
       {notation.map((n, i) => {
-        const move = getMoveById(n.moveId);
+        const move = FLATTENED_MOVES[n.moveId];
         const displayedConnector = i === 0 ? "" : COMBO_CHAIN_OPTIONS[notation[i - 1].connector!]?.display;
         return (
           <React.Fragment key={i}>
@@ -211,8 +211,9 @@ function ComboEditor({ combo, characterId, playerId, onSave, onDelete, onClose }
   })
   const [tagInput, setTagInput] = useState('');
   const [customMoveInput, setCustomMoveInput] = useState("");
+  const characterName = CHARACTERS.find(({ id }) => id === characterId)!.name;
 
-  const grouped = getMovesByCharacterGrouped(characterId)
+  const grouped = MOVES[characterName]
 
   function set<K extends keyof Combo>(key: K, val: Combo[K]) {
     setForm(f => ({ ...f, [key]: val }))
@@ -531,12 +532,12 @@ function ComboEditor({ combo, characterId, playerId, onSave, onDelete, onClose }
               style={{ borderRadius: 'var(--radius-sm)', background: 'var(--color-paper2)', borderStyle: 'dashed' }}>
               {form.counterhit && <span>CH</span>}
               {(form.notation ?? []).map((n, i) => {
-                const move = getMoveById(n.moveId);
+                const canonicalMove = FLATTENED_MOVES[n.moveId];
                 const isLast = i === form.notation!.length - 1;
                 return (
                   <React.Fragment key={i}>
                     <MoveChip
-                      label={move ? `${n.holdGuard ? "[G]": ""} ${move?.input}`.trim() : n.moveId}
+                      label={canonicalMove ? `${n.holdGuard ? "[G]": ""} ${canonicalMove?.input}`.trim() : n.moveId}
                       onRemove={() => removeMoveFromNotation(i)}
                     />
                     {!isLast &&
@@ -571,18 +572,11 @@ function ComboEditor({ combo, characterId, playerId, onSave, onDelete, onClose }
               style={{ borderRadius: 'var(--radius-sm)', background: 'var(--color-paper2)' }}
             >
               <div className="font-label text-ink2 mb-2 uppercase">
-                {CHARACTERS.find(c => c.id === characterId)?.name} · Moves
+                {characterName} · Moves
               </div>
-              {[
-                { label: 'Normals', moves: grouped.normals },
-                { label: 'Jumping', moves: grouped.jumping },
-                { label: 'Specials', moves: grouped.specials },
-                { label: 'Super', moves: grouped.supers },
-                { label: 'Unique', moves: grouped.unique },
-                { label: "System", moves: grouped.system }
-              ].map(({ label, moves }) => (
+              {Object.entries(grouped).map(([label, moves]) => (
                 <div key={label} className="flex items-center gap-2 mb-2 flex-wrap">
-                  <span className="font-label text-ink3 w-16">{label}</span>
+                  <span className="font-label text-ink3">{label}</span>
                   {moves.map(m => (
                     <div key={m.id}>
                       <button type="button"
@@ -614,7 +608,7 @@ function ComboEditor({ combo, characterId, playerId, onSave, onDelete, onClose }
                 <Button onClick={() => {
                   const startsWithGuard = customMoveInput.toLowerCase().startsWith("[g]");
                   const rawInput = customMoveInput.replace(/\[g\]/i, "");
-                  const move = MOVES.find((m) => m.input === rawInput && m.characterId === characterId);
+                  const move = getMovesArrayByCharacter(characterId).find((m) => m.input === rawInput && m.characterId === characterId);
                   if (move) {
                     addMoveToNotation(move.id, startsWithGuard);
                   } else {
@@ -817,7 +811,7 @@ export function ComboNotebook() {
   function handleExport(combo: Combo) {
     const counterHitStarter = combo.counterhit ? "CH " : "";
     const notation = counterHitStarter + " " + combo.notation.map((entry, j) => {
-      const move = getMoveById(entry.moveId);
+      const move = FLATTENED_MOVES[entry.moveId];
       const previousEntry = combo.notation[j - 1]
       if (previousEntry) {
         const connector = COMBO_CHAIN_OPTIONS[previousEntry.connector!];

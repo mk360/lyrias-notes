@@ -2,7 +2,7 @@ import { Node, mergeAttributes } from '@tiptap/core'
 import { ReactNodeViewRenderer, NodeViewWrapper } from '@tiptap/react'
 import React from 'react'
 import { getComboById } from '@/lib/db'
-import { getMoveById } from '@/lib/moves'
+import { FLATTENED_MOVES } from '@/lib/moves'
 import { COMBO_CHAIN_OPTIONS } from '@/components/connector-picker'
 import { ConnectorType } from '@/lib/types'
 
@@ -37,7 +37,7 @@ function ComboBlockNodeView({ node, deleteNode }: ComboBlockNodeViewProps) {
         {/* Notation chain */}
         <div className="flex flex-wrap items-center gap-1 p-2 bg-paper border border-rule" style={{ borderRadius: 'var(--radius-sm)', borderStyle: 'dashed' }}>
           {combo.notation.map((n, i) => {
-            const move = getMoveById(n.moveId)
+            const move = FLATTENED_MOVES[n.moveId];
             const connector = COMBO_CHAIN_OPTIONS[n.connector as ConnectorType];
             return (
               <React.Fragment key={i}>

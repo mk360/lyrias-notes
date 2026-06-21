@@ -2,11 +2,11 @@ import { useApp } from '@/context/AppContext'
 import { useDialog } from '@/context/DialogContext'
 import { createClipFromFile, getCombosByCharacter } from '@/lib/db'
 import { CLIP_MAX_BYTES } from '@/lib/globals'
-import { getMovesByCharacter } from '@/lib/moves'
+import { checkHasClips, exportMatchupNote, parseLNBKFile } from '@/lib/lnbk'
+import { getMovesArrayByCharacter } from '@/lib/moves'
 import type { Move } from '@/lib/types'
 import type { Editor, JSONContent } from '@tiptap/react'
 import { useRef, useState } from 'react'
-import { exportMatchupNote, checkHasClips, parseLNBKFile } from '@/lib/lnbk'
 
 interface WYSIWYGToolbarProps {
   editor: Editor | null
@@ -43,7 +43,7 @@ export function WYSIWYGToolbar({ editor, opponentCharId, playerCharacterId, onIm
 
   if (!editor) return null
 
-  const moves: Move[] = opponentCharId ? getMovesByCharacter(opponentCharId) : []
+  const moves: Move[] = opponentCharId ? getMovesArrayByCharacter(opponentCharId) : []
   const filteredMoves = moveQuery
     ? moves.filter(m => m.name.toLowerCase().includes(moveQuery.toLowerCase()) || m.type.toLowerCase().includes(moveQuery.toLowerCase()) || m.input.toLowerCase().includes(moveQuery.toLowerCase()))
     : moves

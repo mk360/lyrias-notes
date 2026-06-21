@@ -1,38 +1,41 @@
 import type { Move } from './types'
 import { CHARACTERS } from './characters';
 
-const cleanedDataModules = import.meta.glob('@/cleaned_data/*.json', { eager: true }) as Record<string, { default: Move[] }>
+export interface CharacterMoveset {
+  [group: string]: Move[];
+}
 
-export const MOVES: Move[] = [];
+const cleanedDataModules = import.meta.glob('@/cleaned_data/*.json', { eager: true }) as {
+  [character: string]: {
+    default: CharacterMoveset;
+  }
+};
+
+export const MOVES: {
+  [character: string]: {
+    [entry: string]: Move[];
+  }
+} = {};
+
+export const FLATTENED_MOVES: { [moveId: string]: Move } = {};
 
 for (let key in cleanedDataModules) {
-  MOVES.push(...cleanedDataModules[key].default);
-}
-
-export function getMovesByCharacter(id: string): Move[] {
-  const name = CHARACTERS.find((i) => i.id === id)?.name;
-  return cleanedDataModules[`/src/cleaned_data/${name}.json`].default;
-}
-
-export function getMoveById(id: string): Move {
-  return MOVES.find(m => m.id === id)!;
-}
-
-export function getMovesByCharacterGrouped(characterId: string): {
-  normals: Move[]
-  jumping: Move[]
-  specials: Move[]
-  supers: Move[]
-  unique: Move[]
-  system: Move[]
-} {
-  const moves = getMovesByCharacter(characterId)
-  return {
-    normals:  moves.filter((i) => i.type.includes("normal") && !i.input.startsWith("j.")),
-    jumping:  moves.filter(m => m.type.includes("normal") && m.input.startsWith('j.')),
-    specials: moves.filter((m) => m.type.includes("special")),
-    supers:   moves.filter(m => m.type.includes('super')),
-    unique: moves.filter((m) => m.input === "5U"),
-    system: moves.filter((m) => m.type === "other")
+  const [characterTitle] = key.split("/").reverse();
+  const fileData = cleanedDataModules[key as keyof typeof cleanedDataModules].default;
+  MOVES[characterTitle.replace(".json", "")] = fileData;
+  for (let group in fileData) {
+    for (let move of fileData[group]) {
+      FLATTENED_MOVES[move.id] = move;
+    }
   }
 }
+
+export function getMovesByCharacter(id: string): CharacterMoveset {
+  const name = CHARACTERS.find((i) => i.id === id)?.name as keyof typeof cleanedDataModules;
+  return MOVES[name];
+}
+
+export function getMovesArrayByCharacter(id: string): Move[] {
+  return Object.values(getMovesByCharacter(id)).flat();
+}
+
