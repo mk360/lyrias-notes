@@ -62,7 +62,7 @@ function NotationChain({ notation, counterhit }: { notation: Combo['notation'], 
         return (
           <React.Fragment key={i}>
             {i > 0 && <span className="font-caveat font-bold text-ink2">{displayedConnector}</span>}
-            <MoveChip label={move?.input ?? n.moveId} />
+            <MoveChip holdGuard={n.holdGuard} label={move?.input ?? n.moveId} />
           </React.Fragment>
         )
       })}
@@ -537,7 +537,8 @@ function ComboEditor({ combo, characterId, playerId, onSave, onDelete, onClose }
                 return (
                   <React.Fragment key={i}>
                     <MoveChip
-                      label={canonicalMove ? `${n.holdGuard ? "[G]": ""} ${canonicalMove?.input}`.trim() : n.moveId}
+                      holdGuard={n.holdGuard}
+                      label={canonicalMove ? `${canonicalMove?.input}`.trim() : n.moveId}
                       onRemove={() => removeMoveFromNotation(i)}
                     />
                     {!isLast &&

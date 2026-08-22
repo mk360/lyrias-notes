@@ -1,13 +1,13 @@
-import React from 'react'
 
 interface MoveChipProps {
   label: string
   onClick?: () => void
   onRemove?: () => void
   className?: string
+  holdGuard: boolean | undefined
 }
 
-export function MoveChip({ label, onClick, onRemove, className = '' }: MoveChipProps) {
+export function MoveChip({ label, onClick, onRemove, className = '', holdGuard }: MoveChipProps) {
   return (
     <span
       className={`
@@ -22,6 +22,7 @@ export function MoveChip({ label, onClick, onRemove, className = '' }: MoveChipP
       style={{ borderRadius: 'var(--radius-sm)' }}
       onClick={onClick}
     >
+      {holdGuard ? "[G] " : ""}
       {label}
       {onRemove && (
         <button
