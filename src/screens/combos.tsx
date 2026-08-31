@@ -18,6 +18,8 @@ import type { Combo, ConnectorType } from '@/lib/types'
 import React, { useState } from 'react'
 import { v4 as uuidv4 } from 'uuid'
 
+type SortKey = "" | "damage" | "meter" | "length" | "difficulty";
+
 // ─── DifficultyPips ──────────────────────────────────────────────────────────
 function DifficultyPips({ value, onChange }: { value: 1|2|3|4|5; onChange?: (v: 1|2|3|4|5) => void }) {
   const labels = ['easy', 'medium', 'hard', 'very hard', 'tournament']
@@ -190,6 +192,54 @@ interface ComboEditorProps {
   onClose: () => void
 }
 
+interface Filters {
+  counterhit: boolean;
+}
+
+function getSortingAlgorithm(key: SortKey) {
+  let comboProperty: keyof Combo;
+  switch (key) {
+    case "damage": {
+      comboProperty = "damage";
+    }
+    break;
+    case "difficulty": {
+      comboProperty = "difficulty";
+      break;
+    }
+    case "meter": {
+      comboProperty = "meter";
+      break;
+    }
+    case "length": {
+      comboProperty = "hits";
+      break;
+    }
+    default: {
+      return () => 0
+    }
+  }
+  return (entry1: Combo, entry2: Combo) => {
+    return entry2[comboProperty] - entry1[comboProperty];
+  }
+}
+
+function filterCombos(criteria: Filters, combos: Combo[]) {
+  const compoundCriteria: Array<(combo: Combo) => boolean> = [];
+  if (criteria.counterhit) {
+    compoundCriteria.push((combo) => combo.counterhit);
+  }
+
+  return combos.filter((combo) => {
+    if (compoundCriteria.length) {
+      return compoundCriteria.every((predicate) => {
+        return predicate(combo);
+      });
+    }
+    return true;
+  });
+}
+
 function ComboEditor({ combo, characterId, playerId, onSave, onDelete, onClose }: ComboEditorProps) {
   const [openConnectorAt, setOpenConnectorAt] = useState<number | null>(null);
   const isNew = !combo.id;
@@ -212,7 +262,6 @@ function ComboEditor({ combo, characterId, playerId, onSave, onDelete, onClose }
   const [tagInput, setTagInput] = useState('');
   const [customMoveInput, setCustomMoveInput] = useState("");
   const characterName = CHARACTERS.find(({ id }) => id === characterId)!.name;
-
   const grouped = MOVES[characterName]
 
   function set<K extends keyof Combo>(key: K, val: Combo[K]) {
@@ -776,13 +825,15 @@ function ComboEditor({ combo, characterId, playerId, onSave, onDelete, onClose }
   )
 }
 
-// ─── Main Combo Notebook Screen ───────────────────────────────────────────────
 export function ComboNotebook() {
   const { player } = useApp()
   const [activeChar, setActiveChar] = useState<string>(player.activeMain || player.mains[0] || '');
   const [editingCombo, setEditingCombo] = useState<Partial<Combo> | null>(null)
-  const [refresh, setRefresh] = useState(0)
   const { show, close } = useDialog();
+  const [sortCriteria, setSortCriteria] = useState<SortKey>("");
+  const [comboFilters, setComboFilters] = useState<Filters>({
+    counterhit: false
+  });
 
   const combos = activeChar
     ? getCombosByCharacter(player.id, activeChar)
@@ -793,7 +844,6 @@ export function ComboNotebook() {
   function handleSave(combo: Combo) {
     saveCombo(combo)
     setEditingCombo(null)
-    setRefresh(r => r + 1)
   }
 
   function handleDuplicate(combo: Combo) {
@@ -806,7 +856,6 @@ export function ComboNotebook() {
       updatedAt: now,
     }
     saveCombo(dup)
-    setRefresh(r => r + 1)
   }
 
   function handleExport(combo: Combo) {
@@ -847,7 +896,6 @@ ${combo.description}`;
         onClick() {
           deleteCombo(id)
           setEditingCombo(null)
-          setRefresh(r => r + 1)
         }
       },
       secondary: {
@@ -862,13 +910,12 @@ ${combo.description}`;
   // Stats
   const topDamage = combos.reduce((max, c) => Math.max(max, c.damage), 0)
   const charaname = CHARACTERS.find((i) => i.id === activeChar);
-
+  const sortedCombos = combos.sort(getSortingAlgorithm(sortCriteria));
+  const filtered = filterCombos(comboFilters, sortedCombos);
   return (
     <NotebookFrame activeTab="combos">
       <div className="flex h-full min-h-[600px]">
-        {/* Main area */}
         <div className="flex-1 p-4 overflow-auto">
-          {/* Header */}
           <div className="flex items-center gap-3 mb-2 flex-wrap">
             <WashiLabel tone="sky">Section 03</WashiLabel>
             {!!charaname ? <Portrait tag='' imgSrc={`${import.meta.env.BASE_URL}thumbnails/${charaname?.name}.webp`} /> : null}
@@ -890,7 +937,6 @@ ${combo.description}`;
             Combos you actually use. Pin one to "paste in notes" and it drops into the current matchup note in one click.
           </p>
 
-          {/* Character switcher */}
           <div
             className="flex items-center gap-3 p-3 border-2 border-ink shadow-stamp mb-4 flex-wrap"
             style={{ borderRadius: 'var(--radius-md)', background: 'var(--color-paper2)' }}
@@ -931,7 +977,7 @@ ${combo.description}`;
           </div>
 
           {/* Combo list */}
-          {player.mains.length > 0 && combos.length === 0 ? (
+          {player.mains.length > 0 && filtered.length === 0 ? (
             <div
               className="flex flex-col items-center justify-center gap-3 p-8 border-2 border-dashed border-rule"
               style={{ borderRadius: 'var(--radius-md)' }}
@@ -942,7 +988,7 @@ ${combo.description}`;
               </Button>
             </div>
           ) : (
-            combos.map(combo => (
+            filtered.map(combo => (
               <ComboCard
                 key={combo.id}
                 combo={combo}
@@ -956,7 +1002,7 @@ ${combo.description}`;
 
         {/* Right rail */}
         <div
-          className="w-64 shrink-0 border-l-2 border-ink p-4 flex flex-col gap-4 overflow-auto"
+          className="w-64 shrink-0 border-l-2 border-ink p-4 flex flex-col gap-2 overflow-auto"
           style={{ background: 'var(--color-paper2)' }}
         >
           {/* Stats card */}
@@ -996,10 +1042,44 @@ ${combo.description}`;
             </p>
           </div>
 
-          {/* <StickyNote tone="sky" tilt={-2}>
-            <p className="font-fredoka font-600 text-sm mb-1">Lab queue ✶</p>
-            <p className="font-body-sm">still need to grind:<br />- corner meterless<br />- AA confirm</p>
-          </StickyNote> */}
+          <h3 className='font-label font-display-xl'>Sort By</h3>
+          <div className='flex flex-col gap-2'>
+              <input id="sort-none" className='hidden' type="radio" name="sort-criteria" value="default" onClick={() => {
+                setSortCriteria("");
+              }} />
+              <label className={getSortLabelClasses(sortCriteria === "")} htmlFor='sort-none'>Default</label>
+
+              <input id="sort-damage" className='hidden' type="radio" name="sort-criteria" value="damage" onClick={() => {
+                setSortCriteria("damage");
+              }} />
+              <label className={getSortLabelClasses(sortCriteria === "damage")} htmlFor='sort-damage'>Damage</label>
+
+              <input id="sort-meter" className="hidden" type="radio" name="sort-criteria" onClick={() => {
+                setSortCriteria("meter");
+              }} value="meter" />
+              <label className={getSortLabelClasses(sortCriteria === "meter")} htmlFor='sort-meter'>Meter</label>
+
+              <input id="sort-length" className="hidden" type="radio" name="sort-criteria" onClick={() => {
+                setSortCriteria("length");
+              }} value="length" />
+              <label className={getSortLabelClasses(sortCriteria === "length")} htmlFor='sort-length'>Combo length</label>
+
+              <input id="sort-difficulty" className="hidden" type="radio" name="sort-criteria" onClick={() => {
+                setSortCriteria("difficulty");
+              }} value="difficulty" />
+              <label className={getSortLabelClasses(sortCriteria === "difficulty")} htmlFor='sort-difficulty'>Difficulty</label>
+
+              <h3 className='font-label'>Filter by</h3>
+              <input id="filter-counterhit" className="hidden" type="checkbox" onClick={() => {
+                setComboFilters((f) => ({
+                  ...f,
+                  counterhit: !f.counterhit
+                }));
+              }} value="counterhit" />
+              <label className={getSortLabelClasses(comboFilters.counterhit)} htmlFor='filter-counterhit'>Counterhit</label>
+            </div>
+            <div>
+            </div>
         </div>
       </div>
 
@@ -1016,4 +1096,11 @@ ${combo.description}`;
       )}
     </NotebookFrame>
   )
+}
+
+function getSortLabelClasses(enable: boolean) {
+  if (enable) {
+    return "block bg-ink text-paper p-1 border-2 border-ink cursor-pointer hover:opacity-80 rounded-md w-2/3 text-center text-sm"
+  }
+  return "block bg-paper text-ink p-1 border-2 border-ink cursor-pointer hover:opacity-80 rounded-md w-2/3 text-center text-sm"
 }
