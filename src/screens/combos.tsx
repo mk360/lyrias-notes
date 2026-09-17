@@ -145,10 +145,11 @@ function ComboCard({ combo, onEdit, onDuplicate, onExport }: ComboCardProps) {
             {combo.bp > 0 ? `${combo.bp} BP gained` : `${Math.abs(combo.bp)} BP spent`}
           </span>
         )}
-        {combo.description && (
-          <span className="font-body-sm text-ink2 italic ml-2 truncate max-w-xs">{combo.description}</span>
-        )}
       </div>
+      {combo.description && (
+        <div>
+        <span className="font-body-sm text-ink2 italic ml-2 truncate">{combo.description}</span></div>
+      )}
 
       {/* Row 5: actions */}
       <div
