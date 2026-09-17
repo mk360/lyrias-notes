@@ -44,10 +44,11 @@ function DifficultyPips({ value, onChange }: { value: 1|2|3|4|5; onChange?: (v: 
 
 // ─── Tag color helper ────────────────────────────────────────────────────────
 function tagBg(tag: string): string {
-  if (tag === 'corner')   return 'var(--color-goldLt)'
-  if (tag === 'meter' || tag === 'round-ender') return 'var(--color-sky200)'
-  if (tag === 'whiff' || tag === 'punish') return 'var(--color-paper3)'
-  return 'var(--color-paper2)'
+  // if (tag === 'corner')   return 'var(--color-goldLt)'
+  // if (tag === 'meter' || tag === 'round-ender') 
+  // if (tag === 'whiff' || tag === 'punish') return 'var(--color-paper3)'
+  // return 'var(--color-paper2)'
+  return 'var(--color-sky200)'
 }
 
 // ─── NotationChain ───────────────────────────────────────────────────────────
@@ -115,13 +116,13 @@ function ComboCard({ combo, onEdit, onDuplicate, onExport }: ComboCardProps) {
 
       {/* Row 4: stats */}
       <div className="flex items-center gap-4 mb-3">
-        <div className="flex items-baseline gap-1">
+        <div className="flex items-baseline gap-2">
           <span className="font-caveat font-bold text-red" style={{ fontSize: 28 }}>
             {combo.damage.toLocaleString()}
           </span>
           <span className="font-elite text-xs text-ink2">DMG</span>
+         <span className="font-caveat font-bold text-red" style={{ fontSize: 28 }}>{combo.hits}</span> <span className='font-elite text-xs text-ink2'>hits</span>
         </div>
-        <span className="font-elite text-xs text-ink2">{combo.hits} hits · {combo.situation}</span>
         <div className="flex items-center gap-1.5">
           <div className="flex gap-0.5">
             {[0,1,2,3].map(i => (
@@ -148,7 +149,7 @@ function ComboCard({ combo, onEdit, onDuplicate, onExport }: ComboCardProps) {
       </div>
       {combo.description && (
         <div>
-        <span className="font-body-sm text-ink2 italic ml-2 truncate">{combo.description}</span></div>
+        <span className="font-body-sm text-ink2 italic">{combo.description}</span></div>
       )}
 
       {/* Row 5: actions */}
@@ -195,6 +196,7 @@ interface ComboEditorProps {
 
 interface Filters {
   counterhit: boolean;
+  tags: string[];
 }
 
 function getSortingAlgorithm(key: SortKey) {
@@ -229,6 +231,12 @@ function filterCombos(criteria: Filters, combos: Combo[]) {
   const compoundCriteria: Array<(combo: Combo) => boolean> = [];
   if (criteria.counterhit) {
     compoundCriteria.push((combo) => combo.counterhit);
+  }
+
+  if (criteria.tags.length) {
+    for (let tag of criteria.tags) {
+      compoundCriteria.push((combo) => combo.tags.includes(tag));
+    }
   }
 
   return combos.filter((combo) => {
@@ -833,7 +841,8 @@ export function ComboNotebook() {
   const { show, close } = useDialog();
   const [sortCriteria, setSortCriteria] = useState<SortKey>("");
   const [comboFilters, setComboFilters] = useState<Filters>({
-    counterhit: false
+    counterhit: false,
+    tags: [],
   });
 
   const combos = activeChar
@@ -1032,17 +1041,6 @@ ${combo.description}`;
             </div>
           )}
 
-          {/* Slash command hint */}
-          <div
-            className="p-3 border-2 border-rule"
-            style={{ borderRadius: 'var(--radius-md)', background: 'var(--color-paper)' }}
-          >
-            <p className="font-fredoka font-600 text-sm mb-1">💡 use combos in notes</p>
-            <p className="font-body-sm text-ink2">
-              You can add a combo from this list in your matchup notes, or in your Progress section.
-            </p>
-          </div>
-
           <h3 className='font-label font-display-xl'>Sort By</h3>
           <div className='flex flex-col gap-2'>
               <input id="sort-none" className='hidden' type="radio" name="sort-criteria" value="default" onClick={() => {
@@ -1079,7 +1077,35 @@ ${combo.description}`;
               }} value="counterhit" />
               <label className={getSortLabelClasses(comboFilters.counterhit)} htmlFor='filter-counterhit'>Counterhit</label>
             </div>
-            <div>
+            <h3 className='font-label'>Filter by tags</h3>
+            {Array.from(new Set(combos.map((i) => i.tags).flat())).map((tag) => {
+              return (
+                <>
+                <input id={`filter-${tag}`} className="hidden" type="checkbox" onClick={() => {
+                  if (comboFilters.tags.includes(tag)) {
+                    setComboFilters((f) => ({
+                      ...f,
+                      tags: comboFilters.tags.filter((i) => i !== tag)
+                    }));
+                  } else {
+                    setComboFilters((f) => ({
+                      ...f,
+                      tags: comboFilters.tags.concat([tag])
+                    }));
+                  }
+              }} value="meterless" />
+              <label className={getSortLabelClasses(comboFilters.tags.includes(tag))} htmlFor={`filter-${tag}`}>{tag}</label>
+                </>
+              )
+            })}
+            <div
+              className="p-3 border-2 border-rule"
+              style={{ borderRadius: 'var(--radius-md)', background: 'var(--color-paper)' }}
+            >
+              <p className="font-fredoka font-600 text-sm mb-1">💡 use combos in notes</p>
+              <p className="font-body-sm text-ink2">
+                You can add a combo from this list in your matchup notes, or in your Progress section.
+              </p>
             </div>
         </div>
       </div>
