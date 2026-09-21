@@ -877,7 +877,7 @@ export function ComboNotebook() {
         const connector = COMBO_CHAIN_OPTIONS[previousEntry.connector!];
         return `${connector?.display} ${move?.input ?? entry.moveId}`.trim();
       } else {
-        return move.input;
+        return move?.input ?? entry.moveId;
       }
     }).join("");
     const finalCopiedString = `${combo.title}
