@@ -42,7 +42,8 @@ export const CHARACTERS: Character[] = [
   { id: 'lucilius',     name: 'Lucilius',     tag: 'LUC', archetypes: ["zoner"] },
   { id: 'avatar-belial',name: 'Avatar Belial',tag: 'AVB', archetypes: ["technical"] },
   { id: '2b',           name: '2B',           tag: 'TWB', archetypes: ['technical'] },
-  { id: 'meg',          name: 'Meg',          tag: 'MEG', archetypes: ['rushdown', "all-rounder"] }
+  { id: 'meg',          name: 'Meg',          tag: 'MEG', archetypes: ['rushdown', "all-rounder"] },
+  { id: "id",           name: "Id",           tag: "ID", archetypes: ["all-rounder"] }
 ]
 
 export function getCharacterById(id: string): Character | undefined {
